@@ -31,14 +31,18 @@ function Slider({
 			thumbAlignment="center"
 			{...props}
 		>
-			<SliderPrimitive.Control className="relative flex w-full touch-none select-none items-center py-2 data-vertical:h-full data-vertical:min-h-40 data-vertical:w-auto data-vertical:flex-col data-disabled:opacity-50">
+			<SliderPrimitive.Control className="relative flex w-full touch-none select-none items-center py-1 data-vertical:h-full data-vertical:min-h-40 data-vertical:w-auto data-vertical:flex-col data-disabled:opacity-50">
 				<SliderPrimitive.Track
 					data-slot="slider-track"
-					className="relative grow select-none rounded-full bg-input data-horizontal:h-1.5 data-vertical:h-full data-horizontal:w-full data-vertical:w-1.5"
+					className="relative flex grow select-none data-horizontal:h-5 data-horizontal:w-full data-vertical:h-full data-vertical:w-5 data-vertical:flex-col"
 				>
+					<div
+						aria-hidden
+						className="pointer-events-none absolute bg-[repeating-linear-gradient(90deg,color-mix(in_oklab,var(--color-foreground)_18%,transparent)_0_2px,transparent_2px_9px)] data-horizontal:inset-x-0 data-horizontal:inset-y-1 data-vertical:inset-x-1 data-vertical:inset-y-0 data-vertical:bg-[repeating-linear-gradient(180deg,color-mix(in_oklab,var(--color-foreground)_18%,transparent)_0_2px,transparent_2px_9px)]"
+					/>
 					<SliderPrimitive.Indicator
 						data-slot="slider-range"
-						className="select-none rounded-full bg-foreground data-horizontal:h-full data-vertical:w-full"
+						className="rounded-[1px] bg-[repeating-linear-gradient(90deg,var(--color-foreground)_0_3px,transparent_3px_9px)] data-vertical:bg-[repeating-linear-gradient(180deg,var(--color-foreground)_0_3px,transparent_3px_9px)]"
 					/>
 				</SliderPrimitive.Track>
 				{Array.from({ length: _values.length }, (_, index) => (
@@ -46,7 +50,7 @@ function Slider({
 						data-slot="slider-thumb"
 						key={index}
 						index={index}
-						className="block size-3.5 shrink-0 select-none rounded-full bg-background shadow-sm ring-1 ring-foreground/15 transition-[box-shadow] hover:ring-4 hover:ring-ring/30 focus-visible:outline-hidden focus-visible:ring-4 focus-visible:ring-ring/30 disabled:pointer-events-none disabled:opacity-50"
+						className="block h-5 w-7 shrink-0 select-none rounded-full bg-background shadow-[0_1px_3px_rgb(0_0_0/0.15),0_0_0_1px_rgb(0_0_0/0.04)] outline-none transition-transform active:scale-95 disabled:pointer-events-none disabled:opacity-50"
 					/>
 				))}
 			</SliderPrimitive.Control>

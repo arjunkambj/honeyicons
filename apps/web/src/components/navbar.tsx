@@ -19,7 +19,7 @@ const X_URL = "https://x.com";
 
 const links = [
 	{ href: "/icons", label: "Icons", external: false },
-	{ href: GITHUB_URL, label: "Install", external: true },
+	{ href: "/install", label: "Install", external: false },
 ] as const;
 
 function ThemeToggle() {
