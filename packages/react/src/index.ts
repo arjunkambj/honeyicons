@@ -1,3 +1,4 @@
+export { ICON_CATEGORIES, type IconCategory } from "./categories";
 export { createIcon, type HoneyIcon, type HoneyIconProps } from "./create-icon";
 export { Icon, type IconProps } from "./icon";
 export * from "./icons";

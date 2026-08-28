@@ -72,7 +72,7 @@ honeyicons/
     └── build-icons.ts     # svg → React components
 ```
 
-Icons live in `icons/{linear,bold,duotone}/name.svg` (24×24). Same filename in all three folders, plus an entry in `icons/meta.json`. Then:
+Icons live in `icons/{linear,bold,duotone}/{category}/name.svg` (24×24). Same path in all three styles. Category is the folder name. Optional tags go in `icons/meta.json`. Then:
 
 ```bash
 bun run generate:icons

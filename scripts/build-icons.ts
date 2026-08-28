@@ -5,18 +5,14 @@ const VARIANTS = ["linear", "bold", "duotone"] as const;
 type Variant = (typeof VARIANTS)[number];
 
 type IconNode = [tag: string, attrs: Record<string, string>][];
-type IconMeta = Record<
-	string,
-	{
-		tags: string[];
-		category: string;
-	}
->;
+type IconMeta = Record<string, { tags?: string[] }>;
+type IconSource = { name: string; category: string };
 
 const root = join(import.meta.dir, "..");
 const iconsDir = join(root, "icons");
 const outDir = join(root, "packages/react/src/icons");
 const catalogPath = join(root, "packages/react/src/catalog.ts");
+const categoriesPath = join(root, "packages/react/src/categories.ts");
 const metaPath = join(iconsDir, "meta.json");
 
 const STRIP_ATTRS = new Set([
@@ -172,40 +168,96 @@ function serializeNodes(nodes: IconNode) {
 		.join(",\n")},\n\t]`;
 }
 
-async function listSvgNames(variant: Variant) {
+function iconKey(icon: IconSource) {
+	return `${icon.category}/${icon.name}`;
+}
+
+async function listCategories(variant: Variant) {
 	const dir = join(iconsDir, variant);
-	const files = await readdir(dir);
-	return files
-		.filter((file) => file.endsWith(".svg"))
-		.map((file) => file.slice(0, -4))
+	const entries = await readdir(dir, { withFileTypes: true });
+	return entries
+		.filter((entry) => entry.isDirectory() && !entry.name.startsWith("."))
+		.map((entry) => entry.name)
 		.sort();
 }
 
-async function main() {
-	const namesByVariant = {
-		linear: await listSvgNames("linear"),
-		bold: await listSvgNames("bold"),
-		duotone: await listSvgNames("duotone"),
-	};
+async function listIcons(variant: Variant): Promise<IconSource[]> {
+	const dir = join(iconsDir, variant);
+	const entries = await readdir(dir, { withFileTypes: true });
+	const loose = entries.filter(
+		(entry) => entry.isFile() && entry.name.endsWith(".svg"),
+	);
+	if (loose.length > 0) {
+		throw new Error(
+			`${variant}: put SVGs in a category folder, not the style root (${loose.map((entry) => entry.name).join(", ")})`,
+		);
+	}
 
-	const names = namesByVariant.linear;
-
-	for (const variant of VARIANTS) {
-		const current = namesByVariant[variant];
-		const missing = names.filter((name) => !current.includes(name));
-		const extra = current.filter((name) => !names.includes(name));
-		if (missing.length > 0 || extra.length > 0) {
-			throw new Error(
-				`${variant} is out of sync with linear.\nmissing: ${missing.join(", ") || "—"}\nextra: ${extra.join(", ") || "—"}`,
-			);
+	const icons: IconSource[] = [];
+	for (const entry of entries) {
+		if (!entry.isDirectory() || entry.name.startsWith(".")) continue;
+		const files = await readdir(join(dir, entry.name));
+		for (const file of files) {
+			if (!file.endsWith(".svg")) continue;
+			icons.push({ category: entry.name, name: file.slice(0, -4) });
 		}
 	}
 
-	const meta = JSON.parse(await readFile(metaPath, "utf8")) as IconMeta;
-	const missingMeta = names.filter((name) => !meta[name]);
-	if (missingMeta.length > 0) {
-		throw new Error(`Missing meta for: ${missingMeta.join(", ")}`);
+	return icons.sort(
+		(a, b) =>
+			a.name.localeCompare(b.name) || a.category.localeCompare(b.category),
+	);
+}
+
+function assertSame(label: string, expected: string[], actual: string[]) {
+	const missing = expected.filter((item) => !actual.includes(item));
+	const extra = actual.filter((item) => !expected.includes(item));
+	if (missing.length > 0 || extra.length > 0) {
+		throw new Error(
+			`${label} is out of sync with linear.\nmissing: ${missing.join(", ") || "—"}\nextra: ${extra.join(", ") || "—"}`,
+		);
 	}
+}
+
+async function main() {
+	const categoriesByVariant = {
+		linear: await listCategories("linear"),
+		bold: await listCategories("bold"),
+		duotone: await listCategories("duotone"),
+	};
+	const categories = categoriesByVariant.linear;
+	assertSame("bold categories", categories, categoriesByVariant.bold);
+	assertSame("duotone categories", categories, categoriesByVariant.duotone);
+
+	const iconsByVariant = {
+		linear: await listIcons("linear"),
+		bold: await listIcons("bold"),
+		duotone: await listIcons("duotone"),
+	};
+	const icons = iconsByVariant.linear;
+	assertSame(
+		"bold icons",
+		icons.map(iconKey),
+		iconsByVariant.bold.map(iconKey),
+	);
+	assertSame(
+		"duotone icons",
+		icons.map(iconKey),
+		iconsByVariant.duotone.map(iconKey),
+	);
+
+	const seen = new Map<string, string>();
+	for (const icon of icons) {
+		const existing = seen.get(icon.name);
+		if (existing) {
+			throw new Error(
+				`Duplicate icon name "${icon.name}" in ${existing} and ${icon.category}. Names must be unique across categories.`,
+			);
+		}
+		seen.set(icon.name, icon.category);
+	}
+
+	const meta = JSON.parse(await readFile(metaPath, "utf8")) as IconMeta;
 
 	await rm(outDir, { recursive: true, force: true });
 	await mkdir(outDir, { recursive: true });
@@ -214,17 +266,18 @@ async function main() {
 	const catalogImports: string[] = [];
 	const catalogEntries: string[] = [];
 
-	for (const name of names) {
-		const pascal = toPascalCase(name);
+	for (const icon of icons) {
+		const pascal = toPascalCase(icon.name);
 		const nodes: Record<Variant, IconNode> = {
 			linear: [],
 			bold: [],
 			duotone: [],
 		};
 		for (const variant of VARIANTS) {
-			const file = join(iconsDir, variant, `${name}.svg`);
+			const relative = `${icon.category}/${icon.name}.svg`;
+			const file = join(iconsDir, variant, relative);
 			const svg = await readFile(file, "utf8");
-			nodes[variant] = parseSvg(svg, `${variant}/${name}.svg`);
+			nodes[variant] = parseSvg(svg, `${variant}/${relative}`);
 		}
 
 		const source = `/* Generated by scripts/build-icons.ts. Do not edit. */
@@ -236,20 +289,16 @@ export const ${pascal} = createIcon(${JSON.stringify(pascal)}, {
 	duotone: ${serializeNodes(nodes.duotone)},
 });
 `;
-		await writeFile(join(outDir, `${name}.ts`), source);
-		barrelExports.push(`export { ${pascal} } from "./${name}";`);
-		catalogImports.push(`import { ${pascal} } from "./icons/${name}";`);
+		await writeFile(join(outDir, `${icon.name}.ts`), source);
+		barrelExports.push(`export { ${pascal} } from "./${icon.name}";`);
+		catalogImports.push(`import { ${pascal} } from "./icons/${icon.name}";`);
 
-		const entry = meta[name];
-		if (!entry) {
-			throw new Error(`Missing meta for ${name}`);
-		}
 		catalogEntries.push(
 			`	{
-		name: ${JSON.stringify(name)},
+		name: ${JSON.stringify(icon.name)},
 		pascalName: ${JSON.stringify(pascal)},
-		category: ${JSON.stringify(entry.category)},
-		tags: ${JSON.stringify(entry.tags)},
+		category: ${JSON.stringify(icon.category)},
+		tags: ${JSON.stringify(meta[icon.name]?.tags ?? [])},
 		component: ${pascal},
 	}`,
 		);
@@ -262,14 +311,28 @@ ${barrelExports.length > 0 ? `${barrelExports.join("\n")}\n` : "export {};\n"}`;
 		catalogImports.length > 0 ? `\n${catalogImports.join("\n")}` : "";
 	const catalogArray =
 		catalogEntries.length > 0 ? `[\n${catalogEntries.join(",\n")},\n]` : "[]";
+	const categoriesLiteral =
+		categories.length > 0
+			? `\n${categories.map((item) => `\t${JSON.stringify(item)},`).join("\n")}\n`
+			: "";
+
+	const categoriesSource = `/* Generated by scripts/build-icons.ts. Do not edit. */
+export const ICON_CATEGORIES = [${categoriesLiteral}] as const;
+
+export type IconCategory = (typeof ICON_CATEGORIES)[number];
+`;
 
 	const catalog = `/* Generated by scripts/build-icons.ts. Do not edit. */
-import type { HoneyIcon } from "./create-icon";${catalogImportsBlock}
+import type { HoneyIcon } from "./create-icon";
+import type { IconCategory } from "./categories";${catalogImportsBlock}
+
+export type { IconCategory } from "./categories";
+export { ICON_CATEGORIES } from "./categories";
 
 export type CatalogItem = {
 	name: string;
 	pascalName: string;
-	category: string;
+	category: IconCategory;
 	tags: string[];
 	component: HoneyIcon;
 };
@@ -278,8 +341,11 @@ export const catalog: CatalogItem[] = ${catalogArray};
 `;
 
 	await writeFile(join(outDir, "index.ts"), barrel);
+	await writeFile(categoriesPath, categoriesSource);
 	await writeFile(catalogPath, catalog);
-	console.log(`Generated ${names.length} icons × ${VARIANTS.length} variants`);
+	console.log(
+		`Generated ${icons.length} icons × ${VARIANTS.length} variants across ${categories.length} categories`,
+	);
 }
 
 await main();
