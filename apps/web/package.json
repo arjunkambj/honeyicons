@@ -9,6 +9,7 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"@honeyicons/react": "workspace:*",
 		"@honeyicons/ui": "workspace:*",
 		"@swc/helpers": "^0.5.23",
 		"babel-plugin-react-compiler": "^1.0.0",
