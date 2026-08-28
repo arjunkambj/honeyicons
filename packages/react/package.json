@@ -1,0 +1,26 @@
+{
+	"name": "@honeyicons/react",
+	"version": "0.0.1",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./src/index.ts",
+		"./catalog": "./src/catalog.ts"
+	},
+	"files": [
+		"src"
+	],
+	"scripts": {
+		"generate": "bun run ../../scripts/build-icons.ts",
+		"check-types": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"react": ">=18"
+	},
+	"devDependencies": {
+		"@honeyicons/config": "workspace:*",
+		"@types/react": "catalog:",
+		"react": "catalog:",
+		"typescript": "catalog:"
+	}
+}

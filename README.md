@@ -61,10 +61,21 @@ If you want to add app-specific blocks instead of shared primitives, run the sha
 
 ```
 honeyicons/
+├── icons/                 # SVG source (linear, bold, duotone)
 ├── apps/
-│   ├── web/         # Frontend application (Next.js)
+│   └── web/               # Gallery site (Next.js)
 ├── packages/
-│   ├── ui/          # Shared shadcn/ui components and styles
+│   ├── react/             # @honeyicons/react
+│   ├── ui/                # Site chrome (shadcn). not the icon library
+│   └── config/
+└── scripts/
+    └── build-icons.ts     # svg → React components
+```
+
+Icons live in `icons/{linear,bold,duotone}/name.svg` (24×24). Same filename in all three folders, plus an entry in `icons/meta.json`. Then:
+
+```bash
+bun run generate:icons
 ```
 
 ## Available Scripts
@@ -73,4 +84,5 @@ honeyicons/
 - `bun run build`: Build all applications
 - `bun run dev:web`: Start only the web application
 - `bun run check-types`: Check TypeScript types across all apps
+- `bun run generate:icons`: Generate `@honeyicons/react` components from SVGs
 - `bun run check`: Run Biome formatting and linting

@@ -27,6 +27,7 @@
 		"build": "turbo run build",
 		"check-types": "turbo run check-types",
 		"dev:web": "turbo run dev -F web --",
+		"generate:icons": "bun run scripts/build-icons.ts",
 		"check": "biome check --write ."
 	},
 	"devDependencies": {

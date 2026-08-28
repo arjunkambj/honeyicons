@@ -41,6 +41,19 @@
       "name": "@honeyicons/config",
       "version": "0.0.0",
     },
+    "packages/react": {
+      "name": "@honeyicons/react",
+      "version": "0.0.1",
+      "devDependencies": {
+        "@honeyicons/config": "workspace:*",
+        "@types/react": "catalog:",
+        "react": "catalog:",
+        "typescript": "catalog:",
+      },
+      "peerDependencies": {
+        "react": ">=18",
+      },
+    },
     "packages/ui": {
       "name": "@honeyicons/ui",
       "version": "0.0.0",
@@ -181,6 +194,8 @@
     "@floating-ui/utils": ["@floating-ui/utils@0.2.12", "", {}, "sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww=="],
 
     "@honeyicons/config": ["@honeyicons/config@workspace:packages/config"],
+
+    "@honeyicons/react": ["@honeyicons/react@workspace:packages/react"],
 
     "@honeyicons/ui": ["@honeyicons/ui@workspace:packages/ui"],
 
