@@ -4,7 +4,6 @@ import { Button } from "@honeyicons/ui/components/button";
 import { Separator } from "@honeyicons/ui/components/separator";
 import {
 	GithubIcon,
-	Honey01Icon,
 	Moon02Icon,
 	NewTwitterIcon,
 	Sun03Icon,
@@ -13,6 +12,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { BrandMark } from "@/components/brand-mark";
 
 const GITHUB_URL = "https://github.com/arjunkambj/honeyicons";
 const X_URL = "https://x.com";
@@ -55,9 +55,7 @@ export function Navbar() {
 		<header className="sticky top-0 z-10 border-transparent border-b bg-background/80 backdrop-blur-md">
 			<div className="mx-auto flex h-14 w-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
 				<Link href="/" className="flex items-center gap-2 font-medium text-sm">
-					<span className="flex size-7 items-center justify-center rounded-lg bg-foreground text-background">
-						<HugeiconsIcon icon={Honey01Icon} strokeWidth={2} />
-					</span>
+					<BrandMark className="size-6 text-zinc-950 dark:text-zinc-50" />
 					honeyicons
 				</Link>
 

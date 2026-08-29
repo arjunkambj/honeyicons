@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <style>
+    .mark { stroke: #18181b; }
+    @media (prefers-color-scheme: dark) {
+      .mark { stroke: #fafafa; }
+    }
+  </style>
+  <path
+    class="mark"
+    d="M12 2L20.66 7L20.66 17L12 22L3.34 17L3.34 7Z"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+  <path
+    class="mark"
+    d="M12 6.75L16.547 9.375L16.547 14.625L12 17.25L7.453 14.625L7.453 9.375Z"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+</svg>
