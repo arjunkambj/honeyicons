@@ -4,12 +4,7 @@ import type { IconVariant } from "@honeyicons/react";
 import { catalog } from "@honeyicons/react/catalog";
 import { Tabs, TabsContent } from "@honeyicons/ui/components/tabs";
 import { useEffect, useMemo, useRef, useState } from "react";
-import {
-	type CategoryFilter,
-	SIZE_DEFAULT,
-	STROKE_DEFAULT,
-	VARIANT_META,
-} from "./constants";
+import { type CategoryFilter, SIZE_DEFAULT, VARIANT_META } from "./constants";
 import { IconGrid } from "./icon-grid";
 import { IconSearch } from "./icon-search";
 import { IconSidebar } from "./icon-sidebar";
@@ -21,7 +16,6 @@ export function IconBrowser() {
 	const [category, setCategory] = useState<CategoryFilter>("all");
 	const [variant, setVariant] = useState<IconVariant>("linear");
 	const [size, setSize] = useState(SIZE_DEFAULT);
-	const [strokeWidth, setStrokeWidth] = useState(STROKE_DEFAULT);
 
 	useEffect(() => {
 		function onKeyDown(event: KeyboardEvent) {
@@ -34,17 +28,22 @@ export function IconBrowser() {
 		return () => window.removeEventListener("keydown", onKeyDown);
 	}, []);
 
+	const variantItems = useMemo(
+		() => catalog.filter((item) => item.variants.includes(variant)),
+		[variant],
+	);
+
 	const counts = useMemo(() => {
-		const next: Record<string, number> = { all: catalog.length };
-		for (const item of catalog) {
+		const next: Record<string, number> = { all: variantItems.length };
+		for (const item of variantItems) {
 			next[item.category] = (next[item.category] ?? 0) + 1;
 		}
 		return next;
-	}, []);
+	}, [variantItems]);
 
 	const items = useMemo(() => {
 		const needle = query.trim().toLowerCase();
-		return catalog.filter((item) => {
+		return variantItems.filter((item) => {
 			if (category !== "all" && item.category !== category) {
 				return false;
 			}
@@ -57,7 +56,7 @@ export function IconBrowser() {
 				item.tags.some((tag) => tag.toLowerCase().includes(needle))
 			);
 		});
-	}, [category, query]);
+	}, [category, query, variantItems]);
 
 	return (
 		<Tabs
@@ -87,11 +86,8 @@ export function IconBrowser() {
 				/>
 				<div className="flex min-w-0 flex-1 flex-col gap-6">
 					<IconToolbar
-						variant={variant}
 						size={size}
 						onSizeChange={setSize}
-						strokeWidth={strokeWidth}
-						onStrokeWidthChange={setStrokeWidth}
 						shown={items.length}
 					/>
 					{VARIANT_META.map((item) => (
@@ -100,8 +96,8 @@ export function IconBrowser() {
 								items={items}
 								variant={item.id}
 								size={size}
-								strokeWidth={strokeWidth}
 								hasCatalog={catalog.length > 0}
+								hasVariantIcons={variantItems.length > 0}
 							/>
 						</TabsContent>
 					))}

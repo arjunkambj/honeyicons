@@ -6,7 +6,6 @@ export const ICON_CATEGORIES = [
 	"chat",
 	"editor",
 	"files",
-	"git",
 	"layout",
 	"media",
 	"settings",

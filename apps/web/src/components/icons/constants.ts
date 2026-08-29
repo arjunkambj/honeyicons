@@ -4,7 +4,6 @@ import {
 	ArrowRight01Icon,
 	ChatIcon,
 	File01Icon,
-	GitBranchIcon,
 	Image01Icon,
 	LayoutDashboardIcon,
 	LayoutGridIcon,
@@ -21,11 +20,6 @@ export const SIZE_MIN = 16;
 export const SIZE_MAX = 96;
 export const SIZE_DEFAULT = 24;
 export const SIZE_MAJOR_STEP = 4;
-export const STROKE_MIN = 0.5;
-export const STROKE_MAX = 2.5;
-export const STROKE_STEP = 0.25;
-export const STROKE_MAJOR_STEP = 0.5;
-export const STROKE_DEFAULT = 1.5;
 
 export type CategoryFilter = "all" | IconCategory;
 
@@ -41,7 +35,6 @@ export const CATEGORY_META: {
 	{ id: "chat", label: "Chat", icon: ChatIcon },
 	{ id: "editor", label: "Editor", icon: SourceCodeIcon },
 	{ id: "files", label: "Files", icon: File01Icon },
-	{ id: "git", label: "Git", icon: GitBranchIcon },
 	{ id: "layout", label: "Layout", icon: LayoutDashboardIcon },
 	{ id: "media", label: "Media", icon: Image01Icon },
 	{ id: "settings", label: "Settings", icon: Settings01Icon },

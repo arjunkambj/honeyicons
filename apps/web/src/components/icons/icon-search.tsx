@@ -1,13 +1,12 @@
 "use client";
 
+import { Search } from "@honeyicons/react";
 import {
 	InputGroup,
 	InputGroupAddon,
 	InputGroupInput,
 } from "@honeyicons/ui/components/input-group";
 import { Kbd } from "@honeyicons/ui/components/kbd";
-import { ArrowRight01Icon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 import type { RefObject } from "react";
 
 type IconSearchProps = {
@@ -20,7 +19,7 @@ export function IconSearch({ value, onChange, inputRef }: IconSearchProps) {
 	return (
 		<InputGroup className="mx-auto h-11 max-w-xl">
 			<InputGroupAddon>
-				<HugeiconsIcon icon={ArrowRight01Icon} strokeWidth={2} />
+				<Search size={16} />
 			</InputGroupAddon>
 			<InputGroupInput
 				ref={inputRef}

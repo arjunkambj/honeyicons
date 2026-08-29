@@ -1,6 +1,5 @@
 "use client";
 
-import type { IconVariant } from "@honeyicons/react";
 import { Slider } from "@honeyicons/ui/components/slider";
 import { TabsList, TabsTrigger } from "@honeyicons/ui/components/tabs";
 import { cn } from "@honeyicons/ui/lib/utils";
@@ -9,20 +8,13 @@ import {
 	SIZE_MAJOR_STEP,
 	SIZE_MAX,
 	SIZE_MIN,
-	STROKE_MAJOR_STEP,
-	STROKE_MAX,
-	STROKE_MIN,
-	STROKE_STEP,
 	sliderNumber,
 	VARIANT_META,
 } from "./constants";
 
 type IconToolbarProps = {
-	variant: IconVariant;
 	size: number;
 	onSizeChange: (size: number) => void;
-	strokeWidth: number;
-	onStrokeWidthChange: (strokeWidth: number) => void;
 	shown: number;
 };
 
@@ -53,16 +45,7 @@ function ToolbarSlider({
 	);
 }
 
-export function IconToolbar({
-	variant,
-	size,
-	onSizeChange,
-	strokeWidth,
-	onStrokeWidthChange,
-	shown,
-}: IconToolbarProps) {
-	const strokeDisabled = variant === "bold";
-
+export function IconToolbar({ size, onSizeChange, shown }: IconToolbarProps) {
 	return (
 		<div className="flex flex-wrap items-center gap-3">
 			<TabsList>
@@ -83,19 +66,6 @@ export function IconToolbar({
 				majorStep={SIZE_MAJOR_STEP}
 				value={size}
 				onValueChange={(value) => onSizeChange(sliderNumber(value))}
-			/>
-
-			<ToolbarSlider
-				label="Thickness"
-				valueText={`${strokeWidth.toFixed(2).replace(/\.?0+$/, "")} px`}
-				sliderClassName="w-32"
-				min={STROKE_MIN}
-				max={STROKE_MAX}
-				step={STROKE_STEP}
-				majorStep={STROKE_MAJOR_STEP}
-				value={strokeWidth}
-				disabled={strokeDisabled}
-				onValueChange={(value) => onStrokeWidthChange(sliderNumber(value))}
 			/>
 
 			<p className="ml-auto text-muted-foreground text-sm">{shown} shown</p>

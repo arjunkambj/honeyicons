@@ -15,10 +15,20 @@ export type IconProps = Omit<
 	title?: string;
 };
 
+function paintsStroke(attrs: Record<string, string>) {
+	const stroke = attrs.stroke;
+	return Boolean(stroke && stroke !== "none");
+}
+
+function paintsFill(attrs: Record<string, string>) {
+	const fill = attrs.fill;
+	return Boolean(fill && fill !== "none");
+}
+
 export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
 	{
 		iconNode,
-		variant = "linear",
+		variant: _variant = "linear",
 		size = 24,
 		color = "currentColor",
 		strokeWidth = 1.5,
@@ -31,7 +41,9 @@ export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
 	},
 	ref,
 ) {
-	const isLinear = variant === "linear";
+	// Solar linear icons are filled outlines. A root stroke would draw a
+	// second outline on top of the already-baked weight.
+	const hasStroke = iconNode.some(([, attrs]) => paintsStroke(attrs));
 
 	return (
 		<svg
@@ -40,11 +52,11 @@ export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
 			width={size}
 			height={size}
 			viewBox="0 0 24 24"
-			fill={isLinear ? "none" : "currentColor"}
-			stroke="currentColor"
-			strokeWidth={isLinear || variant === "duotone" ? strokeWidth : undefined}
-			strokeLinecap="round"
-			strokeLinejoin="round"
+			fill="none"
+			stroke={hasStroke ? "currentColor" : undefined}
+			strokeWidth={hasStroke ? strokeWidth : undefined}
+			strokeLinecap={hasStroke ? "round" : undefined}
+			strokeLinejoin={hasStroke ? "round" : undefined}
 			color={color}
 			className={className}
 			style={style}
@@ -56,14 +68,20 @@ export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
 			<title>{title ?? ""}</title>
 			{iconNode.map(([tag, attrs], index) => {
 				const isSecondary = attrs["data-slot"] === "secondary";
-				const mapped = isSecondary
-					? {
-							...attrs,
-							stroke: "none",
-							fill: secondaryColor ?? attrs.fill ?? "currentColor",
-							opacity: secondaryColor ? "1" : String(secondaryOpacity),
-						}
-					: attrs;
+				if (isSecondary) {
+					return createElement(tag, {
+						...attrs,
+						stroke: "none",
+						fill: secondaryColor ?? attrs.fill ?? "currentColor",
+						opacity: secondaryColor ? "1" : String(secondaryOpacity),
+						key: index,
+					});
+				}
+
+				const mapped =
+					hasStroke && paintsFill(attrs) && !paintsStroke(attrs)
+						? { ...attrs, stroke: "none" }
+						: attrs;
 				return createElement(tag, { ...mapped, key: index });
 			})}
 		</svg>

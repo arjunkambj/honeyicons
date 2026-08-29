@@ -8,10 +8,9 @@ type IconCardProps = {
 	item: CatalogItem;
 	variant: IconVariant;
 	size: number;
-	strokeWidth: number;
 };
 
-export function IconCard({ item, variant, size, strokeWidth }: IconCardProps) {
+export function IconCard({ item, variant, size }: IconCardProps) {
 	const Icon = item.component;
 
 	async function copy() {
@@ -27,11 +26,7 @@ export function IconCard({ item, variant, size, strokeWidth }: IconCardProps) {
 			className="flex flex-col items-center gap-3 rounded-2xl bg-muted/70 px-3 py-4 text-foreground transition-colors hover:bg-muted"
 			style={{ minHeight: size + 56 }}
 		>
-			<Icon
-				variant={variant}
-				size={size}
-				strokeWidth={variant === "bold" ? undefined : strokeWidth}
-			/>
+			<Icon variant={variant} size={size} />
 			<span className="max-w-full truncate text-muted-foreground text-xs">
 				{item.name}
 			</span>

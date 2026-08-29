@@ -1,11 +1,22 @@
-import { forwardRef } from "react";
+import {
+	type ForwardRefExoticComponent,
+	forwardRef,
+	type RefAttributes,
+} from "react";
 
 import { Icon, type IconProps } from "./icon";
-import type { IconNodeMap } from "./types";
+import { ICON_VARIANTS, type IconNodeMap, type IconVariant } from "./types";
 
 export type HoneyIconProps = Omit<IconProps, "iconNode">;
 
-export function createIcon(name: string, nodes: IconNodeMap) {
+export type HoneyIcon = ForwardRefExoticComponent<
+	HoneyIconProps & RefAttributes<SVGSVGElement>
+> & {
+	variants: readonly IconVariant[];
+};
+
+export function createIcon(name: string, nodes: IconNodeMap): HoneyIcon {
+	const variants = ICON_VARIANTS.filter((variant) => nodes[variant]);
 	const Component = forwardRef<SVGSVGElement, HoneyIconProps>(
 		function HoneyIcon({ variant = "linear", ...props }, ref) {
 			const iconNode = nodes[variant] ?? nodes.linear;
@@ -16,9 +27,8 @@ export function createIcon(name: string, nodes: IconNodeMap) {
 				<Icon ref={ref} iconNode={iconNode} variant={variant} {...props} />
 			);
 		},
-	);
+	) as HoneyIcon;
 	Component.displayName = name;
+	Component.variants = variants;
 	return Component;
 }
-
-export type HoneyIcon = ReturnType<typeof createIcon>;
