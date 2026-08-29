@@ -20,9 +20,11 @@ import type { IconSvgElement } from "@hugeicons/react";
 export const SIZE_MIN = 16;
 export const SIZE_MAX = 96;
 export const SIZE_DEFAULT = 24;
+export const SIZE_MAJOR_STEP = 4;
 export const STROKE_MIN = 0.5;
 export const STROKE_MAX = 2.5;
 export const STROKE_STEP = 0.25;
+export const STROKE_MAJOR_STEP = 0.5;
 export const STROKE_DEFAULT = 1.5;
 
 export type CategoryFilter = "all" | IconCategory;

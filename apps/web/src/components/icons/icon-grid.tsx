@@ -35,7 +35,7 @@ export function IconGrid({
 					<EmptyDescription>
 						{hasCatalog
 							? "Try another search or category."
-							: "Add SVGs under icons/linear, icons/bold, and icons/duotone, then run bun run generate:icons."}
+							: "Add SVGs under icons/linear/{category}, then run bun run generate:icons."}
 					</EmptyDescription>
 				</EmptyHeader>
 			</Empty>

@@ -10,6 +10,7 @@ export const ICON_CATEGORIES = [
 	"layout",
 	"media",
 	"settings",
+	"social",
 	"spinner",
 	"status",
 	"user",

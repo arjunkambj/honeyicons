@@ -76,8 +76,8 @@ export function Hero() {
 					className="mt-6 max-w-lg animate-hero-enter text-pretty text-base text-muted-foreground sm:text-lg"
 					style={{ animationDelay: "120ms" }}
 				>
-					Linear, bold, and duotone on one 24 grid. A send icon you draw in
-					March still matches one you add in November.
+					Linear, bold, and duotone on a 24 grid. A send icon you draw in March
+					still matches one you add in November.
 				</p>
 				<div
 					className="mt-10 flex animate-hero-enter flex-wrap items-center justify-center gap-3"
