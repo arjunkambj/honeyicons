@@ -23,6 +23,7 @@
 
 .navLinks {
 	display: flex;
+	flex: 1;
 	align-items: center;
 	gap: 32px;
 	color: var(--muted-foreground);
@@ -33,6 +34,9 @@
 }
 .navLinks a:hover {
 	color: var(--foreground);
+}
+.docsLink {
+	margin-left: auto;
 }
 .gradientPanel {
 	position: relative;
@@ -510,5 +514,8 @@
 		order: 3;
 		flex-basis: 100%;
 		justify-content: center;
+	}
+	.docsLink {
+		margin-left: 0;
 	}
 }

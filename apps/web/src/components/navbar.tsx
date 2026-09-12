@@ -77,8 +77,10 @@ export function Navbar() {
 						<BrandLogo className="h-5 w-28 sm:h-6 sm:w-[148px] min-[380px]:w-[120px]" />
 					</Link>
 					<nav aria-label="Main navigation" className={styles.navLinks}>
-						<Link href="/docs">Docs</Link>
 						<Link href="/icons">Explore icons</Link>
+						<Link href="/docs" className={styles.docsLink}>
+							Docs
+						</Link>
 					</nav>
 					<div className={styles.navActions}>
 						<ThemeToggle />
