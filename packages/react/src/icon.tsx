@@ -1,6 +1,6 @@
 import { createElement, forwardRef, type SVGProps } from "react";
 
-import type { IconNode, IconVariant } from "./types";
+import type { IconNode, IconVariant } from "./types.js";
 
 export type IconProps = Omit<
 	SVGProps<SVGSVGElement>,

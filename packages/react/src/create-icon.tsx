@@ -4,8 +4,8 @@ import {
 	type RefAttributes,
 } from "react";
 
-import { Icon, type IconProps } from "./icon";
-import { ICON_VARIANTS, type IconNodeMap, type IconVariant } from "./types";
+import { Icon, type IconProps } from "./icon.js";
+import { ICON_VARIANTS, type IconNodeMap, type IconVariant } from "./types.js";
 
 export type HoneyIconProps = Omit<IconProps, "iconNode">;
 

@@ -1,28 +1,45 @@
 {
 	"name": "@honeyicons/react",
 	"version": "0.0.1",
-	"type": "module",
-	"sideEffects": false,
-	"exports": {
-		".": "./src/index.ts",
-		"./catalog": "./src/catalog.ts"
-	},
+	"description": "Carefully crafted SVG icons for React, with TypeScript support.",
 	"files": [
-		"src",
+		"dist",
 		"NOTICE.md",
 		"MIGRATION.md"
 	],
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.js",
+	"types": "./dist/types/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/types/index.d.ts",
+			"import": "./dist/index.js",
+			"default": "./dist/index.js"
+		},
+		"./catalog": {
+			"types": "./dist/types/catalog.d.ts",
+			"import": "./dist/catalog.js",
+			"default": "./dist/catalog.js"
+		}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
+		"build": "esbuild src/index.ts src/catalog.ts --bundle --outdir=dist --platform=neutral --format=esm --external:react --jsx=automatic && tsc -p tsconfig.build.json",
+		"prepack": "bun run build",
 		"generate": "bun run ../../scripts/build-icons.ts",
 		"check-types": "tsc --noEmit"
-	},
-	"peerDependencies": {
-		"react": ">=18"
 	},
 	"devDependencies": {
 		"@honeyicons/config": "workspace:*",
 		"@types/react": "catalog:",
+		"esbuild": "^0.28.2",
 		"react": "catalog:",
 		"typescript": "catalog:"
+	},
+	"peerDependencies": {
+		"react": ">=18"
 	}
 }
