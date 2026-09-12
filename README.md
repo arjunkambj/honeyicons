@@ -9,7 +9,7 @@ This project was created with [Better-T-Stack](https://github.com/AmanVarshney01
 - **TailwindCSS** - Utility-first CSS for rapid UI development
 - **Shared UI package** - shadcn/ui primitives live in `packages/ui`
 - **Turborepo** - Optimized monorepo build system
-- **Biome** - Linting and formatting
+- **Oxlint + Oxfmt** - Linting and formatting
 
 ## Getting Started
 
@@ -55,7 +55,7 @@ If you want to add app-specific blocks instead of shared primitives, run the sha
 
 ## Git Hooks and Formatting
 
-- Run checks: `bun run check`
+- Run lint and format: `bun run check`
 
 ## Project Structure
 
@@ -95,4 +95,7 @@ Third-party icon sources and adaptation details are recorded in
 - `bun run dev:web`: Start only the web application
 - `bun run check-types`: Check TypeScript types across all apps
 - `bun run generate:icons`: Generate `@honeyicons/react` components from SVGs
-- `bun run check`: Run Biome formatting and linting
+- `bun run lint`: Lint the repo with Oxlint
+- `bun run format`: Format the repo with Oxfmt
+- `bun run format:check`: Check formatting without changing files
+- `bun run check`: Auto-fix lint issues and format the repo

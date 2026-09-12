@@ -1,3 +1,3 @@
 {
-  "extends": "@honeyicons/config/tsconfig.base.json"
+	"extends": "@honeyicons/config/tsconfig.base.json"
 }

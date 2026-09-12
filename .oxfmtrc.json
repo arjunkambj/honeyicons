@@ -1,0 +1,20 @@
+{
+	"$schema": "./node_modules/oxfmt/configuration_schema.json",
+	"printWidth": 80,
+	"useTabs": true,
+	"singleQuote": false,
+	"semi": true,
+	"trailingComma": "all",
+	"ignorePatterns": [
+		"**/dist/**",
+		"**/node_modules/**",
+		"**/.turbo/**",
+		"**/.wrangler/**",
+		"**/routeTree.gen.ts",
+		"**/packages/react/src/icons/**",
+		"packages/react/src/catalog.ts",
+		"packages/react/src/categories.ts",
+		"**/bun.lock",
+		"**/*.svg"
+	]
+}

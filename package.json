@@ -26,12 +26,16 @@
 		"check-types": "turbo run check-types",
 		"dev:web": "turbo run dev -F web --",
 		"generate:icons": "bun run scripts/build-icons.ts",
-		"check": "biome check --write ."
+		"lint": "oxlint .",
+		"format": "oxfmt",
+		"format:check": "oxfmt --check",
+		"check": "oxlint --fix . && oxfmt"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.5.6",
 		"@honeyicons/config": "workspace:*",
 		"@types/node": "catalog:",
+		"oxfmt": "^0.67.0",
+		"oxlint": "^1.82.0",
 		"turbo": "^2.10.7",
 		"typescript": "catalog:"
 	},
