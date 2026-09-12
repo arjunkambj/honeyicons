@@ -287,6 +287,11 @@ preserving the overlapping shapes and their proportions. It inherits the
 standard Honeyicons stroke, caps, and joins. The MIT notice below also applies
 to it.
 
+`Bell` is adapted from `BellIcon` in `@hugeicons/core-free-icons` version 4.3.0.
+It preserves the original silhouette, smooth crown and lower corner curves on
+the 24-unit grid, and inherits the standard Honeyicons 1.5-unit stroke and
+rounded caps and joins. The MIT notice below also applies to it.
+
 `Sun` is adapted from `Sun01Icon` in `@hugeicons/core-free-icons` version 4.3.0.
 It retains its original geometry, including its eight dotted rays, and inherits
 the standard Honeyicons stroke, caps, and joins. The MIT notice below also

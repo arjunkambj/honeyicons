@@ -3,8 +3,8 @@ import { createIcon } from "../create-icon";
 
 export const AlignLeft = createIcon("AlignLeft", {
 	linear: [
-		["path", { d: "M3.75 4.75H20.25", stroke: "currentColor" }],
-		["path", { d: "M3.75 12H12.25", stroke: "currentColor" }],
-		["path", { d: "M3.75 19.25H20.25", stroke: "currentColor" }],
+		["path", { d: "M3 6H21", stroke: "currentColor" }],
+		["path", { d: "M3 12H12", stroke: "currentColor" }],
+		["path", { d: "M3 18H21", stroke: "currentColor" }],
 	],
 });
