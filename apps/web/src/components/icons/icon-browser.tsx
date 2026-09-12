@@ -16,6 +16,7 @@ export function IconBrowser() {
 	const [category, setCategory] = useState<CategoryFilter>("all");
 	const [variant, setVariant] = useState<IconVariant>("linear");
 	const [size, setSize] = useState(SIZE_DEFAULT);
+	const [guides, setGuides] = useState(false);
 
 	useEffect(() => {
 		function onKeyDown(event: KeyboardEvent) {
@@ -72,9 +73,6 @@ export function IconBrowser() {
 				<h1 className="font-heading font-medium text-4xl tracking-tight sm:text-5xl">
 					Browse {catalog.length > 0 ? `${catalog.length} ` : ""}icons
 				</h1>
-				<p className="text-muted-foreground">
-					Linear, bold, and duotone on a 24 grid
-				</p>
 				<IconSearch value={query} onChange={setQuery} inputRef={inputRef} />
 			</div>
 
@@ -88,6 +86,8 @@ export function IconBrowser() {
 					<IconToolbar
 						size={size}
 						onSizeChange={setSize}
+						guides={guides}
+						onGuidesChange={setGuides}
 						shown={items.length}
 					/>
 					{VARIANT_META.map((item) => (
@@ -96,6 +96,7 @@ export function IconBrowser() {
 								items={items}
 								variant={item.id}
 								size={size}
+								guides={guides}
 								hasCatalog={catalog.length > 0}
 								hasVariantIcons={variantItems.length > 0}
 							/>

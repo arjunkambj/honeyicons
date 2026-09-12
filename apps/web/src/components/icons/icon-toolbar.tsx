@@ -2,6 +2,7 @@
 
 import { Slider } from "@honeyicons/ui/components/slider";
 import { TabsList, TabsTrigger } from "@honeyicons/ui/components/tabs";
+import { Toggle } from "@honeyicons/ui/components/toggle";
 import { cn } from "@honeyicons/ui/lib/utils";
 import type { ComponentProps } from "react";
 import {
@@ -16,6 +17,8 @@ type IconToolbarProps = {
 	size: number;
 	onSizeChange: (size: number) => void;
 	shown: number;
+	guides: boolean;
+	onGuidesChange: (guides: boolean) => void;
 };
 
 function ToolbarSlider({
@@ -45,7 +48,13 @@ function ToolbarSlider({
 	);
 }
 
-export function IconToolbar({ size, onSizeChange, shown }: IconToolbarProps) {
+export function IconToolbar({
+	size,
+	onSizeChange,
+	shown,
+	guides,
+	onGuidesChange,
+}: IconToolbarProps) {
 	return (
 		<div className="flex flex-wrap items-center gap-3">
 			<TabsList>
@@ -69,6 +78,15 @@ export function IconToolbar({ size, onSizeChange, shown }: IconToolbarProps) {
 				onValueChange={(value) => onSizeChange(sliderNumber(value))}
 			/>
 
+			<Toggle
+				variant="outline"
+				size="sm"
+				pressed={guides}
+				onPressedChange={onGuidesChange}
+				aria-label="Show alignment guides"
+			>
+				Guides
+			</Toggle>
 			<p className="ml-auto text-muted-foreground text-sm">{shown} shown</p>
 		</div>
 	);
