@@ -14,9 +14,8 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@honeyicons/react": "workspace:*",
     "@base-ui/react": "^1.6.0",
-    "@hugeicons/core-free-icons": "catalog:",
-    "@hugeicons/react": "catalog:",
     "@shadcn/react": "^0.2.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
