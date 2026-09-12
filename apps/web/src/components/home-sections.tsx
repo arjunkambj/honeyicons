@@ -192,7 +192,12 @@ export function AgentTools() {
 }
 
 type FooterLink =
-	| { label: string; to: "/docs" | "/icons"; href?: never; icon: HoneyIcon }
+	| {
+			label: string;
+			to: "/docs" | "/icons" | "/changelog";
+			href?: never;
+			icon: HoneyIcon;
+	  }
 	| { label: string; href: string; to?: never; icon: HoneyIcon };
 
 const footerGroups: {
@@ -204,6 +209,7 @@ const footerGroups: {
 		links: [
 			{ label: "React", to: "/docs", icon: ReactIcon },
 			{ label: "Icon catalog", to: "/icons", icon: FileCode },
+			{ label: "Changelog", to: "/changelog", icon: File },
 			{ label: "AI context", href: "/llms.txt", icon: Brain },
 		],
 	},
