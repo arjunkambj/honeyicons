@@ -57,4 +57,4 @@ coverage
 tmp
 temp
 
-apps/web/src/app/install/
+.wrangler

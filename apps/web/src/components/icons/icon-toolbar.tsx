@@ -1,5 +1,3 @@
-"use client";
-
 import { Slider } from "@honeyicons/ui/components/slider";
 import { TabsList, TabsTrigger } from "@honeyicons/ui/components/tabs";
 import { Toggle } from "@honeyicons/ui/components/toggle";

@@ -16,7 +16,7 @@ import {
 import { catalog } from "@honeyicons/react/catalog";
 import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
-import Link from "next/link";
+import { Link } from "@tanstack/react-router";
 import { BrandMark } from "@/components/brand-mark";
 import { InstallCommand } from "@/components/install-command";
 import styles from "@/components/marketing.module.css";
@@ -66,7 +66,7 @@ export function Hero() {
 						size="lg"
 						className="px-5"
 						nativeButton={false}
-						render={<Link href="/icons" />}
+						render={<Link to="/icons" />}
 					>
 						<Search data-icon="inline-start" />
 						Explore icons
@@ -76,7 +76,7 @@ export function Hero() {
 						variant="outline"
 						className="px-5"
 						nativeButton={false}
-						render={<Link href="/docs" />}
+						render={<Link to="/docs" />}
 					>
 						Get started
 						<ChevronRight data-icon="inline-end" />

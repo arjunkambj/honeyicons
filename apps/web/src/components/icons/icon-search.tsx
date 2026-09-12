@@ -1,5 +1,3 @@
-"use client";
-
 import { Search } from "@honeyicons/react";
 import {
 	InputGroup,

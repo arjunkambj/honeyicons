@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
 import { CATEGORY_META, type CategoryFilter } from "./constants";

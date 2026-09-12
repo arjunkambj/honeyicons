@@ -1,5 +1,3 @@
-"use client";
-
 import type { IconVariant } from "@honeyicons/react";
 import { catalog } from "@honeyicons/react/catalog";
 import { Tabs, TabsContent } from "@honeyicons/ui/components/tabs";

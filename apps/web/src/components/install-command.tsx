@@ -1,5 +1,3 @@
-"use client";
-
 import { Check, Copy } from "@honeyicons/react";
 import { cn } from "@honeyicons/ui/lib/utils";
 import { useState } from "react";

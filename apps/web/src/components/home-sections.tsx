@@ -26,6 +26,7 @@ import {
 import { catalog } from "@honeyicons/react/catalog";
 import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
+import { Link } from "@tanstack/react-router";
 import { BrandMark } from "@/components/brand-mark";
 import { InstallCommand } from "@/components/install-command";
 import styles from "@/components/marketing.module.css";
@@ -82,8 +83,8 @@ export function Community() {
 			</div>
 			<div className={styles.githubScene}>
 				<div className={styles.githubWallpaper} aria-hidden="true">
-					{sampleIcons.map((Icon, index) => (
-						<Icon key={index} size={28} />
+					{sampleIcons.map((Icon) => (
+						<Icon key={Icon.displayName} size={28} />
 					))}
 				</div>
 				<Button
@@ -190,20 +191,19 @@ export function AgentTools() {
 	);
 }
 
+type FooterLink =
+	| { label: string; to: "/docs" | "/icons"; href?: never; icon: HoneyIcon }
+	| { label: string; href: string; to?: never; icon: HoneyIcon };
+
 const footerGroups: {
 	title: string;
-	links: {
-		label: string;
-		href: string;
-		icon: HoneyIcon;
-	}[];
+	links: FooterLink[];
 }[] = [
 	{
 		title: "Documentation",
 		links: [
-			{ label: "React", href: "/docs", icon: ReactIcon },
-			{ label: "Icon catalog", href: "/icons", icon: FileCode },
-
+			{ label: "React", to: "/docs", icon: ReactIcon },
+			{ label: "Icon catalog", to: "/icons", icon: FileCode },
 			{ label: "AI context", href: "/llms.txt", icon: Brain },
 		],
 	},
@@ -217,10 +217,10 @@ export function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.footerBrand}>
-				<a href="/" className="flex items-center gap-3 font-semibold text-lg">
+				<Link to="/" className="flex items-center gap-3 font-semibold text-lg">
 					<BrandMark className="size-7" />
 					honeyicons
-				</a>
+				</Link>
 				<p>
 					© {new Date().getFullYear()} Honeyicons.
 					<br />
@@ -233,19 +233,33 @@ export function Footer() {
 				<nav key={title} aria-label={title}>
 					<h2>{title}</h2>
 					<ul className={styles.footerLinks}>
-						{links.map(({ label, href, icon: Icon }) => (
-							<li key={label}>
-								<a
-									href={href}
-									target={href.startsWith("https:") ? "_blank" : undefined}
-									rel={href.startsWith("https:") ? "noreferrer" : undefined}
-								>
-									<Icon size={18} />
-									{label}
-									{href.startsWith("https:") && <ArrowUpRight size={14} />}
-								</a>
-							</li>
-						))}
+						{links.map((link) => {
+							const Icon = link.icon;
+							if (link.to) {
+								return (
+									<li key={link.label}>
+										<Link to={link.to}>
+											<Icon size={18} />
+											{link.label}
+										</Link>
+									</li>
+								);
+							}
+							const isExternal = link.href.startsWith("https:");
+							return (
+								<li key={link.label}>
+									<a
+										href={link.href}
+										target={isExternal ? "_blank" : undefined}
+										rel={isExternal ? "noreferrer" : undefined}
+									>
+										<Icon size={18} />
+										{link.label}
+										{isExternal && <ArrowUpRight size={14} />}
+									</a>
+								</li>
+							);
+						})}
 					</ul>
 				</nav>
 			))}

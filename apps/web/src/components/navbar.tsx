@@ -1,14 +1,12 @@
-"use client";
-
 import { Computer, Github, Moon, Sun } from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
 import {
 	ToggleGroup,
 	ToggleGroupItem,
 } from "@honeyicons/ui/components/toggle-group";
-import Link from "next/link";
+import { Link } from "@tanstack/react-router";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { BrandLogo } from "@/components/brand-mark";
 import styles from "@/components/marketing.module.css";
 
@@ -18,10 +16,15 @@ const themeOptions = [
 	{ value: "system", label: "System theme", icon: Computer },
 ] as const;
 
+const emptySubscribe = () => () => {};
+
 function ThemeToggle() {
 	const { theme, setTheme } = useTheme();
-	const [mounted, setMounted] = useState(false);
-	useEffect(() => setMounted(true), []);
+	const mounted = useSyncExternalStore(
+		emptySubscribe,
+		() => true,
+		() => false,
+	);
 	const selectedTheme = mounted ? (theme ?? "system") : undefined;
 	const selectedIndex = themeOptions.findIndex(
 		(option) => option.value === selectedTheme,
@@ -70,15 +73,15 @@ export function Navbar() {
 			<div className="container mx-auto px-7 sm:px-10 lg:px-12">
 				<div className={styles.navbar}>
 					<Link
-						href="/"
+						to="/"
 						aria-label="honeyicons home"
 						className="flex shrink-0 items-center text-foreground"
 					>
 						<BrandLogo className="h-5 w-28 sm:h-6 sm:w-[148px] min-[380px]:w-[120px]" />
 					</Link>
 					<nav aria-label="Main navigation" className={styles.navLinks}>
-						<Link href="/icons">Explore icons</Link>
-						<Link href="/docs" className={styles.docsLink}>
+						<Link to="/icons">Explore icons</Link>
+						<Link to="/docs" className={styles.docsLink}>
 							Docs
 						</Link>
 					</nav>

@@ -1,11 +1,9 @@
-"use client";
-
 import { Toaster } from "@honeyicons/ui/components/sonner";
 import { ReactLenis } from "lenis/react";
-
+import type { ReactNode } from "react";
 import { ThemeProvider } from "./theme-provider";
 
-export default function Providers({ children }: { children: React.ReactNode }) {
+export default function Providers({ children }: { children: ReactNode }) {
 	return (
 		<ThemeProvider
 			attribute="class"

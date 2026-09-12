@@ -1,2 +1,9 @@
 @import "@honeyicons/ui/globals.css";
+@import "@calcom/cal-sans-ui/ui.css";
+@import "@fontsource-variable/bricolage-grotesque";
 @import "lenis/dist/lenis.css";
+
+:root {
+	--font-cal-sans-ui: "Cal Sans UI";
+	--font-bricolage-grotesque: "Bricolage Grotesque Variable";
+}

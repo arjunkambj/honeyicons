@@ -1,11 +1,12 @@
 # honeyicons
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines Next.js, and more.
+This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack.
 
 ## Features
 
 - **TypeScript** - For type safety and improved developer experience
-- **Next.js** - Full-stack React framework
+- **React + TanStack Router** - Client-side SPA on Vite
+- **Cloudflare Workers** - Static assets deployment via `@cloudflare/vite-plugin`
 - **TailwindCSS** - Utility-first CSS for rapid UI development
 - **Shared UI package** - shadcn/ui primitives live in `packages/ui`
 - **Turborepo** - Optimized monorepo build system
@@ -25,7 +26,7 @@ Then, run the development server:
 bun run dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in your browser to see the web application.
+Open [http://localhost:5173](http://localhost:5173) in your browser to see the web application.
 
 ## UI Customization
 
@@ -63,7 +64,7 @@ If you want to add app-specific blocks instead of shared primitives, run the sha
 honeyicons/
 ├── icons/                 # SVG source (linear required; bold and duotone optional)
 ├── apps/
-│   └── web/               # Gallery site (Next.js)
+│   └── web/               # Gallery site (Vite + TanStack Router, Cloudflare)
 ├── packages/
 │   ├── react/             # @honeyicons/react
 │   ├── ui/                # Site chrome (shadcn). not the icon library
@@ -99,3 +100,4 @@ Third-party icon sources and adaptation details are recorded in
 - `bun run format`: Format the repo with Oxfmt
 - `bun run format:check`: Check formatting without changing files
 - `bun run check`: Auto-fix lint issues and format the repo
+- `bun run deploy` from `apps/web`: Build and deploy the site to Cloudflare
