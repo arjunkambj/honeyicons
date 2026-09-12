@@ -11,17 +11,17 @@
 	--hero-background:
 		radial-gradient(
 			ellipse at 30% 0%,
-			color-mix(in oklch, var(--primary) 18%, transparent),
+			oklch(from var(--primary) l c h / 0.18),
 			transparent 52%
 		),
 		radial-gradient(
 			ellipse at 72% 0%,
-			color-mix(in oklch, var(--accent) 15%, transparent),
+			oklch(from var(--accent) l c h / 0.15),
 			transparent 40%
 		),
 		radial-gradient(
 			ellipse at 80% 90%,
-			color-mix(in oklch, var(--accent) 10%, transparent),
+			oklch(from var(--accent) l c h / 0.1),
 			transparent 50%
 		);
 	--hero-grain-opacity: 0.1;
@@ -40,8 +40,8 @@
 	--hero-orbit-fill: color-mix(in oklch, var(--background) 12%, transparent);
 	--hero-core-background: linear-gradient(
 		160deg,
-		color-mix(in oklch, var(--accent) 10%, var(--background)),
-		color-mix(in oklch, var(--primary) 25%, var(--background))
+		color-mix(in oklab, var(--accent) 10%, var(--background)),
+		color-mix(in oklab, var(--primary) 25%, var(--background))
 	);
 
 	--contrast: #27272a;
@@ -85,17 +85,17 @@
 	--hero-background:
 		radial-gradient(
 			ellipse at 30% 0%,
-			color-mix(in oklch, var(--primary) 5%, transparent),
+			oklch(from var(--primary) l c h / 0.05),
 			transparent 52%
 		),
 		radial-gradient(
 			ellipse at 72% 0%,
-			color-mix(in oklch, var(--accent) 3%, transparent),
+			oklch(from var(--accent) l c h / 0.03),
 			transparent 40%
 		),
 		radial-gradient(
 			ellipse at 80% 90%,
-			color-mix(in oklch, var(--accent) 2%, transparent),
+			oklch(from var(--accent) l c h / 0.02),
 			transparent 50%
 		);
 	--hero-grain-opacity: 0.02;
@@ -115,7 +115,7 @@
 	--hero-core-background: linear-gradient(
 		160deg,
 		var(--card),
-		color-mix(in oklch, var(--primary) 10%, var(--card))
+		color-mix(in oklab, var(--primary) 10%, var(--card))
 	);
 
 	--background: oklch(0.141 0.005 285.823);
