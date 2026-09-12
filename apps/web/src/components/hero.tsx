@@ -1,6 +1,7 @@
-import { ArrowRight } from "@honeyicons/react";
 import { catalog } from "@honeyicons/react/catalog";
 import { Button } from "@honeyicons/ui/components/button";
+import { ArrowRight01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
 import { InstallCommand } from "@/components/install-command";
 
@@ -45,7 +46,7 @@ export function Hero() {
 						render={<Link href="/icons" />}
 					>
 						Browse icons
-						<ArrowRight size={16} data-icon="inline-end" />
+						<HugeiconsIcon icon={ArrowRight01Icon} data-icon="inline-end" />
 					</Button>
 					<Button
 						size="lg"

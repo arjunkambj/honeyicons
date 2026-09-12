@@ -2,38 +2,11 @@
 import type { HoneyIcon } from "./create-icon";
 import type { IconCategory } from "./categories";
 import type { IconVariant } from "./types";
-import { AltArrowDoubleLeft } from "./icons/alt-arrow-double-left";
-import { AltArrowDoubleRight } from "./icons/alt-arrow-double-right";
-import { AltArrowDown } from "./icons/alt-arrow-down";
-import { AltArrowLeft } from "./icons/alt-arrow-left";
-import { AltArrowRight } from "./icons/alt-arrow-right";
-import { AltArrowUp } from "./icons/alt-arrow-up";
-import { ArrowBottomLeft } from "./icons/arrow-bottom-left";
-import { ArrowBottomRight } from "./icons/arrow-bottom-right";
-import { ArrowDown } from "./icons/arrow-down";
-import { ArrowLeft } from "./icons/arrow-left";
-import { ArrowRight } from "./icons/arrow-right";
-import { ArrowTopLeft } from "./icons/arrow-top-left";
-import { ArrowTopRight } from "./icons/arrow-top-right";
-import { ArrowUp } from "./icons/arrow-up";
-import { Check } from "./icons/check";
-import { Email } from "./icons/email";
-import { Github } from "./icons/github";
-import { Heart } from "./icons/heart";
 import { Home } from "./icons/home";
-import { Instagram } from "./icons/instagram";
-import { Moon } from "./icons/moon";
 import { Search } from "./icons/search";
-import { SendMail } from "./icons/send-mail";
 import { SendMessage } from "./icons/send-message";
-import { Settings } from "./icons/settings";
-import { Sidebar } from "./icons/sidebar";
 import { Snapchat } from "./icons/snapchat";
-import { Spinner } from "./icons/spinner";
-import { Spinner2 } from "./icons/spinner-2";
-import { Spinner270 } from "./icons/spinner-270";
 import { Trash } from "./icons/trash";
-import { Twitter } from "./icons/twitter";
 import { X } from "./icons/x";
 
 export type { IconCategory } from "./categories";
@@ -50,172 +23,12 @@ export type CatalogItem = {
 
 export const catalog: CatalogItem[] = [
 	{
-		name: "alt-arrow-double-left",
-		pascalName: "AltArrowDoubleLeft",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: AltArrowDoubleLeft,
-	},
-	{
-		name: "alt-arrow-double-right",
-		pascalName: "AltArrowDoubleRight",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: AltArrowDoubleRight,
-	},
-	{
-		name: "alt-arrow-down",
-		pascalName: "AltArrowDown",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: AltArrowDown,
-	},
-	{
-		name: "alt-arrow-left",
-		pascalName: "AltArrowLeft",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: AltArrowLeft,
-	},
-	{
-		name: "alt-arrow-right",
-		pascalName: "AltArrowRight",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: AltArrowRight,
-	},
-	{
-		name: "alt-arrow-up",
-		pascalName: "AltArrowUp",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: AltArrowUp,
-	},
-	{
-		name: "arrow-bottom-left",
-		pascalName: "ArrowBottomLeft",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: ArrowBottomLeft,
-	},
-	{
-		name: "arrow-bottom-right",
-		pascalName: "ArrowBottomRight",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: ArrowBottomRight,
-	},
-	{
-		name: "arrow-down",
-		pascalName: "ArrowDown",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: ArrowDown,
-	},
-	{
-		name: "arrow-left",
-		pascalName: "ArrowLeft",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: ArrowLeft,
-	},
-	{
-		name: "arrow-right",
-		pascalName: "ArrowRight",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: ArrowRight,
-	},
-	{
-		name: "arrow-top-left",
-		pascalName: "ArrowTopLeft",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: ArrowTopLeft,
-	},
-	{
-		name: "arrow-top-right",
-		pascalName: "ArrowTopRight",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: ArrowTopRight,
-	},
-	{
-		name: "arrow-up",
-		pascalName: "ArrowUp",
-		category: "arrows",
-		tags: [],
-		variants: ["linear"],
-		component: ArrowUp,
-	},
-	{
-		name: "check",
-		pascalName: "Check",
-		category: "status",
-		tags: [],
-		variants: ["linear"],
-		component: Check,
-	},
-	{
-		name: "email",
-		pascalName: "Email",
-		category: "actions",
-		tags: [],
-		variants: ["linear"],
-		component: Email,
-	},
-	{
-		name: "github",
-		pascalName: "Github",
-		category: "social",
-		tags: [],
-		variants: ["linear"],
-		component: Github,
-	},
-	{
-		name: "heart",
-		pascalName: "Heart",
-		category: "actions",
-		tags: [],
-		variants: ["linear"],
-		component: Heart,
-	},
-	{
 		name: "home",
 		pascalName: "Home",
 		category: "layout",
 		tags: [],
 		variants: ["linear"],
 		component: Home,
-	},
-	{
-		name: "instagram",
-		pascalName: "Instagram",
-		category: "social",
-		tags: [],
-		variants: ["linear"],
-		component: Instagram,
-	},
-	{
-		name: "moon",
-		pascalName: "Moon",
-		category: "actions",
-		tags: [],
-		variants: ["linear"],
-		component: Moon,
 	},
 	{
 		name: "search",
@@ -226,36 +39,12 @@ export const catalog: CatalogItem[] = [
 		component: Search,
 	},
 	{
-		name: "send-mail",
-		pascalName: "SendMail",
+		name: "send-message",
+		pascalName: "SendMessage",
 		category: "actions",
 		tags: [],
 		variants: ["linear"],
-		component: SendMail,
-	},
-	{
-		name: "send-message",
-		pascalName: "SendMessage",
-		category: "ai",
-		tags: [],
-		variants: ["linear"],
 		component: SendMessage,
-	},
-	{
-		name: "settings",
-		pascalName: "Settings",
-		category: "settings",
-		tags: [],
-		variants: ["linear"],
-		component: Settings,
-	},
-	{
-		name: "sidebar",
-		pascalName: "Sidebar",
-		category: "layout",
-		tags: [],
-		variants: ["linear"],
-		component: Sidebar,
 	},
 	{
 		name: "snapchat",
@@ -266,44 +55,12 @@ export const catalog: CatalogItem[] = [
 		component: Snapchat,
 	},
 	{
-		name: "spinner",
-		pascalName: "Spinner",
-		category: "spinner",
-		tags: [],
-		variants: ["linear"],
-		component: Spinner,
-	},
-	{
-		name: "spinner-2",
-		pascalName: "Spinner2",
-		category: "spinner",
-		tags: [],
-		variants: ["linear"],
-		component: Spinner2,
-	},
-	{
-		name: "spinner-270",
-		pascalName: "Spinner270",
-		category: "spinner",
-		tags: [],
-		variants: ["linear"],
-		component: Spinner270,
-	},
-	{
 		name: "trash",
 		pascalName: "Trash",
 		category: "actions",
 		tags: [],
 		variants: ["linear"],
 		component: Trash,
-	},
-	{
-		name: "twitter",
-		pascalName: "Twitter",
-		category: "social",
-		tags: [],
-		variants: ["linear"],
-		component: Twitter,
 	},
 	{
 		name: "x",

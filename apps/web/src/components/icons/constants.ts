@@ -1,18 +1,12 @@
 import type { IconCategory } from "@honeyicons/react";
 import {
-	Alert02Icon,
 	ArrowRight01Icon,
-	ChatIcon,
-	File01Icon,
-	Image01Icon,
+	Folder01Icon,
 	LayoutDashboardIcon,
 	LayoutGridIcon,
 	Loading03Icon,
-	Settings01Icon,
-	SourceCodeIcon,
 	SparklesIcon,
 	Tick02Icon,
-	UserIcon,
 } from "@hugeicons/core-free-icons";
 import type { IconSvgElement } from "@hugeicons/react";
 
@@ -30,17 +24,11 @@ export const CATEGORY_META: {
 }[] = [
 	{ id: "all", label: "All", icon: LayoutGridIcon },
 	{ id: "actions", label: "Actions", icon: Tick02Icon },
-	{ id: "ai", label: "AI", icon: SparklesIcon },
-	{ id: "arrows", label: "Arrows", icon: ArrowRight01Icon },
-	{ id: "chat", label: "Chat", icon: ChatIcon },
-	{ id: "editor", label: "Editor", icon: SourceCodeIcon },
-	{ id: "files", label: "Files", icon: File01Icon },
+	{ id: "ai", label: "AI Labs", icon: SparklesIcon },
 	{ id: "layout", label: "Layout", icon: LayoutDashboardIcon },
-	{ id: "media", label: "Media", icon: Image01Icon },
-	{ id: "settings", label: "Settings", icon: Settings01Icon },
-	{ id: "spinner", label: "Spinner", icon: Loading03Icon },
-	{ id: "status", label: "Status", icon: Alert02Icon },
-	{ id: "user", label: "User", icon: UserIcon },
+	{ id: "arrows", label: "Arrow", icon: ArrowRight01Icon },
+	{ id: "files", label: "Folder", icon: Folder01Icon },
+	{ id: "spinner", label: "Loaders", icon: Loading03Icon },
 ];
 
 export const VARIANT_META = [
