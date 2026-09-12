@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
   <title>honeyicons</title>
-  <style>:root{color:#18181b}@media(prefers-color-scheme:dark){:root{color:#fafafa}}</style>
   <g transform="translate(1.8 1.8) scale(.85)">
     <path d="M 9.248 2 H 17.724 L 13.932 10.55 H 20.252 C 21.293 10.55 21.963 11.442 21.517 12.483 L 17.353 22 H 8.951 L 13.04 12.706 C 13.56 11.591 12.965 10.55 11.85 10.55 H 9.694 L 6.572 17.688 H 2.408 Z"/>
   </g>
 </svg>
+

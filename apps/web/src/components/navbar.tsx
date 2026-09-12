@@ -25,7 +25,7 @@ function ThemeToggle() {
 		() => true,
 		() => false,
 	);
-	const selectedTheme = mounted ? (theme ?? "system") : undefined;
+	const selectedTheme = mounted ? (theme ?? "light") : undefined;
 	const selectedIndex = themeOptions.findIndex(
 		(option) => option.value === selectedTheme,
 	);
