@@ -78,6 +78,13 @@ Icons live in `icons/{linear,bold,duotone}/{category}/name.svg` (24×24). Linear
 bun run generate:icons
 ```
 
+Use descriptive kebab-case names without imported numeric suffixes. Keep related
+icons together with names such as `folder-add`, `volume-off`, and `chevron-down`.
+Renamed icons can declare `aliases` in `icons/meta.json` to generate deprecated
+React exports and retain search keywords without duplicating catalog entries.
+See [the naming migration](packages/react/MIGRATION.md) for renamed exports and
+the arrow-to-chevron migration.
+
 Third-party icon sources and adaptation details are recorded in
 [the React package notices](packages/react/NOTICE.md).
 

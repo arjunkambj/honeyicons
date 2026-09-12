@@ -4,11 +4,11 @@ Honeyicons is a React icon library and a browsable SVG collection for chats, edi
 
 ## React usage
 
-import { Bell, Search, SendMessage } from "@honeyicons/react";
+import { Bell, Search, SquarePen } from "@honeyicons/react";
 
 <Bell size={24} />
 <Search size={16} />
-<SendMessage size={24} strokeWidth={1.5} />
+<SquarePen size={24} strokeWidth={1.5} />
 
 Components accept standard SVG props, className, style, color, size, strokeWidth, and an optional title for an accessible image label. Icons without a title are decorative. Give icon-only buttons an accessible name on the button.
 

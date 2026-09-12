@@ -3,6 +3,10 @@ import { createIcon } from "../create-icon";
 
 export const ArrowRight = createIcon("ArrowRight", {
 	linear: [
-		["path", { d: "M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18", stroke: "currentColor" }],
+		["path", { d: "M18.5 12L4.99997 12", stroke: "currentColor" }],
+		["path", { d: "M13 18C13 18 19 13.5811 19 12C19 10.4188 13 6 13 6", stroke: "currentColor" }],
 	],
 });
+
+/** @deprecated Use ArrowRight instead. */
+export const ArrowRight02 = ArrowRight;

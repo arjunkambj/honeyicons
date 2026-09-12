@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDown02 } from "@honeyicons/react";
+import { ArrowDown } from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
 import {
@@ -106,7 +106,7 @@ function MessageScrollerButton({
 		>
 			{children ?? (
 				<>
-					<ArrowDown02 />
+					<ArrowDown />
 					<span className="sr-only">
 						{direction === "end" ? "Scroll to end" : "Scroll to start"}
 					</span>

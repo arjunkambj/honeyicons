@@ -1,7 +1,7 @@
 "use client";
 
 import { Menu as MenuPrimitive } from "@base-ui/react/menu";
-import { ArrowRight, Check } from "@honeyicons/react";
+import { Check, ChevronRight } from "@honeyicons/react";
 import { cn } from "@honeyicons/ui/lib/utils";
 import type * as React from "react";
 
@@ -121,7 +121,7 @@ function DropdownMenuSubTrigger({
 			{...props}
 		>
 			{children}
-			<ArrowRight className="ml-auto" />
+			<ChevronRight className="ml-auto" />
 		</MenuPrimitive.SubmenuTrigger>
 	);
 }

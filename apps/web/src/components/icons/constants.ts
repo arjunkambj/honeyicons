@@ -1,7 +1,7 @@
 import {
-	ArrowRight,
 	Check,
-	Folder01,
+	ChevronRight,
+	Folder,
 	type HoneyIcon,
 	type IconCategory,
 	SidebarLeft,
@@ -26,8 +26,8 @@ export const CATEGORY_META: {
 	{ id: "actions", label: "Actions", icon: Check },
 	{ id: "social", label: "Social", icon: UserGroup },
 	{ id: "layout", label: "Layout", icon: SidebarLeft },
-	{ id: "arrows", label: "Arrow", icon: ArrowRight },
-	{ id: "files", label: "Folder", icon: Folder01 },
+	{ id: "arrows", label: "Arrow", icon: ChevronRight },
+	{ id: "files", label: "Folder", icon: Folder },
 	{ id: "spinner", label: "Loaders", icon: Spinner },
 ];
 

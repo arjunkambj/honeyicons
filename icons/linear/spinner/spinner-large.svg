@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-  <style>
-    @keyframes honeyicons-spinner-large-rotate { to { transform: rotate(360deg); } }
-    [data-honeyicons-spinner-large] { transform-origin: 12px 12px; animation: honeyicons-spinner-large-rotate 0.8s linear infinite; }
-    @media (prefers-reduced-motion: reduce) { [data-honeyicons-spinner-large] { animation: none; } }
-  </style>
-  <circle cx="12" cy="12" r="8.125" stroke="currentColor" stroke-width="1.75" opacity="0.15" />
-  <path d="M20.125 12a8.125 8.125 0 1 1-8.125-8.125" stroke="currentColor" stroke-width="1.75" data-honeyicons-spinner-large="" />
-</svg>

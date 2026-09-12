@@ -1,6 +1,6 @@
 # Third-party icons
 
-`ImagesAdd`, `Headphone`, `Clapperboard`, `VerifiedCheck`, `Cart`, `Share`,
+`ImageAdd`, `Headphones`, `Clapperboard`, `VerifiedCheck`, `Cart`, `Share`,
 `Email`, and `Repeat` use the user-supplied Solar **Gallery Add**, **Headphones
 Round**, **Clapperboard Play**, **Verified Check**, **Cart**, **Share**,
 **Letter**, and **Repeat** outlines from the
@@ -14,9 +14,9 @@ same Solar set and license. The center torso is reshaped to match User's rounded
 body and flatter base; the head and side figures retain their supplied filled
 paths. The center body retains a filled outline with a 1.5-unit inset.
 
-`Images` and `Videocamera` are new Honeyicons drawings made at the user's
+`Image` and `VideoCamera` are new Honeyicons drawings made at the user's
 request to replace accidentally duplicated references. They use smooth corner
-curves, a 1.5-unit stroke, and round caps and joins. Images follows the supplied
+curves, a 1.5-unit stroke, and round caps and joins. Image follows the supplied
 Gallery Add landscape motif.
 
 `Cloud` is adapted from the user-supplied **Cloud (Outline)** in the
@@ -57,7 +57,7 @@ and license. Its filled door geometry is preserved. The supplied left-pointing
 arrow retains its filled outline and rounded tips, with a shorter shaft and
 smooth curves at the inner notches where the head meets the shaft.
 
-`File` and `FileRead` are adapted from the user-supplied **File Text (Outline)** and
+`File` and `FileCheck` are adapted from the user-supplied **File Text (Outline)** and
 **File Check (Outline)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
@@ -75,7 +75,7 @@ Changes: removed the source class and unused root stroke attributes. Both
 filled paths, the cutouts, smooth rounding, proportions, and baked outline
 weight are preserved with `currentColor`. No second stroke is added.
 
-`User`, `Pallet`, `Add`, `Minus`, `Close`, `Tool`, `Pin`, `Danger`, and `Widget`
+`User`, `Archive`, `Add`, `Minus`, `Close`, `Hammer`, `Pin`, `AlertTriangle`, and `Widget`
 are adapted from the user-supplied **User**, **Library**, **Add**, **Minus**,
 **Close**, **Sledgehammer**, **Pin**, **Danger Triangle**, and **Widget** outlines
 in the [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
@@ -119,7 +119,7 @@ preserving the original line lengths, spacing, and chevron proportions. Uses
 `currentColor` and inherits the standard 1.5-unit stroke and rounded caps and
 joins from the Honeyicons renderer.
 
-`SearchMinus` is adapted from the user-supplied **Minimalistic Magnifier Zoom Out
+`ZoomOut` is adapted from the user-supplied **Minimalistic Magnifier Zoom Out
 (Outline)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
@@ -129,7 +129,7 @@ subpaths, matched the existing Honeyicons Search circle and connected handle,
 and scaled the centered minus uniformly to 90%. Uses `currentColor` and inherits the standard
 1.5-unit stroke and rounded caps and joins from the Honeyicons renderer.
 
-`SearchPlus` is adapted from the user-supplied **Magnifier Zoom In (Outline)** in the
+`ZoomIn` is adapted from the user-supplied **Magnifier Zoom In (Outline)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
@@ -138,7 +138,7 @@ subpaths, matched the existing Honeyicons Search circle and handle, and scaled
 the centered plus uniformly to 90%. Uses `currentColor` and inherits the
 standard 1.5-unit stroke and rounded caps and joins from the Honeyicons renderer.
 
-`Volume` is adapted from **Volume (Linear)** in the
+`VolumeLow` is adapted from **Volume (Linear)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
@@ -162,7 +162,7 @@ Changes: represented the five filled outlines as separate stroked subpaths,
 preserving their original lengths and spacing; used `currentColor` and inherited
 the standard 1.5-unit stroke and rounded caps and joins from the Honeyicons renderer.
 
-`Stop`, `Play`, `VolumeLoud`, and `Muted` are adapted from their corresponding
+`Stop`, `Play`, `VolumeHigh`, and `VolumeOff` are adapted from their corresponding
 **Linear** icons in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
@@ -173,7 +173,7 @@ Sources: [Stop.svg](https://github.com/480-Design/Solar-Icon-Set/blob/main/icons
 [Muted.svg](https://github.com/480-Design/Solar-Icon-Set/blob/main/icons/SVG/Linear/Video%2C%20Audio%2C%20Sound/Muted.svg).
 
 Changes: scaled Stop, Play, and Volume Loud uniformly to 90% and centered their
-geometry on the 24-unit grid for consistent padding. Muted retains its original
+geometry on the 24-unit grid for consistent padding. VolumeOff retains its original
 geometry. All preserve their silhouettes and proportions, use `currentColor`,
 and inherit the standard 1.5-unit stroke and rounded caps and joins from the
 Honeyicons renderer.
@@ -189,7 +189,7 @@ Changes: scaled path coordinates uniformly to 90% around the center of the
 proportions, used `currentColor`, and inherited the standard 1.5-unit stroke and
 rounded caps and joins from the Honeyicons renderer.
 
-`Hamburger` is adapted from the user-supplied **Hamburger Menu (Outline)** in the
+`Menu` is adapted from the user-supplied **Hamburger Menu (Outline)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
@@ -249,7 +249,7 @@ uniformly to 90% around the center of the 24-unit grid for consistent padding.
 Both inherit the standard Honeyicons 1.5-unit stroke and rounded caps and joins.
 The MIT notice below also applies to them.
 
-`Edit01`, `EditOff`, `MoreHorizontal`, `MoreVertical`, `Integration`,
+`Edit`, `EditOff`, `MoreHorizontal`, `MoreVertical`, `Integration`,
 `UnfoldMore`, and `UnfoldLess` use the corresponding `Edit01Icon`, `EditOffIcon`,
 `MoreHorizontalIcon`, `MoreVerticalIcon`, `FlowIcon`, `UnfoldMoreIcon`, and
 `UnfoldLessIcon` exports from `@hugeicons/core-free-icons` version 4.3.0.
@@ -270,13 +270,13 @@ The heads originate in the corresponding Hugeicons exports, are resized by
 adjusting path coordinates, and retain the standard 1.5-unit stroke and rounded
 caps and joins. The MIT notice below also applies to them.
 
-`LockUnlock` and `Lock` are adapted from `LockOpenIcon` in
-`@hugeicons/core-free-icons` version 4.3.0. `LockUnlock` preserves the original
+`LockOpen` and `Lock` are adapted from `LockOpenIcon` in
+`@hugeicons/core-free-icons` version 4.3.0. `LockOpen` preserves the original
 geometry; `Lock` reuses its body and closes the shackle with a matching rounded
 arch. Both inherit the standard Honeyicons 1.5-unit stroke and rounded caps and
 joins. The MIT notice below also applies to them.
 
-`Check` and `CheckCheck` are adapted from `CheckIcon` and `CheckCheckIcon` in
+`Check` and `CheckDouble` are adapted from `CheckIcon` and `CheckCheckIcon` in
 `@hugeicons/core-free-icons` version 4.3.0. They preserve the original geometry,
 including the smooth check bends, and inherit the standard Honeyicons 1.5-unit
 stroke and rounded caps and joins. The MIT notice below also applies to them.
@@ -297,13 +297,13 @@ It retains its original geometry, including its eight dotted rays, and inherits
 the standard Honeyicons stroke, caps, and joins. The MIT notice below also
 applies to it.
 
-`Calendar03` is adapted from `Calendar03Icon` in `@hugeicons/core-free-icons`
+`Calendar` is adapted from `Calendar03Icon` in `@hugeicons/core-free-icons`
 version 4.3.0. Its geometry is scaled uniformly to 90% around the center of the
 24-unit grid, preserving the rounded body, binding rings, and five date markers.
 It inherits the standard Honeyicons stroke, caps, and joins. The MIT notice
 below also applies to it.
 
-`Computer`, `Folder01`, `FolderOpen`, and `FolderAdd` are adapted from the matching
+`Computer`, `Folder`, `FolderOpen`, and `FolderAdd` are adapted from the matching
 `ComputerIcon`, `Folder01Icon`, `Folder02Icon`, and `FolderAddIcon` exports in
 `@hugeicons/core-free-icons` version 4.3.0. Their geometry is scaled uniformly to
 90% around the center of the 24-unit grid, preserving their original shapes and
@@ -314,13 +314,13 @@ the same overall bounds. The
 MIT notice below also applies to them.
 
 `ArrowDownLeft`, `ArrowDownRight`, `ArrowUpLeft`, and `ArrowUpRight` are adapted
-from the corresponding `Arrow*01Icon` exports; `ArrowDown02`, `ArrowUp02`,
-`ArrowLeft02`, and `ArrowRight02` use the matching `Arrow*02Icon` exports. These
+from the corresponding `Arrow*01Icon` exports; `ArrowDown`, `ArrowUp`,
+`ArrowLeft`, and `ArrowRight` use the matching `Arrow*02Icon` exports. These
 eight arrows preserve the original Hugeicons geometry and inherit the standard
 Honeyicons stroke, caps, and joins. The MIT notice below also applies to them.
 
-`Brain`, `ArrowDown`, `ArrowUp`, `ArrowLeft`, `ArrowRight`, and the four
-`Arrow*Double` icons are adapted from the corresponding `AiBrain01Icon`,
+`Brain`, `ChevronDown`, `ChevronUp`, `ChevronLeft`, `ChevronRight`, and the four
+`Chevrons*` icons are adapted from the corresponding `AiBrain01Icon`,
 `Arrow*01Icon`, and `Arrow*DoubleIcon` exports in `@hugeicons/core-free-icons`
 version 4.3.0 by Hugeicons.
 
@@ -355,7 +355,7 @@ SOFTWARE.
 
 ## User-supplied brand marks
 
-`Ts`, `Google`, `Insta`, `Twitter`, `Reddit`, `Facebook`, and `Npm` retain their
+`Typescript`, `Google`, `Instagram`, `Twitter`, `Reddit`, `Facebook`, and `Npm` retain their
 user-supplied brand paths, lettering, cutouts, and proportions. Fixed black
 fills are replaced with `currentColor`; no outline stroke is added.
 
@@ -365,7 +365,7 @@ geometry. Fixed black fills were replaced with `currentColor`; the original
 cutouts and OpenCode panel opacity are preserved. No outline stroke is added.
 `Qwen` and `Openclaw` use the user-provided names. These marks are not Hugeicons imports.
 
-`Devin`, `MsCopilot`, `Openai`, `Mistral`, `Grok`, `React`, `Gemini`, and
+`Devin`, `MicrosoftCopilot`, `Openai`, `Mistral`, `Grok`, `React`, `Gemini`, and
 `Pinterest` also preserve user-supplied filled paths with `currentColor`.
 Grok omits the source clip definition, which matches the SVG viewport.
 

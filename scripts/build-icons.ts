@@ -6,7 +6,7 @@ type Variant = (typeof VARIANTS)[number];
 const REQUIRED_STYLE: Variant = "linear";
 
 type IconNode = [tag: string, attrs: Record<string, string>][];
-type IconMeta = Record<string, { tags?: string[] }>;
+type IconMeta = Record<string, { tags?: string[]; aliases?: string[] }>;
 type IconSource = { name: string; category: string };
 
 const root = join(import.meta.dir, "..");
@@ -215,6 +215,18 @@ async function main() {
 	}
 
 	const meta = JSON.parse(await readFile(metaPath, "utf8")) as IconMeta;
+	const exportNames = new Set(icons.map((icon) => toPascalCase(icon.name)));
+	for (const icon of icons) {
+		for (const alias of meta[icon.name]?.aliases ?? []) {
+			const aliasPascal = toPascalCase(alias);
+			if (exportNames.has(aliasPascal)) {
+				throw new Error(
+					`Duplicate icon export "${aliasPascal}" for ${icon.name}`,
+				);
+			}
+			exportNames.add(aliasPascal);
+		}
+	}
 
 	await rm(outDir, { recursive: true, force: true });
 	await mkdir(outDir, { recursive: true });
@@ -225,6 +237,14 @@ async function main() {
 
 	for (const icon of icons) {
 		const pascal = toPascalCase(icon.name);
+		const aliases = meta[icon.name]?.aliases ?? [];
+		const aliasExports = aliases.map((alias) => toPascalCase(alias));
+		const aliasDeclarations = aliasExports
+			.map(
+				(alias) =>
+					`/** @deprecated Use ${pascal} instead. */\nexport const ${alias} = ${pascal};\n`,
+			)
+			.join("\n");
 		const relative = `${icon.category}/${icon.name}.svg`;
 		const nodes: Partial<Record<Variant, IconNode>> = {};
 		for (const variant of VARIANTS) {
@@ -260,9 +280,11 @@ import { createIcon } from "../create-icon";
 export const ${pascal} = createIcon(${JSON.stringify(pascal)}, {
 ${nodeEntries.join(",\n")},
 });
-`;
+${aliasDeclarations ? `\n${aliasDeclarations}` : ""}`;
 		await writeFile(join(outDir, `${icon.name}.ts`), source);
-		barrelExports.push(`export { ${pascal} } from "./${icon.name}";`);
+		barrelExports.push(
+			`export { ${[pascal, ...aliasExports].join(", ")} } from "./${icon.name}";`,
+		);
 		catalogImports.push(`import { ${pascal} } from "./icons/${icon.name}";`);
 
 		catalogEntries.push(
@@ -270,7 +292,7 @@ ${nodeEntries.join(",\n")},
 		name: ${JSON.stringify(icon.name)},
 		pascalName: ${JSON.stringify(pascal)},
 		category: ${JSON.stringify(icon.category)},
-		tags: ${JSON.stringify(meta[icon.name]?.tags ?? [])},
+		tags: ${JSON.stringify([...new Set([...(meta[icon.name]?.tags ?? []), ...aliases])])},
 		variants: ${JSON.stringify(VARIANTS.filter((item) => nodes[item]))},
 		component: ${pascal},
 	}`,

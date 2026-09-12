@@ -9,7 +9,8 @@
 	},
 	"files": [
 		"src",
-		"NOTICE.md"
+		"NOTICE.md",
+		"MIGRATION.md"
 	],
 	"scripts": {
 		"generate": "bun run ../../scripts/build-icons.ts",

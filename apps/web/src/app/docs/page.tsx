@@ -1,4 +1,4 @@
-import { Bell, Search, SendMessage } from "@honeyicons/react";
+import { Bell, Search, SquarePen } from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -42,14 +42,14 @@ export default function DocsPage() {
 						<pre className="mt-3 overflow-x-auto rounded-xl bg-muted p-5 text-sm leading-7">
 							<code>
 								{
-									'import { Bell, Search, SendMessage } from "@honeyicons/react";\n\n<Bell size={24} />\n<Search size={16} />\n<SendMessage size={24} />'
+									'import { Bell, Search, SquarePen } from "@honeyicons/react";\n\n<Bell size={24} />\n<Search size={16} />\n<SquarePen size={24} />'
 								}
 							</code>
 						</pre>
 						<div className="mt-3 flex items-center gap-6">
 							<Bell size={24} title="Bell" />
 							<Search size={16} title="Search" />
-							<SendMessage size={24} title="Send message" />
+							<SquarePen size={24} title="Compose" />
 						</div>
 					</section>
 					<section aria-labelledby="customization" className="mt-16 sm:mt-20">

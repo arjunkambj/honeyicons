@@ -1,13 +1,13 @@
 import {
-	ArrowRight,
+	ChevronRight,
 	Code,
 	Command,
 	FolderOpen,
 	Layers,
 	Lightning,
 	Search,
-	SendMessage,
 	Settings,
+	SquarePen,
 	Star,
 	Sun,
 	Terminal,
@@ -23,7 +23,7 @@ import styles from "@/components/marketing.module.css";
 
 const orbitIcons = [
 	{ icon: Code, x: 32, y: 8, rotation: -12 },
-	{ icon: SendMessage, x: 63, y: 7, rotation: 12 },
+	{ icon: SquarePen, x: 63, y: 7, rotation: 12 },
 	{ icon: Command, x: 14, y: 25, rotation: -12 },
 	{ icon: Lightning, x: 52, y: 23, rotation: 10 },
 	{ icon: Layers, x: 82, y: 24, rotation: 12 },
@@ -79,7 +79,7 @@ export function Hero() {
 						render={<Link href="/docs" />}
 					>
 						Get started
-						<ArrowRight data-icon="inline-end" />
+						<ChevronRight data-icon="inline-end" />
 					</Button>
 				</div>
 				<div className="mb-12 max-w-full sm:mb-16">

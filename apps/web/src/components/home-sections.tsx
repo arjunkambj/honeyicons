@@ -1,10 +1,10 @@
 import type { HoneyIcon } from "@honeyicons/react";
 import {
-	ArrowRight,
 	ArrowUpRight,
 	Bell,
 	Bookmark,
 	Brain,
+	ChevronRight,
 	Code,
 	Command,
 	Copy,
@@ -17,8 +17,8 @@ import {
 	Lightning,
 	Lock,
 	React as ReactIcon,
-	SendMessage,
 	Settings,
+	SquarePen,
 	Star,
 	User,
 	Widget,
@@ -31,7 +31,7 @@ import { InstallCommand } from "@/components/install-command";
 import styles from "@/components/marketing.module.css";
 
 const sampleIcons = [
-	SendMessage,
+	SquarePen,
 	Bell,
 	FolderOpen,
 	Code,
@@ -138,7 +138,7 @@ export function AgentTools() {
 						render={<a href="/llms.txt" />}
 					>
 						Explore AI context
-						<ArrowRight data-icon="inline-end" />
+						<ChevronRight data-icon="inline-end" />
 					</Button>
 				</div>
 			</div>

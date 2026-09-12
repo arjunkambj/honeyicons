@@ -1,11 +1,18 @@
 {
 	"add": {
+		"tags": ["plus", "new", "create", "solar"]
+	},
+	"alert-triangle": {
 		"tags": [
-			"plus",
-			"new",
-			"create",
-			"solar"
-		]
+			"warning",
+			"alert",
+			"triangle",
+			"error",
+			"danger-triangle",
+			"solar",
+			"danger"
+		],
+		"aliases": ["danger"]
 	},
 	"align-center": {
 		"tags": ["text", "alignment", "center", "paragraph", "format"]
@@ -17,48 +24,34 @@
 		"tags": ["text", "alignment", "right", "paragraph", "format"]
 	},
 	"anthropic": {
-		"tags": [
-			"claude",
-			"ai",
-			"brand"
-		]
+		"tags": ["claude", "ai", "brand"]
 	},
 	"antigravity": {
+		"tags": ["ai", "code", "editor", "brand"]
+	},
+	"archive": {
 		"tags": [
-			"ai",
-			"code",
-			"editor",
-			"brand"
-		]
+			"library",
+			"collection",
+			"stack",
+			"archive",
+			"files",
+			"solar",
+			"pallet"
+		],
+		"aliases": ["pallet"]
 	},
 	"arrow-down": {
-		"tags": [
-			"chevron",
-			"down",
-			"bottom",
-			"expand",
-			"arrow-down-01",
-			"hugeicons"
-		]
-	},
-	"arrow-down-02": {
 		"tags": [
 			"arrow",
 			"down",
 			"direction",
 			"navigation",
 			"arrow-down-02",
-			"hugeicons"
-		]
-	},
-	"arrow-down-double": {
-		"tags": [
-			"chevron",
-			"double",
-			"down",
-			"bottom",
-			"hugeicons"
-		]
+			"hugeicons",
+			"ArrowDown02"
+		],
+		"aliases": ["arrow-down-02"]
 	},
 	"arrow-down-left": {
 		"tags": [
@@ -82,90 +75,39 @@
 	},
 	"arrow-left": {
 		"tags": [
-			"chevron",
-			"left",
-			"back",
-			"previous",
-			"arrow-left-01",
-			"hugeicons"
-		]
-	},
-	"arrow-left-02": {
-		"tags": [
 			"arrow",
 			"left",
 			"direction",
 			"navigation",
 			"arrow-left-02",
-			"hugeicons"
-		]
-	},
-	"arrow-left-double": {
-		"tags": [
-			"chevron",
-			"double",
-			"left",
-			"first",
-			"hugeicons"
-		]
+			"hugeicons",
+			"ArrowLeft02"
+		],
+		"aliases": ["arrow-left-02"]
 	},
 	"arrow-right": {
-		"tags": [
-			"chevron",
-			"right",
-			"forward",
-			"next",
-			"arrow-right-01",
-			"hugeicons"
-		]
-	},
-	"arrow-right-02": {
 		"tags": [
 			"arrow",
 			"right",
 			"direction",
 			"navigation",
 			"arrow-right-02",
-			"hugeicons"
-		]
-	},
-	"arrow-right-double": {
-		"tags": [
-			"chevron",
-			"double",
-			"right",
-			"last",
-			"hugeicons"
-		]
+			"hugeicons",
+			"ArrowRight02"
+		],
+		"aliases": ["arrow-right-02"]
 	},
 	"arrow-up": {
-		"tags": [
-			"chevron",
-			"up",
-			"top",
-			"collapse",
-			"arrow-up-01",
-			"hugeicons"
-		]
-	},
-	"arrow-up-02": {
 		"tags": [
 			"arrow",
 			"up",
 			"direction",
 			"navigation",
 			"arrow-up-02",
-			"hugeicons"
-		]
-	},
-	"arrow-up-double": {
-		"tags": [
-			"chevron",
-			"double",
-			"up",
-			"top",
-			"hugeicons"
-		]
+			"hugeicons",
+			"ArrowUp02"
+		],
+		"aliases": ["arrow-up-02"]
 	},
 	"arrow-up-left": {
 		"tags": [
@@ -191,16 +133,7 @@
 		"tags": ["notification", "alert", "reminder", "alarm", "solar"]
 	},
 	"bookmark": {
-		"tags": [
-			"save",
-			"saved",
-			"favorite",
-			"reading",
-			"solar"
-		]
-	},
-	"branch": {
-		"tags": ["git", "version-control", "fork", "code"]
+		"tags": ["save", "saved", "favorite", "reading", "solar"]
 	},
 	"brain": {
 		"tags": [
@@ -214,41 +147,28 @@
 		]
 	},
 	"bun": {
-		"tags": [
-			"javascript",
-			"runtime",
-			"brand"
-		]
+		"tags": ["javascript", "runtime", "brand"]
 	},
-	"calendar-03": {
+	"calendar": {
 		"tags": [
 			"calendar",
 			"date",
 			"schedule",
 			"event",
 			"month",
-			"hugeicons"
-		]
+			"hugeicons",
+			"calendar-03",
+			"Calendar03"
+		],
+		"aliases": ["calendar-03"]
 	},
 	"cart": {
-		"tags": [
-			"basket",
-			"shopping",
-			"store",
-			"solar"
-		]
+		"tags": ["basket", "shopping", "store", "solar"]
 	},
 	"check": {
-		"tags": [
-			"tick",
-			"done",
-			"success",
-			"confirm",
-			"complete",
-			"hugeicons"
-		]
+		"tags": ["tick", "done", "success", "confirm", "complete", "hugeicons"]
 	},
-	"check-check": {
+	"check-double": {
 		"tags": [
 			"double-check",
 			"tick",
@@ -256,344 +176,282 @@
 			"read",
 			"receipt",
 			"delivered",
-			"hugeicons"
+			"hugeicons",
+			"check-check",
+			"CheckCheck"
+		],
+		"aliases": ["check-check"]
+	},
+	"chevron-down": {
+		"tags": [
+			"chevron",
+			"down",
+			"bottom",
+			"expand",
+			"arrow-down-01",
+			"hugeicons",
+			"arrow-down",
+			"ArrowDown"
 		]
+	},
+	"chevron-left": {
+		"tags": [
+			"chevron",
+			"left",
+			"back",
+			"previous",
+			"arrow-left-01",
+			"hugeicons",
+			"arrow-left",
+			"ArrowLeft"
+		]
+	},
+	"chevron-right": {
+		"tags": [
+			"chevron",
+			"right",
+			"forward",
+			"next",
+			"arrow-right-01",
+			"hugeicons",
+			"arrow-right",
+			"ArrowRight"
+		]
+	},
+	"chevron-up": {
+		"tags": [
+			"chevron",
+			"up",
+			"top",
+			"collapse",
+			"arrow-up-01",
+			"hugeicons",
+			"arrow-up",
+			"ArrowUp"
+		]
+	},
+	"chevrons-down": {
+		"tags": [
+			"chevron",
+			"double",
+			"down",
+			"bottom",
+			"hugeicons",
+			"arrow-down-double",
+			"ArrowDownDouble"
+		],
+		"aliases": ["arrow-down-double"]
+	},
+	"chevrons-left": {
+		"tags": [
+			"chevron",
+			"double",
+			"left",
+			"first",
+			"hugeicons",
+			"arrow-left-double",
+			"ArrowLeftDouble"
+		],
+		"aliases": ["arrow-left-double"]
+	},
+	"chevrons-right": {
+		"tags": [
+			"chevron",
+			"double",
+			"right",
+			"last",
+			"hugeicons",
+			"arrow-right-double",
+			"ArrowRightDouble"
+		],
+		"aliases": ["arrow-right-double"]
+	},
+	"chevrons-up": {
+		"tags": [
+			"chevron",
+			"double",
+			"up",
+			"top",
+			"hugeicons",
+			"arrow-up-double",
+			"ArrowUpDouble"
+		],
+		"aliases": ["arrow-up-double"]
 	},
 	"chrome": {
-		"tags": [
-			"brand",
-			"chrome",
-			"google",
-			"browser"
-		]
+		"tags": ["brand", "chrome", "google", "browser"]
 	},
 	"clapperboard": {
-		"tags": [
-			"film",
-			"movie",
-			"video",
-			"play",
-			"clapperboard-play",
-			"solar"
-		]
+		"tags": ["film", "movie", "video", "play", "clapperboard-play", "solar"]
 	},
 	"claude-ai": {
-		"tags": [
-			"claude",
-			"anthropic",
-			"ai",
-			"assistant",
-			"brand"
-		]
+		"tags": ["claude", "anthropic", "ai", "assistant", "brand"]
 	},
 	"claude-code": {
-		"tags": [
-			"claude",
-			"anthropic",
-			"ai",
-			"code",
-			"terminal",
-			"brand"
-		]
+		"tags": ["claude", "anthropic", "ai", "code", "terminal", "brand"]
 	},
 	"close": {
-		"tags": [
-			"dismiss",
-			"cancel",
-			"cross",
-			"x",
-			"solar"
-		]
+		"tags": ["dismiss", "cancel", "cross", "x", "solar"]
 	},
 	"cloud": {
-		"tags": [
-			"storage",
-			"weather",
-			"online",
-			"sync",
-			"solar"
-		]
+		"tags": ["storage", "weather", "online", "sync", "solar"]
 	},
 	"code": {
-		"tags": [
-			"programming",
-			"developer",
-			"syntax",
-			"brackets",
-			"solar"
-		]
+		"tags": ["programming", "developer", "syntax", "brackets", "solar"]
 	},
 	"codex": {
-		"tags": [
-			"openai",
-			"ai",
-			"coding",
-			"brand"
-		]
+		"tags": ["openai", "ai", "coding", "brand"]
 	},
 	"command": {
 		"tags": ["keyboard", "shortcut", "cmd", "mac", "solar"]
 	},
 	"computer": {
-		"tags": [
-			"monitor",
-			"desktop",
-			"screen",
-			"display",
-			"device",
-			"hugeicons"
-		]
+		"tags": ["monitor", "desktop", "screen", "display", "device", "hugeicons"]
 	},
 	"copy": {
-		"tags": [
-			"copy",
-			"duplicate",
-			"clipboard",
-			"copy-01",
-			"hugeicons"
-		]
+		"tags": ["copy", "duplicate", "clipboard", "copy-01", "hugeicons"]
 	},
 	"cursor": {
-		"tags": [
-			"brand",
-			"cursor",
-			"ai",
-			"code",
-			"editor"
-		]
-	},
-	"danger": {
-		"tags": [
-			"warning",
-			"alert",
-			"triangle",
-			"error",
-			"danger-triangle",
-			"solar"
-		]
+		"tags": ["brand", "cursor", "ai", "code", "editor"]
 	},
 	"deepseek": {
-		"tags": [
-			"ai",
-			"whale",
-			"brand"
-		]
+		"tags": ["ai", "whale", "brand"]
 	},
 	"devin": {
-		"tags": [
-			"ai",
-			"code",
-			"agent",
-			"brand"
-		]
+		"tags": ["ai", "code", "agent", "brand"]
 	},
 	"discord": {
-		"tags": [
-			"chat",
-			"community",
-			"brand"
-		]
+		"tags": ["chat", "community", "brand"]
 	},
 	"dislike": {
-		"tags": [
-			"thumbs-down",
-			"disapprove",
-			"feedback",
-			"hugeicons"
-		]
+		"tags": ["thumbs-down", "disapprove", "feedback", "hugeicons"]
 	},
-	"spinner-tinker": {
-		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "chevron", "wave"]
+	"door-open": {
+		"tags": ["door", "leave", "logout", "sign-out", "solar", "exit"],
+		"aliases": ["exit"]
 	},
-	"edit-01": {
+	"edit": {
 		"tags": [
 			"edit",
 			"pencil",
 			"write",
 			"draw",
-			"hugeicons"
-		]
+			"hugeicons",
+			"edit-01",
+			"Edit01"
+		],
+		"aliases": ["edit-01"]
 	},
 	"edit-off": {
-		"tags": [
-			"edit",
-			"disabled",
-			"read-only",
-			"pencil",
-			"hugeicons"
-		]
+		"tags": ["edit", "disabled", "read-only", "pencil", "hugeicons"]
 	},
 	"email": {
-		"tags": [
-			"mail",
-			"letter",
-			"envelope",
-			"message",
-			"solar"
-		]
-	},
-	"exit": {
-		"tags": ["door", "leave", "logout", "sign-out", "solar"]
+		"tags": ["mail", "letter", "envelope", "message", "solar"]
 	},
 	"facebook": {
-		"tags": [
-			"meta",
-			"social",
-			"brand"
-		]
+		"tags": ["meta", "social", "brand"]
 	},
 	"file": {
-		"tags": [
-			"document",
-			"page",
-			"paper",
-			"text",
-			"file-text",
-			"solar"
-		]
+		"tags": ["document", "page", "paper", "text", "file-text", "solar"]
 	},
-	"file-code": {
-		"tags": [
-			"document",
-			"code",
-			"source",
-			"programming",
-			"code-file",
-			"solar"
-		]
-	},
-	"file-read": {
+	"file-check": {
 		"tags": [
 			"document",
 			"read",
 			"check",
 			"done",
 			"file-check",
-			"solar"
-		]
+			"solar",
+			"file-read",
+			"FileRead"
+		],
+		"aliases": ["file-read"]
+	},
+	"file-code": {
+		"tags": ["document", "code", "source", "programming", "code-file", "solar"]
 	},
 	"file-remove": {
-		"tags": [
-			"document",
-			"delete",
-			"remove",
-			"cancel",
-			"solar"
-		]
+		"tags": ["document", "delete", "remove", "cancel", "solar"]
 	},
-	"folder-01": {
+	"folder": {
 		"tags": [
 			"folder",
 			"directory",
 			"files",
 			"storage",
-			"hugeicons"
-		]
+			"hugeicons",
+			"folder-01",
+			"Folder01"
+		],
+		"aliases": ["folder-01"]
 	},
 	"folder-add": {
-		"tags": [
-			"folder",
-			"directory",
-			"create",
-			"new",
-			"plus",
-			"hugeicons"
-		]
+		"tags": ["folder", "directory", "create", "new", "plus", "hugeicons"]
 	},
 	"folder-open": {
-		"tags": [
-			"folder",
-			"open",
-			"directory",
-			"files",
-			"storage",
-			"hugeicons"
-		]
+		"tags": ["folder", "open", "directory", "files", "storage", "hugeicons"]
 	},
 	"gemini": {
-		"tags": [
-			"google",
-			"ai",
-			"brand"
-		]
+		"tags": ["google", "ai", "brand"]
 	},
 	"git": {
 		"tags": ["version-control", "repository", "code", "brand"]
 	},
-	"github": {
+	"git-branch": {
+		"tags": ["git", "version-control", "fork", "code", "branch"],
+		"aliases": ["branch"]
+	},
+	"git-merge-conflict": {
 		"tags": [
 			"git",
+			"merge",
+			"conflict",
+			"pull-request",
 			"code",
-			"repository",
-			"brand"
-		]
-	},
-	"github-copilot": {
-		"tags": [
-			"brand",
-			"github",
-			"copilot",
-			"ai",
-			"code",
-			"assistant"
-		]
-	},
-	"google": {
-		"tags": [
-			"search",
-			"alphabet",
-			"brand"
-		]
+			"merge-conflict",
+			"MergeConflict"
+		],
+		"aliases": ["merge-conflict"]
 	},
 	"git-pull-request": {
 		"tags": ["git", "pull-request", "pr", "review", "merge", "code"]
 	},
-	"grok": {
-		"tags": [
-			"xai",
-			"ai",
-			"assistant",
-			"brand"
-		]
+	"github": {
+		"tags": ["git", "code", "repository", "brand"]
 	},
-	"hamburger": {
-		"tags": [
-			"menu",
-			"navigation",
-			"bars",
-			"hamburger-menu",
-			"solar"
-		]
+	"github-copilot": {
+		"tags": ["brand", "github", "copilot", "ai", "code", "assistant"]
+	},
+	"google": {
+		"tags": ["search", "alphabet", "brand"]
+	},
+	"grok": {
+		"tags": ["xai", "ai", "assistant", "brand"]
+	},
+	"hammer": {
+		"tags": ["sledgehammer", "hammer", "build", "tools", "solar", "tool"],
+		"aliases": ["tool"]
 	},
 	"hashtag": {
-		"tags": [
-			"hash",
-			"tag",
-			"number",
-			"hastag",
-			"solar"
-		]
+		"tags": ["hash", "tag", "number", "hastag", "solar"]
 	},
-	"headphone": {
+	"headphones": {
 		"tags": [
 			"headphones",
 			"audio",
 			"music",
 			"listen",
 			"headphones-round",
-			"solar"
-		]
+			"solar",
+			"headphone"
+		],
+		"aliases": ["headphone"]
 	},
-	"images": {
-		"tags": [
-			"image",
-			"gallery",
-			"photo",
-			"picture",
-			"media"
-		]
+	"image": {
+		"tags": ["image", "gallery", "photo", "picture", "media", "images"],
+		"aliases": ["images"]
 	},
-	"images-add": {
+	"image-add": {
 		"tags": [
 			"image",
 			"gallery",
@@ -601,61 +459,33 @@
 			"photo",
 			"plus",
 			"gallery-add",
-			"solar"
-		]
+			"solar",
+			"images-add",
+			"ImagesAdd"
+		],
+		"aliases": ["images-add"]
 	},
-	"insta": {
-		"tags": [
-			"instagram",
-			"social",
-			"photos",
-			"brand"
-		]
+	"instagram": {
+		"tags": ["instagram", "social", "photos", "brand", "insta"],
+		"aliases": ["insta"]
 	},
 	"integration": {
-		"tags": [
-			"flow",
-			"workflow",
-			"connect",
-			"nodes",
-			"hugeicons"
-		]
+		"tags": ["flow", "workflow", "connect", "nodes", "hugeicons"]
 	},
 	"kimi": {
 		"tags": ["ai", "assistant", "moonshot", "brand"]
 	},
 	"layers": {
-		"tags": [
-			"stack",
-			"design",
-			"levels",
-			"layers-minimalistic",
-			"solar"
-		]
+		"tags": ["stack", "design", "levels", "layers-minimalistic", "solar"]
 	},
 	"lightning": {
-		"tags": [
-			"bolt",
-			"flash",
-			"electricity",
-			"energy",
-			"power",
-			"zap"
-		]
+		"tags": ["bolt", "flash", "electricity", "energy", "power", "zap"]
 	},
 	"like": {
-		"tags": [
-			"thumbs-up",
-			"approve",
-			"feedback",
-			"hugeicons"
-		]
+		"tags": ["thumbs-up", "approve", "feedback", "hugeicons"]
 	},
 	"linkedin": {
-		"tags": [
-			"brand",
-			"linkedin"
-		]
+		"tags": ["brand", "linkedin"]
 	},
 	"list-down": {
 		"tags": [
@@ -678,184 +508,87 @@
 		]
 	},
 	"lock": {
-		"tags": [
-			"locked",
-			"security",
-			"private",
-			"access",
-			"hugeicons"
-		]
+		"tags": ["locked", "security", "private", "access", "hugeicons"]
 	},
-	"lock-unlock": {
+	"lock-open": {
 		"tags": [
 			"lock-open",
 			"unlock",
 			"security",
 			"access",
-			"hugeicons"
-		]
+			"hugeicons",
+			"lock-unlock",
+			"LockUnlock"
+		],
+		"aliases": ["lock-unlock"]
 	},
 	"logout": {
-		"tags": [
-			"sign-out",
-			"exit",
-			"account",
-			"logout-3",
-			"solar"
-		]
+		"tags": ["sign-out", "exit", "account", "logout-3", "solar"]
 	},
 	"maximize": {
-		"tags": [
-			"expand",
-			"fullscreen",
-			"resize",
-			"arrows"
-		]
+		"tags": ["expand", "fullscreen", "resize", "arrows"]
 	},
-	"merge-conflict": {
-		"tags": ["git", "merge", "conflict", "pull-request", "code"]
+	"menu": {
+		"tags": [
+			"menu",
+			"navigation",
+			"bars",
+			"hamburger-menu",
+			"solar",
+			"hamburger"
+		],
+		"aliases": ["hamburger"]
 	},
 	"meta-ai": {
-		"tags": [
-			"brand",
-			"meta",
-			"ai",
-			"assistant"
-		]
+		"tags": ["brand", "meta", "ai", "assistant"]
 	},
 	"microphone": {
-		"tags": [
-			"mic",
-			"record",
-			"voice",
-			"audio",
-			"microphone-large",
-			"solar"
-		]
+		"tags": ["mic", "record", "voice", "audio", "microphone-large", "solar"]
 	},
-	"minimize": {
-		"tags": [
-			"collapse",
-			"shrink",
-			"restore",
-			"resize",
-			"arrows"
-		]
-	},
-	"minus": {
-		"tags": [
-			"subtract",
-			"remove",
-			"decrease",
-			"solar"
-		]
-	},
-	"mistral": {
-		"tags": [
-			"ai",
-			"brand"
-		]
-	},
-	"moon": {
-		"tags": [
-			"moon",
-			"night",
-			"dark",
-			"theme",
-			"crescent",
-			"solar"
-		]
-	},
-	"more-horizontal": {
-		"tags": [
-			"ellipsis",
-			"menu",
-			"options",
-			"dots",
-			"horizontal",
-			"hugeicons"
-		]
-	},
-	"more-vertical": {
-		"tags": [
-			"ellipsis",
-			"menu",
-			"options",
-			"dots",
-			"vertical",
-			"hugeicons"
-		]
-	},
-	"ms-copilot": {
+	"microsoft-copilot": {
 		"tags": [
 			"microsoft",
 			"copilot",
 			"ai",
 			"assistant",
-			"brand"
-		]
+			"brand",
+			"ms-copilot",
+			"MsCopilot"
+		],
+		"aliases": ["ms-copilot"]
 	},
-	"muted": {
-		"tags": [
-			"mute",
-			"volume-off",
-			"silent",
-			"speaker",
-			"audio",
-			"solar"
-		]
+	"minimize": {
+		"tags": ["collapse", "shrink", "restore", "resize", "arrows"]
+	},
+	"minus": {
+		"tags": ["subtract", "remove", "decrease", "solar"]
+	},
+	"mistral": {
+		"tags": ["ai", "brand"]
+	},
+	"moon": {
+		"tags": ["moon", "night", "dark", "theme", "crescent", "solar"]
+	},
+	"more-horizontal": {
+		"tags": ["ellipsis", "menu", "options", "dots", "horizontal", "hugeicons"]
+	},
+	"more-vertical": {
+		"tags": ["ellipsis", "menu", "options", "dots", "vertical", "hugeicons"]
 	},
 	"npm": {
-		"tags": [
-			"package",
-			"registry",
-			"javascript",
-			"brand"
-		]
+		"tags": ["package", "registry", "javascript", "brand"]
 	},
 	"nvidia": {
-		"tags": [
-			"brand",
-			"nvidia",
-			"gpu",
-			"hardware"
-		]
+		"tags": ["brand", "nvidia", "gpu", "hardware"]
 	},
 	"openai": {
-		"tags": [
-			"chatgpt",
-			"ai",
-			"brand"
-		]
+		"tags": ["chatgpt", "ai", "brand"]
 	},
 	"openclaw": {
-		"tags": [
-			"open-claw",
-			"ai",
-			"mascot",
-			"brand"
-		]
+		"tags": ["open-claw", "ai", "mascot", "brand"]
 	},
 	"opencode": {
-		"tags": [
-			"open-code",
-			"code",
-			"terminal",
-			"brand"
-		]
-	},
-	"spinner-orbit": {
-		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "comet"]
-	},
-	"pallet": {
-		"tags": [
-			"library",
-			"collection",
-			"stack",
-			"archive",
-			"files",
-			"solar"
-		]
+		"tags": ["open-code", "code", "terminal", "brand"]
 	},
 	"paper-plane": {
 		"tags": [
@@ -869,138 +602,46 @@
 		]
 	},
 	"paperclip": {
-		"tags": [
-			"attachment",
-			"attach",
-			"clip",
-			"file",
-			"paperclip-2",
-			"solar"
-		]
+		"tags": ["attachment", "attach", "clip", "file", "paperclip-2", "solar"]
 	},
 	"pen": {
 		"tags": ["edit", "pencil", "write", "draw", "compose"]
 	},
 	"perplexity": {
-		"tags": [
-			"brand",
-			"perplexity",
-			"ai",
-			"search"
-		]
+		"tags": ["brand", "perplexity", "ai", "search"]
 	},
 	"pin": {
-		"tags": [
-			"pushpin",
-			"pinned",
-			"save",
-			"solar"
-		]
+		"tags": ["pushpin", "pinned", "save", "solar"]
 	},
 	"pinterest": {
-		"tags": [
-			"social",
-			"pins",
-			"brand"
-		]
+		"tags": ["social", "pins", "brand"]
 	},
 	"play": {
-		"tags": [
-			"start",
-			"resume",
-			"playback",
-			"video",
-			"audio",
-			"solar"
-		]
+		"tags": ["start", "resume", "playback", "video", "audio", "solar"]
 	},
 	"qwen": {
-		"tags": [
-			"ai",
-			"alibaba",
-			"brand"
-		]
+		"tags": ["ai", "alibaba", "brand"]
 	},
 	"react": {
-		"tags": [
-			"javascript",
-			"framework",
-			"frontend",
-			"brand"
-		]
+		"tags": ["javascript", "framework", "frontend", "brand"]
 	},
 	"reddit": {
-		"tags": [
-			"community",
-			"social",
-			"brand"
-		]
+		"tags": ["community", "social", "brand"]
 	},
 	"redo": {
-		"tags": [
-			"history",
-			"forward",
-			"repeat",
-			"arrow"
-		]
+		"tags": ["history", "forward", "repeat", "arrow"]
 	},
 	"reorder": {
-		"tags": [
-			"sort",
-			"arrange",
-			"drag",
-			"list",
-			"menu",
-			"solar"
-		]
+		"tags": ["sort", "arrange", "drag", "list", "menu", "solar"]
 	},
 	"repeat": {
-		"tags": [
-			"loop",
-			"cycle",
-			"refresh",
-			"solar"
-		]
-	},
-	"search-minus": {
-		"tags": [
-			"magnifier",
-			"minimalistic-magnifier-zoom-out",
-			"zoom-out",
-			"search",
-			"shrink",
-			"minus",
-			"solar"
-		]
-	},
-	"search-plus": {
-		"tags": [
-			"magnifier",
-			"magnifier-zoom-in",
-			"zoom-in",
-			"search",
-			"enlarge",
-			"plus",
-			"solar"
-		]
+		"tags": ["loop", "cycle", "refresh", "solar"]
 	},
 	"settings": {
-		"tags": [
-			"gear",
-			"cog",
-			"preferences",
-			"configuration",
-			"options",
-			"solar"
-		]
+		"tags": ["gear", "cog", "preferences", "configuration", "options", "solar"]
 	},
 	"share": {
-		"tags": [
-			"send",
-			"social",
-			"link",
-			"solar"
-		]
+		"tags": ["send", "social", "link", "solar"]
 	},
 	"sidebar-left": {
 		"tags": [
@@ -1025,62 +666,79 @@
 		]
 	},
 	"slack": {
-		"tags": [
-			"messaging",
-			"chat",
-			"team",
-			"workplace",
-			"brand"
-		]
+		"tags": ["messaging", "chat", "team", "workplace", "brand"]
 	},
 	"smartphone": {
-		"tags": [
-			"phone",
-			"mobile",
-			"device",
-			"screen",
-			"solar"
-		]
+		"tags": ["phone", "mobile", "device", "screen", "solar"]
 	},
 	"soundwave": {
-		"tags": [
-			"waveform",
-			"audio",
-			"sound",
-			"voice",
-			"equalizer",
-			"solar"
-		]
-	},
-	"star": {
-		"tags": [
-			"favorite",
-			"rating",
-			"saved",
-			"solar"
-		]
-	},
-	"spinner-large": {
-		"tags": ["loader", "loading", "progress", "wait", "rotate", "arc", "long"]
-	},
-	"spinner-pulse": {
-		"tags": ["loader", "loading", "progress", "wait", "square", "pulse", "breathe"]
+		"tags": ["waveform", "audio", "sound", "voice", "equalizer", "solar"]
 	},
 	"spinner": {
 		"tags": ["loader", "loading", "progress", "wait", "busy", "rotate"]
+	},
+	"spinner-arc": {
+		"tags": [
+			"loader",
+			"loading",
+			"progress",
+			"wait",
+			"rotate",
+			"arc",
+			"long",
+			"spinner-large",
+			"SpinnerLarge"
+		],
+		"aliases": ["spinner-large"]
+	},
+	"spinner-orbit": {
+		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "comet"]
+	},
+	"spinner-pulse": {
+		"tags": [
+			"loader",
+			"loading",
+			"progress",
+			"wait",
+			"square",
+			"pulse",
+			"breathe"
+		]
+	},
+	"spinner-wave": {
+		"tags": [
+			"loader",
+			"loading",
+			"progress",
+			"wait",
+			"grid",
+			"pixel",
+			"chevron",
+			"wave",
+			"spinner-tinker",
+			"SpinnerTinker"
+		],
+		"aliases": ["spinner-tinker"]
+	},
+	"square-pen": {
+		"tags": [
+			"send-message",
+			"SendMessage",
+			"compose",
+			"edit",
+			"write",
+			"pencil"
+		],
+		"aliases": ["send-message"]
+	},
+	"star": {
+		"tags": ["favorite", "rating", "saved", "solar"]
 	},
 	"sticker": {
 		"tags": ["label", "peel", "fold", "square", "solar"]
 	},
 	"stop": {
-		"tags": [
-			"end",
-			"halt",
-			"playback",
-			"recording",
-			"square",
-			"solar"
-		]
+		"tags": ["end", "halt", "playback", "recording", "square", "solar"]
 	},
 	"sun": {
 		"tags": [
@@ -1094,101 +752,41 @@
 		]
 	},
 	"supabase": {
-		"tags": [
-			"database",
-			"backend",
-			"brand"
-		]
+		"tags": ["database", "backend", "brand"]
 	},
 	"tablet": {
-		"tags": [
-			"ipad",
-			"device",
-			"screen",
-			"landscape",
-			"solar"
-		]
+		"tags": ["ipad", "device", "screen", "landscape", "solar"]
 	},
 	"telegram": {
-		"tags": [
-			"messaging",
-			"chat",
-			"social",
-			"brand",
-			"paper-plane"
-		]
+		"tags": ["messaging", "chat", "social", "brand", "paper-plane"]
 	},
 	"terminal": {
 		"tags": ["code", "console", "command", "shell", "prompt", "cli"]
 	},
 	"threads": {
-		"tags": [
-			"brand",
-			"threads"
-		]
+		"tags": ["brand", "threads"]
 	},
 	"tiktok": {
-		"tags": [
-			"brand",
-			"tiktok"
-		]
-	},
-	"tool": {
-		"tags": [
-			"sledgehammer",
-			"hammer",
-			"build",
-			"tools",
-			"solar"
-		]
-	},
-	"ts": {
-		"tags": [
-			"typescript",
-			"javascript",
-			"language",
-			"brand"
-		]
+		"tags": ["brand", "tiktok"]
 	},
 	"twitter": {
-		"tags": [
-			"bird",
-			"social",
-			"brand"
-		]
+		"tags": ["bird", "social", "brand"]
+	},
+	"typescript": {
+		"tags": ["typescript", "javascript", "language", "brand", "ts"],
+		"aliases": ["ts"]
 	},
 	"undo": {
-		"tags": [
-			"history",
-			"back",
-			"revert",
-			"arrow"
-		]
+		"tags": ["history", "back", "revert", "arrow"]
 	},
 	"unfold-less": {
-		"tags": [
-			"collapse",
-			"fold",
-			"chevrons",
-			"hugeicons"
-		]
+		"tags": ["collapse", "fold", "chevrons", "hugeicons"]
 	},
 	"unfold-more": {
-		"tags": [
-			"expand",
-			"unfold",
-			"chevrons",
-			"hugeicons"
-		]
+		"tags": ["expand", "unfold", "chevrons", "hugeicons"]
 	},
 	"user": {
-		"tags": [
-			"profile",
-			"person",
-			"account",
-			"avatar",
-			"solar"
-		]
+		"tags": ["profile", "person", "account", "avatar", "solar"]
 	},
 	"user-group": {
 		"tags": [
@@ -1201,93 +799,88 @@
 		]
 	},
 	"vercel": {
-		"tags": [
-			"brand",
-			"vercel",
-			"hosting",
-			"deployment"
-		]
+		"tags": ["brand", "vercel", "hosting", "deployment"]
 	},
 	"verified-check": {
-		"tags": [
-			"verified",
-			"badge",
-			"check",
-			"approved",
-			"solar"
-		]
+		"tags": ["verified", "badge", "check", "approved", "solar"]
 	},
-	"videocamera": {
-		"tags": [
-			"video",
-			"camera",
-			"record",
-			"call"
-		]
+	"video-camera": {
+		"tags": ["video", "camera", "record", "call", "videocamera"],
+		"aliases": ["videocamera"]
 	},
-	"volume": {
-		"tags": [
-			"speaker",
-			"sound",
-			"audio",
-			"volume-low",
-			"solar"
-		]
-	},
-	"volume-loud": {
+	"volume-high": {
 		"tags": [
 			"volume",
 			"sound",
 			"speaker",
 			"audio",
 			"unmute",
-			"solar"
-		]
+			"solar",
+			"volume-loud",
+			"VolumeLoud"
+		],
+		"aliases": ["volume-loud"]
+	},
+	"volume-low": {
+		"tags": ["speaker", "sound", "audio", "volume-low", "solar", "volume"],
+		"aliases": ["volume"]
+	},
+	"volume-off": {
+		"tags": [
+			"mute",
+			"volume-off",
+			"silent",
+			"speaker",
+			"audio",
+			"solar",
+			"muted"
+		],
+		"aliases": ["muted"]
 	},
 	"widget": {
-		"tags": [
-			"grid",
-			"dashboard",
-			"layout",
-			"apps",
-			"solar"
-		]
+		"tags": ["grid", "dashboard", "layout", "apps", "solar"]
 	},
 	"widget-add": {
-		"tags": [
-			"widget",
-			"add",
-			"plus",
-			"grid",
-			"dashboard",
-			"layout",
-			"solar"
-		]
+		"tags": ["widget", "add", "plus", "grid", "dashboard", "layout", "solar"]
 	},
 	"windsurf": {
-		"tags": [
-			"ai",
-			"code",
-			"editor",
-			"brand"
-		]
+		"tags": ["ai", "code", "editor", "brand"]
 	},
 	"xai": {
 		"tags": ["ai", "brand"]
 	},
 	"youtube": {
-		"tags": [
-			"brand",
-			"youtube",
-			"video",
-			"google"
-		]
+		"tags": ["brand", "youtube", "video", "google"]
 	},
 	"zai": {
+		"tags": ["z.ai", "ai", "brand"]
+	},
+	"zoom-in": {
 		"tags": [
-			"z.ai",
-			"ai",
-			"brand"
-		]
+			"magnifier",
+			"magnifier-zoom-in",
+			"zoom-in",
+			"search",
+			"enlarge",
+			"plus",
+			"solar",
+			"search-plus",
+			"SearchPlus"
+		],
+		"aliases": ["search-plus"]
+	},
+	"zoom-out": {
+		"tags": [
+			"magnifier",
+			"minimalistic-magnifier-zoom-out",
+			"zoom-out",
+			"search",
+			"shrink",
+			"minus",
+			"solar",
+			"search-minus",
+			"SearchMinus"
+		],
+		"aliases": ["search-minus"]
 	}
 }
