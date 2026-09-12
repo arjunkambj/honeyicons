@@ -120,7 +120,7 @@ export function Hero() {
 					</div>
 				</div>
 				<div className={styles.strokeLabel}>
-					Stroke width <span className="font-mono text-2xl">1.5</span>
+					Stroke width <span className="font-mono text-2xl">1.8</span>
 				</div>
 			</div>
 		</section>

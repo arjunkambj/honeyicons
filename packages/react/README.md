@@ -20,7 +20,7 @@ export function Toolbar() {
 ```
 
 Requires React 18 or later. Icons accept SVG props, `size` (default `24`),
-`color` (default `currentColor`), and `strokeWidth` (default `1.5`).
+`color` (default `currentColor`), and `strokeWidth` (default `1.8`).
 Use `title`, `aria-label`, or `aria-labelledby` to give an icon an accessible
 name. Icons without a name are decorative by default. Explicit `role` and
 `aria-hidden` props override these defaults.

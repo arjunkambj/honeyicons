@@ -31,7 +31,7 @@ export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
 		variant: _variant = "linear",
 		size = 24,
 		color = "currentColor",
-		strokeWidth = 1.5,
+		strokeWidth = 1.8,
 		secondaryColor,
 		secondaryOpacity = 0.2,
 		title,

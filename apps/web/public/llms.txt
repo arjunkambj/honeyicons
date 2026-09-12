@@ -8,14 +8,14 @@ import { Bell, Search, SquarePen } from "@honeyicons/react";
 
 <Bell size={24} />
 <Search size={16} />
-<SquarePen size={24} strokeWidth={1.5} />
+<SquarePen size={24} strokeWidth={1.8} />
 
 Components accept standard SVG props, className, style, color, size, strokeWidth, and an optional title for an accessible image label. Icons without a title are decorative. Give icon-only buttons an accessible name on the button.
 
 ## Conventions
 
 - Prefer named imports and existing icon names. Do not invent exports.
-- Icons use a 24 by 24 viewBox, currentColor, and a default 1.5-unit stroke with rounded caps and joins.
+- Icons use a 24 by 24 viewBox, currentColor, and a default 1.8-unit stroke with rounded caps and joins.
 - Use size={16} or size={24} for common interface sizes.
 - Preserve supplied filled geometry. Some linear icons use filled outlines; strokeWidth does not change their baked-in weight.
 - The variant prop accepts "linear", "bold", or "duotone". Linear is the default. Check an icon's variants before using another style; unavailable variants fall back to linear.

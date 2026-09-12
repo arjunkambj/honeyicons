@@ -96,7 +96,7 @@ function DocsPage() {
 				<DocsSection
 					id="props"
 					title="Props"
-					description="Icons share a 24-unit grid, inherit currentColor, and default to a 1.5-unit stroke."
+					description="Icons share a 24-unit grid, inherit currentColor, and default to a 1.8-unit stroke."
 				>
 					<div className="mt-6 grid gap-3 sm:grid-cols-2">
 						<PropCard
@@ -138,11 +138,11 @@ function DocsPage() {
 						</PropCard>
 						<PropCard
 							title="Stroke"
-							description="The default is 1.5. Filled outlines keep their baked-in weight."
+							description="The default is 1.8. Filled outlines keep their baked-in weight."
 						>
 							<div className="flex items-end gap-6">
 								<StrokeSample width={1} />
-								<StrokeSample width={1.5} />
+								<StrokeSample width={1.8} />
 								<StrokeSample width={2} />
 							</div>
 						</PropCard>
