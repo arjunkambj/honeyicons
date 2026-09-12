@@ -52,7 +52,7 @@
     },
     "packages/react": {
       "name": "@honeyicons/react",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "devDependencies": {
         "@honeyicons/config": "workspace:*",
         "@types/react": "catalog:",
