@@ -1,22 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <style>
-    .mark { stroke: #18181b; }
-    @media (prefers-color-scheme: dark) {
-      .mark { stroke: #fafafa; }
-    }
-  </style>
-  <path
-    class="mark"
-    d="M12 2L20.66 7L20.66 17L12 22L3.34 17L3.34 7Z"
-    stroke-width="1.5"
-    stroke-linejoin="round"
-    stroke-linecap="round"
-  />
-  <path
-    class="mark"
-    d="M12 6.75L16.547 9.375L16.547 14.625L12 17.25L7.453 14.625L7.453 9.375Z"
-    stroke-width="1.5"
-    stroke-linejoin="round"
-    stroke-linecap="round"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+  <style>:root{color:#18181b}@media(prefers-color-scheme:dark){:root{color:#fafafa}}</style>
+  <g transform="translate(1.8 1.8) scale(.85)">
+    <path d="M 9.248 2 H 17.724 L 13.932 10.55 H 20.252 C 21.293 10.55 21.963 11.442 21.517 12.483 L 17.353 22 H 8.951 L 13.04 12.706 C 13.56 11.591 12.965 10.55 11.85 10.55 H 9.694 L 6.572 17.688 H 2.408 Z"/>
+  </g>
 </svg>
