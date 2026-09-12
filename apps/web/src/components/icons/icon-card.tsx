@@ -23,7 +23,10 @@ export function IconCard({ item, variant, size, guides }: IconCardProps) {
 	useEffect(() => {
 		const svg = iconRef.current;
 		if (!guides || !svg || !item.variants.includes(variant)) return;
-		const { x, y, width, height } = svg.getBBox();
+		// Animated icons can mark a stationary shape for stable guide bounds.
+		const measuredShape =
+			svg.querySelector<SVGGraphicsElement>("[data-honeyicons-bounds]") ?? svg;
+		const { x, y, width, height } = measuredShape.getBBox();
 		// Include round strokes when comparing with filled brand outlines.
 		const strokeWidth = Number(svg.getAttribute("stroke-width") ?? 0);
 		setBounds({
