@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon";
 
 export const ClaudeCode = createIcon("ClaudeCode", {
 	linear: [
-		["path", { fillRule: "evenodd", clipRule: "evenodd", d: "M20 4V8H24V12H20V20H18V16H16V20H14V16H10V20H8V16H6V20H4V12H0V8H4V4H20ZM16 6V8H18V6H16ZM6 8H8V6H6V8Z", fill: "currentColor" }],
+		["path", { transform: "translate(12 12) scale(0.91666667) translate(-12.00000000 -12)", fillRule: "evenodd", clipRule: "evenodd", d: "M20 4V8H24V12H20V20H18V16H16V20H14V16H10V20H8V16H6V20H4V12H0V8H4V4H20ZM16 6V8H18V6H16ZM6 8H8V6H6V8Z", fill: "currentColor" }],
 	],
 });
