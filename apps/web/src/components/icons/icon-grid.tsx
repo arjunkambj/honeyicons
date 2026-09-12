@@ -47,10 +47,22 @@ export function IconGrid({
 	}
 
 	return (
-		<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6">
-			{items.map((item) => (
-				<IconCard key={item.name} item={item} variant={variant} size={size} />
-			))}
+		<div className="overflow-x-auto">
+			<div
+				className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6"
+				style={
+					size > 96
+						? {
+								gridTemplateColumns: `repeat(auto-fill, minmax(${size + 24}px, 1fr))`,
+								minWidth: size + 24,
+							}
+						: undefined
+				}
+			>
+				{items.map((item) => (
+					<IconCard key={item.name} item={item} variant={variant} size={size} />
+				))}
+			</div>
 		</div>
 	);
 }

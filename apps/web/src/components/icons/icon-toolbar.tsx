@@ -63,7 +63,8 @@ export function IconToolbar({ size, onSizeChange, shown }: IconToolbarProps) {
 				min={SIZE_MIN}
 				max={SIZE_MAX}
 				step={1}
-				majorStep={SIZE_MAJOR_STEP}
+				tickStep={SIZE_MAX > 96 ? 8 : 1}
+				majorStep={SIZE_MAX > 96 ? 32 : SIZE_MAJOR_STEP}
 				value={size}
 				onValueChange={(value) => onSizeChange(sliderNumber(value))}
 			/>

@@ -11,7 +11,7 @@ import {
 import type { IconSvgElement } from "@hugeicons/react";
 
 export const SIZE_MIN = 16;
-export const SIZE_MAX = 96;
+export const SIZE_MAX = process.env.NODE_ENV === "development" ? 460 : 96;
 export const SIZE_DEFAULT = 24;
 export const SIZE_MAJOR_STEP = 4;
 
