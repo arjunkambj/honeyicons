@@ -10,8 +10,8 @@ import { useState } from "react";
 import { CopyButton } from "@/components/code-block";
 
 const installCommands = [
-	{ id: "npm", label: "npm", command: "npm i @honeyicons/react" },
 	{ id: "pnpm", label: "pnpm", command: "pnpm add @honeyicons/react" },
+	{ id: "npm", label: "npm", command: "npm i @honeyicons/react" },
 	{ id: "bun", label: "bun", command: "bun add @honeyicons/react" },
 ] as const;
 
@@ -67,7 +67,7 @@ export function InstallCommand({
 	className?: string;
 	layout?: "pill" | "panel";
 }) {
-	const [manager, setManager] = useState<Manager>("npm");
+	const [manager, setManager] = useState<Manager>("pnpm");
 	const command =
 		installCommands.find((item) => item.id === manager)?.command ??
 		installCommands[0].command;

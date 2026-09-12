@@ -69,7 +69,7 @@ function DocsPage() {
 				<DocsSection
 					id="install"
 					title="Install"
-					description="Add the React package with npm, pnpm, or bun."
+					description="Add the React package with pnpm, npm, or bun."
 				>
 					<InstallCommand layout="panel" className="mt-6" />
 				</DocsSection>

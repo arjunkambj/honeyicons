@@ -3,7 +3,7 @@
 SVG icons for React with TypeScript support, a 24-unit grid, and theme-aware colors.
 
 ```sh
-npm install @honeyicons/react
+pnpm add @honeyicons/react
 ```
 
 ```tsx
