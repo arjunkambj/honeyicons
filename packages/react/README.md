@@ -21,14 +21,37 @@ export function Toolbar() {
 
 Requires React 18 or later. Icons accept SVG props, `size` (default `24`),
 `color` (default `currentColor`), and `strokeWidth` (default `1.5`).
-Use `title` to give an icon an accessible name. Icons without a title are
-decorative by default.
+Use `title`, `aria-label`, or `aria-labelledby` to give an icon an accessible
+name. Icons without a name are decorative by default. Explicit `role` and
+`aria-hidden` props override these defaults.
+
+For an icon-only button, put the accessible name on the button:
+
+```tsx
+import { Bell } from "@honeyicons/react";
+
+export function NotificationsButton() {
+	return (
+		<button type="button" aria-label="Notifications">
+			<Bell size={20} />
+		</button>
+	);
+}
+```
+
+Use `className` and `style` for styling, and `size` for both dimensions (numbers
+or CSS lengths such as `"1em"`). Icons inherit the surrounding text color and
+forward `ref` to the SVG element. Standard SVG props, event handlers, and
+children such as `<desc>` are supported.
 
 Linear is the default variant. Selected icons also support other variants;
 check the component's `variants` property before choosing one. Stroke width
 affects stroked geometry; filled outlines retain their original geometry.
+Unsupported variants fall back to linear.
 
-Catalog data is available from `@honeyicons/react/catalog`.
+Catalog data is available as the named `catalog` export from
+`@honeyicons/react/catalog`. For reusable components, import the `HoneyIcon`
+and `HoneyIconProps` types from `@honeyicons/react`.
 
 The published package contains ESM JavaScript and TypeScript declarations.
 Named icon imports support tree shaking; importing the catalog includes the

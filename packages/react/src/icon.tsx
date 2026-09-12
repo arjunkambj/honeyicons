@@ -37,6 +37,7 @@ export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
 		title,
 		className,
 		style,
+		children,
 		...props
 	},
 	ref,
@@ -44,6 +45,9 @@ export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
 	// Solar linear icons are filled outlines. A root stroke would draw a
 	// second outline on top of the already-baked weight.
 	const hasStroke = iconNode.some(([, attrs]) => paintsStroke(attrs));
+	const hasAccessibleName = Boolean(
+		title || props["aria-label"] || props["aria-labelledby"],
+	);
 
 	return (
 		<svg
@@ -60,12 +64,12 @@ export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
 			color={color}
 			className={className}
 			style={style}
-			role={title ? "img" : "presentation"}
-			aria-hidden={title ? undefined : true}
+			role={hasAccessibleName ? "img" : "presentation"}
+			aria-hidden={hasAccessibleName ? undefined : true}
 			aria-label={title}
 			{...props}
 		>
-			<title>{title ?? ""}</title>
+			{title ? <title>{title}</title> : null}
 			{iconNode.map(([tag, attrs], index) => {
 				const isSecondary = attrs["data-slot"] === "secondary";
 				if (isSecondary) {
@@ -84,6 +88,7 @@ export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
 						: attrs;
 				return createElement(tag, { ...mapped, key: index });
 			})}
+			{children}
 		</svg>
 	);
 });
