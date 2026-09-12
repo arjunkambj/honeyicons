@@ -162,6 +162,9 @@
 		],
 		"aliases": ["calendar-03"]
 	},
+	"card": {
+		"tags": ["credit-card", "debit-card", "payment", "bank", "finance", "solar"]
+	},
 	"cart": {
 		"tags": ["basket", "shopping", "store", "solar"]
 	},
@@ -290,6 +293,9 @@
 	"claude-code": {
 		"tags": ["claude", "anthropic", "ai", "code", "terminal", "brand"]
 	},
+	"clock": {
+		"tags": ["time", "hour", "schedule", "watch"]
+	},
 	"close": {
 		"tags": ["dismiss", "cancel", "cross", "x", "solar"]
 	},
@@ -353,6 +359,9 @@
 	},
 	"file": {
 		"tags": ["document", "page", "paper", "text", "file-text", "solar"]
+	},
+	"file-add": {
+		"tags": ["document", "page", "paper", "add", "plus", "new", "create"]
 	},
 	"file-check": {
 		"tags": [
@@ -471,6 +480,9 @@
 	},
 	"integration": {
 		"tags": ["flow", "workflow", "connect", "nodes", "hugeicons"]
+	},
+	"key": {
+		"tags": ["security", "access", "password", "lock", "solar"]
 	},
 	"kimi": {
 		"tags": ["ai", "assistant", "moonshot", "brand"]
@@ -788,6 +800,9 @@
 	"user": {
 		"tags": ["profile", "person", "account", "avatar", "solar"]
 	},
+	"user-add": {
+		"tags": ["user", "add", "plus", "invite", "account", "user-plus", "solar"]
+	},
 	"user-group": {
 		"tags": [
 			"users",
@@ -836,6 +851,9 @@
 			"muted"
 		],
 		"aliases": ["muted"]
+	},
+	"wallet": {
+		"tags": ["money", "payment", "finance", "cash", "solar"]
 	},
 	"widget": {
 		"tags": ["grid", "dashboard", "layout", "apps", "solar"]

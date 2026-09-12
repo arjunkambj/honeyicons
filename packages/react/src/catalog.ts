@@ -23,6 +23,7 @@ import { Bookmark } from "./icons/bookmark.js";
 import { Brain } from "./icons/brain.js";
 import { Bun } from "./icons/bun.js";
 import { Calendar } from "./icons/calendar.js";
+import { Card } from "./icons/card.js";
 import { Cart } from "./icons/cart.js";
 import { Check } from "./icons/check.js";
 import { CheckDouble } from "./icons/check-double.js";
@@ -38,6 +39,7 @@ import { Chrome } from "./icons/chrome.js";
 import { Clapperboard } from "./icons/clapperboard.js";
 import { ClaudeAi } from "./icons/claude-ai.js";
 import { ClaudeCode } from "./icons/claude-code.js";
+import { Clock } from "./icons/clock.js";
 import { Close } from "./icons/close.js";
 import { Cloud } from "./icons/cloud.js";
 import { Code } from "./icons/code.js";
@@ -56,6 +58,7 @@ import { EditOff } from "./icons/edit-off.js";
 import { Email } from "./icons/email.js";
 import { Facebook } from "./icons/facebook.js";
 import { File } from "./icons/file.js";
+import { FileAdd } from "./icons/file-add.js";
 import { FileCheck } from "./icons/file-check.js";
 import { FileCode } from "./icons/file-code.js";
 import { FileRemove } from "./icons/file-remove.js";
@@ -79,6 +82,7 @@ import { Image } from "./icons/image.js";
 import { ImageAdd } from "./icons/image-add.js";
 import { Instagram } from "./icons/instagram.js";
 import { Integration } from "./icons/integration.js";
+import { Key } from "./icons/key.js";
 import { Kimi } from "./icons/kimi.js";
 import { Layers } from "./icons/layers.js";
 import { Lightning } from "./icons/lightning.js";
@@ -150,6 +154,7 @@ import { Undo } from "./icons/undo.js";
 import { UnfoldLess } from "./icons/unfold-less.js";
 import { UnfoldMore } from "./icons/unfold-more.js";
 import { User } from "./icons/user.js";
+import { UserAdd } from "./icons/user-add.js";
 import { UserGroup } from "./icons/user-group.js";
 import { Vercel } from "./icons/vercel.js";
 import { VerifiedCheck } from "./icons/verified-check.js";
@@ -157,6 +162,7 @@ import { VideoCamera } from "./icons/video-camera.js";
 import { VolumeHigh } from "./icons/volume-high.js";
 import { VolumeLow } from "./icons/volume-low.js";
 import { VolumeOff } from "./icons/volume-off.js";
+import { Wallet } from "./icons/wallet.js";
 import { Widget } from "./icons/widget.js";
 import { WidgetAdd } from "./icons/widget-add.js";
 import { Windsurf } from "./icons/windsurf.js";
@@ -349,6 +355,14 @@ export const catalog: CatalogItem[] = [
 		component: Calendar,
 	},
 	{
+		name: "card",
+		pascalName: "Card",
+		category: "actions",
+		tags: ["credit-card","debit-card","payment","bank","finance","solar"],
+		variants: ["linear"],
+		component: Card,
+	},
+	{
 		name: "cart",
 		pascalName: "Cart",
 		category: "actions",
@@ -467,6 +481,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["claude","anthropic","ai","code","terminal","brand"],
 		variants: ["linear"],
 		component: ClaudeCode,
+	},
+	{
+		name: "clock",
+		pascalName: "Clock",
+		category: "status",
+		tags: ["time","hour","schedule","watch"],
+		variants: ["linear"],
+		component: Clock,
 	},
 	{
 		name: "close",
@@ -611,6 +633,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["document","page","paper","text","file-text","solar"],
 		variants: ["linear"],
 		component: File,
+	},
+	{
+		name: "file-add",
+		pascalName: "FileAdd",
+		category: "files",
+		tags: ["document","page","paper","add","plus","new","create"],
+		variants: ["linear"],
+		component: FileAdd,
 	},
 	{
 		name: "file-check",
@@ -795,6 +825,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["flow","workflow","connect","nodes","hugeicons"],
 		variants: ["linear"],
 		component: Integration,
+	},
+	{
+		name: "key",
+		pascalName: "Key",
+		category: "settings",
+		tags: ["security","access","password","lock","solar"],
+		variants: ["linear"],
+		component: Key,
 	},
 	{
 		name: "kimi",
@@ -1365,6 +1403,14 @@ export const catalog: CatalogItem[] = [
 		component: User,
 	},
 	{
+		name: "user-add",
+		pascalName: "UserAdd",
+		category: "user",
+		tags: ["user","add","plus","invite","account","user-plus","solar"],
+		variants: ["linear"],
+		component: UserAdd,
+	},
+	{
 		name: "user-group",
 		pascalName: "UserGroup",
 		category: "user",
@@ -1419,6 +1465,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["mute","volume-off","silent","speaker","audio","solar","muted"],
 		variants: ["linear"],
 		component: VolumeOff,
+	},
+	{
+		name: "wallet",
+		pascalName: "Wallet",
+		category: "actions",
+		tags: ["money","payment","finance","cash","solar"],
+		variants: ["linear"],
+		component: Wallet,
 	},
 	{
 		name: "widget",
