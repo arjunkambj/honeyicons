@@ -9,6 +9,10 @@ licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 Their filled geometry, cutouts, and baked outline weights are preserved with
 `currentColor`; source classes and unused root stroke attributes are removed.
 
+`Repeat` subsequently received a smaller loop footprint for optical balance
+with the arrow set. Its filled loop retains a 1.5-unit outline; the original
+filled arrowheads are repositioned without scaling or changing their curves.
+
 `UserGroup` adapts the supplied **Users Group Two Rounded (Outline)** from the
 same Solar set and license. The center torso is reshaped to match User's rounded
 body and flatter base; the head and side figures retain their supplied filled
