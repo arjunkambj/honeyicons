@@ -402,6 +402,9 @@
 			"hugeicons"
 		]
 	},
+	"spinner-tinker": {
+		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "chevron", "wave"]
+	},
 	"edit-01": {
 		"tags": [
 			"edit",
@@ -841,6 +844,9 @@
 			"brand"
 		]
 	},
+	"spinner-orbit": {
+		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "comet"]
+	},
 	"pallet": {
 		"tags": [
 			"library",
@@ -871,6 +877,9 @@
 			"paperclip-2",
 			"solar"
 		]
+	},
+	"pen": {
+		"tags": ["edit", "pencil", "write", "draw", "compose"]
 	},
 	"perplexity": {
 		"tags": [
@@ -1051,6 +1060,15 @@
 			"solar"
 		]
 	},
+	"spinner-large": {
+		"tags": ["loader", "loading", "progress", "wait", "rotate", "arc", "long"]
+	},
+	"spinner-pulse": {
+		"tags": ["loader", "loading", "progress", "wait", "square", "pulse", "breathe"]
+	},
+	"spinner": {
+		"tags": ["loader", "loading", "progress", "wait", "busy", "rotate"]
+	},
 	"sticker": {
 		"tags": ["label", "peel", "fold", "square", "solar"]
 	},
@@ -1099,6 +1117,9 @@
 			"brand",
 			"paper-plane"
 		]
+	},
+	"terminal": {
+		"tags": ["code", "console", "command", "shell", "prompt", "cli"]
 	},
 	"threads": {
 		"tags": [

@@ -107,6 +107,7 @@ import { Opencode } from "./icons/opencode";
 import { Pallet } from "./icons/pallet";
 import { PaperPlane } from "./icons/paper-plane";
 import { Paperclip } from "./icons/paperclip";
+import { Pen } from "./icons/pen";
 import { Perplexity } from "./icons/perplexity";
 import { Pin } from "./icons/pin";
 import { Pinterest } from "./icons/pinterest";
@@ -129,6 +130,11 @@ import { Slack } from "./icons/slack";
 import { Smartphone } from "./icons/smartphone";
 import { Snapchat } from "./icons/snapchat";
 import { Soundwave } from "./icons/soundwave";
+import { Spinner } from "./icons/spinner";
+import { SpinnerLarge } from "./icons/spinner-large";
+import { SpinnerOrbit } from "./icons/spinner-orbit";
+import { SpinnerPulse } from "./icons/spinner-pulse";
+import { SpinnerTinker } from "./icons/spinner-tinker";
 import { Star } from "./icons/star";
 import { Sticker } from "./icons/sticker";
 import { Stop } from "./icons/stop";
@@ -136,6 +142,7 @@ import { Sun } from "./icons/sun";
 import { Supabase } from "./icons/supabase";
 import { Tablet } from "./icons/tablet";
 import { Telegram } from "./icons/telegram";
+import { Terminal } from "./icons/terminal";
 import { Threads } from "./icons/threads";
 import { Tiktok } from "./icons/tiktok";
 import { Tool } from "./icons/tool";
@@ -498,7 +505,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Computer",
 		category: "layout",
 		tags: ["monitor","desktop","screen","display","device","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Computer,
 	},
 	{
@@ -914,7 +921,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Moon",
 		category: "settings",
 		tags: ["moon","night","dark","theme","crescent","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Moon,
 	},
 	{
@@ -1012,6 +1019,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["attachment","attach","clip","file","paperclip-2","solar"],
 		variants: ["linear"],
 		component: Paperclip,
+	},
+	{
+		name: "pen",
+		pascalName: "Pen",
+		category: "editor",
+		tags: ["edit","pencil","write","draw","compose"],
+		variants: ["linear"],
+		component: Pen,
 	},
 	{
 		name: "perplexity",
@@ -1190,6 +1205,46 @@ export const catalog: CatalogItem[] = [
 		component: Soundwave,
 	},
 	{
+		name: "spinner",
+		pascalName: "Spinner",
+		category: "spinner",
+		tags: ["loader","loading","progress","wait","busy","rotate"],
+		variants: ["linear"],
+		component: Spinner,
+	},
+	{
+		name: "spinner-large",
+		pascalName: "SpinnerLarge",
+		category: "spinner",
+		tags: ["loader","loading","progress","wait","rotate","arc","long"],
+		variants: ["linear"],
+		component: SpinnerLarge,
+	},
+	{
+		name: "spinner-orbit",
+		pascalName: "SpinnerOrbit",
+		category: "spinner",
+		tags: ["loader","loading","progress","wait","grid","pixel","comet"],
+		variants: ["linear"],
+		component: SpinnerOrbit,
+	},
+	{
+		name: "spinner-pulse",
+		pascalName: "SpinnerPulse",
+		category: "spinner",
+		tags: ["loader","loading","progress","wait","square","pulse","breathe"],
+		variants: ["linear"],
+		component: SpinnerPulse,
+	},
+	{
+		name: "spinner-tinker",
+		pascalName: "SpinnerTinker",
+		category: "spinner",
+		tags: ["loader","loading","progress","wait","grid","pixel","chevron","wave"],
+		variants: ["linear"],
+		component: SpinnerTinker,
+	},
+	{
 		name: "star",
 		pascalName: "Star",
 		category: "actions",
@@ -1218,7 +1273,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Sun",
 		category: "settings",
 		tags: ["sun","light","day","brightness","theme","sun-01","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Sun,
 	},
 	{
@@ -1244,6 +1299,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["messaging","chat","social","brand","paper-plane"],
 		variants: ["linear"],
 		component: Telegram,
+	},
+	{
+		name: "terminal",
+		pascalName: "Terminal",
+		category: "editor",
+		tags: ["code","console","command","shell","prompt","cli"],
+		variants: ["linear"],
+		component: Terminal,
 	},
 	{
 		name: "threads",
