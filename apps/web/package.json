@@ -9,6 +9,7 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"@calcom/cal-sans-ui": "^1.3.0",
 		"@honeyicons/react": "workspace:*",
 		"@honeyicons/ui": "workspace:*",
 		"@swc/helpers": "^0.5.23",

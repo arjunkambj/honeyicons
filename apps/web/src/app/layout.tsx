@@ -1,13 +1,14 @@
+import { CalSansUI } from "@calcom/cal-sans-ui/ui";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 
 import "../index.css";
 import { cn } from "@honeyicons/ui/lib/utils";
 import Providers from "@/components/providers";
 
-const inter = Inter({
+const bricolageGrotesque = Bricolage_Grotesque({
 	subsets: ["latin"],
-	variable: "--font-inter",
+	variable: "--font-bricolage-grotesque",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
 		<html
 			lang="en"
 			suppressHydrationWarning
-			className={cn(inter.variable, inter.className)}
+			className={cn(bricolageGrotesque.variable, CalSansUI.variable)}
 		>
 			<body className="font-sans antialiased">
 				<Providers>{children}</Providers>

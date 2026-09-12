@@ -1,111 +1,105 @@
 "use client";
 
+import { Computer, Github, Moon, Sun } from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
-import { Separator } from "@honeyicons/ui/components/separator";
 import {
-	GithubIcon,
-	Moon02Icon,
-	NewTwitterIcon,
-	Sun03Icon,
-} from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
+	ToggleGroup,
+	ToggleGroupItem,
+} from "@honeyicons/ui/components/toggle-group";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { BrandMark } from "@/components/brand-mark";
+import { BrandLogo } from "@/components/brand-mark";
+import styles from "@/components/marketing.module.css";
 
-const GITHUB_URL = "https://github.com/arjunkambj/honeyicons";
-const X_URL = "https://x.com";
-
-const links = [
-	{ href: "/icons", label: "Icons", external: false },
-	{ href: "/install", label: "Install", external: false },
+const themeOptions = [
+	{ value: "light", label: "Light theme", icon: Sun },
+	{ value: "dark", label: "Dark theme", icon: Moon },
+	{ value: "system", label: "System theme", icon: Computer },
 ] as const;
 
 function ThemeToggle() {
-	const { resolvedTheme, setTheme } = useTheme();
+	const { theme, setTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	const isDark = resolvedTheme === "dark";
+	useEffect(() => setMounted(true), []);
+	const selectedTheme = mounted ? (theme ?? "system") : undefined;
+	const selectedIndex = themeOptions.findIndex(
+		(option) => option.value === selectedTheme,
+	);
 
 	return (
-		<Button
-			variant="ghost"
-			size="icon-sm"
-			type="button"
-			aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
-			onClick={() => setTheme(isDark ? "light" : "dark")}
+		<ToggleGroup
+			variant="segmented"
+			size="sm"
+			spacing={0.5}
+			className="relative isolate p-0.5"
+			aria-label="Color theme"
+			value={selectedTheme ? [selectedTheme] : []}
 			disabled={!mounted}
+			onValueChange={(values) => {
+				const nextTheme = values[0];
+				if (nextTheme) setTheme(nextTheme);
+			}}
 		>
-			{mounted && isDark ? (
-				<HugeiconsIcon icon={Sun03Icon} strokeWidth={2} />
-			) : (
-				<HugeiconsIcon icon={Moon02Icon} strokeWidth={2} />
-			)}
-		</Button>
+			<span
+				aria-hidden="true"
+				className="pointer-events-none absolute top-0.5 left-0.5 -z-1 size-7 rounded-full bg-background transition-transform duration-200 ease-out motion-reduce:transition-none"
+				style={{
+					transform: `translateX(${Math.max(0, selectedIndex) * 30}px)`,
+					opacity: mounted ? 1 : 0,
+				}}
+			/>
+			{themeOptions.map(({ value, label, icon: Icon }) => (
+				<ToggleGroupItem
+					key={value}
+					value={value}
+					aria-label={label}
+					title={label}
+					className="size-7 min-w-7 px-0"
+				>
+					<Icon variant="bold" />
+				</ToggleGroupItem>
+			))}
+		</ToggleGroup>
 	);
 }
 
 export function Navbar() {
 	return (
-		<header className="sticky top-0 z-10 border-transparent border-b bg-background/80 backdrop-blur-md">
-			<div className="container mx-auto flex h-14 items-center justify-between gap-4 px-4 sm:px-6">
-				<Link href="/" className="flex items-center gap-2 font-medium text-sm">
-					<BrandMark className="size-6 text-zinc-950 dark:text-zinc-50" />
-					honeyicons
-				</Link>
-
-				<div className="flex items-center gap-1 sm:gap-3">
-					<nav className="hidden items-center gap-5 text-muted-foreground text-sm md:flex">
-						{links.map((link) =>
-							link.external ? (
-								<a
-									key={link.href}
-									href={link.href}
-									className="transition-colors hover:text-foreground"
-								>
-									{link.label}
-								</a>
-							) : (
-								<Link
-									key={link.href}
-									href={link.href}
-									className="transition-colors hover:text-foreground"
-								>
-									{link.label}
-								</Link>
-							),
-						)}
+		<header className={styles.header}>
+			<div className="container mx-auto px-7 sm:px-10 lg:px-12">
+				<div className={styles.navbar}>
+					<Link
+						href="/"
+						aria-label="honeyicons home"
+						className="flex shrink-0 items-center text-foreground"
+					>
+						<BrandLogo className="h-5 w-28 sm:h-6 sm:w-[148px] min-[380px]:w-[120px]" />
+					</Link>
+					<nav aria-label="Main navigation" className={styles.navLinks}>
+						<Link href="/docs">Docs</Link>
+						<Link href="/icons">Explore icons</Link>
 					</nav>
-
-					<Separator
-						orientation="vertical"
-						className="hidden h-4 self-center sm:block"
-					/>
-
-					<Button
-						variant="ghost"
-						size="icon-sm"
-						nativeButton={false}
-						render={<a href={X_URL} target="_blank" rel="noreferrer" />}
-					>
-						<HugeiconsIcon icon={NewTwitterIcon} strokeWidth={2} />
-						<span className="sr-only">X</span>
-					</Button>
-					<Button
-						variant="ghost"
-						size="icon-sm"
-						nativeButton={false}
-						render={<a href={GITHUB_URL} target="_blank" rel="noreferrer" />}
-					>
-						<HugeiconsIcon icon={GithubIcon} strokeWidth={2} />
-						<span className="sr-only">GitHub</span>
-					</Button>
-					<ThemeToggle />
+					<div className={styles.navActions}>
+						<ThemeToggle />
+						<Button
+							variant="secondary"
+							size="sm"
+							className="w-8 px-0 sm:w-auto sm:px-3"
+							nativeButton={false}
+							aria-label="GitHub"
+							render={
+								<a
+									href="https://github.com/arjunkambj/honeyicons"
+									target="_blank"
+									rel="noreferrer"
+								/>
+							}
+						>
+							<Github data-icon="inline-start" />
+							<span className="hidden sm:inline">GitHub</span>
+						</Button>
+					</div>
 				</div>
 			</div>
 		</header>
