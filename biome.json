@@ -51,6 +51,23 @@
         }
       },
       "style": {
+        "noRestrictedImports": {
+          "level": "error",
+          "options": {
+            "patterns": [
+              {
+                "group": [
+                  "@hugeicons/*",
+                  "hugeicons",
+                  "hugeicons/*",
+                  "hugeicons-react",
+                  "hugeicons-react/*"
+                ],
+                "message": "Use icons from @honeyicons/react. Do not import Hugeicons packages."
+              }
+            ]
+          }
+        },
         "noParameterAssign": "error",
         "useAsConstAssertion": "error",
         "useDefaultParameterLast": "error",

@@ -2,6 +2,7 @@
 
 - Do not write tests unless the user explicitly asks for them.
 - Write idiomatic TypeScript and follow the existing project conventions.
+- Use `@honeyicons/react` for app and shared UI icons. Do not add Hugeicons dependencies or imports; map icons from generated or copied UI components to our existing exports.
 - Create linear icons by default. Only create bold, duotone, or other icon styles when the user explicitly requests them.
 - Preserve filled shapes in user-supplied icons. Keep their fill geometry, cutouts, and opacity instead of converting them to strokes; use `currentColor` for theme support.
 
