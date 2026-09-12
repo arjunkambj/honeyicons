@@ -2,7 +2,6 @@
 
 import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
-import { HugeiconsIcon } from "@hugeicons/react";
 import { CATEGORY_META, type CategoryFilter } from "./constants";
 
 type IconSidebarProps = {
@@ -14,7 +13,7 @@ type IconSidebarProps = {
 export function IconSidebar({ selected, onSelect, counts }: IconSidebarProps) {
 	return (
 		<aside className="w-full shrink-0 lg:w-52">
-			<p className="mb-2 px-2 font-medium text-muted-foreground text-xs tracking-wider">
+			<p className="mb-3 flex h-9 items-center px-2 font-medium text-muted-foreground text-xs tracking-wider">
 				Categories
 			</p>
 			<nav className="flex flex-col gap-0.5">
@@ -35,7 +34,7 @@ export function IconSidebar({ selected, onSelect, counts }: IconSidebarProps) {
 							)}
 						>
 							<span className="flex min-w-0 items-center gap-2">
-								<HugeiconsIcon icon={category.icon} strokeWidth={2} />
+								<category.icon />
 								<span className="truncate">{category.label}</span>
 							</span>
 							<span className="text-muted-foreground tabular-nums">

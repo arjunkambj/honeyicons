@@ -51,9 +51,9 @@ export function IconGrid({
 	return (
 		<div className="overflow-x-auto">
 			<div
-				className="grid gap-3"
+				className="grid gap-3 [--icon-cell-min:128px] lg:[--icon-cell-min:112px]"
 				style={{
-					gridTemplateColumns: `repeat(auto-fill, minmax(${Math.max(guides ? 168 : 128, size + 32)}px, 1fr))`,
+					gridTemplateColumns: `repeat(auto-fill, minmax(max(${guides ? "176px" : "var(--icon-cell-min)"}, ${size + 32}px), 1fr))`,
 					minWidth: size + 32,
 				}}
 			>

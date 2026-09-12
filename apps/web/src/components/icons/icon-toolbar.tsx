@@ -32,13 +32,13 @@ function ToolbarSlider({
 	sliderClassName: string;
 } & Omit<ComponentProps<typeof Slider>, "className">) {
 	return (
-		<div className="flex h-8 items-center overflow-hidden rounded-full bg-muted pr-2.5 pl-3">
+		<div className="flex h-9 min-w-0 items-center overflow-hidden rounded-full bg-muted pr-2.5 pl-3">
 			<span className="mr-2 shrink-0 text-muted-foreground text-xs">
 				{label}
 			</span>
 			<Slider
 				aria-label={label}
-				className={cn("h-8 min-w-0", sliderClassName)}
+				className={cn("h-9 min-w-0", sliderClassName)}
 				{...props}
 			/>
 			<span className="ml-2 w-12 shrink-0 text-right text-muted-foreground text-xs tabular-nums">
@@ -68,7 +68,7 @@ export function IconToolbar({
 			<ToolbarSlider
 				label="Size"
 				valueText={`${size} px`}
-				sliderClassName="w-56"
+				sliderClassName="w-28 sm:w-40"
 				min={SIZE_MIN}
 				max={SIZE_MAX}
 				step={1}
@@ -80,14 +80,16 @@ export function IconToolbar({
 
 			<Toggle
 				variant="outline"
-				size="sm"
+				size="default"
 				pressed={guides}
 				onPressedChange={onGuidesChange}
 				aria-label="Show alignment guides"
 			>
 				Guides
 			</Toggle>
-			<p className="ml-auto text-muted-foreground text-sm">{shown} shown</p>
+			<p className="ml-auto whitespace-nowrap text-muted-foreground text-xs tabular-nums leading-5">
+				{shown} shown
+			</p>
 		</div>
 	);
 }

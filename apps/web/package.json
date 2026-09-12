@@ -14,8 +14,6 @@
 		"@honeyicons/ui": "workspace:*",
 		"@swc/helpers": "^0.5.23",
 		"babel-plugin-react-compiler": "^1.0.0",
-		"@hugeicons/core-free-icons": "catalog:",
-		"@hugeicons/react": "catalog:",
 		"next": "^16.3.3",
 		"next-themes": "catalog:",
 		"react": "catalog:",

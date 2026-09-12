@@ -1,18 +1,18 @@
-import type { IconCategory } from "@honeyicons/react";
 import {
-	ArrowRight01Icon,
-	Folder01Icon,
-	LayoutDashboardIcon,
-	LayoutGridIcon,
-	Loading03Icon,
-	Tick02Icon,
-	UserGroupIcon,
-} from "@hugeicons/core-free-icons";
-import type { IconSvgElement } from "@hugeicons/react";
+	ArrowRight,
+	Check,
+	Folder01,
+	type HoneyIcon,
+	type IconCategory,
+	SidebarLeft,
+	Spinner,
+	UserGroup,
+	Widget,
+} from "@honeyicons/react";
 
 export const SIZE_MIN = 16;
 export const SIZE_MAX = 460;
-export const SIZE_DEFAULT = 24;
+export const SIZE_DEFAULT = 48;
 export const SIZE_MAJOR_STEP = 4;
 
 export type CategoryFilter = "all" | IconCategory;
@@ -20,15 +20,15 @@ export type CategoryFilter = "all" | IconCategory;
 export const CATEGORY_META: {
 	id: CategoryFilter;
 	label: string;
-	icon: IconSvgElement;
+	icon: HoneyIcon;
 }[] = [
-	{ id: "all", label: "All", icon: LayoutGridIcon },
-	{ id: "actions", label: "Actions", icon: Tick02Icon },
-	{ id: "social", label: "Social", icon: UserGroupIcon },
-	{ id: "layout", label: "Layout", icon: LayoutDashboardIcon },
-	{ id: "arrows", label: "Arrow", icon: ArrowRight01Icon },
-	{ id: "files", label: "Folder", icon: Folder01Icon },
-	{ id: "spinner", label: "Loaders", icon: Loading03Icon },
+	{ id: "all", label: "All", icon: Widget },
+	{ id: "actions", label: "Actions", icon: Check },
+	{ id: "social", label: "Social", icon: UserGroup },
+	{ id: "layout", label: "Layout", icon: SidebarLeft },
+	{ id: "arrows", label: "Arrow", icon: ArrowRight },
+	{ id: "files", label: "Folder", icon: Folder01 },
+	{ id: "spinner", label: "Loaders", icon: Spinner },
 ];
 
 export const VARIANT_META = [

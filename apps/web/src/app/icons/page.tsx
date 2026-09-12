@@ -11,7 +11,7 @@ export default function IconsPage() {
 	return (
 		<>
 			<Navbar />
-			<main className="container mx-auto px-4 py-8 sm:px-6">
+			<main className="container mx-auto px-7 pt-4 pb-8 sm:px-10 lg:px-12">
 				<IconBrowser />
 			</main>
 		</>

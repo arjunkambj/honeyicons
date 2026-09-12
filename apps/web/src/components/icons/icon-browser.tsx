@@ -67,22 +67,22 @@ export function IconBrowser() {
 					setVariant(value);
 				}
 			}}
-			className="gap-10"
+			className="gap-10 sm:gap-12"
 		>
-			<div className="flex flex-col items-center gap-4 text-center">
-				<h1 className="font-heading font-medium text-4xl tracking-tight sm:text-5xl">
+			<div className="flex flex-col items-center gap-5 text-center">
+				<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
 					Browse {catalog.length > 0 ? `${catalog.length} ` : ""}icons
 				</h1>
 				<IconSearch value={query} onChange={setQuery} inputRef={inputRef} />
 			</div>
 
-			<div className="flex flex-col gap-8 lg:flex-row">
+			<div className="grid items-start gap-8 lg:grid-cols-[13rem_minmax(0,1fr)]">
 				<IconSidebar
 					selected={category}
 					onSelect={setCategory}
 					counts={counts}
 				/>
-				<div className="flex min-w-0 flex-1 flex-col gap-6">
+				<div className="flex min-w-0 flex-col gap-5">
 					<IconToolbar
 						size={size}
 						onSizeChange={setSize}

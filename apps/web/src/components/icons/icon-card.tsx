@@ -44,8 +44,8 @@ export function IconCard({ item, variant, size, guides }: IconCardProps) {
 		<button
 			type="button"
 			onClick={copy}
-			className="flex flex-col items-center gap-3 rounded-lg px-3 py-4 text-foreground outline-none transition-colors hover:bg-muted/40 focus-visible:ring-2 focus-visible:ring-ring"
-			style={{ minHeight: size + 56 }}
+			className="flex min-w-0 flex-col items-center justify-center gap-3 rounded-lg px-3 py-4 text-foreground outline-none transition-colors hover:bg-muted/40 focus-visible:ring-2 focus-visible:ring-ring"
+			style={{ minHeight: size + (guides ? 88 : 64) }}
 		>
 			<div className="relative shrink-0" style={{ width: size, height: size }}>
 				{guides && (
@@ -77,7 +77,7 @@ export function IconCard({ item, variant, size, guides }: IconCardProps) {
 					/>
 				)}
 			</div>
-			<span className="max-w-full truncate text-muted-foreground text-xs">
+			<span className="max-w-full truncate text-muted-foreground text-xs leading-4">
 				{item.name}
 			</span>
 			{guides && (

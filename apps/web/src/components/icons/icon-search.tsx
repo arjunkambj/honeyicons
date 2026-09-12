@@ -17,7 +17,7 @@ type IconSearchProps = {
 
 export function IconSearch({ value, onChange, inputRef }: IconSearchProps) {
 	return (
-		<InputGroup className="mx-auto h-11 max-w-xl">
+		<InputGroup className="mx-auto max-w-xl">
 			<InputGroupAddon>
 				<Search size={16} />
 			</InputGroupAddon>
