@@ -25,18 +25,18 @@
 	"devDependencies": {
 		"@cloudflare/vite-plugin": "^1.54.8",
 		"@honeyicons/config": "workspace:*",
+		"@rolldown/plugin-babel": "^0.2.4",
 		"@tailwindcss/vite": "catalog:",
 		"@tanstack/router-cli": "^1.167.35",
 		"@tanstack/router-plugin": "^1.168.37",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
-		"@vitejs/plugin-react": "^5.2.0",
+		"@vitejs/plugin-react": "^6.1.1",
 		"babel-plugin-react-compiler": "^1.0.0",
 		"tailwindcss": "catalog:",
 		"typescript": "catalog:",
-		"vite": "^7.3.6",
-		"vite-tsconfig-paths": "^5.1.4",
+		"vite": "^8.3.0",
 		"wrangler": "^4.131.1"
 	}
 }
