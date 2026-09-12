@@ -1,0 +1,36 @@
+# Honeyicons
+
+Honeyicons is a React icon library and a browsable SVG collection for chats, editors, and dashboards.
+
+## React usage
+
+import { Bell, Search, SendMessage } from "@honeyicons/react";
+
+<Bell size={24} />
+<Search size={16} />
+<SendMessage size={24} strokeWidth={1.5} />
+
+Components accept standard SVG props, className, style, color, size, strokeWidth, and an optional title for an accessible image label. Icons without a title are decorative. Give icon-only buttons an accessible name on the button.
+
+## Conventions
+
+- Prefer named imports and existing icon names. Do not invent exports.
+- Icons use a 24 by 24 viewBox, currentColor, and a default 1.5-unit stroke with rounded caps and joins.
+- Use size={16} or size={24} for common interface sizes.
+- Preserve supplied filled geometry. Some linear icons use filled outlines; strokeWidth does not change their baked-in weight.
+- The variant prop accepts "linear", "bold", or "duotone". Linear is the default. Check an icon's variants before using another style; unavailable variants fall back to linear.
+- The current collection is predominantly linear, with limited bold coverage. Duotone artwork is not yet included.
+- The typed catalog is available from @honeyicons/react/catalog. Each entry has name, pascalName, category, tags, variants, and component.
+
+## SVG
+
+Browse /icons, search or filter the catalog, and select an icon to copy its React snippet. SVG source files are maintained in the repository under icons/.
+
+## Availability
+
+React and standalone SVG are implemented in this repository. React Native and a consumer CLI are coming soon. There is no MCP server or installable agent skill yet.
+
+## Source and attribution
+
+Icon attribution: /credits.txt
+GitHub repository: https://github.com/arjunkambj/honeyicons
