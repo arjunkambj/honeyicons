@@ -2,12 +2,163 @@
 import type { HoneyIcon } from "./create-icon";
 import type { IconCategory } from "./categories";
 import type { IconVariant } from "./types";
+import { Add } from "./icons/add";
+import { AlignCenter } from "./icons/align-center";
+import { AlignLeft } from "./icons/align-left";
+import { AlignRight } from "./icons/align-right";
+import { Anthropic } from "./icons/anthropic";
+import { Antigravity } from "./icons/antigravity";
+import { ArrowDown } from "./icons/arrow-down";
+import { ArrowDown02 } from "./icons/arrow-down-02";
+import { ArrowDownDouble } from "./icons/arrow-down-double";
+import { ArrowDownLeft } from "./icons/arrow-down-left";
+import { ArrowDownRight } from "./icons/arrow-down-right";
+import { ArrowLeft } from "./icons/arrow-left";
+import { ArrowLeft02 } from "./icons/arrow-left-02";
+import { ArrowLeftDouble } from "./icons/arrow-left-double";
+import { ArrowRight } from "./icons/arrow-right";
+import { ArrowRight02 } from "./icons/arrow-right-02";
+import { ArrowRightDouble } from "./icons/arrow-right-double";
+import { ArrowUp } from "./icons/arrow-up";
+import { ArrowUp02 } from "./icons/arrow-up-02";
+import { ArrowUpDouble } from "./icons/arrow-up-double";
+import { ArrowUpLeft } from "./icons/arrow-up-left";
+import { ArrowUpRight } from "./icons/arrow-up-right";
+import { Bell } from "./icons/bell";
+import { Bookmark } from "./icons/bookmark";
+import { Brain } from "./icons/brain";
+import { Branch } from "./icons/branch";
+import { Bun } from "./icons/bun";
+import { Calendar03 } from "./icons/calendar-03";
+import { Cart } from "./icons/cart";
+import { Check } from "./icons/check";
+import { CheckCheck } from "./icons/check-check";
+import { Chrome } from "./icons/chrome";
+import { Clapperboard } from "./icons/clapperboard";
+import { ClaudeAi } from "./icons/claude-ai";
+import { ClaudeCode } from "./icons/claude-code";
+import { Close } from "./icons/close";
+import { Cloud } from "./icons/cloud";
+import { Code } from "./icons/code";
+import { Codex } from "./icons/codex";
+import { Command } from "./icons/command";
+import { Computer } from "./icons/computer";
+import { Copy } from "./icons/copy";
+import { Cursor } from "./icons/cursor";
+import { Danger } from "./icons/danger";
+import { Deepseek } from "./icons/deepseek";
+import { Devin } from "./icons/devin";
+import { Discord } from "./icons/discord";
+import { Dislike } from "./icons/dislike";
+import { Edit01 } from "./icons/edit-01";
+import { EditOff } from "./icons/edit-off";
+import { Email } from "./icons/email";
+import { Exit } from "./icons/exit";
+import { Facebook } from "./icons/facebook";
+import { File } from "./icons/file";
+import { FileCode } from "./icons/file-code";
+import { FileRead } from "./icons/file-read";
+import { FileRemove } from "./icons/file-remove";
+import { Folder01 } from "./icons/folder-01";
+import { FolderAdd } from "./icons/folder-add";
+import { FolderOpen } from "./icons/folder-open";
+import { Gemini } from "./icons/gemini";
+import { Git } from "./icons/git";
+import { GitPullRequest } from "./icons/git-pull-request";
+import { Github } from "./icons/github";
+import { GithubCopilot } from "./icons/github-copilot";
+import { Google } from "./icons/google";
+import { Grok } from "./icons/grok";
+import { Hamburger } from "./icons/hamburger";
+import { Hashtag } from "./icons/hashtag";
+import { Headphone } from "./icons/headphone";
 import { Home } from "./icons/home";
+import { Images } from "./icons/images";
+import { ImagesAdd } from "./icons/images-add";
+import { Insta } from "./icons/insta";
+import { Integration } from "./icons/integration";
+import { Kimi } from "./icons/kimi";
+import { Layers } from "./icons/layers";
+import { Lightning } from "./icons/lightning";
+import { Like } from "./icons/like";
+import { Linkedin } from "./icons/linkedin";
+import { ListDown } from "./icons/list-down";
+import { ListUp } from "./icons/list-up";
+import { Lock } from "./icons/lock";
+import { LockUnlock } from "./icons/lock-unlock";
+import { Logout } from "./icons/logout";
+import { Maximize } from "./icons/maximize";
+import { MergeConflict } from "./icons/merge-conflict";
+import { MetaAi } from "./icons/meta-ai";
+import { Microphone } from "./icons/microphone";
+import { Minimize } from "./icons/minimize";
+import { Minus } from "./icons/minus";
+import { Mistral } from "./icons/mistral";
+import { Moon } from "./icons/moon";
+import { MoreHorizontal } from "./icons/more-horizontal";
+import { MoreVertical } from "./icons/more-vertical";
+import { MsCopilot } from "./icons/ms-copilot";
+import { Muted } from "./icons/muted";
+import { Npm } from "./icons/npm";
+import { Nvidia } from "./icons/nvidia";
+import { Openai } from "./icons/openai";
+import { Openclaw } from "./icons/openclaw";
+import { Opencode } from "./icons/opencode";
+import { Pallet } from "./icons/pallet";
+import { PaperPlane } from "./icons/paper-plane";
+import { Paperclip } from "./icons/paperclip";
+import { Perplexity } from "./icons/perplexity";
+import { Pin } from "./icons/pin";
+import { Pinterest } from "./icons/pinterest";
+import { Play } from "./icons/play";
+import { Qwen } from "./icons/qwen";
+import { React } from "./icons/react";
+import { Reddit } from "./icons/reddit";
+import { Redo } from "./icons/redo";
+import { Reorder } from "./icons/reorder";
+import { Repeat } from "./icons/repeat";
 import { Search } from "./icons/search";
+import { SearchMinus } from "./icons/search-minus";
+import { SearchPlus } from "./icons/search-plus";
 import { SendMessage } from "./icons/send-message";
+import { Settings } from "./icons/settings";
+import { Share } from "./icons/share";
+import { SidebarLeft } from "./icons/sidebar-left";
+import { SidebarRight } from "./icons/sidebar-right";
+import { Slack } from "./icons/slack";
+import { Smartphone } from "./icons/smartphone";
 import { Snapchat } from "./icons/snapchat";
+import { Soundwave } from "./icons/soundwave";
+import { Star } from "./icons/star";
+import { Sticker } from "./icons/sticker";
+import { Stop } from "./icons/stop";
+import { Sun } from "./icons/sun";
+import { Supabase } from "./icons/supabase";
+import { Tablet } from "./icons/tablet";
+import { Telegram } from "./icons/telegram";
+import { Threads } from "./icons/threads";
+import { Tiktok } from "./icons/tiktok";
+import { Tool } from "./icons/tool";
 import { Trash } from "./icons/trash";
+import { Ts } from "./icons/ts";
+import { Twitter } from "./icons/twitter";
+import { Undo } from "./icons/undo";
+import { UnfoldLess } from "./icons/unfold-less";
+import { UnfoldMore } from "./icons/unfold-more";
+import { User } from "./icons/user";
+import { UserGroup } from "./icons/user-group";
+import { Vercel } from "./icons/vercel";
+import { VerifiedCheck } from "./icons/verified-check";
+import { Videocamera } from "./icons/videocamera";
+import { Volume } from "./icons/volume";
+import { VolumeLoud } from "./icons/volume-loud";
+import { Widget } from "./icons/widget";
+import { WidgetAdd } from "./icons/widget-add";
+import { Windsurf } from "./icons/windsurf";
 import { X } from "./icons/x";
+import { Xai } from "./icons/xai";
+import { Youtube } from "./icons/youtube";
+import { Zai } from "./icons/zai";
 
 export type { IconCategory } from "./categories";
 export { ICON_CATEGORIES } from "./categories";
@@ -23,12 +174,924 @@ export type CatalogItem = {
 
 export const catalog: CatalogItem[] = [
 	{
+		name: "add",
+		pascalName: "Add",
+		category: "actions",
+		tags: ["plus","new","create","solar"],
+		variants: ["linear"],
+		component: Add,
+	},
+	{
+		name: "align-center",
+		pascalName: "AlignCenter",
+		category: "editor",
+		tags: ["text","alignment","center","paragraph","format"],
+		variants: ["linear"],
+		component: AlignCenter,
+	},
+	{
+		name: "align-left",
+		pascalName: "AlignLeft",
+		category: "editor",
+		tags: ["text","alignment","left","paragraph","format"],
+		variants: ["linear"],
+		component: AlignLeft,
+	},
+	{
+		name: "align-right",
+		pascalName: "AlignRight",
+		category: "editor",
+		tags: ["text","alignment","right","paragraph","format"],
+		variants: ["linear"],
+		component: AlignRight,
+	},
+	{
+		name: "anthropic",
+		pascalName: "Anthropic",
+		category: "social",
+		tags: ["claude","ai","brand"],
+		variants: ["linear"],
+		component: Anthropic,
+	},
+	{
+		name: "antigravity",
+		pascalName: "Antigravity",
+		category: "social",
+		tags: ["ai","code","editor","brand"],
+		variants: ["linear"],
+		component: Antigravity,
+	},
+	{
+		name: "arrow-down",
+		pascalName: "ArrowDown",
+		category: "arrows",
+		tags: ["chevron","down","bottom","expand","arrow-down-01","hugeicons"],
+		variants: ["linear"],
+		component: ArrowDown,
+	},
+	{
+		name: "arrow-down-02",
+		pascalName: "ArrowDown02",
+		category: "arrows",
+		tags: ["arrow","down","direction","navigation","arrow-down-02","hugeicons"],
+		variants: ["linear"],
+		component: ArrowDown02,
+	},
+	{
+		name: "arrow-down-double",
+		pascalName: "ArrowDownDouble",
+		category: "arrows",
+		tags: ["chevron","double","down","bottom","hugeicons"],
+		variants: ["linear"],
+		component: ArrowDownDouble,
+	},
+	{
+		name: "arrow-down-left",
+		pascalName: "ArrowDownLeft",
+		category: "arrows",
+		tags: ["arrow","down-left","direction","navigation","arrow-down-left-01","hugeicons"],
+		variants: ["linear"],
+		component: ArrowDownLeft,
+	},
+	{
+		name: "arrow-down-right",
+		pascalName: "ArrowDownRight",
+		category: "arrows",
+		tags: ["arrow","down-right","direction","navigation","arrow-down-right-01","hugeicons"],
+		variants: ["linear"],
+		component: ArrowDownRight,
+	},
+	{
+		name: "arrow-left",
+		pascalName: "ArrowLeft",
+		category: "arrows",
+		tags: ["chevron","left","back","previous","arrow-left-01","hugeicons"],
+		variants: ["linear"],
+		component: ArrowLeft,
+	},
+	{
+		name: "arrow-left-02",
+		pascalName: "ArrowLeft02",
+		category: "arrows",
+		tags: ["arrow","left","direction","navigation","arrow-left-02","hugeicons"],
+		variants: ["linear"],
+		component: ArrowLeft02,
+	},
+	{
+		name: "arrow-left-double",
+		pascalName: "ArrowLeftDouble",
+		category: "arrows",
+		tags: ["chevron","double","left","first","hugeicons"],
+		variants: ["linear"],
+		component: ArrowLeftDouble,
+	},
+	{
+		name: "arrow-right",
+		pascalName: "ArrowRight",
+		category: "arrows",
+		tags: ["chevron","right","forward","next","arrow-right-01","hugeicons"],
+		variants: ["linear"],
+		component: ArrowRight,
+	},
+	{
+		name: "arrow-right-02",
+		pascalName: "ArrowRight02",
+		category: "arrows",
+		tags: ["arrow","right","direction","navigation","arrow-right-02","hugeicons"],
+		variants: ["linear"],
+		component: ArrowRight02,
+	},
+	{
+		name: "arrow-right-double",
+		pascalName: "ArrowRightDouble",
+		category: "arrows",
+		tags: ["chevron","double","right","last","hugeicons"],
+		variants: ["linear"],
+		component: ArrowRightDouble,
+	},
+	{
+		name: "arrow-up",
+		pascalName: "ArrowUp",
+		category: "arrows",
+		tags: ["chevron","up","top","collapse","arrow-up-01","hugeicons"],
+		variants: ["linear"],
+		component: ArrowUp,
+	},
+	{
+		name: "arrow-up-02",
+		pascalName: "ArrowUp02",
+		category: "arrows",
+		tags: ["arrow","up","direction","navigation","arrow-up-02","hugeicons"],
+		variants: ["linear"],
+		component: ArrowUp02,
+	},
+	{
+		name: "arrow-up-double",
+		pascalName: "ArrowUpDouble",
+		category: "arrows",
+		tags: ["chevron","double","up","top","hugeicons"],
+		variants: ["linear"],
+		component: ArrowUpDouble,
+	},
+	{
+		name: "arrow-up-left",
+		pascalName: "ArrowUpLeft",
+		category: "arrows",
+		tags: ["arrow","up-left","direction","navigation","arrow-up-left-01","hugeicons"],
+		variants: ["linear"],
+		component: ArrowUpLeft,
+	},
+	{
+		name: "arrow-up-right",
+		pascalName: "ArrowUpRight",
+		category: "arrows",
+		tags: ["arrow","up-right","direction","navigation","arrow-up-right-01","hugeicons"],
+		variants: ["linear"],
+		component: ArrowUpRight,
+	},
+	{
+		name: "bell",
+		pascalName: "Bell",
+		category: "status",
+		tags: ["notification","alert","reminder","alarm","solar"],
+		variants: ["linear"],
+		component: Bell,
+	},
+	{
+		name: "bookmark",
+		pascalName: "Bookmark",
+		category: "actions",
+		tags: ["save","saved","favorite","reading","solar"],
+		variants: ["linear"],
+		component: Bookmark,
+	},
+	{
+		name: "brain",
+		pascalName: "Brain",
+		category: "ai",
+		tags: ["ai","brain","intelligence","neural","ai-brain-01","hugeicons","ai-brain"],
+		variants: ["linear"],
+		component: Brain,
+	},
+	{
+		name: "branch",
+		pascalName: "Branch",
+		category: "editor",
+		tags: ["git","version-control","fork","code"],
+		variants: ["linear"],
+		component: Branch,
+	},
+	{
+		name: "bun",
+		pascalName: "Bun",
+		category: "social",
+		tags: ["javascript","runtime","brand"],
+		variants: ["linear"],
+		component: Bun,
+	},
+	{
+		name: "calendar-03",
+		pascalName: "Calendar03",
+		category: "layout",
+		tags: ["calendar","date","schedule","event","month","hugeicons"],
+		variants: ["linear"],
+		component: Calendar03,
+	},
+	{
+		name: "cart",
+		pascalName: "Cart",
+		category: "actions",
+		tags: ["basket","shopping","store","solar"],
+		variants: ["linear"],
+		component: Cart,
+	},
+	{
+		name: "check",
+		pascalName: "Check",
+		category: "status",
+		tags: ["tick","done","success","confirm","complete","hugeicons"],
+		variants: ["linear"],
+		component: Check,
+	},
+	{
+		name: "check-check",
+		pascalName: "CheckCheck",
+		category: "status",
+		tags: ["double-check","tick","done","read","receipt","delivered","hugeicons"],
+		variants: ["linear"],
+		component: CheckCheck,
+	},
+	{
+		name: "chrome",
+		pascalName: "Chrome",
+		category: "social",
+		tags: ["brand","chrome","google","browser"],
+		variants: ["linear"],
+		component: Chrome,
+	},
+	{
+		name: "clapperboard",
+		pascalName: "Clapperboard",
+		category: "media",
+		tags: ["film","movie","video","play","clapperboard-play","solar"],
+		variants: ["linear"],
+		component: Clapperboard,
+	},
+	{
+		name: "claude-ai",
+		pascalName: "ClaudeAi",
+		category: "social",
+		tags: ["claude","anthropic","ai","assistant","brand"],
+		variants: ["linear"],
+		component: ClaudeAi,
+	},
+	{
+		name: "claude-code",
+		pascalName: "ClaudeCode",
+		category: "social",
+		tags: ["claude","anthropic","ai","code","terminal","brand"],
+		variants: ["linear"],
+		component: ClaudeCode,
+	},
+	{
+		name: "close",
+		pascalName: "Close",
+		category: "actions",
+		tags: ["dismiss","cancel","cross","x","solar"],
+		variants: ["linear"],
+		component: Close,
+	},
+	{
+		name: "cloud",
+		pascalName: "Cloud",
+		category: "files",
+		tags: ["storage","weather","online","sync","solar"],
+		variants: ["linear"],
+		component: Cloud,
+	},
+	{
+		name: "code",
+		pascalName: "Code",
+		category: "editor",
+		tags: ["programming","developer","syntax","brackets","solar"],
+		variants: ["linear"],
+		component: Code,
+	},
+	{
+		name: "codex",
+		pascalName: "Codex",
+		category: "social",
+		tags: ["openai","ai","coding","brand"],
+		variants: ["linear"],
+		component: Codex,
+	},
+	{
+		name: "command",
+		pascalName: "Command",
+		category: "editor",
+		tags: ["keyboard","shortcut","cmd","mac","solar"],
+		variants: ["linear"],
+		component: Command,
+	},
+	{
+		name: "computer",
+		pascalName: "Computer",
+		category: "layout",
+		tags: ["monitor","desktop","screen","display","device","hugeicons"],
+		variants: ["linear"],
+		component: Computer,
+	},
+	{
+		name: "copy",
+		pascalName: "Copy",
+		category: "actions",
+		tags: ["copy","duplicate","clipboard","copy-01","hugeicons"],
+		variants: ["linear"],
+		component: Copy,
+	},
+	{
+		name: "cursor",
+		pascalName: "Cursor",
+		category: "social",
+		tags: ["brand","cursor","ai","code","editor"],
+		variants: ["linear"],
+		component: Cursor,
+	},
+	{
+		name: "danger",
+		pascalName: "Danger",
+		category: "status",
+		tags: ["warning","alert","triangle","error","danger-triangle","solar"],
+		variants: ["linear"],
+		component: Danger,
+	},
+	{
+		name: "deepseek",
+		pascalName: "Deepseek",
+		category: "social",
+		tags: ["ai","whale","brand"],
+		variants: ["linear"],
+		component: Deepseek,
+	},
+	{
+		name: "devin",
+		pascalName: "Devin",
+		category: "social",
+		tags: ["ai","code","agent","brand"],
+		variants: ["linear"],
+		component: Devin,
+	},
+	{
+		name: "discord",
+		pascalName: "Discord",
+		category: "social",
+		tags: ["chat","community","brand"],
+		variants: ["linear"],
+		component: Discord,
+	},
+	{
+		name: "dislike",
+		pascalName: "Dislike",
+		category: "actions",
+		tags: ["thumbs-down","disapprove","feedback","hugeicons"],
+		variants: ["linear"],
+		component: Dislike,
+	},
+	{
+		name: "edit-01",
+		pascalName: "Edit01",
+		category: "editor",
+		tags: ["edit","pencil","write","draw","hugeicons"],
+		variants: ["linear"],
+		component: Edit01,
+	},
+	{
+		name: "edit-off",
+		pascalName: "EditOff",
+		category: "editor",
+		tags: ["edit","disabled","read-only","pencil","hugeicons"],
+		variants: ["linear"],
+		component: EditOff,
+	},
+	{
+		name: "email",
+		pascalName: "Email",
+		category: "chat",
+		tags: ["mail","letter","envelope","message","solar"],
+		variants: ["linear"],
+		component: Email,
+	},
+	{
+		name: "exit",
+		pascalName: "Exit",
+		category: "actions",
+		tags: ["door","leave","logout","sign-out","solar"],
+		variants: ["linear"],
+		component: Exit,
+	},
+	{
+		name: "facebook",
+		pascalName: "Facebook",
+		category: "social",
+		tags: ["meta","social","brand"],
+		variants: ["linear"],
+		component: Facebook,
+	},
+	{
+		name: "file",
+		pascalName: "File",
+		category: "files",
+		tags: ["document","page","paper","text","file-text","solar"],
+		variants: ["linear"],
+		component: File,
+	},
+	{
+		name: "file-code",
+		pascalName: "FileCode",
+		category: "files",
+		tags: ["document","code","source","programming","code-file","solar"],
+		variants: ["linear"],
+		component: FileCode,
+	},
+	{
+		name: "file-read",
+		pascalName: "FileRead",
+		category: "files",
+		tags: ["document","read","check","done","file-check","solar"],
+		variants: ["linear"],
+		component: FileRead,
+	},
+	{
+		name: "file-remove",
+		pascalName: "FileRemove",
+		category: "files",
+		tags: ["document","delete","remove","cancel","solar"],
+		variants: ["linear"],
+		component: FileRemove,
+	},
+	{
+		name: "folder-01",
+		pascalName: "Folder01",
+		category: "files",
+		tags: ["folder","directory","files","storage","hugeicons"],
+		variants: ["linear"],
+		component: Folder01,
+	},
+	{
+		name: "folder-add",
+		pascalName: "FolderAdd",
+		category: "files",
+		tags: ["folder","directory","create","new","plus","hugeicons"],
+		variants: ["linear"],
+		component: FolderAdd,
+	},
+	{
+		name: "folder-open",
+		pascalName: "FolderOpen",
+		category: "files",
+		tags: ["folder","open","directory","files","storage","hugeicons"],
+		variants: ["linear"],
+		component: FolderOpen,
+	},
+	{
+		name: "gemini",
+		pascalName: "Gemini",
+		category: "social",
+		tags: ["google","ai","brand"],
+		variants: ["linear"],
+		component: Gemini,
+	},
+	{
+		name: "git",
+		pascalName: "Git",
+		category: "social",
+		tags: ["version-control","repository","code","brand"],
+		variants: ["linear"],
+		component: Git,
+	},
+	{
+		name: "git-pull-request",
+		pascalName: "GitPullRequest",
+		category: "editor",
+		tags: ["git","pull-request","pr","review","merge","code"],
+		variants: ["linear"],
+		component: GitPullRequest,
+	},
+	{
+		name: "github",
+		pascalName: "Github",
+		category: "social",
+		tags: ["git","code","repository","brand"],
+		variants: ["linear"],
+		component: Github,
+	},
+	{
+		name: "github-copilot",
+		pascalName: "GithubCopilot",
+		category: "social",
+		tags: ["brand","github","copilot","ai","code","assistant"],
+		variants: ["linear"],
+		component: GithubCopilot,
+	},
+	{
+		name: "google",
+		pascalName: "Google",
+		category: "social",
+		tags: ["search","alphabet","brand"],
+		variants: ["linear"],
+		component: Google,
+	},
+	{
+		name: "grok",
+		pascalName: "Grok",
+		category: "social",
+		tags: ["xai","ai","assistant","brand"],
+		variants: ["linear"],
+		component: Grok,
+	},
+	{
+		name: "hamburger",
+		pascalName: "Hamburger",
+		category: "actions",
+		tags: ["menu","navigation","bars","hamburger-menu","solar"],
+		variants: ["linear"],
+		component: Hamburger,
+	},
+	{
+		name: "hashtag",
+		pascalName: "Hashtag",
+		category: "editor",
+		tags: ["hash","tag","number","hastag","solar"],
+		variants: ["linear"],
+		component: Hashtag,
+	},
+	{
+		name: "headphone",
+		pascalName: "Headphone",
+		category: "media",
+		tags: ["headphones","audio","music","listen","headphones-round","solar"],
+		variants: ["linear"],
+		component: Headphone,
+	},
+	{
 		name: "home",
 		pascalName: "Home",
 		category: "layout",
 		tags: [],
 		variants: ["linear"],
 		component: Home,
+	},
+	{
+		name: "images",
+		pascalName: "Images",
+		category: "media",
+		tags: ["image","gallery","photo","picture","media"],
+		variants: ["linear"],
+		component: Images,
+	},
+	{
+		name: "images-add",
+		pascalName: "ImagesAdd",
+		category: "media",
+		tags: ["image","gallery","upload","photo","plus","gallery-add","solar"],
+		variants: ["linear"],
+		component: ImagesAdd,
+	},
+	{
+		name: "insta",
+		pascalName: "Insta",
+		category: "social",
+		tags: ["instagram","social","photos","brand"],
+		variants: ["linear"],
+		component: Insta,
+	},
+	{
+		name: "integration",
+		pascalName: "Integration",
+		category: "layout",
+		tags: ["flow","workflow","connect","nodes","hugeicons"],
+		variants: ["linear"],
+		component: Integration,
+	},
+	{
+		name: "kimi",
+		pascalName: "Kimi",
+		category: "social",
+		tags: ["ai","assistant","moonshot","brand"],
+		variants: ["linear"],
+		component: Kimi,
+	},
+	{
+		name: "layers",
+		pascalName: "Layers",
+		category: "layout",
+		tags: ["stack","design","levels","layers-minimalistic","solar"],
+		variants: ["linear"],
+		component: Layers,
+	},
+	{
+		name: "lightning",
+		pascalName: "Lightning",
+		category: "status",
+		tags: ["bolt","flash","electricity","energy","power","zap"],
+		variants: ["linear"],
+		component: Lightning,
+	},
+	{
+		name: "like",
+		pascalName: "Like",
+		category: "actions",
+		tags: ["thumbs-up","approve","feedback","hugeicons"],
+		variants: ["linear"],
+		component: Like,
+	},
+	{
+		name: "linkedin",
+		pascalName: "Linkedin",
+		category: "social",
+		tags: ["brand","linkedin"],
+		variants: ["linear"],
+		component: Linkedin,
+	},
+	{
+		name: "list-down",
+		pascalName: "ListDown",
+		category: "actions",
+		tags: ["list","sort","descending","expand","list-down-minimalistic","solar"],
+		variants: ["linear"],
+		component: ListDown,
+	},
+	{
+		name: "list-up",
+		pascalName: "ListUp",
+		category: "actions",
+		tags: ["list","sort","ascending","collapse","list-up-minimalistic","solar"],
+		variants: ["linear"],
+		component: ListUp,
+	},
+	{
+		name: "lock",
+		pascalName: "Lock",
+		category: "status",
+		tags: ["locked","security","private","access","hugeicons"],
+		variants: ["linear"],
+		component: Lock,
+	},
+	{
+		name: "lock-unlock",
+		pascalName: "LockUnlock",
+		category: "status",
+		tags: ["lock-open","unlock","security","access","hugeicons"],
+		variants: ["linear"],
+		component: LockUnlock,
+	},
+	{
+		name: "logout",
+		pascalName: "Logout",
+		category: "user",
+		tags: ["sign-out","exit","account","logout-3","solar"],
+		variants: ["linear"],
+		component: Logout,
+	},
+	{
+		name: "maximize",
+		pascalName: "Maximize",
+		category: "arrows",
+		tags: ["expand","fullscreen","resize","arrows"],
+		variants: ["linear"],
+		component: Maximize,
+	},
+	{
+		name: "merge-conflict",
+		pascalName: "MergeConflict",
+		category: "editor",
+		tags: ["git","merge","conflict","pull-request","code"],
+		variants: ["linear"],
+		component: MergeConflict,
+	},
+	{
+		name: "meta-ai",
+		pascalName: "MetaAi",
+		category: "social",
+		tags: ["brand","meta","ai","assistant"],
+		variants: ["linear"],
+		component: MetaAi,
+	},
+	{
+		name: "microphone",
+		pascalName: "Microphone",
+		category: "media",
+		tags: ["mic","record","voice","audio","microphone-large","solar"],
+		variants: ["linear"],
+		component: Microphone,
+	},
+	{
+		name: "minimize",
+		pascalName: "Minimize",
+		category: "arrows",
+		tags: ["collapse","shrink","restore","resize","arrows"],
+		variants: ["linear"],
+		component: Minimize,
+	},
+	{
+		name: "minus",
+		pascalName: "Minus",
+		category: "actions",
+		tags: ["subtract","remove","decrease","solar"],
+		variants: ["linear"],
+		component: Minus,
+	},
+	{
+		name: "mistral",
+		pascalName: "Mistral",
+		category: "social",
+		tags: ["ai","brand"],
+		variants: ["linear"],
+		component: Mistral,
+	},
+	{
+		name: "moon",
+		pascalName: "Moon",
+		category: "settings",
+		tags: ["moon","night","dark","theme","crescent","solar"],
+		variants: ["linear"],
+		component: Moon,
+	},
+	{
+		name: "more-horizontal",
+		pascalName: "MoreHorizontal",
+		category: "actions",
+		tags: ["ellipsis","menu","options","dots","horizontal","hugeicons"],
+		variants: ["linear"],
+		component: MoreHorizontal,
+	},
+	{
+		name: "more-vertical",
+		pascalName: "MoreVertical",
+		category: "actions",
+		tags: ["ellipsis","menu","options","dots","vertical","hugeicons"],
+		variants: ["linear"],
+		component: MoreVertical,
+	},
+	{
+		name: "ms-copilot",
+		pascalName: "MsCopilot",
+		category: "social",
+		tags: ["microsoft","copilot","ai","assistant","brand"],
+		variants: ["linear"],
+		component: MsCopilot,
+	},
+	{
+		name: "muted",
+		pascalName: "Muted",
+		category: "media",
+		tags: ["mute","volume-off","silent","speaker","audio","solar"],
+		variants: ["linear"],
+		component: Muted,
+	},
+	{
+		name: "npm",
+		pascalName: "Npm",
+		category: "social",
+		tags: ["package","registry","javascript","brand"],
+		variants: ["linear"],
+		component: Npm,
+	},
+	{
+		name: "nvidia",
+		pascalName: "Nvidia",
+		category: "social",
+		tags: ["brand","nvidia","gpu","hardware"],
+		variants: ["linear"],
+		component: Nvidia,
+	},
+	{
+		name: "openai",
+		pascalName: "Openai",
+		category: "social",
+		tags: ["chatgpt","ai","brand"],
+		variants: ["linear"],
+		component: Openai,
+	},
+	{
+		name: "openclaw",
+		pascalName: "Openclaw",
+		category: "social",
+		tags: ["open-claw","ai","mascot","brand"],
+		variants: ["linear"],
+		component: Openclaw,
+	},
+	{
+		name: "opencode",
+		pascalName: "Opencode",
+		category: "social",
+		tags: ["open-code","code","terminal","brand"],
+		variants: ["linear"],
+		component: Opencode,
+	},
+	{
+		name: "pallet",
+		pascalName: "Pallet",
+		category: "files",
+		tags: ["library","collection","stack","archive","files","solar"],
+		variants: ["linear"],
+		component: Pallet,
+	},
+	{
+		name: "paper-plane",
+		pascalName: "PaperPlane",
+		category: "actions",
+		tags: ["send","message","submit","plane","plane-3","plain-3","solar"],
+		variants: ["linear"],
+		component: PaperPlane,
+	},
+	{
+		name: "paperclip",
+		pascalName: "Paperclip",
+		category: "actions",
+		tags: ["attachment","attach","clip","file","paperclip-2","solar"],
+		variants: ["linear"],
+		component: Paperclip,
+	},
+	{
+		name: "perplexity",
+		pascalName: "Perplexity",
+		category: "social",
+		tags: ["brand","perplexity","ai","search"],
+		variants: ["linear"],
+		component: Perplexity,
+	},
+	{
+		name: "pin",
+		pascalName: "Pin",
+		category: "actions",
+		tags: ["pushpin","pinned","save","solar"],
+		variants: ["linear"],
+		component: Pin,
+	},
+	{
+		name: "pinterest",
+		pascalName: "Pinterest",
+		category: "social",
+		tags: ["social","pins","brand"],
+		variants: ["linear","bold"],
+		component: Pinterest,
+	},
+	{
+		name: "play",
+		pascalName: "Play",
+		category: "media",
+		tags: ["start","resume","playback","video","audio","solar"],
+		variants: ["linear"],
+		component: Play,
+	},
+	{
+		name: "qwen",
+		pascalName: "Qwen",
+		category: "social",
+		tags: ["ai","alibaba","brand"],
+		variants: ["linear"],
+		component: Qwen,
+	},
+	{
+		name: "react",
+		pascalName: "React",
+		category: "social",
+		tags: ["javascript","framework","frontend","brand"],
+		variants: ["linear"],
+		component: React,
+	},
+	{
+		name: "reddit",
+		pascalName: "Reddit",
+		category: "social",
+		tags: ["community","social","brand"],
+		variants: ["linear"],
+		component: Reddit,
+	},
+	{
+		name: "redo",
+		pascalName: "Redo",
+		category: "arrows",
+		tags: ["history","forward","repeat","arrow"],
+		variants: ["linear"],
+		component: Redo,
+	},
+	{
+		name: "reorder",
+		pascalName: "Reorder",
+		category: "actions",
+		tags: ["sort","arrange","drag","list","menu","solar"],
+		variants: ["linear"],
+		component: Reorder,
+	},
+	{
+		name: "repeat",
+		pascalName: "Repeat",
+		category: "arrows",
+		tags: ["loop","cycle","refresh","solar"],
+		variants: ["linear"],
+		component: Repeat,
 	},
 	{
 		name: "search",
@@ -39,6 +1102,22 @@ export const catalog: CatalogItem[] = [
 		component: Search,
 	},
 	{
+		name: "search-minus",
+		pascalName: "SearchMinus",
+		category: "actions",
+		tags: ["magnifier","minimalistic-magnifier-zoom-out","zoom-out","search","shrink","minus","solar"],
+		variants: ["linear"],
+		component: SearchMinus,
+	},
+	{
+		name: "search-plus",
+		pascalName: "SearchPlus",
+		category: "actions",
+		tags: ["magnifier","magnifier-zoom-in","zoom-in","search","enlarge","plus","solar"],
+		variants: ["linear"],
+		component: SearchPlus,
+	},
+	{
 		name: "send-message",
 		pascalName: "SendMessage",
 		category: "actions",
@@ -47,12 +1126,148 @@ export const catalog: CatalogItem[] = [
 		component: SendMessage,
 	},
 	{
+		name: "settings",
+		pascalName: "Settings",
+		category: "settings",
+		tags: ["gear","cog","preferences","configuration","options","solar"],
+		variants: ["linear"],
+		component: Settings,
+	},
+	{
+		name: "share",
+		pascalName: "Share",
+		category: "actions",
+		tags: ["send","social","link","solar"],
+		variants: ["linear"],
+		component: Share,
+	},
+	{
+		name: "sidebar-left",
+		pascalName: "SidebarLeft",
+		category: "layout",
+		tags: ["panel","layout","navigation","sidebar","left","sidebar-minimalistic","solar"],
+		variants: ["linear"],
+		component: SidebarLeft,
+	},
+	{
+		name: "sidebar-right",
+		pascalName: "SidebarRight",
+		category: "layout",
+		tags: ["panel","layout","navigation","sidebar","right","sidebar-minimalistic","solar"],
+		variants: ["linear"],
+		component: SidebarRight,
+	},
+	{
+		name: "slack",
+		pascalName: "Slack",
+		category: "social",
+		tags: ["messaging","chat","team","workplace","brand"],
+		variants: ["linear"],
+		component: Slack,
+	},
+	{
+		name: "smartphone",
+		pascalName: "Smartphone",
+		category: "layout",
+		tags: ["phone","mobile","device","screen","solar"],
+		variants: ["linear"],
+		component: Smartphone,
+	},
+	{
 		name: "snapchat",
 		pascalName: "Snapchat",
 		category: "social",
 		tags: [],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Snapchat,
+	},
+	{
+		name: "soundwave",
+		pascalName: "Soundwave",
+		category: "media",
+		tags: ["waveform","audio","sound","voice","equalizer","solar"],
+		variants: ["linear"],
+		component: Soundwave,
+	},
+	{
+		name: "star",
+		pascalName: "Star",
+		category: "actions",
+		tags: ["favorite","rating","saved","solar"],
+		variants: ["linear"],
+		component: Star,
+	},
+	{
+		name: "sticker",
+		pascalName: "Sticker",
+		category: "editor",
+		tags: ["label","peel","fold","square","solar"],
+		variants: ["linear"],
+		component: Sticker,
+	},
+	{
+		name: "stop",
+		pascalName: "Stop",
+		category: "media",
+		tags: ["end","halt","playback","recording","square","solar"],
+		variants: ["linear"],
+		component: Stop,
+	},
+	{
+		name: "sun",
+		pascalName: "Sun",
+		category: "settings",
+		tags: ["sun","light","day","brightness","theme","sun-01","hugeicons"],
+		variants: ["linear"],
+		component: Sun,
+	},
+	{
+		name: "supabase",
+		pascalName: "Supabase",
+		category: "social",
+		tags: ["database","backend","brand"],
+		variants: ["linear"],
+		component: Supabase,
+	},
+	{
+		name: "tablet",
+		pascalName: "Tablet",
+		category: "layout",
+		tags: ["ipad","device","screen","landscape","solar"],
+		variants: ["linear"],
+		component: Tablet,
+	},
+	{
+		name: "telegram",
+		pascalName: "Telegram",
+		category: "social",
+		tags: ["messaging","chat","social","brand","paper-plane"],
+		variants: ["linear"],
+		component: Telegram,
+	},
+	{
+		name: "threads",
+		pascalName: "Threads",
+		category: "social",
+		tags: ["brand","threads"],
+		variants: ["linear"],
+		component: Threads,
+	},
+	{
+		name: "tiktok",
+		pascalName: "Tiktok",
+		category: "social",
+		tags: ["brand","tiktok"],
+		variants: ["linear"],
+		component: Tiktok,
+	},
+	{
+		name: "tool",
+		pascalName: "Tool",
+		category: "settings",
+		tags: ["sledgehammer","hammer","build","tools","solar"],
+		variants: ["linear"],
+		component: Tool,
 	},
 	{
 		name: "trash",
@@ -63,11 +1278,155 @@ export const catalog: CatalogItem[] = [
 		component: Trash,
 	},
 	{
+		name: "ts",
+		pascalName: "Ts",
+		category: "social",
+		tags: ["typescript","javascript","language","brand"],
+		variants: ["linear"],
+		component: Ts,
+	},
+	{
+		name: "twitter",
+		pascalName: "Twitter",
+		category: "social",
+		tags: ["bird","social","brand"],
+		variants: ["linear"],
+		component: Twitter,
+	},
+	{
+		name: "undo",
+		pascalName: "Undo",
+		category: "arrows",
+		tags: ["history","back","revert","arrow"],
+		variants: ["linear"],
+		component: Undo,
+	},
+	{
+		name: "unfold-less",
+		pascalName: "UnfoldLess",
+		category: "arrows",
+		tags: ["collapse","fold","chevrons","hugeicons"],
+		variants: ["linear"],
+		component: UnfoldLess,
+	},
+	{
+		name: "unfold-more",
+		pascalName: "UnfoldMore",
+		category: "arrows",
+		tags: ["expand","unfold","chevrons","hugeicons"],
+		variants: ["linear"],
+		component: UnfoldMore,
+	},
+	{
+		name: "user",
+		pascalName: "User",
+		category: "user",
+		tags: ["profile","person","account","avatar","solar"],
+		variants: ["linear"],
+		component: User,
+	},
+	{
+		name: "user-group",
+		pascalName: "UserGroup",
+		category: "user",
+		tags: ["users","team","people","members","users-group-two-rounded","solar"],
+		variants: ["linear"],
+		component: UserGroup,
+	},
+	{
+		name: "vercel",
+		pascalName: "Vercel",
+		category: "social",
+		tags: ["brand","vercel","hosting","deployment"],
+		variants: ["linear"],
+		component: Vercel,
+	},
+	{
+		name: "verified-check",
+		pascalName: "VerifiedCheck",
+		category: "status",
+		tags: ["verified","badge","check","approved","solar"],
+		variants: ["linear"],
+		component: VerifiedCheck,
+	},
+	{
+		name: "videocamera",
+		pascalName: "Videocamera",
+		category: "media",
+		tags: ["video","camera","record","call"],
+		variants: ["linear"],
+		component: Videocamera,
+	},
+	{
+		name: "volume",
+		pascalName: "Volume",
+		category: "media",
+		tags: ["speaker","sound","audio","volume-low","solar"],
+		variants: ["linear"],
+		component: Volume,
+	},
+	{
+		name: "volume-loud",
+		pascalName: "VolumeLoud",
+		category: "media",
+		tags: ["volume","sound","speaker","audio","unmute","solar"],
+		variants: ["linear"],
+		component: VolumeLoud,
+	},
+	{
+		name: "widget",
+		pascalName: "Widget",
+		category: "layout",
+		tags: ["grid","dashboard","layout","apps","solar"],
+		variants: ["linear"],
+		component: Widget,
+	},
+	{
+		name: "widget-add",
+		pascalName: "WidgetAdd",
+		category: "layout",
+		tags: ["widget","add","plus","grid","dashboard","layout","solar"],
+		variants: ["linear"],
+		component: WidgetAdd,
+	},
+	{
+		name: "windsurf",
+		pascalName: "Windsurf",
+		category: "social",
+		tags: ["ai","code","editor","brand"],
+		variants: ["linear"],
+		component: Windsurf,
+	},
+	{
 		name: "x",
 		pascalName: "X",
 		category: "social",
 		tags: [],
 		variants: ["linear"],
 		component: X,
+	},
+	{
+		name: "xai",
+		pascalName: "Xai",
+		category: "social",
+		tags: ["ai","brand"],
+		variants: ["linear"],
+		component: Xai,
+	},
+	{
+		name: "youtube",
+		pascalName: "Youtube",
+		category: "social",
+		tags: ["brand","youtube","video","google"],
+		variants: ["linear"],
+		component: Youtube,
+	},
+	{
+		name: "zai",
+		pascalName: "Zai",
+		category: "social",
+		tags: ["z.ai","ai","brand"],
+		variants: ["linear"],
+		component: Zai,
 	},
 ];

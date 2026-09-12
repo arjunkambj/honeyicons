@@ -14,7 +14,7 @@ export function Hero() {
 				aria-hidden
 				className="pointer-events-none absolute inset-0 [mask-composite:intersect] [mask-image:linear-gradient(to_bottom,transparent,black_14%,black_68%,transparent),radial-gradient(ellipse_at_center,transparent_32%,black_74%)]"
 			>
-				<div className="mx-auto grid w-full max-w-7xl grid-cols-6 gap-x-8 gap-y-12 px-4 py-16 opacity-[0.18] sm:grid-cols-8 sm:px-6 md:grid-cols-10 lg:grid-cols-12">
+				<div className="container mx-auto grid grid-cols-6 gap-x-8 gap-y-12 px-4 py-16 opacity-[0.18] sm:grid-cols-8 sm:px-6 md:grid-cols-10 lg:grid-cols-12">
 					{wallpaperIcons.map((item, index) => {
 						const Icon = item.component;
 						return <Icon key={index} size={32} className="text-foreground" />;
@@ -22,7 +22,7 @@ export function Hero() {
 				</div>
 			</div>
 
-			<div className="relative mx-auto flex min-h-[calc(100svh-3.5rem)] w-full max-w-7xl flex-col items-center justify-center px-4 pt-16 pb-40 text-center sm:px-6">
+			<div className="container relative mx-auto flex min-h-[calc(100svh-3.5rem)] flex-col items-center justify-center px-4 pt-16 pb-40 text-center sm:px-6">
 				<h1 className="animate-hero-enter text-balance font-heading font-medium text-4xl leading-[1.12] tracking-tight sm:text-6xl sm:leading-[1.08] md:text-7xl md:leading-[1.05]">
 					<span className="block">Icons for chat,</span>
 					<span className="block">

@@ -8,7 +8,8 @@
 		"./catalog": "./src/catalog.ts"
 	},
 	"files": [
-		"src"
+		"src",
+		"NOTICE.md"
 	],
 	"scripts": {
 		"generate": "bun run ../../scripts/build-icons.ts",

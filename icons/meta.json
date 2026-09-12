@@ -1,1 +1,1272 @@
-{}
+{
+	"add": {
+		"tags": [
+			"plus",
+			"new",
+			"create",
+			"solar"
+		]
+	},
+	"align-center": {
+		"tags": ["text", "alignment", "center", "paragraph", "format"]
+	},
+	"align-left": {
+		"tags": ["text", "alignment", "left", "paragraph", "format"]
+	},
+	"align-right": {
+		"tags": ["text", "alignment", "right", "paragraph", "format"]
+	},
+	"anthropic": {
+		"tags": [
+			"claude",
+			"ai",
+			"brand"
+		]
+	},
+	"antigravity": {
+		"tags": [
+			"ai",
+			"code",
+			"editor",
+			"brand"
+		]
+	},
+	"arrow-down": {
+		"tags": [
+			"chevron",
+			"down",
+			"bottom",
+			"expand",
+			"arrow-down-01",
+			"hugeicons"
+		]
+	},
+	"arrow-down-02": {
+		"tags": [
+			"arrow",
+			"down",
+			"direction",
+			"navigation",
+			"arrow-down-02",
+			"hugeicons"
+		]
+	},
+	"arrow-down-double": {
+		"tags": [
+			"chevron",
+			"double",
+			"down",
+			"bottom",
+			"hugeicons"
+		]
+	},
+	"arrow-down-left": {
+		"tags": [
+			"arrow",
+			"down-left",
+			"direction",
+			"navigation",
+			"arrow-down-left-01",
+			"hugeicons"
+		]
+	},
+	"arrow-down-right": {
+		"tags": [
+			"arrow",
+			"down-right",
+			"direction",
+			"navigation",
+			"arrow-down-right-01",
+			"hugeicons"
+		]
+	},
+	"arrow-left": {
+		"tags": [
+			"chevron",
+			"left",
+			"back",
+			"previous",
+			"arrow-left-01",
+			"hugeicons"
+		]
+	},
+	"arrow-left-02": {
+		"tags": [
+			"arrow",
+			"left",
+			"direction",
+			"navigation",
+			"arrow-left-02",
+			"hugeicons"
+		]
+	},
+	"arrow-left-double": {
+		"tags": [
+			"chevron",
+			"double",
+			"left",
+			"first",
+			"hugeicons"
+		]
+	},
+	"arrow-right": {
+		"tags": [
+			"chevron",
+			"right",
+			"forward",
+			"next",
+			"arrow-right-01",
+			"hugeicons"
+		]
+	},
+	"arrow-right-02": {
+		"tags": [
+			"arrow",
+			"right",
+			"direction",
+			"navigation",
+			"arrow-right-02",
+			"hugeicons"
+		]
+	},
+	"arrow-right-double": {
+		"tags": [
+			"chevron",
+			"double",
+			"right",
+			"last",
+			"hugeicons"
+		]
+	},
+	"arrow-up": {
+		"tags": [
+			"chevron",
+			"up",
+			"top",
+			"collapse",
+			"arrow-up-01",
+			"hugeicons"
+		]
+	},
+	"arrow-up-02": {
+		"tags": [
+			"arrow",
+			"up",
+			"direction",
+			"navigation",
+			"arrow-up-02",
+			"hugeicons"
+		]
+	},
+	"arrow-up-double": {
+		"tags": [
+			"chevron",
+			"double",
+			"up",
+			"top",
+			"hugeicons"
+		]
+	},
+	"arrow-up-left": {
+		"tags": [
+			"arrow",
+			"up-left",
+			"direction",
+			"navigation",
+			"arrow-up-left-01",
+			"hugeicons"
+		]
+	},
+	"arrow-up-right": {
+		"tags": [
+			"arrow",
+			"up-right",
+			"direction",
+			"navigation",
+			"arrow-up-right-01",
+			"hugeicons"
+		]
+	},
+	"bell": {
+		"tags": ["notification", "alert", "reminder", "alarm", "solar"]
+	},
+	"bookmark": {
+		"tags": [
+			"save",
+			"saved",
+			"favorite",
+			"reading",
+			"solar"
+		]
+	},
+	"branch": {
+		"tags": ["git", "version-control", "fork", "code"]
+	},
+	"brain": {
+		"tags": [
+			"ai",
+			"brain",
+			"intelligence",
+			"neural",
+			"ai-brain-01",
+			"hugeicons",
+			"ai-brain"
+		]
+	},
+	"bun": {
+		"tags": [
+			"javascript",
+			"runtime",
+			"brand"
+		]
+	},
+	"calendar-03": {
+		"tags": [
+			"calendar",
+			"date",
+			"schedule",
+			"event",
+			"month",
+			"hugeicons"
+		]
+	},
+	"cart": {
+		"tags": [
+			"basket",
+			"shopping",
+			"store",
+			"solar"
+		]
+	},
+	"check": {
+		"tags": [
+			"tick",
+			"done",
+			"success",
+			"confirm",
+			"complete",
+			"hugeicons"
+		]
+	},
+	"check-check": {
+		"tags": [
+			"double-check",
+			"tick",
+			"done",
+			"read",
+			"receipt",
+			"delivered",
+			"hugeicons"
+		]
+	},
+	"chrome": {
+		"tags": [
+			"brand",
+			"chrome",
+			"google",
+			"browser"
+		]
+	},
+	"clapperboard": {
+		"tags": [
+			"film",
+			"movie",
+			"video",
+			"play",
+			"clapperboard-play",
+			"solar"
+		]
+	},
+	"claude-ai": {
+		"tags": [
+			"claude",
+			"anthropic",
+			"ai",
+			"assistant",
+			"brand"
+		]
+	},
+	"claude-code": {
+		"tags": [
+			"claude",
+			"anthropic",
+			"ai",
+			"code",
+			"terminal",
+			"brand"
+		]
+	},
+	"close": {
+		"tags": [
+			"dismiss",
+			"cancel",
+			"cross",
+			"x",
+			"solar"
+		]
+	},
+	"cloud": {
+		"tags": [
+			"storage",
+			"weather",
+			"online",
+			"sync",
+			"solar"
+		]
+	},
+	"code": {
+		"tags": [
+			"programming",
+			"developer",
+			"syntax",
+			"brackets",
+			"solar"
+		]
+	},
+	"codex": {
+		"tags": [
+			"openai",
+			"ai",
+			"coding",
+			"brand"
+		]
+	},
+	"command": {
+		"tags": ["keyboard", "shortcut", "cmd", "mac", "solar"]
+	},
+	"computer": {
+		"tags": [
+			"monitor",
+			"desktop",
+			"screen",
+			"display",
+			"device",
+			"hugeicons"
+		]
+	},
+	"copy": {
+		"tags": [
+			"copy",
+			"duplicate",
+			"clipboard",
+			"copy-01",
+			"hugeicons"
+		]
+	},
+	"cursor": {
+		"tags": [
+			"brand",
+			"cursor",
+			"ai",
+			"code",
+			"editor"
+		]
+	},
+	"danger": {
+		"tags": [
+			"warning",
+			"alert",
+			"triangle",
+			"error",
+			"danger-triangle",
+			"solar"
+		]
+	},
+	"deepseek": {
+		"tags": [
+			"ai",
+			"whale",
+			"brand"
+		]
+	},
+	"devin": {
+		"tags": [
+			"ai",
+			"code",
+			"agent",
+			"brand"
+		]
+	},
+	"discord": {
+		"tags": [
+			"chat",
+			"community",
+			"brand"
+		]
+	},
+	"dislike": {
+		"tags": [
+			"thumbs-down",
+			"disapprove",
+			"feedback",
+			"hugeicons"
+		]
+	},
+	"edit-01": {
+		"tags": [
+			"edit",
+			"pencil",
+			"write",
+			"draw",
+			"hugeicons"
+		]
+	},
+	"edit-off": {
+		"tags": [
+			"edit",
+			"disabled",
+			"read-only",
+			"pencil",
+			"hugeicons"
+		]
+	},
+	"email": {
+		"tags": [
+			"mail",
+			"letter",
+			"envelope",
+			"message",
+			"solar"
+		]
+	},
+	"exit": {
+		"tags": ["door", "leave", "logout", "sign-out", "solar"]
+	},
+	"facebook": {
+		"tags": [
+			"meta",
+			"social",
+			"brand"
+		]
+	},
+	"file": {
+		"tags": [
+			"document",
+			"page",
+			"paper",
+			"text",
+			"file-text",
+			"solar"
+		]
+	},
+	"file-code": {
+		"tags": [
+			"document",
+			"code",
+			"source",
+			"programming",
+			"code-file",
+			"solar"
+		]
+	},
+	"file-read": {
+		"tags": [
+			"document",
+			"read",
+			"check",
+			"done",
+			"file-check",
+			"solar"
+		]
+	},
+	"file-remove": {
+		"tags": [
+			"document",
+			"delete",
+			"remove",
+			"cancel",
+			"solar"
+		]
+	},
+	"folder-01": {
+		"tags": [
+			"folder",
+			"directory",
+			"files",
+			"storage",
+			"hugeicons"
+		]
+	},
+	"folder-add": {
+		"tags": [
+			"folder",
+			"directory",
+			"create",
+			"new",
+			"plus",
+			"hugeicons"
+		]
+	},
+	"folder-open": {
+		"tags": [
+			"folder",
+			"open",
+			"directory",
+			"files",
+			"storage",
+			"hugeicons"
+		]
+	},
+	"gemini": {
+		"tags": [
+			"google",
+			"ai",
+			"brand"
+		]
+	},
+	"git": {
+		"tags": ["version-control", "repository", "code", "brand"]
+	},
+	"github": {
+		"tags": [
+			"git",
+			"code",
+			"repository",
+			"brand"
+		]
+	},
+	"github-copilot": {
+		"tags": [
+			"brand",
+			"github",
+			"copilot",
+			"ai",
+			"code",
+			"assistant"
+		]
+	},
+	"google": {
+		"tags": [
+			"search",
+			"alphabet",
+			"brand"
+		]
+	},
+	"git-pull-request": {
+		"tags": ["git", "pull-request", "pr", "review", "merge", "code"]
+	},
+	"grok": {
+		"tags": [
+			"xai",
+			"ai",
+			"assistant",
+			"brand"
+		]
+	},
+	"hamburger": {
+		"tags": [
+			"menu",
+			"navigation",
+			"bars",
+			"hamburger-menu",
+			"solar"
+		]
+	},
+	"hashtag": {
+		"tags": [
+			"hash",
+			"tag",
+			"number",
+			"hastag",
+			"solar"
+		]
+	},
+	"headphone": {
+		"tags": [
+			"headphones",
+			"audio",
+			"music",
+			"listen",
+			"headphones-round",
+			"solar"
+		]
+	},
+	"images": {
+		"tags": [
+			"image",
+			"gallery",
+			"photo",
+			"picture",
+			"media"
+		]
+	},
+	"images-add": {
+		"tags": [
+			"image",
+			"gallery",
+			"upload",
+			"photo",
+			"plus",
+			"gallery-add",
+			"solar"
+		]
+	},
+	"insta": {
+		"tags": [
+			"instagram",
+			"social",
+			"photos",
+			"brand"
+		]
+	},
+	"integration": {
+		"tags": [
+			"flow",
+			"workflow",
+			"connect",
+			"nodes",
+			"hugeicons"
+		]
+	},
+	"kimi": {
+		"tags": ["ai", "assistant", "moonshot", "brand"]
+	},
+	"layers": {
+		"tags": [
+			"stack",
+			"design",
+			"levels",
+			"layers-minimalistic",
+			"solar"
+		]
+	},
+	"lightning": {
+		"tags": [
+			"bolt",
+			"flash",
+			"electricity",
+			"energy",
+			"power",
+			"zap"
+		]
+	},
+	"like": {
+		"tags": [
+			"thumbs-up",
+			"approve",
+			"feedback",
+			"hugeicons"
+		]
+	},
+	"linkedin": {
+		"tags": [
+			"brand",
+			"linkedin"
+		]
+	},
+	"list-down": {
+		"tags": [
+			"list",
+			"sort",
+			"descending",
+			"expand",
+			"list-down-minimalistic",
+			"solar"
+		]
+	},
+	"list-up": {
+		"tags": [
+			"list",
+			"sort",
+			"ascending",
+			"collapse",
+			"list-up-minimalistic",
+			"solar"
+		]
+	},
+	"lock": {
+		"tags": [
+			"locked",
+			"security",
+			"private",
+			"access",
+			"hugeicons"
+		]
+	},
+	"lock-unlock": {
+		"tags": [
+			"lock-open",
+			"unlock",
+			"security",
+			"access",
+			"hugeicons"
+		]
+	},
+	"logout": {
+		"tags": [
+			"sign-out",
+			"exit",
+			"account",
+			"logout-3",
+			"solar"
+		]
+	},
+	"maximize": {
+		"tags": [
+			"expand",
+			"fullscreen",
+			"resize",
+			"arrows"
+		]
+	},
+	"merge-conflict": {
+		"tags": ["git", "merge", "conflict", "pull-request", "code"]
+	},
+	"meta-ai": {
+		"tags": [
+			"brand",
+			"meta",
+			"ai",
+			"assistant"
+		]
+	},
+	"microphone": {
+		"tags": [
+			"mic",
+			"record",
+			"voice",
+			"audio",
+			"microphone-large",
+			"solar"
+		]
+	},
+	"minimize": {
+		"tags": [
+			"collapse",
+			"shrink",
+			"restore",
+			"resize",
+			"arrows"
+		]
+	},
+	"minus": {
+		"tags": [
+			"subtract",
+			"remove",
+			"decrease",
+			"solar"
+		]
+	},
+	"mistral": {
+		"tags": [
+			"ai",
+			"brand"
+		]
+	},
+	"moon": {
+		"tags": [
+			"moon",
+			"night",
+			"dark",
+			"theme",
+			"crescent",
+			"solar"
+		]
+	},
+	"more-horizontal": {
+		"tags": [
+			"ellipsis",
+			"menu",
+			"options",
+			"dots",
+			"horizontal",
+			"hugeicons"
+		]
+	},
+	"more-vertical": {
+		"tags": [
+			"ellipsis",
+			"menu",
+			"options",
+			"dots",
+			"vertical",
+			"hugeicons"
+		]
+	},
+	"ms-copilot": {
+		"tags": [
+			"microsoft",
+			"copilot",
+			"ai",
+			"assistant",
+			"brand"
+		]
+	},
+	"muted": {
+		"tags": [
+			"mute",
+			"volume-off",
+			"silent",
+			"speaker",
+			"audio",
+			"solar"
+		]
+	},
+	"npm": {
+		"tags": [
+			"package",
+			"registry",
+			"javascript",
+			"brand"
+		]
+	},
+	"nvidia": {
+		"tags": [
+			"brand",
+			"nvidia",
+			"gpu",
+			"hardware"
+		]
+	},
+	"openai": {
+		"tags": [
+			"chatgpt",
+			"ai",
+			"brand"
+		]
+	},
+	"openclaw": {
+		"tags": [
+			"open-claw",
+			"ai",
+			"mascot",
+			"brand"
+		]
+	},
+	"opencode": {
+		"tags": [
+			"open-code",
+			"code",
+			"terminal",
+			"brand"
+		]
+	},
+	"pallet": {
+		"tags": [
+			"library",
+			"collection",
+			"stack",
+			"archive",
+			"files",
+			"solar"
+		]
+	},
+	"paper-plane": {
+		"tags": [
+			"send",
+			"message",
+			"submit",
+			"plane",
+			"plane-3",
+			"plain-3",
+			"solar"
+		]
+	},
+	"paperclip": {
+		"tags": [
+			"attachment",
+			"attach",
+			"clip",
+			"file",
+			"paperclip-2",
+			"solar"
+		]
+	},
+	"perplexity": {
+		"tags": [
+			"brand",
+			"perplexity",
+			"ai",
+			"search"
+		]
+	},
+	"pin": {
+		"tags": [
+			"pushpin",
+			"pinned",
+			"save",
+			"solar"
+		]
+	},
+	"pinterest": {
+		"tags": [
+			"social",
+			"pins",
+			"brand"
+		]
+	},
+	"play": {
+		"tags": [
+			"start",
+			"resume",
+			"playback",
+			"video",
+			"audio",
+			"solar"
+		]
+	},
+	"qwen": {
+		"tags": [
+			"ai",
+			"alibaba",
+			"brand"
+		]
+	},
+	"react": {
+		"tags": [
+			"javascript",
+			"framework",
+			"frontend",
+			"brand"
+		]
+	},
+	"reddit": {
+		"tags": [
+			"community",
+			"social",
+			"brand"
+		]
+	},
+	"redo": {
+		"tags": [
+			"history",
+			"forward",
+			"repeat",
+			"arrow"
+		]
+	},
+	"reorder": {
+		"tags": [
+			"sort",
+			"arrange",
+			"drag",
+			"list",
+			"menu",
+			"solar"
+		]
+	},
+	"repeat": {
+		"tags": [
+			"loop",
+			"cycle",
+			"refresh",
+			"solar"
+		]
+	},
+	"search-minus": {
+		"tags": [
+			"magnifier",
+			"minimalistic-magnifier-zoom-out",
+			"zoom-out",
+			"search",
+			"shrink",
+			"minus",
+			"solar"
+		]
+	},
+	"search-plus": {
+		"tags": [
+			"magnifier",
+			"magnifier-zoom-in",
+			"zoom-in",
+			"search",
+			"enlarge",
+			"plus",
+			"solar"
+		]
+	},
+	"settings": {
+		"tags": [
+			"gear",
+			"cog",
+			"preferences",
+			"configuration",
+			"options",
+			"solar"
+		]
+	},
+	"share": {
+		"tags": [
+			"send",
+			"social",
+			"link",
+			"solar"
+		]
+	},
+	"sidebar-left": {
+		"tags": [
+			"panel",
+			"layout",
+			"navigation",
+			"sidebar",
+			"left",
+			"sidebar-minimalistic",
+			"solar"
+		]
+	},
+	"sidebar-right": {
+		"tags": [
+			"panel",
+			"layout",
+			"navigation",
+			"sidebar",
+			"right",
+			"sidebar-minimalistic",
+			"solar"
+		]
+	},
+	"slack": {
+		"tags": [
+			"messaging",
+			"chat",
+			"team",
+			"workplace",
+			"brand"
+		]
+	},
+	"smartphone": {
+		"tags": [
+			"phone",
+			"mobile",
+			"device",
+			"screen",
+			"solar"
+		]
+	},
+	"soundwave": {
+		"tags": [
+			"waveform",
+			"audio",
+			"sound",
+			"voice",
+			"equalizer",
+			"solar"
+		]
+	},
+	"star": {
+		"tags": [
+			"favorite",
+			"rating",
+			"saved",
+			"solar"
+		]
+	},
+	"sticker": {
+		"tags": ["label", "peel", "fold", "square", "solar"]
+	},
+	"stop": {
+		"tags": [
+			"end",
+			"halt",
+			"playback",
+			"recording",
+			"square",
+			"solar"
+		]
+	},
+	"sun": {
+		"tags": [
+			"sun",
+			"light",
+			"day",
+			"brightness",
+			"theme",
+			"sun-01",
+			"hugeicons"
+		]
+	},
+	"supabase": {
+		"tags": [
+			"database",
+			"backend",
+			"brand"
+		]
+	},
+	"tablet": {
+		"tags": [
+			"ipad",
+			"device",
+			"screen",
+			"landscape",
+			"solar"
+		]
+	},
+	"telegram": {
+		"tags": [
+			"messaging",
+			"chat",
+			"social",
+			"brand",
+			"paper-plane"
+		]
+	},
+	"threads": {
+		"tags": [
+			"brand",
+			"threads"
+		]
+	},
+	"tiktok": {
+		"tags": [
+			"brand",
+			"tiktok"
+		]
+	},
+	"tool": {
+		"tags": [
+			"sledgehammer",
+			"hammer",
+			"build",
+			"tools",
+			"solar"
+		]
+	},
+	"ts": {
+		"tags": [
+			"typescript",
+			"javascript",
+			"language",
+			"brand"
+		]
+	},
+	"twitter": {
+		"tags": [
+			"bird",
+			"social",
+			"brand"
+		]
+	},
+	"undo": {
+		"tags": [
+			"history",
+			"back",
+			"revert",
+			"arrow"
+		]
+	},
+	"unfold-less": {
+		"tags": [
+			"collapse",
+			"fold",
+			"chevrons",
+			"hugeicons"
+		]
+	},
+	"unfold-more": {
+		"tags": [
+			"expand",
+			"unfold",
+			"chevrons",
+			"hugeicons"
+		]
+	},
+	"user": {
+		"tags": [
+			"profile",
+			"person",
+			"account",
+			"avatar",
+			"solar"
+		]
+	},
+	"user-group": {
+		"tags": [
+			"users",
+			"team",
+			"people",
+			"members",
+			"users-group-two-rounded",
+			"solar"
+		]
+	},
+	"vercel": {
+		"tags": [
+			"brand",
+			"vercel",
+			"hosting",
+			"deployment"
+		]
+	},
+	"verified-check": {
+		"tags": [
+			"verified",
+			"badge",
+			"check",
+			"approved",
+			"solar"
+		]
+	},
+	"videocamera": {
+		"tags": [
+			"video",
+			"camera",
+			"record",
+			"call"
+		]
+	},
+	"volume": {
+		"tags": [
+			"speaker",
+			"sound",
+			"audio",
+			"volume-low",
+			"solar"
+		]
+	},
+	"volume-loud": {
+		"tags": [
+			"volume",
+			"sound",
+			"speaker",
+			"audio",
+			"unmute",
+			"solar"
+		]
+	},
+	"widget": {
+		"tags": [
+			"grid",
+			"dashboard",
+			"layout",
+			"apps",
+			"solar"
+		]
+	},
+	"widget-add": {
+		"tags": [
+			"widget",
+			"add",
+			"plus",
+			"grid",
+			"dashboard",
+			"layout",
+			"solar"
+		]
+	},
+	"windsurf": {
+		"tags": [
+			"ai",
+			"code",
+			"editor",
+			"brand"
+		]
+	},
+	"xai": {
+		"tags": ["ai", "brand"]
+	},
+	"youtube": {
+		"tags": [
+			"brand",
+			"youtube",
+			"video",
+			"google"
+		]
+	},
+	"zai": {
+		"tags": [
+			"z.ai",
+			"ai",
+			"brand"
+		]
+	}
+}

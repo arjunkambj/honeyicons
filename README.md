@@ -78,6 +78,9 @@ Icons live in `icons/{linear,bold,duotone}/{category}/name.svg` (24×24). Linear
 bun run generate:icons
 ```
 
+Third-party icon sources and adaptation details are recorded in
+[the React package notices](packages/react/NOTICE.md).
+
 ## Available Scripts
 
 - `bun run dev`: Start all applications in development mode

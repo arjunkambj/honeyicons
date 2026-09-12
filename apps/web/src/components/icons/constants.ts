@@ -5,8 +5,8 @@ import {
 	LayoutDashboardIcon,
 	LayoutGridIcon,
 	Loading03Icon,
-	SparklesIcon,
 	Tick02Icon,
+	UserGroupIcon,
 } from "@hugeicons/core-free-icons";
 import type { IconSvgElement } from "@hugeicons/react";
 
@@ -24,7 +24,7 @@ export const CATEGORY_META: {
 }[] = [
 	{ id: "all", label: "All", icon: LayoutGridIcon },
 	{ id: "actions", label: "Actions", icon: Tick02Icon },
-	{ id: "ai", label: "AI Labs", icon: SparklesIcon },
+	{ id: "social", label: "Social", icon: UserGroupIcon },
 	{ id: "layout", label: "Layout", icon: LayoutDashboardIcon },
 	{ id: "arrows", label: "Arrow", icon: ArrowRight01Icon },
 	{ id: "files", label: "Folder", icon: Folder01Icon },

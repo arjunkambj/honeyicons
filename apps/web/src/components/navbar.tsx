@@ -53,7 +53,7 @@ function ThemeToggle() {
 export function Navbar() {
 	return (
 		<header className="sticky top-0 z-10 border-transparent border-b bg-background/80 backdrop-blur-md">
-			<div className="mx-auto flex h-14 w-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+			<div className="container mx-auto flex h-14 items-center justify-between gap-4 px-4 sm:px-6">
 				<Link href="/" className="flex items-center gap-2 font-medium text-sm">
 					<BrandMark className="size-6 text-zinc-950 dark:text-zinc-50" />
 					honeyicons

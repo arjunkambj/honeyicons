@@ -7,9 +7,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.141 0.005 285.823);
-  --card: oklch(1 0 0);
+  --background: oklch(0.985 0 0);
+  --foreground: oklch(0.274 0.006 286.033);
+  --card: oklch(0.967 0.001 286.375);
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
