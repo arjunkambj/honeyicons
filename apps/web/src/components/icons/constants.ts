@@ -4,15 +4,15 @@ import {
 	Folder,
 	type HoneyIcon,
 	type IconCategory,
+	Layers,
 	SidebarLeft,
-	Spinner,
 	UserGroup,
 	Widget,
 } from "@honeyicons/react";
 
 export const SIZE_MIN = 16;
 export const SIZE_MAX = 460;
-export const SIZE_DEFAULT = 48;
+export const SIZE_DEFAULT = 28;
 export const SIZE_MAJOR_STEP = 4;
 
 export type CategoryFilter = "all" | IconCategory;
@@ -28,7 +28,7 @@ export const CATEGORY_META: {
 	{ id: "layout", label: "Layout", icon: SidebarLeft },
 	{ id: "arrows", label: "Arrow", icon: ChevronRight },
 	{ id: "files", label: "Folder", icon: Folder },
-	{ id: "spinner", label: "Loaders", icon: Spinner },
+	{ id: "spinner", label: "Loaders", icon: Layers },
 ];
 
 export const VARIANT_META = [

@@ -67,10 +67,7 @@ export function IconBrowser() {
 			}}
 			className="gap-10 sm:gap-12"
 		>
-			<div className="flex flex-col items-center gap-5 text-center">
-				<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
-					Browse {catalog.length > 0 ? `${catalog.length} ` : ""}icons
-				</h1>
+			<div className="flex flex-col items-center">
 				<IconSearch value={query} onChange={setQuery} inputRef={inputRef} />
 			</div>
 

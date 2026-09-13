@@ -6,6 +6,7 @@ import {
 	EmptyHeader,
 	EmptyTitle,
 } from "@honeyicons/ui/components/empty";
+import { TooltipProvider } from "@honeyicons/ui/components/tooltip";
 import { IconCard } from "./icon-card";
 
 type IconGridProps = {
@@ -47,24 +48,26 @@ export function IconGrid({
 	}
 
 	return (
-		<div className="overflow-x-auto">
-			<div
-				className="grid gap-3 [--icon-cell-min:128px] lg:[--icon-cell-min:112px]"
-				style={{
-					gridTemplateColumns: `repeat(auto-fill, minmax(max(${guides ? "176px" : "var(--icon-cell-min)"}, ${size + 32}px), 1fr))`,
-					minWidth: size + 32,
-				}}
-			>
-				{items.map((item) => (
-					<IconCard
-						key={item.name}
-						item={item}
-						variant={variant}
-						size={size}
-						guides={guides}
-					/>
-				))}
+		<TooltipProvider delay={300}>
+			<div className="overflow-x-auto">
+				<div
+					className="grid gap-1 [--icon-cell-min:72px] sm:[--icon-cell-min:64px]"
+					style={{
+						gridTemplateColumns: `repeat(auto-fill, minmax(max(${guides ? "176px" : "var(--icon-cell-min)"}, ${size + 24}px), 1fr))`,
+						minWidth: size + 24,
+					}}
+				>
+					{items.map((item) => (
+						<IconCard
+							key={item.name}
+							item={item}
+							variant={variant}
+							size={size}
+							guides={guides}
+						/>
+					))}
+				</div>
 			</div>
-		</div>
+		</TooltipProvider>
 	);
 }

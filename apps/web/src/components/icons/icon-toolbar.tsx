@@ -76,18 +76,19 @@ export function IconToolbar({
 				onValueChange={(value) => onSizeChange(sliderNumber(value))}
 			/>
 
+			<p className="whitespace-nowrap text-muted-foreground text-xs tabular-nums leading-5">
+				{shown} shown
+			</p>
 			<Toggle
 				variant="outline"
 				size="default"
 				pressed={guides}
 				onPressedChange={onGuidesChange}
 				aria-label="Show alignment guides"
+				className="ml-auto"
 			>
 				Guides
 			</Toggle>
-			<p className="ml-auto whitespace-nowrap text-muted-foreground text-xs tabular-nums leading-5">
-				{shown} shown
-			</p>
 		</div>
 	);
 }
