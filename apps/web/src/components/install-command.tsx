@@ -1,4 +1,4 @@
-import { Check, Copy } from "@honeyicons/react";
+import { Check, Copy, Terminal } from "@honeyicons/react";
 import {
 	Tabs,
 	TabsContent,
@@ -12,6 +12,7 @@ import { CopyButton } from "@/components/code-block";
 const installCommands = [
 	{ id: "pnpm", label: "pnpm", command: "pnpm add @honeyicons/react" },
 	{ id: "npm", label: "npm", command: "npm i @honeyicons/react" },
+	{ id: "yarn", label: "yarn", command: "yarn add @honeyicons/react" },
 	{ id: "bun", label: "bun", command: "bun add @honeyicons/react" },
 ] as const;
 
@@ -73,7 +74,12 @@ export function InstallCommand({
 		installCommands[0].command;
 
 	function onValueChange(value: unknown) {
-		if (value === "npm" || value === "pnpm" || value === "bun") {
+		if (
+			value === "npm" ||
+			value === "pnpm" ||
+			value === "yarn" ||
+			value === "bun"
+		) {
 			setManager(value);
 		}
 	}
@@ -85,21 +91,32 @@ export function InstallCommand({
 				onValueChange={onValueChange}
 				className={cn("mt-6 w-full gap-0", className)}
 			>
-				<div className="overflow-hidden rounded-2xl bg-muted">
-					<div className="flex items-center justify-between gap-3 px-2 py-1.5">
-						<PackageManagerTabs className="bg-background" />
+				<div className="overflow-hidden rounded-2xl bg-card">
+					<div className="flex items-center gap-2 border-b border-border/60 px-3 py-1 sm:gap-3 sm:px-4">
+						<span
+							aria-hidden
+							className="grid size-5 shrink-0 place-items-center rounded-md bg-foreground text-background"
+						>
+							<Terminal size={12} />
+						</span>
+						<PackageManagerTabs className="bg-muted" />
 						<CopyButton
 							key={command}
 							text={command}
 							label={`Copy install command: ${command}`}
+							className="ml-auto"
 						/>
 					</div>
-					<pre className="overflow-x-auto px-5 py-4 font-mono text-sm leading-7">
-						<code>
-							<span aria-hidden className="mr-2 text-foreground/40">
+					<pre className="overflow-x-auto px-4 py-3 font-mono text-sm leading-7 sm:px-5">
+						<code className="whitespace-pre">
+							<span aria-hidden className="mr-2 text-foreground/40 select-none">
 								$
 							</span>
 							{command}
+							<span
+								aria-hidden
+								className="ml-1 inline-block h-3.5 w-0.5 translate-y-[2px] bg-foreground motion-safe:animate-caret-blink"
+							/>
 						</code>
 					</pre>
 				</div>

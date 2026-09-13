@@ -20,6 +20,14 @@ const accessibilityCode = `import { Bell, Search } from "@honeyicons/react";
 
 <Search size={24} title="Search" />`;
 
+const propsCode = `import { Bell, Moon, Search } from "@honeyicons/react";
+
+<Bell size={16} />
+<Bell size={24} />
+<Bell color="#3b82f6" />
+<Search strokeWidth={1.8} />
+<Moon variant="bold" />`;
+
 const sections = [
 	{ id: "introduction", label: "Introduction" },
 	{ id: "install", label: "Install" },
@@ -55,7 +63,7 @@ function DocsPage() {
 			<article className="mx-auto flex max-w-3xl flex-col">
 				<header
 					id="introduction"
-					className="mb-8 scroll-mt-40 sm:mb-10 sm:scroll-mt-28"
+					className="mb-8 scroll-mt-32 sm:mb-10 sm:scroll-mt-24"
 				>
 					<p className="mb-3 text-muted-foreground text-sm">Documentation</p>
 					<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
@@ -69,9 +77,13 @@ function DocsPage() {
 				<DocsSection
 					id="install"
 					title="Install"
-					description="Add the React package with pnpm, npm, or bun."
+					description="Add the React package with pnpm, npm, yarn, or bun."
 				>
 					<InstallCommand layout="panel" className="mt-6" />
+					<p className="mt-3 text-muted-foreground text-sm leading-6">
+						The <code>$</code> is the shell prompt, not part of the command.
+						Copying grabs only the command itself.
+					</p>
 				</DocsSection>
 				<DocsSection
 					id="usage"
@@ -79,7 +91,7 @@ function DocsPage() {
 					description="Import only the icons you need. Named imports tree-shake."
 				>
 					<CodeBlock code={usageCode} className="mt-6" />
-					<div className="mt-3 flex flex-wrap items-end gap-8 rounded-2xl bg-muted/60 px-5 py-4">
+					<div className="mt-3 flex flex-wrap items-end gap-8 rounded-2xl bg-card px-5 py-4">
 						{usagePreview.map(({ Icon, name, size }) => (
 							<figure
 								key={name}
@@ -98,63 +110,24 @@ function DocsPage() {
 					title="Props"
 					description="Icons share a 24-unit grid, inherit currentColor, and default to a 1.8-unit stroke."
 				>
-					<div className="mt-6 grid gap-3 sm:grid-cols-2">
-						<PropCard
-							title="Size"
-							description="Defaults to 24. Use 16 for compact controls."
-						>
-							<div className="flex items-end gap-6">
-								<SizeSample size={16} />
-								<SizeSample size={24} />
-							</div>
-						</PropCard>
-						<PropCard
-							title="Color"
-							description="Inherits currentColor. Set a text color or the color prop."
-						>
-							<div className="flex flex-wrap items-end gap-6">
-								<figure className="flex flex-col items-center gap-2 text-foreground">
-									<Bell size={24} />
-									<figcaption className="font-mono text-muted-foreground text-xs">
-										Inherited
-									</figcaption>
-								</figure>
-								<figure className="flex flex-col items-center gap-2">
-									<Bell size={24} color="#3b82f6" />
-									<figcaption className="font-mono text-muted-foreground text-xs">
-										#3b82f6
-									</figcaption>
-								</figure>
-								<figure className="flex flex-col items-center gap-2">
-									<Bell size={24} color="#f97316" />
-									<figcaption className="font-mono text-muted-foreground text-xs">
-										#f97316
-									</figcaption>
-								</figure>
-							</div>
-							<code className="mt-4 block text-xs">
-								{'<Bell color="#3b82f6" />'}
-							</code>
-						</PropCard>
-						<PropCard
-							title="Stroke"
-							description="The default is 1.8. Filled outlines keep their baked-in weight."
-						>
-							<div className="flex items-end gap-6">
-								<StrokeSample width={1} />
-								<StrokeSample width={1.8} />
-								<StrokeSample width={2} />
-							</div>
-						</PropCard>
-						<PropCard
-							title="Variant"
-							description="Linear is the default. Check an icon’s variants before using bold."
-						>
-							<div className="flex items-end gap-6">
-								<VariantSample variant="linear" />
-								<VariantSample variant="bold" />
-							</div>
-						</PropCard>
+					<CodeBlock code={propsCode} className="mt-6" />
+					<div className="mt-3 flex flex-wrap items-end gap-8 rounded-2xl bg-card px-5 py-4">
+						<SizeSample size={16} />
+						<SizeSample size={24} />
+						<figure className="flex flex-col items-center gap-2 text-foreground">
+							<Bell size={24} />
+							<figcaption className="font-mono text-muted-foreground text-xs">
+								Inherited
+							</figcaption>
+						</figure>
+						<figure className="flex flex-col items-center gap-2">
+							<Bell size={24} color="#3b82f6" />
+							<figcaption className="font-mono text-muted-foreground text-xs">
+								#3b82f6
+							</figcaption>
+						</figure>
+						<StrokeSample width={1.8} />
+						<VariantSample variant="bold" />
 					</div>
 				</DocsSection>
 				<DocsSection
@@ -163,11 +136,11 @@ function DocsPage() {
 					description="Icons are decorative by default. Name the control, or give a standalone icon a title."
 				>
 					<CodeBlock code={accessibilityCode} className="mt-6" />
-					<div className="mt-3 flex flex-wrap items-center gap-6 rounded-2xl bg-muted/60 px-5 py-4">
+					<div className="mt-3 flex flex-wrap items-center gap-6 rounded-2xl bg-card px-5 py-4">
 						<button
 							type="button"
 							aria-label="Notifications"
-							className="inline-flex size-9 items-center justify-center rounded-full border border-border bg-background transition-colors hover:bg-muted"
+							className="inline-flex size-9 items-center justify-center rounded-xl border border-border bg-background transition-colors hover:bg-muted"
 						>
 							<Bell size={20} />
 						</button>
@@ -222,7 +195,7 @@ function DocsSection({
 		<section
 			id={id}
 			aria-labelledby={`${id}-title`}
-			className="scroll-mt-44 py-10 sm:scroll-mt-32 sm:py-12"
+			className="scroll-mt-36 py-10 sm:scroll-mt-28 sm:py-12"
 		>
 			<h2
 				id={`${id}-title`}
@@ -233,26 +206,6 @@ function DocsSection({
 			<p className="mt-2 text-muted-foreground leading-7">{description}</p>
 			{children}
 		</section>
-	);
-}
-
-function PropCard({
-	title,
-	description,
-	children,
-}: {
-	title: string;
-	description: string;
-	children: ReactNode;
-}) {
-	return (
-		<div className="rounded-2xl bg-muted/60 p-5">
-			<h3 className="font-medium">{title}</h3>
-			<p className="mt-1 text-muted-foreground text-sm leading-6">
-				{description}
-			</p>
-			<div className="mt-4">{children}</div>
-		</div>
 	);
 }
 

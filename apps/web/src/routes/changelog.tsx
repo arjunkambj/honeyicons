@@ -79,7 +79,7 @@ function ChangelogPage() {
 					<ul className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2">
 						{addedIcons.map(({ name, Icon, description }) => (
 							<li key={name} className="flex flex-col gap-3">
-								<div className="flex h-24 items-center justify-center gap-8 rounded-2xl bg-muted/60">
+								<div className="flex h-24 items-center justify-center gap-8 rounded-2xl bg-card">
 									{[16, 24].map((size) => (
 										<figure
 											key={size}
