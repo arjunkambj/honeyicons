@@ -3,7 +3,6 @@ import { join } from "node:path";
 
 const VARIANTS = ["linear", "bold", "duotone"] as const;
 type Variant = (typeof VARIANTS)[number];
-const REQUIRED_STYLE: Variant = "linear";
 
 type IconNode = [tag: string, attrs: Record<string, string>][];
 type IconMeta = Record<string, { tags?: string[]; aliases?: string[] }>;
@@ -162,41 +161,66 @@ function serializeNodes(nodes: IconNode) {
 		.join(",\n")},\n\t]`;
 }
 
+async function listVariantDir(variant: Variant) {
+	const dir = join(iconsDir, variant);
+	try {
+		return await readdir(dir, { withFileTypes: true });
+	} catch (error) {
+		if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+			return [];
+		}
+		throw error;
+	}
+}
+
 async function listCategories() {
-	const dir = join(iconsDir, REQUIRED_STYLE);
-	const entries = await readdir(dir, { withFileTypes: true });
-	return entries
-		.filter((entry) => entry.isDirectory() && !entry.name.startsWith("."))
-		.map((entry) => entry.name)
-		.toSorted();
+	const names = new Set<string>();
+	for (const variant of VARIANTS) {
+		const entries = await listVariantDir(variant);
+		const loose = entries.filter(
+			(entry) => entry.isFile() && entry.name.endsWith(".svg"),
+		);
+		if (loose.length > 0) {
+			throw new Error(
+				`put SVGs in a category folder, not ${variant}/ (${loose.map((entry) => entry.name).join(", ")})`,
+			);
+		}
+		for (const entry of entries) {
+			if (entry.isDirectory() && !entry.name.startsWith(".")) {
+				names.add(entry.name);
+			}
+		}
+	}
+	return [...names].toSorted();
 }
 
 async function listIcons(): Promise<IconSource[]> {
-	const dir = join(iconsDir, REQUIRED_STYLE);
-	const entries = await readdir(dir, { withFileTypes: true });
-	const loose = entries.filter(
-		(entry) => entry.isFile() && entry.name.endsWith(".svg"),
-	);
-	if (loose.length > 0) {
-		throw new Error(
-			`put SVGs in a category folder, not ${REQUIRED_STYLE}/ (${loose.map((entry) => entry.name).join(", ")})`,
-		);
-	}
-
-	const icons: IconSource[] = [];
-	for (const entry of entries) {
-		if (!entry.isDirectory() || entry.name.startsWith(".")) continue;
-		const files = await readdir(join(dir, entry.name));
-		for (const file of files) {
-			if (!file.endsWith(".svg")) continue;
-			icons.push({ category: entry.name, name: file.slice(0, -4) });
+	const seen = new Map<string, string>();
+	for (const variant of VARIANTS) {
+		const entries = await listVariantDir(variant);
+		for (const entry of entries) {
+			if (!entry.isDirectory() || entry.name.startsWith(".")) continue;
+			const files = await readdir(join(iconsDir, variant, entry.name));
+			for (const file of files) {
+				if (!file.endsWith(".svg")) continue;
+				const name = file.slice(0, -4);
+				const existing = seen.get(name);
+				if (existing && existing !== entry.name) {
+					throw new Error(
+						`Duplicate icon name "${name}" in ${existing} and ${entry.name}. Names must be unique across categories.`,
+					);
+				}
+				seen.set(name, entry.name);
+			}
 		}
 	}
 
-	return icons.toSorted(
-		(a, b) =>
-			a.name.localeCompare(b.name) || a.category.localeCompare(b.category),
-	);
+	return [...seen.entries()]
+		.map(([name, category]) => ({ name, category }))
+		.toSorted(
+			(a, b) =>
+				a.name.localeCompare(b.name) || a.category.localeCompare(b.category),
+		);
 }
 
 async function main() {
@@ -254,7 +278,6 @@ async function main() {
 				nodes[variant] = parseSvg(svg, `${variant}/${relative}`);
 			} catch (error) {
 				if (
-					variant !== REQUIRED_STYLE &&
 					error instanceof Error &&
 					"code" in error &&
 					error.code === "ENOENT"
@@ -265,9 +288,8 @@ async function main() {
 			}
 		}
 
-		const linear = nodes.linear;
-		if (!linear) {
-			throw new Error(`Missing ${REQUIRED_STYLE}/${relative}`);
+		if (VARIANTS.every((variant) => !nodes[variant])) {
+			throw new Error(`Missing SVG for ${relative}`);
 		}
 
 		const nodeEntries = VARIANTS.filter((variant) => nodes[variant]).map(

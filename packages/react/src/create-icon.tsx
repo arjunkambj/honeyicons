@@ -19,7 +19,7 @@ export function createIcon(name: string, nodes: IconNodeMap): HoneyIcon {
 	const variants = ICON_VARIANTS.filter((variant) => nodes[variant]);
 	const Component = forwardRef<SVGSVGElement, HoneyIconProps>(
 		function HoneyIcon({ variant = "linear", ...props }, ref) {
-			const iconNode = nodes[variant] ?? nodes.linear;
+			const iconNode = nodes[variant] ?? nodes[variants[0] ?? "linear"];
 			if (!iconNode) {
 				throw new Error(`Missing icon data for ${name}`);
 			}

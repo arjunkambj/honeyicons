@@ -47,7 +47,7 @@ children such as `<desc>` are supported.
 Linear is the default variant. Selected icons also support other variants;
 check the component's `variants` property before choosing one. Stroke width
 affects stroked geometry; filled outlines retain their original geometry.
-Unsupported variants fall back to linear.
+Unsupported variants fall back to the first available variant.
 
 Catalog data is available as the named `catalog` export from
 `@honeyicons/react/catalog`. For reusable components, import the `HoneyIcon`

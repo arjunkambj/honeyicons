@@ -62,7 +62,7 @@ If you want to add app-specific blocks instead of shared primitives, run the sha
 
 ```
 honeyicons/
-├── icons/                 # SVG source (linear required; bold and duotone optional)
+├── icons/                 # SVG source (linear, bold, duotone)
 ├── apps/
 │   └── web/               # Gallery site (Vite + TanStack Router, Cloudflare)
 ├── packages/
@@ -73,7 +73,7 @@ honeyicons/
     └── build-icons.ts     # svg → React components
 ```
 
-Icons live in `icons/{linear,bold,duotone}/{category}/name.svg` (24×24). Linear is required. Bold and duotone can be added later at the same path. Category is the folder name. Optional tags go in `icons/meta.json`. Then:
+Icons live in `icons/{linear,bold,duotone}/{category}/name.svg` (24×24). An icon needs at least one variant. Category is the folder name. Optional tags go in `icons/meta.json`. Then:
 
 ```bash
 bun run generate:icons
