@@ -2,7 +2,7 @@
 import { createIcon } from "../create-icon.js";
 
 export const Npm = /* @__PURE__ */ createIcon("Npm", {
-	linear: [
+	bold: [
 		["path", { d: "M3 21H12V7.5H16.5V21H21V3H3V21Z", fill: "currentColor" }],
 	],
 });

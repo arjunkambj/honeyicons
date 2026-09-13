@@ -2,7 +2,7 @@
 import { createIcon } from "../create-icon.js";
 
 export const Vercel = /* @__PURE__ */ createIcon("Vercel", {
-	linear: [
+	bold: [
 		["path", { d: "M11.8632 2.17999L22.7264 20.9958H1L11.8632 2.17999Z", fill: "currentColor" }],
 	],
 });

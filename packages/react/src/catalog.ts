@@ -231,7 +231,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Anthropic",
 		category: "social",
 		tags: ["claude","ai","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Anthropic,
 	},
 	{
@@ -455,7 +455,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Chrome",
 		category: "social",
 		tags: ["brand","chrome","google","browser"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Chrome,
 	},
 	{
@@ -471,7 +471,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ClaudeAi",
 		category: "social",
 		tags: ["claude","anthropic","ai","assistant","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: ClaudeAi,
 	},
 	{
@@ -479,7 +479,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ClaudeCode",
 		category: "social",
 		tags: ["claude","anthropic","ai","code","terminal","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: ClaudeCode,
 	},
 	{
@@ -519,7 +519,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Codex",
 		category: "social",
 		tags: ["openai","ai","coding","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Codex,
 	},
 	{
@@ -551,7 +551,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Cursor",
 		category: "social",
 		tags: ["brand","cursor","ai","code","editor"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Cursor,
 	},
 	{
@@ -575,7 +575,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Discord",
 		category: "social",
 		tags: ["chat","community","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Discord,
 	},
 	{
@@ -623,7 +623,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Facebook",
 		category: "social",
 		tags: ["meta","social","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Facebook,
 	},
 	{
@@ -695,7 +695,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Gemini",
 		category: "social",
 		tags: ["google","ai","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Gemini,
 	},
 	{
@@ -703,7 +703,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Git",
 		category: "social",
 		tags: ["version-control","repository","code","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Git,
 	},
 	{
@@ -735,7 +735,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Github",
 		category: "social",
 		tags: ["git","code","repository","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Github,
 	},
 	{
@@ -743,7 +743,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GithubCopilot",
 		category: "social",
 		tags: ["brand","github","copilot","ai","code","assistant"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: GithubCopilot,
 	},
 	{
@@ -751,7 +751,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Google",
 		category: "social",
 		tags: ["search","alphabet","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Google,
 	},
 	{
@@ -815,7 +815,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Instagram",
 		category: "social",
 		tags: ["instagram","social","photos","brand","insta"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Instagram,
 	},
 	{
@@ -839,7 +839,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Kimi",
 		category: "social",
 		tags: ["ai","assistant","moonshot","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Kimi,
 	},
 	{
@@ -871,7 +871,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Linkedin",
 		category: "social",
 		tags: ["brand","linkedin"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Linkedin,
 	},
 	{
@@ -935,7 +935,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MetaAi",
 		category: "social",
 		tags: ["brand","meta","ai","assistant"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: MetaAi,
 	},
 	{
@@ -951,7 +951,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MicrosoftCopilot",
 		category: "social",
 		tags: ["microsoft","copilot","ai","assistant","brand","ms-copilot","MsCopilot"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: MicrosoftCopilot,
 	},
 	{
@@ -975,7 +975,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Mistral",
 		category: "social",
 		tags: ["ai","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Mistral,
 	},
 	{
@@ -1007,7 +1007,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Npm",
 		category: "social",
 		tags: ["package","registry","javascript","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Npm,
 	},
 	{
@@ -1015,7 +1015,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Nvidia",
 		category: "social",
 		tags: ["brand","nvidia","gpu","hardware"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Nvidia,
 	},
 	{
@@ -1023,7 +1023,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Openai",
 		category: "social",
 		tags: ["chatgpt","ai","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Openai,
 	},
 	{
@@ -1031,7 +1031,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Openclaw",
 		category: "social",
 		tags: ["open-claw","ai","mascot","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Openclaw,
 	},
 	{
@@ -1071,7 +1071,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Perplexity",
 		category: "social",
 		tags: ["brand","perplexity","ai","search"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Perplexity,
 	},
 	{
@@ -1087,7 +1087,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Pinterest",
 		category: "social",
 		tags: ["social","pins","brand"],
-		variants: ["linear","bold"],
+		variants: ["bold"],
 		component: Pinterest,
 	},
 	{
@@ -1103,7 +1103,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Qwen",
 		category: "social",
 		tags: ["ai","alibaba","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Qwen,
 	},
 	{
@@ -1119,7 +1119,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Reddit",
 		category: "social",
 		tags: ["community","social","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Reddit,
 	},
 	{
@@ -1303,7 +1303,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Supabase",
 		category: "social",
 		tags: ["database","backend","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Supabase,
 	},
 	{
@@ -1319,7 +1319,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Telegram",
 		category: "social",
 		tags: ["messaging","chat","social","brand","paper-plane"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Telegram,
 	},
 	{
@@ -1343,7 +1343,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Tiktok",
 		category: "social",
 		tags: ["brand","tiktok"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Tiktok,
 	},
 	{
@@ -1359,7 +1359,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Twitter",
 		category: "social",
 		tags: ["bird","social","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Twitter,
 	},
 	{
@@ -1367,7 +1367,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Typescript",
 		category: "social",
 		tags: ["typescript","javascript","language","brand","ts"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Typescript,
 	},
 	{
@@ -1423,7 +1423,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Vercel",
 		category: "social",
 		tags: ["brand","vercel","hosting","deployment"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Vercel,
 	},
 	{
@@ -1503,7 +1503,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "X",
 		category: "social",
 		tags: [],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: X,
 	},
 	{
@@ -1519,7 +1519,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Youtube",
 		category: "social",
 		tags: ["brand","youtube","video","google"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Youtube,
 	},
 	{
@@ -1527,7 +1527,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Zai",
 		category: "social",
 		tags: ["z.ai","ai","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Zai,
 	},
 	{
