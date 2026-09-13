@@ -1,38 +1,89 @@
 import {
 	ChevronRight,
-	Code,
-	Command,
-	FolderOpen,
-	Layers,
-	Lightning,
+	Chrome,
+	Discord,
+	Facebook,
+	Github,
+	Google,
+	Instagram,
+	Linkedin,
+	Pinterest,
+	Reddit,
 	Search,
-	Settings,
-	SquarePen,
-	Star,
-	Sun,
-	Terminal,
-	Widget,
+	Slack,
+	Snapchat,
+	Telegram,
+	Threads,
+	Tiktok,
+	Twitter,
+	X,
+	Youtube,
+	type HoneyIcon,
 } from "@honeyicons/react";
 import { catalog } from "@honeyicons/react/catalog";
 import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
+import type { CSSProperties } from "react";
 import { BrandMark } from "@/components/brand-mark";
 import { InstallCommand } from "@/components/install-command";
 import styles from "@/components/marketing.module.css";
 
-const orbitIcons = [
-	{ icon: Code, x: 32, y: 8, rotation: -12 },
-	{ icon: SquarePen, x: 63, y: 7, rotation: 12 },
-	{ icon: Command, x: 14, y: 25, rotation: -12 },
-	{ icon: Lightning, x: 52, y: 23, rotation: 10 },
-	{ icon: Layers, x: 82, y: 24, rotation: 12 },
-	{ icon: Terminal, x: 30, y: 34, rotation: -8 },
-	{ icon: Sun, x: 69, y: 38, rotation: 14 },
-	{ icon: FolderOpen, x: 7, y: 49, rotation: -12 },
-	{ icon: Widget, x: 91, y: 50, rotation: 10 },
-	{ icon: Star, x: 24, y: 61, rotation: -8 },
-	{ icon: Settings, x: 74, y: 65, rotation: 12 },
+type OrbitIcon = {
+	icon: HoneyIcon;
+	/** Position around the ring in degrees. -90 is the top. */
+	angle: number;
+	/** Static playful tilt in degrees. */
+	tilt: number;
+	muted?: boolean;
+};
+
+type OrbitRing = {
+	/** Distance from the center, as a percentage of the orbit size. */
+	radius: number;
+	/** Time for one full revolution. */
+	duration: string;
+	reverse?: boolean;
+	icons: OrbitIcon[];
+};
+
+const orbitRings: OrbitRing[] = [
+	{
+		radius: 50,
+		duration: "28s",
+		icons: [
+			{ icon: X, angle: -90, tilt: 0 },
+			{ icon: Instagram, angle: -39, tilt: 8, muted: true },
+			{ icon: Twitter, angle: 13, tilt: 0 },
+			{ icon: Youtube, angle: 64, tilt: -8, muted: true },
+			{ icon: Tiktok, angle: 116, tilt: 0 },
+			{ icon: Discord, angle: 167, tilt: 8, muted: true },
+			{ icon: Github, angle: 219, tilt: 0 },
+		],
+	},
+	{
+		radius: 37,
+		duration: "20s",
+		reverse: true,
+		icons: [
+			{ icon: Facebook, angle: -90, tilt: 0 },
+			{ icon: Linkedin, angle: -30, tilt: -8, muted: true },
+			{ icon: Snapchat, angle: 30, tilt: 0 },
+			{ icon: Telegram, angle: 90, tilt: 8, muted: true },
+			{ icon: Reddit, angle: 150, tilt: 0 },
+			{ icon: Pinterest, angle: 210, tilt: -8, muted: true },
+		],
+	},
+	{
+		radius: 21,
+		duration: "14s",
+		icons: [
+			{ icon: Google, angle: -90, tilt: 0 },
+			{ icon: Chrome, angle: 0, tilt: 0, muted: true },
+			{ icon: Slack, angle: 90, tilt: 0 },
+			{ icon: Threads, angle: 180, tilt: 0, muted: true },
+		],
+	},
 ];
 
 export function Hero() {
@@ -100,17 +151,61 @@ export function Hero() {
 				<div className={styles.orbit}>
 					<div className={styles.orbitMiddle} />
 					<div className={styles.orbitInner} />
-					{orbitIcons.map(({ icon: Icon, x, y, rotation }) => (
-						<Icon
-							key={x}
-							className={styles.orbitIcon}
-							style={{
-								left: `${x}%`,
-								top: `${y}%`,
-								transform: `translate(-50%, -50%) rotate(${rotation}deg)`,
-							}}
-						/>
-					))}
+					<div className={styles.orbitIcons}>
+						{orbitRings.map((ring, ringIndex) => (
+							<div
+								key={ringIndex}
+								className={cn(
+									styles.orbitSpin,
+									ring.reverse && styles.orbitSpinReverse,
+								)}
+								style={{ animationDuration: ring.duration }}
+							>
+								{ring.icons.map(({ icon: Icon, angle, tilt, muted }) => {
+									const radian = (angle * Math.PI) / 180;
+									const left = 50 + ring.radius * Math.cos(radian);
+									const top = 50 + ring.radius * Math.sin(radian);
+									const phase = ((angle % 360) + 360) % 360;
+									return (
+										<div
+											key={angle}
+											className={styles.orbitSlot}
+											style={{ left: `${left}%`, top: `${top}%` }}
+										>
+											<div
+												className={cn(
+													styles.orbitCounter,
+													!ring.reverse && styles.orbitCounterReverse,
+												)}
+												style={{ animationDuration: ring.duration }}
+											>
+												<div
+													className={styles.orbitTilt}
+													style={
+														{
+															"--orbit-tilt": `${tilt}deg`,
+															animationDelay: `${-(phase / 360) * 5.5}s`,
+														} as CSSProperties
+													}
+												>
+													<Icon
+														size={34}
+														className={cn(
+															styles.orbitIcon,
+															muted && styles.orbitIconMuted,
+														)}
+														style={{
+															animationDelay: `${-(phase / 360) * 7}s`,
+														}}
+													/>
+												</div>
+											</div>
+										</div>
+									);
+								})}
+							</div>
+						))}
+					</div>
 					<div className={styles.orbitCore}>
 						<BrandMark className="size-9" />
 						<span>Small details.</span>

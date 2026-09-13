@@ -111,14 +111,96 @@
 .orbitInner {
 	inset: 29%;
 }
-.orbitIcon {
+.orbitIcons {
 	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	/* Dissolve icons before they reach the panel's bottom edge so the
+	rotation never slices an icon in half. */
+	-webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 44%);
+	mask-image: linear-gradient(to bottom, black 30%, transparent 44%);
+}
+.orbitSpin {
+	position: absolute;
+	inset: 0;
+	transform-origin: 50% 50%;
+	animation: orbit-spin linear infinite;
+	will-change: transform;
+}
+.orbitSpinReverse {
+	animation-name: orbit-spin-reverse;
+}
+.orbitSlot {
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+.orbitCounter {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	transform-origin: 0 0;
+	animation: orbit-spin linear infinite;
+	will-change: transform;
+}
+.orbitCounterReverse {
+	animation-name: orbit-spin-reverse;
+}
+.orbitTilt {
+	position: absolute;
+	left: 0;
+	top: 0;
+	translate: -50% -50%;
+	rotate: var(--orbit-tilt, 0deg);
+	/* Sway around the base tilt so the icon center never leaves its ring. */
+	animation: orbit-sway 5.5s ease-in-out infinite alternate;
+	will-change: transform;
+}
+.orbitIcon {
+	display: block;
 	width: 34px;
 	height: 34px;
 	color: var(--foreground);
+	filter: drop-shadow(0 6px 14px rgb(0 0 0 / 0.12));
+	animation: orbit-breathe 7s ease-in-out infinite alternate;
+	will-change: transform;
 }
-.orbitIcon:nth-of-type(even) {
+.orbitIconMuted {
 	color: var(--muted-foreground);
+}
+.orbit:hover .orbitSpin,
+.orbit:hover .orbitCounter,
+.orbit:hover .orbitTilt,
+.orbit:hover .orbitIcon {
+	animation-play-state: paused;
+}
+@keyframes orbit-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes orbit-spin-reverse {
+	to {
+		transform: rotate(-360deg);
+	}
+}
+@keyframes orbit-sway {
+	from {
+		rotate: calc(var(--orbit-tilt, 0deg) - 5deg);
+	}
+	to {
+		rotate: calc(var(--orbit-tilt, 0deg) + 5deg);
+	}
+}
+@keyframes orbit-breathe {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.08);
+	}
 }
 .orbitCore {
 	position: absolute;
@@ -442,6 +524,12 @@
 @media (prefers-reduced-motion: reduce) {
 	.navbar {
 		transition: none;
+	}
+	.orbitSpin,
+	.orbitCounter,
+	.orbitTilt,
+	.orbitIcon {
+		animation: none;
 	}
 }
 @media (max-width: 360px) {
