@@ -131,7 +131,6 @@ export { Soundwave } from "./soundwave.js";
 export { Spinner } from "./spinner.js";
 export { SpinnerArc, SpinnerLarge } from "./spinner-arc.js";
 export { SpinnerOrbit } from "./spinner-orbit.js";
-export { SpinnerPulse } from "./spinner-pulse.js";
 export { SpinnerWave, SpinnerTinker } from "./spinner-wave.js";
 export { SquarePen, SendMessage } from "./square-pen.js";
 export { Star } from "./star.js";

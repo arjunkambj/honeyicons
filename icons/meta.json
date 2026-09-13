@@ -706,17 +706,6 @@
 	"spinner-orbit": {
 		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "comet"]
 	},
-	"spinner-pulse": {
-		"tags": [
-			"loader",
-			"loading",
-			"progress",
-			"wait",
-			"square",
-			"pulse",
-			"breathe"
-		]
-	},
 	"spinner-wave": {
 		"tags": [
 			"loader",

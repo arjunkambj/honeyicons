@@ -134,7 +134,6 @@ import { Soundwave } from "./icons/soundwave.js";
 import { Spinner } from "./icons/spinner.js";
 import { SpinnerArc } from "./icons/spinner-arc.js";
 import { SpinnerOrbit } from "./icons/spinner-orbit.js";
-import { SpinnerPulse } from "./icons/spinner-pulse.js";
 import { SpinnerWave } from "./icons/spinner-wave.js";
 import { SquarePen } from "./icons/square-pen.js";
 import { Star } from "./icons/star.js";
@@ -1241,14 +1240,6 @@ export const catalog: CatalogItem[] = [
 		tags: ["loader","loading","progress","wait","grid","pixel","comet"],
 		variants: ["linear"],
 		component: SpinnerOrbit,
-	},
-	{
-		name: "spinner-pulse",
-		pascalName: "SpinnerPulse",
-		category: "spinner",
-		tags: ["loader","loading","progress","wait","square","pulse","breathe"],
-		variants: ["linear"],
-		component: SpinnerPulse,
 	},
 	{
 		name: "spinner-wave",
