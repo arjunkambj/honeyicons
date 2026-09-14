@@ -2,7 +2,7 @@
 import { createIcon } from "../create-icon.js";
 
 export const Opencode = /* @__PURE__ */ createIcon("Opencode", {
-	linear: [
+	bold: [
 		["path", { opacity: "0.4", d: "M16 10.0002V18.0002H8V10.0002H16Z", fill: "currentColor" }],
 		["path", { fillRule: "evenodd", clipRule: "evenodd", d: "M20 22H4V2H20V22ZM16 6H8V18H16V6Z", fill: "currentColor" }],
 	],

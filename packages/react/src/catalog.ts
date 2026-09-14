@@ -238,7 +238,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Antigravity",
 		category: "social",
 		tags: ["ai","code","editor","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Antigravity,
 	},
 	{
@@ -342,7 +342,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bun",
 		category: "social",
 		tags: ["javascript","runtime","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Bun,
 	},
 	{
@@ -558,7 +558,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Deepseek",
 		category: "social",
 		tags: ["ai","whale","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Deepseek,
 	},
 	{
@@ -566,7 +566,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Devin",
 		category: "social",
 		tags: ["ai","code","agent","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Devin,
 	},
 	{
@@ -1038,7 +1038,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Opencode",
 		category: "social",
 		tags: ["open-code","code","terminal","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Opencode,
 	},
 	{
