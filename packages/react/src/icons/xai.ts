@@ -2,7 +2,7 @@
 import { createIcon } from "../create-icon.js";
 
 export const Xai = /* @__PURE__ */ createIcon("Xai", {
-	linear: [
+	bold: [
 		["path", { d: "M18.0264 16.6875H14.9863L14.0635 16.0166H8.91406C9.27653 15.6947 9.64382 15.3824 10.0146 15.0791H12.7725L11.3457 14.041C11.8559 13.6614 12.3716 13.2976 12.8916 12.9492L18.0264 16.6875Z", fill: "currentColor", transform: "translate(-0.60512 0.78208) scale(0.941869)" }],
 		["path", { d: "M22.8867 16.6875H19.8447L13.8516 12.3252C14.4038 11.9779 14.96 11.6471 15.5176 11.332L22.8867 16.6875Z", fill: "currentColor", transform: "translate(-0.60512 0.78208) scale(0.941869)" }],
 		["path", { d: "M6.95996 8.64356L9.30469 10.3477C8.72128 10.6912 8.17471 11.0307 7.66504 11.3633L3.92188 8.6416L6.95996 8.64356Z", fill: "currentColor", transform: "translate(-0.60512 0.78208) scale(0.941869)" }],

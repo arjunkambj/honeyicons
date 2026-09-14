@@ -1190,7 +1190,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Slack",
 		category: "social",
 		tags: ["messaging","chat","team","workplace","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Slack,
 	},
 	{
@@ -1502,7 +1502,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Xai",
 		category: "social",
 		tags: ["ai","brand"],
-		variants: ["linear"],
+		variants: ["bold"],
 		component: Xai,
 	},
 	{
