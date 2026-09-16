@@ -2,7 +2,7 @@
 import { createIcon } from "../create-icon.js";
 
 export const X = /* @__PURE__ */ createIcon("X", {
-	bold: [
+	linear: [
 		["path", { transform: "translate(-0.98917 -1) scale(1.08333)", fill: "currentColor", d: "M13.68 10.62L20.24 3h-1.55L13 9.62L8.45 3H3.19l6.88 10.01L3.19 21h1.55l6.01-6.99l4.8 6.99h5.24l-7.13-10.38Zm-2.13 2.47l-.7-1l-5.54-7.93H7.7l4.47 6.4l.7 1l5.82 8.32H16.3z" }],
 	],
 });

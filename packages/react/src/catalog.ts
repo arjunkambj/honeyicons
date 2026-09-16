@@ -894,7 +894,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Instagram",
 		category: "social",
 		tags: ["instagram","social","photos","brand","insta"],
-		variants: ["bold"],
+		variants: ["linear"],
 		component: Instagram,
 	},
 	{
@@ -1110,7 +1110,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Openai",
 		category: "social",
 		tags: ["chatgpt","ai","brand"],
-		variants: ["bold"],
+		variants: ["linear"],
 		component: Openai,
 	},
 	{
@@ -1158,7 +1158,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Perplexity",
 		category: "social",
 		tags: ["brand","perplexity","ai","search"],
-		variants: ["bold"],
+		variants: ["linear"],
 		component: Perplexity,
 	},
 	{
@@ -1638,7 +1638,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "X",
 		category: "social",
 		tags: [],
-		variants: ["bold"],
+		variants: ["linear"],
 		component: X,
 	},
 	{
@@ -1646,7 +1646,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Xai",
 		category: "social",
 		tags: ["ai","brand"],
-		variants: ["bold"],
+		variants: ["linear"],
 		component: Xai,
 	},
 	{
