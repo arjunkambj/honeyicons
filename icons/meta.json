@@ -126,6 +126,9 @@
 	"bell": {
 		"tags": ["notification", "alert", "reminder", "alarm", "solar"]
 	},
+	"bolt": {
+		"tags": ["bolt", "lightning", "flash", "energy", "power", "zap", "solar"]
+	},
 	"bookmark": {
 		"tags": ["save", "saved", "favorite", "reading", "solar"]
 	},

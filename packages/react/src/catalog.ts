@@ -17,6 +17,7 @@ import { ArrowUp } from "./icons/arrow-up.js";
 import { ArrowUpLeft } from "./icons/arrow-up-left.js";
 import { ArrowUpRight } from "./icons/arrow-up-right.js";
 import { Bell } from "./icons/bell.js";
+import { Bolt } from "./icons/bolt.js";
 import { Bookmark } from "./icons/bookmark.js";
 import { Brain } from "./icons/brain.js";
 import { Bun } from "./icons/bun.js";
@@ -318,6 +319,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["notification","alert","reminder","alarm","solar"],
 		variants: ["linear"],
 		component: Bell,
+	},
+	{
+		name: "bolt",
+		pascalName: "Bolt",
+		category: "status",
+		tags: ["bolt","lightning","flash","energy","power","zap","solar"],
+		variants: ["linear"],
+		component: Bolt,
 	},
 	{
 		name: "bookmark",

@@ -14,6 +14,7 @@ export { ArrowUp, ArrowUp02 } from "./arrow-up.js";
 export { ArrowUpLeft } from "./arrow-up-left.js";
 export { ArrowUpRight } from "./arrow-up-right.js";
 export { Bell } from "./bell.js";
+export { Bolt } from "./bolt.js";
 export { Bookmark } from "./bookmark.js";
 export { Brain } from "./brain.js";
 export { Bun } from "./bun.js";
