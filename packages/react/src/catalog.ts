@@ -37,6 +37,7 @@ import { ChevronsRight } from "./icons/chevrons-right.js";
 import { ChevronsUp } from "./icons/chevrons-up.js";
 import { Chrome } from "./icons/chrome.js";
 import { Clapperboard } from "./icons/clapperboard.js";
+import { ClapperboardText } from "./icons/clapperboard-text.js";
 import { ClaudeAi } from "./icons/claude-ai.js";
 import { ClaudeCode } from "./icons/claude-code.js";
 import { Clock } from "./icons/clock.js";
@@ -119,6 +120,7 @@ import { Pen } from "./icons/pen.js";
 import { Perplexity } from "./icons/perplexity.js";
 import { Pin } from "./icons/pin.js";
 import { Pinterest } from "./icons/pinterest.js";
+import { Pip } from "./icons/pip.js";
 import { Play } from "./icons/play.js";
 import { Qwen } from "./icons/qwen.js";
 import { React } from "./icons/react.js";
@@ -161,6 +163,8 @@ import { UserAdd } from "./icons/user-add.js";
 import { UserGroup } from "./icons/user-group.js";
 import { Vercel } from "./icons/vercel.js";
 import { VerifiedCheck } from "./icons/verified-check.js";
+import { VideoCamera } from "./icons/video-camera.js";
+import { VideoFrame } from "./icons/video-frame.js";
 import { VolumeHigh } from "./icons/volume-high.js";
 import { VolumeLow } from "./icons/volume-low.js";
 import { VolumeOff } from "./icons/volume-off.js";
@@ -469,6 +473,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["film","movie","video","play","clapperboard-play","solar"],
 		variants: ["linear"],
 		component: Clapperboard,
+	},
+	{
+		name: "clapperboard-text",
+		pascalName: "ClapperboardText",
+		category: "media",
+		tags: ["film","movie","video","script","clapperboard","solar"],
+		variants: ["linear"],
+		component: ClapperboardText,
 	},
 	{
 		name: "claude-ai",
@@ -1127,6 +1139,14 @@ export const catalog: CatalogItem[] = [
 		component: Pinterest,
 	},
 	{
+		name: "pip",
+		pascalName: "Pip",
+		category: "layout",
+		tags: ["picture-in-picture","pip","window","video","overlay","solar"],
+		variants: ["linear"],
+		component: Pip,
+	},
+	{
 		name: "play",
 		pascalName: "Play",
 		category: "media",
@@ -1461,6 +1481,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["verified","badge","check","approved","solar"],
 		variants: ["linear"],
 		component: VerifiedCheck,
+	},
+	{
+		name: "video-camera",
+		pascalName: "VideoCamera",
+		category: "media",
+		tags: ["video","camera","record","call","videocamera","solar"],
+		variants: ["linear"],
+		component: VideoCamera,
+	},
+	{
+		name: "video-frame",
+		pascalName: "VideoFrame",
+		category: "media",
+		tags: ["video","film","frame","filmstrip","movie","solar"],
+		variants: ["linear"],
+		component: VideoFrame,
 	},
 	{
 		name: "volume-high",

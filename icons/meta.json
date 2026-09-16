@@ -287,6 +287,9 @@
 	"clapperboard": {
 		"tags": ["film", "movie", "video", "play", "clapperboard-play", "solar"]
 	},
+	"clapperboard-text": {
+		"tags": ["film", "movie", "video", "script", "clapperboard", "solar"]
+	},
 	"claude-ai": {
 		"tags": ["claude", "anthropic", "ai", "assistant", "brand"]
 	},
@@ -619,6 +622,9 @@
 	"pinterest": {
 		"tags": ["social", "pins", "brand"]
 	},
+	"pip": {
+		"tags": ["picture-in-picture", "pip", "window", "video", "overlay", "solar"]
+	},
 	"play": {
 		"tags": ["start", "resume", "playback", "video", "audio", "solar"]
 	},
@@ -798,6 +804,13 @@
 	},
 	"verified-check": {
 		"tags": ["verified", "badge", "check", "approved", "solar"]
+	},
+	"video-camera": {
+		"tags": ["video", "camera", "record", "call", "videocamera", "solar"],
+		"aliases": ["videocamera"]
+	},
+	"video-frame": {
+		"tags": ["video", "film", "frame", "filmstrip", "movie", "solar"]
 	},
 	"volume-high": {
 		"tags": [
