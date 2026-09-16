@@ -144,7 +144,6 @@ export { UserAdd } from "./user-add.js";
 export { UserGroup } from "./user-group.js";
 export { Vercel } from "./vercel.js";
 export { VerifiedCheck } from "./verified-check.js";
-export { VideoCamera, Videocamera } from "./video-camera.js";
 export { VolumeHigh, VolumeLoud } from "./volume-high.js";
 export { VolumeLow, Volume } from "./volume-low.js";
 export { VolumeOff, Muted } from "./volume-off.js";

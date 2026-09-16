@@ -18,10 +18,10 @@ same Solar set and license. The center torso is reshaped to match User's rounded
 body and flatter base; the head and side figures retain their supplied filled
 paths. The center body retains a filled outline with a 1.5-unit inset.
 
-`Image` and `VideoCamera` are new Honeyicons drawings made at the user's
-request to replace accidentally duplicated references. They use smooth corner
-curves, a 1.5-unit stroke, and round caps and joins. Image follows the supplied
-Gallery Add landscape motif.
+`Image` is a new Honeyicons drawing made at the user's request to replace an
+accidentally duplicated reference. It uses smooth corner curves, a 1.5-unit
+stroke, and round caps and joins, and follows the supplied Gallery Add
+landscape motif.
 
 `Cloud` is adapted from the user-supplied **Cloud (Outline)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),

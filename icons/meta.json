@@ -757,10 +757,6 @@
 	"verified-check": {
 		"tags": ["verified", "badge", "check", "approved", "solar"]
 	},
-	"video-camera": {
-		"tags": ["video", "camera", "record", "call", "videocamera"],
-		"aliases": ["videocamera"]
-	},
 	"volume-high": {
 		"tags": [
 			"volume",

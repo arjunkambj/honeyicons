@@ -147,7 +147,6 @@ import { UserAdd } from "./icons/user-add.js";
 import { UserGroup } from "./icons/user-group.js";
 import { Vercel } from "./icons/vercel.js";
 import { VerifiedCheck } from "./icons/verified-check.js";
-import { VideoCamera } from "./icons/video-camera.js";
 import { VolumeHigh } from "./icons/volume-high.js";
 import { VolumeLow } from "./icons/volume-low.js";
 import { VolumeOff } from "./icons/volume-off.js";
@@ -1334,14 +1333,6 @@ export const catalog: CatalogItem[] = [
 		tags: ["verified","badge","check","approved","solar"],
 		variants: ["linear"],
 		component: VerifiedCheck,
-	},
-	{
-		name: "video-camera",
-		pascalName: "VideoCamera",
-		category: "media",
-		tags: ["video","camera","record","call","videocamera"],
-		variants: ["linear"],
-		component: VideoCamera,
 	},
 	{
 		name: "volume-high",

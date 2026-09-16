@@ -45,7 +45,6 @@ All other renamed exports remain available as deprecated aliases. The catalog li
 | `SpinnerLarge`     | `SpinnerArc`       |
 | `SpinnerTinker`    | `SpinnerWave`      |
 | `Ts`               | `Typescript`       |
-| `Videocamera`      | `VideoCamera`      |
 | `Volume`           | `VolumeLow`        |
 | `VolumeLoud`       | `VolumeHigh`       |
 
