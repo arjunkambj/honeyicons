@@ -84,6 +84,7 @@ import { Home } from "./icons/home.js";
 import { HomeAngle } from "./icons/home-angle.js";
 import { Image } from "./icons/image.js";
 import { ImageAdd } from "./icons/image-add.js";
+import { ImageEdit } from "./icons/image-edit.js";
 import { Instagram } from "./icons/instagram.js";
 import { Integration } from "./icons/integration.js";
 import { Key } from "./icons/key.js";
@@ -849,6 +850,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["image","gallery","upload","photo","plus","gallery-add","solar","images-add","ImagesAdd"],
 		variants: ["linear"],
 		component: ImageAdd,
+	},
+	{
+		name: "image-edit",
+		pascalName: "ImageEdit",
+		category: "media",
+		tags: ["image","photo","gallery","edit","pencil","gallery-edit","solar"],
+		variants: ["linear"],
+		component: ImageEdit,
 	},
 	{
 		name: "instagram",

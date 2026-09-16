@@ -81,6 +81,7 @@ export { Home } from "./home.js";
 export { HomeAngle } from "./home-angle.js";
 export { Image, Images } from "./image.js";
 export { ImageAdd, ImagesAdd } from "./image-add.js";
+export { ImageEdit } from "./image-edit.js";
 export { Instagram, Insta } from "./instagram.js";
 export { Integration } from "./integration.js";
 export { Key } from "./key.js";

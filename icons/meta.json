@@ -465,6 +465,9 @@
 		],
 		"aliases": ["images-add"]
 	},
+	"image-edit": {
+		"tags": ["image", "photo", "gallery", "edit", "pencil", "gallery-edit", "solar"]
+	},
 	"instagram": {
 		"tags": ["instagram", "social", "photos", "brand", "insta"],
 		"aliases": ["insta"]
