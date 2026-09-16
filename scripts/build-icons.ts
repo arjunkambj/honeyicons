@@ -230,6 +230,19 @@ async function main() {
 	const icons = await listIcons();
 
 	const meta = JSON.parse(await readFile(metaPath, "utf8")) as IconMeta;
+	const iconNames = new Set(icons.map((icon) => icon.name));
+	const staleMeta = Object.keys(meta).filter((name) => !iconNames.has(name));
+	if (staleMeta.length > 0) {
+		throw new Error(
+			`icons/meta.json has entries for icons that do not exist: ${staleMeta.join(", ")}`,
+		);
+	}
+	const untagged = icons.filter((icon) => !meta[icon.name]?.tags?.length);
+	if (untagged.length > 0) {
+		console.warn(
+			`Warning: ${untagged.length} icons have no tags in icons/meta.json: ${untagged.map((icon) => icon.name).join(", ")}`,
+		);
+	}
 	const exportNames = new Set(icons.map((icon) => toPascalCase(icon.name)));
 	for (const icon of icons) {
 		for (const alias of meta[icon.name]?.aliases ?? []) {
