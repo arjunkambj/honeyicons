@@ -4,9 +4,6 @@ import type { IconCategory } from "./categories.js";
 import type { IconVariant } from "./types.js";
 import { Add } from "./icons/add.js";
 import { AlertTriangle } from "./icons/alert-triangle.js";
-import { AlignCenter } from "./icons/align-center.js";
-import { AlignLeft } from "./icons/align-left.js";
-import { AlignRight } from "./icons/align-right.js";
 import { Anthropic } from "./icons/anthropic.js";
 import { Antigravity } from "./icons/antigravity.js";
 import { Archive } from "./icons/archive.js";
@@ -200,30 +197,6 @@ export const catalog: CatalogItem[] = [
 		tags: ["warning","alert","triangle","error","danger-triangle","solar","danger"],
 		variants: ["linear"],
 		component: AlertTriangle,
-	},
-	{
-		name: "align-center",
-		pascalName: "AlignCenter",
-		category: "editor",
-		tags: ["text","alignment","center","paragraph","format"],
-		variants: ["linear"],
-		component: AlignCenter,
-	},
-	{
-		name: "align-left",
-		pascalName: "AlignLeft",
-		category: "editor",
-		tags: ["text","alignment","left","paragraph","format"],
-		variants: ["linear"],
-		component: AlignLeft,
-	},
-	{
-		name: "align-right",
-		pascalName: "AlignRight",
-		category: "editor",
-		tags: ["text","alignment","right","paragraph","format"],
-		variants: ["linear"],
-		component: AlignRight,
 	},
 	{
 		name: "anthropic",

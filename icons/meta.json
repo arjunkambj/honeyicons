@@ -14,15 +14,6 @@
 		],
 		"aliases": ["danger"]
 	},
-	"align-center": {
-		"tags": ["text", "alignment", "center", "paragraph", "format"]
-	},
-	"align-left": {
-		"tags": ["text", "alignment", "left", "paragraph", "format"]
-	},
-	"align-right": {
-		"tags": ["text", "alignment", "right", "paragraph", "format"]
-	},
 	"anthropic": {
 		"tags": ["claude", "ai", "brand"]
 	},

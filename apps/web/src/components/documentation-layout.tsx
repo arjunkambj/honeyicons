@@ -1,11 +1,4 @@
-import {
-	AlignLeft,
-	Clock,
-	Code,
-	File,
-	Layers,
-	Widget,
-} from "@honeyicons/react";
+import { Clock, Code, File, Layers, Menu, Widget } from "@honeyicons/react";
 import { cn } from "@honeyicons/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
 import { type ReactNode, useEffect, useState } from "react";
@@ -132,7 +125,7 @@ export function DocumentationLayout({
 					className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-4 text-sm xl:hidden"
 				>
 					<span className="flex items-center gap-2 text-muted-foreground">
-						<AlignLeft size={16} />
+						<Menu size={16} />
 						On this page
 					</span>
 					{sections.map(({ id, label }) => (
@@ -158,7 +151,7 @@ export function DocumentationLayout({
 					className="fixed top-24 bottom-8 w-[180px] overflow-y-auto"
 				>
 					<p className="mb-4 flex items-center gap-2 text-muted-foreground text-sm">
-						<AlignLeft size={18} />
+						<Menu size={18} />
 						On this page
 					</p>
 					<ul className="flex flex-col gap-1">
