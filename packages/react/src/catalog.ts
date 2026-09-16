@@ -166,6 +166,8 @@ import { VolumeOff } from "./icons/volume-off.js";
 import { Wallet } from "./icons/wallet.js";
 import { Widget } from "./icons/widget.js";
 import { WidgetAdd } from "./icons/widget-add.js";
+import { WidgetSquare } from "./icons/widget-square.js";
+import { WidgetSquareAdd } from "./icons/widget-square-add.js";
 import { Windsurf } from "./icons/windsurf.js";
 import { X } from "./icons/x.js";
 import { Xai } from "./icons/xai.js";
@@ -1498,6 +1500,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["widget","add","plus","grid","dashboard","layout","solar"],
 		variants: ["linear"],
 		component: WidgetAdd,
+	},
+	{
+		name: "widget-square",
+		pascalName: "WidgetSquare",
+		category: "layout",
+		tags: ["widget","grid","dashboard","layout","apps","square","solar"],
+		variants: ["linear"],
+		component: WidgetSquare,
+	},
+	{
+		name: "widget-square-add",
+		pascalName: "WidgetSquareAdd",
+		category: "layout",
+		tags: ["widget","add","plus","grid","dashboard","layout","square","solar"],
+		variants: ["linear"],
+		component: WidgetSquareAdd,
 	},
 	{
 		name: "windsurf",

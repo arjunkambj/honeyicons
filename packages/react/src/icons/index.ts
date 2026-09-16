@@ -163,6 +163,8 @@ export { VolumeOff, Muted } from "./volume-off.js";
 export { Wallet } from "./wallet.js";
 export { Widget } from "./widget.js";
 export { WidgetAdd } from "./widget-add.js";
+export { WidgetSquare } from "./widget-square.js";
+export { WidgetSquareAdd } from "./widget-square-add.js";
 export { Windsurf } from "./windsurf.js";
 export { X } from "./x.js";
 export { Xai } from "./xai.js";

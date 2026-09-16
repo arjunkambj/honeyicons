@@ -834,6 +834,12 @@
 	"widget-add": {
 		"tags": ["widget", "add", "plus", "grid", "dashboard", "layout", "solar"]
 	},
+	"widget-square": {
+		"tags": ["widget", "grid", "dashboard", "layout", "apps", "square", "solar"]
+	},
+	"widget-square-add": {
+		"tags": ["widget", "add", "plus", "grid", "dashboard", "layout", "square", "solar"]
+	},
 	"windsurf": {
 		"tags": ["ai", "code", "editor", "brand"]
 	},
