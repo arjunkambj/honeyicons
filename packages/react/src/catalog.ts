@@ -55,10 +55,7 @@ import { EditOff } from "./icons/edit-off.js";
 import { Email } from "./icons/email.js";
 import { Facebook } from "./icons/facebook.js";
 import { File } from "./icons/file.js";
-import { FileAdd } from "./icons/file-add.js";
-import { FileCheck } from "./icons/file-check.js";
 import { FileCode } from "./icons/file-code.js";
-import { FileRemove } from "./icons/file-remove.js";
 import { Folder } from "./icons/folder.js";
 import { FolderAdd } from "./icons/folder-add.js";
 import { FolderOpen } from "./icons/folder-open.js";
@@ -604,36 +601,12 @@ export const catalog: CatalogItem[] = [
 		component: File,
 	},
 	{
-		name: "file-add",
-		pascalName: "FileAdd",
-		category: "files",
-		tags: ["document","page","paper","add","plus","new","create"],
-		variants: ["linear"],
-		component: FileAdd,
-	},
-	{
-		name: "file-check",
-		pascalName: "FileCheck",
-		category: "files",
-		tags: ["document","read","check","done","file-check","solar","file-read","FileRead"],
-		variants: ["linear"],
-		component: FileCheck,
-	},
-	{
 		name: "file-code",
 		pascalName: "FileCode",
 		category: "files",
 		tags: ["document","code","source","programming","code-file","solar"],
 		variants: ["linear"],
 		component: FileCode,
-	},
-	{
-		name: "file-remove",
-		pascalName: "FileRemove",
-		category: "files",
-		tags: ["document","delete","remove","cancel","solar"],
-		variants: ["linear"],
-		component: FileRemove,
 	},
 	{
 		name: "folder",

@@ -49,11 +49,10 @@ licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 All three filled paths and their rounding, proportions, and baked outline
 weight are preserved with `currentColor`; unused source attributes are removed.
 
-`FileRemove` and `FileCode` are adapted from the user-supplied **File Remove
-(Outline)** and **Code File (Outline)** in the
+`FileCode` is adapted from the user-supplied **Code File (Outline)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-The supplied filled paths, cutouts, and baked outline weights are preserved
+The supplied filled paths, cutouts, and baked outline weight are preserved
 with `currentColor`; source classes and unused root stroke attributes are removed.
 
 `Logout` uses the user-supplied **Logout 3 (Outline)** from the same Solar set
@@ -61,13 +60,12 @@ and license. Its filled door geometry is preserved. The supplied left-pointing
 arrow retains its filled outline and rounded tips, with a shorter shaft and
 smooth curves at the inner notches where the head meets the shaft.
 
-`File` and `FileCheck` are adapted from the user-supplied **File Text (Outline)** and
-**File Check (Outline)** in the
+`File` is adapted from the user-supplied **File Text (Outline)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 Changes: used the requested names and removed source classes and unused root
-stroke attributes. The filled file outline, folded corner, text lines, checkmark, cutouts,
+stroke attributes. The filled file outline, folded corner, text lines, cutouts,
 and baked outline weight are preserved with `currentColor`. No second stroke
 is added.
 

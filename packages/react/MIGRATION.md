@@ -29,7 +29,6 @@ All other renamed exports remain available as deprecated aliases. The catalog li
 | `Danger`           | `AlertTriangle`    |
 | `Edit01`           | `Edit`             |
 | `Exit`             | `DoorOpen`         |
-| `FileRead`         | `FileCheck`        |
 | `Folder01`         | `Folder`           |
 | `Hamburger`        | `Menu`             |
 | `Headphone`        | `Headphones`       |

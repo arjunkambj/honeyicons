@@ -1,9 +1,9 @@
-import { Card, Clock, FileAdd, Key, UserAdd, Wallet } from "@honeyicons/react";
+import { Card, Clock, Key, UserAdd, Wallet } from "@honeyicons/react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { DocumentationLayout } from "@/components/documentation-layout";
 
 const sections = [
-	{ id: "september-12-title", label: "Six new icons" },
+	{ id: "september-12-title", label: "Five new icons" },
 	{ id: "refinements", label: "Refinements" },
 ] as const;
 
@@ -23,11 +23,6 @@ const addedIcons = [
 		name: "UserAdd",
 		Icon: UserAdd,
 		description: "Invite someone or create an account.",
-	},
-	{
-		name: "FileAdd",
-		Icon: FileAdd,
-		description: "Create a document, in our existing file style.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
 ] as const;
@@ -70,11 +65,11 @@ function ChangelogPage() {
 						id="september-12-title"
 						className="mt-3 scroll-mt-40 sm:scroll-mt-28 font-heading font-medium text-2xl tracking-tight sm:text-3xl"
 					>
-						Six new icons
+						Five new icons
 					</h2>
 					<p className="mt-3 text-muted-foreground leading-7">
-						Wallet, Clock, Key, UserAdd, FileAdd, and Card join the linear
-						collection. Built for everyday actions, accounts, and payments.
+						Wallet, Clock, Key, UserAdd, and Card join the linear collection.
+						Built for everyday actions, accounts, and payments.
 					</p>
 					<ul className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2">
 						{addedIcons.map(({ name, Icon, description }) => (
@@ -113,11 +108,7 @@ function ChangelogPage() {
 							the opening.
 						</li>
 						<li>
-							FileAdd matches the silhouette and rounded fold of the existing
-							file icons.
-						</li>
-						<li>
-							All six icons use currentColor and the standard 24-unit grid,
+							All five icons use currentColor and the standard 24-unit grid,
 							reviewed at 16px and 24px in light and dark themes.
 						</li>
 					</ul>

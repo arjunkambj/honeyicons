@@ -351,27 +351,8 @@
 	"file": {
 		"tags": ["document", "page", "paper", "text", "file-text", "solar"]
 	},
-	"file-add": {
-		"tags": ["document", "page", "paper", "add", "plus", "new", "create"]
-	},
-	"file-check": {
-		"tags": [
-			"document",
-			"read",
-			"check",
-			"done",
-			"file-check",
-			"solar",
-			"file-read",
-			"FileRead"
-		],
-		"aliases": ["file-read"]
-	},
 	"file-code": {
 		"tags": ["document", "code", "source", "programming", "code-file", "solar"]
-	},
-	"file-remove": {
-		"tags": ["document", "delete", "remove", "cancel", "solar"]
 	},
 	"folder": {
 		"tags": [
