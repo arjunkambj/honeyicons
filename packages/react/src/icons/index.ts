@@ -59,6 +59,7 @@ export { FileText } from "./file-text.js";
 export { Folder, Folder01 } from "./folder.js";
 export { FolderAdd } from "./folder-add.js";
 export { FolderOpen } from "./folder-open.js";
+export { FolderTree } from "./folder-tree.js";
 export { Gemini } from "./gemini.js";
 export { Git } from "./git.js";
 export { GitBranch } from "./git-branch.js";

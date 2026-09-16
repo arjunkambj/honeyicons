@@ -381,6 +381,9 @@
 	"folder-open": {
 		"tags": ["folder", "open", "directory", "files", "storage", "hugeicons"]
 	},
+	"folder-tree": {
+		"tags": ["folder", "tree", "directory", "hierarchy", "structure", "files", "solar"]
+	},
 	"gemini": {
 		"tags": ["google", "ai", "brand"]
 	},

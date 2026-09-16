@@ -62,6 +62,7 @@ import { FileText } from "./icons/file-text.js";
 import { Folder } from "./icons/folder.js";
 import { FolderAdd } from "./icons/folder-add.js";
 import { FolderOpen } from "./icons/folder-open.js";
+import { FolderTree } from "./icons/folder-tree.js";
 import { Gemini } from "./icons/gemini.js";
 import { Git } from "./icons/git.js";
 import { GitBranch } from "./icons/git-branch.js";
@@ -661,6 +662,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["folder","open","directory","files","storage","hugeicons"],
 		variants: ["linear"],
 		component: FolderOpen,
+	},
+	{
+		name: "folder-tree",
+		pascalName: "FolderTree",
+		category: "files",
+		tags: ["folder","tree","directory","hierarchy","structure","files","solar"],
+		variants: ["linear"],
+		component: FolderTree,
 	},
 	{
 		name: "gemini",
