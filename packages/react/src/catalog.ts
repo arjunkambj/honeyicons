@@ -64,9 +64,6 @@ import { FolderAdd } from "./icons/folder-add.js";
 import { FolderOpen } from "./icons/folder-open.js";
 import { Gemini } from "./icons/gemini.js";
 import { Git } from "./icons/git.js";
-import { GitBranch } from "./icons/git-branch.js";
-import { GitMergeConflict } from "./icons/git-merge-conflict.js";
-import { GitPullRequest } from "./icons/git-pull-request.js";
 import { Github } from "./icons/github.js";
 import { GithubCopilot } from "./icons/github-copilot.js";
 import { Google } from "./icons/google.js";
@@ -677,30 +674,6 @@ export const catalog: CatalogItem[] = [
 		tags: ["version-control","repository","code","brand"],
 		variants: ["bold"],
 		component: Git,
-	},
-	{
-		name: "git-branch",
-		pascalName: "GitBranch",
-		category: "editor",
-		tags: ["git","version-control","fork","code","branch"],
-		variants: ["linear"],
-		component: GitBranch,
-	},
-	{
-		name: "git-merge-conflict",
-		pascalName: "GitMergeConflict",
-		category: "editor",
-		tags: ["git","merge","conflict","pull-request","code","merge-conflict","MergeConflict"],
-		variants: ["linear"],
-		component: GitMergeConflict,
-	},
-	{
-		name: "git-pull-request",
-		pascalName: "GitPullRequest",
-		category: "editor",
-		tags: ["git","pull-request","pr","review","merge","code"],
-		variants: ["linear"],
-		component: GitPullRequest,
 	},
 	{
 		name: "github",

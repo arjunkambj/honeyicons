@@ -397,25 +397,6 @@
 	"git": {
 		"tags": ["version-control", "repository", "code", "brand"]
 	},
-	"git-branch": {
-		"tags": ["git", "version-control", "fork", "code", "branch"],
-		"aliases": ["branch"]
-	},
-	"git-merge-conflict": {
-		"tags": [
-			"git",
-			"merge",
-			"conflict",
-			"pull-request",
-			"code",
-			"merge-conflict",
-			"MergeConflict"
-		],
-		"aliases": ["merge-conflict"]
-	},
-	"git-pull-request": {
-		"tags": ["git", "pull-request", "pr", "review", "merge", "code"]
-	},
 	"github": {
 		"tags": ["git", "code", "repository", "brand"]
 	},

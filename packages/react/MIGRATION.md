@@ -24,7 +24,6 @@ All other renamed exports remain available as deprecated aliases. The catalog li
 | `ArrowUp`          | `ChevronUp`        |
 | `ArrowUp02`        | `ArrowUp`          |
 | `ArrowUpDouble`    | `ChevronsUp`       |
-| `Branch`           | `GitBranch`        |
 | `Calendar03`       | `Calendar`         |
 | `CheckCheck`       | `CheckDouble`      |
 | `Danger`           | `AlertTriangle`    |
@@ -38,7 +37,6 @@ All other renamed exports remain available as deprecated aliases. The catalog li
 | `ImagesAdd`        | `ImageAdd`         |
 | `Insta`            | `Instagram`        |
 | `LockUnlock`       | `LockOpen`         |
-| `MergeConflict`    | `GitMergeConflict` |
 | `MsCopilot`        | `MicrosoftCopilot` |
 | `Muted`            | `VolumeOff`        |
 | `Pallet`           | `Archive`          |
