@@ -637,6 +637,9 @@
 	"play": {
 		"tags": ["start", "resume", "playback", "video", "audio", "solar"]
 	},
+	"quote": {
+		"tags": ["quote", "quotation", "blockquote", "citation", "testimonial", "solar"]
+	},
 	"qwen": {
 		"tags": ["ai", "alibaba", "brand"]
 	},

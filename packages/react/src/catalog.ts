@@ -125,6 +125,7 @@ import { Pin } from "./icons/pin.js";
 import { Pinterest } from "./icons/pinterest.js";
 import { Pip } from "./icons/pip.js";
 import { Play } from "./icons/play.js";
+import { Quote } from "./icons/quote.js";
 import { Qwen } from "./icons/qwen.js";
 import { React } from "./icons/react.js";
 import { Reddit } from "./icons/reddit.js";
@@ -1181,6 +1182,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["start","resume","playback","video","audio","solar"],
 		variants: ["linear"],
 		component: Play,
+	},
+	{
+		name: "quote",
+		pascalName: "Quote",
+		category: "editor",
+		tags: ["quote","quotation","blockquote","citation","testimonial","solar"],
+		variants: ["linear"],
+		component: Quote,
 	},
 	{
 		name: "qwen",

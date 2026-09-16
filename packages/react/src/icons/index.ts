@@ -122,6 +122,7 @@ export { Pin } from "./pin.js";
 export { Pinterest } from "./pinterest.js";
 export { Pip } from "./pip.js";
 export { Play } from "./play.js";
+export { Quote } from "./quote.js";
 export { Qwen } from "./qwen.js";
 export { React } from "./react.js";
 export { Reddit } from "./reddit.js";
