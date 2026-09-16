@@ -7,6 +7,7 @@ import { AlertTriangle } from "./icons/alert-triangle.js";
 import { Anthropic } from "./icons/anthropic.js";
 import { Antigravity } from "./icons/antigravity.js";
 import { Archive } from "./icons/archive.js";
+import { ArchiveAlt } from "./icons/archive-alt.js";
 import { ArrowDown } from "./icons/arrow-down.js";
 import { ArrowDownLeft } from "./icons/arrow-down-left.js";
 import { ArrowDownRight } from "./icons/arrow-down-right.js";
@@ -222,6 +223,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["library","collection","stack","archive","files","solar","pallet"],
 		variants: ["linear"],
 		component: Archive,
+	},
+	{
+		name: "archive-alt",
+		pascalName: "ArchiveAlt",
+		category: "files",
+		tags: ["archive","box","storage","done","check","archive-minimalistic","solar"],
+		variants: ["linear"],
+		component: ArchiveAlt,
 	},
 	{
 		name: "arrow-down",

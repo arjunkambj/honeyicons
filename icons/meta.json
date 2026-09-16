@@ -32,6 +32,9 @@
 		],
 		"aliases": ["pallet"]
 	},
+	"archive-alt": {
+		"tags": ["archive", "box", "storage", "done", "check", "archive-minimalistic", "solar"]
+	},
 	"arrow-down": {
 		"tags": [
 			"arrow",

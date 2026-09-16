@@ -4,6 +4,7 @@ export { AlertTriangle, Danger } from "./alert-triangle.js";
 export { Anthropic } from "./anthropic.js";
 export { Antigravity } from "./antigravity.js";
 export { Archive, Pallet } from "./archive.js";
+export { ArchiveAlt } from "./archive-alt.js";
 export { ArrowDown, ArrowDown02 } from "./arrow-down.js";
 export { ArrowDownLeft } from "./arrow-down-left.js";
 export { ArrowDownRight } from "./arrow-down-right.js";
