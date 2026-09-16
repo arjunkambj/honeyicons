@@ -33,7 +33,15 @@
 		"aliases": ["pallet"]
 	},
 	"archive-alt": {
-		"tags": ["archive", "box", "storage", "done", "check", "archive-minimalistic", "solar"]
+		"tags": [
+			"archive",
+			"box",
+			"storage",
+			"done",
+			"check",
+			"archive-minimalistic",
+			"solar"
+		]
 	},
 	"arrow-down": {
 		"tags": [
@@ -172,10 +180,26 @@
 		"tags": ["basket", "shopping", "store", "solar"]
 	},
 	"cart-bag": {
-		"tags": ["bag", "shopping-bag", "shopping", "store", "purchase", "checkout", "solar"]
+		"tags": [
+			"bag",
+			"shopping-bag",
+			"shopping",
+			"store",
+			"purchase",
+			"checkout",
+			"solar"
+		]
 	},
 	"cart-large": {
-		"tags": ["cart", "shopping-cart", "trolley", "checkout", "store", "shopping", "solar"]
+		"tags": [
+			"cart",
+			"shopping-cart",
+			"trolley",
+			"checkout",
+			"store",
+			"shopping",
+			"solar"
+		]
 	},
 	"check": {
 		"tags": ["tick", "done", "success", "confirm", "complete", "hugeicons"]
@@ -403,7 +427,15 @@
 		"tags": ["folder", "open", "directory", "files", "storage", "hugeicons"]
 	},
 	"folder-tree": {
-		"tags": ["folder", "tree", "directory", "hierarchy", "structure", "files", "solar"]
+		"tags": [
+			"folder",
+			"tree",
+			"directory",
+			"hierarchy",
+			"structure",
+			"files",
+			"solar"
+		]
 	},
 	"gemini": {
 		"tags": ["google", "ai", "brand"]
@@ -424,7 +456,15 @@
 		"tags": ["git", "graph", "history", "commits", "version-control", "solar"]
 	},
 	"git-pull-request": {
-		"tags": ["git", "pull-request", "pr", "merge", "review", "version-control", "solar"]
+		"tags": [
+			"git",
+			"pull-request",
+			"pr",
+			"merge",
+			"review",
+			"version-control",
+			"solar"
+		]
 	},
 	"github": {
 		"tags": ["git", "code", "repository", "brand"]
@@ -475,7 +515,15 @@
 		"aliases": ["images-add"]
 	},
 	"image-edit": {
-		"tags": ["image", "photo", "gallery", "edit", "pencil", "gallery-edit", "solar"]
+		"tags": [
+			"image",
+			"photo",
+			"gallery",
+			"edit",
+			"pencil",
+			"gallery-edit",
+			"solar"
+		]
 	},
 	"instagram": {
 		"tags": ["instagram", "social", "photos", "brand", "insta"],
@@ -485,7 +533,14 @@
 		"tags": ["flow", "workflow", "connect", "nodes", "hugeicons"]
 	},
 	"key": {
-		"tags": ["security", "access", "password", "lock", "key-minimalistic", "solar"]
+		"tags": [
+			"security",
+			"access",
+			"password",
+			"lock",
+			"key-minimalistic",
+			"solar"
+		]
 	},
 	"kimi": {
 		"tags": ["ai", "assistant", "moonshot", "brand"]
@@ -641,7 +696,14 @@
 		"tags": ["start", "resume", "playback", "video", "audio", "solar"]
 	},
 	"quote": {
-		"tags": ["quote", "quotation", "blockquote", "citation", "testimonial", "solar"]
+		"tags": [
+			"quote",
+			"quotation",
+			"blockquote",
+			"citation",
+			"testimonial",
+			"solar"
+		]
 	},
 	"qwen": {
 		"tags": ["ai", "alibaba", "brand"]
@@ -716,7 +778,16 @@
 		"aliases": ["spinner-large"]
 	},
 	"spinner-diagonal": {
-		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "diagonal", "wave"]
+		"tags": [
+			"loader",
+			"loading",
+			"progress",
+			"wait",
+			"grid",
+			"pixel",
+			"diagonal",
+			"wave"
+		]
 	},
 	"spinner-orbit": {
 		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "comet"]
@@ -875,7 +946,16 @@
 		"tags": ["widget", "grid", "dashboard", "layout", "apps", "square", "solar"]
 	},
 	"widget-square-add": {
-		"tags": ["widget", "add", "plus", "grid", "dashboard", "layout", "square", "solar"]
+		"tags": [
+			"widget",
+			"add",
+			"plus",
+			"grid",
+			"dashboard",
+			"layout",
+			"square",
+			"solar"
+		]
 	},
 	"windsurf": {
 		"tags": ["ai", "code", "editor", "brand"]
