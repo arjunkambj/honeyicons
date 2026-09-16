@@ -18,6 +18,8 @@ export { Bookmark } from "./bookmark.js";
 export { Brain } from "./brain.js";
 export { Bun } from "./bun.js";
 export { Calendar, Calendar03 } from "./calendar.js";
+export { CalendarAdd } from "./calendar-add.js";
+export { CalendarMark } from "./calendar-mark.js";
 export { Card } from "./card.js";
 export { Cart } from "./cart.js";
 export { Check } from "./check.js";

@@ -156,6 +156,12 @@
 		],
 		"aliases": ["calendar-03"]
 	},
+	"calendar-add": {
+		"tags": ["calendar", "date", "event", "add", "new", "schedule", "solar"]
+	},
+	"calendar-mark": {
+		"tags": ["calendar", "date", "event", "mark", "selected", "today", "solar"]
+	},
 	"card": {
 		"tags": ["credit-card", "debit-card", "payment", "bank", "finance", "solar"]
 	},

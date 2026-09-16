@@ -21,6 +21,8 @@ import { Bookmark } from "./icons/bookmark.js";
 import { Brain } from "./icons/brain.js";
 import { Bun } from "./icons/bun.js";
 import { Calendar } from "./icons/calendar.js";
+import { CalendarAdd } from "./icons/calendar-add.js";
+import { CalendarMark } from "./icons/calendar-mark.js";
 import { Card } from "./icons/card.js";
 import { Cart } from "./icons/cart.js";
 import { Check } from "./icons/check.js";
@@ -336,6 +338,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["calendar","date","schedule","event","month","hugeicons","calendar-03","Calendar03"],
 		variants: ["linear"],
 		component: Calendar,
+	},
+	{
+		name: "calendar-add",
+		pascalName: "CalendarAdd",
+		category: "layout",
+		tags: ["calendar","date","event","add","new","schedule","solar"],
+		variants: ["linear"],
+		component: CalendarAdd,
+	},
+	{
+		name: "calendar-mark",
+		pascalName: "CalendarMark",
+		category: "layout",
+		tags: ["calendar","date","event","mark","selected","today","solar"],
+		variants: ["linear"],
+		component: CalendarMark,
 	},
 	{
 		name: "card",
