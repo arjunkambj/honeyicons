@@ -3,11 +3,11 @@
 	"version": "0.0.3",
 	"description": "Carefully crafted SVG icons for React, with TypeScript support.",
 	"keywords": [
+		"icon-set",
 		"icons",
-		"svg",
 		"react",
 		"react-icons",
-		"icon-set",
+		"svg",
 		"typescript"
 	],
 	"homepage": "https://github.com/arjunkambj/honeyicons#readme",
@@ -25,15 +25,15 @@
 	"type": "module",
 	"sideEffects": false,
 	"main": "./dist/index.js",
-	"types": "./dist/types/index.d.ts",
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
-			"types": "./dist/types/index.d.ts",
+			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js",
 			"default": "./dist/index.js"
 		},
 		"./catalog": {
-			"types": "./dist/types/catalog.d.ts",
+			"types": "./dist/catalog.d.ts",
 			"import": "./dist/catalog.js",
 			"default": "./dist/catalog.js"
 		},
@@ -43,7 +43,8 @@
 		"access": "public"
 	},
 	"scripts": {
-		"build": "esbuild src/index.ts src/catalog.ts --bundle --outdir=dist --platform=neutral --format=esm --external:react --jsx=automatic && tsc -p tsconfig.build.json",
+		"clean": "rm -rf dist",
+		"build": "bun run clean && esbuild \"src/**/*.ts\" \"src/**/*.tsx\" --outdir=dist --format=esm --jsx=automatic --target=es2020 --log-level=warning && tsc -p tsconfig.build.json",
 		"prepack": "bun run build",
 		"generate": "bun run ../../scripts/build-icons.ts",
 		"check-types": "tsc --noEmit"
