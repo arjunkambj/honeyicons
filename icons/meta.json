@@ -349,10 +349,19 @@
 		"tags": ["meta", "social", "brand"]
 	},
 	"file": {
-		"tags": ["document", "page", "paper", "text", "file-text", "solar"]
+		"tags": ["document", "page", "paper", "blank", "solar"]
+	},
+	"file-add": {
+		"tags": ["document", "file", "solar", "new", "create", "add", "plus"]
 	},
 	"file-code": {
 		"tags": ["document", "code", "source", "programming", "code-file", "solar"]
+	},
+	"file-remove": {
+		"tags": ["document", "file", "solar", "remove", "delete", "minus"]
+	},
+	"file-text": {
+		"tags": ["document", "page", "paper", "text", "lines", "notes", "solar"]
 	},
 	"folder": {
 		"tags": [
