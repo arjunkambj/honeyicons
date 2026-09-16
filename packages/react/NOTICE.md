@@ -1,7 +1,7 @@
 # Third-party icons
 
-`ImageAdd`, `Headphones`, `Clapperboard`, `VerifiedCheck`, `Cart`, `Share`,
-`Email`, and `Repeat` use the user-supplied Solar **Gallery Add**, **Headphones
+`Headphones`, `Clapperboard`, `VerifiedCheck`, `Cart`, `Share`,
+`Email`, and `Repeat` use the user-supplied Solar **Headphones
 Round**, **Clapperboard Play**, **Verified Check**, **Cart**, **Share**,
 **Letter**, and **Repeat** outlines from the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
@@ -49,37 +49,38 @@ licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 All three filled paths and their rounding, proportions, and baked outline
 weight are preserved with `currentColor`; unused source attributes are removed.
 
-`FileCode` is adapted from the user-supplied **Code File (Outline)** in the
-[Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
-licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-The supplied filled paths, cutouts, and baked outline weight are preserved
-with `currentColor`; source classes and unused root stroke attributes are removed.
-
 `Logout` uses the user-supplied **Logout 3 (Outline)** from the same Solar set
 and license. Its filled door geometry is preserved. The supplied left-pointing
 arrow retains its filled outline and rounded tips, with a shorter shaft and
 smooth curves at the inner notches where the head meets the shaft.
 
-`File` is adapted from the user-supplied **File Text (Outline)** in the
+`File`, `FileText`, `FileCode`, `GitBranch`, `GitDiff`, `GitFork`, `GitGraph`,
+`GitPullRequest`, `Home`, `HomeAngle`, `Calendar`, `CalendarMark`,
+`CalendarAdd`, `Widget`, `WidgetAdd`, `WidgetSquare`, `WidgetSquareAdd`,
+`MusicNote`, `Quote`, `FolderTree`, `CartBag`, `CartLarge`, `Bolt`,
+`Microphone`, `VideoCamera`, `Lock`, `LockOpen`, `Key`, `ImageAdd`, `ImageEdit`,
+`ClapperboardText`, `Pip`, `Ticket`, `VideoFrame`, `Bookmark`, `FileAdd`, `FileRemove`, and `ArchiveAlt` are redrawn from the
+user-supplied **File**, **File Text**, **File Code**, **Git Branch**,
+**Git Diff**, **Git Fork**, **Git Graph**, **Git Pull Request**, **Home**,
+**Home Angle**, **Calendar**, **Calendar Mark**, **Calendar Add**, **Widget 3**,
+**Widget**, **Widget Add**, **Music Note 4**, **Quote**, **Folder Tree**,
+**Bag 3**, **Cart Large**, **Bolt**, **Microphone**,
+**Videocamera Record**, **Lock Keyhole Minimalistic**, **Lock Keyhole
+Minimalistic Unlocked**, **Key Minimalistic**, **Gallery Add**,
+**Gallery Edit**, **Clapperboard Text**, **PIP**, **Ticket**, **Video Frame**,
+**Bookmark**, and **Archive Minimalistic** outlines; `FileAdd` and
+`FileRemove` reuse the redrawn **File** outline in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-Changes: used the requested names and removed source classes and unused root
-stroke attributes. The filled file outline, folded corner, text lines, cutouts,
-and baked outline weight are preserved with `currentColor`. No second stroke
-is added.
+Changes: rebuilt as Honeyicons stroke icons on the 24-unit grid, using the
+renderer's standard stroke with round caps and joins and smooth corner curves.
+The source silhouettes are kept; filled outlines are not preserved. `FolderTree`
+uses the Honeyicons `Folder` shape for its folders instead of the source folders.
 
-`Bookmark` is adapted from the user-supplied **Bookmark (Outline)** in the
-[Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
-licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-
-Changes: removed the source class and unused root stroke attributes. Both
-filled paths, the cutouts, smooth rounding, proportions, and baked outline
-weight are preserved with `currentColor`. No second stroke is added.
-
-`User`, `Archive`, `Add`, `Minus`, `Close`, `Pin`, `AlertTriangle`, and `Widget`
+`User`, `Archive`, `Add`, `Minus`, `Close`, `Pin`, and `AlertTriangle`
 are adapted from the user-supplied **User**, **Library**, **Add**, **Minus**,
-**Close**, **Pin**, **Danger Triangle**, and **Widget** outlines
+**Close**, **Pin**, and **Danger Triangle** outlines
 in the [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
@@ -146,15 +147,10 @@ licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 Source: [Volume.svg](https://github.com/480-Design/Solar-Icon-Set/blob/main/icons/SVG/Linear/Video%2C%20Audio%2C%20Sound/Volume.svg).
 
-Changes: scaled Volume uniformly to 90% to match Volume Loud, preserving its
-silhouette and details. It uses `currentColor` and inherits the standard
-1.5-unit stroke and rounded caps and joins from the Honeyicons renderer.
-
-`Microphone` uses the user-supplied **Microphone Large (Outline)** from the
-same Solar set and CC BY 4.0 license. Its complete filled path, cutouts, grille
-details, rounded capsule, and outer cradle are preserved with `currentColor`.
-Source classes and unused root stroke attributes are removed; no second
-stroke is added.
+Changes: redrawn at the user's request to follow **Volume Small (Outline)**,
+using the `VolumeHigh` speaker and its inner sound wave, centered on the 24-unit
+grid. It uses `currentColor` and inherits the standard Honeyicons stroke and
+rounded caps and joins.
 
 `Soundwave` is adapted from the user-supplied **Soundwave (Outline)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
@@ -230,17 +226,14 @@ Changes: combined the four lines into one path with separate subpaths, preservin
 their original lengths and spacing; used `currentColor` and inherited the
 standard 1.5-unit stroke and rounded caps and joins from the Honeyicons renderer.
 
-`Settings` and `WidgetAdd` are adapted from **Settings (Linear)** and
-**Widget Add (Linear)** in the
+`Settings` is adapted from **Settings (Linear)** in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-Sources: [Settings.svg](https://github.com/480-Design/Solar-Icon-Set/blob/main/icons/SVG/Linear/Settings%2C%20Fine%20Tuning/Settings.svg),
-[Widget Add.svg](https://github.com/480-Design/Solar-Icon-Set/blob/main/icons/SVG/Linear/Settings%2C%20Fine%20Tuning/Widget%20Add.svg).
+Source: [Settings.svg](https://github.com/480-Design/Solar-Icon-Set/blob/main/icons/SVG/Linear/Settings%2C%20Fine%20Tuning/Settings.svg).
 
-Changes: scaled geometry uniformly around the center of the 24-unit grid
-(Settings to 90%; Widget Add to 18/19) for consistent padding; preserved the
-original silhouettes and proportions, used `currentColor`, and inherited the
+Changes: scaled geometry uniformly to 90% around the center of the 24-unit
+grid for consistent padding; preserved the original silhouette and proportions, used `currentColor`, and inherited the
 standard 1.5-unit stroke and rounded caps and joins from the Honeyicons renderer.
 
 ## Hugeicons
@@ -272,12 +265,6 @@ The heads originate in the corresponding Hugeicons exports, are resized by
 adjusting path coordinates, and retain the standard 1.5-unit stroke and rounded
 caps and joins. The MIT notice below also applies to them.
 
-`LockOpen` and `Lock` are adapted from `LockOpenIcon` in
-`@hugeicons/core-free-icons` version 4.3.0. `LockOpen` preserves the original
-geometry; `Lock` reuses its body and closes the shackle with a matching rounded
-arch. Both inherit the standard Honeyicons 1.5-unit stroke and rounded caps and
-joins. The MIT notice below also applies to them.
-
 `Check` and `CheckDouble` are adapted from `CheckIcon` and `CheckCheckIcon` in
 `@hugeicons/core-free-icons` version 4.3.0. They preserve the original geometry,
 including the smooth check bends, and inherit the standard Honeyicons 1.5-unit
@@ -298,12 +285,6 @@ rounded caps and joins. The MIT notice below also applies to it.
 It retains its original geometry, including its eight dotted rays, and inherits
 the standard Honeyicons stroke, caps, and joins. The MIT notice below also
 applies to it.
-
-`Calendar` is adapted from `Calendar03Icon` in `@hugeicons/core-free-icons`
-version 4.3.0. Its geometry is scaled uniformly to 90% around the center of the
-24-unit grid, preserving the rounded body, binding rings, and five date markers.
-It inherits the standard Honeyicons stroke, caps, and joins. The MIT notice
-below also applies to it.
 
 `Computer`, `Folder`, `FolderOpen`, and `FolderAdd` are adapted from the matching
 `ComputerIcon`, `Folder01Icon`, `Folder02Icon`, and `FolderAddIcon` exports in
