@@ -61,6 +61,11 @@ import { FolderAdd } from "./icons/folder-add.js";
 import { FolderOpen } from "./icons/folder-open.js";
 import { Gemini } from "./icons/gemini.js";
 import { Git } from "./icons/git.js";
+import { GitBranch } from "./icons/git-branch.js";
+import { GitDiff } from "./icons/git-diff.js";
+import { GitFork } from "./icons/git-fork.js";
+import { GitGraph } from "./icons/git-graph.js";
+import { GitPullRequest } from "./icons/git-pull-request.js";
 import { Github } from "./icons/github.js";
 import { GithubCopilot } from "./icons/github-copilot.js";
 import { Google } from "./icons/google.js";
@@ -645,6 +650,46 @@ export const catalog: CatalogItem[] = [
 		tags: ["version-control","repository","code","brand"],
 		variants: ["bold"],
 		component: Git,
+	},
+	{
+		name: "git-branch",
+		pascalName: "GitBranch",
+		category: "editor",
+		tags: ["git","branch","version-control","source-control","solar"],
+		variants: ["linear"],
+		component: GitBranch,
+	},
+	{
+		name: "git-diff",
+		pascalName: "GitDiff",
+		category: "editor",
+		tags: ["git","diff","compare","changes","version-control","solar"],
+		variants: ["linear"],
+		component: GitDiff,
+	},
+	{
+		name: "git-fork",
+		pascalName: "GitFork",
+		category: "editor",
+		tags: ["git","fork","split","version-control","repository","solar"],
+		variants: ["linear"],
+		component: GitFork,
+	},
+	{
+		name: "git-graph",
+		pascalName: "GitGraph",
+		category: "editor",
+		tags: ["git","graph","history","commits","version-control","solar"],
+		variants: ["linear"],
+		component: GitGraph,
+	},
+	{
+		name: "git-pull-request",
+		pascalName: "GitPullRequest",
+		category: "editor",
+		tags: ["git","pull-request","pr","merge","review","version-control","solar"],
+		variants: ["linear"],
+		component: GitPullRequest,
 	},
 	{
 		name: "github",

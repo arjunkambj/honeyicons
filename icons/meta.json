@@ -378,6 +378,21 @@
 	"git": {
 		"tags": ["version-control", "repository", "code", "brand"]
 	},
+	"git-branch": {
+		"tags": ["git", "branch", "version-control", "source-control", "solar"]
+	},
+	"git-diff": {
+		"tags": ["git", "diff", "compare", "changes", "version-control", "solar"]
+	},
+	"git-fork": {
+		"tags": ["git", "fork", "split", "version-control", "repository", "solar"]
+	},
+	"git-graph": {
+		"tags": ["git", "graph", "history", "commits", "version-control", "solar"]
+	},
+	"git-pull-request": {
+		"tags": ["git", "pull-request", "pr", "merge", "review", "version-control", "solar"]
+	},
 	"github": {
 		"tags": ["git", "code", "repository", "brand"]
 	},
