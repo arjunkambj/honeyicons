@@ -390,10 +390,6 @@
 	"grok": {
 		"tags": ["xai", "ai", "assistant", "brand"]
 	},
-	"hammer": {
-		"tags": ["sledgehammer", "hammer", "build", "tools", "solar", "tool"],
-		"aliases": ["tool"]
-	},
 	"hashtag": {
 		"tags": ["hash", "tag", "number", "hastag", "solar"]
 	},

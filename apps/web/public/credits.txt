@@ -77,9 +77,9 @@ Changes: removed the source class and unused root stroke attributes. Both
 filled paths, the cutouts, smooth rounding, proportions, and baked outline
 weight are preserved with `currentColor`. No second stroke is added.
 
-`User`, `Archive`, `Add`, `Minus`, `Close`, `Hammer`, `Pin`, `AlertTriangle`, and `Widget`
+`User`, `Archive`, `Add`, `Minus`, `Close`, `Pin`, `AlertTriangle`, and `Widget`
 are adapted from the user-supplied **User**, **Library**, **Add**, **Minus**,
-**Close**, **Sledgehammer**, **Pin**, **Danger Triangle**, and **Widget** outlines
+**Close**, **Pin**, **Danger Triangle**, and **Widget** outlines
 in the [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 

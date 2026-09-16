@@ -44,7 +44,6 @@ All other renamed exports remain available as deprecated aliases. The catalog li
 | `SendMessage`      | `SquarePen`        |
 | `SpinnerLarge`     | `SpinnerArc`       |
 | `SpinnerTinker`    | `SpinnerWave`      |
-| `Tool`             | `Hammer`           |
 | `Ts`               | `Typescript`       |
 | `Videocamera`      | `VideoCamera`      |
 | `Volume`           | `VolumeLow`        |

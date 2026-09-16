@@ -65,7 +65,6 @@ import { Github } from "./icons/github.js";
 import { GithubCopilot } from "./icons/github-copilot.js";
 import { Google } from "./icons/google.js";
 import { Grok } from "./icons/grok.js";
-import { Hammer } from "./icons/hammer.js";
 import { Hashtag } from "./icons/hashtag.js";
 import { Headphones } from "./icons/headphones.js";
 import { Home } from "./icons/home.js";
@@ -679,14 +678,6 @@ export const catalog: CatalogItem[] = [
 		tags: ["xai","ai","assistant","brand"],
 		variants: ["linear"],
 		component: Grok,
-	},
-	{
-		name: "hammer",
-		pascalName: "Hammer",
-		category: "settings",
-		tags: ["sledgehammer","hammer","build","tools","solar","tool"],
-		variants: ["linear"],
-		component: Hammer,
 	},
 	{
 		name: "hashtag",
