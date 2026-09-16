@@ -47,7 +47,7 @@ function parseAttrs(raw: string) {
 	return attrs;
 }
 
-function parseNodes(xml: string): IconNode {
+function parseNodes(xml: string, file: string): IconNode {
 	const nodes: IconNode = [];
 	const src = xml.trim();
 	let i = 0;
@@ -71,7 +71,7 @@ function parseNodes(xml: string): IconNode {
 		const tag = tagMatch[1];
 		const closeAngle = src.indexOf(">", i + tagMatch[0].length);
 		if (closeAngle === -1) {
-			throw new Error(`Unclosed tag <${tag}>`);
+			throw new Error(`${file}: unclosed tag <${tag}>`);
 		}
 		const openTag = src.slice(i, closeAngle + 1);
 		const selfClosing = openTag.endsWith("/>");
@@ -90,11 +90,11 @@ function parseNodes(xml: string): IconNode {
 		const closeTag = `</${tag}>`;
 		const closeAt = src.indexOf(closeTag, closeAngle + 1);
 		if (closeAt === -1) {
-			throw new Error(`Missing ${closeTag}`);
+			throw new Error(`${file}: missing ${closeTag}`);
 		}
 		const inner = src.slice(closeAngle + 1, closeAt).trim();
 		if (inner.includes("<") && tag === "g") {
-			const childNodes = parseNodes(inner);
+			const childNodes = parseNodes(inner, file);
 			const transform = attrs.transform;
 			for (const [childTag, childAttrs] of childNodes) {
 				nodes.push([
@@ -112,7 +112,9 @@ function parseNodes(xml: string): IconNode {
 		} else if (!inner.includes("<")) {
 			nodes.push([tag, inner ? { ...attrs, children: inner } : attrs]);
 		} else {
-			nodes.push([tag, attrs]);
+			throw new Error(
+				`${file}: <${tag}> with child elements is not supported. Only <g> containers are flattened.`,
+			);
 		}
 		i = closeAt + closeTag.length;
 	}
@@ -135,7 +137,7 @@ function parseSvg(svg: string, file: string) {
 	if (viewBox !== "0 0 24 24") {
 		throw new Error(`${file}: viewBox must be "0 0 24 24", got "${viewBox}"`);
 	}
-	const nodes = parseNodes(svg.slice(start, end));
+	const nodes = parseNodes(svg.slice(start, end), file);
 	if (nodes.length === 0) {
 		throw new Error(`${file}: no drawable nodes`);
 	}
@@ -226,17 +228,6 @@ async function listIcons(): Promise<IconSource[]> {
 async function main() {
 	const categories = await listCategories();
 	const icons = await listIcons();
-
-	const seen = new Map<string, string>();
-	for (const icon of icons) {
-		const existing = seen.get(icon.name);
-		if (existing) {
-			throw new Error(
-				`Duplicate icon name "${icon.name}" in ${existing} and ${icon.category}. Names must be unique across categories.`,
-			);
-		}
-		seen.set(icon.name, icon.category);
-	}
 
 	const meta = JSON.parse(await readFile(metaPath, "utf8")) as IconMeta;
 	const exportNames = new Set(icons.map((icon) => toPascalCase(icon.name)));
