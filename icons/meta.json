@@ -168,6 +168,12 @@
 	"cart": {
 		"tags": ["basket", "shopping", "store", "solar"]
 	},
+	"cart-bag": {
+		"tags": ["bag", "shopping-bag", "shopping", "store", "purchase", "checkout", "solar"]
+	},
+	"cart-large": {
+		"tags": ["cart", "shopping-cart", "trolley", "checkout", "store", "shopping", "solar"]
+	},
 	"check": {
 		"tags": ["tick", "done", "success", "confirm", "complete", "hugeicons"]
 	},
@@ -766,6 +772,9 @@
 	},
 	"threads": {
 		"tags": ["brand", "threads"]
+	},
+	"ticket": {
+		"tags": ["ticket", "pass", "event", "admission", "coupon", "solar"]
 	},
 	"tiktok": {
 		"tags": ["brand", "tiktok"]

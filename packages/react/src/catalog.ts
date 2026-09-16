@@ -25,6 +25,8 @@ import { CalendarAdd } from "./icons/calendar-add.js";
 import { CalendarMark } from "./icons/calendar-mark.js";
 import { Card } from "./icons/card.js";
 import { Cart } from "./icons/cart.js";
+import { CartBag } from "./icons/cart-bag.js";
+import { CartLarge } from "./icons/cart-large.js";
 import { Check } from "./icons/check.js";
 import { CheckDouble } from "./icons/check-double.js";
 import { ChevronDown } from "./icons/chevron-down.js";
@@ -152,6 +154,7 @@ import { Tablet } from "./icons/tablet.js";
 import { Telegram } from "./icons/telegram.js";
 import { Terminal } from "./icons/terminal.js";
 import { Threads } from "./icons/threads.js";
+import { Ticket } from "./icons/ticket.js";
 import { Tiktok } from "./icons/tiktok.js";
 import { Trash } from "./icons/trash.js";
 import { Twitter } from "./icons/twitter.js";
@@ -378,6 +381,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["basket","shopping","store","solar"],
 		variants: ["linear"],
 		component: Cart,
+	},
+	{
+		name: "cart-bag",
+		pascalName: "CartBag",
+		category: "actions",
+		tags: ["bag","shopping-bag","shopping","store","purchase","checkout","solar"],
+		variants: ["linear"],
+		component: CartBag,
+	},
+	{
+		name: "cart-large",
+		pascalName: "CartLarge",
+		category: "actions",
+		tags: ["cart","shopping-cart","trolley","checkout","store","shopping","solar"],
+		variants: ["linear"],
+		component: CartLarge,
 	},
 	{
 		name: "check",
@@ -1394,6 +1413,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["brand","threads"],
 		variants: ["linear"],
 		component: Threads,
+	},
+	{
+		name: "ticket",
+		pascalName: "Ticket",
+		category: "actions",
+		tags: ["ticket","pass","event","admission","coupon","solar"],
+		variants: ["linear"],
+		component: Ticket,
 	},
 	{
 		name: "tiktok",
