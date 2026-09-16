@@ -543,7 +543,7 @@
 		"tags": ["brand", "meta", "ai", "assistant"]
 	},
 	"microphone": {
-		"tags": ["mic", "record", "voice", "audio", "microphone-large", "solar"]
+		"tags": ["mic", "record", "voice", "audio", "solar"]
 	},
 	"microsoft-copilot": {
 		"tags": [
@@ -574,6 +574,9 @@
 	},
 	"more-vertical": {
 		"tags": ["ellipsis", "menu", "options", "dots", "vertical", "hugeicons"]
+	},
+	"music-note": {
+		"tags": ["music", "note", "song", "audio", "sound", "melody", "solar"]
 	},
 	"npm": {
 		"tags": ["package", "registry", "javascript", "brand"]

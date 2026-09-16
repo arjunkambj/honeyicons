@@ -104,6 +104,7 @@ export { Mistral } from "./mistral.js";
 export { Moon } from "./moon.js";
 export { MoreHorizontal } from "./more-horizontal.js";
 export { MoreVertical } from "./more-vertical.js";
+export { MusicNote } from "./music-note.js";
 export { Npm } from "./npm.js";
 export { Nvidia } from "./nvidia.js";
 export { Openai } from "./openai.js";

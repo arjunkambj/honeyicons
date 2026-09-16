@@ -107,6 +107,7 @@ import { Mistral } from "./icons/mistral.js";
 import { Moon } from "./icons/moon.js";
 import { MoreHorizontal } from "./icons/more-horizontal.js";
 import { MoreVertical } from "./icons/more-vertical.js";
+import { MusicNote } from "./icons/music-note.js";
 import { Npm } from "./icons/npm.js";
 import { Nvidia } from "./icons/nvidia.js";
 import { Openai } from "./icons/openai.js";
@@ -969,7 +970,7 @@ export const catalog: CatalogItem[] = [
 		name: "microphone",
 		pascalName: "Microphone",
 		category: "media",
-		tags: ["mic","record","voice","audio","microphone-large","solar"],
+		tags: ["mic","record","voice","audio","solar"],
 		variants: ["linear"],
 		component: Microphone,
 	},
@@ -1028,6 +1029,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["ellipsis","menu","options","dots","vertical","hugeicons"],
 		variants: ["linear"],
 		component: MoreVertical,
+	},
+	{
+		name: "music-note",
+		pascalName: "MusicNote",
+		category: "media",
+		tags: ["music","note","song","audio","sound","melody","solar"],
+		variants: ["linear"],
+		component: MusicNote,
 	},
 	{
 		name: "npm",
