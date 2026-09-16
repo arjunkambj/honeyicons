@@ -144,6 +144,7 @@ import { Snapchat } from "./icons/snapchat.js";
 import { Soundwave } from "./icons/soundwave.js";
 import { Spinner } from "./icons/spinner.js";
 import { SpinnerArc } from "./icons/spinner-arc.js";
+import { SpinnerDiagonal } from "./icons/spinner-diagonal.js";
 import { SpinnerOrbit } from "./icons/spinner-orbit.js";
 import { SpinnerWave } from "./icons/spinner-wave.js";
 import { SquarePen } from "./icons/square-pen.js";
@@ -1335,6 +1336,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["loader","loading","progress","wait","rotate","arc","long","spinner-large","SpinnerLarge"],
 		variants: ["linear"],
 		component: SpinnerArc,
+	},
+	{
+		name: "spinner-diagonal",
+		pascalName: "SpinnerDiagonal",
+		category: "spinner",
+		tags: ["loader","loading","progress","wait","grid","pixel","diagonal","wave"],
+		variants: ["linear"],
+		component: SpinnerDiagonal,
 	},
 	{
 		name: "spinner-orbit",

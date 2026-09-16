@@ -715,6 +715,9 @@
 		],
 		"aliases": ["spinner-large"]
 	},
+	"spinner-diagonal": {
+		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "diagonal", "wave"]
+	},
 	"spinner-orbit": {
 		"tags": ["loader", "loading", "progress", "wait", "grid", "pixel", "comet"]
 	},
