@@ -78,6 +78,7 @@ import { Grok } from "./icons/grok.js";
 import { Hashtag } from "./icons/hashtag.js";
 import { Headphones } from "./icons/headphones.js";
 import { Home } from "./icons/home.js";
+import { HomeAngle } from "./icons/home-angle.js";
 import { Image } from "./icons/image.js";
 import { ImageAdd } from "./icons/image-add.js";
 import { Instagram } from "./icons/instagram.js";
@@ -791,6 +792,14 @@ export const catalog: CatalogItem[] = [
 		tags: [],
 		variants: ["linear"],
 		component: Home,
+	},
+	{
+		name: "home-angle",
+		pascalName: "HomeAngle",
+		category: "layout",
+		tags: ["home","house","dashboard","main","solar"],
+		variants: ["linear"],
+		component: HomeAngle,
 	},
 	{
 		name: "image",

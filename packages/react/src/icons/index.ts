@@ -75,6 +75,7 @@ export { Grok } from "./grok.js";
 export { Hashtag } from "./hashtag.js";
 export { Headphones, Headphone } from "./headphones.js";
 export { Home } from "./home.js";
+export { HomeAngle } from "./home-angle.js";
 export { Image, Images } from "./image.js";
 export { ImageAdd, ImagesAdd } from "./image-add.js";
 export { Instagram, Insta } from "./instagram.js";
