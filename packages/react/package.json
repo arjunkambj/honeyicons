@@ -1,6 +1,6 @@
 {
 	"name": "@honeyicons/react",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Carefully crafted SVG icons for React, with TypeScript support.",
 	"keywords": [
 		"icon-set",
