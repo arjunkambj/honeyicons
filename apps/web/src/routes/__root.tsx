@@ -1,3 +1,4 @@
+import { Button } from "@honeyicons/ui/components/button";
 import {
 	createRootRoute,
 	type ErrorComponentProps,
@@ -5,7 +6,10 @@ import {
 	Link,
 	Outlet,
 } from "@tanstack/react-router";
+import type { ReactNode } from "react";
+import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
+import { PageActions, PageHeader } from "@/components/page-header";
 import Providers from "@/components/providers";
 
 export const Route = createRootRoute({
@@ -14,7 +18,7 @@ export const Route = createRootRoute({
 			{ title: "honeyicons" },
 			{
 				name: "description",
-				content: "Icons for chat, IDEs, and dashboards.",
+				content: "Line icons for React.",
 			},
 		],
 	}),
@@ -22,13 +26,34 @@ export const Route = createRootRoute({
 	errorComponent: DefaultError,
 });
 
-function RootLayout() {
+function SiteFrame({ children }: { children: ReactNode }) {
 	return (
 		<Providers>
 			<HeadContent />
-			<Navbar />
-			<Outlet />
+			<div className="flex min-h-svh flex-col">
+				<a
+					href="#content"
+					className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-foreground focus:px-4 focus:py-2 focus:font-medium focus:text-background focus:text-sm"
+				>
+					Skip to content
+				</a>
+				<Navbar />
+				<div id="content" tabIndex={-1} className="flex-1 outline-none">
+					{children}
+				</div>
+				<div className="page-gutter pb-12 sm:pb-16">
+					<Footer />
+				</div>
+			</div>
 		</Providers>
+	);
+}
+
+function RootLayout() {
+	return (
+		<SiteFrame>
+			<Outlet />
+		</SiteFrame>
 	);
 }
 
@@ -37,20 +62,20 @@ function DefaultError({ error }: ErrorComponentProps) {
 		error instanceof Error ? error.message : "An unexpected error occurred.";
 
 	return (
-		<main className="page-shell">
-			<p className="mb-3 text-muted-foreground text-sm">Error</p>
-			<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
-				Something went wrong
-			</h1>
-			<p className="mt-4 max-w-xl text-muted-foreground leading-7">{message}</p>
-			<p className="mt-8">
-				<Link
-					to="/"
-					className="text-foreground underline-offset-4 hover:underline"
+		<SiteFrame>
+			<main className="page-shell">
+				<PageHeader
+					eyebrow="Error"
+					title="Something went wrong"
+					description={message}
 				>
-					Back home
-				</Link>
-			</p>
-		</main>
+					<PageActions>
+						<Button nativeButton={false} render={<Link to="/" />}>
+							Back home
+						</Button>
+					</PageActions>
+				</PageHeader>
+			</main>
+		</SiteFrame>
 	);
 }

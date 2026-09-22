@@ -1,8 +1,11 @@
 import { Card, Clock, Key, UserAdd, Wallet } from "@honeyicons/react";
+import { Button } from "@honeyicons/ui/components/button";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { DocumentationLayout } from "@/components/documentation-layout";
+import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-005", label: "0.0.5 · Named icons" },
 	{ id: "september-12-title", label: "Five new icons" },
 	{ id: "refinements", label: "Refinements" },
 ] as const;
@@ -44,17 +47,51 @@ export const Route = createFileRoute("/changelog")({
 function ChangelogPage() {
 	return (
 		<DocumentationLayout page="changelog" sections={sections}>
-			<div className="mx-auto flex max-w-3xl flex-col gap-10 sm:gap-12">
-				<header>
-					<p className="mb-3 text-muted-foreground text-sm">What’s new</p>
-					<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
-						Changelog
-					</h1>
-					<p className="mt-4 text-muted-foreground leading-7">
-						New icons and small improvements to the collection.
-					</p>
-				</header>
-				<article
+			<article className="mx-auto flex max-w-3xl flex-col gap-10 sm:gap-12">
+				<PageHeader
+					eyebrow="What’s new"
+					title="Changelog"
+					description="New icons and small improvements to the collection."
+				/>
+				<section
+					aria-labelledby="version-005"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-09-23" className="text-muted-foreground text-sm">
+						September 23, 2026
+					</time>
+					<h2
+						id="version-005"
+						className="mt-3 scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.5 · Named icons and agent setup
+					</h2>
+					<ul className="mt-3 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Render icons by name with the typed Icon component. Named
+							component imports remain available for smaller bundles.
+						</li>
+						<li>
+							The package includes icons.json with names, exports, categories,
+							variants, and search tags for all 324 icons, plus an installable
+							agent skill in the repository.
+						</li>
+						<li>
+							Catalog search, category, and style filters are saved in the URL.
+							Search shortcuts and alignment guides make browsing easier.
+						</li>
+						<li>
+							Breaking changes: deprecated aliases, duotone, and secondary color
+							props are removed. Unsupported variants throw. Custom SVG nodes
+							now use createIcon instead of Icon.
+						</li>
+						<li>
+							Shapes are grouped under Objects &amp; Shapes; spinners are under
+							Status.
+						</li>
+					</ul>
+				</section>
+				<section
 					aria-labelledby="september-12-title"
 					className="border-t border-border pt-8"
 				>
@@ -109,14 +146,13 @@ function ChangelogPage() {
 							reviewed at 16px and 24px in light and dark themes.
 						</li>
 					</ul>
-					<Link
-						to="/icons"
-						className="mt-8 inline-block text-sm underline underline-offset-4"
-					>
-						Explore the icons
-					</Link>
-				</article>
-			</div>
+					<PageActions>
+						<Button nativeButton={false} render={<Link to="/icons" />}>
+							Explore icons
+						</Button>
+					</PageActions>
+				</section>
+			</article>
 		</DocumentationLayout>
 	);
 }

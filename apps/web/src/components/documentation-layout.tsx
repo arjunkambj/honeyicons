@@ -1,14 +1,28 @@
-import { Clock, Code, File, Layers, Menu, Widget } from "@honeyicons/react";
+import {
+	Clock,
+	Code,
+	File,
+	Layers,
+	Menu,
+	Sparkles,
+	Widget,
+} from "@honeyicons/react";
 import { cn } from "@honeyicons/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
 import { type ReactNode, useEffect, useState } from "react";
+import {
+	SidebarHeading,
+	sidebarClass,
+	sidebarLinkClass,
+} from "@/components/sidebar-nav";
 
 export type PageSection = { id: string; label: string };
 
 const overviewLinks = [
 	{ label: "Introduction", hash: "introduction", Icon: File },
 	{ label: "Quick start", hash: "install", Icon: Code },
-	{ label: "Design principles", hash: "props", Icon: Layers },
+	{ label: "Props", hash: "props", Icon: Layers },
+	{ label: "Agent skill", hash: "agent-skill", Icon: Sparkles },
 ] as const;
 
 export function DocumentationLayout({
@@ -58,22 +72,11 @@ export function DocumentationLayout({
 		};
 	}, [sections]);
 
-	const linkClass =
-		"flex h-8 items-center gap-2 rounded-4xl px-2 text-sm transition-colors focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2";
-	const selectedClass = "bg-muted text-foreground";
-	const inactiveClass =
-		"text-muted-foreground hover:bg-muted hover:text-foreground dark:hover:bg-muted/50";
-
 	return (
 		<div className="page-shell grid items-start gap-8 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[200px_minmax(0,1fr)_180px] xl:gap-12">
-			<aside>
-				<nav
-					aria-label="Documentation navigation"
-					className="lg:fixed lg:top-26 lg:bottom-8 lg:w-[200px] lg:overflow-y-auto"
-				>
-					<p className="mb-2 px-2 font-medium text-muted-foreground text-xs tracking-wider">
-						Overview
-					</p>
+			<aside className={sidebarClass}>
+				<nav aria-label="Documentation navigation">
+					<SidebarHeading>Overview</SidebarHeading>
 					<ul className="flex flex-wrap gap-1 lg:flex-col">
 						{overviewLinks.map(({ label, hash, Icon }) => {
 							const selected =
@@ -85,10 +88,7 @@ export function DocumentationLayout({
 										to="/docs"
 										hash={hash}
 										aria-current={selected ? "location" : undefined}
-										className={cn(
-											linkClass,
-											selected ? selectedClass : inactiveClass,
-										)}
+										className={sidebarLinkClass(selected)}
 									>
 										<Icon size={16} />
 										<span>{label}</span>
@@ -97,12 +97,10 @@ export function DocumentationLayout({
 							);
 						})}
 					</ul>
-					<p className="mt-6 mb-2 px-2 font-medium text-muted-foreground text-xs tracking-wider">
-						Resources
-					</p>
+					<SidebarHeading className="mt-6">Resources</SidebarHeading>
 					<ul className="flex flex-wrap gap-1 lg:flex-col">
 						<li>
-							<Link to="/icons" className={cn(linkClass, inactiveClass)}>
+							<Link to="/icons" className={sidebarLinkClass(false)}>
 								<Widget size={16} />
 								<span>Icon catalog</span>
 							</Link>
@@ -111,10 +109,7 @@ export function DocumentationLayout({
 							<Link
 								to="/changelog"
 								aria-current={page === "changelog" ? "page" : undefined}
-								className={cn(
-									linkClass,
-									page === "changelog" ? selectedClass : inactiveClass,
-								)}
+								className={sidebarLinkClass(page === "changelog")}
 							>
 								<Clock size={16} />
 								<span>Changelog</span>
@@ -149,16 +144,13 @@ export function DocumentationLayout({
 				</nav>
 				{children}
 			</main>
-			<aside className="hidden xl:block">
-				<nav
-					aria-label="On this page"
-					className="fixed top-26 bottom-8 w-[180px] overflow-y-auto"
-				>
-					<p className="mb-4 flex items-center gap-2 text-muted-foreground text-sm">
-						<Menu size={18} />
+			<aside className={cn(sidebarClass, "hidden xl:block")}>
+				<nav aria-label="On this page">
+					<SidebarHeading className="flex items-center gap-2 px-0">
+						<Menu size={16} />
 						On this page
-					</p>
-					<ul className="flex flex-col gap-1">
+					</SidebarHeading>
+					<ul className="flex flex-col gap-1 border-border border-l">
 						{sections.map(({ id, label }) => (
 							<li key={id}>
 								<a
@@ -166,7 +158,7 @@ export function DocumentationLayout({
 									aria-current={active === id ? "location" : undefined}
 									onClick={() => setActive(id)}
 									className={cn(
-										"block border-l py-2 pl-4 text-sm transition-colors",
+										"-ml-px flex h-8 items-center border-l pl-4 text-sm transition-colors",
 										active === id
 											? "border-foreground text-foreground"
 											: "border-transparent text-muted-foreground hover:text-foreground",

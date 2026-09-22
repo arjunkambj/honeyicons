@@ -8,11 +8,11 @@
 	--font-bricolage-grotesque: "Bricolage Grotesque Variable";
 }
 
-/* Shared page frame. Every route and the navbar use the same gutter so panels,
-headings, and the logo share one left edge. */
+/* Shared page frame. Every route, the navbar, and the footer use the same
+gutter so panels, headings, and the logo share one left edge. */
 @utility page-gutter {
 	@apply container mx-auto px-4 sm:px-10 lg:px-12;
 }
 @utility page-shell {
-	@apply container mx-auto px-4 pt-4 pb-12 sm:px-10 sm:pt-6 sm:pb-16 lg:px-12;
+	@apply container mx-auto px-4 pt-4 sm:px-10 sm:pt-6 lg:px-12;
 }

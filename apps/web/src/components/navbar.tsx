@@ -80,11 +80,15 @@ export function Navbar() {
 						<BrandLogo className="h-5 w-24 min-[380px]:w-[120px] sm:h-6 sm:w-[148px]" />
 					</Link>
 					<nav aria-label="Main navigation" className={styles.navLinks}>
-						<Link to="/icons">
+						<Link to="/icons" activeProps={{ className: "text-foreground" }}>
 							<span className="sm:hidden">Icons</span>
 							<span className="hidden sm:inline">Explore icons</span>
 						</Link>
-						<Link to="/docs" className={styles.docsLink}>
+						<Link
+							to="/docs"
+							className={styles.docsLink}
+							activeProps={{ className: "text-foreground" }}
+						>
 							Docs
 						</Link>
 					</nav>
