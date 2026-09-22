@@ -16,7 +16,7 @@ export const Route = createFileRoute("/icons")({
 
 function IconsPage() {
 	return (
-		<main className="container mx-auto px-7 pt-4 pb-8 sm:px-10 lg:px-12">
+		<main className="page-shell">
 			<IconBrowser />
 		</main>
 	);

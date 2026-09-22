@@ -60,11 +60,8 @@ export const Route = createFileRoute("/docs")({
 function DocsPage() {
 	return (
 		<DocumentationLayout page="docs" sections={sections}>
-			<article className="mx-auto flex max-w-3xl flex-col">
-				<header
-					id="introduction"
-					className="mb-8 scroll-mt-32 sm:mb-10 sm:scroll-mt-24"
-				>
+			<article className="mx-auto flex max-w-3xl flex-col gap-10 sm:gap-12">
+				<header id="introduction" className="scroll-mt-24">
 					<p className="mb-3 text-muted-foreground text-sm">Documentation</p>
 					<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
 						React
@@ -192,11 +189,7 @@ function DocsSection({
 	children: ReactNode;
 }) {
 	return (
-		<section
-			id={id}
-			aria-labelledby={`${id}-title`}
-			className="scroll-mt-36 py-10 sm:scroll-mt-28 sm:py-12"
-		>
+		<section id={id} aria-labelledby={`${id}-title`} className="scroll-mt-24">
 			<h2
 				id={`${id}-title`}
 				className="font-semibold text-2xl leading-snug tracking-tight"

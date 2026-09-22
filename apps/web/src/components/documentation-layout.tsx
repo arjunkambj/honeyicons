@@ -25,7 +25,7 @@ export function DocumentationLayout({
 	useEffect(() => {
 		let frame = 0;
 		function update() {
-			const offset = window.matchMedia("(min-width: 640px)").matches ? 96 : 128;
+			const offset = 96;
 			let current = sections[0]?.id ?? "";
 			for (const section of sections) {
 				const element = document.getElementById(section.id);
@@ -59,19 +59,21 @@ export function DocumentationLayout({
 	}, [sections]);
 
 	const linkClass =
-		"flex items-center gap-3 rounded-xl px-2 py-1.5 text-sm transition-colors focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2";
-	const selectedClass = "bg-zinc-100 text-foreground dark:bg-zinc-800";
+		"flex h-8 items-center gap-2 rounded-4xl px-2 text-sm transition-colors focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2";
+	const selectedClass = "bg-muted text-foreground";
 	const inactiveClass =
-		"text-muted-foreground hover:bg-zinc-100/60 hover:text-foreground dark:hover:bg-zinc-800/60";
+		"text-muted-foreground hover:bg-muted hover:text-foreground dark:hover:bg-muted/50";
 
 	return (
-		<div className="container mx-auto grid items-start gap-8 px-7 py-4 sm:px-10 sm:py-6 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-10 lg:px-12 xl:grid-cols-[200px_minmax(0,1fr)_180px] xl:gap-12">
+		<div className="page-shell grid items-start gap-8 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[200px_minmax(0,1fr)_180px] xl:gap-12">
 			<aside>
 				<nav
 					aria-label="Documentation navigation"
-					className="lg:fixed lg:top-24 lg:bottom-8 lg:w-[200px] lg:overflow-y-auto"
+					className="lg:fixed lg:top-26 lg:bottom-8 lg:w-[200px] lg:overflow-y-auto"
 				>
-					<p className="mb-2 px-2 font-medium text-sm">Overview</p>
+					<p className="mb-2 px-2 font-medium text-muted-foreground text-xs tracking-wider">
+						Overview
+					</p>
 					<ul className="flex flex-wrap gap-1 lg:flex-col">
 						{overviewLinks.map(({ label, hash, Icon }) => {
 							const selected =
@@ -95,7 +97,9 @@ export function DocumentationLayout({
 							);
 						})}
 					</ul>
-					<p className="mt-6 mb-2 px-2 font-medium text-sm">Resources</p>
+					<p className="mt-6 mb-2 px-2 font-medium text-muted-foreground text-xs tracking-wider">
+						Resources
+					</p>
 					<ul className="flex flex-wrap gap-1 lg:flex-col">
 						<li>
 							<Link to="/icons" className={cn(linkClass, inactiveClass)}>
@@ -148,7 +152,7 @@ export function DocumentationLayout({
 			<aside className="hidden xl:block">
 				<nav
 					aria-label="On this page"
-					className="fixed top-24 bottom-8 w-[180px] overflow-y-auto"
+					className="fixed top-26 bottom-8 w-[180px] overflow-y-auto"
 				>
 					<p className="mb-4 flex items-center gap-2 text-muted-foreground text-sm">
 						<Menu size={18} />

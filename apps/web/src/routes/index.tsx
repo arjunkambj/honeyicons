@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
 
 function Home() {
 	return (
-		<div className="container mx-auto px-4 sm:px-6">
+		<div className="page-shell">
 			<main>
 				<Hero />
 				<Community />

@@ -71,13 +71,13 @@ export function IconBrowser() {
 				<IconSearch value={query} onChange={setQuery} inputRef={inputRef} />
 			</div>
 
-			<div className="grid items-start gap-8 lg:grid-cols-[13rem_minmax(0,1fr)]">
+			<div className="grid items-start gap-8 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-10 xl:gap-12">
 				<IconSidebar
 					selected={category}
 					onSelect={setCategory}
 					counts={counts}
 				/>
-				<div className="flex min-w-0 flex-col gap-5">
+				<div className="flex min-w-0 flex-col gap-6">
 					<IconToolbar
 						size={size}
 						onSizeChange={setSize}

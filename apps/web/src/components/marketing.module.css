@@ -264,7 +264,7 @@
 	grid-template-columns: 1.2fr 1fr;
 	align-items: center;
 	gap: 64px;
-	padding: 120px 24px;
+	padding: 120px 0;
 	scroll-margin-top: 104px;
 }
 .stats {
@@ -362,7 +362,7 @@
 	display: grid;
 	grid-template-columns: 1.35fr 1fr 1fr;
 	gap: 60px;
-	padding: 100px 24px 48px;
+	padding: 120px 0 0;
 }
 .footerBrand p {
 	max-width: 290px;
@@ -417,7 +417,7 @@
 	}
 	.community {
 		gap: 32px;
-		padding: 90px 16px;
+		padding: 96px 0;
 	}
 	.tools {
 		gap: 40px;
@@ -425,6 +425,7 @@
 	}
 	.footer {
 		gap: 32px;
+		padding: 96px 0 0;
 	}
 }
 @media (max-width: 767px) {
@@ -459,7 +460,7 @@
 	.community {
 		grid-template-columns: 1fr;
 		gap: 20px;
-		padding: 72px 12px 48px;
+		padding: 64px 0;
 	}
 	.githubScene {
 		min-height: 250px;
@@ -467,11 +468,11 @@
 	.tools {
 		grid-template-columns: 1fr;
 		gap: 44px;
-		padding: 44px 28px;
+		padding: 48px 24px;
 	}
 	.footer {
 		grid-template-columns: repeat(3, 1fr);
-		padding: 64px 12px 32px;
+		padding: 64px 0 0;
 		gap: 40px 24px;
 	}
 	.footerBrand {
@@ -497,7 +498,7 @@
 		gap: 0;
 	}
 	.heroContent {
-		padding: 58px 18px 0;
+		padding: 58px 24px 0;
 	}
 	.heroContent h1 {
 		font-size: 36px;
@@ -557,22 +558,5 @@
 	.navLinks {
 		gap: 12px;
 		white-space: nowrap;
-	}
-}
-@media (max-width: 639px) {
-	.navbar {
-		flex-wrap: wrap;
-		height: auto;
-		min-height: 76px;
-		gap: 4px 12px;
-		padding-block: 6px;
-	}
-	.navLinks {
-		order: 3;
-		flex-basis: 100%;
-		justify-content: center;
-	}
-	.docsLink {
-		margin-left: 0;
 	}
 }

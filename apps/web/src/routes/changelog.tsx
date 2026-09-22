@@ -44,8 +44,8 @@ export const Route = createFileRoute("/changelog")({
 function ChangelogPage() {
 	return (
 		<DocumentationLayout page="changelog" sections={sections}>
-			<div className="mx-auto max-w-3xl">
-				<header className="mb-12 sm:mb-16">
+			<div className="mx-auto flex max-w-3xl flex-col gap-10 sm:gap-12">
+				<header>
 					<p className="mb-3 text-muted-foreground text-sm">What’s new</p>
 					<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
 						Changelog
@@ -63,7 +63,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="september-12-title"
-						className="mt-3 scroll-mt-40 sm:scroll-mt-28 font-heading font-medium text-2xl tracking-tight sm:text-3xl"
+						className="mt-3 scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						Five new icons
 					</h2>
@@ -96,10 +96,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<h3
-						id="refinements"
-						className="mt-10 scroll-mt-40 font-medium sm:scroll-mt-28"
-					>
+					<h3 id="refinements" className="mt-10 scroll-mt-24 font-medium">
 						Refinements
 					</h3>
 					<ul className="mt-3 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">

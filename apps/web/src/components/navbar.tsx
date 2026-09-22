@@ -70,17 +70,20 @@ function ThemeToggle() {
 export function Navbar() {
 	return (
 		<header className={styles.header}>
-			<div className="container mx-auto px-7 sm:px-10 lg:px-12">
+			<div className="page-gutter">
 				<div className={styles.navbar}>
 					<Link
 						to="/"
 						aria-label="honeyicons home"
 						className="flex shrink-0 items-center text-foreground"
 					>
-						<BrandLogo className="h-5 w-28 sm:h-6 sm:w-[148px] min-[380px]:w-[120px]" />
+						<BrandLogo className="h-5 w-24 min-[380px]:w-[120px] sm:h-6 sm:w-[148px]" />
 					</Link>
 					<nav aria-label="Main navigation" className={styles.navLinks}>
-						<Link to="/icons">Explore icons</Link>
+						<Link to="/icons">
+							<span className="sm:hidden">Icons</span>
+							<span className="hidden sm:inline">Explore icons</span>
+						</Link>
 						<Link to="/docs" className={styles.docsLink}>
 							Docs
 						</Link>

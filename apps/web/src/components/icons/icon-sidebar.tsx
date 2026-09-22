@@ -10,11 +10,11 @@ type IconSidebarProps = {
 
 export function IconSidebar({ selected, onSelect, counts }: IconSidebarProps) {
 	return (
-		<aside className="w-full shrink-0 lg:w-52">
-			<p className="mb-3 flex h-9 items-center px-2 font-medium text-muted-foreground text-xs tracking-wider">
+		<aside className="w-full min-w-0">
+			<p className="mb-2 flex h-9 items-center px-2 font-medium text-muted-foreground text-xs tracking-wider">
 				Categories
 			</p>
-			<nav className="flex flex-col gap-0.5">
+			<nav className="flex flex-col gap-1">
 				{CATEGORY_META.map((category) => {
 					const count = counts[category.id] ?? 0;
 					const isActive = selected === category.id;
@@ -28,7 +28,7 @@ export function IconSidebar({ selected, onSelect, counts }: IconSidebarProps) {
 							onClick={() => onSelect(category.id)}
 							className={cn(
 								"w-full justify-between px-2 font-normal",
-								isActive && "bg-muted text-foreground",
+								isActive ? "bg-muted text-foreground" : "text-muted-foreground",
 							)}
 						>
 							<span className="flex min-w-0 items-center gap-2">

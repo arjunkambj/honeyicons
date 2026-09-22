@@ -9,12 +9,12 @@ export const Route = createFileRoute("/$")({
 
 function NotFoundPage() {
 	return (
-		<main className="container mx-auto px-4 py-16 sm:px-6">
-			<p className="text-muted-foreground text-sm">404</p>
-			<h1 className="mt-2 font-semibold text-3xl tracking-tight">
+		<main className="page-shell">
+			<p className="mb-3 text-muted-foreground text-sm">404</p>
+			<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
 				Page not found
 			</h1>
-			<p className="mt-3 max-w-md text-muted-foreground leading-7">
+			<p className="mt-4 max-w-xl text-muted-foreground leading-7">
 				That URL is not part of the Honeyicons site.
 			</p>
 			<p className="mt-8">
