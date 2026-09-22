@@ -61,7 +61,7 @@ export function IconCard({ item, variant, size, guides }: IconCardProps) {
 			<TooltipTrigger
 				onClick={copy}
 				aria-label={item.name}
-				className="group flex min-w-0 flex-col items-center justify-center gap-1.5 text-foreground/85 outline-none transition-colors hover:text-foreground focus-visible:outline-none dark:text-foreground"
+				className="group flex min-w-0 flex-col items-center justify-center gap-1.5 text-foreground outline-none focus-visible:outline-none"
 				style={{ minHeight: size + (guides ? 56 : 24) }}
 			>
 				<div className="relative flex items-center justify-center rounded-lg p-1.5 transition-colors group-hover:bg-muted group-focus-visible:ring-2 group-focus-visible:ring-ring dark:group-hover:bg-muted/50">
@@ -83,7 +83,7 @@ export function IconCard({ item, variant, size, guides }: IconCardProps) {
 							ref={iconRef}
 							variant={variant}
 							size={size}
-							className="relative block"
+							className="relative block opacity-85 transition-opacity group-hover:opacity-100 dark:opacity-100"
 						/>
 						{guides && bounds && (
 							<span
