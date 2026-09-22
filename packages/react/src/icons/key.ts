@@ -3,8 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Key = /* @__PURE__ */ createIcon("Key", {
 	linear: [
-		["path", { d: "M7.85 12.82A6.9 6.9 0 1 1 11.18 16.15L6.7 20.63C6.4 20.93 6 21.05 5.6 21L3.95 20.8C3.55 20.75 3.25 20.45 3.2 20.05L3 18.4C2.95 18 3.05 17.62 3.35 17.32Z", stroke: "currentColor" }],
-		["circle", { cx: "14.1", cy: "9.9", r: "2", stroke: "currentColor" }],
-		["path", { d: "M8.9 18.43L7.55 17.08", stroke: "currentColor" }],
+		["path", { d: "M7.85 12.82A6.9 6.9 0 1 1 11.18 16.15L6.7 20.63C6.4 20.93 6 21.05 5.6 21L3.95 20.8C3.55 20.75 3.25 20.45 3.2 20.05L3 18.4C2.95 18 3.05 17.62 3.35 17.32Z M12.1 9.9A2 2 0 1 0 16.1 9.9A2 2 0 1 0 12.1 9.9Z M8.9 18.43L7.55 17.08", stroke: "currentColor" }],
 	],
 });

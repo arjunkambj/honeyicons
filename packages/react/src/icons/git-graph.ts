@@ -3,11 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const GitGraph = /* @__PURE__ */ createIcon("GitGraph", {
 	linear: [
-		["circle", { cx: "5.5", cy: "5.25", r: "2.25", stroke: "currentColor" }],
-		["circle", { cx: "5.5", cy: "18.75", r: "2.25", stroke: "currentColor" }],
-		["circle", { cx: "18.5", cy: "5.25", r: "2.25", stroke: "currentColor" }],
-		["path", { d: "M5.5 7.5V16.5", stroke: "currentColor" }],
-		["path", { d: "M12 3V21", stroke: "currentColor" }],
-		["path", { d: "M18.5 7.5C18.5 11.5 17.4 14.5 15.25 16.25", stroke: "currentColor" }],
+		["path", { d: "M3.25 5.25A2.25 2.25 0 1 0 7.75 5.25A2.25 2.25 0 1 0 3.25 5.25Z M3.25 18.75A2.25 2.25 0 1 0 7.75 18.75A2.25 2.25 0 1 0 3.25 18.75Z M16.25 5.25A2.25 2.25 0 1 0 20.75 5.25A2.25 2.25 0 1 0 16.25 5.25Z M5.5 7.5V16.5 M12 3V21 M18.5 7.5C18.5 11.5 17.4 14.5 15.25 16.25", stroke: "currentColor" }],
 	],
 });

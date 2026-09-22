@@ -3,7 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const ZoomIn = /* @__PURE__ */ createIcon("ZoomIn", {
 	linear: [
-		["circle", { cx: "11.55", cy: "11.55", r: "8.55", stroke: "currentColor" }],
-		["path", { d: "M17.5962 17.5962L21 21M9.3 11.55h4.5M11.55 9.3v4.5", stroke: "currentColor" }],
+		["path", { d: "M3 11.55A8.55 8.55 0 1 0 20.1 11.55A8.55 8.55 0 1 0 3 11.55Z M17.5962 17.5962L21 21M9.3 11.55h4.5M11.55 9.3v4.5", stroke: "currentColor" }],
 	],
 });

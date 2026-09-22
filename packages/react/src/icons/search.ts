@@ -3,7 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Search = /* @__PURE__ */ createIcon("Search", {
 	linear: [
-		["circle", { cx: "11.55", cy: "11.55", r: "8.55", stroke: "currentColor" }],
-		["path", { d: "M17.5962 17.5962L21 21", stroke: "currentColor" }],
+		["path", { d: "M3 11.55A8.55 8.55 0 1 0 20.1 11.55A8.55 8.55 0 1 0 3 11.55Z M17.5962 17.5962L21 21", stroke: "currentColor" }],
 	],
 });

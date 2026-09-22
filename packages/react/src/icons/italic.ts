@@ -3,8 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Italic = /* @__PURE__ */ createIcon("Italic", {
 	linear: [
-		["path", { d: "M10.6667 4H20", stroke: "currentColor" }],
-		["path", { d: "M7.99872 20L15.9987 4", stroke: "currentColor" }],
-		["path", { d: "M3.99872 20L13.3321 20", stroke: "currentColor" }],
+		["path", { d: "M10.6667 4H20 M7.99872 20L15.9987 4 M3.99872 20L13.3321 20", stroke: "currentColor" }],
 	],
 });

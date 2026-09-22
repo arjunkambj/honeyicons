@@ -22,6 +22,7 @@
 - Match perceived weight, padding, visual size, and optical centering. Keep details and gaps clear at 16px.
 - For filled outlines, adjust the filled geometry when standardizing weight and rounding; stroke props cannot change their baked outline. Preserve cutouts and opacity.
 - Remove stray segments, duplicated curves, and visible bumps. End internal lines inside their frames so rounded caps do not protrude. Use native filled circles for solid dots.
+- Do not let separate elements overlap. Join overlapping strokes into one path and union overlapping filled shapes so translucent colors render evenly without darker seams.
 - Keep the file family gently rounded with slightly taller page proportions. Preserve recognizable brand geometry without forcing rounded corners onto logos.
 - Use the supplied Solar filled outline in `icons/linear/files/folder.svg` as the folder-family base: preserve its sloping tab, smooth curves, cutout, and rounded dash. Use the supplied `folder-open` and `folder-with-files` geometry for those variants; keep the dash on the front folder in `folders`. Adapt small tree folders for legibility without reverting to the old tab shape.
 - `FolderAdd` uses only its plus symbol inside the folder; omit the decorative dash. Keep miniature tree folders wider than they are tall, with a clear sloping tab and even border weight.

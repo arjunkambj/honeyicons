@@ -3,8 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const MusicNote = /* @__PURE__ */ createIcon("MusicNote", {
 	linear: [
-		["circle", { cx: "7.25", cy: "17.25", r: "3.75", stroke: "currentColor" }],
-		["path", { d: "M11 17.25V11.1", stroke: "currentColor" }],
-		["path", { d: "M11 8.6C11 7.9 11.35 7.45 12 7.1L18.4 3.6C19.4 3.05 20 3.4 20 4.5V7C20 7.7 19.65 8.15 19 8.5L12.6 12C11.6 12.55 11 12.2 11 11.1V8.6Z", stroke: "currentColor" }],
+		["path", { d: "M3.5 17.25A3.75 3.75 0 1 0 11 17.25A3.75 3.75 0 1 0 3.5 17.25Z M11 17.25V11.1 M11 8.6C11 7.9 11.35 7.45 12 7.1L18.4 3.6C19.4 3.05 20 3.4 20 4.5V7C20 7.7 19.65 8.15 19 8.5L12.6 12C11.6 12.55 11 12.2 11 11.1V8.6Z", stroke: "currentColor" }],
 	],
 });

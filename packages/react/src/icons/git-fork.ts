@@ -3,10 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const GitFork = /* @__PURE__ */ createIcon("GitFork", {
 	linear: [
-		["circle", { cx: "5.5", cy: "5.25", r: "2.25", stroke: "currentColor" }],
-		["circle", { cx: "18.5", cy: "5.25", r: "2.25", stroke: "currentColor" }],
-		["circle", { cx: "12", cy: "18.75", r: "2.25", stroke: "currentColor" }],
-		["path", { d: "M5.5 7.5C5.5 11 7 12 10 12H14C17 12 18.5 11 18.5 7.5", stroke: "currentColor" }],
-		["path", { d: "M12 12V16.5", stroke: "currentColor" }],
+		["path", { d: "M3.25 5.25A2.25 2.25 0 1 0 7.75 5.25A2.25 2.25 0 1 0 3.25 5.25Z M16.25 5.25A2.25 2.25 0 1 0 20.75 5.25A2.25 2.25 0 1 0 16.25 5.25Z M9.75 18.75A2.25 2.25 0 1 0 14.25 18.75A2.25 2.25 0 1 0 9.75 18.75Z M5.5 7.5C5.5 11 7 12 10 12H14C17 12 18.5 11 18.5 7.5 M12 12V16.5", stroke: "currentColor" }],
 	],
 });

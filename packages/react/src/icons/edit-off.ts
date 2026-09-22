@@ -3,9 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const EditOff = /* @__PURE__ */ createIcon("EditOff", {
 	linear: [
-		["path", { d: "M7.8 10.5175L3.4206 14.8969L2 22L9.1031 20.5794L13.5 16.1825", stroke: "currentColor" }],
-		["path", { d: "M10.52 7.7975L15.1407 3.1769A4.0181 4.0181 0 0 1 20.8231 8.8593L16.18 13.5025", stroke: "currentColor" }],
-		["path", { d: "M13.3649 4.9526L19.0474 10.6351", stroke: "currentColor" }],
-		["path", { d: "M2 2L22 22", stroke: "currentColor" }],
+		["path", { d: "M7.8 10.5175L3.4206 14.8969L2 22L9.1031 20.5794L13.5 16.1825 M10.52 7.7975L15.1407 3.1769A4.0181 4.0181 0 0 1 20.8231 8.8593L16.18 13.5025 M13.3649 4.9526L19.0474 10.6351 M2 2L22 22", stroke: "currentColor" }],
 	],
 });
