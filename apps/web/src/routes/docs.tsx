@@ -88,27 +88,35 @@ function DocsPage() {
 						Set up with an agent
 					</h2>
 					<p className="mt-2 text-sm text-muted-foreground leading-6">
-						Copy this prompt into your coding agent. It reads the setup guide,
-						installs the package and skill, and checks the result.
+						Paste this prompt into Claude Code, Cursor, Codex, or another coding
+						agent. It installs the package and skill, then checks the setup.
 					</p>
-					<div className="mt-5 flex items-start gap-3">
-						<code className="min-w-0 flex-1 wrap-anywhere pt-1.5 font-mono text-sm leading-6 text-foreground">
-							{setupPrompt}
-						</code>
-						<CopyButton
-							text={setupPrompt}
-							label="Copy agent setup prompt"
-							className="size-9 shrink-0 rounded-xl"
-						/>
+					<div className="mt-5 overflow-hidden rounded-2xl bg-card">
+						<div className="flex flex-col gap-4 p-4 sm:flex-row sm:items-center sm:p-5">
+							<p className="min-w-0 flex-1 wrap-anywhere font-mono text-sm leading-6 text-foreground">
+								{setupPrompt}
+							</p>
+							<CopyButton
+								text={setupPrompt}
+								label="Copy agent setup prompt"
+								className="self-start sm:self-auto"
+							>
+								Copy prompt
+							</CopyButton>
+						</div>
+						<div className="flex items-center gap-3 border-t border-border/60 px-4 py-2.5 sm:px-5">
+							<span className="shrink-0 text-muted-foreground text-xs">
+								Skill only
+							</span>
+							<code className="min-w-0 flex-1 truncate font-mono text-[13px] text-muted-foreground">
+								<span aria-hidden className="mr-2 text-foreground/40 select-none">
+									$
+								</span>
+								{skillCode}
+							</code>
+							<CopyButton text={skillCode} label="Copy skill install command" />
+						</div>
 					</div>
-					<p className="mt-4 text-sm text-muted-foreground leading-6">
-						Already installed the package? Add the skill on its own:
-					</p>
-					<CodeBlock
-						code={skillCode}
-						label="skill install command"
-						className="mt-3"
-					/>
 				</section>
 				<DocsSection
 					id="install"

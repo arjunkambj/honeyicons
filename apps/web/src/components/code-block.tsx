@@ -1,7 +1,7 @@
 import { Check, Copy } from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
-import { useEffect, useRef, useState } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 
 type TokenTone =
@@ -76,10 +76,12 @@ const toneClass: Record<TokenTone, string> = {
 export function CopyButton({
 	text,
 	label = "Copy",
+	children,
 	className,
 }: {
 	text: string;
 	label?: string;
+	children?: ReactNode;
 	className?: string;
 }) {
 	const [copied, setCopied] = useState(false);
@@ -101,6 +103,28 @@ export function CopyButton({
 		timeoutRef.current = window.setTimeout(() => setCopied(false), 2000);
 	}
 
+	const icon = copied ? (
+		<Check size={16} className="size-4" />
+	) : (
+		<Copy size={16} className="size-4" />
+	);
+
+	if (children) {
+		return (
+			<Button
+				type="button"
+				variant="secondary"
+				size="xs"
+				onClick={copy}
+				aria-label={copied ? "Copied" : label}
+				className={cn("h-7 gap-1.5 px-2.5", className)}
+			>
+				{icon}
+				{copied ? "Copied" : children}
+			</Button>
+		);
+	}
+
 	return (
 		<Button
 			type="button"
@@ -113,11 +137,7 @@ export function CopyButton({
 				className,
 			)}
 		>
-			{copied ? (
-				<Check size={16} className="size-4" />
-			) : (
-				<Copy size={16} className="size-4" />
-			)}
+			{icon}
 		</Button>
 	);
 }
