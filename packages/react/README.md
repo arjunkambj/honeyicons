@@ -2,6 +2,10 @@
 
 SVG icons for React with TypeScript support, a 24-unit grid, and theme-aware colors.
 
+Inspired by [Hugeicons](https://hugeicons.com) and
+[Solar Icons](https://github.com/480-Design/Solar-Icon-Set), with smooth curves
+and rounded corners. See [NOTICE.md](./NOTICE.md) for source attribution and licenses.
+
 ```sh
 pnpm add @honeyicons/react
 ```

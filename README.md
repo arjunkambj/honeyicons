@@ -1,6 +1,10 @@
 # honeyicons
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack.
+A collection of SVG icons for React, with TypeScript support and theme-aware colors.
+
+Honeyicons is inspired by [Hugeicons](https://hugeicons.com) and
+[Solar Icons](https://github.com/480-Design/Solar-Icon-Set), with smooth curves,
+rounded corners, and a shared 24-unit grid.
 
 ## Features
 
