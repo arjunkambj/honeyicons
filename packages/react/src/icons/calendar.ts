@@ -5,12 +5,12 @@ export const Calendar = /* @__PURE__ */ createIcon("Calendar", {
 	linear: [
 		["path", { d: "M10.5 4.5H13.5C17.02 4.5 18.82 4.5 19.91 5.59C21 6.67 21 8.47 21 12V13.5C21 17.02 21 18.82 19.91 19.91C18.82 21 17.02 21 13.5 21H10.5C6.97 21 5.17 21 4.09 19.91C3 18.82 3 17.02 3 13.5V12C3 8.47 3 6.67 4.09 5.59C5.17 4.5 6.97 4.5 10.5 4.5Z", stroke: "currentColor" }],
 		["path", { d: "M7.5 2.75V6M16.5 2.75V6M3.25 9.5H20.75", stroke: "currentColor" }],
-		["circle", { cx: "7.5", cy: "13.5", r: "0.1", stroke: "currentColor" }],
-		["circle", { cx: "7.5", cy: "17", r: "0.1", stroke: "currentColor" }],
-		["circle", { cx: "12", cy: "13.5", r: "0.1", stroke: "currentColor" }],
-		["circle", { cx: "12", cy: "17", r: "0.1", stroke: "currentColor" }],
-		["circle", { cx: "16.5", cy: "13.5", r: "0.1", stroke: "currentColor" }],
-		["circle", { cx: "16.5", cy: "17", r: "0.1", stroke: "currentColor" }],
+		["circle", { cx: "7.5", cy: "13.5", r: "1", fill: "currentColor", stroke: "none" }],
+		["circle", { cx: "7.5", cy: "17", r: "1", fill: "currentColor", stroke: "none" }],
+		["circle", { cx: "12", cy: "13.5", r: "1", fill: "currentColor", stroke: "none" }],
+		["circle", { cx: "12", cy: "17", r: "1", fill: "currentColor", stroke: "none" }],
+		["circle", { cx: "16.5", cy: "13.5", r: "1", fill: "currentColor", stroke: "none" }],
+		["circle", { cx: "16.5", cy: "17", r: "1", fill: "currentColor", stroke: "none" }],
 	],
 });
 
