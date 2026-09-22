@@ -3,18 +3,13 @@ import { TabsList, TabsTrigger } from "@honeyicons/ui/components/tabs";
 import { Toggle } from "@honeyicons/ui/components/toggle";
 import { cn } from "@honeyicons/ui/lib/utils";
 import type { ComponentProps } from "react";
-import {
-	SIZE_MAJOR_STEP,
-	SIZE_MAX,
-	SIZE_MIN,
-	sliderNumber,
-	VARIANT_META,
-} from "./constants";
+import { SIZE_MAX, SIZE_MIN, VARIANT_META } from "./constants";
 
 type IconToolbarProps = {
 	size: number;
 	onSizeChange: (size: number) => void;
 	shown: number;
+	total: number;
 	guides: boolean;
 	onGuidesChange: (guides: boolean) => void;
 };
@@ -50,12 +45,13 @@ export function IconToolbar({
 	size,
 	onSizeChange,
 	shown,
+	total,
 	guides,
 	onGuidesChange,
 }: IconToolbarProps) {
 	return (
 		<div className="flex flex-wrap items-center gap-3">
-			<TabsList>
+			<TabsList aria-label="Icon style">
 				{VARIANT_META.map((item) => (
 					<TabsTrigger key={item.id} value={item.id}>
 						{item.label}
@@ -70,14 +66,22 @@ export function IconToolbar({
 				min={SIZE_MIN}
 				max={SIZE_MAX}
 				step={1}
-				tickStep={SIZE_MAX > 96 ? 8 : 1}
-				majorStep={SIZE_MAX > 96 ? 32 : SIZE_MAJOR_STEP}
+				tickStep={8}
+				majorStep={32}
 				value={size}
-				onValueChange={(value) => onSizeChange(sliderNumber(value))}
+				onValueChange={(value) => {
+					if (typeof value !== "number") {
+						throw new Error("Icon size requires a single slider value");
+					}
+					onSizeChange(value);
+				}}
 			/>
 
-			<p className="whitespace-nowrap text-muted-foreground text-xs tabular-nums leading-5">
-				{shown} shown
+			<p
+				aria-live="polite"
+				className="whitespace-nowrap text-muted-foreground text-xs tabular-nums leading-5"
+			>
+				{shown === total ? `${total} icons` : `${shown} of ${total}`}
 			</p>
 			<Toggle
 				variant="outline"
@@ -85,7 +89,7 @@ export function IconToolbar({
 				pressed={guides}
 				onPressedChange={onGuidesChange}
 				aria-label="Show alignment guides"
-				className="ml-auto"
+				className="ml-auto hidden sm:inline-flex"
 			>
 				Guides
 			</Toggle>

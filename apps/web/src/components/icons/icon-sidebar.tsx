@@ -1,5 +1,10 @@
-import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
+import { useEffect, useRef } from "react";
+import {
+	SidebarHeading,
+	sidebarClass,
+	sidebarLinkClass,
+} from "@/components/sidebar-nav";
 import { CATEGORY_META, type CategoryFilter } from "./constants";
 
 type IconSidebarProps = {
@@ -9,12 +14,33 @@ type IconSidebarProps = {
 };
 
 export function IconSidebar({ selected, onSelect, counts }: IconSidebarProps) {
+	const navRef = useRef<HTMLElement>(null);
+
+	// Center the selected chip when the categories scroll sideways on mobile.
+	useEffect(() => {
+		const nav = navRef.current;
+		const active = nav?.querySelector<HTMLElement>(
+			`[data-category="${selected}"]`,
+		);
+		if (!nav || !active || nav.scrollWidth <= nav.clientWidth) return;
+		const offset =
+			active.getBoundingClientRect().left - nav.getBoundingClientRect().left;
+		nav.scrollTo({
+			left:
+				nav.scrollLeft + offset - (nav.clientWidth - active.offsetWidth) / 2,
+			behavior: "smooth",
+		});
+	}, [selected]);
+
 	return (
-		<aside className="w-full min-w-0">
-			<p className="mb-2 flex h-9 items-center px-2 font-medium text-muted-foreground text-xs tracking-wider">
-				Categories
-			</p>
-			<nav className="grid grid-cols-2 gap-1 sm:grid-cols-3 lg:grid-cols-1">
+		<aside className={cn(sidebarClass, "w-full [grid-area:sidebar]")}>
+			<SidebarHeading>Categories</SidebarHeading>
+			{/* A swipeable row on small screens; a list in the desktop rail. */}
+			<nav
+				ref={navRef}
+				aria-label="Icon categories"
+				className="-mx-4 flex gap-1 overflow-x-auto px-4 [scrollbar-width:none] sm:-mx-10 sm:px-10 lg:mx-0 lg:grid lg:grid-cols-1 lg:overflow-visible lg:px-0 [&::-webkit-scrollbar]:hidden"
+			>
 				{CATEGORY_META.map((category) => {
 					const count = counts[category.id] ?? 0;
 					const isActive = selected === category.id;
@@ -22,26 +48,26 @@ export function IconSidebar({ selected, onSelect, counts }: IconSidebarProps) {
 						return null;
 					}
 					return (
-						<Button
+						<button
 							key={category.id}
 							type="button"
-							variant="ghost"
-							size="sm"
+							data-category={category.id}
 							aria-pressed={isActive}
 							onClick={() => onSelect(category.id)}
 							className={cn(
-								"w-full justify-between px-2 font-normal",
-								isActive ? "bg-muted text-foreground" : "text-muted-foreground",
+								sidebarLinkClass(isActive),
+								"w-auto shrink-0 justify-between gap-3 max-lg:border max-lg:border-border lg:w-full",
+								isActive && "max-lg:border-transparent",
 							)}
 						>
 							<span className="flex min-w-0 items-center gap-2">
-								<category.icon />
+								<category.icon size={16} />
 								<span className="truncate">{category.label}</span>
 							</span>
 							<span className="text-muted-foreground tabular-nums">
 								{count}
 							</span>
-						</Button>
+						</button>
 					);
 				})}
 			</nav>

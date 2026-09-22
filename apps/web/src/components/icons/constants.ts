@@ -8,12 +8,13 @@ import {
 	Check,
 	Clock,
 	Code,
-	Diamond,
 	Figma,
 	Folder,
 	type HoneyIcon,
 	ICON_CATEGORIES,
+	ICON_VARIANTS,
 	type IconCategory,
+	type IconVariant,
 	Lock,
 	MapPin,
 	Pen,
@@ -22,7 +23,6 @@ import {
 	Settings,
 	SidebarLeft,
 	Smartphone,
-	Spinner,
 	User,
 	Widget,
 } from "@honeyicons/react";
@@ -30,13 +30,13 @@ import {
 export const SIZE_MIN = 16;
 export const SIZE_MAX = 460;
 export const SIZE_DEFAULT = 28;
-export const SIZE_MAJOR_STEP = 4;
 
 export type CategoryFilter = "all" | IconCategory;
 
 type CategoryMeta = { label: string; icon: HoneyIcon };
 
-const CATEGORY_DETAILS: Record<IconCategory, CategoryMeta> = {
+export const CATEGORY_DETAILS: Record<CategoryFilter, CategoryMeta> = {
+	all: { label: "All", icon: Widget },
 	actions: { label: "Actions", icon: Check },
 	ai: { label: "AI", icon: Brain },
 	arrows: { label: "Arrows", icon: ArrowRight },
@@ -51,28 +51,37 @@ const CATEGORY_DETAILS: Record<IconCategory, CategoryMeta> = {
 	layout: { label: "Layout", icon: SidebarLeft },
 	maps: { label: "Maps & Places", icon: MapPin },
 	media: { label: "Media", icon: Play },
-	objects: { label: "Objects", icon: Rocket },
+	objects: { label: "Objects & Shapes", icon: Rocket },
 	security: { label: "Security", icon: Lock },
 	settings: { label: "Settings", icon: Settings },
-	shapes: { label: "Shapes", icon: Diamond },
-	spinner: { label: "Spinners", icon: Spinner },
 	status: { label: "Status", icon: AlertTriangle },
 	time: { label: "Time", icon: Clock },
 	user: { label: "Users", icon: User },
 };
 
-export const CATEGORY_META: ({ id: CategoryFilter } & CategoryMeta)[] = [
-	{ id: "all", label: "All", icon: Widget },
-	...ICON_CATEGORIES.map((id) => ({ id, ...CATEGORY_DETAILS[id] })),
-];
+export const CATEGORY_META = (["all", ...ICON_CATEGORIES] as const).map(
+	(id) => ({ id, ...CATEGORY_DETAILS[id] }),
+);
 
 export const VARIANT_META = [
 	{ id: "linear", label: "Linear" },
 	{ id: "bold", label: "Bold" },
-	{ id: "duotone", label: "Duotone" },
 ] as const;
 
-export function sliderNumber(value: number | readonly number[]) {
-	const next = Array.isArray(value) ? value[0] : value;
-	return next ?? 0;
+/** Catalog filters kept in the URL so views can be shared and restored. */
+export type IconsSearch = {
+	q?: string;
+	category?: IconCategory;
+	style?: IconVariant;
+};
+
+export function parseIconsSearch(search: Record<string, unknown>): IconsSearch {
+	const { q, category, style } = search;
+	// The router JSON-parses values, so `?q=404` arrives as a number.
+	const text = typeof q === "string" || typeof q === "number" ? String(q) : "";
+	return {
+		q: text || undefined,
+		category: ICON_CATEGORIES.find((id) => id === category),
+		style: ICON_VARIANTS.find((id) => id === style && id !== "linear"),
+	};
 }

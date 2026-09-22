@@ -2,11 +2,13 @@ import type { IconVariant } from "@honeyicons/react";
 import type { CatalogItem } from "@honeyicons/react/catalog";
 import {
 	Empty,
+	EmptyContent,
 	EmptyDescription,
 	EmptyHeader,
 	EmptyTitle,
 } from "@honeyicons/ui/components/empty";
 import { TooltipProvider } from "@honeyicons/ui/components/tooltip";
+import type { ReactNode } from "react";
 import { IconCard } from "./icon-card";
 
 type IconGridProps = {
@@ -14,8 +16,7 @@ type IconGridProps = {
 	variant: IconVariant;
 	size: number;
 	guides: boolean;
-	hasCatalog: boolean;
-	hasVariantIcons: boolean;
+	empty: { title: string; description: string; action?: ReactNode };
 };
 
 export function IconGrid({
@@ -23,26 +24,16 @@ export function IconGrid({
 	variant,
 	size,
 	guides,
-	hasCatalog,
-	hasVariantIcons,
+	empty,
 }: IconGridProps) {
 	if (items.length === 0) {
-		const title = !hasCatalog
-			? "No icons yet"
-			: hasVariantIcons
-				? "No icons match"
-				: "No icons in this style yet";
-		const description = !hasCatalog
-			? "Add SVGs under icons/linear/{category}, then run pnpm run generate:icons."
-			: hasVariantIcons
-				? "Try another search or category."
-				: `Add SVGs under icons/${variant}/{category}, then run pnpm run generate:icons.`;
 		return (
 			<Empty className="min-h-64 border border-dashed">
 				<EmptyHeader>
-					<EmptyTitle>{title}</EmptyTitle>
-					<EmptyDescription>{description}</EmptyDescription>
+					<EmptyTitle>{empty.title}</EmptyTitle>
+					<EmptyDescription>{empty.description}</EmptyDescription>
 				</EmptyHeader>
+				{empty.action && <EmptyContent>{empty.action}</EmptyContent>}
 			</Empty>
 		);
 	}
@@ -59,7 +50,8 @@ export function IconGrid({
 				>
 					{items.map((item) => (
 						<IconCard
-							key={item.name}
+							// A style switch remounts the card so guides measure the new artwork.
+							key={`${variant}:${item.name}`}
 							item={item}
 							variant={variant}
 							size={size}

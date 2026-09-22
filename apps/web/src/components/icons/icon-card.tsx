@@ -25,7 +25,7 @@ export function IconCard({ item, variant, size, guides }: IconCardProps) {
 
 	useEffect(() => {
 		const svg = iconRef.current;
-		if (!guides || !svg || !item.variants.includes(variant)) return;
+		if (!guides || !svg) return;
 		// Animated icons can mark a stationary shape for stable guide bounds.
 		const measuredShape =
 			svg.querySelector<SVGGraphicsElement>("[data-honeyicons-bounds]") ?? svg;
@@ -38,11 +38,21 @@ export function IconCard({ item, variant, size, guides }: IconCardProps) {
 			width: width + strokeWidth,
 			height: height + strokeWidth,
 		});
-	}, [guides, item, variant]);
+	}, [guides]);
 
 	async function copy() {
-		const snippet = `import { ${item.pascalName} } from "@honeyicons/react";\n\n<${item.pascalName} variant="${variant}" />`;
-		await navigator.clipboard.writeText(snippet);
+		// Each icon renders its first variant by default, so only other styles need the prop.
+		const variantProp =
+			variant === item.variants[0] ? "" : ` variant="${variant}"`;
+		const snippet = `import { Icon } from "@honeyicons/react";\n\n<Icon icon="${item.name}"${variantProp} />`;
+		try {
+			await navigator.clipboard.writeText(snippet);
+		} catch {
+			toast.error(
+				"Could not copy. Check your browser’s clipboard permissions.",
+			);
+			return;
+		}
 		toast(`Copied ${item.name}`, { duration: 2000 });
 	}
 
@@ -51,10 +61,10 @@ export function IconCard({ item, variant, size, guides }: IconCardProps) {
 			<TooltipTrigger
 				onClick={copy}
 				aria-label={item.name}
-				className="group flex min-w-0 flex-col items-center justify-center gap-1.5 text-zinc-700 outline-none transition-colors hover:text-zinc-800 focus-visible:outline-none dark:text-zinc-50 dark:hover:text-zinc-50"
+				className="group flex min-w-0 flex-col items-center justify-center gap-1.5 text-foreground/85 outline-none transition-colors hover:text-foreground focus-visible:outline-none dark:text-foreground"
 				style={{ minHeight: size + (guides ? 56 : 24) }}
 			>
-				<div className="relative flex items-center justify-center rounded-lg p-1.5 transition-colors group-hover:bg-zinc-100 group-focus-visible:ring-2 group-focus-visible:ring-ring dark:group-hover:bg-zinc-900">
+				<div className="relative flex items-center justify-center rounded-lg p-1.5 transition-colors group-hover:bg-muted group-focus-visible:ring-2 group-focus-visible:ring-ring dark:group-hover:bg-muted/50">
 					<div
 						className="relative shrink-0"
 						style={{ width: size, height: size }}
