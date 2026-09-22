@@ -37,10 +37,10 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to see the w
 Give your coding agent this prompt:
 
 ```
-Read https://github.com/arjunkambj/honeyicons/blob/main/docs/setup.md and set up @honeyicons/react in this project.
+Set up @honeyicons/react using https://icons.0xhoney.com/setup.md
 ```
 
-[docs/setup.md](docs/setup.md) walks the agent through installing the package and the
+[setup.md](apps/web/public/setup.md) walks the agent through installing the package and the
 skill, rendering icons with `Icon`, and checking the result.
 
 ## Agent Skill

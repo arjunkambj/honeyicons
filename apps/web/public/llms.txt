@@ -6,7 +6,7 @@ Honeyicons is a React icon library and a browsable SVG collection for chats, edi
 
 Give your coding agent this prompt:
 
-Read https://github.com/arjunkambj/honeyicons/blob/main/docs/setup.md and set up @honeyicons/react in this project.
+Set up @honeyicons/react using https://icons.0xhoney.com/setup.md
 
 ## React usage
 

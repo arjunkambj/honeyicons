@@ -11,7 +11,7 @@ and rounded corners. See [NOTICE.md](./NOTICE.md) for source attribution and lic
 Give your coding agent this prompt:
 
 ```
-Read https://github.com/arjunkambj/honeyicons/blob/main/docs/setup.md and set up @honeyicons/react in this project.
+Set up @honeyicons/react using https://icons.0xhoney.com/setup.md
 ```
 
 Or install the package yourself:
