@@ -24,10 +24,12 @@ import { catalog } from "@honeyicons/react/catalog";
 import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
-import type { CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { toast } from "sonner";
 import { BrandMark } from "@/components/brand-mark";
 import { InstallCommand } from "@/components/install-command";
 import styles from "@/components/marketing.module.css";
+import { setupPrompt } from "@/lib/setup-prompt";
 
 type OrbitIcon = {
 	icon: HoneyIcon;
@@ -87,6 +89,28 @@ const orbitRings: OrbitRing[] = [
 ];
 
 export function Hero() {
+	const [promptCopied, setPromptCopied] = useState(false);
+	const copyTimeoutRef = useRef(0);
+
+	useEffect(() => () => window.clearTimeout(copyTimeoutRef.current), []);
+
+	async function copySetupPrompt() {
+		try {
+			await navigator.clipboard.writeText(setupPrompt);
+		} catch {
+			toast.error(
+				"Could not copy. Check your browser’s clipboard permissions.",
+			);
+			return;
+		}
+		setPromptCopied(true);
+		window.clearTimeout(copyTimeoutRef.current);
+		copyTimeoutRef.current = window.setTimeout(
+			() => setPromptCopied(false),
+			2000,
+		);
+	}
+
 	return (
 		<section
 			className={cn(styles.hero, styles.gradientPanel)}
@@ -97,17 +121,17 @@ export function Hero() {
 					id="hero-heading"
 					className="animate-hero-enter text-balance font-heading font-semibold tracking-tight"
 				>
-					<span className="block">Beautiful icons.</span>
+					<span className="block">Icons for React.</span>
 					<span className="block text-hero-muted-foreground">
-						Built for what’s next.
+						One consistent style.
 					</span>
 				</h1>
 				<p
 					className="mt-3 max-w-md animate-hero-enter text-pretty text-hero-muted-foreground"
 					style={{ animationDelay: "100ms" }}
 				>
-					{catalog.length} crisp icons for apps, editors, and dashboards. Ready
-					for React, typed for TypeScript, and easy for your AI to use.
+					{catalog.length} line icons on a 24px grid. Import them as typed
+					components, and they take the color of the text around them.
 				</p>
 				<div
 					className="mt-6 flex animate-hero-enter flex-wrap justify-center gap-3 sm:gap-4"
@@ -135,18 +159,22 @@ export function Hero() {
 				</div>
 				<div className="mb-12 max-w-full sm:mb-16">
 					<InstallCommand className="mt-4" />
+					<button
+						type="button"
+						onClick={copySetupPrompt}
+						className="mx-auto mt-3 block text-sm text-hero-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+					>
+						{promptCopied ? "Prompt copied" : "Copy agent setup prompt"}
+					</button>
 				</div>
 			</div>
 			<div className={styles.orbitScene} aria-hidden="true">
 				<div className={styles.orbitLabel}>
 					<span className={styles.colorDot} /> Linear{" "}
-					<span className="font-mono text-hero-muted-foreground">
-						Made to match
-					</span>
+					<span className="font-mono text-hero-muted-foreground">Style</span>
 				</div>
 				<div className={styles.orbitLabelRight}>
-					24 × 24{" "}
-					<span className="text-hero-muted-foreground">A considered grid</span>
+					24 × 24 <span className="text-hero-muted-foreground">Grid</span>
 				</div>
 				<div className={styles.orbit}>
 					<div className={styles.orbitMiddle} />
@@ -208,9 +236,9 @@ export function Hero() {
 					</div>
 					<div className={styles.orbitCore}>
 						<BrandMark className="size-9" />
-						<span>Small details.</span>
+						<span>Honeyicons</span>
 						<span className="text-hero-muted-foreground">
-							Endless possibilities.
+							{catalog.length} icons
 						</span>
 					</div>
 				</div>

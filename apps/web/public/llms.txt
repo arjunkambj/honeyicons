@@ -2,33 +2,47 @@
 
 Honeyicons is a React icon library and a browsable SVG collection for chats, editors, and dashboards.
 
+## Set up with a coding agent
+
+Give your coding agent this prompt:
+
+Read https://github.com/arjunkambj/honeyicons/blob/main/docs/setup.md and set up @honeyicons/react in this project.
+
 ## React usage
 
-import { Bell, Search, SquarePen } from "@honeyicons/react";
+import { Icon } from "@honeyicons/react";
 
-<Bell size={24} />
-<Search size={16} />
-<SquarePen size={24} strokeWidth={1.8} />
+<Icon icon="bell" size={24} />
+<Icon icon="search" size={16} />
+<Icon icon="moon" variant="bold" />
 
-Components accept standard SVG props, className, style, color, size, strokeWidth, and an optional title for an accessible image label. Icons without a title are decorative. Give icon-only buttons an accessible name on the button.
+The icon prop takes a kebab-case icon name, typed as IconName, and variant accepts only the variants that icon has. Unknown names throw. Icon accepts standard SVG props, className, style, color, size, strokeWidth, variant, and an optional title for an accessible image label. Icons without a title, aria-label, or aria-labelledby are decorative. Give icon-only buttons an accessible name on the button.
+
+Icon includes the full collection in the bundle. For fixed icons, use named imports such as import { Bell } from "@honeyicons/react" and <Bell /> so bundlers can remove unused icons.
 
 ## Conventions
 
-- Prefer named imports and existing icon names. Do not invent exports.
+- Render icons with Icon and names from the icon index. Do not invent names.
 - Icons use a 24 by 24 viewBox, currentColor, and a default 1.8-unit stroke with rounded caps and joins.
 - Use size={16} or size={24} for common interface sizes.
 - Preserve supplied filled geometry. Some linear icons use filled outlines; strokeWidth does not change their baked-in weight.
-- The variant prop accepts "linear", "bold", or "duotone". Linear is the default. Check an icon's variants before using another style; unavailable variants fall back to linear.
-- The current collection is predominantly linear, with limited bold coverage. Duotone artwork is not yet included.
-- The typed catalog is available from @honeyicons/react/catalog. Each entry has name, pascalName, category, tags, variants, and component.
+- The variant prop accepts "linear" or "bold". Each icon defaults to its first variant: linear, or bold for bold-only icons such as most brand logos. Check an icon's variants before passing one; a variant the icon does not have throws.
+- The collection is predominantly linear, with bold versions of brand logos and a few interface icons.
+- The icon index at https://cdn.jsdelivr.net/npm/@honeyicons/react@latest/icons.json lists each icon's name, export, category, variants, and tags.
+
+## Agent skill
+
+Install the Honeyicons skill so coding agents look up real icon names before writing code:
+
+npx skills add arjunkambj/honeyicons
 
 ## SVG
 
-Browse /icons, search or filter the catalog, and select an icon to copy its React snippet. SVG source files are maintained in the repository under icons/.
+Browse /icons, search or filter the catalog, and select an icon to copy its code. SVG source files are maintained in the repository under icons/.
 
 ## Availability
 
-React and standalone SVG are implemented in this repository. React Native and a consumer CLI are coming soon. There is no MCP server or installable agent skill yet.
+React and standalone SVG are implemented in this repository. React Native and a consumer CLI are coming soon. There is no MCP server yet.
 
 ## Source and attribution
 

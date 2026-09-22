@@ -1,35 +1,44 @@
-import { Bell, Moon, Search, SquarePen } from "@honeyicons/react";
+import { Icon } from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { DocumentationLayout } from "@/components/documentation-layout";
-import { CodeBlock } from "@/components/code-block";
+import { CodeBlock, CopyButton } from "@/components/code-block";
 import { InstallCommand } from "@/components/install-command";
+import { PageActions, PageHeader } from "@/components/page-header";
+import { setupPrompt } from "@/lib/setup-prompt";
 
-const usageCode = `import { Bell, Search, SquarePen } from "@honeyicons/react";
+const usageCode = `import { Icon, type IconName } from "@honeyicons/react";
 
-<Bell size={24} />
-<Search size={16} />
-<SquarePen size={24} />`;
+<Icon icon="bell" size={24} />
+<Icon icon="search" size={16} />
+<Icon icon="square-pen" size={24} />
 
-const accessibilityCode = `import { Bell, Search } from "@honeyicons/react";
+function NavIcon({ name }: { name: IconName }) {
+  return <Icon icon={name} size={16} />;
+}`;
+
+const accessibilityCode = `import { Icon } from "@honeyicons/react";
 
 <button type="button" aria-label="Notifications">
-  <Bell size={20} />
+  <Icon icon="bell" size={20} />
 </button>
 
-<Search size={24} title="Search" />`;
+<Icon icon="search" size={24} title="Search" />`;
 
-const propsCode = `import { Bell, Moon, Search } from "@honeyicons/react";
+const propsCode = `import { Icon } from "@honeyicons/react";
 
-<Bell size={16} />
-<Bell size={24} />
-<Bell color="#3b82f6" />
-<Search strokeWidth={1.8} />
-<Moon variant="bold" />`;
+<Icon icon="bell" size={16} />
+<Icon icon="bell" size={24} />
+<Icon icon="bell" color="#3b82f6" />
+<Icon icon="search" strokeWidth={1.8} />
+<Icon icon="moon" variant="bold" />`;
+
+const skillCode = "npx skills add arjunkambj/honeyicons";
 
 const sections = [
 	{ id: "introduction", label: "Introduction" },
+	{ id: "agent-skill", label: "Agent setup" },
 	{ id: "install", label: "Install" },
 	{ id: "usage", label: "Usage" },
 	{ id: "props", label: "Props" },
@@ -38,9 +47,9 @@ const sections = [
 ] as const;
 
 const usagePreview = [
-	{ Icon: Bell, name: "Bell", size: 24 },
-	{ Icon: Search, name: "Search", size: 16 },
-	{ Icon: SquarePen, name: "SquarePen", size: 24 },
+	{ icon: "bell", size: 24 },
+	{ icon: "search", size: 16 },
+	{ icon: "square-pen", size: 24 },
 ] as const;
 
 export const Route = createFileRoute("/docs")({
@@ -50,7 +59,7 @@ export const Route = createFileRoute("/docs")({
 			{
 				name: "description",
 				content:
-					"Install Honeyicons in React, import icons by name, and size them for 16px and 24px interfaces.",
+					"Install Honeyicons in a React app, render icons by name, and set their size and color.",
 			},
 		],
 	}),
@@ -61,42 +70,79 @@ function DocsPage() {
 	return (
 		<DocumentationLayout page="docs" sections={sections}>
 			<article className="mx-auto flex max-w-3xl flex-col gap-10 sm:gap-12">
-				<header id="introduction" className="scroll-mt-24">
-					<p className="mb-3 text-muted-foreground text-sm">Documentation</p>
-					<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
-						React
-					</h1>
-					<p className="mt-4 max-w-xl text-muted-foreground leading-7">
-						Install the package, import icons by name, and size them for 16px
-						and 24px interfaces. Color follows your UI.
+				<PageHeader
+					id="introduction"
+					eyebrow="Documentation"
+					title="React"
+					description="Install the package, render icons by name, and set their size. Icons use the current text color."
+				/>
+				<section
+					id="agent-skill"
+					aria-labelledby="agent-skill-title"
+					className="scroll-mt-24"
+				>
+					<div className="flex items-start gap-4">
+						<div className="min-w-0 flex-1">
+							<h2
+								id="agent-skill-title"
+								className="font-semibold text-2xl leading-snug tracking-tight"
+							>
+								Set up with an agent
+							</h2>
+							<p className="mt-2 text-sm text-muted-foreground leading-6">
+								Copy this prompt into your coding agent. It reads the setup
+								guide, installs the package and skill, and checks the result.
+							</p>
+						</div>
+						<CopyButton
+							text={setupPrompt}
+							label="Copy agent setup prompt"
+							className="size-9 shrink-0 rounded-xl"
+						/>
+					</div>
+					<code className="mt-5 block wrap-anywhere font-mono text-sm leading-6 text-foreground">
+						{setupPrompt}
+					</code>
+					<p className="mt-4 text-sm text-muted-foreground leading-6">
+						Already installed the package? Add the skill on its own:
 					</p>
-				</header>
+					<CodeBlock
+						code={skillCode}
+						label="skill install command"
+						className="mt-3"
+					/>
+				</section>
 				<DocsSection
 					id="install"
 					title="Install"
-					description="Add the React package with pnpm, npm, yarn, or bun."
+					description="Add the package with pnpm, npm, yarn, or bun."
 				>
 					<InstallCommand layout="panel" className="mt-6" />
 					<p className="mt-3 text-muted-foreground text-sm leading-6">
-						The <code>$</code> is the shell prompt, not part of the command.
-						Copying grabs only the command itself.
+						The <code>$</code> is the shell prompt and isn’t copied.
 					</p>
 				</DocsSection>
 				<DocsSection
 					id="usage"
 					title="Usage"
-					description="Import only the icons you need. Named imports tree-shake."
+					description="Pass the icon’s kebab-case name to Icon. TypeScript checks names and variants, and an unknown name throws an error. Type your own props with IconName."
 				>
 					<CodeBlock code={usageCode} className="mt-6" />
+					<p className="mt-3 text-muted-foreground text-sm leading-6">
+						Icon includes the whole collection. For fixed icons, use named
+						imports such as {`import { Bell } from "@honeyicons/react"`} and{" "}
+						{"<Bell />"}
+						so your bundler can remove unused icons.
+					</p>
 					<div className="mt-3 flex flex-wrap items-end gap-8 rounded-2xl bg-card px-5 py-4">
-						{usagePreview.map(({ Icon, name, size }) => (
+						{usagePreview.map(({ icon, size }) => (
 							<figure
-								key={name}
+								key={icon}
 								className="flex min-w-16 flex-col items-center gap-2"
 							>
-								<Icon size={size} title={name} />
+								<Icon icon={icon} size={size} title={icon} />
 								<figcaption className="font-mono text-muted-foreground text-xs">
-									{name} {size}
+									{icon} {size}
 								</figcaption>
 							</figure>
 						))}
@@ -105,20 +151,20 @@ function DocsPage() {
 				<DocsSection
 					id="props"
 					title="Props"
-					description="Icons share a 24-unit grid, inherit currentColor, and default to a 1.8-unit stroke."
+					description="Every icon is drawn on a 24 × 24 grid with a 1.8 stroke and uses the current text color. Icons that have a bold version accept the bold variant."
 				>
 					<CodeBlock code={propsCode} className="mt-6" />
 					<div className="mt-3 flex flex-wrap items-end gap-8 rounded-2xl bg-card px-5 py-4">
 						<SizeSample size={16} />
 						<SizeSample size={24} />
 						<figure className="flex flex-col items-center gap-2 text-foreground">
-							<Bell size={24} />
+							<Icon icon="bell" size={24} />
 							<figcaption className="font-mono text-muted-foreground text-xs">
 								Inherited
 							</figcaption>
 						</figure>
 						<figure className="flex flex-col items-center gap-2">
-							<Bell size={24} color="#3b82f6" />
+							<Icon icon="bell" size={24} color="#3b82f6" />
 							<figcaption className="font-mono text-muted-foreground text-xs">
 								#3b82f6
 							</figcaption>
@@ -130,7 +176,7 @@ function DocsPage() {
 				<DocsSection
 					id="accessibility"
 					title="Accessibility"
-					description="Icons are decorative by default. Name the control, or give a standalone icon a title."
+					description="Screen readers skip icons by default. Put an aria-label on icon-only buttons, or give an icon a title when it needs to be read out on its own."
 				>
 					<CodeBlock code={accessibilityCode} className="mt-6" />
 					<div className="mt-3 flex flex-wrap items-center gap-6 rounded-2xl bg-card px-5 py-4">
@@ -139,20 +185,20 @@ function DocsPage() {
 							aria-label="Notifications"
 							className="inline-flex size-9 items-center justify-center rounded-xl border border-border bg-background transition-colors hover:bg-muted"
 						>
-							<Bell size={20} />
+							<Icon icon="bell" size={20} />
 						</button>
-						<Search size={24} title="Search" />
+						<Icon icon="search" size={24} title="Search" />
 						<p className="text-muted-foreground text-sm">
-							Icon-only button, then a labeled image.
+							An icon-only button with an aria-label, then an icon with a title.
 						</p>
 					</div>
 				</DocsSection>
 				<DocsSection
 					id="catalog"
 					title="Catalog"
-					description="Search by name or keyword, then click an icon to copy its React snippet."
+					description="Search by name or keyword, then click an icon to copy its code."
 				>
-					<div className="mt-6 flex flex-wrap gap-3">
+					<PageActions>
 						<Button nativeButton={false} render={<Link to="/icons" />}>
 							Explore icons
 						</Button>
@@ -170,7 +216,7 @@ function DocsPage() {
 						>
 							Licenses &amp; credits
 						</Button>
-					</div>
+					</PageActions>
 				</DocsSection>
 			</article>
 		</DocumentationLayout>
@@ -205,7 +251,7 @@ function DocsSection({
 function SizeSample({ size }: { size: number }) {
 	return (
 		<figure className="flex flex-col items-center gap-2">
-			<Bell size={size} title={`${size} pixels`} />
+			<Icon icon="bell" size={size} title={`${size} pixels`} />
 			<figcaption className="font-mono text-muted-foreground text-xs">
 				{size}
 			</figcaption>
@@ -216,7 +262,12 @@ function SizeSample({ size }: { size: number }) {
 function StrokeSample({ width }: { width: number }) {
 	return (
 		<figure className="flex flex-col items-center gap-2">
-			<Search size={24} strokeWidth={width} title={`Stroke ${width}`} />
+			<Icon
+				icon="search"
+				size={24}
+				strokeWidth={width}
+				title={`Stroke ${width}`}
+			/>
 			<figcaption className="font-mono text-muted-foreground text-xs">
 				{width}
 			</figcaption>
@@ -227,7 +278,7 @@ function StrokeSample({ width }: { width: number }) {
 function VariantSample({ variant }: { variant: "linear" | "bold" }) {
 	return (
 		<figure className="flex flex-col items-center gap-2">
-			<Moon size={24} variant={variant} title={`${variant} moon`} />
+			<Icon icon="moon" size={24} variant={variant} title={`${variant} moon`} />
 			<figcaption className="font-mono text-muted-foreground text-xs">
 				{variant}
 			</figcaption>

@@ -1,4 +1,4 @@
-import { Check, Copy, Terminal } from "@honeyicons/react";
+import { Check, Copy } from "@honeyicons/react";
 import {
 	Tabs,
 	TabsContent,
@@ -6,40 +6,55 @@ import {
 	TabsTrigger,
 } from "@honeyicons/ui/components/tabs";
 import { cn } from "@honeyicons/ui/lib/utils";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
 import { CopyButton } from "@/components/code-block";
 
-const installCommands = [
+const installOptions = [
 	{ id: "pnpm", label: "pnpm", command: "pnpm add @honeyicons/react" },
 	{ id: "npm", label: "npm", command: "npm i @honeyicons/react" },
 	{ id: "yarn", label: "yarn", command: "yarn add @honeyicons/react" },
 	{ id: "bun", label: "bun", command: "bun add @honeyicons/react" },
 ] as const;
 
-type Manager = (typeof installCommands)[number]["id"];
+type InstallOption = (typeof installOptions)[number];
 
-function CopyInstallCommand({ command }: { command: string }) {
+function copyLabel({ command }: InstallOption) {
+	return `Copy install command: ${command}`;
+}
+
+function CopyInstallCommand({ option }: { option: InstallOption }) {
 	const [copied, setCopied] = useState(false);
+	const timeoutRef = useRef(0);
 	const CopyIcon = copied ? Check : Copy;
+	useEffect(() => () => window.clearTimeout(timeoutRef.current), []);
 
 	async function copy() {
-		await navigator.clipboard.writeText(command);
+		try {
+			await navigator.clipboard.writeText(option.command);
+		} catch {
+			toast.error(
+				"Could not copy. Check your browser’s clipboard permissions.",
+			);
+			return;
+		}
 		setCopied(true);
-		window.setTimeout(() => setCopied(false), 2000);
+		window.clearTimeout(timeoutRef.current);
+		timeoutRef.current = window.setTimeout(() => setCopied(false), 2000);
 	}
 
 	return (
 		<button
 			type="button"
 			onClick={copy}
-			aria-label={`Copy install command: ${command}`}
-			className="inline-flex max-w-full items-center gap-3 rounded-full border border-border bg-muted/50 py-2 pr-4 pl-5 font-mono text-muted-foreground text-sm transition-colors hover:border-foreground/25 hover:text-foreground"
+			aria-label={copyLabel(option)}
+			className="inline-flex min-h-10 max-w-full items-center gap-4 rounded-xl border border-border bg-card px-4 py-1.5 font-mono text-muted-foreground text-sm transition-colors hover:border-foreground/25 hover:text-foreground"
 		>
 			<span className="truncate">
 				<span aria-hidden className="mr-2 text-foreground/40">
 					$
 				</span>
-				{command}
+				{option.command}
 			</span>
 			<CopyIcon
 				size={16}
@@ -49,10 +64,10 @@ function CopyInstallCommand({ command }: { command: string }) {
 	);
 }
 
-function PackageManagerTabs({ className }: { className?: string }) {
+function InstallTabs({ className }: { className?: string }) {
 	return (
-		<TabsList aria-label="Package manager" className={className}>
-			{installCommands.map(({ id, label }) => (
+		<TabsList aria-label="Install method" className={className}>
+			{installOptions.map(({ id, label }) => (
 				<TabsTrigger key={id} value={id}>
 					{label}
 				</TabsTrigger>
@@ -68,42 +83,29 @@ export function InstallCommand({
 	className?: string;
 	layout?: "pill" | "panel";
 }) {
-	const [manager, setManager] = useState<Manager>("pnpm");
-	const command =
-		installCommands.find((item) => item.id === manager)?.command ??
-		installCommands[0].command;
+	const [selected, setSelected] = useState<InstallOption>(installOptions[0]);
 
 	function onValueChange(value: unknown) {
-		if (
-			value === "npm" ||
-			value === "pnpm" ||
-			value === "yarn" ||
-			value === "bun"
-		) {
-			setManager(value);
+		const next = installOptions.find((item) => item.id === value);
+		if (next) {
+			setSelected(next);
 		}
 	}
 
 	if (layout === "panel") {
 		return (
 			<Tabs
-				value={manager}
+				value={selected.id}
 				onValueChange={onValueChange}
 				className={cn("mt-6 w-full gap-0", className)}
 			>
 				<div className="overflow-hidden rounded-2xl bg-card">
 					<div className="flex items-center gap-2 border-b border-border/60 px-3 py-1 sm:gap-3 sm:px-4">
-						<span
-							aria-hidden
-							className="grid size-5 shrink-0 place-items-center rounded-md bg-foreground text-background"
-						>
-							<Terminal size={12} />
-						</span>
-						<PackageManagerTabs className="bg-muted" />
+						<InstallTabs className="bg-muted" />
 						<CopyButton
-							key={command}
-							text={command}
-							label={`Copy install command: ${command}`}
+							key={selected.id}
+							text={selected.command}
+							label={copyLabel(selected)}
 							className="ml-auto"
 						/>
 					</div>
@@ -112,7 +114,7 @@ export function InstallCommand({
 							<span aria-hidden className="mr-2 text-foreground/40 select-none">
 								$
 							</span>
-							{command}
+							{selected.command}
 							<span
 								aria-hidden
 								className="ml-1 inline-block h-3.5 w-0.5 translate-y-[2px] bg-foreground motion-safe:animate-caret-blink"
@@ -126,14 +128,17 @@ export function InstallCommand({
 
 	return (
 		<Tabs
-			value={manager}
+			value={selected.id}
 			onValueChange={onValueChange}
-			className={cn("mt-6 inline-flex items-center gap-3", className)}
+			className={cn(
+				"mt-6 inline-flex max-w-full items-center gap-2.5",
+				className,
+			)}
 		>
-			<PackageManagerTabs />
-			{installCommands.map(({ id, command: itemCommand }) => (
-				<TabsContent key={id} value={id}>
-					<CopyInstallCommand command={itemCommand} />
+			<InstallTabs />
+			{installOptions.map((option) => (
+				<TabsContent key={option.id} value={option.id}>
+					<CopyInstallCommand option={option} />
 				</TabsContent>
 			))}
 		</Tabs>

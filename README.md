@@ -32,6 +32,34 @@ pnpm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to see the web application.
 
+## Set up with a coding agent
+
+Give your coding agent this prompt:
+
+```
+Read https://github.com/arjunkambj/honeyicons/blob/main/docs/setup.md and set up @honeyicons/react in this project.
+```
+
+[docs/setup.md](docs/setup.md) walks the agent through installing the package and the
+skill, rendering icons with `Icon`, and checking the result.
+
+## Agent Skill
+
+`skills/honeyicons` is an [Agent Skill](https://agentskills.io) for coding
+agents. It looks up icons in the published icon index, so agents use real
+icon names, and it covers usage and best practices for `@honeyicons/react`.
+
+Install it with the [skills CLI](https://github.com/vercel-labs/skills) for
+Claude Code, Codex, Cursor, and other agents:
+
+```bash
+npx skills add arjunkambj/honeyicons
+```
+
+The skill reads `icons.json`, which `pnpm generate:icons` writes to
+`packages/react` and the package publishes. To search it directly, run
+`node skills/honeyicons/scripts/find-icon.mjs bell settings`.
+
 ## UI Customization
 
 React web apps in this stack share shadcn/ui primitives through `packages/ui`.
@@ -66,7 +94,7 @@ If you want to add app-specific blocks instead of shared primitives, run the sha
 
 ```
 honeyicons/
-├── icons/                 # SVG source (linear, bold, duotone)
+├── icons/                 # SVG source (linear, bold)
 ├── apps/
 │   └── web/               # Gallery site (Vite + TanStack Router, Cloudflare)
 ├── packages/
@@ -77,7 +105,7 @@ honeyicons/
     └── build-icons.ts     # svg → React components
 ```
 
-Icons live in `icons/{linear,bold,duotone}/{category}/name.svg` (24×24). An icon needs at least one variant. Category is the folder name. Optional tags go in `icons/meta.json`. Then:
+Icons live in `icons/{linear,bold}/{category}/name.svg` (24×24). An icon needs at least one variant. Category is the folder name. Optional tags go in `icons/meta.json`. Then:
 
 ```bash
 pnpm run generate:icons
@@ -85,10 +113,7 @@ pnpm run generate:icons
 
 Use descriptive kebab-case names without imported numeric suffixes. Keep related
 icons together with names such as `folder-add`, `volume-off`, and `chevron-down`.
-Renamed icons can declare `aliases` in `icons/meta.json` to generate deprecated
-React exports and retain search keywords without duplicating catalog entries.
-See [the naming migration](packages/react/MIGRATION.md) for renamed exports and
-the arrow-to-chevron migration.
+Renaming an icon renames its export; no deprecated aliases are generated.
 
 Third-party icon sources and adaptation details are recorded in
 [the React package notices](packages/react/NOTICE.md).

@@ -2,6 +2,7 @@ import { Check, Copy } from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
 import { cn } from "@honeyicons/ui/lib/utils";
 import { useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
 
 type TokenTone =
 	| "tag"
@@ -23,7 +24,7 @@ function tokenizeLine(line: string): Token[] {
 	let lastIndex = 0;
 	tokenPattern.lastIndex = 0;
 	for (const match of line.matchAll(tokenPattern)) {
-		const index = match.index ?? 0;
+		const { index } = match;
 		if (index > lastIndex) {
 			tokens.push({ text: line.slice(lastIndex, index), tone: "plain" });
 		}
@@ -87,7 +88,14 @@ export function CopyButton({
 	useEffect(() => () => window.clearTimeout(timeoutRef.current), []);
 
 	async function copy() {
-		await navigator.clipboard.writeText(text);
+		try {
+			await navigator.clipboard.writeText(text);
+		} catch {
+			toast.error(
+				"Could not copy. Check your browser’s clipboard permissions.",
+			);
+			return;
+		}
 		setCopied(true);
 		window.clearTimeout(timeoutRef.current);
 		timeoutRef.current = window.setTimeout(() => setCopied(false), 2000);
