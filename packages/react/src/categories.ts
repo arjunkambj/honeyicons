@@ -3,6 +3,7 @@ export const ICON_CATEGORIES = [
 	"actions",
 	"ai",
 	"arrows",
+	"charts",
 	"chat",
 	"editor",
 	"files",

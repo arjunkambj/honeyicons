@@ -1,5 +1,262 @@
 # Third-party icons
 
+The requested consistency review smooths `Puzzle`'s tab transitions, widens
+`Pause`'s rounded bars, simplifies `Fingerprint`'s tight interior curves, and
+cleans `Gift`'s bow and lid joins. `SlidersHorizontal`, `SlidersVertical`, and
+their Alt variants share perpendicular bar handles and rounded strokes:
+three tracks for the main icons and two for Alt, following the Hugeicons-derived
+main designs at the user’s request. The source licenses below continue to apply.
+
+## September 22, 2026 consistency pass
+
+The new non-brand filled outlines and the updated folder, bell, and user-status
+families use a baked 1.8-unit outline, matching the standard stroked icons.
+Their filled contours were offset and simplified while retaining silhouettes,
+cutouts, and rounded geometry; no second rendering stroke is applied. These
+weight adjustments supersede the original intake weight descriptions below.
+Figma's supplied brand geometry is unchanged.
+
+`ArchiveUp`, `IncomingCall`, and `OutgoingCall` now reuse the existing
+Hugeicons-derived curved arrowheads, with the geometry expanded into fills.
+The MIT notice below also applies to those reused arrow curves.
+The user-status family shares one adjusted head and closed rounded body, with
+free-standing filled action symbols and no circular status badges.
+
+The folder-tree connector and archive corner are smoothed; the map's internal
+lines finish inside its frame. Slider tracks align with their bar handles.
+Gamepad dots use native circles, face eyes use native ellipses, and
+circular head outlines use exact circular arcs.
+`TicketDiscount` is centered at 95% of its supplied size with the outline
+returned to 1.8 units, matching the surrounding icons' padding.
+
+`ResourcesAdd` uses `ResourcesAddIcon` from `@hugeicons/core-free-icons`
+4.3.5 under the MIT license below, preserving its smooth corner paths
+with standard Honeyicons stroke settings.
+
+`HandWave` preserves the supplied Solar **Hand Shake (Outline)** filled
+geometry, with a zero-area retrace removed. `Camera` uses Solar **Camera
+(Outline)** because the SVG labelled camera repeated HandWave. The Solar
+source and CC BY 4.0 license below apply.
+
+`Chair`, `Lightbulb`, `Briefcase`, and `Suitcase` retain the supplied Solar
+**Chair**, **Lightbulb**, **Case**, and **Suitcase (Outline)** filled geometry.
+Briefcase's redundant retraced segment is removed, and Suitcase uses native
+circles for its dots. The Solar source and CC BY 4.0 license below apply.
+`StarOff` retains the user-supplied filled outline and slash; the existing
+`Star` is reused without a duplicate.
+
+`Slash`, `Waves`, and `Strikethrough` adapt the corresponding exports from
+`@hugeicons/core-free-icons` 4.3.5 under the MIT license below. `Sad` combines
+its `Sad01Icon` frown with the Solar-derived `Smile` face and eyes; both source
+licenses apply. The existing `Smile` is reused. `MicrophoneOff` extends the
+existing microphone drawing with a slash and a gap through its intersecting
+curves. MicrophoneOff has wider slash clearances and one grille line for clarity.
+Stroked paths inherit standard Honeyicons settings.
+
+`Smile`, `Alarm`, `Album`, `Bug`, and `SimCard` preserve the supplied Solar
+**Smile Circle**, **Alarm**, **Album**, **Bug**, and **SIM Card Minimalistic
+(Outline)** filled geometry and cutouts. The Solar source and CC BY 4.0
+license below apply. Bug’s filled body curves and limb junctions were subsequently
+smoothed at the user’s request, retaining its cutouts and silhouette.
+
+`Battery` uses the supplied Solar **Battery Half Minimalistic (Outline)**
+filled geometry, with redundant retraced segments removed. The Solar source
+and CC BY 4.0 license below apply. `Truck`, `Bookmarks`, `Broadcast`, and `BookOpen`
+use the supplied SVGs. Truck and BookOpen retain their filled outlines and
+cutouts; BookOpen's retraced lower seam is closed smoothly. The duplicate front
+outline and overlapping edge in Bookmarks are removed. Broadcast uses a native circle
+for its center. Bookmarks and Broadcast inherit standard Honeyicons stroke settings.
+
+`Inbox`, `Palette`, `Calculator`, and `MapPin` preserve the supplied Solar
+**Inbox**, **Palette**, **Calculator Minimalistic**, and **Point On Map (Outline)**
+filled geometry and cutouts. The Solar source and CC BY 4.0 license below apply.
+`Activity` and `MapFolded` retain the user-supplied filled SVG geometry with
+`currentColor`; pasted attributes and a redundant collinear segment are removed.
+
+`Server` and `Printer` preserve the supplied Solar **Server Minimalistic**
+and **Printer 2 (Outline)** filled bodies, with native circles for their
+indicator dots. The Solar source and CC BY 4.0 license below apply. `PlayMini`
+uses the supplied compact play outline with standard Honeyicons stroke settings
+and redundant collinear points removed.
+
+`AtSign` preserves the user-supplied filled SVG and inner cutout, with
+`currentColor` for theme support.
+
+`Sparkles` uses the user-supplied SVG, preserving the small filled sparkle
+and large outlined sparkle. The outline inherits standard Honeyicons stroke
+settings; redundant pasted attributes and the repeated polygon endpoint are removed.
+
+`Link`, `CalendarSearch`, and `ThreeSquares` preserve the supplied Solar
+**Link Square**, **Calendar Search**, and **Three Squares (Outline)** filled
+geometry. Link is rotated −45 degrees around the center of the 24-unit grid.
+The Solar source and CC BY 4.0 license below apply.
+
+`CalendarAdd`, `CalendarRemove`, and `CalendarX` adapt the same Solar
+**Calendar Search (Outline)** frame, preserving its filled geometry and lower-right
+opening. The search symbol is replaced with a rounded plus, minus, or cross,
+respectively, with a 1.8-unit outline weight. The Solar source and CC BY 4.0
+license below apply.
+
+`TicketDiscount` preserves the user-supplied filled ticket and percentage
+slash. Its percentage dots use native circles at the original centers and radius.
+
+`SlidersVerticalAlt` and `SlidersHorizontalAlt` use two-track adaptations
+of the Hugeicons-derived main slider designs, with matching bar handles and
+rounded strokes. These replace the earlier Solar Tuning references at the
+user’s request. The Hugeicons MIT license below applies to these adaptations.
+
+`Figma`, `Database`, `Bluetooth`, and `EyeClosed` preserve the supplied Solar
+**Figma**, **Database**, **Bluetooth**, and **Eye Closed (Outline)** filled paths.
+Redundant retraced segments are removed from EyeClosed without changing its
+silhouette. The Solar source and CC BY 4.0 license below apply. `EyeOff` uses
+the latest user-supplied filled SVG, retaining the slash, cutouts, and opacity.
+
+`Stopwatch` and `Heading` use `StopWatchIcon` and `HeadingIcon` from
+`@hugeicons/core-free-icons` 4.3.5 under the MIT license reproduced below.
+They inherit Honeyicons stroke settings; the stopwatch dial uses a native circle.
+
+`Bell` preserves the supplied Solar **Bell (Outline)** filled geometry, under
+the Solar source and CC BY 4.0 license below. `BellOff` and `Import` use the
+user-supplied SVG paths; BellOff retains its filled outline and cutouts, while
+Import inherits standard Honeyicons stroke settings and reuses the existing
+curved diagonal arrowhead, with straight arms easing into a smooth corner.
+
+`Rocket`, `Move`, `History`, `CloudDownload`, and `CloudUpload`
+use `Rocket02Icon`, `MoveIcon`, `HistoryIcon`,
+`CloudDownloadIcon`, and `CloudUploadIcon` from `@hugeicons/core-free-icons`
+4.3.5 under the MIT license reproduced below. Source paths inherit standard
+Honeyicons stroke settings. Rocket is rotated 45 degrees clockwise around
+the center of the 24-unit grid, as requested, with a drawn flame replacing
+the exhaust lines. Cloud transfers reuse Honeyicons' curved arrowheads.
+
+`Keyboard` and `Flag` preserve the supplied Solar **Keyboard** and **Flag
+(Outline)** filled paths. Keyboard's round keys use native circles at the
+source positions and radius. The Solar source and CC BY 4.0 license below apply.
+
+`Map`, `List`, `ListFilter`, `ListDash`, and `QrCode` use the
+`MapIcon`, `ListIcon`, `ListFilterIcon`, `LeftToRightListDashIcon`, and
+`QrCodeIcon` exports from `@hugeicons/core-free-icons` 4.3.5 under the MIT
+license reproduced below. They inherit standard Honeyicons stroke settings;
+List's redundant stroked dot paths are replaced with native filled circles.
+
+`Phone`, `OutgoingCall`, `IncomingCall`, `InfoSquare`, `Heart`, and
+`ShieldAdd` use the supplied Solar **Phone**, **Outgoing Call**, **Incoming
+Call**, **Info Square**, **Heart**, and **Shield Plus (Outline)** paths.
+Filled geometry and cutouts are preserved. Retraced spikes are removed from
+the phone paths and InfoSquare's dot uses a native circle. `ExternalLink`
+uses the supplied **Square Top Down (Outline)** frame and the existing
+Honeyicons diagonal arrow curves at the user's request. Its arrowhead matches
+Import’s smooth corner, rotated to point outward. These use the Solar
+source and CC BY 4.0 license linked below; the arrow's Hugeicons-derived
+geometry is covered by the MIT notice below.
+
+`Power`, `Puzzle`, `Package`, `Bold`, `Italic`, `TextUnderline`, and
+`Crop` adapt the corresponding exports from `@hugeicons/core-free-icons`
+4.3.5 under the MIT license reproduced below. Paths inherit the standard
+Honeyicons stroke, rounded caps, and joins. Crop's interrupted arms are joined
+at the user's request to match the supplied layout reference.
+
+`Filter`, `ArchiveUp`, `Document`, `Notebook`, and `Table` use the supplied
+Solar **Filter**, **Archive Up Minimalistic**, **Document Text**, **Notebook
+Minimalistic**, and **Table (Outline)** paths. `Wifi` preserves the supplied
+**Wi-Fi (Outline)** arcs and uses a native circle for its dot. Filled geometry,
+cutouts, and baked weights are retained with `currentColor`. These use the
+[Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
+licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+`ClipboardAdd` uses the supplied Solar **Clipboard Add (Outline)**.
+`Clipboard`, `ClipboardCheck`, and `ClipboardRemove` share its filled body
+and clip. The plain variant omits the symbol, the check reuses the existing
+Honeyicons check curve, and the remove variant uses the supplied **Clipboard
+Minus** bar. The same Solar source and CC BY 4.0 license apply.
+
+`Upload`, `Download`, `Login`, `Reply`, `Forward`,
+`ListChecks`, and `Kanban` are drawn for the user's
+layout references with Honeyicons curves and standard stroke settings.
+Arrows and check marks reuse the existing Hugeicons-derived geometry covered
+by the MIT notice below. `Pause` is a new drawing with two rounded outlined
+bars on the 24-unit grid.
+
+`User`, `UserAdd`, `UserRemove`, `UserCheck`, and `UserX` share the Solar-derived user head
+and closed rounded bust, with newly drawn free-standing filled status symbols
+for the action variants. All use the same 1.8-unit filled outline weight.
+The circular status badges were removed at the user’s request.
+The Solar source and CC BY 4.0 license below apply.
+
+`SlidersHorizontal` and `SlidersVertical` use the corresponding exports from
+`@hugeicons/core-free-icons` 4.3.5 under the MIT license reproduced below.
+Their original three-track layouts and perpendicular bar handles are preserved,
+with the standard 1.8-unit stroke and rounded caps and joins. The two-track Alt
+variants share the same construction. Each horizontal variant is an exact
+rotation of its vertical counterpart.
+
+`Chat` uses `Chat01Icon` from `@hugeicons/core-free-icons` 4.3.5 under the MIT
+license reproduced below. Its source paths are preserved; component keys and
+per-path stroke weights are removed so they inherit the standard Honeyicons
+stroke and rounded caps and joins.
+
+`Rhombus`, `Diamond`, and `Connect` use the corresponding `RhombusIcon`,
+`DiamondIcon`, and `ConnectIcon` exports from `@hugeicons/core-free-icons` 4.3.5
+under the MIT license reproduced below. Source paths are preserved; component
+keys and per-path stroke weights are removed so they inherit the standard
+Honeyicons stroke and rounded caps and joins.
+
+`LayoutAlignBottom`, `LayoutAlignLeft`, `LayoutAlignRight`, `LayoutAlignTop`,
+and `Navigation` use the corresponding `LayoutAlign*Icon` and
+`Navigation03Icon` exports from `@hugeicons/core-free-icons` 4.3.5 under the
+MIT license reproduced below. Source paths are preserved; component keys and
+per-path stroke weights are removed so they inherit the standard Honeyicons
+stroke and rounded caps and joins.
+
+`Building` adapts [Hugeicons BuildingIcon](https://unpkg.com/@hugeicons/core-free-icons@4.3.5/dist/esm/BuildingIcon.js)
+from `@hugeicons/core-free-icons` 4.3.5 under the MIT license reproduced below.
+Its geometry is scaled to 90% around the center of the 24-unit grid, preserving
+the sloped roof and smooth corner curves. It uses a 1.8-unit stroke, rounded
+caps and joins, and inset wall endpoints at the shared baseline.
+
+`ChartAnalysis`, `Analytics`, `Send`, and `MarketAnalysis` use the
+`ChartAnalysisIcon`, `Analytics03Icon`, `SentIcon`, and `MarketAnalysisIcon`
+exports from `@hugeicons/core-free-icons` 4.3.5 under the MIT license reproduced
+below. Source paths are preserved; component keys and per-path stroke weights
+are removed so they inherit the standard Honeyicons stroke and rounded caps
+and joins.
+
+`GripHorizontal` and `GripVertical` adapt the corresponding Hugeicons exports
+from version 4.3.5, replacing overlapping dot paths with filled circles while
+preserving their centers and default rendered diameter. `TextAlignLeft`,
+`TextAlignCenter`, `TextAlignRight`, `TextAlignJustifyRight`, and
+`TextAlignJustifyLeft` retain the corresponding Hugeicons 4.3.5 line geometry
+with standard Honeyicons stroke settings. The MIT license below applies to
+these icons.
+
+`Eye` uses the user-supplied Solar **Eye (Outline)** with filled geometry,
+cutouts, and baked outline weight preserved. It uses the Solar source and
+CC BY 4.0 license linked below; unused source attributes are removed.
+
+`MapArrowLeft`, `MapArrowRight`, `MapArrowDown`, `MapArrowUp`, `Globe`, and `Gamepad`
+use the corresponding user-supplied **Map Arrow**, **Globe**, and **Gamepad (Outline)**
+icons from the [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
+licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Their filled outlines, cutouts, curves, and baked weights are preserved with
+`currentColor`. Source attributes and zero-area backtracking segments in the
+map arrows are removed without changing their visible geometry.
+
+`Folder`, `FolderOpen`, and `FolderWithFiles` use the user-supplied Solar
+**Folder**, **Folder Open**, and **Folder With Files (Outline)** paths, with
+filled geometry, cutouts, and baked weights preserved. `Folders` uses the
+supplied **Folders (Outline)** with a matching rounded dash on the front folder.
+`FolderAdd` adds a rounded plus to the new base and omits the dash. `FolderTree` uses wider, smaller
+versions of its sloping tab and smooth silhouette, with simplified details and
+adjusted cutouts for legibility. These replace the previous folder drawings
+and use the Solar source and CC BY 4.0 license linked above.
+`SidebarTop` and `SidebarBottom` extend the existing Solar-derived sidebar
+family with horizontal dividers.
+
+`TransferHorizontal` and `TransferVertical` adapt the supplied Solar
+**Transfer Horizontal** and **Transfer Vertical** concepts using the existing
+Honeyicons arrow curves, complete rounded arrowheads, and 1.8-unit strokes,
+as requested. They use the same Solar source and CC BY 4.0 license.
+
 `Headphones`, `Clapperboard`, `VerifiedCheck`, `Cart`, `Share`,
 `Email`, and `Repeat` use the user-supplied Solar **Headphones
 Round**, **Clapperboard Play**, **Verified Check**, **Cart**, **Share**,
@@ -56,13 +313,13 @@ smooth curves at the inner notches where the head meets the shaft.
 
 `File`, `FileText`, `FileCode`, `GitBranch`, `GitDiff`, `GitFork`, `GitGraph`,
 `GitPullRequest`, `Home`, `HomeAngle`, `Calendar`, `CalendarMark`,
-`CalendarAdd`, `Widget`, `WidgetAdd`, `WidgetSquare`, `WidgetSquareAdd`,
+`Widget`, `WidgetAdd`, `WidgetSquare`, `WidgetSquareAdd`,
 `MusicNote`, `Quote`, `FolderTree`, `CartBag`, `CartLarge`, `Bolt`,
 `Microphone`, `VideoCamera`, `Lock`, `LockOpen`, `Key`, `ImageAdd`, `ImageEdit`,
 `ClapperboardText`, `Pip`, `Ticket`, `VideoFrame`, `Bookmark`, `FileAdd`, `FileRemove`, and `ArchiveAlt` are redrawn from the
 user-supplied **File**, **File Text**, **File Code**, **Git Branch**,
 **Git Diff**, **Git Fork**, **Git Graph**, **Git Pull Request**, **Home**,
-**Home Angle**, **Calendar**, **Calendar Mark**, **Calendar Add**, **Widget 3**,
+**Home Angle**, **Calendar**, **Calendar Mark**, **Widget 3**,
 **Widget**, **Widget Add**, **Music Note 4**, **Quote**, **Folder Tree**,
 **Bag 3**, **Cart Large**, **Bolt**, **Microphone**,
 **Videocamera Record**, **Lock Keyhole Minimalistic**, **Lock Keyhole
@@ -276,25 +533,15 @@ preserving the overlapping shapes and their proportions. It inherits the
 standard Honeyicons stroke, caps, and joins. The MIT notice below also applies
 to it.
 
-`Bell` is adapted from `BellIcon` in `@hugeicons/core-free-icons` version 4.3.0.
-It preserves the original silhouette, smooth crown and lower corner curves on
-the 24-unit grid, and inherits the standard Honeyicons 1.5-unit stroke and
-rounded caps and joins. The MIT notice below also applies to it.
-
 `Sun` is adapted from `Sun01Icon` in `@hugeicons/core-free-icons` version 4.3.0.
 It retains its original geometry, including its eight dotted rays, and inherits
 the standard Honeyicons stroke, caps, and joins. The MIT notice below also
 applies to it.
 
-`Computer`, `Folder`, `FolderOpen`, and `FolderAdd` are adapted from the matching
-`ComputerIcon`, `Folder01Icon`, `Folder02Icon`, and `FolderAddIcon` exports in
-`@hugeicons/core-free-icons` version 4.3.0. Their geometry is scaled uniformly to
-90% around the center of the 24-unit grid, preserving their original shapes and
-details while inheriting the standard Honeyicons stroke, caps, and joins.
-Computer was subsequently updated at the user's request with softer screen
-corner curves and a single centered stem and rounded horizontal base, retaining
-the same overall bounds. The
-MIT notice below also applies to them.
+`Computer` adapts `ComputerIcon` from `@hugeicons/core-free-icons` 4.3.0.
+Its geometry was scaled to 90% around the center of the 24-unit grid, then
+updated with softer screen corner curves, a centered stem, and a rounded
+horizontal base. The MIT notice below applies to it.
 
 `ArrowDownLeft`, `ArrowDownRight`, `ArrowUpLeft`, and `ArrowUpRight` are adapted
 from the corresponding `Arrow*01Icon` exports; `ArrowDown`, `ArrowUp`,

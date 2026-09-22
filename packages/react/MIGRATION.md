@@ -1,6 +1,20 @@
 # Icon naming migration
 
-Canonical icon names now describe their shapes and use descriptive kebab-case SVG filenames. React exports use PascalCase. All 164 icons retain their geometry and available variants.
+Canonical icon names describe their shapes and use descriptive kebab-case SVG filenames. React exports use PascalCase. Renames preserve icon geometry and available variants.
+
+## September 22 additions
+
+These names now describe the depicted shapes more clearly. Previous React exports remain available as deprecated aliases, and the previous names remain searchable in the catalog.
+
+| Previous export | Canonical export |
+| --------------- | ---------------- |
+| `EyeOffAlt`     | `EyeClosed`      |
+| `HandShake`     | `HandWave`       |
+| `MapAlt`        | `MapPin`         |
+| `Radar`         | `Broadcast`      |
+| `Save`          | `Bookmarks`      |
+| `Sent`          | `Send`           |
+| `Sim`           | `SimCard`        |
 
 ## Arrow imports require attention
 

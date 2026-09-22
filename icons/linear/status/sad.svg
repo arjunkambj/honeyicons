@@ -1,0 +1,6 @@
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M1.0999999999999996 12a10.9 10.9 0 1 0 21.8 0a10.9 10.9 0 1 0 -21.8 0Zm1.8 0a9.1 9.1 0 1 1 18.2 0a9.1 9.1 0 1 1 -18.2 0Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+  <ellipse cx="15" cy="10.5" rx="1" ry="1.5" fill="currentColor" />
+  <ellipse cx="9" cy="10.5" rx="1" ry="1.5" fill="currentColor" />
+  <path d="M8 16C8.91212 14.7856 10.3643 14 12 14C13.6357 14 15.0879 14.7856 16 16" stroke="currentColor" />
+</svg>
