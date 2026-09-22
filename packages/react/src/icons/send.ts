@@ -7,6 +7,3 @@ export const Send = /* @__PURE__ */ createIcon("Send", {
 		["path", { d: "M11.4999 12.5L14.9999 9", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use Send instead. */
-export const Sent = Send;

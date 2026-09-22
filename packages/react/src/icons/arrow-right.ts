@@ -7,6 +7,3 @@ export const ArrowRight = /* @__PURE__ */ createIcon("ArrowRight", {
 		["path", { d: "M13 18C13 18 19 13.5811 19 12C19 10.4188 13 6 13 6", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use ArrowRight instead. */
-export const ArrowRight02 = ArrowRight;

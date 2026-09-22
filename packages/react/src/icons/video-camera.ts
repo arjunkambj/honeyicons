@@ -8,6 +8,3 @@ export const VideoCamera = /* @__PURE__ */ createIcon("VideoCamera", {
 		["circle", { cx: "12", cy: "8.75", r: "1.5", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use VideoCamera instead. */
-export const Videocamera = VideoCamera;

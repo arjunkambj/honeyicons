@@ -7,6 +7,3 @@ export const ChevronsDown = /* @__PURE__ */ createIcon("ChevronsDown", {
 		["path", { d: "M17.9997 5.50005C17.9997 5.50005 13.5807 11.5 11.9996 11.5C10.4185 11.5 5.99966 5.5 5.99966 5.5", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use ChevronsDown instead. */
-export const ArrowDownDouble = ChevronsDown;

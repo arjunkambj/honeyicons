@@ -14,6 +14,8 @@
 		"**/packages/react/src/icons/**",
 		"packages/react/src/catalog.ts",
 		"packages/react/src/categories.ts",
+		"packages/react/src/registry.ts",
+		"packages/react/icons.json",
 		"**/pnpm-lock.yaml",
 		"**/*.svg"
 	]

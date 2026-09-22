@@ -1,6 +1,6 @@
 {
 	"name": "@honeyicons/react",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Carefully crafted SVG icons for React, with TypeScript support.",
 	"keywords": [
 		"icon-set",
@@ -19,8 +19,8 @@
 	},
 	"files": [
 		"dist",
-		"NOTICE.md",
-		"MIGRATION.md"
+		"icons.json",
+		"NOTICE.md"
 	],
 	"type": "module",
 	"sideEffects": false,
@@ -37,6 +37,7 @@
 			"import": "./dist/catalog.js",
 			"default": "./dist/catalog.js"
 		},
+		"./icons.json": "./icons.json",
 		"./package.json": "./package.json"
 	},
 	"publishConfig": {

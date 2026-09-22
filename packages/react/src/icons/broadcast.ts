@@ -10,6 +10,3 @@ export const Broadcast = /* @__PURE__ */ createIcon("Broadcast", {
 		["path", { d: "M7.2 8.4C6.45 9.4 6 10.65 6 12C6 13.35 6.45 14.6 7.2 15.6", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use Broadcast instead. */
-export const Radar = Broadcast;

@@ -8,6 +8,3 @@ export const VolumeHigh = /* @__PURE__ */ createIcon("VolumeHigh", {
 		["path", { d: "M17.85 9.3C17.85 9.3 18.3 10.11 18.3 12C18.3 13.89 17.85 14.7 17.85 14.7", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use VolumeHigh instead. */
-export const VolumeLoud = VolumeHigh;

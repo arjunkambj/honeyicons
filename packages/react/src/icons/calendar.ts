@@ -13,6 +13,3 @@ export const Calendar = /* @__PURE__ */ createIcon("Calendar", {
 		["circle", { cx: "16.5", cy: "17", r: "1", fill: "currentColor", stroke: "none" }],
 	],
 });
-
-/** @deprecated Use Calendar instead. */
-export const Calendar03 = Calendar;

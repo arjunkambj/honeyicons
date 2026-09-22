@@ -8,6 +8,3 @@ export const SpinnerArc = /* @__PURE__ */ createIcon("SpinnerArc", {
 		["path", { d: "M21 12a9 9 0 1 1-9-9", stroke: "currentColor", "data-honeyicons-spinner-arc": "" }],
 	],
 });
-
-/** @deprecated Use SpinnerArc instead. */
-export const SpinnerLarge = SpinnerArc;

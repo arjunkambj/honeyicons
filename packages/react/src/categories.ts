@@ -17,8 +17,6 @@ export const ICON_CATEGORIES = [
 	"objects",
 	"security",
 	"settings",
-	"shapes",
-	"spinner",
 	"status",
 	"time",
 	"user",

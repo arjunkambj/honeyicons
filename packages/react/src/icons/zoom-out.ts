@@ -7,6 +7,3 @@ export const ZoomOut = /* @__PURE__ */ createIcon("ZoomOut", {
 		["path", { d: "M17.5962 17.5962L21 21M9.3 11.55h4.5", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use ZoomOut instead. */
-export const SearchMinus = ZoomOut;

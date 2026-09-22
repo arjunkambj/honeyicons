@@ -1,4 +1,4 @@
-export const ICON_VARIANTS = ["linear", "bold", "duotone"] as const;
+export const ICON_VARIANTS = ["linear", "bold"] as const;
 
 export type IconVariant = (typeof ICON_VARIANTS)[number];
 

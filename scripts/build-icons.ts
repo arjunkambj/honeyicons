@@ -1,19 +1,28 @@
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
-const VARIANTS = ["linear", "bold", "duotone"] as const;
+const VARIANTS = ["linear", "bold"] as const;
 type Variant = (typeof VARIANTS)[number];
 
 type IconNode = [tag: string, attrs: Record<string, string>][];
-type IconMeta = Record<string, { tags?: string[]; aliases?: string[] }>;
-type IconSource = { name: string; category: string };
+type IconMeta = Record<string, { tags?: string[] }>;
+type IconSource = { name: string; category: string; variants: Variant[] };
+type IconIndexEntry = {
+	name: string;
+	export: string;
+	category: string;
+	variants: Variant[];
+	tags: string[];
+};
 
 const root = join(import.meta.dirname, "..");
 const iconsDir = join(root, "icons");
 const outDir = join(root, "packages/react/src/icons");
 const catalogPath = join(root, "packages/react/src/catalog.ts");
 const categoriesPath = join(root, "packages/react/src/categories.ts");
+const registryPath = join(root, "packages/react/src/registry.ts");
 const metaPath = join(iconsDir, "meta.json");
+const iconIndexPath = join(root, "packages/react/icons.json");
 
 const STRIP_ATTRS = new Set(["xmlns", "class", "className"]);
 
@@ -132,10 +141,11 @@ function parseSvg(svg: string, file: string) {
 	if (end === -1) {
 		throw new Error(`${file}: missing </svg>`);
 	}
-	const rootAttrs = parseAttrs(open[1]);
-	const viewBox = rootAttrs.viewBox ?? "0 0 24 24";
+	const { viewBox } = parseAttrs(open[1]);
 	if (viewBox !== "0 0 24 24") {
-		throw new Error(`${file}: viewBox must be "0 0 24 24", got "${viewBox}"`);
+		throw new Error(
+			`${file}: viewBox must be "0 0 24 24", got ${JSON.stringify(viewBox)}`,
+		);
 	}
 	const nodes = parseNodes(svg.slice(start, end), file);
 	if (nodes.length === 0) {
@@ -163,16 +173,8 @@ function serializeNodes(nodes: IconNode) {
 		.join(",\n")},\n\t]`;
 }
 
-async function listVariantDir(variant: Variant) {
-	const dir = join(iconsDir, variant);
-	try {
-		return await readdir(dir, { withFileTypes: true });
-	} catch (error) {
-		if (error instanceof Error && "code" in error && error.code === "ENOENT") {
-			return [];
-		}
-		throw error;
-	}
+function listVariantDir(variant: Variant) {
+	return readdir(join(iconsDir, variant), { withFileTypes: true });
 }
 
 async function listCategories() {
@@ -197,7 +199,7 @@ async function listCategories() {
 }
 
 async function listIcons(): Promise<IconSource[]> {
-	const seen = new Map<string, string>();
+	const seen = new Map<string, IconSource>();
 	for (const variant of VARIANTS) {
 		const entries = await listVariantDir(variant);
 		for (const entry of entries) {
@@ -207,27 +209,28 @@ async function listIcons(): Promise<IconSource[]> {
 				if (!file.endsWith(".svg")) continue;
 				const name = file.slice(0, -4);
 				const existing = seen.get(name);
-				if (existing && existing !== entry.name) {
+				if (!existing) {
+					seen.set(name, { name, category: entry.name, variants: [variant] });
+				} else if (existing.category === entry.name) {
+					existing.variants.push(variant);
+				} else {
 					throw new Error(
-						`Duplicate icon name "${name}" in ${existing} and ${entry.name}. Names must be unique across categories.`,
+						`Duplicate icon name "${name}" in ${existing.category} and ${entry.name}. Names must be unique across categories.`,
 					);
 				}
-				seen.set(name, entry.name);
 			}
 		}
 	}
 
-	return [...seen.entries()]
-		.map(([name, category]) => ({ name, category }))
-		.toSorted(
-			(a, b) =>
-				a.name.localeCompare(b.name) || a.category.localeCompare(b.category),
-		);
+	return [...seen.values()].toSorted((a, b) => a.name.localeCompare(b.name));
 }
 
 async function main() {
 	const categories = await listCategories();
 	const icons = await listIcons();
+	if (icons.length === 0) {
+		throw new Error(`No SVGs found under ${iconsDir}`);
+	}
 
 	const meta = JSON.parse(await readFile(metaPath, "utf8")) as IconMeta;
 	const iconNames = new Set(icons.map((icon) => icon.name));
@@ -243,62 +246,48 @@ async function main() {
 			`Warning: ${untagged.length} icons have no tags in icons/meta.json: ${untagged.map((icon) => icon.name).join(", ")}`,
 		);
 	}
-	const exportNames = new Set(icons.map((icon) => toPascalCase(icon.name)));
-	for (const icon of icons) {
-		for (const alias of meta[icon.name]?.aliases ?? []) {
-			const aliasPascal = toPascalCase(alias);
-			if (exportNames.has(aliasPascal)) {
-				throw new Error(
-					`Duplicate icon export "${aliasPascal}" for ${icon.name}`,
-				);
-			}
-			exportNames.add(aliasPascal);
+	const exportNames = new Set([
+		"Icon",
+		"IconProps",
+		"IconName",
+		"IconVariantMap",
+		"HoneyIcon",
+		"HoneyIconProps",
+		"IconNode",
+		"IconNodeMap",
+		"IconVariant",
+		"IconCategory",
+	]);
+	for (const { name } of icons) {
+		if (!/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(name)) {
+			throw new Error(`Invalid icon name "${name}"; use lowercase kebab-case`);
 		}
+		const exportName = toPascalCase(name);
+		if (exportNames.has(exportName)) {
+			throw new Error(`Duplicate icon export "${exportName}" for ${name}`);
+		}
+		exportNames.add(exportName);
 	}
-
 	await rm(outDir, { recursive: true, force: true });
 	await mkdir(outDir, { recursive: true });
 
 	const barrelExports: string[] = [];
 	const catalogImports: string[] = [];
 	const catalogEntries: string[] = [];
+	const registryEntries: string[] = [];
+	const variantEntries: string[] = [];
+	const iconIndex: IconIndexEntry[] = [];
 
 	for (const icon of icons) {
 		const pascal = toPascalCase(icon.name);
-		const aliases = meta[icon.name]?.aliases ?? [];
-		const aliasExports = aliases.map((alias) => toPascalCase(alias));
-		const aliasDeclarations = aliasExports
-			.map(
-				(alias) =>
-					`/** @deprecated Use ${pascal} instead. */\nexport const ${alias} = ${pascal};\n`,
-			)
-			.join("\n");
-		const relative = `${icon.category}/${icon.name}.svg`;
-		const nodes: Partial<Record<Variant, IconNode>> = {};
-		for (const variant of VARIANTS) {
-			const file = join(iconsDir, variant, relative);
-			try {
-				const svg = await readFile(file, "utf8");
-				nodes[variant] = parseSvg(svg, `${variant}/${relative}`);
-			} catch (error) {
-				if (
-					error instanceof Error &&
-					"code" in error &&
-					error.code === "ENOENT"
-				) {
-					continue;
-				}
-				throw error;
-			}
+		const nodeEntries: string[] = [];
+		for (const variant of icon.variants) {
+			const relative = `${variant}/${icon.category}/${icon.name}.svg`;
+			const svg = await readFile(join(iconsDir, relative), "utf8");
+			nodeEntries.push(
+				`\t${variant}: ${serializeNodes(parseSvg(svg, relative))}`,
+			);
 		}
-
-		if (VARIANTS.every((variant) => !nodes[variant])) {
-			throw new Error(`Missing SVG for ${relative}`);
-		}
-
-		const nodeEntries = VARIANTS.filter((variant) => nodes[variant]).map(
-			(variant) => `\t${variant}: ${serializeNodes(nodes[variant] ?? [])}`,
-		);
 
 		const source = `/* Generated by scripts/build-icons.ts. Do not edit. */
 import { createIcon } from "../create-icon.js";
@@ -306,39 +295,48 @@ import { createIcon } from "../create-icon.js";
 export const ${pascal} = /* @__PURE__ */ createIcon(${JSON.stringify(pascal)}, {
 ${nodeEntries.join(",\n")},
 });
-${aliasDeclarations ? `\n${aliasDeclarations}` : ""}`;
+`;
 		await writeFile(join(outDir, `${icon.name}.ts`), source);
-		barrelExports.push(
-			`export { ${[pascal, ...aliasExports].join(", ")} } from "./${icon.name}.js";`,
-		);
+		barrelExports.push(`export { ${pascal} } from "./${icon.name}.js";`);
 		catalogImports.push(`import { ${pascal} } from "./icons/${icon.name}.js";`);
+		registryEntries.push(`\t${JSON.stringify(icon.name)}: ${pascal},`);
+		variantEntries.push(
+			`\t${JSON.stringify(icon.name)}: ${icon.variants
+				.map((variant) => JSON.stringify(variant))
+				.join(" | ")};`,
+		);
 
+		const tags = meta[icon.name]?.tags ?? [];
+		const { variants } = icon;
 		catalogEntries.push(
 			`	{
 		name: ${JSON.stringify(icon.name)},
 		pascalName: ${JSON.stringify(pascal)},
 		category: ${JSON.stringify(icon.category)},
-		tags: ${JSON.stringify([...new Set([...(meta[icon.name]?.tags ?? []), ...aliases])])},
-		variants: ${JSON.stringify(VARIANTS.filter((item) => nodes[item]))},
+		tags: ${JSON.stringify(tags)},
+		variants: ${JSON.stringify(variants)},
 		component: ${pascal},
 	}`,
 		);
+		iconIndex.push({
+			name: icon.name,
+			export: pascal,
+			category: icon.category,
+			variants,
+			tags,
+		});
 	}
 
 	const barrel = `/* Generated by scripts/build-icons.ts. Do not edit. */
-${barrelExports.length > 0 ? `${barrelExports.join("\n")}\n` : "export {};\n"}`;
+${barrelExports.join("\n")}
+`;
 
-	const catalogImportsBlock =
-		catalogImports.length > 0 ? `\n${catalogImports.join("\n")}` : "";
-	const catalogArray =
-		catalogEntries.length > 0 ? `[\n${catalogEntries.join(",\n")},\n]` : "[]";
-	const categoriesLiteral =
-		categories.length > 0
-			? `\n${categories.map((item) => `\t${JSON.stringify(item)},`).join("\n")}\n`
-			: "";
+	const catalogImportsBlock = `\n${catalogImports.join("\n")}`;
 
 	const categoriesSource = `/* Generated by scripts/build-icons.ts. Do not edit. */
-export const ICON_CATEGORIES = [${categoriesLiteral}] as const;
+export const ICON_CATEGORIES = [
+${categories.map((item) => `\t${JSON.stringify(item)},`).join("\n")}
+] as const;
 
 export type IconCategory = (typeof ICON_CATEGORIES)[number];
 `;
@@ -360,12 +358,30 @@ export type CatalogItem = {
 	component: HoneyIcon;
 };
 
-export const catalog: CatalogItem[] = ${catalogArray};
+export const catalog: CatalogItem[] = [
+${catalogEntries.join(",\n")},
+];
+`;
+
+	const registry = `/* Generated by scripts/build-icons.ts. Do not edit. */
+import type { HoneyIcon } from "./create-icon.js";${catalogImportsBlock}
+
+export const icons = {
+${registryEntries.join("\n")}
+} satisfies Record<string, HoneyIcon>;
+
+export type IconName = keyof typeof icons;
+
+export type IconVariantMap = {
+${variantEntries.join("\n")}
+};
 `;
 
 	await writeFile(join(outDir, "index.ts"), barrel);
+	await writeFile(registryPath, registry);
 	await writeFile(categoriesPath, categoriesSource);
 	await writeFile(catalogPath, catalog);
+	await writeFile(iconIndexPath, `${JSON.stringify(iconIndex, null, "\t")}\n`);
 	console.log(
 		`Generated ${icons.length} icons across ${categories.length} categories`,
 	);

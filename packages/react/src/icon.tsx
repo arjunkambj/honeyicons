@@ -1,94 +1,33 @@
-import { createElement, forwardRef, type SVGProps } from "react";
+import {
+	type ForwardedRef,
+	forwardRef,
+	type ReactElement,
+	type RefAttributes,
+} from "react";
 
-import type { IconNode, IconVariant } from "./types.js";
+import type { HoneyIconProps } from "./create-icon.js";
+import { type IconName, type IconVariantMap, icons } from "./registry.js";
 
-export type IconProps = Omit<
-	SVGProps<SVGSVGElement>,
-	"ref" | "strokeWidth" | "width" | "height"
-> & {
-	iconNode: IconNode;
-	variant?: IconVariant;
-	size?: number | string;
-	strokeWidth?: number;
-	secondaryColor?: string;
-	secondaryOpacity?: number;
-	title?: string;
-};
-
-function paintsStroke(attrs: Record<string, string>) {
-	const stroke = attrs.stroke;
-	return Boolean(stroke && stroke !== "none");
-}
-
-function paintsFill(attrs: Record<string, string>) {
-	const fill = attrs.fill;
-	return Boolean(fill && fill !== "none");
-}
-
-export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
+export type IconProps<Name extends IconName = IconName> = Omit<
+	HoneyIconProps,
+	"variant"
+> &
 	{
-		iconNode,
-		variant: _variant = "linear",
-		size = 24,
-		color = "currentColor",
-		strokeWidth = 1.8,
-		secondaryColor,
-		secondaryOpacity = 0.2,
-		title,
-		className,
-		style,
-		children,
-		...props
-	},
-	ref,
+		[Key in Name]: { icon: Key; variant?: IconVariantMap[Key] };
+	}[Name];
+
+type IconComponent = (<Name extends IconName>(
+	props: IconProps<Name> & RefAttributes<SVGSVGElement>,
+) => ReactElement) & { displayName?: string };
+
+export const Icon = forwardRef(function Icon(
+	{ icon, ...props }: IconProps,
+	ref: ForwardedRef<SVGSVGElement>,
 ) {
-	// Solar linear icons are filled outlines. A root stroke would draw a
-	// second outline on top of the already-baked weight.
-	const hasStroke = iconNode.some(([, attrs]) => paintsStroke(attrs));
-	const hasAccessibleName = Boolean(
-		title || props["aria-label"] || props["aria-labelledby"],
-	);
-
-	return (
-		<svg
-			ref={ref}
-			xmlns="http://www.w3.org/2000/svg"
-			width={size}
-			height={size}
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke={hasStroke ? "currentColor" : undefined}
-			strokeWidth={hasStroke ? strokeWidth : undefined}
-			strokeLinecap={hasStroke ? "round" : undefined}
-			strokeLinejoin={hasStroke ? "round" : undefined}
-			color={color}
-			className={className}
-			style={style}
-			role={hasAccessibleName ? "img" : "presentation"}
-			aria-hidden={hasAccessibleName ? undefined : true}
-			aria-label={title}
-			{...props}
-		>
-			{title ? <title>{title}</title> : null}
-			{iconNode.map(([tag, attrs], index) => {
-				const isSecondary = attrs["data-slot"] === "secondary";
-				if (isSecondary) {
-					return createElement(tag, {
-						...attrs,
-						stroke: "none",
-						fill: secondaryColor ?? attrs.fill ?? "currentColor",
-						opacity: secondaryColor ? "1" : String(secondaryOpacity),
-						key: index,
-					});
-				}
-
-				const mapped =
-					hasStroke && paintsFill(attrs) && !paintsStroke(attrs)
-						? { ...attrs, stroke: "none" }
-						: attrs;
-				return createElement(tag, { ...mapped, key: index });
-			})}
-			{children}
-		</svg>
-	);
-});
+	// Names can come from runtime data, so reject anything outside the registry.
+	if (!Object.hasOwn(icons, icon)) {
+		throw new Error(`Unknown icon "${icon}"`);
+	}
+	const Component = icons[icon];
+	return <Component ref={ref} {...props} />;
+}) as IconComponent;

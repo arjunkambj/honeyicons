@@ -7,6 +7,3 @@ export const CheckDouble = /* @__PURE__ */ createIcon("CheckDouble", {
 		["path", { d: "M22 7L13 16.3889C12.7274 16.6733 12.5911 16.8155 12.444 16.8915C12.1642 17.0362 11.8358 17.0362 11.556 16.8915C11.409 16.8155 11.2726 16.6733 11 16.3889", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use CheckDouble instead. */
-export const CheckCheck = CheckDouble;

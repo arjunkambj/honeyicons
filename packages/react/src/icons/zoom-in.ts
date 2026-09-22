@@ -7,6 +7,3 @@ export const ZoomIn = /* @__PURE__ */ createIcon("ZoomIn", {
 		["path", { d: "M17.5962 17.5962L21 21M9.3 11.55h4.5M11.55 9.3v4.5", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use ZoomIn instead. */
-export const SearchPlus = ZoomIn;

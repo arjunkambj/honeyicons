@@ -7,6 +7,3 @@ export const SquarePen = /* @__PURE__ */ createIcon("SquarePen", {
 		["path", { d: "M15.11082 5.01372l1.21108-1.21109a2.74037 2.74037 0 0 1 3.87547 3.87547L12.20422 15.67124l-4.84432 0.96886 0.96886-4.84432 6.78206-6.78206Zm0 0l3.87546 3.87546", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use SquarePen instead. */
-export const SendMessage = SquarePen;

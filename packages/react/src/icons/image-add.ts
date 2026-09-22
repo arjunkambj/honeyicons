@@ -8,6 +8,3 @@ export const ImageAdd = /* @__PURE__ */ createIcon("ImageAdd", {
 		["path", { d: "M18.5 2.75V8.25M15.75 5.5H21.25", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use ImageAdd instead. */
-export const ImagesAdd = ImageAdd;

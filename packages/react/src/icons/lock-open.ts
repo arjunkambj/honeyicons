@@ -8,6 +8,3 @@ export const LockOpen = /* @__PURE__ */ createIcon("LockOpen", {
 		["path", { d: "M12 14.25V17.75", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use LockOpen instead. */
-export const LockUnlock = LockOpen;

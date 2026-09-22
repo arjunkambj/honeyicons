@@ -7,6 +7,3 @@ export const Bookmarks = /* @__PURE__ */ createIcon("Bookmarks", {
 		["path", { d: "M16 8.98987V20.3499C16 21.7999 14.96 22.4099 13.69 21.7099L9.76001 19.5199C9.34001 19.2899 8.65999 19.2899 8.23999 19.5199L4.31 21.7099C3.04 22.4099 2 21.7999 2 20.3499V8.98987C2 7.27987 3.39999 5.87988 5.10999 5.87988H12.89C14.6 5.87988 16 7.27987 16 8.98987Z", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use Bookmarks instead. */
-export const Save = Bookmarks;

@@ -1,0 +1,5008 @@
+[
+	{
+		"name": "activity",
+		"export": "Activity",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"activity",
+			"pulse",
+			"wave",
+			"monitor",
+			"heartbeat"
+		]
+	},
+	{
+		"name": "add",
+		"export": "Add",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"plus",
+			"new",
+			"create",
+			"solar"
+		]
+	},
+	{
+		"name": "alarm",
+		"export": "Alarm",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"alarm",
+			"clock",
+			"reminder",
+			"time"
+		]
+	},
+	{
+		"name": "album",
+		"export": "Album",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"album",
+			"photos",
+			"gallery",
+			"images"
+		]
+	},
+	{
+		"name": "alert-triangle",
+		"export": "AlertTriangle",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"warning",
+			"alert",
+			"triangle",
+			"error",
+			"danger-triangle",
+			"solar",
+			"danger"
+		]
+	},
+	{
+		"name": "analytics",
+		"export": "Analytics",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"analytics",
+			"analytics-03",
+			"chart",
+			"bars",
+			"statistics",
+			"data",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "anthropic",
+		"export": "Anthropic",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"claude",
+			"ai",
+			"brand"
+		]
+	},
+	{
+		"name": "antigravity",
+		"export": "Antigravity",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"code",
+			"editor",
+			"brand"
+		]
+	},
+	{
+		"name": "archive",
+		"export": "Archive",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"library",
+			"collection",
+			"stack",
+			"archive",
+			"files",
+			"solar",
+			"pallet"
+		]
+	},
+	{
+		"name": "archive-alt",
+		"export": "ArchiveAlt",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"archive",
+			"box",
+			"storage",
+			"done",
+			"check",
+			"archive-minimalistic",
+			"solar"
+		]
+	},
+	{
+		"name": "archive-up",
+		"export": "ArchiveUp",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"archive",
+			"archive-up-minimalistic",
+			"unarchive",
+			"restore",
+			"box",
+			"up",
+			"solar"
+		]
+	},
+	{
+		"name": "arrow-down",
+		"export": "ArrowDown",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"arrow",
+			"down",
+			"direction",
+			"navigation",
+			"arrow-down-02",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "arrow-down-left",
+		"export": "ArrowDownLeft",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"arrow",
+			"down-left",
+			"direction",
+			"navigation",
+			"arrow-down-left-01",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "arrow-down-right",
+		"export": "ArrowDownRight",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"arrow",
+			"down-right",
+			"direction",
+			"navigation",
+			"arrow-down-right-01",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "arrow-left",
+		"export": "ArrowLeft",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"arrow",
+			"left",
+			"direction",
+			"navigation",
+			"arrow-left-02",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "arrow-right",
+		"export": "ArrowRight",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"arrow",
+			"right",
+			"direction",
+			"navigation",
+			"arrow-right-02",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "arrow-up",
+		"export": "ArrowUp",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"arrow",
+			"up",
+			"direction",
+			"navigation",
+			"arrow-up-02",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "arrow-up-left",
+		"export": "ArrowUpLeft",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"arrow",
+			"up-left",
+			"direction",
+			"navigation",
+			"arrow-up-left-01",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "arrow-up-right",
+		"export": "ArrowUpRight",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"arrow",
+			"up-right",
+			"direction",
+			"navigation",
+			"arrow-up-right-01",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "at-sign",
+		"export": "AtSign",
+		"category": "chat",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"at-sign",
+			"at",
+			"mention",
+			"email",
+			"contact"
+		]
+	},
+	{
+		"name": "battery",
+		"export": "Battery",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"battery",
+			"power",
+			"charge",
+			"half",
+			"solar"
+		]
+	},
+	{
+		"name": "bell",
+		"export": "Bell",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bell",
+			"notification",
+			"alert",
+			"solar"
+		]
+	},
+	{
+		"name": "bell-off",
+		"export": "BellOff",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bell",
+			"notifications",
+			"off",
+			"mute",
+			"silent"
+		]
+	},
+	{
+		"name": "bluetooth",
+		"export": "Bluetooth",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bluetooth",
+			"wireless",
+			"connection",
+			"solar"
+		]
+	},
+	{
+		"name": "bold",
+		"export": "Bold",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bold",
+			"text",
+			"format",
+			"editor",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "bolt",
+		"export": "Bolt",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bolt",
+			"lightning",
+			"flash",
+			"energy",
+			"power",
+			"zap",
+			"solar"
+		]
+	},
+	{
+		"name": "book-open",
+		"export": "BookOpen",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"book",
+			"open",
+			"read",
+			"pages",
+			"education"
+		]
+	},
+	{
+		"name": "bookmark",
+		"export": "Bookmark",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"save",
+			"saved",
+			"favorite",
+			"reading",
+			"solar"
+		]
+	},
+	{
+		"name": "bookmarks",
+		"export": "Bookmarks",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bookmarks",
+			"save",
+			"saved",
+			"collection"
+		]
+	},
+	{
+		"name": "brain",
+		"export": "Brain",
+		"category": "ai",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ai",
+			"brain",
+			"intelligence",
+			"neural",
+			"ai-brain-01",
+			"hugeicons",
+			"ai-brain"
+		]
+	},
+	{
+		"name": "briefcase",
+		"export": "Briefcase",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"briefcase",
+			"case",
+			"work",
+			"business",
+			"bag"
+		]
+	},
+	{
+		"name": "broadcast",
+		"export": "Broadcast",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"broadcast",
+			"radar",
+			"signal",
+			"wireless",
+			"radio",
+			"transmission"
+		]
+	},
+	{
+		"name": "bug",
+		"export": "Bug",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bug",
+			"insect",
+			"debug",
+			"issue"
+		]
+	},
+	{
+		"name": "building",
+		"export": "Building",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"building",
+			"office",
+			"business",
+			"company",
+			"city",
+			"architecture",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "bun",
+		"export": "Bun",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"javascript",
+			"runtime",
+			"brand"
+		]
+	},
+	{
+		"name": "calculator",
+		"export": "Calculator",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"calculator",
+			"math",
+			"arithmetic",
+			"calculate",
+			"solar"
+		]
+	},
+	{
+		"name": "calendar",
+		"export": "Calendar",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"calendar",
+			"date",
+			"schedule",
+			"event",
+			"month",
+			"hugeicons",
+			"calendar-03"
+		]
+	},
+	{
+		"name": "calendar-add",
+		"export": "CalendarAdd",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"calendar",
+			"date",
+			"event",
+			"add",
+			"plus",
+			"calendar-plus",
+			"new",
+			"schedule",
+			"solar"
+		]
+	},
+	{
+		"name": "calendar-mark",
+		"export": "CalendarMark",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"calendar",
+			"date",
+			"event",
+			"mark",
+			"selected",
+			"today",
+			"solar"
+		]
+	},
+	{
+		"name": "calendar-remove",
+		"export": "CalendarRemove",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"calendar",
+			"date",
+			"event",
+			"remove",
+			"minus",
+			"calendar-minus",
+			"schedule",
+			"solar"
+		]
+	},
+	{
+		"name": "calendar-search",
+		"export": "CalendarSearch",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"calendar",
+			"search",
+			"date",
+			"schedule",
+			"solar"
+		]
+	},
+	{
+		"name": "calendar-x",
+		"export": "CalendarX",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"calendar",
+			"date",
+			"event",
+			"x",
+			"close",
+			"cancel",
+			"schedule",
+			"solar"
+		]
+	},
+	{
+		"name": "camera",
+		"export": "Camera",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"camera",
+			"photo",
+			"picture",
+			"capture",
+			"snapshot"
+		]
+	},
+	{
+		"name": "card",
+		"export": "Card",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"credit-card",
+			"debit-card",
+			"payment",
+			"bank",
+			"finance",
+			"solar"
+		]
+	},
+	{
+		"name": "cart",
+		"export": "Cart",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"basket",
+			"shopping",
+			"store",
+			"solar"
+		]
+	},
+	{
+		"name": "cart-bag",
+		"export": "CartBag",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bag",
+			"shopping-bag",
+			"shopping",
+			"store",
+			"purchase",
+			"checkout",
+			"solar"
+		]
+	},
+	{
+		"name": "cart-large",
+		"export": "CartLarge",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"cart",
+			"shopping-cart",
+			"trolley",
+			"checkout",
+			"store",
+			"shopping",
+			"solar"
+		]
+	},
+	{
+		"name": "chair",
+		"export": "Chair",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chair",
+			"seat",
+			"furniture"
+		]
+	},
+	{
+		"name": "chart-analysis",
+		"export": "ChartAnalysis",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chart",
+			"analysis",
+			"trend",
+			"growth",
+			"statistics",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "chat",
+		"export": "Chat",
+		"category": "chat",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chat",
+			"chat-01",
+			"message",
+			"conversation",
+			"bubble",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "check",
+		"export": "Check",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"tick",
+			"done",
+			"success",
+			"confirm",
+			"complete",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "check-double",
+		"export": "CheckDouble",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"double-check",
+			"tick",
+			"done",
+			"read",
+			"receipt",
+			"delivered",
+			"hugeicons",
+			"check-check"
+		]
+	},
+	{
+		"name": "chevron-down",
+		"export": "ChevronDown",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chevron",
+			"down",
+			"bottom",
+			"expand",
+			"arrow-down-01",
+			"hugeicons",
+			"arrow-down"
+		]
+	},
+	{
+		"name": "chevron-left",
+		"export": "ChevronLeft",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chevron",
+			"left",
+			"back",
+			"previous",
+			"arrow-left-01",
+			"hugeicons",
+			"arrow-left"
+		]
+	},
+	{
+		"name": "chevron-right",
+		"export": "ChevronRight",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chevron",
+			"right",
+			"forward",
+			"next",
+			"arrow-right-01",
+			"hugeicons",
+			"arrow-right"
+		]
+	},
+	{
+		"name": "chevron-up",
+		"export": "ChevronUp",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chevron",
+			"up",
+			"top",
+			"collapse",
+			"arrow-up-01",
+			"hugeicons",
+			"arrow-up"
+		]
+	},
+	{
+		"name": "chevrons-down",
+		"export": "ChevronsDown",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chevron",
+			"double",
+			"down",
+			"bottom",
+			"hugeicons",
+			"arrow-down-double"
+		]
+	},
+	{
+		"name": "chevrons-left",
+		"export": "ChevronsLeft",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chevron",
+			"double",
+			"left",
+			"first",
+			"hugeicons",
+			"arrow-left-double"
+		]
+	},
+	{
+		"name": "chevrons-right",
+		"export": "ChevronsRight",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chevron",
+			"double",
+			"right",
+			"last",
+			"hugeicons",
+			"arrow-right-double"
+		]
+	},
+	{
+		"name": "chevrons-up",
+		"export": "ChevronsUp",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chevron",
+			"double",
+			"up",
+			"top",
+			"hugeicons",
+			"arrow-up-double"
+		]
+	},
+	{
+		"name": "chrome",
+		"export": "Chrome",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"chrome",
+			"google",
+			"browser"
+		]
+	},
+	{
+		"name": "clapperboard",
+		"export": "Clapperboard",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"film",
+			"movie",
+			"video",
+			"play",
+			"clapperboard-play",
+			"solar"
+		]
+	},
+	{
+		"name": "clapperboard-text",
+		"export": "ClapperboardText",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"film",
+			"movie",
+			"video",
+			"script",
+			"clapperboard",
+			"solar"
+		]
+	},
+	{
+		"name": "claude-ai",
+		"export": "ClaudeAi",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"claude",
+			"anthropic",
+			"ai",
+			"assistant",
+			"brand"
+		]
+	},
+	{
+		"name": "claude-code",
+		"export": "ClaudeCode",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"claude",
+			"anthropic",
+			"ai",
+			"code",
+			"terminal",
+			"brand"
+		]
+	},
+	{
+		"name": "clipboard",
+		"export": "Clipboard",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"clipboard",
+			"copy",
+			"paste",
+			"board",
+			"solar"
+		]
+	},
+	{
+		"name": "clipboard-add",
+		"export": "ClipboardAdd",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"clipboard",
+			"add",
+			"plus",
+			"new",
+			"solar"
+		]
+	},
+	{
+		"name": "clipboard-check",
+		"export": "ClipboardCheck",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"clipboard",
+			"check",
+			"done",
+			"complete",
+			"tasks",
+			"solar"
+		]
+	},
+	{
+		"name": "clipboard-remove",
+		"export": "ClipboardRemove",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"clipboard",
+			"minus",
+			"remove",
+			"delete",
+			"clipboard-minus",
+			"solar"
+		]
+	},
+	{
+		"name": "clock",
+		"export": "Clock",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"time",
+			"hour",
+			"schedule",
+			"watch"
+		]
+	},
+	{
+		"name": "close",
+		"export": "Close",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"dismiss",
+			"cancel",
+			"cross",
+			"x",
+			"solar"
+		]
+	},
+	{
+		"name": "cloud",
+		"export": "Cloud",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"storage",
+			"weather",
+			"online",
+			"sync",
+			"solar"
+		]
+	},
+	{
+		"name": "cloud-download",
+		"export": "CloudDownload",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"cloud",
+			"download",
+			"storage",
+			"save",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "cloud-upload",
+		"export": "CloudUpload",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"cloud",
+			"upload",
+			"storage",
+			"sync",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "code",
+		"export": "Code",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"programming",
+			"developer",
+			"syntax",
+			"brackets",
+			"solar"
+		]
+	},
+	{
+		"name": "codex",
+		"export": "Codex",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"openai",
+			"ai",
+			"coding",
+			"brand"
+		]
+	},
+	{
+		"name": "command",
+		"export": "Command",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"keyboard",
+			"shortcut",
+			"cmd",
+			"mac",
+			"solar"
+		]
+	},
+	{
+		"name": "computer",
+		"export": "Computer",
+		"category": "devices",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"monitor",
+			"desktop",
+			"screen",
+			"display",
+			"device",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "connect",
+		"export": "Connect",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"connect",
+			"connection",
+			"plug",
+			"cable",
+			"link",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "copy",
+		"export": "Copy",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"copy",
+			"duplicate",
+			"clipboard",
+			"copy-01",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "crop",
+		"export": "Crop",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"crop",
+			"image",
+			"resize",
+			"trim",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "cursor",
+		"export": "Cursor",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"cursor",
+			"ai",
+			"code",
+			"editor"
+		]
+	},
+	{
+		"name": "database",
+		"export": "Database",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"database",
+			"storage",
+			"data",
+			"server",
+			"solar"
+		]
+	},
+	{
+		"name": "deepseek",
+		"export": "Deepseek",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"whale",
+			"brand"
+		]
+	},
+	{
+		"name": "devin",
+		"export": "Devin",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"code",
+			"agent",
+			"brand"
+		]
+	},
+	{
+		"name": "diamond",
+		"export": "Diamond",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"diamond",
+			"shape",
+			"geometry",
+			"rhombus",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "discord",
+		"export": "Discord",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"chat",
+			"community",
+			"brand"
+		]
+	},
+	{
+		"name": "dislike",
+		"export": "Dislike",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"thumbs-down",
+			"disapprove",
+			"feedback",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "document",
+		"export": "Document",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"document",
+			"document-text",
+			"text",
+			"paper",
+			"notes",
+			"solar"
+		]
+	},
+	{
+		"name": "door-open",
+		"export": "DoorOpen",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"door",
+			"leave",
+			"logout",
+			"sign-out",
+			"solar",
+			"exit"
+		]
+	},
+	{
+		"name": "download",
+		"export": "Download",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"download",
+			"tray",
+			"import",
+			"incoming",
+			"arrow"
+		]
+	},
+	{
+		"name": "edit",
+		"export": "Edit",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"edit",
+			"pencil",
+			"write",
+			"draw",
+			"hugeicons",
+			"edit-01"
+		]
+	},
+	{
+		"name": "edit-off",
+		"export": "EditOff",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"edit",
+			"disabled",
+			"read-only",
+			"pencil",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "email",
+		"export": "Email",
+		"category": "chat",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"mail",
+			"letter",
+			"envelope",
+			"message",
+			"solar"
+		]
+	},
+	{
+		"name": "external-link",
+		"export": "ExternalLink",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"external-link",
+			"open",
+			"new-tab",
+			"link",
+			"arrow",
+			"solar"
+		]
+	},
+	{
+		"name": "eye",
+		"export": "Eye",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"eye",
+			"view",
+			"visible",
+			"show",
+			"visibility",
+			"solar"
+		]
+	},
+	{
+		"name": "eye-closed",
+		"export": "EyeClosed",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"eye-closed",
+			"eye",
+			"closed",
+			"hide",
+			"visibility",
+			"lashes",
+			"solar",
+			"eye-off-alt",
+			"eyelashes",
+			"sleep"
+		]
+	},
+	{
+		"name": "eye-off",
+		"export": "EyeOff",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"eye",
+			"off",
+			"hide",
+			"visibility",
+			"slash"
+		]
+	},
+	{
+		"name": "facebook",
+		"export": "Facebook",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"meta",
+			"social",
+			"brand"
+		]
+	},
+	{
+		"name": "figma",
+		"export": "Figma",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"figma",
+			"design",
+			"brand",
+			"solar"
+		]
+	},
+	{
+		"name": "file",
+		"export": "File",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"document",
+			"page",
+			"paper",
+			"blank",
+			"solar"
+		]
+	},
+	{
+		"name": "file-add",
+		"export": "FileAdd",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"document",
+			"file",
+			"solar",
+			"new",
+			"create",
+			"add",
+			"plus"
+		]
+	},
+	{
+		"name": "file-code",
+		"export": "FileCode",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"document",
+			"code",
+			"source",
+			"programming",
+			"code-file",
+			"solar"
+		]
+	},
+	{
+		"name": "file-remove",
+		"export": "FileRemove",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"document",
+			"file",
+			"solar",
+			"remove",
+			"delete",
+			"minus"
+		]
+	},
+	{
+		"name": "file-text",
+		"export": "FileText",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"document",
+			"page",
+			"paper",
+			"text",
+			"lines",
+			"notes",
+			"solar"
+		]
+	},
+	{
+		"name": "filter",
+		"export": "Filter",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"filter",
+			"funnel",
+			"refine",
+			"sort",
+			"solar"
+		]
+	},
+	{
+		"name": "fingerprint",
+		"export": "Fingerprint",
+		"category": "security",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"fingerprint",
+			"biometric",
+			"touch-id",
+			"identity",
+			"security",
+			"auth"
+		]
+	},
+	{
+		"name": "flag",
+		"export": "Flag",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"flag",
+			"mark",
+			"report",
+			"milestone",
+			"solar"
+		]
+	},
+	{
+		"name": "folder",
+		"export": "Folder",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"folder",
+			"directory",
+			"files",
+			"storage",
+			"folder-01",
+			"solar"
+		]
+	},
+	{
+		"name": "folder-add",
+		"export": "FolderAdd",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"folder",
+			"directory",
+			"create",
+			"new",
+			"plus",
+			"solar"
+		]
+	},
+	{
+		"name": "folder-open",
+		"export": "FolderOpen",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"folder",
+			"open",
+			"directory",
+			"files",
+			"storage",
+			"solar"
+		]
+	},
+	{
+		"name": "folder-tree",
+		"export": "FolderTree",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"folder",
+			"tree",
+			"directory",
+			"hierarchy",
+			"structure",
+			"files",
+			"solar"
+		]
+	},
+	{
+		"name": "folder-with-files",
+		"export": "FolderWithFiles",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"folder",
+			"files",
+			"documents",
+			"directory",
+			"storage",
+			"solar"
+		]
+	},
+	{
+		"name": "folders",
+		"export": "Folders",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"folders",
+			"folder",
+			"files",
+			"directory",
+			"collection",
+			"stack",
+			"solar"
+		]
+	},
+	{
+		"name": "forward",
+		"export": "Forward",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"forward",
+			"send",
+			"message",
+			"arrow",
+			"right"
+		]
+	},
+	{
+		"name": "gamepad",
+		"export": "Gamepad",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"gamepad",
+			"game",
+			"gaming",
+			"controller",
+			"console",
+			"solar"
+		]
+	},
+	{
+		"name": "gemini",
+		"export": "Gemini",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"google",
+			"ai",
+			"brand"
+		]
+	},
+	{
+		"name": "gift",
+		"export": "Gift",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"gift",
+			"present",
+			"reward",
+			"surprise",
+			"box",
+			"ribbon"
+		]
+	},
+	{
+		"name": "git",
+		"export": "Git",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"version-control",
+			"repository",
+			"code",
+			"brand"
+		]
+	},
+	{
+		"name": "git-branch",
+		"export": "GitBranch",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"git",
+			"branch",
+			"version-control",
+			"source-control",
+			"solar"
+		]
+	},
+	{
+		"name": "git-diff",
+		"export": "GitDiff",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"git",
+			"diff",
+			"compare",
+			"changes",
+			"version-control",
+			"solar"
+		]
+	},
+	{
+		"name": "git-fork",
+		"export": "GitFork",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"git",
+			"fork",
+			"split",
+			"version-control",
+			"repository",
+			"solar"
+		]
+	},
+	{
+		"name": "git-graph",
+		"export": "GitGraph",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"git",
+			"graph",
+			"history",
+			"commits",
+			"version-control",
+			"solar"
+		]
+	},
+	{
+		"name": "git-pull-request",
+		"export": "GitPullRequest",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"git",
+			"pull-request",
+			"pr",
+			"merge",
+			"review",
+			"version-control",
+			"solar"
+		]
+	},
+	{
+		"name": "github",
+		"export": "Github",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"git",
+			"code",
+			"repository",
+			"brand"
+		]
+	},
+	{
+		"name": "github-copilot",
+		"export": "GithubCopilot",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"github",
+			"copilot",
+			"ai",
+			"code",
+			"assistant"
+		]
+	},
+	{
+		"name": "globe",
+		"export": "Globe",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"globe",
+			"world",
+			"earth",
+			"geography",
+			"travel",
+			"solar"
+		]
+	},
+	{
+		"name": "google",
+		"export": "Google",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"search",
+			"alphabet",
+			"brand"
+		]
+	},
+	{
+		"name": "grip-horizontal",
+		"export": "GripHorizontal",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"grip",
+			"handle",
+			"drag",
+			"reorder",
+			"horizontal",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "grip-vertical",
+		"export": "GripVertical",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"grip",
+			"handle",
+			"drag",
+			"reorder",
+			"vertical",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "grok",
+		"export": "Grok",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"xai",
+			"ai",
+			"assistant",
+			"brand"
+		]
+	},
+	{
+		"name": "hand",
+		"export": "Hand",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"hand",
+			"palm",
+			"grab",
+			"pan",
+			"stop",
+			"wave"
+		]
+	},
+	{
+		"name": "hand-wave",
+		"export": "HandWave",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"hand-wave",
+			"hand",
+			"shake",
+			"wave",
+			"hello",
+			"greeting",
+			"hand-shake",
+			"waving"
+		]
+	},
+	{
+		"name": "hashtag",
+		"export": "Hashtag",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"hash",
+			"tag",
+			"number",
+			"hastag",
+			"solar"
+		]
+	},
+	{
+		"name": "heading",
+		"export": "Heading",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"heading",
+			"title",
+			"header",
+			"text",
+			"editor",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "headphones",
+		"export": "Headphones",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"headphones",
+			"audio",
+			"music",
+			"listen",
+			"headphones-round",
+			"solar",
+			"headphone"
+		]
+	},
+	{
+		"name": "heart",
+		"export": "Heart",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"heart",
+			"love",
+			"favorite",
+			"like",
+			"solar"
+		]
+	},
+	{
+		"name": "history",
+		"export": "History",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"history",
+			"recent",
+			"clock",
+			"time",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "home",
+		"export": "Home",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"house",
+			"homepage",
+			"dashboard",
+			"start"
+		]
+	},
+	{
+		"name": "home-angle",
+		"export": "HomeAngle",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"home",
+			"house",
+			"dashboard",
+			"main",
+			"solar"
+		]
+	},
+	{
+		"name": "image",
+		"export": "Image",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"image",
+			"gallery",
+			"photo",
+			"picture",
+			"media",
+			"images"
+		]
+	},
+	{
+		"name": "image-add",
+		"export": "ImageAdd",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"image",
+			"gallery",
+			"upload",
+			"photo",
+			"plus",
+			"gallery-add",
+			"solar",
+			"images-add"
+		]
+	},
+	{
+		"name": "image-edit",
+		"export": "ImageEdit",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"image",
+			"photo",
+			"gallery",
+			"edit",
+			"pencil",
+			"gallery-edit",
+			"solar"
+		]
+	},
+	{
+		"name": "import",
+		"export": "Import",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"import",
+			"inward",
+			"arrow",
+			"receive",
+			"square"
+		]
+	},
+	{
+		"name": "inbox",
+		"export": "Inbox",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"inbox",
+			"tray",
+			"mail",
+			"receive",
+			"solar"
+		]
+	},
+	{
+		"name": "incoming-call",
+		"export": "IncomingCall",
+		"category": "chat",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"phone",
+			"call",
+			"incoming",
+			"receive",
+			"solar"
+		]
+	},
+	{
+		"name": "info-square",
+		"export": "InfoSquare",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"info",
+			"information",
+			"help",
+			"square",
+			"solar"
+		]
+	},
+	{
+		"name": "instagram",
+		"export": "Instagram",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"instagram",
+			"social",
+			"photos",
+			"brand",
+			"insta"
+		]
+	},
+	{
+		"name": "integration",
+		"export": "Integration",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"flow",
+			"workflow",
+			"connect",
+			"nodes",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "italic",
+		"export": "Italic",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"italic",
+			"text",
+			"format",
+			"editor",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "kanban",
+		"export": "Kanban",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"kanban",
+			"board",
+			"columns",
+			"tasks",
+			"workflow"
+		]
+	},
+	{
+		"name": "key",
+		"export": "Key",
+		"category": "security",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"security",
+			"access",
+			"password",
+			"lock",
+			"key-minimalistic",
+			"solar"
+		]
+	},
+	{
+		"name": "keyboard",
+		"export": "Keyboard",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"keyboard",
+			"keys",
+			"type",
+			"input",
+			"solar"
+		]
+	},
+	{
+		"name": "kimi",
+		"export": "Kimi",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"assistant",
+			"moonshot",
+			"brand"
+		]
+	},
+	{
+		"name": "layers",
+		"export": "Layers",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"stack",
+			"design",
+			"levels",
+			"layers-minimalistic",
+			"solar"
+		]
+	},
+	{
+		"name": "layout-align-bottom",
+		"export": "LayoutAlignBottom",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"layout",
+			"align",
+			"bottom",
+			"position",
+			"panel",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "layout-align-left",
+		"export": "LayoutAlignLeft",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"layout",
+			"align",
+			"left",
+			"position",
+			"panel",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "layout-align-right",
+		"export": "LayoutAlignRight",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"layout",
+			"align",
+			"right",
+			"position",
+			"panel",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "layout-align-top",
+		"export": "LayoutAlignTop",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"layout",
+			"align",
+			"top",
+			"position",
+			"panel",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "life-buoy",
+		"export": "LifeBuoy",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"life-buoy",
+			"lifebuoy",
+			"help",
+			"support",
+			"rescue",
+			"lifesaver"
+		]
+	},
+	{
+		"name": "lightbulb",
+		"export": "Lightbulb",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"lightbulb",
+			"light",
+			"bulb",
+			"idea",
+			"inspiration"
+		]
+	},
+	{
+		"name": "lightning",
+		"export": "Lightning",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bolt",
+			"flash",
+			"electricity",
+			"energy",
+			"power",
+			"zap"
+		]
+	},
+	{
+		"name": "like",
+		"export": "Like",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"thumbs-up",
+			"approve",
+			"feedback",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "link",
+		"export": "Link",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"link",
+			"chain",
+			"url",
+			"connect",
+			"diagonal",
+			"solar"
+		]
+	},
+	{
+		"name": "linkedin",
+		"export": "Linkedin",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"linkedin"
+		]
+	},
+	{
+		"name": "list",
+		"export": "List",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"list",
+			"bullets",
+			"items",
+			"editor",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "list-checks",
+		"export": "ListChecks",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"list",
+			"checks",
+			"checklist",
+			"tasks",
+			"todo",
+			"done"
+		]
+	},
+	{
+		"name": "list-dash",
+		"export": "ListDash",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"list",
+			"dash",
+			"left-to-right-list-dash",
+			"editor",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "list-down",
+		"export": "ListDown",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"list",
+			"sort",
+			"descending",
+			"expand",
+			"list-down-minimalistic",
+			"solar"
+		]
+	},
+	{
+		"name": "list-filter",
+		"export": "ListFilter",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"list",
+			"filter",
+			"sort",
+			"refine",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "list-up",
+		"export": "ListUp",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"list",
+			"sort",
+			"ascending",
+			"collapse",
+			"list-up-minimalistic",
+			"solar"
+		]
+	},
+	{
+		"name": "lock",
+		"export": "Lock",
+		"category": "security",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"locked",
+			"security",
+			"private",
+			"access",
+			"solar"
+		]
+	},
+	{
+		"name": "lock-open",
+		"export": "LockOpen",
+		"category": "security",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"lock-open",
+			"unlock",
+			"security",
+			"access",
+			"solar",
+			"lock-unlock"
+		]
+	},
+	{
+		"name": "login",
+		"export": "Login",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"login",
+			"log-in",
+			"sign-in",
+			"enter",
+			"account",
+			"arrow"
+		]
+	},
+	{
+		"name": "logout",
+		"export": "Logout",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sign-out",
+			"exit",
+			"account",
+			"logout-3",
+			"solar"
+		]
+	},
+	{
+		"name": "map",
+		"export": "Map",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"map",
+			"navigation",
+			"location",
+			"travel",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "map-arrow-down",
+		"export": "MapArrowDown",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"map",
+			"arrow",
+			"down",
+			"navigation",
+			"direction",
+			"location",
+			"solar"
+		]
+	},
+	{
+		"name": "map-arrow-left",
+		"export": "MapArrowLeft",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"map",
+			"arrow",
+			"left",
+			"navigation",
+			"direction",
+			"location",
+			"solar"
+		]
+	},
+	{
+		"name": "map-arrow-right",
+		"export": "MapArrowRight",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"map",
+			"arrow",
+			"right",
+			"navigation",
+			"direction",
+			"location",
+			"solar"
+		]
+	},
+	{
+		"name": "map-arrow-up",
+		"export": "MapArrowUp",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"map",
+			"arrow",
+			"up",
+			"navigation",
+			"direction",
+			"location",
+			"solar"
+		]
+	},
+	{
+		"name": "map-folded",
+		"export": "MapFolded",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"map",
+			"folded",
+			"navigation",
+			"travel"
+		]
+	},
+	{
+		"name": "map-pin",
+		"export": "MapPin",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"map-pin",
+			"map",
+			"location",
+			"pin",
+			"point-on-map",
+			"solar",
+			"map-alt"
+		]
+	},
+	{
+		"name": "market-analysis",
+		"export": "MarketAnalysis",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"market",
+			"analysis",
+			"chart",
+			"candlestick",
+			"trading",
+			"finance",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "maximize",
+		"export": "Maximize",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"expand",
+			"fullscreen",
+			"resize",
+			"arrows"
+		]
+	},
+	{
+		"name": "menu",
+		"export": "Menu",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"menu",
+			"navigation",
+			"bars",
+			"hamburger-menu",
+			"solar",
+			"hamburger"
+		]
+	},
+	{
+		"name": "meta-ai",
+		"export": "MetaAi",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"meta",
+			"ai",
+			"assistant"
+		]
+	},
+	{
+		"name": "microphone",
+		"export": "Microphone",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"mic",
+			"record",
+			"voice",
+			"audio",
+			"solar"
+		]
+	},
+	{
+		"name": "microphone-off",
+		"export": "MicrophoneOff",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"microphone",
+			"mic",
+			"off",
+			"mute",
+			"muted",
+			"audio"
+		]
+	},
+	{
+		"name": "microsoft-copilot",
+		"export": "MicrosoftCopilot",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"microsoft",
+			"copilot",
+			"ai",
+			"assistant",
+			"brand",
+			"ms-copilot"
+		]
+	},
+	{
+		"name": "minimize",
+		"export": "Minimize",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"collapse",
+			"shrink",
+			"restore",
+			"resize",
+			"arrows"
+		]
+	},
+	{
+		"name": "minus",
+		"export": "Minus",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"subtract",
+			"remove",
+			"decrease",
+			"solar"
+		]
+	},
+	{
+		"name": "mistral",
+		"export": "Mistral",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"brand"
+		]
+	},
+	{
+		"name": "moon",
+		"export": "Moon",
+		"category": "settings",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"moon",
+			"night",
+			"dark",
+			"theme",
+			"crescent",
+			"solar"
+		]
+	},
+	{
+		"name": "more-horizontal",
+		"export": "MoreHorizontal",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ellipsis",
+			"menu",
+			"options",
+			"dots",
+			"horizontal",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "more-vertical",
+		"export": "MoreVertical",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ellipsis",
+			"menu",
+			"options",
+			"dots",
+			"vertical",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "move",
+		"export": "Move",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"move",
+			"drag",
+			"arrows",
+			"position",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "music-note",
+		"export": "MusicNote",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"music",
+			"note",
+			"song",
+			"audio",
+			"sound",
+			"melody",
+			"solar"
+		]
+	},
+	{
+		"name": "navigation",
+		"export": "Navigation",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"navigation",
+			"navigation-03",
+			"location",
+			"direction",
+			"map",
+			"pointer",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "notebook",
+		"export": "Notebook",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"notebook",
+			"notebook-minimalistic",
+			"book",
+			"read",
+			"pages",
+			"solar"
+		]
+	},
+	{
+		"name": "npm",
+		"export": "Npm",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"package",
+			"registry",
+			"javascript",
+			"brand"
+		]
+	},
+	{
+		"name": "nvidia",
+		"export": "Nvidia",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"nvidia",
+			"gpu",
+			"hardware"
+		]
+	},
+	{
+		"name": "octagon-x",
+		"export": "OctagonX",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"octagon",
+			"x",
+			"error",
+			"stop",
+			"close",
+			"cancel",
+			"danger"
+		]
+	},
+	{
+		"name": "openai",
+		"export": "Openai",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chatgpt",
+			"ai",
+			"brand"
+		]
+	},
+	{
+		"name": "openclaw",
+		"export": "Openclaw",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"open-claw",
+			"ai",
+			"mascot",
+			"brand"
+		]
+	},
+	{
+		"name": "opencode",
+		"export": "Opencode",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"open-code",
+			"code",
+			"terminal",
+			"brand"
+		]
+	},
+	{
+		"name": "outgoing-call",
+		"export": "OutgoingCall",
+		"category": "chat",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"phone",
+			"call",
+			"outgoing",
+			"dial",
+			"solar"
+		]
+	},
+	{
+		"name": "package",
+		"export": "Package",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"package",
+			"box",
+			"parcel",
+			"shipping",
+			"delivery",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "palette",
+		"export": "Palette",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"palette",
+			"swatches",
+			"color",
+			"design",
+			"solar"
+		]
+	},
+	{
+		"name": "paper-plane",
+		"export": "PaperPlane",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"send",
+			"message",
+			"submit",
+			"plane",
+			"plane-3",
+			"plain-3",
+			"solar"
+		]
+	},
+	{
+		"name": "paperclip",
+		"export": "Paperclip",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"attachment",
+			"attach",
+			"clip",
+			"file",
+			"paperclip-2",
+			"solar"
+		]
+	},
+	{
+		"name": "pause",
+		"export": "Pause",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"pause",
+			"media",
+			"playback",
+			"video",
+			"audio"
+		]
+	},
+	{
+		"name": "pen",
+		"export": "Pen",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"edit",
+			"pencil",
+			"write",
+			"draw",
+			"compose"
+		]
+	},
+	{
+		"name": "perplexity",
+		"export": "Perplexity",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"brand",
+			"perplexity",
+			"ai",
+			"search"
+		]
+	},
+	{
+		"name": "phone",
+		"export": "Phone",
+		"category": "chat",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"phone",
+			"call",
+			"telephone",
+			"contact",
+			"solar"
+		]
+	},
+	{
+		"name": "pin",
+		"export": "Pin",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"pushpin",
+			"pinned",
+			"save",
+			"solar"
+		]
+	},
+	{
+		"name": "pinterest",
+		"export": "Pinterest",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"social",
+			"pins",
+			"brand"
+		]
+	},
+	{
+		"name": "pip",
+		"export": "Pip",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"picture-in-picture",
+			"pip",
+			"window",
+			"video",
+			"overlay",
+			"solar"
+		]
+	},
+	{
+		"name": "play",
+		"export": "Play",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"start",
+			"resume",
+			"playback",
+			"video",
+			"audio",
+			"solar"
+		]
+	},
+	{
+		"name": "play-mini",
+		"export": "PlayMini",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"play",
+			"mini",
+			"media",
+			"start",
+			"triangle"
+		]
+	},
+	{
+		"name": "power",
+		"export": "Power",
+		"category": "settings",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"power",
+			"on",
+			"off",
+			"shutdown",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "printer",
+		"export": "Printer",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"printer",
+			"print",
+			"paper",
+			"document",
+			"solar"
+		]
+	},
+	{
+		"name": "puzzle",
+		"export": "Puzzle",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"puzzle",
+			"piece",
+			"extension",
+			"plugin",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "qr-code",
+		"export": "QrCode",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"qr-code",
+			"qr",
+			"scan",
+			"barcode",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "quote",
+		"export": "Quote",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"quote",
+			"quotation",
+			"blockquote",
+			"citation",
+			"testimonial",
+			"solar"
+		]
+	},
+	{
+		"name": "qwen",
+		"export": "Qwen",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"alibaba",
+			"brand"
+		]
+	},
+	{
+		"name": "react",
+		"export": "React",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"javascript",
+			"framework",
+			"frontend",
+			"brand"
+		]
+	},
+	{
+		"name": "reddit",
+		"export": "Reddit",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"community",
+			"social",
+			"brand"
+		]
+	},
+	{
+		"name": "redo",
+		"export": "Redo",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"history",
+			"forward",
+			"repeat",
+			"arrow"
+		]
+	},
+	{
+		"name": "reorder",
+		"export": "Reorder",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sort",
+			"arrange",
+			"drag",
+			"list",
+			"menu",
+			"solar"
+		]
+	},
+	{
+		"name": "repeat",
+		"export": "Repeat",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"loop",
+			"cycle",
+			"refresh",
+			"solar"
+		]
+	},
+	{
+		"name": "reply",
+		"export": "Reply",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"reply",
+			"respond",
+			"message",
+			"arrow",
+			"left"
+		]
+	},
+	{
+		"name": "resources-add",
+		"export": "ResourcesAdd",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"resources",
+			"add",
+			"plus",
+			"assets",
+			"library",
+			"shapes"
+		]
+	},
+	{
+		"name": "rhombus",
+		"export": "Rhombus",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"rhombus",
+			"shape",
+			"geometry",
+			"diamond",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "rocket",
+		"export": "Rocket",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"rocket",
+			"rocket-02",
+			"launch",
+			"space",
+			"45-degrees",
+			"hugeicons",
+			"fire",
+			"flame"
+		]
+	},
+	{
+		"name": "sad",
+		"export": "Sad",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sad",
+			"face",
+			"unhappy",
+			"frown",
+			"emoji"
+		]
+	},
+	{
+		"name": "search",
+		"export": "Search",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"find",
+			"magnifier",
+			"lookup",
+			"zoom"
+		]
+	},
+	{
+		"name": "send",
+		"export": "Send",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"send",
+			"sent",
+			"message",
+			"paper-plane",
+			"delivery",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "server",
+		"export": "Server",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"server",
+			"rack",
+			"hardware",
+			"storage",
+			"solar"
+		]
+	},
+	{
+		"name": "settings",
+		"export": "Settings",
+		"category": "settings",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"gear",
+			"cog",
+			"preferences",
+			"configuration",
+			"options",
+			"solar"
+		]
+	},
+	{
+		"name": "share",
+		"export": "Share",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"send",
+			"social",
+			"link",
+			"solar"
+		]
+	},
+	{
+		"name": "shield-add",
+		"export": "ShieldAdd",
+		"category": "security",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"shield",
+			"plus",
+			"add",
+			"protect",
+			"security",
+			"shield-plus",
+			"solar"
+		]
+	},
+	{
+		"name": "sidebar-bottom",
+		"export": "SidebarBottom",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sidebar",
+			"panel",
+			"bottom",
+			"layout",
+			"split"
+		]
+	},
+	{
+		"name": "sidebar-left",
+		"export": "SidebarLeft",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"panel",
+			"layout",
+			"navigation",
+			"sidebar",
+			"left",
+			"sidebar-minimalistic",
+			"solar"
+		]
+	},
+	{
+		"name": "sidebar-right",
+		"export": "SidebarRight",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"panel",
+			"layout",
+			"navigation",
+			"sidebar",
+			"right",
+			"sidebar-minimalistic",
+			"solar"
+		]
+	},
+	{
+		"name": "sidebar-top",
+		"export": "SidebarTop",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sidebar",
+			"panel",
+			"top",
+			"layout",
+			"split"
+		]
+	},
+	{
+		"name": "sim-card",
+		"export": "SimCard",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sim-card",
+			"sim",
+			"mobile",
+			"network"
+		]
+	},
+	{
+		"name": "slack",
+		"export": "Slack",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"messaging",
+			"chat",
+			"team",
+			"workplace",
+			"brand"
+		]
+	},
+	{
+		"name": "slash",
+		"export": "Slash",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"slash",
+			"divide",
+			"diagonal",
+			"separator"
+		]
+	},
+	{
+		"name": "sliders-horizontal",
+		"export": "SlidersHorizontal",
+		"category": "settings",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sliders",
+			"horizontal",
+			"settings",
+			"adjustments",
+			"controls",
+			"tune",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "sliders-horizontal-alt",
+		"export": "SlidersHorizontalAlt",
+		"category": "settings",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sliders",
+			"settings",
+			"tuning",
+			"adjust",
+			"circular",
+			"horizontal",
+			"solar"
+		]
+	},
+	{
+		"name": "sliders-vertical",
+		"export": "SlidersVertical",
+		"category": "settings",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sliders",
+			"vertical",
+			"settings",
+			"adjustments",
+			"controls",
+			"tune",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "sliders-vertical-alt",
+		"export": "SlidersVerticalAlt",
+		"category": "settings",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sliders",
+			"settings",
+			"tuning",
+			"adjust",
+			"circular",
+			"vertical",
+			"solar"
+		]
+	},
+	{
+		"name": "smartphone",
+		"export": "Smartphone",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"phone",
+			"mobile",
+			"device",
+			"screen",
+			"solar"
+		]
+	},
+	{
+		"name": "smile",
+		"export": "Smile",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"smile",
+			"happy",
+			"face",
+			"emoji"
+		]
+	},
+	{
+		"name": "snapchat",
+		"export": "Snapchat",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"social",
+			"snap",
+			"ghost"
+		]
+	},
+	{
+		"name": "soundwave",
+		"export": "Soundwave",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"waveform",
+			"audio",
+			"sound",
+			"voice",
+			"equalizer",
+			"solar"
+		]
+	},
+	{
+		"name": "sparkles",
+		"export": "Sparkles",
+		"category": "ai",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sparkles",
+			"sparkle",
+			"magic",
+			"ai",
+			"shine",
+			"stars"
+		]
+	},
+	{
+		"name": "spinner",
+		"export": "Spinner",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"loader",
+			"loading",
+			"progress",
+			"wait",
+			"busy",
+			"rotate"
+		]
+	},
+	{
+		"name": "spinner-arc",
+		"export": "SpinnerArc",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"loader",
+			"loading",
+			"progress",
+			"wait",
+			"rotate",
+			"arc",
+			"long",
+			"spinner-large"
+		]
+	},
+	{
+		"name": "spinner-diagonal",
+		"export": "SpinnerDiagonal",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"loader",
+			"loading",
+			"progress",
+			"wait",
+			"grid",
+			"pixel",
+			"diagonal",
+			"wave"
+		]
+	},
+	{
+		"name": "spinner-orbit",
+		"export": "SpinnerOrbit",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"loader",
+			"loading",
+			"progress",
+			"wait",
+			"grid",
+			"pixel",
+			"comet"
+		]
+	},
+	{
+		"name": "spinner-wave",
+		"export": "SpinnerWave",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"loader",
+			"loading",
+			"progress",
+			"wait",
+			"grid",
+			"pixel",
+			"chevron",
+			"wave",
+			"spinner-tinker"
+		]
+	},
+	{
+		"name": "square-pen",
+		"export": "SquarePen",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"send-message",
+			"compose",
+			"edit",
+			"write",
+			"pencil"
+		]
+	},
+	{
+		"name": "star",
+		"export": "Star",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"favorite",
+			"rating",
+			"saved",
+			"solar"
+		]
+	},
+	{
+		"name": "star-off",
+		"export": "StarOff",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"star",
+			"off",
+			"unfavorite",
+			"unstar",
+			"disabled"
+		]
+	},
+	{
+		"name": "sticker",
+		"export": "Sticker",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"label",
+			"peel",
+			"fold",
+			"square",
+			"solar"
+		]
+	},
+	{
+		"name": "stop",
+		"export": "Stop",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"end",
+			"halt",
+			"playback",
+			"recording",
+			"square",
+			"solar"
+		]
+	},
+	{
+		"name": "stopwatch",
+		"export": "Stopwatch",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"stopwatch",
+			"stop-watch",
+			"timer",
+			"time",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "strikethrough",
+		"export": "Strikethrough",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"text",
+			"strikethrough",
+			"strike",
+			"format",
+			"editor"
+		]
+	},
+	{
+		"name": "suitcase",
+		"export": "Suitcase",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"suitcase",
+			"travel",
+			"luggage",
+			"bag"
+		]
+	},
+	{
+		"name": "sun",
+		"export": "Sun",
+		"category": "settings",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"sun",
+			"light",
+			"day",
+			"brightness",
+			"theme",
+			"sun-01",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "supabase",
+		"export": "Supabase",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"database",
+			"backend",
+			"brand"
+		]
+	},
+	{
+		"name": "table",
+		"export": "Table",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"table",
+			"grid",
+			"rows",
+			"columns",
+			"spreadsheet",
+			"solar"
+		]
+	},
+	{
+		"name": "tablet",
+		"export": "Tablet",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ipad",
+			"device",
+			"screen",
+			"landscape",
+			"solar"
+		]
+	},
+	{
+		"name": "telegram",
+		"export": "Telegram",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"messaging",
+			"chat",
+			"social",
+			"brand",
+			"paper-plane"
+		]
+	},
+	{
+		"name": "terminal",
+		"export": "Terminal",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"code",
+			"console",
+			"command",
+			"shell",
+			"prompt",
+			"cli"
+		]
+	},
+	{
+		"name": "text-align-center",
+		"export": "TextAlignCenter",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"text",
+			"align",
+			"center",
+			"paragraph",
+			"format",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "text-align-justify-left",
+		"export": "TextAlignJustifyLeft",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"text",
+			"align",
+			"justify",
+			"left",
+			"paragraph",
+			"format",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "text-align-justify-right",
+		"export": "TextAlignJustifyRight",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"text",
+			"align",
+			"justify",
+			"right",
+			"paragraph",
+			"format",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "text-align-left",
+		"export": "TextAlignLeft",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"text",
+			"align",
+			"left",
+			"paragraph",
+			"format",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "text-align-right",
+		"export": "TextAlignRight",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"text",
+			"align",
+			"right",
+			"paragraph",
+			"format",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "text-underline",
+		"export": "TextUnderline",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"underline",
+			"text",
+			"format",
+			"editor",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "threads",
+		"export": "Threads",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"brand",
+			"threads"
+		]
+	},
+	{
+		"name": "three-squares",
+		"export": "ThreeSquares",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"three-squares",
+			"squares",
+			"stack",
+			"layers",
+			"solar"
+		]
+	},
+	{
+		"name": "ticket",
+		"export": "Ticket",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ticket",
+			"pass",
+			"event",
+			"admission",
+			"coupon",
+			"solar"
+		]
+	},
+	{
+		"name": "ticket-discount",
+		"export": "TicketDiscount",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ticket",
+			"discount",
+			"coupon",
+			"voucher",
+			"sale",
+			"percent"
+		]
+	},
+	{
+		"name": "tiktok",
+		"export": "Tiktok",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"tiktok"
+		]
+	},
+	{
+		"name": "transfer-horizontal",
+		"export": "TransferHorizontal",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"transfer",
+			"swap",
+			"exchange",
+			"arrows",
+			"horizontal",
+			"solar"
+		]
+	},
+	{
+		"name": "transfer-vertical",
+		"export": "TransferVertical",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"transfer",
+			"swap",
+			"exchange",
+			"arrows",
+			"vertical",
+			"solar"
+		]
+	},
+	{
+		"name": "trash",
+		"export": "Trash",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"delete",
+			"remove",
+			"bin",
+			"discard"
+		]
+	},
+	{
+		"name": "truck",
+		"export": "Truck",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"truck",
+			"delivery",
+			"shipping",
+			"transport"
+		]
+	},
+	{
+		"name": "twitter",
+		"export": "Twitter",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"bird",
+			"social",
+			"brand"
+		]
+	},
+	{
+		"name": "typescript",
+		"export": "Typescript",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"typescript",
+			"javascript",
+			"language",
+			"brand",
+			"ts"
+		]
+	},
+	{
+		"name": "undo",
+		"export": "Undo",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"history",
+			"back",
+			"revert",
+			"arrow"
+		]
+	},
+	{
+		"name": "unfold-less",
+		"export": "UnfoldLess",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"collapse",
+			"fold",
+			"chevrons",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "unfold-more",
+		"export": "UnfoldMore",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"expand",
+			"unfold",
+			"chevrons",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "upload",
+		"export": "Upload",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"upload",
+			"tray",
+			"export",
+			"outgoing",
+			"arrow"
+		]
+	},
+	{
+		"name": "user",
+		"export": "User",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"profile",
+			"person",
+			"account",
+			"avatar",
+			"solar"
+		]
+	},
+	{
+		"name": "user-add",
+		"export": "UserAdd",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"user",
+			"add",
+			"plus",
+			"invite",
+			"account",
+			"user-plus",
+			"solar"
+		]
+	},
+	{
+		"name": "user-check",
+		"export": "UserCheck",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"user",
+			"check",
+			"verified",
+			"approved",
+			"account"
+		]
+	},
+	{
+		"name": "user-group",
+		"export": "UserGroup",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"users",
+			"team",
+			"people",
+			"members",
+			"users-group-two-rounded",
+			"solar"
+		]
+	},
+	{
+		"name": "user-remove",
+		"export": "UserRemove",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"user",
+			"minus",
+			"remove",
+			"account",
+			"user-minus"
+		]
+	},
+	{
+		"name": "user-x",
+		"export": "UserX",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"user",
+			"x",
+			"close",
+			"cancel",
+			"account"
+		]
+	},
+	{
+		"name": "vercel",
+		"export": "Vercel",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"vercel",
+			"hosting",
+			"deployment"
+		]
+	},
+	{
+		"name": "verified-check",
+		"export": "VerifiedCheck",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"verified",
+			"badge",
+			"check",
+			"approved",
+			"solar"
+		]
+	},
+	{
+		"name": "video-camera",
+		"export": "VideoCamera",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"video",
+			"camera",
+			"record",
+			"call",
+			"videocamera",
+			"solar"
+		]
+	},
+	{
+		"name": "video-frame",
+		"export": "VideoFrame",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"video",
+			"film",
+			"frame",
+			"filmstrip",
+			"movie",
+			"solar"
+		]
+	},
+	{
+		"name": "volume-high",
+		"export": "VolumeHigh",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"volume",
+			"sound",
+			"speaker",
+			"audio",
+			"unmute",
+			"solar",
+			"volume-loud"
+		]
+	},
+	{
+		"name": "volume-low",
+		"export": "VolumeLow",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"speaker",
+			"sound",
+			"audio",
+			"volume-low",
+			"solar",
+			"volume"
+		]
+	},
+	{
+		"name": "volume-off",
+		"export": "VolumeOff",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"mute",
+			"volume-off",
+			"silent",
+			"speaker",
+			"audio",
+			"solar",
+			"muted"
+		]
+	},
+	{
+		"name": "wallet",
+		"export": "Wallet",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"money",
+			"payment",
+			"finance",
+			"cash",
+			"solar"
+		]
+	},
+	{
+		"name": "waves",
+		"export": "Waves",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"waves",
+			"water",
+			"sea",
+			"ocean"
+		]
+	},
+	{
+		"name": "widget",
+		"export": "Widget",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"grid",
+			"dashboard",
+			"layout",
+			"apps",
+			"solar"
+		]
+	},
+	{
+		"name": "widget-add",
+		"export": "WidgetAdd",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"widget",
+			"add",
+			"plus",
+			"grid",
+			"dashboard",
+			"layout",
+			"solar"
+		]
+	},
+	{
+		"name": "widget-square",
+		"export": "WidgetSquare",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"widget",
+			"grid",
+			"dashboard",
+			"layout",
+			"apps",
+			"square",
+			"solar"
+		]
+	},
+	{
+		"name": "widget-square-add",
+		"export": "WidgetSquareAdd",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"widget",
+			"add",
+			"plus",
+			"grid",
+			"dashboard",
+			"layout",
+			"square",
+			"solar"
+		]
+	},
+	{
+		"name": "wifi",
+		"export": "Wifi",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"wifi",
+			"wi-fi",
+			"wireless",
+			"network",
+			"connection",
+			"internet",
+			"solar"
+		]
+	},
+	{
+		"name": "windsurf",
+		"export": "Windsurf",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ai",
+			"code",
+			"editor",
+			"brand"
+		]
+	},
+	{
+		"name": "x",
+		"export": "X",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"brand",
+			"social",
+			"twitter"
+		]
+	},
+	{
+		"name": "xai",
+		"export": "Xai",
+		"category": "brands",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ai",
+			"brand"
+		]
+	},
+	{
+		"name": "youtube",
+		"export": "Youtube",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"youtube",
+			"video",
+			"google"
+		]
+	},
+	{
+		"name": "zai",
+		"export": "Zai",
+		"category": "brands",
+		"variants": [
+			"bold"
+		],
+		"tags": [
+			"z.ai",
+			"ai",
+			"brand"
+		]
+	},
+	{
+		"name": "zoom-in",
+		"export": "ZoomIn",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"magnifier",
+			"magnifier-zoom-in",
+			"zoom-in",
+			"search",
+			"enlarge",
+			"plus",
+			"solar",
+			"search-plus"
+		]
+	},
+	{
+		"name": "zoom-out",
+		"export": "ZoomOut",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"magnifier",
+			"minimalistic-magnifier-zoom-out",
+			"zoom-out",
+			"search",
+			"shrink",
+			"minus",
+			"solar",
+			"search-minus"
+		]
+	}
+]

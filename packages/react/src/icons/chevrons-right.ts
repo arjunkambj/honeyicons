@@ -7,6 +7,3 @@ export const ChevronsRight = /* @__PURE__ */ createIcon("ChevronsRight", {
 		["path", { d: "M5.50005 18C5.50005 18 11.5 13.5811 11.5 12C11.5 10.4188 5.5 6 5.5 6", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use ChevronsRight instead. */
-export const ArrowRightDouble = ChevronsRight;

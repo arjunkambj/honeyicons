@@ -4,10 +4,12 @@ import {
 	type RefAttributes,
 } from "react";
 
-import { Icon, type IconProps } from "./icon.js";
+import { IconBase, type IconBaseProps } from "./icon-base.js";
 import { ICON_VARIANTS, type IconNodeMap, type IconVariant } from "./types.js";
 
-export type HoneyIconProps = Omit<IconProps, "iconNode">;
+export type HoneyIconProps = Omit<IconBaseProps, "iconNode"> & {
+	variant?: IconVariant;
+};
 
 export type HoneyIcon = ForwardRefExoticComponent<
 	HoneyIconProps & RefAttributes<SVGSVGElement>
@@ -17,15 +19,21 @@ export type HoneyIcon = ForwardRefExoticComponent<
 
 export function createIcon(name: string, nodes: IconNodeMap): HoneyIcon {
 	const variants = ICON_VARIANTS.filter((variant) => nodes[variant]);
+	// Icons drawn only in bold, such as most brands, default to bold.
+	const [defaultVariant] = variants;
+	if (!defaultVariant) {
+		throw new Error(`${name} has no icon data`);
+	}
 	const Component = forwardRef<SVGSVGElement, HoneyIconProps>(
-		function HoneyIcon({ variant = "linear", ...props }, ref) {
-			const iconNode = nodes[variant] ?? nodes[variants[0] ?? "linear"];
-			if (!iconNode) {
-				throw new Error(`Missing icon data for ${name}`);
+		function HoneyIcon({ variant = defaultVariant, ...props }, ref) {
+			if (!Object.hasOwn(nodes, variant)) {
+				throw new Error(`${name} has no ${variant} variant`);
 			}
-			return (
-				<Icon ref={ref} iconNode={iconNode} variant={variant} {...props} />
-			);
+			const iconNode = nodes[variant];
+			if (!iconNode) {
+				throw new Error(`${name} has no ${variant} variant`);
+			}
+			return <IconBase ref={ref} iconNode={iconNode} {...props} />;
 		},
 	) as HoneyIcon;
 	Component.displayName = name;

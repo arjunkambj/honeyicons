@@ -8,6 +8,3 @@ export const Image = /* @__PURE__ */ createIcon("Image", {
 		["circle", { cx: "15.5", cy: "8", r: "1.5", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use Image instead. */
-export const Images = Image;

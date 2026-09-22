@@ -7,6 +7,3 @@ export const VolumeOff = /* @__PURE__ */ createIcon("VolumeOff", {
 		["path", { d: "M20 9.00002L14 15M14 9L19.9999 15", stroke: "currentColor" }],
 	],
 });
-
-/** @deprecated Use VolumeOff instead. */
-export const Muted = VolumeOff;

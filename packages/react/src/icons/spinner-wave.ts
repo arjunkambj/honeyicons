@@ -15,6 +15,3 @@ export const SpinnerWave = /* @__PURE__ */ createIcon("SpinnerWave", {
 		["path", { d: "M2.4 0C1.269 0 .703 0 .351 .351C0 .703 0 1.269 0 2.4C0 3.531 0 4.097 .351 4.449C.703 4.8 1.269 4.8 2.4 4.8C3.531 4.8 4.097 4.8 4.449 4.449C4.8 4.097 4.8 3.531 4.8 2.4C4.8 1.269 4.8 .703 4.449 .351C4.097 0 3.531 0 2.4 0Z", transform: "translate(16.2 16.2)", fill: "currentColor", opacity: "0.15", "data-honeyicons-spinner-wave": "3" }],
 	],
 });
-
-/** @deprecated Use SpinnerWave instead. */
-export const SpinnerTinker = SpinnerWave;
