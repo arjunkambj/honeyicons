@@ -81,28 +81,26 @@ function DocsPage() {
 					aria-labelledby="agent-skill-title"
 					className="scroll-mt-24"
 				>
-					<div className="flex items-start gap-4">
-						<div className="min-w-0 flex-1">
-							<h2
-								id="agent-skill-title"
-								className="font-semibold text-2xl leading-snug tracking-tight"
-							>
-								Set up with an agent
-							</h2>
-							<p className="mt-2 text-sm text-muted-foreground leading-6">
-								Copy this prompt into your coding agent. It reads the setup
-								guide, installs the package and skill, and checks the result.
-							</p>
-						</div>
+					<h2
+						id="agent-skill-title"
+						className="font-semibold text-2xl leading-snug tracking-tight"
+					>
+						Set up with an agent
+					</h2>
+					<p className="mt-2 text-sm text-muted-foreground leading-6">
+						Copy this prompt into your coding agent. It reads the setup guide,
+						installs the package and skill, and checks the result.
+					</p>
+					<div className="mt-5 flex items-start gap-3">
+						<code className="min-w-0 flex-1 wrap-anywhere pt-1.5 font-mono text-sm leading-6 text-foreground">
+							{setupPrompt}
+						</code>
 						<CopyButton
 							text={setupPrompt}
 							label="Copy agent setup prompt"
 							className="size-9 shrink-0 rounded-xl"
 						/>
 					</div>
-					<code className="mt-5 block wrap-anywhere font-mono text-sm leading-6 text-foreground">
-						{setupPrompt}
-					</code>
 					<p className="mt-4 text-sm text-muted-foreground leading-6">
 						Already installed the package? Add the skill on its own:
 					</p>
