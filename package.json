@@ -16,8 +16,8 @@
 	"devDependencies": {
 		"@honeyicons/config": "workspace:*",
 		"@types/node": "catalog:",
-		"oxfmt": "^0.67.0",
-		"oxlint": "^1.82.0",
+		"oxfmt": "^0.70.0",
+		"oxlint": "^1.85.0",
 		"turbo": "^2.10.7",
 		"typescript": "catalog:"
 	},

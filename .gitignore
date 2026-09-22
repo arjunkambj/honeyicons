@@ -18,6 +18,8 @@ local.db-*
 .env*.local
 
 # IDEs and editors
+.claude/
+.claude-plugin/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
