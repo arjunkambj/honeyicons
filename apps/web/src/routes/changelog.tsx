@@ -5,6 +5,7 @@ import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-006", label: "0.0.6 · Even overlaps" },
 	{ id: "version-005", label: "0.0.5 · Named icons" },
 	{ id: "september-12-title", label: "Five new icons" },
 	{ id: "refinements", label: "Refinements" },
@@ -53,6 +54,30 @@ function ChangelogPage() {
 					title="Changelog"
 					description="New icons and small improvements to the collection."
 				/>
+				<section
+					aria-labelledby="version-006"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-09-23" className="text-muted-foreground text-sm">
+						September 23, 2026
+					</time>
+					<h2
+						id="version-006"
+						className="mt-3 scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.6 · Even rendering with translucent colors
+					</h2>
+					<ul className="mt-3 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Overlapping parts in 78 icons are merged, so icons drawn in a
+							translucent color no longer show darker seams where lines cross.
+						</li>
+						<li>
+							The back card of ArchiveAlt now ends where it meets the front
+							card.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-005"
 					className="border-t border-border pt-8"
