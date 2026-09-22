@@ -359,7 +359,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "alarm",
 		pascalName: "Alarm",
-		category: "status",
+		category: "time",
 		tags: ["alarm","clock","reminder","time"],
 		variants: ["linear"],
 		component: Alarm,
@@ -391,7 +391,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "anthropic",
 		pascalName: "Anthropic",
-		category: "social",
+		category: "brands",
 		tags: ["claude","ai","brand"],
 		variants: ["bold"],
 		component: Anthropic,
@@ -399,7 +399,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "antigravity",
 		pascalName: "Antigravity",
-		category: "social",
+		category: "brands",
 		tags: ["ai","code","editor","brand"],
 		variants: ["bold"],
 		component: Antigravity,
@@ -503,7 +503,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "battery",
 		pascalName: "Battery",
-		category: "status",
+		category: "devices",
 		tags: ["battery","power","charge","half","solar"],
 		variants: ["linear"],
 		component: Battery,
@@ -527,7 +527,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "bluetooth",
 		pascalName: "Bluetooth",
-		category: "status",
+		category: "devices",
 		tags: ["bluetooth","wireless","connection","solar"],
 		variants: ["linear"],
 		component: Bluetooth,
@@ -583,7 +583,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "briefcase",
 		pascalName: "Briefcase",
-		category: "files",
+		category: "objects",
 		tags: ["briefcase","case","work","business","bag"],
 		variants: ["linear"],
 		component: Briefcase,
@@ -599,7 +599,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "bug",
 		pascalName: "Bug",
-		category: "status",
+		category: "development",
 		tags: ["bug","insect","debug","issue"],
 		variants: ["linear"],
 		component: Bug,
@@ -607,7 +607,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "building",
 		pascalName: "Building",
-		category: "layout",
+		category: "maps",
 		tags: ["building","office","business","company","city","architecture","hugeicons"],
 		variants: ["linear"],
 		component: Building,
@@ -615,7 +615,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "bun",
 		pascalName: "Bun",
-		category: "social",
+		category: "brands",
 		tags: ["javascript","runtime","brand"],
 		variants: ["bold"],
 		component: Bun,
@@ -623,7 +623,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "calculator",
 		pascalName: "Calculator",
-		category: "actions",
+		category: "commerce",
 		tags: ["calculator","math","arithmetic","calculate","solar"],
 		variants: ["linear"],
 		component: Calculator,
@@ -631,7 +631,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "calendar",
 		pascalName: "Calendar",
-		category: "layout",
+		category: "time",
 		tags: ["calendar","date","schedule","event","month","hugeicons","calendar-03","Calendar03"],
 		variants: ["linear"],
 		component: Calendar,
@@ -639,7 +639,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "calendar-add",
 		pascalName: "CalendarAdd",
-		category: "layout",
+		category: "time",
 		tags: ["calendar","date","event","add","plus","calendar-plus","new","schedule","solar"],
 		variants: ["linear"],
 		component: CalendarAdd,
@@ -647,7 +647,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "calendar-mark",
 		pascalName: "CalendarMark",
-		category: "layout",
+		category: "time",
 		tags: ["calendar","date","event","mark","selected","today","solar"],
 		variants: ["linear"],
 		component: CalendarMark,
@@ -655,7 +655,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "calendar-remove",
 		pascalName: "CalendarRemove",
-		category: "layout",
+		category: "time",
 		tags: ["calendar","date","event","remove","minus","calendar-minus","schedule","solar"],
 		variants: ["linear"],
 		component: CalendarRemove,
@@ -663,7 +663,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "calendar-search",
 		pascalName: "CalendarSearch",
-		category: "layout",
+		category: "time",
 		tags: ["calendar","search","date","schedule","solar"],
 		variants: ["linear"],
 		component: CalendarSearch,
@@ -671,7 +671,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "calendar-x",
 		pascalName: "CalendarX",
-		category: "layout",
+		category: "time",
 		tags: ["calendar","date","event","x","close","cancel","schedule","solar"],
 		variants: ["linear"],
 		component: CalendarX,
@@ -687,7 +687,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "card",
 		pascalName: "Card",
-		category: "actions",
+		category: "commerce",
 		tags: ["credit-card","debit-card","payment","bank","finance","solar"],
 		variants: ["linear"],
 		component: Card,
@@ -695,7 +695,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "cart",
 		pascalName: "Cart",
-		category: "actions",
+		category: "commerce",
 		tags: ["basket","shopping","store","solar"],
 		variants: ["linear"],
 		component: Cart,
@@ -703,7 +703,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "cart-bag",
 		pascalName: "CartBag",
-		category: "actions",
+		category: "commerce",
 		tags: ["bag","shopping-bag","shopping","store","purchase","checkout","solar"],
 		variants: ["linear"],
 		component: CartBag,
@@ -711,7 +711,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "cart-large",
 		pascalName: "CartLarge",
-		category: "actions",
+		category: "commerce",
 		tags: ["cart","shopping-cart","trolley","checkout","store","shopping","solar"],
 		variants: ["linear"],
 		component: CartLarge,
@@ -719,7 +719,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "chair",
 		pascalName: "Chair",
-		category: "layout",
+		category: "objects",
 		tags: ["chair","seat","furniture"],
 		variants: ["linear"],
 		component: Chair,
@@ -823,7 +823,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "chrome",
 		pascalName: "Chrome",
-		category: "social",
+		category: "brands",
 		tags: ["brand","chrome","google","browser"],
 		variants: ["bold"],
 		component: Chrome,
@@ -847,7 +847,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "claude-ai",
 		pascalName: "ClaudeAi",
-		category: "social",
+		category: "brands",
 		tags: ["claude","anthropic","ai","assistant","brand"],
 		variants: ["bold"],
 		component: ClaudeAi,
@@ -855,7 +855,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "claude-code",
 		pascalName: "ClaudeCode",
-		category: "social",
+		category: "brands",
 		tags: ["claude","anthropic","ai","code","terminal","brand"],
 		variants: ["bold"],
 		component: ClaudeCode,
@@ -895,7 +895,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "clock",
 		pascalName: "Clock",
-		category: "status",
+		category: "time",
 		tags: ["time","hour","schedule","watch"],
 		variants: ["linear"],
 		component: Clock,
@@ -935,7 +935,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "code",
 		pascalName: "Code",
-		category: "editor",
+		category: "development",
 		tags: ["programming","developer","syntax","brackets","solar"],
 		variants: ["linear"],
 		component: Code,
@@ -943,7 +943,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "codex",
 		pascalName: "Codex",
-		category: "social",
+		category: "brands",
 		tags: ["openai","ai","coding","brand"],
 		variants: ["bold"],
 		component: Codex,
@@ -951,7 +951,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "command",
 		pascalName: "Command",
-		category: "editor",
+		category: "development",
 		tags: ["keyboard","shortcut","cmd","mac","solar"],
 		variants: ["linear"],
 		component: Command,
@@ -959,7 +959,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "computer",
 		pascalName: "Computer",
-		category: "layout",
+		category: "devices",
 		tags: ["monitor","desktop","screen","display","device","hugeicons"],
 		variants: ["linear","bold"],
 		component: Computer,
@@ -991,7 +991,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "cursor",
 		pascalName: "Cursor",
-		category: "social",
+		category: "brands",
 		tags: ["brand","cursor","ai","code","editor"],
 		variants: ["bold"],
 		component: Cursor,
@@ -999,7 +999,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "database",
 		pascalName: "Database",
-		category: "files",
+		category: "development",
 		tags: ["database","storage","data","server","solar"],
 		variants: ["linear"],
 		component: Database,
@@ -1007,7 +1007,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "deepseek",
 		pascalName: "Deepseek",
-		category: "social",
+		category: "brands",
 		tags: ["ai","whale","brand"],
 		variants: ["bold"],
 		component: Deepseek,
@@ -1015,7 +1015,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "devin",
 		pascalName: "Devin",
-		category: "social",
+		category: "brands",
 		tags: ["ai","code","agent","brand"],
 		variants: ["bold"],
 		component: Devin,
@@ -1023,7 +1023,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "diamond",
 		pascalName: "Diamond",
-		category: "layout",
+		category: "shapes",
 		tags: ["diamond","shape","geometry","rhombus","hugeicons"],
 		variants: ["linear"],
 		component: Diamond,
@@ -1031,7 +1031,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "discord",
 		pascalName: "Discord",
-		category: "social",
+		category: "brands",
 		tags: ["chat","community","brand"],
 		variants: ["bold"],
 		component: Discord,
@@ -1127,7 +1127,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "facebook",
 		pascalName: "Facebook",
-		category: "social",
+		category: "brands",
 		tags: ["meta","social","brand"],
 		variants: ["bold"],
 		component: Facebook,
@@ -1135,7 +1135,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "figma",
 		pascalName: "Figma",
-		category: "social",
+		category: "brands",
 		tags: ["figma","design","brand","solar"],
 		variants: ["linear"],
 		component: Figma,
@@ -1191,7 +1191,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "fingerprint",
 		pascalName: "Fingerprint",
-		category: "status",
+		category: "security",
 		tags: ["fingerprint","biometric","touch-id","identity","security","auth"],
 		variants: ["linear"],
 		component: Fingerprint,
@@ -1271,7 +1271,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "gemini",
 		pascalName: "Gemini",
-		category: "social",
+		category: "brands",
 		tags: ["google","ai","brand"],
 		variants: ["bold"],
 		component: Gemini,
@@ -1279,7 +1279,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "gift",
 		pascalName: "Gift",
-		category: "actions",
+		category: "commerce",
 		tags: ["gift","present","reward","surprise","box","ribbon"],
 		variants: ["linear"],
 		component: Gift,
@@ -1287,7 +1287,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "git",
 		pascalName: "Git",
-		category: "social",
+		category: "brands",
 		tags: ["version-control","repository","code","brand"],
 		variants: ["bold"],
 		component: Git,
@@ -1295,7 +1295,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "git-branch",
 		pascalName: "GitBranch",
-		category: "editor",
+		category: "development",
 		tags: ["git","branch","version-control","source-control","solar"],
 		variants: ["linear"],
 		component: GitBranch,
@@ -1303,7 +1303,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "git-diff",
 		pascalName: "GitDiff",
-		category: "editor",
+		category: "development",
 		tags: ["git","diff","compare","changes","version-control","solar"],
 		variants: ["linear"],
 		component: GitDiff,
@@ -1311,7 +1311,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "git-fork",
 		pascalName: "GitFork",
-		category: "editor",
+		category: "development",
 		tags: ["git","fork","split","version-control","repository","solar"],
 		variants: ["linear"],
 		component: GitFork,
@@ -1319,7 +1319,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "git-graph",
 		pascalName: "GitGraph",
-		category: "editor",
+		category: "development",
 		tags: ["git","graph","history","commits","version-control","solar"],
 		variants: ["linear"],
 		component: GitGraph,
@@ -1327,7 +1327,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "git-pull-request",
 		pascalName: "GitPullRequest",
-		category: "editor",
+		category: "development",
 		tags: ["git","pull-request","pr","merge","review","version-control","solar"],
 		variants: ["linear"],
 		component: GitPullRequest,
@@ -1335,7 +1335,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "github",
 		pascalName: "Github",
-		category: "social",
+		category: "brands",
 		tags: ["git","code","repository","brand"],
 		variants: ["bold"],
 		component: Github,
@@ -1343,7 +1343,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "github-copilot",
 		pascalName: "GithubCopilot",
-		category: "social",
+		category: "brands",
 		tags: ["brand","github","copilot","ai","code","assistant"],
 		variants: ["bold"],
 		component: GithubCopilot,
@@ -1351,7 +1351,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "globe",
 		pascalName: "Globe",
-		category: "layout",
+		category: "maps",
 		tags: ["globe","world","earth","geography","travel","solar"],
 		variants: ["linear"],
 		component: Globe,
@@ -1359,7 +1359,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "google",
 		pascalName: "Google",
-		category: "social",
+		category: "brands",
 		tags: ["search","alphabet","brand"],
 		variants: ["bold"],
 		component: Google,
@@ -1383,7 +1383,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "grok",
 		pascalName: "Grok",
-		category: "social",
+		category: "brands",
 		tags: ["xai","ai","assistant","brand"],
 		variants: ["linear"],
 		component: Grok,
@@ -1439,7 +1439,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "history",
 		pascalName: "History",
-		category: "arrows",
+		category: "time",
 		tags: ["history","recent","clock","time","hugeicons"],
 		variants: ["linear"],
 		component: History,
@@ -1447,7 +1447,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "home",
 		pascalName: "Home",
-		category: "layout",
+		category: "maps",
 		tags: [],
 		variants: ["linear"],
 		component: Home,
@@ -1455,7 +1455,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "home-angle",
 		pascalName: "HomeAngle",
-		category: "layout",
+		category: "maps",
 		tags: ["home","house","dashboard","main","solar"],
 		variants: ["linear"],
 		component: HomeAngle,
@@ -1519,7 +1519,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "instagram",
 		pascalName: "Instagram",
-		category: "social",
+		category: "brands",
 		tags: ["instagram","social","photos","brand","insta"],
 		variants: ["linear"],
 		component: Instagram,
@@ -1527,7 +1527,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "integration",
 		pascalName: "Integration",
-		category: "layout",
+		category: "development",
 		tags: ["flow","workflow","connect","nodes","hugeicons"],
 		variants: ["linear"],
 		component: Integration,
@@ -1551,7 +1551,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "key",
 		pascalName: "Key",
-		category: "settings",
+		category: "security",
 		tags: ["security","access","password","lock","key-minimalistic","solar"],
 		variants: ["linear"],
 		component: Key,
@@ -1559,7 +1559,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "keyboard",
 		pascalName: "Keyboard",
-		category: "editor",
+		category: "devices",
 		tags: ["keyboard","keys","type","input","solar"],
 		variants: ["linear"],
 		component: Keyboard,
@@ -1567,7 +1567,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "kimi",
 		pascalName: "Kimi",
-		category: "social",
+		category: "brands",
 		tags: ["ai","assistant","moonshot","brand"],
 		variants: ["bold"],
 		component: Kimi,
@@ -1615,7 +1615,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "life-buoy",
 		pascalName: "LifeBuoy",
-		category: "status",
+		category: "objects",
 		tags: ["life-buoy","lifebuoy","help","support","rescue","lifesaver"],
 		variants: ["linear"],
 		component: LifeBuoy,
@@ -1623,7 +1623,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "lightbulb",
 		pascalName: "Lightbulb",
-		category: "status",
+		category: "objects",
 		tags: ["lightbulb","light","bulb","idea","inspiration"],
 		variants: ["linear"],
 		component: Lightbulb,
@@ -1655,7 +1655,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "linkedin",
 		pascalName: "Linkedin",
-		category: "social",
+		category: "brands",
 		tags: ["brand","linkedin"],
 		variants: ["bold"],
 		component: Linkedin,
@@ -1711,7 +1711,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "lock",
 		pascalName: "Lock",
-		category: "status",
+		category: "security",
 		tags: ["locked","security","private","access","solar"],
 		variants: ["linear"],
 		component: Lock,
@@ -1719,7 +1719,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "lock-open",
 		pascalName: "LockOpen",
-		category: "status",
+		category: "security",
 		tags: ["lock-open","unlock","security","access","solar","lock-unlock","LockUnlock"],
 		variants: ["linear"],
 		component: LockOpen,
@@ -1743,7 +1743,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "map",
 		pascalName: "Map",
-		category: "layout",
+		category: "maps",
 		tags: ["map","navigation","location","travel","hugeicons"],
 		variants: ["linear"],
 		component: Map,
@@ -1783,7 +1783,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "map-folded",
 		pascalName: "MapFolded",
-		category: "layout",
+		category: "maps",
 		tags: ["map","folded","navigation","travel"],
 		variants: ["linear"],
 		component: MapFolded,
@@ -1791,7 +1791,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "map-pin",
 		pascalName: "MapPin",
-		category: "layout",
+		category: "maps",
 		tags: ["map-pin","map","location","pin","point-on-map","solar","map-alt"],
 		variants: ["linear"],
 		component: MapPin,
@@ -1823,7 +1823,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "meta-ai",
 		pascalName: "MetaAi",
-		category: "social",
+		category: "brands",
 		tags: ["brand","meta","ai","assistant"],
 		variants: ["bold"],
 		component: MetaAi,
@@ -1847,7 +1847,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "microsoft-copilot",
 		pascalName: "MicrosoftCopilot",
-		category: "social",
+		category: "brands",
 		tags: ["microsoft","copilot","ai","assistant","brand","ms-copilot","MsCopilot"],
 		variants: ["bold"],
 		component: MicrosoftCopilot,
@@ -1871,7 +1871,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "mistral",
 		pascalName: "Mistral",
-		category: "social",
+		category: "brands",
 		tags: ["ai","brand"],
 		variants: ["bold"],
 		component: Mistral,
@@ -1919,7 +1919,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "navigation",
 		pascalName: "Navigation",
-		category: "arrows",
+		category: "maps",
 		tags: ["navigation","navigation-03","location","direction","map","pointer","hugeicons"],
 		variants: ["linear"],
 		component: Navigation,
@@ -1935,7 +1935,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "npm",
 		pascalName: "Npm",
-		category: "social",
+		category: "brands",
 		tags: ["package","registry","javascript","brand"],
 		variants: ["bold"],
 		component: Npm,
@@ -1943,7 +1943,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "nvidia",
 		pascalName: "Nvidia",
-		category: "social",
+		category: "brands",
 		tags: ["brand","nvidia","gpu","hardware"],
 		variants: ["bold"],
 		component: Nvidia,
@@ -1959,7 +1959,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "openai",
 		pascalName: "Openai",
-		category: "social",
+		category: "brands",
 		tags: ["chatgpt","ai","brand"],
 		variants: ["linear"],
 		component: Openai,
@@ -1967,7 +1967,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "openclaw",
 		pascalName: "Openclaw",
-		category: "social",
+		category: "brands",
 		tags: ["open-claw","ai","mascot","brand"],
 		variants: ["bold"],
 		component: Openclaw,
@@ -1975,7 +1975,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "opencode",
 		pascalName: "Opencode",
-		category: "social",
+		category: "brands",
 		tags: ["open-code","code","terminal","brand"],
 		variants: ["bold"],
 		component: Opencode,
@@ -2039,7 +2039,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "perplexity",
 		pascalName: "Perplexity",
-		category: "social",
+		category: "brands",
 		tags: ["brand","perplexity","ai","search"],
 		variants: ["linear"],
 		component: Perplexity,
@@ -2063,7 +2063,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "pinterest",
 		pascalName: "Pinterest",
-		category: "social",
+		category: "brands",
 		tags: ["social","pins","brand"],
 		variants: ["bold"],
 		component: Pinterest,
@@ -2103,7 +2103,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "printer",
 		pascalName: "Printer",
-		category: "files",
+		category: "devices",
 		tags: ["printer","print","paper","document","solar"],
 		variants: ["linear"],
 		component: Printer,
@@ -2111,7 +2111,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "puzzle",
 		pascalName: "Puzzle",
-		category: "layout",
+		category: "development",
 		tags: ["puzzle","piece","extension","plugin","hugeicons"],
 		variants: ["linear"],
 		component: Puzzle,
@@ -2135,7 +2135,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "qwen",
 		pascalName: "Qwen",
-		category: "social",
+		category: "brands",
 		tags: ["ai","alibaba","brand"],
 		variants: ["bold"],
 		component: Qwen,
@@ -2143,7 +2143,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "react",
 		pascalName: "React",
-		category: "social",
+		category: "brands",
 		tags: ["javascript","framework","frontend","brand"],
 		variants: ["linear"],
 		component: React,
@@ -2151,7 +2151,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "reddit",
 		pascalName: "Reddit",
-		category: "social",
+		category: "brands",
 		tags: ["community","social","brand"],
 		variants: ["bold"],
 		component: Reddit,
@@ -2199,7 +2199,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "rhombus",
 		pascalName: "Rhombus",
-		category: "layout",
+		category: "shapes",
 		tags: ["rhombus","shape","geometry","diamond","hugeicons"],
 		variants: ["linear"],
 		component: Rhombus,
@@ -2207,7 +2207,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "rocket",
 		pascalName: "Rocket",
-		category: "layout",
+		category: "objects",
 		tags: ["rocket","rocket-02","launch","space","45-degrees","hugeicons","fire","flame"],
 		variants: ["linear"],
 		component: Rocket,
@@ -2239,7 +2239,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "server",
 		pascalName: "Server",
-		category: "files",
+		category: "development",
 		tags: ["server","rack","hardware","storage","solar"],
 		variants: ["linear"],
 		component: Server,
@@ -2263,7 +2263,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "shield-add",
 		pascalName: "ShieldAdd",
-		category: "status",
+		category: "security",
 		tags: ["shield","plus","add","protect","security","shield-plus","solar"],
 		variants: ["linear"],
 		component: ShieldAdd,
@@ -2303,7 +2303,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "sim-card",
 		pascalName: "SimCard",
-		category: "media",
+		category: "devices",
 		tags: ["sim-card","sim","mobile","network"],
 		variants: ["linear"],
 		component: SimCard,
@@ -2311,7 +2311,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "slack",
 		pascalName: "Slack",
-		category: "social",
+		category: "brands",
 		tags: ["messaging","chat","team","workplace","brand"],
 		variants: ["bold"],
 		component: Slack,
@@ -2359,7 +2359,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "smartphone",
 		pascalName: "Smartphone",
-		category: "layout",
+		category: "devices",
 		tags: ["phone","mobile","device","screen","solar"],
 		variants: ["linear"],
 		component: Smartphone,
@@ -2375,7 +2375,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "snapchat",
 		pascalName: "Snapchat",
-		category: "social",
+		category: "brands",
 		tags: [],
 		variants: ["linear","bold"],
 		component: Snapchat,
@@ -2391,7 +2391,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "sparkles",
 		pascalName: "Sparkles",
-		category: "actions",
+		category: "ai",
 		tags: ["sparkles","sparkle","magic","ai","shine","stars"],
 		variants: ["linear"],
 		component: Sparkles,
@@ -2479,7 +2479,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "stopwatch",
 		pascalName: "Stopwatch",
-		category: "status",
+		category: "time",
 		tags: ["stopwatch","stop-watch","timer","time","hugeicons"],
 		variants: ["linear"],
 		component: Stopwatch,
@@ -2495,7 +2495,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "suitcase",
 		pascalName: "Suitcase",
-		category: "files",
+		category: "objects",
 		tags: ["suitcase","travel","luggage","bag"],
 		variants: ["linear"],
 		component: Suitcase,
@@ -2511,7 +2511,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "supabase",
 		pascalName: "Supabase",
-		category: "social",
+		category: "brands",
 		tags: ["database","backend","brand"],
 		variants: ["bold"],
 		component: Supabase,
@@ -2527,7 +2527,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "tablet",
 		pascalName: "Tablet",
-		category: "layout",
+		category: "devices",
 		tags: ["ipad","device","screen","landscape","solar"],
 		variants: ["linear"],
 		component: Tablet,
@@ -2535,7 +2535,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "telegram",
 		pascalName: "Telegram",
-		category: "social",
+		category: "brands",
 		tags: ["messaging","chat","social","brand","paper-plane"],
 		variants: ["bold"],
 		component: Telegram,
@@ -2543,7 +2543,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "terminal",
 		pascalName: "Terminal",
-		category: "editor",
+		category: "development",
 		tags: ["code","console","command","shell","prompt","cli"],
 		variants: ["linear"],
 		component: Terminal,
@@ -2599,7 +2599,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "threads",
 		pascalName: "Threads",
-		category: "social",
+		category: "brands",
 		tags: ["brand","threads"],
 		variants: ["linear"],
 		component: Threads,
@@ -2607,7 +2607,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "three-squares",
 		pascalName: "ThreeSquares",
-		category: "layout",
+		category: "shapes",
 		tags: ["three-squares","squares","stack","layers","solar"],
 		variants: ["linear"],
 		component: ThreeSquares,
@@ -2615,7 +2615,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "ticket",
 		pascalName: "Ticket",
-		category: "actions",
+		category: "commerce",
 		tags: ["ticket","pass","event","admission","coupon","solar"],
 		variants: ["linear"],
 		component: Ticket,
@@ -2623,7 +2623,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "ticket-discount",
 		pascalName: "TicketDiscount",
-		category: "actions",
+		category: "commerce",
 		tags: ["ticket","discount","coupon","voucher","sale","percent"],
 		variants: ["linear"],
 		component: TicketDiscount,
@@ -2631,7 +2631,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "tiktok",
 		pascalName: "Tiktok",
-		category: "social",
+		category: "brands",
 		tags: ["brand","tiktok"],
 		variants: ["bold"],
 		component: Tiktok,
@@ -2663,7 +2663,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "truck",
 		pascalName: "Truck",
-		category: "layout",
+		category: "maps",
 		tags: ["truck","delivery","shipping","transport"],
 		variants: ["linear"],
 		component: Truck,
@@ -2671,7 +2671,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "twitter",
 		pascalName: "Twitter",
-		category: "social",
+		category: "brands",
 		tags: ["bird","social","brand"],
 		variants: ["bold"],
 		component: Twitter,
@@ -2679,7 +2679,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "typescript",
 		pascalName: "Typescript",
-		category: "social",
+		category: "brands",
 		tags: ["typescript","javascript","language","brand","ts"],
 		variants: ["bold"],
 		component: Typescript,
@@ -2767,7 +2767,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "vercel",
 		pascalName: "Vercel",
-		category: "social",
+		category: "brands",
 		tags: ["brand","vercel","hosting","deployment"],
 		variants: ["bold"],
 		component: Vercel,
@@ -2823,7 +2823,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "wallet",
 		pascalName: "Wallet",
-		category: "actions",
+		category: "commerce",
 		tags: ["money","payment","finance","cash","solar"],
 		variants: ["linear"],
 		component: Wallet,
@@ -2831,7 +2831,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "waves",
 		pascalName: "Waves",
-		category: "layout",
+		category: "shapes",
 		tags: ["waves","water","sea","ocean"],
 		variants: ["linear"],
 		component: Waves,
@@ -2871,7 +2871,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "wifi",
 		pascalName: "Wifi",
-		category: "settings",
+		category: "devices",
 		tags: ["wifi","wi-fi","wireless","network","connection","internet","solar"],
 		variants: ["linear"],
 		component: Wifi,
@@ -2879,7 +2879,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "windsurf",
 		pascalName: "Windsurf",
-		category: "social",
+		category: "brands",
 		tags: ["ai","code","editor","brand"],
 		variants: ["linear"],
 		component: Windsurf,
@@ -2887,7 +2887,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "x",
 		pascalName: "X",
-		category: "social",
+		category: "brands",
 		tags: [],
 		variants: ["linear"],
 		component: X,
@@ -2895,7 +2895,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "xai",
 		pascalName: "Xai",
-		category: "social",
+		category: "brands",
 		tags: ["ai","brand"],
 		variants: ["linear"],
 		component: Xai,
@@ -2903,7 +2903,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "youtube",
 		pascalName: "Youtube",
-		category: "social",
+		category: "brands",
 		tags: ["brand","youtube","video","google"],
 		variants: ["bold"],
 		component: Youtube,
@@ -2911,7 +2911,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "zai",
 		pascalName: "Zai",
-		category: "social",
+		category: "brands",
 		tags: ["z.ai","ai","brand"],
 		variants: ["bold"],
 		component: Zai,

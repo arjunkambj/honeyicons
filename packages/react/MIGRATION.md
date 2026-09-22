@@ -16,6 +16,10 @@ These names now describe the depicted shapes more clearly. Previous React export
 | `Sent`          | `Send`           |
 | `Sim`           | `SimCard`        |
 
+## Category changes
+
+Icon categories are more specific. Exports and geometry are unchanged; only the `category` field in the catalog and the `IconCategory` type change. The `social` category is now `brands`, and the new categories are `commerce`, `development`, `devices`, `maps`, `objects`, `security`, `shapes`, and `time`. Code that filters the catalog by `"social"` should use `"brands"`.
+
 ## Arrow imports require attention
 
 The old `ArrowDown`, `ArrowUp`, `ArrowLeft`, and `ArrowRight` exports depicted chevrons. Use `ChevronDown`, `ChevronUp`, `ChevronLeft`, and `ChevronRight` to preserve those shapes. The `Arrow*` names now depict arrows with shafts, previously named `Arrow*02`. Diagonal arrows are unchanged.
