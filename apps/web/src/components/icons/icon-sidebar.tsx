@@ -14,10 +14,13 @@ export function IconSidebar({ selected, onSelect, counts }: IconSidebarProps) {
 			<p className="mb-2 flex h-9 items-center px-2 font-medium text-muted-foreground text-xs tracking-wider">
 				Categories
 			</p>
-			<nav className="flex flex-col gap-1">
+			<nav className="grid grid-cols-2 gap-1 sm:grid-cols-3 lg:grid-cols-1">
 				{CATEGORY_META.map((category) => {
 					const count = counts[category.id] ?? 0;
 					const isActive = selected === category.id;
+					if (count === 0 && !isActive) {
+						return null;
+					}
 					return (
 						<Button
 							key={category.id}

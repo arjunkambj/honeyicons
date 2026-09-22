@@ -1,12 +1,29 @@
 import {
+	Activity,
+	AlertTriangle,
+	ArrowRight,
+	Brain,
+	Cart,
+	Chat,
 	Check,
-	ChevronRight,
+	Clock,
+	Code,
+	Diamond,
+	Figma,
 	Folder,
 	type HoneyIcon,
+	ICON_CATEGORIES,
 	type IconCategory,
-	Layers,
+	Lock,
+	MapPin,
+	Pen,
+	Play,
+	Rocket,
+	Settings,
 	SidebarLeft,
-	UserGroup,
+	Smartphone,
+	Spinner,
+	User,
 	Widget,
 } from "@honeyicons/react";
 
@@ -17,18 +34,36 @@ export const SIZE_MAJOR_STEP = 4;
 
 export type CategoryFilter = "all" | IconCategory;
 
-export const CATEGORY_META: {
-	id: CategoryFilter;
-	label: string;
-	icon: HoneyIcon;
-}[] = [
+type CategoryMeta = { label: string; icon: HoneyIcon };
+
+const CATEGORY_DETAILS: Record<IconCategory, CategoryMeta> = {
+	actions: { label: "Actions", icon: Check },
+	ai: { label: "AI", icon: Brain },
+	arrows: { label: "Arrows", icon: ArrowRight },
+	brands: { label: "Brands", icon: Figma },
+	charts: { label: "Charts", icon: Activity },
+	chat: { label: "Chat", icon: Chat },
+	commerce: { label: "Commerce", icon: Cart },
+	development: { label: "Development", icon: Code },
+	devices: { label: "Devices", icon: Smartphone },
+	editor: { label: "Editor", icon: Pen },
+	files: { label: "Files & Folders", icon: Folder },
+	layout: { label: "Layout", icon: SidebarLeft },
+	maps: { label: "Maps & Places", icon: MapPin },
+	media: { label: "Media", icon: Play },
+	objects: { label: "Objects", icon: Rocket },
+	security: { label: "Security", icon: Lock },
+	settings: { label: "Settings", icon: Settings },
+	shapes: { label: "Shapes", icon: Diamond },
+	spinner: { label: "Spinners", icon: Spinner },
+	status: { label: "Status", icon: AlertTriangle },
+	time: { label: "Time", icon: Clock },
+	user: { label: "Users", icon: User },
+};
+
+export const CATEGORY_META: ({ id: CategoryFilter } & CategoryMeta)[] = [
 	{ id: "all", label: "All", icon: Widget },
-	{ id: "actions", label: "Actions", icon: Check },
-	{ id: "social", label: "Social", icon: UserGroup },
-	{ id: "layout", label: "Layout", icon: SidebarLeft },
-	{ id: "arrows", label: "Arrow", icon: ChevronRight },
-	{ id: "files", label: "Folder", icon: Folder },
-	{ id: "spinner", label: "Loaders", icon: Layers },
+	...ICON_CATEGORIES.map((id) => ({ id, ...CATEGORY_DETAILS[id] })),
 ];
 
 export const VARIANT_META = [
