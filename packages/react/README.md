@@ -57,7 +57,7 @@ The published package contains ESM JavaScript and TypeScript declarations.
 Named icon imports support tree shaking; importing the catalog includes the
 full collection.
 
-To build or package from this repository, run `bun run build` or `bun pm pack`
+To build or package from this repository, run `pnpm run build` or `pnpm pack`
 inside `packages/react`. Packing builds the package automatically. The web app
 and shared UI resolve the source through TypeScript paths during development.
 

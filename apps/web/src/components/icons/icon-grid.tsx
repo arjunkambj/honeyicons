@@ -33,10 +33,10 @@ export function IconGrid({
 				? "No icons match"
 				: "No icons in this style yet";
 		const description = !hasCatalog
-			? "Add SVGs under icons/linear/{category}, then run bun run generate:icons."
+			? "Add SVGs under icons/linear/{category}, then run pnpm run generate:icons."
 			: hasVariantIcons
 				? "Try another search or category."
-				: `Add SVGs under icons/${variant}/{category}, then run bun run generate:icons.`;
+				: `Add SVGs under icons/${variant}/{category}, then run pnpm run generate:icons.`;
 		return (
 			<Empty className="min-h-64 border border-dashed">
 				<EmptyHeader>

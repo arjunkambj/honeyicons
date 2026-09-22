@@ -8,7 +8,7 @@ type IconNode = [tag: string, attrs: Record<string, string>][];
 type IconMeta = Record<string, { tags?: string[]; aliases?: string[] }>;
 type IconSource = { name: string; category: string };
 
-const root = join(import.meta.dir, "..");
+const root = join(import.meta.dirname, "..");
 const iconsDir = join(root, "icons");
 const outDir = join(root, "packages/react/src/icons");
 const catalogPath = join(root, "packages/react/src/catalog.ts");

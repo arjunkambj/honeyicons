@@ -44,9 +44,9 @@
 	},
 	"scripts": {
 		"clean": "rm -rf dist",
-		"build": "bun run clean && esbuild \"src/**/*.ts\" \"src/**/*.tsx\" --outdir=dist --format=esm --jsx=automatic --target=es2020 --log-level=warning && tsc -p tsconfig.build.json",
-		"prepack": "bun run build",
-		"generate": "bun run ../../scripts/build-icons.ts",
+		"build": "pnpm run clean && esbuild \"src/**/*.ts\" \"src/**/*.tsx\" --outdir=dist --format=esm --jsx=automatic --target=es2020 --log-level=warning && tsc -p tsconfig.build.json",
+		"prepack": "pnpm run build",
+		"generate": "node ../../scripts/build-icons.ts",
 		"check-types": "tsc --noEmit"
 	},
 	"devDependencies": {

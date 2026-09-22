@@ -17,13 +17,13 @@ This project was created with [Better-T-Stack](https://github.com/AmanVarshney01
 First, install the dependencies:
 
 ```bash
-bun install
+pnpm install
 ```
 
 Then, run the development server:
 
 ```bash
-bun run dev
+pnpm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to see the web application.
@@ -56,7 +56,7 @@ If you want to add app-specific blocks instead of shared primitives, run the sha
 
 ## Git Hooks and Formatting
 
-- Run lint and format: `bun run check`
+- Run lint and format: `pnpm run check`
 
 ## Project Structure
 
@@ -76,7 +76,7 @@ honeyicons/
 Icons live in `icons/{linear,bold,duotone}/{category}/name.svg` (24×24). An icon needs at least one variant. Category is the folder name. Optional tags go in `icons/meta.json`. Then:
 
 ```bash
-bun run generate:icons
+pnpm run generate:icons
 ```
 
 Use descriptive kebab-case names without imported numeric suffixes. Keep related
@@ -91,13 +91,13 @@ Third-party icon sources and adaptation details are recorded in
 
 ## Available Scripts
 
-- `bun run dev`: Start all applications in development mode
-- `bun run build`: Build all applications
-- `bun run dev:web`: Start only the web application
-- `bun run check-types`: Check TypeScript types across all apps
-- `bun run generate:icons`: Generate `@honeyicons/react` components from SVGs
-- `bun run lint`: Lint the repo with Oxlint
-- `bun run format`: Format the repo with Oxfmt
-- `bun run format:check`: Check formatting without changing files
-- `bun run check`: Auto-fix lint issues and format the repo
-- `bun run deploy` from `apps/web`: Build and deploy the site to Cloudflare
+- `pnpm run dev`: Start all applications in development mode
+- `pnpm run build`: Build all applications
+- `pnpm run dev:web`: Start only the web application
+- `pnpm run check-types`: Check TypeScript types across all apps
+- `pnpm run generate:icons`: Generate `@honeyicons/react` components from SVGs
+- `pnpm run lint`: Lint the repo with Oxlint
+- `pnpm run format`: Format the repo with Oxfmt
+- `pnpm run format:check`: Check formatting without changing files
+- `pnpm run check`: Auto-fix lint issues and format the repo
+- `pnpm run deploy` from `apps/web`: Build and deploy the site to Cloudflare

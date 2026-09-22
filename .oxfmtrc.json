@@ -14,7 +14,7 @@
 		"**/packages/react/src/icons/**",
 		"packages/react/src/catalog.ts",
 		"packages/react/src/categories.ts",
-		"**/bun.lock",
+		"**/pnpm-lock.yaml",
 		"**/*.svg"
 	]
 }
