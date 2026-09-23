@@ -3,7 +3,9 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M12 21.9V2.76M15.08 5.29C15.08 5.29 12.8107 2.21 12 2.21C11.1893 2.21 8.92 5.29 8.92 5.29M12 17.5L8.04 15.025C7.16 14.475 6.72 13.65 6.72 12.715V11.34M12 13.98L15.96 11.505C16.84 10.955 17.39 10.13 17.39 9.195V8.81M6.72 9.47A0.99 0.99 0 1 1 6.72 11.45A0.99 0.99 0 1 1 6.72 9.47ZM16.4 6.83H18.38V8.81H16.4Z", stroke: "currentColor" }],
+	["path", { d: "M12 21.9V2.76M15.08 5.29C15.08 5.29 12.8107 2.21 12 2.21C11.1893 2.21 8.92 5.29 8.92 5.29M12 17.5L8.04 15.025C7.16 14.475 6.72 13.65 6.72 12.715V11.34M12 13.98L15.96 11.505C16.84 10.955 17.39 10.13 17.39 9.195V8.81", stroke: "currentColor" }],
+	["circle", { cx: "6.72", cy: "10.46", r: "1.89", fill: "currentColor", stroke: "none" }],
+	["rect", { x: "15.5", y: "5.93", width: "3.78", height: "3.78", rx: "0.9", fill: "currentColor", stroke: "none" }],
 ];
 
 export const Usb = /* @__PURE__ */ createIcon("Usb", {
