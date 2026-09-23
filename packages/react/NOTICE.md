@@ -643,3 +643,9 @@ Grok omits the source clip definition, which matches the SVG viewport.
 `Vercel`, `Cursor`, `GithubCopilot`, `Linkedin`, `Nvidia`, `Tiktok`,
 `Perplexity`, `MetaAi`, `Youtube`, `Threads`, `Chrome`, and the bold variant
 of `Snapchat` preserve the supplied filled paths, using `currentColor`.
+
+Brand marks appear in both `linear` and `bold`. Solid marks reuse the same
+drawing in each variant. `Snapchat` keeps separate outline and filled
+drawings. The bold `Figma` is drawn from the linear mark as five filled
+pieces with even gaps, and the bold `Instagram` fills the linear mark's
+rounded square, leaving the lens ring and flash dot as cutouts.
