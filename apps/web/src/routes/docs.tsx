@@ -157,7 +157,7 @@ function DocsPage() {
 				<DocsSection
 					id="props"
 					title="Props"
-					description="Every icon is drawn on a 24 × 24 grid with a 1.8 stroke and uses the current text color. Icons that have a bold version accept the bold variant."
+					description="Every icon is drawn on a 24 × 24 grid with a 1.8 stroke and uses the current text color. Every icon also has a bold version."
 				>
 					<CodeBlock code={propsCode} className="mt-6" />
 					<div className="mt-3 flex flex-wrap items-end gap-8 rounded-2xl bg-card px-5 py-4">

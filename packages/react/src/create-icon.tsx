@@ -19,7 +19,7 @@ export type HoneyIcon = ForwardRefExoticComponent<
 
 export function createIcon(name: string, nodes: IconNodeMap): HoneyIcon {
 	const variants = ICON_VARIANTS.filter((variant) => nodes[variant]);
-	// Icons drawn only in bold, such as most brands, default to bold.
+	// Icons drawn only in bold default to bold.
 	const [defaultVariant] = variants;
 	if (!defaultVariant) {
 		throw new Error(`${name} has no icon data`);

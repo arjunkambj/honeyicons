@@ -4,7 +4,8 @@
 		"export": "Activity",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"activity",
@@ -19,7 +20,8 @@
 		"export": "Add",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"plus",
@@ -33,7 +35,8 @@
 		"export": "Alarm",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"alarm",
@@ -47,7 +50,8 @@
 		"export": "Album",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"album",
@@ -61,7 +65,8 @@
 		"export": "AlertTriangle",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"warning",
@@ -78,7 +83,8 @@
 		"export": "AlignCenterHorizontal",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"align",
@@ -93,7 +99,8 @@
 		"export": "Analytics",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"analytics",
@@ -139,7 +146,8 @@
 		"export": "AppWindow",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"app",
@@ -154,7 +162,8 @@
 		"export": "Archive",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"library",
@@ -171,7 +180,8 @@
 		"export": "ArchiveAlt",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"archive",
@@ -188,7 +198,8 @@
 		"export": "ArchiveUp",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"archive",
@@ -205,7 +216,8 @@
 		"export": "ArrowDown",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"arrow",
@@ -221,7 +233,8 @@
 		"export": "ArrowDownLeft",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"arrow",
@@ -237,7 +250,8 @@
 		"export": "ArrowDownRight",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"arrow",
@@ -253,7 +267,8 @@
 		"export": "ArrowLeft",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"arrow",
@@ -269,7 +284,8 @@
 		"export": "ArrowRight",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"arrow",
@@ -285,7 +301,8 @@
 		"export": "ArrowUp",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"arrow",
@@ -301,7 +318,8 @@
 		"export": "ArrowUpLeft",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"arrow",
@@ -317,7 +335,8 @@
 		"export": "ArrowUpRight",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"arrow",
@@ -333,7 +352,8 @@
 		"export": "AtSign",
 		"category": "chat",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"at-sign",
@@ -348,7 +368,8 @@
 		"export": "Atom",
 		"category": "ai",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"atom",
@@ -363,7 +384,8 @@
 		"export": "Award",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"award",
@@ -378,7 +400,8 @@
 		"export": "Ban",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"ban",
@@ -394,7 +417,8 @@
 		"export": "Bank",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bank",
@@ -409,7 +433,8 @@
 		"export": "Barcode",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"barcode",
@@ -424,7 +449,8 @@
 		"export": "Battery",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"battery",
@@ -439,7 +465,8 @@
 		"export": "BatteryCharging",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"battery",
@@ -454,7 +481,8 @@
 		"export": "BatteryLow",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"battery",
@@ -469,7 +497,8 @@
 		"export": "Bell",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bell",
@@ -483,7 +512,8 @@
 		"export": "BellOff",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bell",
@@ -498,7 +528,8 @@
 		"export": "BellRing",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bell",
@@ -513,7 +544,8 @@
 		"export": "Bluetooth",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bluetooth",
@@ -527,7 +559,8 @@
 		"export": "Bold",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bold",
@@ -542,7 +575,8 @@
 		"export": "Bolt",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bolt",
@@ -559,7 +593,8 @@
 		"export": "Book",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"book",
@@ -574,7 +609,8 @@
 		"export": "BookOpen",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"book",
@@ -589,7 +625,8 @@
 		"export": "Bookmark",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"save",
@@ -604,7 +641,8 @@
 		"export": "Bookmarks",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bookmarks",
@@ -618,7 +656,8 @@
 		"export": "Bot",
 		"category": "ai",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bot",
@@ -634,7 +673,8 @@
 		"export": "Braces",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"braces",
@@ -649,7 +689,8 @@
 		"export": "Brain",
 		"category": "ai",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"ai",
@@ -666,7 +707,8 @@
 		"export": "Briefcase",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"briefcase",
@@ -681,7 +723,8 @@
 		"export": "Broadcast",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"broadcast",
@@ -697,7 +740,8 @@
 		"export": "Bug",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bug",
@@ -711,7 +755,8 @@
 		"export": "Building",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"building",
@@ -742,7 +787,8 @@
 		"export": "Calculator",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"calculator",
@@ -757,7 +803,8 @@
 		"export": "Calendar",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"calendar",
@@ -774,7 +821,8 @@
 		"export": "CalendarAdd",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"calendar",
@@ -793,7 +841,8 @@
 		"export": "CalendarCheck",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"calendar",
@@ -808,7 +857,8 @@
 		"export": "CalendarMark",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"calendar",
@@ -825,7 +875,8 @@
 		"export": "CalendarRange",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"calendar",
@@ -840,7 +891,8 @@
 		"export": "CalendarRemove",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"calendar",
@@ -858,7 +910,8 @@
 		"export": "CalendarSearch",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"calendar",
@@ -873,7 +926,8 @@
 		"export": "CalendarX",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"calendar",
@@ -891,7 +945,8 @@
 		"export": "Camera",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"camera",
@@ -906,7 +961,8 @@
 		"export": "CameraOff",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"camera",
@@ -921,7 +977,8 @@
 		"export": "Captions",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"captions",
@@ -936,7 +993,8 @@
 		"export": "Card",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"credit-card",
@@ -952,7 +1010,8 @@
 		"export": "Cart",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"basket",
@@ -966,7 +1025,8 @@
 		"export": "CartBag",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bag",
@@ -983,7 +1043,8 @@
 		"export": "CartLarge",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"cart",
@@ -1000,7 +1061,8 @@
 		"export": "Chair",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chair",
@@ -1013,7 +1075,8 @@
 		"export": "ChartAnalysis",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chart",
@@ -1029,7 +1092,8 @@
 		"export": "ChartLine",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chart",
@@ -1045,7 +1109,8 @@
 		"export": "ChartPie",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chart",
@@ -1060,7 +1125,8 @@
 		"export": "Chat",
 		"category": "chat",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chat",
@@ -1076,7 +1142,8 @@
 		"export": "Check",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"tick",
@@ -1092,7 +1159,8 @@
 		"export": "CheckDouble",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"double-check",
@@ -1110,7 +1178,8 @@
 		"export": "ChevronDown",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chevron",
@@ -1127,7 +1196,8 @@
 		"export": "ChevronLeft",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chevron",
@@ -1144,7 +1214,8 @@
 		"export": "ChevronRight",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chevron",
@@ -1161,7 +1232,8 @@
 		"export": "ChevronUp",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chevron",
@@ -1178,7 +1250,8 @@
 		"export": "ChevronsDown",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chevron",
@@ -1194,7 +1267,8 @@
 		"export": "ChevronsLeft",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chevron",
@@ -1210,7 +1284,8 @@
 		"export": "ChevronsRight",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chevron",
@@ -1226,7 +1301,8 @@
 		"export": "ChevronsUp",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"chevron",
@@ -1257,7 +1333,8 @@
 		"export": "Clapperboard",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"film",
@@ -1273,7 +1350,8 @@
 		"export": "ClapperboardText",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"film",
@@ -1322,7 +1400,8 @@
 		"export": "Clipboard",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"clipboard",
@@ -1337,7 +1416,8 @@
 		"export": "ClipboardAdd",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"clipboard",
@@ -1352,7 +1432,8 @@
 		"export": "ClipboardCheck",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"clipboard",
@@ -1368,7 +1449,8 @@
 		"export": "ClipboardRemove",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"clipboard",
@@ -1384,7 +1466,8 @@
 		"export": "Clock",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"time",
@@ -1398,7 +1481,8 @@
 		"export": "Close",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"dismiss",
@@ -1413,7 +1497,8 @@
 		"export": "Cloud",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"storage",
@@ -1428,7 +1513,8 @@
 		"export": "CloudDownload",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"cloud",
@@ -1443,7 +1529,8 @@
 		"export": "CloudRain",
 		"category": "weather",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"cloud",
@@ -1458,7 +1545,8 @@
 		"export": "CloudUpload",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"cloud",
@@ -1473,7 +1561,8 @@
 		"export": "Code",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"programming",
@@ -1503,7 +1592,8 @@
 		"export": "Columns",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"columns",
@@ -1518,7 +1608,8 @@
 		"export": "Command",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"keyboard",
@@ -1550,7 +1641,8 @@
 		"export": "Connect",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"connect",
@@ -1566,7 +1658,8 @@
 		"export": "Copy",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"copy",
@@ -1581,7 +1674,8 @@
 		"export": "CornerDownRight",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"corner",
@@ -1597,7 +1691,8 @@
 		"export": "Crop",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"crop",
@@ -1612,7 +1707,8 @@
 		"export": "Crown",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"crown",
@@ -1643,7 +1739,8 @@
 		"export": "CursorClick",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"click",
@@ -1659,7 +1756,8 @@
 		"export": "Dashboard",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"dashboard",
@@ -1674,7 +1772,8 @@
 		"export": "Database",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"database",
@@ -1718,7 +1817,8 @@
 		"export": "Diamond",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"diamond",
@@ -1747,7 +1847,8 @@
 		"export": "Dislike",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"thumbs-down",
@@ -1761,7 +1862,8 @@
 		"export": "Document",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"document",
@@ -1777,7 +1879,8 @@
 		"export": "Dollar",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"dollar",
@@ -1792,7 +1895,8 @@
 		"export": "DoorOpen",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"door",
@@ -1808,7 +1912,8 @@
 		"export": "Download",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"download",
@@ -1823,7 +1928,8 @@
 		"export": "Droplet",
 		"category": "weather",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"droplet",
@@ -1838,7 +1944,8 @@
 		"export": "Edit",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"edit",
@@ -1854,7 +1961,8 @@
 		"export": "EditOff",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"edit",
@@ -1869,7 +1977,8 @@
 		"export": "Email",
 		"category": "chat",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"mail",
@@ -1884,7 +1993,8 @@
 		"export": "Eraser",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"eraser",
@@ -1899,7 +2009,8 @@
 		"export": "ExternalLink",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"external-link",
@@ -1915,7 +2026,8 @@
 		"export": "Eye",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"eye",
@@ -1931,7 +2043,8 @@
 		"export": "EyeClosed",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"eye-closed",
@@ -1951,7 +2064,8 @@
 		"export": "EyeOff",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"eye",
@@ -1995,7 +2109,8 @@
 		"export": "File",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"document",
@@ -2010,7 +2125,8 @@
 		"export": "FileAdd",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"document",
@@ -2027,7 +2143,8 @@
 		"export": "FileArchive",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"file",
@@ -2042,7 +2159,8 @@
 		"export": "FileCode",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"document",
@@ -2058,7 +2176,8 @@
 		"export": "FileImage",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"file",
@@ -2073,7 +2192,8 @@
 		"export": "FileRemove",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"document",
@@ -2089,7 +2209,8 @@
 		"export": "FileSearch",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"file",
@@ -2104,7 +2225,8 @@
 		"export": "FileSpreadsheet",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"file",
@@ -2120,7 +2242,8 @@
 		"export": "FileText",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"document",
@@ -2137,7 +2260,8 @@
 		"export": "FileVideo",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"file",
@@ -2152,7 +2276,8 @@
 		"export": "Film",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"film",
@@ -2167,7 +2292,8 @@
 		"export": "Filter",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"filter",
@@ -2182,7 +2308,8 @@
 		"export": "Fingerprint",
 		"category": "security",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"fingerprint",
@@ -2198,7 +2325,8 @@
 		"export": "Flag",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"flag",
@@ -2213,7 +2341,8 @@
 		"export": "FlipHorizontal",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"flip",
@@ -2228,7 +2357,8 @@
 		"export": "Folder",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"folder",
@@ -2244,7 +2374,8 @@
 		"export": "FolderAdd",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"folder",
@@ -2260,7 +2391,8 @@
 		"export": "FolderLock",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"folder",
@@ -2275,7 +2407,8 @@
 		"export": "FolderOpen",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"folder",
@@ -2291,7 +2424,8 @@
 		"export": "FolderRemove",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"folder",
@@ -2306,7 +2440,8 @@
 		"export": "FolderSearch",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"folder",
@@ -2321,7 +2456,8 @@
 		"export": "FolderTree",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"folder",
@@ -2338,7 +2474,8 @@
 		"export": "FolderWithFiles",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"folder",
@@ -2354,7 +2491,8 @@
 		"export": "Folders",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"folders",
@@ -2371,7 +2509,8 @@
 		"export": "Forward",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"forward",
@@ -2386,7 +2525,8 @@
 		"export": "Gamepad",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"gamepad",
@@ -2402,7 +2542,8 @@
 		"export": "Gauge",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"gauge",
@@ -2432,7 +2573,8 @@
 		"export": "Gift",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"gift",
@@ -2463,7 +2605,8 @@
 		"export": "GitBranch",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"git",
@@ -2478,7 +2621,8 @@
 		"export": "GitCommit",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"git",
@@ -2493,7 +2637,8 @@
 		"export": "GitDiff",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"git",
@@ -2509,7 +2654,8 @@
 		"export": "GitFork",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"git",
@@ -2525,7 +2671,8 @@
 		"export": "GitGraph",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"git",
@@ -2541,7 +2688,8 @@
 		"export": "GitMerge",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"git",
@@ -2556,7 +2704,8 @@
 		"export": "GitPullRequest",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"git",
@@ -2605,7 +2754,8 @@
 		"export": "Globe",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"globe",
@@ -2635,7 +2785,8 @@
 		"export": "GraduationCap",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"graduation",
@@ -2650,7 +2801,8 @@
 		"export": "GripHorizontal",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"grip",
@@ -2666,7 +2818,8 @@
 		"export": "GripVertical",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"grip",
@@ -2697,7 +2850,8 @@
 		"export": "Hammer",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"hammer",
@@ -2712,7 +2866,8 @@
 		"export": "Hand",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"hand",
@@ -2728,7 +2883,8 @@
 		"export": "HandWave",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"hand-wave",
@@ -2746,7 +2902,8 @@
 		"export": "Hashtag",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"hash",
@@ -2761,7 +2918,8 @@
 		"export": "Heading",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"heading",
@@ -2777,7 +2935,8 @@
 		"export": "Heading1",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"heading",
@@ -2791,7 +2950,8 @@
 		"export": "Heading2",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"heading",
@@ -2805,7 +2965,8 @@
 		"export": "Heading3",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"heading",
@@ -2819,7 +2980,8 @@
 		"export": "Headphones",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"headphones",
@@ -2836,7 +2998,8 @@
 		"export": "Heart",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"heart",
@@ -2851,7 +3014,8 @@
 		"export": "History",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"history",
@@ -2866,7 +3030,8 @@
 		"export": "Home",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"house",
@@ -2880,7 +3045,8 @@
 		"export": "HomeAngle",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"home",
@@ -2895,7 +3061,8 @@
 		"export": "Hourglass",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"hourglass",
@@ -2910,7 +3077,8 @@
 		"export": "Image",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"image",
@@ -2926,7 +3094,8 @@
 		"export": "ImageAdd",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"image",
@@ -2944,7 +3113,8 @@
 		"export": "ImageEdit",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"image",
@@ -2961,7 +3131,8 @@
 		"export": "Images",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"images",
@@ -2976,7 +3147,8 @@
 		"export": "Import",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"import",
@@ -2991,7 +3163,8 @@
 		"export": "Inbox",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"inbox",
@@ -3006,7 +3179,8 @@
 		"export": "IncomingCall",
 		"category": "chat",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"phone",
@@ -3021,7 +3195,8 @@
 		"export": "Indent",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"indent",
@@ -3036,7 +3211,8 @@
 		"export": "InfoSquare",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"info",
@@ -3067,7 +3243,8 @@
 		"export": "Integration",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"flow",
@@ -3082,7 +3259,8 @@
 		"export": "Italic",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"italic",
@@ -3097,7 +3275,8 @@
 		"export": "Kanban",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"kanban",
@@ -3112,7 +3291,8 @@
 		"export": "Key",
 		"category": "security",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"security",
@@ -3128,7 +3308,8 @@
 		"export": "Keyboard",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"keyboard",
@@ -3158,7 +3339,8 @@
 		"export": "Laptop",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"laptop",
@@ -3173,7 +3355,8 @@
 		"export": "Layers",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"stack",
@@ -3188,7 +3371,8 @@
 		"export": "LayoutAlignBottom",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"layout",
@@ -3204,7 +3388,8 @@
 		"export": "LayoutAlignLeft",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"layout",
@@ -3220,7 +3405,8 @@
 		"export": "LayoutAlignRight",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"layout",
@@ -3236,7 +3422,8 @@
 		"export": "LayoutAlignTop",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"layout",
@@ -3252,7 +3439,8 @@
 		"export": "LayoutList",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"layout",
@@ -3267,7 +3455,8 @@
 		"export": "Library",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"library",
@@ -3282,7 +3471,8 @@
 		"export": "LifeBuoy",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"life-buoy",
@@ -3298,7 +3488,8 @@
 		"export": "Lightbulb",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"lightbulb",
@@ -3313,7 +3504,8 @@
 		"export": "Lightning",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"bolt",
@@ -3329,7 +3521,8 @@
 		"export": "Like",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"thumbs-up",
@@ -3343,7 +3536,8 @@
 		"export": "Link",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"link",
@@ -3372,7 +3566,8 @@
 		"export": "List",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"list",
@@ -3387,7 +3582,8 @@
 		"export": "ListChecks",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"list",
@@ -3403,7 +3599,8 @@
 		"export": "ListDash",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"list",
@@ -3418,7 +3615,8 @@
 		"export": "ListDown",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"list",
@@ -3434,7 +3632,8 @@
 		"export": "ListFilter",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"list",
@@ -3449,7 +3648,8 @@
 		"export": "ListOrdered",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"list",
@@ -3464,7 +3664,8 @@
 		"export": "ListUp",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"list",
@@ -3480,7 +3681,8 @@
 		"export": "Locate",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"locate",
@@ -3495,7 +3697,8 @@
 		"export": "Lock",
 		"category": "security",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"locked",
@@ -3510,7 +3713,8 @@
 		"export": "LockOpen",
 		"category": "security",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"lock-open",
@@ -3526,7 +3730,8 @@
 		"export": "Login",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"login",
@@ -3542,7 +3747,8 @@
 		"export": "Logout",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sign-out",
@@ -3557,7 +3763,8 @@
 		"export": "MagicWand",
 		"category": "ai",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"magic",
@@ -3573,7 +3780,8 @@
 		"export": "Map",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"map",
@@ -3588,7 +3796,8 @@
 		"export": "MapArrowDown",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"map",
@@ -3605,7 +3814,8 @@
 		"export": "MapArrowLeft",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"map",
@@ -3622,7 +3832,8 @@
 		"export": "MapArrowRight",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"map",
@@ -3639,7 +3850,8 @@
 		"export": "MapArrowUp",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"map",
@@ -3656,7 +3868,8 @@
 		"export": "MapFolded",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"map",
@@ -3670,7 +3883,8 @@
 		"export": "MapPin",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"map-pin",
@@ -3687,7 +3901,8 @@
 		"export": "MarketAnalysis",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"market",
@@ -3704,7 +3919,8 @@
 		"export": "Maximize",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"expand",
@@ -3718,7 +3934,8 @@
 		"export": "Megaphone",
 		"category": "chat",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"megaphone",
@@ -3733,7 +3950,8 @@
 		"export": "Menu",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"menu",
@@ -3764,7 +3982,8 @@
 		"export": "Microphone",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"mic",
@@ -3779,7 +3998,8 @@
 		"export": "MicrophoneOff",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"microphone",
@@ -3812,7 +4032,8 @@
 		"export": "Minimize",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"collapse",
@@ -3827,7 +4048,8 @@
 		"export": "Minus",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"subtract",
@@ -3871,7 +4093,8 @@
 		"export": "MoreHorizontal",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"ellipsis",
@@ -3887,7 +4110,8 @@
 		"export": "MoreVertical",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"ellipsis",
@@ -3903,7 +4127,8 @@
 		"export": "Mouse",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"mouse",
@@ -3918,7 +4143,8 @@
 		"export": "Move",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"move",
@@ -3933,7 +4159,8 @@
 		"export": "MusicNote",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"music",
@@ -3950,7 +4177,8 @@
 		"export": "Navigation",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"navigation",
@@ -3967,7 +4195,8 @@
 		"export": "Newspaper",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"newspaper",
@@ -3982,7 +4211,8 @@
 		"export": "Notebook",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"notebook",
@@ -4028,7 +4258,8 @@
 		"export": "OctagonX",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"octagon",
@@ -4089,7 +4320,8 @@
 		"export": "Outdent",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"outdent",
@@ -4103,7 +4335,8 @@
 		"export": "OutgoingCall",
 		"category": "chat",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"phone",
@@ -4118,7 +4351,8 @@
 		"export": "Package",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"package",
@@ -4134,7 +4368,8 @@
 		"export": "Palette",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"palette",
@@ -4149,7 +4384,8 @@
 		"export": "PaperPlane",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"send",
@@ -4166,7 +4402,8 @@
 		"export": "Paperclip",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"attachment",
@@ -4182,7 +4419,8 @@
 		"export": "Pause",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"pause",
@@ -4197,7 +4435,8 @@
 		"export": "Pen",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"edit",
@@ -4212,7 +4451,8 @@
 		"export": "Percent",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"percent",
@@ -4242,7 +4482,8 @@
 		"export": "Phone",
 		"category": "chat",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"phone",
@@ -4257,7 +4498,8 @@
 		"export": "PhoneOff",
 		"category": "chat",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"phone",
@@ -4273,7 +4515,8 @@
 		"export": "Pin",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"pushpin",
@@ -4287,7 +4530,8 @@
 		"export": "PinOff",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"pin-off",
@@ -4315,7 +4559,8 @@
 		"export": "Pip",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"picture-in-picture",
@@ -4331,7 +4576,8 @@
 		"export": "Pipette",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"pipette",
@@ -4345,7 +4591,8 @@
 		"export": "Plane",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"plane",
@@ -4360,7 +4607,8 @@
 		"export": "Play",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"start",
@@ -4376,7 +4624,8 @@
 		"export": "PlayMini",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"play",
@@ -4391,7 +4640,8 @@
 		"export": "Playlist",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"playlist",
@@ -4406,7 +4656,8 @@
 		"export": "Podcast",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"podcast",
@@ -4421,7 +4672,8 @@
 		"export": "Pointer",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"pointer",
@@ -4436,7 +4688,8 @@
 		"export": "Power",
 		"category": "settings",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"power",
@@ -4451,7 +4704,8 @@
 		"export": "Presentation",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"presentation",
@@ -4466,7 +4720,8 @@
 		"export": "Printer",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"printer",
@@ -4481,7 +4736,8 @@
 		"export": "Puzzle",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"puzzle",
@@ -4496,7 +4752,8 @@
 		"export": "QrCode",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"qr-code",
@@ -4511,7 +4768,8 @@
 		"export": "QuestionMark",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"question",
@@ -4526,7 +4784,8 @@
 		"export": "Quote",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"quote",
@@ -4571,7 +4830,8 @@
 		"export": "Receipt",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"receipt",
@@ -4600,7 +4860,8 @@
 		"export": "Redo",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"history",
@@ -4614,7 +4875,8 @@
 		"export": "Refresh",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"refresh",
@@ -4629,7 +4891,8 @@
 		"export": "Reorder",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sort",
@@ -4645,7 +4908,8 @@
 		"export": "Repeat",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"loop",
@@ -4659,7 +4923,8 @@
 		"export": "RepeatOne",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"repeat",
@@ -4674,7 +4939,8 @@
 		"export": "Reply",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"reply",
@@ -4689,7 +4955,8 @@
 		"export": "ResourcesAdd",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"resources",
@@ -4705,7 +4972,8 @@
 		"export": "Rewind",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"rewind",
@@ -4720,7 +4988,8 @@
 		"export": "Rhombus",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"rhombus",
@@ -4735,7 +5004,8 @@
 		"export": "Rocket",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"rocket",
@@ -4753,7 +5023,8 @@
 		"export": "RotateCcw",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"rotate",
@@ -4768,7 +5039,8 @@
 		"export": "RotateCw",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"rotate",
@@ -4783,7 +5055,8 @@
 		"export": "Route",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"route",
@@ -4798,7 +5071,8 @@
 		"export": "Router",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"router",
@@ -4813,7 +5087,8 @@
 		"export": "Rows",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"rows",
@@ -4828,7 +5103,8 @@
 		"export": "Ruler",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"ruler",
@@ -4843,7 +5119,8 @@
 		"export": "Sad",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sad",
@@ -4858,7 +5135,8 @@
 		"export": "Save",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"save",
@@ -4873,7 +5151,8 @@
 		"export": "Scan",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"scan",
@@ -4888,7 +5167,8 @@
 		"export": "ScreenShare",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"screen",
@@ -4903,7 +5183,8 @@
 		"export": "Search",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"find",
@@ -4917,7 +5198,8 @@
 		"export": "Send",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"send",
@@ -4933,7 +5215,8 @@
 		"export": "Server",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"server",
@@ -4948,7 +5231,8 @@
 		"export": "Settings",
 		"category": "settings",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"gear",
@@ -4964,7 +5248,8 @@
 		"export": "Share",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"send",
@@ -4978,7 +5263,8 @@
 		"export": "ShieldAdd",
 		"category": "security",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"shield",
@@ -4995,7 +5281,8 @@
 		"export": "Shuffle",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"shuffle",
@@ -5010,7 +5297,8 @@
 		"export": "SidebarBottom",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sidebar",
@@ -5025,7 +5313,8 @@
 		"export": "SidebarLeft",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"panel",
@@ -5042,7 +5331,8 @@
 		"export": "SidebarRight",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"panel",
@@ -5059,7 +5349,8 @@
 		"export": "SidebarTop",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sidebar",
@@ -5074,7 +5365,8 @@
 		"export": "Signal",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"signal",
@@ -5090,7 +5382,8 @@
 		"export": "SimCard",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sim-card",
@@ -5104,7 +5397,8 @@
 		"export": "SkipBack",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"skip",
@@ -5119,7 +5413,8 @@
 		"export": "SkipForward",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"skip",
@@ -5150,7 +5445,8 @@
 		"export": "Slash",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"slash",
@@ -5164,7 +5460,8 @@
 		"export": "SlidersHorizontal",
 		"category": "settings",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sliders",
@@ -5181,7 +5478,8 @@
 		"export": "SlidersHorizontalAlt",
 		"category": "settings",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sliders",
@@ -5198,7 +5496,8 @@
 		"export": "SlidersVertical",
 		"category": "settings",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sliders",
@@ -5215,7 +5514,8 @@
 		"export": "SlidersVerticalAlt",
 		"category": "settings",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sliders",
@@ -5232,7 +5532,8 @@
 		"export": "Smartphone",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"phone",
@@ -5247,7 +5548,8 @@
 		"export": "Smile",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"smile",
@@ -5276,7 +5578,8 @@
 		"export": "Snowflake",
 		"category": "weather",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"snowflake",
@@ -5291,7 +5594,8 @@
 		"export": "SortAscending",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sort",
@@ -5306,7 +5610,8 @@
 		"export": "SortDescending",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sort",
@@ -5321,7 +5626,8 @@
 		"export": "Soundwave",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"waveform",
@@ -5337,7 +5643,8 @@
 		"export": "Sparkles",
 		"category": "ai",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sparkles",
@@ -5353,7 +5660,8 @@
 		"export": "Spinner",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"loader",
@@ -5369,7 +5677,8 @@
 		"export": "SpinnerArc",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"loader",
@@ -5387,7 +5696,8 @@
 		"export": "SpinnerDiagonal",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"loader",
@@ -5405,7 +5715,8 @@
 		"export": "SpinnerOrbit",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"loader",
@@ -5422,7 +5733,8 @@
 		"export": "SpinnerWave",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"loader",
@@ -5441,7 +5753,8 @@
 		"export": "SquarePen",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"send-message",
@@ -5456,7 +5769,8 @@
 		"export": "Star",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"favorite",
@@ -5470,7 +5784,8 @@
 		"export": "StarOff",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"star",
@@ -5485,7 +5800,8 @@
 		"export": "Sticker",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"label",
@@ -5500,7 +5816,8 @@
 		"export": "StickyNote",
 		"category": "files",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"sticky",
@@ -5515,7 +5832,8 @@
 		"export": "Stop",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"end",
@@ -5531,7 +5849,8 @@
 		"export": "Stopwatch",
 		"category": "time",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"stopwatch",
@@ -5546,7 +5865,8 @@
 		"export": "Store",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"store",
@@ -5561,7 +5881,8 @@
 		"export": "Strikethrough",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"text",
@@ -5576,7 +5897,8 @@
 		"export": "Suitcase",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"suitcase",
@@ -5608,7 +5930,8 @@
 		"export": "SunMoon",
 		"category": "settings",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"theme",
@@ -5637,7 +5960,8 @@
 		"export": "Superscript",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"superscript",
@@ -5651,7 +5975,8 @@
 		"export": "Table",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"table",
@@ -5667,7 +5992,8 @@
 		"export": "Tablet",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"ipad",
@@ -5682,7 +6008,8 @@
 		"export": "Tag",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"tag",
@@ -5697,7 +6024,8 @@
 		"export": "Target",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"target",
@@ -5728,7 +6056,8 @@
 		"export": "Terminal",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"code",
@@ -5744,7 +6073,8 @@
 		"export": "TextAlignCenter",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"text",
@@ -5760,7 +6090,8 @@
 		"export": "TextAlignJustifyLeft",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"text",
@@ -5777,7 +6108,8 @@
 		"export": "TextAlignJustifyRight",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"text",
@@ -5794,7 +6126,8 @@
 		"export": "TextAlignLeft",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"text",
@@ -5810,7 +6143,8 @@
 		"export": "TextAlignRight",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"text",
@@ -5826,7 +6160,8 @@
 		"export": "TextSize",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"text-size",
@@ -5840,7 +6175,8 @@
 		"export": "TextUnderline",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"underline",
@@ -5868,7 +6204,8 @@
 		"export": "ThreeSquares",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"three-squares",
@@ -5883,7 +6220,8 @@
 		"export": "Ticket",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"ticket",
@@ -5899,7 +6237,8 @@
 		"export": "TicketDiscount",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"ticket",
@@ -5928,7 +6267,8 @@
 		"export": "Toggle",
 		"category": "settings",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"toggle",
@@ -5943,7 +6283,8 @@
 		"export": "TransferHorizontal",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"transfer",
@@ -5959,7 +6300,8 @@
 		"export": "TransferVertical",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"transfer",
@@ -5975,7 +6317,8 @@
 		"export": "Trash",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"delete",
@@ -5989,7 +6332,8 @@
 		"export": "TrendingDown",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"trending",
@@ -6005,7 +6349,8 @@
 		"export": "TrendingUp",
 		"category": "charts",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"trending",
@@ -6021,7 +6366,8 @@
 		"export": "Trophy",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"trophy",
@@ -6036,7 +6382,8 @@
 		"export": "Truck",
 		"category": "maps",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"truck",
@@ -6050,7 +6397,8 @@
 		"export": "Tv",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"tv",
@@ -6079,7 +6427,8 @@
 		"export": "Type",
 		"category": "editor",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"type",
@@ -6110,7 +6459,8 @@
 		"export": "Undo",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"history",
@@ -6124,7 +6474,8 @@
 		"export": "UnfoldLess",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"collapse",
@@ -6138,7 +6489,8 @@
 		"export": "UnfoldMore",
 		"category": "arrows",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"expand",
@@ -6152,7 +6504,8 @@
 		"export": "Unlink",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"unlink",
@@ -6167,7 +6520,8 @@
 		"export": "Upload",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"upload",
@@ -6182,7 +6536,8 @@
 		"export": "Usb",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"usb",
@@ -6197,7 +6552,8 @@
 		"export": "User",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"profile",
@@ -6212,7 +6568,8 @@
 		"export": "UserAdd",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"user",
@@ -6229,7 +6586,8 @@
 		"export": "UserCheck",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"user",
@@ -6244,7 +6602,8 @@
 		"export": "UserGroup",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"users",
@@ -6260,7 +6619,8 @@
 		"export": "UserLock",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"user",
@@ -6275,7 +6635,8 @@
 		"export": "UserRemove",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"user",
@@ -6290,7 +6651,8 @@
 		"export": "UserSettings",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"user",
@@ -6305,7 +6667,8 @@
 		"export": "UserX",
 		"category": "user",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"user",
@@ -6320,7 +6683,8 @@
 		"export": "Variable",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"variable",
@@ -6350,7 +6714,8 @@
 		"export": "VerifiedCheck",
 		"category": "status",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"verified",
@@ -6365,7 +6730,8 @@
 		"export": "VideoCamera",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"video",
@@ -6381,7 +6747,8 @@
 		"export": "VideoFrame",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"video",
@@ -6397,7 +6764,8 @@
 		"export": "VideoOff",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"video",
@@ -6412,7 +6780,8 @@
 		"export": "VolumeHigh",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"volume",
@@ -6429,7 +6798,8 @@
 		"export": "VolumeLow",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"speaker",
@@ -6445,7 +6815,8 @@
 		"export": "VolumeOff",
 		"category": "media",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"mute",
@@ -6462,7 +6833,8 @@
 		"export": "Wallet",
 		"category": "commerce",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"money",
@@ -6477,7 +6849,8 @@
 		"export": "Waves",
 		"category": "objects",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"waves",
@@ -6491,7 +6864,8 @@
 		"export": "Webcam",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"webcam",
@@ -6506,7 +6880,8 @@
 		"export": "Webhook",
 		"category": "development",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"webhook",
@@ -6521,7 +6896,8 @@
 		"export": "Widget",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"grid",
@@ -6536,7 +6912,8 @@
 		"export": "WidgetAdd",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"widget",
@@ -6553,7 +6930,8 @@
 		"export": "WidgetSquare",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"widget",
@@ -6570,7 +6948,8 @@
 		"export": "WidgetSquareAdd",
 		"category": "layout",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"widget",
@@ -6588,7 +6967,8 @@
 		"export": "Wifi",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"wifi",
@@ -6605,7 +6985,8 @@
 		"export": "WifiOff",
 		"category": "devices",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"wifi",
@@ -6620,7 +7001,8 @@
 		"export": "Wind",
 		"category": "weather",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"wind",
@@ -6706,7 +7088,8 @@
 		"export": "ZoomIn",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"magnifier",
@@ -6724,7 +7107,8 @@
 		"export": "ZoomOut",
 		"category": "actions",
 		"variants": [
-			"linear"
+			"linear",
+			"bold"
 		],
 		"tags": [
 			"magnifier",

@@ -457,7 +457,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Activity",
 		category: "charts",
 		tags: ["activity","pulse","wave","monitor","heartbeat"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Activity,
 	},
 	{
@@ -465,7 +465,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Add",
 		category: "actions",
 		tags: ["plus","new","create","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Add,
 	},
 	{
@@ -473,7 +473,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Alarm",
 		category: "time",
 		tags: ["alarm","clock","reminder","time"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Alarm,
 	},
 	{
@@ -481,7 +481,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Album",
 		category: "media",
 		tags: ["album","photos","gallery","images"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Album,
 	},
 	{
@@ -489,7 +489,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "AlertTriangle",
 		category: "status",
 		tags: ["warning","alert","triangle","error","danger-triangle","solar","danger"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: AlertTriangle,
 	},
 	{
@@ -497,7 +497,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "AlignCenterHorizontal",
 		category: "layout",
 		tags: ["align","center","horizontal","distribute","canvas"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: AlignCenterHorizontal,
 	},
 	{
@@ -505,7 +505,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Analytics",
 		category: "charts",
 		tags: ["analytics","analytics-03","chart","bars","statistics","data","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Analytics,
 	},
 	{
@@ -529,7 +529,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "AppWindow",
 		category: "layout",
 		tags: ["app","window","browser","application","frame"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: AppWindow,
 	},
 	{
@@ -537,7 +537,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Archive",
 		category: "files",
 		tags: ["library","collection","stack","archive","files","solar","pallet"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Archive,
 	},
 	{
@@ -545,7 +545,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArchiveAlt",
 		category: "files",
 		tags: ["archive","box","storage","done","check","archive-minimalistic","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArchiveAlt,
 	},
 	{
@@ -553,7 +553,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArchiveUp",
 		category: "files",
 		tags: ["archive","archive-up-minimalistic","unarchive","restore","box","up","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArchiveUp,
 	},
 	{
@@ -561,7 +561,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArrowDown",
 		category: "arrows",
 		tags: ["arrow","down","direction","navigation","arrow-down-02","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArrowDown,
 	},
 	{
@@ -569,7 +569,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArrowDownLeft",
 		category: "arrows",
 		tags: ["arrow","down-left","direction","navigation","arrow-down-left-01","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArrowDownLeft,
 	},
 	{
@@ -577,7 +577,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArrowDownRight",
 		category: "arrows",
 		tags: ["arrow","down-right","direction","navigation","arrow-down-right-01","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArrowDownRight,
 	},
 	{
@@ -585,7 +585,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArrowLeft",
 		category: "arrows",
 		tags: ["arrow","left","direction","navigation","arrow-left-02","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArrowLeft,
 	},
 	{
@@ -593,7 +593,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArrowRight",
 		category: "arrows",
 		tags: ["arrow","right","direction","navigation","arrow-right-02","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArrowRight,
 	},
 	{
@@ -601,7 +601,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArrowUp",
 		category: "arrows",
 		tags: ["arrow","up","direction","navigation","arrow-up-02","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArrowUp,
 	},
 	{
@@ -609,7 +609,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArrowUpLeft",
 		category: "arrows",
 		tags: ["arrow","up-left","direction","navigation","arrow-up-left-01","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArrowUpLeft,
 	},
 	{
@@ -617,7 +617,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ArrowUpRight",
 		category: "arrows",
 		tags: ["arrow","up-right","direction","navigation","arrow-up-right-01","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ArrowUpRight,
 	},
 	{
@@ -625,7 +625,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "AtSign",
 		category: "chat",
 		tags: ["at-sign","at","mention","email","contact"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: AtSign,
 	},
 	{
@@ -633,7 +633,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Atom",
 		category: "ai",
 		tags: ["atom","science","physics","react","nucleus"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Atom,
 	},
 	{
@@ -641,7 +641,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Award",
 		category: "objects",
 		tags: ["award","medal","badge","certificate","achievement"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Award,
 	},
 	{
@@ -649,7 +649,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Ban",
 		category: "actions",
 		tags: ["ban","block","forbidden","prohibited","disabled","not-allowed"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Ban,
 	},
 	{
@@ -657,7 +657,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bank",
 		category: "commerce",
 		tags: ["bank","finance","institution","payout","building"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Bank,
 	},
 	{
@@ -665,7 +665,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Barcode",
 		category: "commerce",
 		tags: ["barcode","product","sku","inventory","scan"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Barcode,
 	},
 	{
@@ -673,7 +673,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Battery",
 		category: "devices",
 		tags: ["battery","power","charge","half","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Battery,
 	},
 	{
@@ -681,7 +681,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "BatteryCharging",
 		category: "devices",
 		tags: ["battery","charging","power","energy","bolt"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: BatteryCharging,
 	},
 	{
@@ -689,7 +689,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "BatteryLow",
 		category: "devices",
 		tags: ["battery","low","empty","power","energy"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: BatteryLow,
 	},
 	{
@@ -697,7 +697,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bell",
 		category: "status",
 		tags: ["bell","notification","alert","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Bell,
 	},
 	{
@@ -705,7 +705,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "BellOff",
 		category: "status",
 		tags: ["bell","notifications","off","mute","silent"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: BellOff,
 	},
 	{
@@ -713,7 +713,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "BellRing",
 		category: "status",
 		tags: ["bell","ring","notification","alert","ringing"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: BellRing,
 	},
 	{
@@ -721,7 +721,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bluetooth",
 		category: "devices",
 		tags: ["bluetooth","wireless","connection","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Bluetooth,
 	},
 	{
@@ -729,7 +729,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bold",
 		category: "editor",
 		tags: ["bold","text","format","editor","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Bold,
 	},
 	{
@@ -737,7 +737,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bolt",
 		category: "status",
 		tags: ["bolt","lightning","flash","energy","power","zap","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Bolt,
 	},
 	{
@@ -745,7 +745,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Book",
 		category: "objects",
 		tags: ["book","guide","documentation","read","manual"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Book,
 	},
 	{
@@ -753,7 +753,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "BookOpen",
 		category: "files",
 		tags: ["book","open","read","pages","education"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: BookOpen,
 	},
 	{
@@ -761,7 +761,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bookmark",
 		category: "actions",
 		tags: ["save","saved","favorite","reading","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Bookmark,
 	},
 	{
@@ -769,7 +769,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bookmarks",
 		category: "actions",
 		tags: ["bookmarks","save","saved","collection"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Bookmarks,
 	},
 	{
@@ -777,7 +777,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bot",
 		category: "ai",
 		tags: ["bot","robot","assistant","agent","automation","ai"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Bot,
 	},
 	{
@@ -785,7 +785,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Braces",
 		category: "development",
 		tags: ["braces","curly","json","object","code"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Braces,
 	},
 	{
@@ -793,7 +793,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Brain",
 		category: "ai",
 		tags: ["ai","brain","intelligence","neural","ai-brain-01","hugeicons","ai-brain"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Brain,
 	},
 	{
@@ -801,7 +801,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Briefcase",
 		category: "objects",
 		tags: ["briefcase","case","work","business","bag"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Briefcase,
 	},
 	{
@@ -809,7 +809,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Broadcast",
 		category: "status",
 		tags: ["broadcast","radar","signal","wireless","radio","transmission"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Broadcast,
 	},
 	{
@@ -817,7 +817,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Bug",
 		category: "development",
 		tags: ["bug","insect","debug","issue"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Bug,
 	},
 	{
@@ -825,7 +825,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Building",
 		category: "maps",
 		tags: ["building","office","business","company","city","architecture","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Building,
 	},
 	{
@@ -841,7 +841,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Calculator",
 		category: "commerce",
 		tags: ["calculator","math","arithmetic","calculate","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Calculator,
 	},
 	{
@@ -849,7 +849,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Calendar",
 		category: "time",
 		tags: ["calendar","date","schedule","event","month","hugeicons","calendar-03"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Calendar,
 	},
 	{
@@ -857,7 +857,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CalendarAdd",
 		category: "time",
 		tags: ["calendar","date","event","add","plus","calendar-plus","new","schedule","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CalendarAdd,
 	},
 	{
@@ -865,7 +865,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CalendarCheck",
 		category: "time",
 		tags: ["calendar","check","confirmed","booked","done"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CalendarCheck,
 	},
 	{
@@ -873,7 +873,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CalendarMark",
 		category: "time",
 		tags: ["calendar","date","event","mark","selected","today","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CalendarMark,
 	},
 	{
@@ -881,7 +881,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CalendarRange",
 		category: "time",
 		tags: ["calendar","range","dates","period","schedule"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CalendarRange,
 	},
 	{
@@ -889,7 +889,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CalendarRemove",
 		category: "time",
 		tags: ["calendar","date","event","remove","minus","calendar-minus","schedule","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CalendarRemove,
 	},
 	{
@@ -897,7 +897,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CalendarSearch",
 		category: "time",
 		tags: ["calendar","search","date","schedule","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CalendarSearch,
 	},
 	{
@@ -905,7 +905,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CalendarX",
 		category: "time",
 		tags: ["calendar","date","event","x","close","cancel","schedule","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CalendarX,
 	},
 	{
@@ -913,7 +913,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Camera",
 		category: "media",
 		tags: ["camera","photo","picture","capture","snapshot"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Camera,
 	},
 	{
@@ -921,7 +921,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CameraOff",
 		category: "media",
 		tags: ["camera","off","disabled","photo","privacy"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CameraOff,
 	},
 	{
@@ -929,7 +929,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Captions",
 		category: "media",
 		tags: ["captions","subtitles","cc","accessibility","video"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Captions,
 	},
 	{
@@ -937,7 +937,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Card",
 		category: "commerce",
 		tags: ["credit-card","debit-card","payment","bank","finance","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Card,
 	},
 	{
@@ -945,7 +945,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Cart",
 		category: "commerce",
 		tags: ["basket","shopping","store","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Cart,
 	},
 	{
@@ -953,7 +953,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CartBag",
 		category: "commerce",
 		tags: ["bag","shopping-bag","shopping","store","purchase","checkout","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CartBag,
 	},
 	{
@@ -961,7 +961,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CartLarge",
 		category: "commerce",
 		tags: ["cart","shopping-cart","trolley","checkout","store","shopping","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CartLarge,
 	},
 	{
@@ -969,7 +969,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Chair",
 		category: "objects",
 		tags: ["chair","seat","furniture"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Chair,
 	},
 	{
@@ -977,7 +977,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChartAnalysis",
 		category: "charts",
 		tags: ["chart","analysis","trend","growth","statistics","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChartAnalysis,
 	},
 	{
@@ -985,7 +985,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChartLine",
 		category: "charts",
 		tags: ["chart","line","graph","trend","statistics","analytics"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChartLine,
 	},
 	{
@@ -993,7 +993,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChartPie",
 		category: "charts",
 		tags: ["chart","pie","breakdown","share","statistics"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChartPie,
 	},
 	{
@@ -1001,7 +1001,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Chat",
 		category: "chat",
 		tags: ["chat","chat-01","message","conversation","bubble","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Chat,
 	},
 	{
@@ -1009,7 +1009,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Check",
 		category: "status",
 		tags: ["tick","done","success","confirm","complete","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Check,
 	},
 	{
@@ -1017,7 +1017,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CheckDouble",
 		category: "status",
 		tags: ["double-check","tick","done","read","receipt","delivered","hugeicons","check-check"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CheckDouble,
 	},
 	{
@@ -1025,7 +1025,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChevronDown",
 		category: "arrows",
 		tags: ["chevron","down","bottom","expand","arrow-down-01","hugeicons","arrow-down"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChevronDown,
 	},
 	{
@@ -1033,7 +1033,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChevronLeft",
 		category: "arrows",
 		tags: ["chevron","left","back","previous","arrow-left-01","hugeicons","arrow-left"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChevronLeft,
 	},
 	{
@@ -1041,7 +1041,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChevronRight",
 		category: "arrows",
 		tags: ["chevron","right","forward","next","arrow-right-01","hugeicons","arrow-right"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChevronRight,
 	},
 	{
@@ -1049,7 +1049,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChevronUp",
 		category: "arrows",
 		tags: ["chevron","up","top","collapse","arrow-up-01","hugeicons","arrow-up"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChevronUp,
 	},
 	{
@@ -1057,7 +1057,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChevronsDown",
 		category: "arrows",
 		tags: ["chevron","double","down","bottom","hugeicons","arrow-down-double"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChevronsDown,
 	},
 	{
@@ -1065,7 +1065,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChevronsLeft",
 		category: "arrows",
 		tags: ["chevron","double","left","first","hugeicons","arrow-left-double"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChevronsLeft,
 	},
 	{
@@ -1073,7 +1073,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChevronsRight",
 		category: "arrows",
 		tags: ["chevron","double","right","last","hugeicons","arrow-right-double"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChevronsRight,
 	},
 	{
@@ -1081,7 +1081,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ChevronsUp",
 		category: "arrows",
 		tags: ["chevron","double","up","top","hugeicons","arrow-up-double"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ChevronsUp,
 	},
 	{
@@ -1097,7 +1097,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Clapperboard",
 		category: "media",
 		tags: ["film","movie","video","play","clapperboard-play","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Clapperboard,
 	},
 	{
@@ -1105,7 +1105,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ClapperboardText",
 		category: "media",
 		tags: ["film","movie","video","script","clapperboard","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ClapperboardText,
 	},
 	{
@@ -1129,7 +1129,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Clipboard",
 		category: "files",
 		tags: ["clipboard","copy","paste","board","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Clipboard,
 	},
 	{
@@ -1137,7 +1137,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ClipboardAdd",
 		category: "files",
 		tags: ["clipboard","add","plus","new","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ClipboardAdd,
 	},
 	{
@@ -1145,7 +1145,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ClipboardCheck",
 		category: "files",
 		tags: ["clipboard","check","done","complete","tasks","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ClipboardCheck,
 	},
 	{
@@ -1153,7 +1153,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ClipboardRemove",
 		category: "files",
 		tags: ["clipboard","minus","remove","delete","clipboard-minus","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ClipboardRemove,
 	},
 	{
@@ -1161,7 +1161,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Clock",
 		category: "time",
 		tags: ["time","hour","schedule","watch"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Clock,
 	},
 	{
@@ -1169,7 +1169,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Close",
 		category: "actions",
 		tags: ["dismiss","cancel","cross","x","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Close,
 	},
 	{
@@ -1177,7 +1177,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Cloud",
 		category: "files",
 		tags: ["storage","weather","online","sync","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Cloud,
 	},
 	{
@@ -1185,7 +1185,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CloudDownload",
 		category: "files",
 		tags: ["cloud","download","storage","save","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CloudDownload,
 	},
 	{
@@ -1193,7 +1193,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CloudRain",
 		category: "weather",
 		tags: ["cloud","rain","weather","forecast","storm"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CloudRain,
 	},
 	{
@@ -1201,7 +1201,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CloudUpload",
 		category: "files",
 		tags: ["cloud","upload","storage","sync","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CloudUpload,
 	},
 	{
@@ -1209,7 +1209,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Code",
 		category: "development",
 		tags: ["programming","developer","syntax","brackets","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Code,
 	},
 	{
@@ -1225,7 +1225,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Columns",
 		category: "layout",
 		tags: ["columns","split","layout","two-column","panel"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Columns,
 	},
 	{
@@ -1233,7 +1233,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Command",
 		category: "development",
 		tags: ["keyboard","shortcut","cmd","mac","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Command,
 	},
 	{
@@ -1249,7 +1249,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Connect",
 		category: "actions",
 		tags: ["connect","connection","plug","cable","link","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Connect,
 	},
 	{
@@ -1257,7 +1257,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Copy",
 		category: "actions",
 		tags: ["copy","duplicate","clipboard","copy-01","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Copy,
 	},
 	{
@@ -1265,7 +1265,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CornerDownRight",
 		category: "arrows",
 		tags: ["corner","arrow","nested","indent","reply","sub-item"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CornerDownRight,
 	},
 	{
@@ -1273,7 +1273,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Crop",
 		category: "editor",
 		tags: ["crop","image","resize","trim","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Crop,
 	},
 	{
@@ -1281,7 +1281,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Crown",
 		category: "objects",
 		tags: ["crown","premium","vip","owner","king"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Crown,
 	},
 	{
@@ -1297,7 +1297,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "CursorClick",
 		category: "actions",
 		tags: ["click","cursor","pointer","tap","select","conversion"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: CursorClick,
 	},
 	{
@@ -1305,7 +1305,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Dashboard",
 		category: "layout",
 		tags: ["dashboard","layout","overview","tiles","home"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Dashboard,
 	},
 	{
@@ -1313,7 +1313,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Database",
 		category: "development",
 		tags: ["database","storage","data","server","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Database,
 	},
 	{
@@ -1337,7 +1337,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Diamond",
 		category: "objects",
 		tags: ["diamond","shape","geometry","rhombus","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Diamond,
 	},
 	{
@@ -1353,7 +1353,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Dislike",
 		category: "actions",
 		tags: ["thumbs-down","disapprove","feedback","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Dislike,
 	},
 	{
@@ -1361,7 +1361,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Document",
 		category: "files",
 		tags: ["document","document-text","text","paper","notes","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Document,
 	},
 	{
@@ -1369,7 +1369,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Dollar",
 		category: "commerce",
 		tags: ["dollar","money","currency","price","usd"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Dollar,
 	},
 	{
@@ -1377,7 +1377,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "DoorOpen",
 		category: "actions",
 		tags: ["door","leave","logout","sign-out","solar","exit"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: DoorOpen,
 	},
 	{
@@ -1385,7 +1385,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Download",
 		category: "actions",
 		tags: ["download","tray","import","incoming","arrow"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Download,
 	},
 	{
@@ -1393,7 +1393,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Droplet",
 		category: "weather",
 		tags: ["droplet","water","drop","liquid","humidity"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Droplet,
 	},
 	{
@@ -1401,7 +1401,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Edit",
 		category: "editor",
 		tags: ["edit","pencil","write","draw","hugeicons","edit-01"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Edit,
 	},
 	{
@@ -1409,7 +1409,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "EditOff",
 		category: "editor",
 		tags: ["edit","disabled","read-only","pencil","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: EditOff,
 	},
 	{
@@ -1417,7 +1417,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Email",
 		category: "chat",
 		tags: ["mail","letter","envelope","message","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Email,
 	},
 	{
@@ -1425,7 +1425,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Eraser",
 		category: "editor",
 		tags: ["eraser","erase","clear","delete","rubber"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Eraser,
 	},
 	{
@@ -1433,7 +1433,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ExternalLink",
 		category: "actions",
 		tags: ["external-link","open","new-tab","link","arrow","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ExternalLink,
 	},
 	{
@@ -1441,7 +1441,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Eye",
 		category: "actions",
 		tags: ["eye","view","visible","show","visibility","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Eye,
 	},
 	{
@@ -1449,7 +1449,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "EyeClosed",
 		category: "actions",
 		tags: ["eye-closed","eye","closed","hide","visibility","lashes","solar","eye-off-alt","eyelashes","sleep"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: EyeClosed,
 	},
 	{
@@ -1457,7 +1457,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "EyeOff",
 		category: "actions",
 		tags: ["eye","off","hide","visibility","slash"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: EyeOff,
 	},
 	{
@@ -1481,7 +1481,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "File",
 		category: "files",
 		tags: ["document","page","paper","blank","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: File,
 	},
 	{
@@ -1489,7 +1489,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FileAdd",
 		category: "files",
 		tags: ["document","file","solar","new","create","add","plus"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FileAdd,
 	},
 	{
@@ -1497,7 +1497,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FileArchive",
 		category: "files",
 		tags: ["file","archive","zip","compressed","package"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FileArchive,
 	},
 	{
@@ -1505,7 +1505,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FileCode",
 		category: "files",
 		tags: ["document","code","source","programming","code-file","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FileCode,
 	},
 	{
@@ -1513,7 +1513,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FileImage",
 		category: "files",
 		tags: ["file","image","photo","picture","attachment"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FileImage,
 	},
 	{
@@ -1521,7 +1521,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FileRemove",
 		category: "files",
 		tags: ["document","file","solar","remove","delete","minus"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FileRemove,
 	},
 	{
@@ -1529,7 +1529,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FileSearch",
 		category: "files",
 		tags: ["file","search","find","lookup","document"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FileSearch,
 	},
 	{
@@ -1537,7 +1537,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FileSpreadsheet",
 		category: "files",
 		tags: ["file","spreadsheet","csv","excel","table","sheet"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FileSpreadsheet,
 	},
 	{
@@ -1545,7 +1545,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FileText",
 		category: "files",
 		tags: ["document","page","paper","text","lines","notes","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FileText,
 	},
 	{
@@ -1553,7 +1553,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FileVideo",
 		category: "files",
 		tags: ["file","video","movie","media","attachment"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FileVideo,
 	},
 	{
@@ -1561,7 +1561,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Film",
 		category: "media",
 		tags: ["film","movie","video","cinema","reel"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Film,
 	},
 	{
@@ -1569,7 +1569,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Filter",
 		category: "actions",
 		tags: ["filter","funnel","refine","sort","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Filter,
 	},
 	{
@@ -1577,7 +1577,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Fingerprint",
 		category: "security",
 		tags: ["fingerprint","biometric","touch-id","identity","security","auth"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Fingerprint,
 	},
 	{
@@ -1585,7 +1585,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Flag",
 		category: "status",
 		tags: ["flag","mark","report","milestone","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Flag,
 	},
 	{
@@ -1593,7 +1593,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FlipHorizontal",
 		category: "editor",
 		tags: ["flip","mirror","horizontal","reflect","transform"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FlipHorizontal,
 	},
 	{
@@ -1601,7 +1601,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Folder",
 		category: "files",
 		tags: ["folder","directory","files","storage","folder-01","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Folder,
 	},
 	{
@@ -1609,7 +1609,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FolderAdd",
 		category: "files",
 		tags: ["folder","directory","create","new","plus","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FolderAdd,
 	},
 	{
@@ -1617,7 +1617,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FolderLock",
 		category: "files",
 		tags: ["folder","lock","private","secure","protected"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FolderLock,
 	},
 	{
@@ -1625,7 +1625,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FolderOpen",
 		category: "files",
 		tags: ["folder","open","directory","files","storage","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FolderOpen,
 	},
 	{
@@ -1633,7 +1633,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FolderRemove",
 		category: "files",
 		tags: ["folder","remove","delete","minus","directory"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FolderRemove,
 	},
 	{
@@ -1641,7 +1641,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FolderSearch",
 		category: "files",
 		tags: ["folder","search","find","browse","directory"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FolderSearch,
 	},
 	{
@@ -1649,7 +1649,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FolderTree",
 		category: "files",
 		tags: ["folder","tree","directory","hierarchy","structure","files","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FolderTree,
 	},
 	{
@@ -1657,7 +1657,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "FolderWithFiles",
 		category: "files",
 		tags: ["folder","files","documents","directory","storage","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: FolderWithFiles,
 	},
 	{
@@ -1665,7 +1665,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Folders",
 		category: "files",
 		tags: ["folders","folder","files","directory","collection","stack","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Folders,
 	},
 	{
@@ -1673,7 +1673,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Forward",
 		category: "arrows",
 		tags: ["forward","send","message","arrow","right"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Forward,
 	},
 	{
@@ -1681,7 +1681,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Gamepad",
 		category: "media",
 		tags: ["gamepad","game","gaming","controller","console","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Gamepad,
 	},
 	{
@@ -1689,7 +1689,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Gauge",
 		category: "charts",
 		tags: ["gauge","speedometer","performance","meter","dashboard","score"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Gauge,
 	},
 	{
@@ -1705,7 +1705,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Gift",
 		category: "commerce",
 		tags: ["gift","present","reward","surprise","box","ribbon"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Gift,
 	},
 	{
@@ -1721,7 +1721,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GitBranch",
 		category: "development",
 		tags: ["git","branch","version-control","source-control","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GitBranch,
 	},
 	{
@@ -1729,7 +1729,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GitCommit",
 		category: "development",
 		tags: ["git","commit","version","history","node"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GitCommit,
 	},
 	{
@@ -1737,7 +1737,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GitDiff",
 		category: "development",
 		tags: ["git","diff","compare","changes","version-control","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GitDiff,
 	},
 	{
@@ -1745,7 +1745,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GitFork",
 		category: "development",
 		tags: ["git","fork","split","version-control","repository","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GitFork,
 	},
 	{
@@ -1753,7 +1753,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GitGraph",
 		category: "development",
 		tags: ["git","graph","history","commits","version-control","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GitGraph,
 	},
 	{
@@ -1761,7 +1761,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GitMerge",
 		category: "development",
 		tags: ["git","merge","branch","pull-request","join"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GitMerge,
 	},
 	{
@@ -1769,7 +1769,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GitPullRequest",
 		category: "development",
 		tags: ["git","pull-request","pr","merge","review","version-control","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GitPullRequest,
 	},
 	{
@@ -1793,7 +1793,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Globe",
 		category: "maps",
 		tags: ["globe","world","earth","geography","travel","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Globe,
 	},
 	{
@@ -1809,7 +1809,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GraduationCap",
 		category: "objects",
 		tags: ["graduation","education","learning","course","school"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GraduationCap,
 	},
 	{
@@ -1817,7 +1817,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GripHorizontal",
 		category: "editor",
 		tags: ["grip","handle","drag","reorder","horizontal","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GripHorizontal,
 	},
 	{
@@ -1825,7 +1825,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "GripVertical",
 		category: "editor",
 		tags: ["grip","handle","drag","reorder","vertical","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: GripVertical,
 	},
 	{
@@ -1841,7 +1841,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Hammer",
 		category: "objects",
 		tags: ["hammer","build","tool","construction","fix"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Hammer,
 	},
 	{
@@ -1849,7 +1849,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Hand",
 		category: "actions",
 		tags: ["hand","palm","grab","pan","stop","wave"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Hand,
 	},
 	{
@@ -1857,7 +1857,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "HandWave",
 		category: "user",
 		tags: ["hand-wave","hand","shake","wave","hello","greeting","hand-shake","waving"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: HandWave,
 	},
 	{
@@ -1865,7 +1865,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Hashtag",
 		category: "editor",
 		tags: ["hash","tag","number","hastag","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Hashtag,
 	},
 	{
@@ -1873,7 +1873,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Heading",
 		category: "editor",
 		tags: ["heading","title","header","text","editor","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Heading,
 	},
 	{
@@ -1881,7 +1881,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Heading1",
 		category: "editor",
 		tags: ["heading","h1","title","text"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Heading1,
 	},
 	{
@@ -1889,7 +1889,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Heading2",
 		category: "editor",
 		tags: ["heading","h2","subtitle","text"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Heading2,
 	},
 	{
@@ -1897,7 +1897,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Heading3",
 		category: "editor",
 		tags: ["heading","h3","subheading","text"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Heading3,
 	},
 	{
@@ -1905,7 +1905,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Headphones",
 		category: "media",
 		tags: ["headphones","audio","music","listen","headphones-round","solar","headphone"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Headphones,
 	},
 	{
@@ -1913,7 +1913,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Heart",
 		category: "actions",
 		tags: ["heart","love","favorite","like","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Heart,
 	},
 	{
@@ -1921,7 +1921,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "History",
 		category: "time",
 		tags: ["history","recent","clock","time","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: History,
 	},
 	{
@@ -1929,7 +1929,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Home",
 		category: "maps",
 		tags: ["house","homepage","dashboard","start"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Home,
 	},
 	{
@@ -1937,7 +1937,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "HomeAngle",
 		category: "maps",
 		tags: ["home","house","dashboard","main","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: HomeAngle,
 	},
 	{
@@ -1945,7 +1945,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Hourglass",
 		category: "time",
 		tags: ["hourglass","waiting","time","timer","loading"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Hourglass,
 	},
 	{
@@ -1953,7 +1953,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Image",
 		category: "media",
 		tags: ["image","gallery","photo","picture","media","images"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Image,
 	},
 	{
@@ -1961,7 +1961,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ImageAdd",
 		category: "media",
 		tags: ["image","gallery","upload","photo","plus","gallery-add","solar","images-add"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ImageAdd,
 	},
 	{
@@ -1969,7 +1969,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ImageEdit",
 		category: "media",
 		tags: ["image","photo","gallery","edit","pencil","gallery-edit","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ImageEdit,
 	},
 	{
@@ -1977,7 +1977,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Images",
 		category: "media",
 		tags: ["images","gallery","photos","album","pictures"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Images,
 	},
 	{
@@ -1985,7 +1985,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Import",
 		category: "actions",
 		tags: ["import","inward","arrow","receive","square"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Import,
 	},
 	{
@@ -1993,7 +1993,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Inbox",
 		category: "files",
 		tags: ["inbox","tray","mail","receive","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Inbox,
 	},
 	{
@@ -2001,7 +2001,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "IncomingCall",
 		category: "chat",
 		tags: ["phone","call","incoming","receive","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: IncomingCall,
 	},
 	{
@@ -2009,7 +2009,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Indent",
 		category: "editor",
 		tags: ["indent","increase-indent","nest","text","tab"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Indent,
 	},
 	{
@@ -2017,7 +2017,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "InfoSquare",
 		category: "status",
 		tags: ["info","information","help","square","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: InfoSquare,
 	},
 	{
@@ -2033,7 +2033,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Integration",
 		category: "development",
 		tags: ["flow","workflow","connect","nodes","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Integration,
 	},
 	{
@@ -2041,7 +2041,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Italic",
 		category: "editor",
 		tags: ["italic","text","format","editor","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Italic,
 	},
 	{
@@ -2049,7 +2049,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Kanban",
 		category: "layout",
 		tags: ["kanban","board","columns","tasks","workflow"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Kanban,
 	},
 	{
@@ -2057,7 +2057,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Key",
 		category: "security",
 		tags: ["security","access","password","lock","key-minimalistic","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Key,
 	},
 	{
@@ -2065,7 +2065,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Keyboard",
 		category: "devices",
 		tags: ["keyboard","keys","type","input","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Keyboard,
 	},
 	{
@@ -2081,7 +2081,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Laptop",
 		category: "devices",
 		tags: ["laptop","notebook","computer","device","macbook"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Laptop,
 	},
 	{
@@ -2089,7 +2089,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Layers",
 		category: "layout",
 		tags: ["stack","design","levels","layers-minimalistic","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Layers,
 	},
 	{
@@ -2097,7 +2097,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "LayoutAlignBottom",
 		category: "layout",
 		tags: ["layout","align","bottom","position","panel","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: LayoutAlignBottom,
 	},
 	{
@@ -2105,7 +2105,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "LayoutAlignLeft",
 		category: "layout",
 		tags: ["layout","align","left","position","panel","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: LayoutAlignLeft,
 	},
 	{
@@ -2113,7 +2113,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "LayoutAlignRight",
 		category: "layout",
 		tags: ["layout","align","right","position","panel","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: LayoutAlignRight,
 	},
 	{
@@ -2121,7 +2121,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "LayoutAlignTop",
 		category: "layout",
 		tags: ["layout","align","top","position","panel","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: LayoutAlignTop,
 	},
 	{
@@ -2129,7 +2129,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "LayoutList",
 		category: "layout",
 		tags: ["layout","list","list-view","rows","items"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: LayoutList,
 	},
 	{
@@ -2137,7 +2137,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Library",
 		category: "files",
 		tags: ["library","books","collection","docs","shelf"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Library,
 	},
 	{
@@ -2145,7 +2145,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "LifeBuoy",
 		category: "objects",
 		tags: ["life-buoy","lifebuoy","help","support","rescue","lifesaver"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: LifeBuoy,
 	},
 	{
@@ -2153,7 +2153,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Lightbulb",
 		category: "objects",
 		tags: ["lightbulb","light","bulb","idea","inspiration"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Lightbulb,
 	},
 	{
@@ -2161,7 +2161,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Lightning",
 		category: "status",
 		tags: ["bolt","flash","electricity","energy","power","zap"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Lightning,
 	},
 	{
@@ -2169,7 +2169,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Like",
 		category: "actions",
 		tags: ["thumbs-up","approve","feedback","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Like,
 	},
 	{
@@ -2177,7 +2177,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Link",
 		category: "actions",
 		tags: ["link","chain","url","connect","diagonal","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Link,
 	},
 	{
@@ -2193,7 +2193,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "List",
 		category: "editor",
 		tags: ["list","bullets","items","editor","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: List,
 	},
 	{
@@ -2201,7 +2201,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ListChecks",
 		category: "editor",
 		tags: ["list","checks","checklist","tasks","todo","done"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ListChecks,
 	},
 	{
@@ -2209,7 +2209,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ListDash",
 		category: "editor",
 		tags: ["list","dash","left-to-right-list-dash","editor","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ListDash,
 	},
 	{
@@ -2217,7 +2217,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ListDown",
 		category: "actions",
 		tags: ["list","sort","descending","expand","list-down-minimalistic","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ListDown,
 	},
 	{
@@ -2225,7 +2225,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ListFilter",
 		category: "editor",
 		tags: ["list","filter","sort","refine","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ListFilter,
 	},
 	{
@@ -2233,7 +2233,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ListOrdered",
 		category: "editor",
 		tags: ["list","ordered","numbered","steps","sequence"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ListOrdered,
 	},
 	{
@@ -2241,7 +2241,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ListUp",
 		category: "actions",
 		tags: ["list","sort","ascending","collapse","list-up-minimalistic","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ListUp,
 	},
 	{
@@ -2249,7 +2249,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Locate",
 		category: "maps",
 		tags: ["locate","location","gps","current-location","crosshair"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Locate,
 	},
 	{
@@ -2257,7 +2257,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Lock",
 		category: "security",
 		tags: ["locked","security","private","access","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Lock,
 	},
 	{
@@ -2265,7 +2265,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "LockOpen",
 		category: "security",
 		tags: ["lock-open","unlock","security","access","solar","lock-unlock"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: LockOpen,
 	},
 	{
@@ -2273,7 +2273,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Login",
 		category: "user",
 		tags: ["login","log-in","sign-in","enter","account","arrow"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Login,
 	},
 	{
@@ -2281,7 +2281,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Logout",
 		category: "user",
 		tags: ["sign-out","exit","account","logout-3","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Logout,
 	},
 	{
@@ -2289,7 +2289,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MagicWand",
 		category: "ai",
 		tags: ["magic","wand","generate","ai","auto","sparkle"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MagicWand,
 	},
 	{
@@ -2297,7 +2297,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Map",
 		category: "maps",
 		tags: ["map","navigation","location","travel","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Map,
 	},
 	{
@@ -2305,7 +2305,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MapArrowDown",
 		category: "arrows",
 		tags: ["map","arrow","down","navigation","direction","location","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MapArrowDown,
 	},
 	{
@@ -2313,7 +2313,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MapArrowLeft",
 		category: "arrows",
 		tags: ["map","arrow","left","navigation","direction","location","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MapArrowLeft,
 	},
 	{
@@ -2321,7 +2321,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MapArrowRight",
 		category: "arrows",
 		tags: ["map","arrow","right","navigation","direction","location","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MapArrowRight,
 	},
 	{
@@ -2329,7 +2329,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MapArrowUp",
 		category: "arrows",
 		tags: ["map","arrow","up","navigation","direction","location","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MapArrowUp,
 	},
 	{
@@ -2337,7 +2337,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MapFolded",
 		category: "maps",
 		tags: ["map","folded","navigation","travel"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MapFolded,
 	},
 	{
@@ -2345,7 +2345,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MapPin",
 		category: "maps",
 		tags: ["map-pin","map","location","pin","point-on-map","solar","map-alt"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MapPin,
 	},
 	{
@@ -2353,7 +2353,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MarketAnalysis",
 		category: "charts",
 		tags: ["market","analysis","chart","candlestick","trading","finance","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MarketAnalysis,
 	},
 	{
@@ -2361,7 +2361,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Maximize",
 		category: "arrows",
 		tags: ["expand","fullscreen","resize","arrows"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Maximize,
 	},
 	{
@@ -2369,7 +2369,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Megaphone",
 		category: "chat",
 		tags: ["megaphone","announcement","marketing","campaign","broadcast"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Megaphone,
 	},
 	{
@@ -2377,7 +2377,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Menu",
 		category: "actions",
 		tags: ["menu","navigation","bars","hamburger-menu","solar","hamburger"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Menu,
 	},
 	{
@@ -2393,7 +2393,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Microphone",
 		category: "media",
 		tags: ["mic","record","voice","audio","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Microphone,
 	},
 	{
@@ -2401,7 +2401,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MicrophoneOff",
 		category: "media",
 		tags: ["microphone","mic","off","mute","muted","audio"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MicrophoneOff,
 	},
 	{
@@ -2417,7 +2417,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Minimize",
 		category: "arrows",
 		tags: ["collapse","shrink","restore","resize","arrows"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Minimize,
 	},
 	{
@@ -2425,7 +2425,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Minus",
 		category: "actions",
 		tags: ["subtract","remove","decrease","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Minus,
 	},
 	{
@@ -2449,7 +2449,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MoreHorizontal",
 		category: "actions",
 		tags: ["ellipsis","menu","options","dots","horizontal","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MoreHorizontal,
 	},
 	{
@@ -2457,7 +2457,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MoreVertical",
 		category: "actions",
 		tags: ["ellipsis","menu","options","dots","vertical","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MoreVertical,
 	},
 	{
@@ -2465,7 +2465,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Mouse",
 		category: "devices",
 		tags: ["mouse","input","device","scroll","peripheral"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Mouse,
 	},
 	{
@@ -2473,7 +2473,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Move",
 		category: "arrows",
 		tags: ["move","drag","arrows","position","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Move,
 	},
 	{
@@ -2481,7 +2481,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "MusicNote",
 		category: "media",
 		tags: ["music","note","song","audio","sound","melody","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: MusicNote,
 	},
 	{
@@ -2489,7 +2489,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Navigation",
 		category: "maps",
 		tags: ["navigation","navigation-03","location","direction","map","pointer","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Navigation,
 	},
 	{
@@ -2497,7 +2497,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Newspaper",
 		category: "files",
 		tags: ["newspaper","news","article","blog","press"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Newspaper,
 	},
 	{
@@ -2505,7 +2505,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Notebook",
 		category: "files",
 		tags: ["notebook","notebook-minimalistic","book","read","pages","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Notebook,
 	},
 	{
@@ -2529,7 +2529,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "OctagonX",
 		category: "status",
 		tags: ["octagon","x","error","stop","close","cancel","danger"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: OctagonX,
 	},
 	{
@@ -2561,7 +2561,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Outdent",
 		category: "editor",
 		tags: ["outdent","decrease-indent","unnest","text"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Outdent,
 	},
 	{
@@ -2569,7 +2569,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "OutgoingCall",
 		category: "chat",
 		tags: ["phone","call","outgoing","dial","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: OutgoingCall,
 	},
 	{
@@ -2577,7 +2577,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Package",
 		category: "files",
 		tags: ["package","box","parcel","shipping","delivery","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Package,
 	},
 	{
@@ -2585,7 +2585,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Palette",
 		category: "editor",
 		tags: ["palette","swatches","color","design","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Palette,
 	},
 	{
@@ -2593,7 +2593,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "PaperPlane",
 		category: "actions",
 		tags: ["send","message","submit","plane","plane-3","plain-3","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: PaperPlane,
 	},
 	{
@@ -2601,7 +2601,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Paperclip",
 		category: "actions",
 		tags: ["attachment","attach","clip","file","paperclip-2","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Paperclip,
 	},
 	{
@@ -2609,7 +2609,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Pause",
 		category: "media",
 		tags: ["pause","media","playback","video","audio"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Pause,
 	},
 	{
@@ -2617,7 +2617,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Pen",
 		category: "editor",
 		tags: ["edit","pencil","write","draw","compose"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Pen,
 	},
 	{
@@ -2625,7 +2625,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Percent",
 		category: "commerce",
 		tags: ["percent","discount","rate","sale","percentage"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Percent,
 	},
 	{
@@ -2641,7 +2641,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Phone",
 		category: "chat",
 		tags: ["phone","call","telephone","contact","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Phone,
 	},
 	{
@@ -2649,7 +2649,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "PhoneOff",
 		category: "chat",
 		tags: ["phone","call","hang-up","missed","end-call","off"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: PhoneOff,
 	},
 	{
@@ -2657,7 +2657,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Pin",
 		category: "actions",
 		tags: ["pushpin","pinned","save","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Pin,
 	},
 	{
@@ -2665,7 +2665,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "PinOff",
 		category: "actions",
 		tags: ["pin-off","unpin","detach","remove-pin"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: PinOff,
 	},
 	{
@@ -2681,7 +2681,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Pip",
 		category: "layout",
 		tags: ["picture-in-picture","pip","window","video","overlay","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Pip,
 	},
 	{
@@ -2689,7 +2689,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Pipette",
 		category: "editor",
 		tags: ["pipette","color-picker","eyedropper","sample"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Pipette,
 	},
 	{
@@ -2697,7 +2697,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Plane",
 		category: "maps",
 		tags: ["plane","airplane","flight","travel","trip"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Plane,
 	},
 	{
@@ -2705,7 +2705,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Play",
 		category: "media",
 		tags: ["start","resume","playback","video","audio","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Play,
 	},
 	{
@@ -2713,7 +2713,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "PlayMini",
 		category: "media",
 		tags: ["play","mini","media","start","triangle"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: PlayMini,
 	},
 	{
@@ -2721,7 +2721,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Playlist",
 		category: "media",
 		tags: ["playlist","queue","music","tracks","media"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Playlist,
 	},
 	{
@@ -2729,7 +2729,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Podcast",
 		category: "media",
 		tags: ["podcast","audio","show","broadcast","microphone"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Podcast,
 	},
 	{
@@ -2737,7 +2737,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Pointer",
 		category: "actions",
 		tags: ["pointer","cursor","select","arrow","mouse"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Pointer,
 	},
 	{
@@ -2745,7 +2745,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Power",
 		category: "settings",
 		tags: ["power","on","off","shutdown","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Power,
 	},
 	{
@@ -2753,7 +2753,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Presentation",
 		category: "charts",
 		tags: ["presentation","slides","board","pitch","chart"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Presentation,
 	},
 	{
@@ -2761,7 +2761,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Printer",
 		category: "devices",
 		tags: ["printer","print","paper","document","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Printer,
 	},
 	{
@@ -2769,7 +2769,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Puzzle",
 		category: "development",
 		tags: ["puzzle","piece","extension","plugin","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Puzzle,
 	},
 	{
@@ -2777,7 +2777,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "QrCode",
 		category: "actions",
 		tags: ["qr-code","qr","scan","barcode","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: QrCode,
 	},
 	{
@@ -2785,7 +2785,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "QuestionMark",
 		category: "actions",
 		tags: ["question","help","faq","support","unknown"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: QuestionMark,
 	},
 	{
@@ -2793,7 +2793,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Quote",
 		category: "editor",
 		tags: ["quote","quotation","blockquote","citation","testimonial","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Quote,
 	},
 	{
@@ -2817,7 +2817,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Receipt",
 		category: "commerce",
 		tags: ["receipt","bill","invoice","order","billing"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Receipt,
 	},
 	{
@@ -2833,7 +2833,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Redo",
 		category: "arrows",
 		tags: ["history","forward","repeat","arrow"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Redo,
 	},
 	{
@@ -2841,7 +2841,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Refresh",
 		category: "actions",
 		tags: ["refresh","reload","sync","retry","update"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Refresh,
 	},
 	{
@@ -2849,7 +2849,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Reorder",
 		category: "actions",
 		tags: ["sort","arrange","drag","list","menu","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Reorder,
 	},
 	{
@@ -2857,7 +2857,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Repeat",
 		category: "arrows",
 		tags: ["loop","cycle","refresh","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Repeat,
 	},
 	{
@@ -2865,7 +2865,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "RepeatOne",
 		category: "media",
 		tags: ["repeat","loop","once","single","playback"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: RepeatOne,
 	},
 	{
@@ -2873,7 +2873,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Reply",
 		category: "arrows",
 		tags: ["reply","respond","message","arrow","left"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Reply,
 	},
 	{
@@ -2881,7 +2881,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ResourcesAdd",
 		category: "layout",
 		tags: ["resources","add","plus","assets","library","shapes"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ResourcesAdd,
 	},
 	{
@@ -2889,7 +2889,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Rewind",
 		category: "media",
 		tags: ["rewind","seek","back","media","playback"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Rewind,
 	},
 	{
@@ -2897,7 +2897,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Rhombus",
 		category: "objects",
 		tags: ["rhombus","shape","geometry","diamond","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Rhombus,
 	},
 	{
@@ -2905,7 +2905,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Rocket",
 		category: "objects",
 		tags: ["rocket","rocket-02","launch","space","45-degrees","hugeicons","fire","flame"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Rocket,
 	},
 	{
@@ -2913,7 +2913,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "RotateCcw",
 		category: "arrows",
 		tags: ["rotate","counterclockwise","turn","reset","undo"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: RotateCcw,
 	},
 	{
@@ -2921,7 +2921,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "RotateCw",
 		category: "arrows",
 		tags: ["rotate","clockwise","turn","redo","spin"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: RotateCw,
 	},
 	{
@@ -2929,7 +2929,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Route",
 		category: "maps",
 		tags: ["route","directions","path","journey","navigation"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Route,
 	},
 	{
@@ -2937,7 +2937,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Router",
 		category: "devices",
 		tags: ["router","network","wifi","modem","internet"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Router,
 	},
 	{
@@ -2945,7 +2945,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Rows",
 		category: "layout",
 		tags: ["rows","split","layout","stacked","panel"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Rows,
 	},
 	{
@@ -2953,7 +2953,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Ruler",
 		category: "editor",
 		tags: ["ruler","measure","dimensions","length","scale"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Ruler,
 	},
 	{
@@ -2961,7 +2961,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Sad",
 		category: "status",
 		tags: ["sad","face","unhappy","frown","emoji"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Sad,
 	},
 	{
@@ -2969,7 +2969,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Save",
 		category: "actions",
 		tags: ["save","floppy","disk","store","keep"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Save,
 	},
 	{
@@ -2977,7 +2977,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Scan",
 		category: "actions",
 		tags: ["scan","scanner","qr","barcode","capture"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Scan,
 	},
 	{
@@ -2985,7 +2985,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ScreenShare",
 		category: "media",
 		tags: ["screen","share","present","monitor","cast"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ScreenShare,
 	},
 	{
@@ -2993,7 +2993,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Search",
 		category: "actions",
 		tags: ["find","magnifier","lookup","zoom"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Search,
 	},
 	{
@@ -3001,7 +3001,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Send",
 		category: "actions",
 		tags: ["send","sent","message","paper-plane","delivery","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Send,
 	},
 	{
@@ -3009,7 +3009,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Server",
 		category: "development",
 		tags: ["server","rack","hardware","storage","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Server,
 	},
 	{
@@ -3017,7 +3017,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Settings",
 		category: "settings",
 		tags: ["gear","cog","preferences","configuration","options","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Settings,
 	},
 	{
@@ -3025,7 +3025,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Share",
 		category: "actions",
 		tags: ["send","social","link","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Share,
 	},
 	{
@@ -3033,7 +3033,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ShieldAdd",
 		category: "security",
 		tags: ["shield","plus","add","protect","security","shield-plus","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ShieldAdd,
 	},
 	{
@@ -3041,7 +3041,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Shuffle",
 		category: "media",
 		tags: ["shuffle","random","mix","playback","media"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Shuffle,
 	},
 	{
@@ -3049,7 +3049,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SidebarBottom",
 		category: "layout",
 		tags: ["sidebar","panel","bottom","layout","split"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SidebarBottom,
 	},
 	{
@@ -3057,7 +3057,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SidebarLeft",
 		category: "layout",
 		tags: ["panel","layout","navigation","sidebar","left","sidebar-minimalistic","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SidebarLeft,
 	},
 	{
@@ -3065,7 +3065,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SidebarRight",
 		category: "layout",
 		tags: ["panel","layout","navigation","sidebar","right","sidebar-minimalistic","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SidebarRight,
 	},
 	{
@@ -3073,7 +3073,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SidebarTop",
 		category: "layout",
 		tags: ["sidebar","panel","top","layout","split"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SidebarTop,
 	},
 	{
@@ -3081,7 +3081,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Signal",
 		category: "devices",
 		tags: ["signal","cellular","strength","reception","bars","network"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Signal,
 	},
 	{
@@ -3089,7 +3089,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SimCard",
 		category: "devices",
 		tags: ["sim-card","sim","mobile","network"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SimCard,
 	},
 	{
@@ -3097,7 +3097,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SkipBack",
 		category: "media",
 		tags: ["skip","previous","back","track","media"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SkipBack,
 	},
 	{
@@ -3105,7 +3105,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SkipForward",
 		category: "media",
 		tags: ["skip","next","forward","track","media"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SkipForward,
 	},
 	{
@@ -3121,7 +3121,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Slash",
 		category: "editor",
 		tags: ["slash","divide","diagonal","separator"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Slash,
 	},
 	{
@@ -3129,7 +3129,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SlidersHorizontal",
 		category: "settings",
 		tags: ["sliders","horizontal","settings","adjustments","controls","tune","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SlidersHorizontal,
 	},
 	{
@@ -3137,7 +3137,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SlidersHorizontalAlt",
 		category: "settings",
 		tags: ["sliders","settings","tuning","adjust","circular","horizontal","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SlidersHorizontalAlt,
 	},
 	{
@@ -3145,7 +3145,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SlidersVertical",
 		category: "settings",
 		tags: ["sliders","vertical","settings","adjustments","controls","tune","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SlidersVertical,
 	},
 	{
@@ -3153,7 +3153,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SlidersVerticalAlt",
 		category: "settings",
 		tags: ["sliders","settings","tuning","adjust","circular","vertical","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SlidersVerticalAlt,
 	},
 	{
@@ -3161,7 +3161,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Smartphone",
 		category: "devices",
 		tags: ["phone","mobile","device","screen","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Smartphone,
 	},
 	{
@@ -3169,7 +3169,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Smile",
 		category: "status",
 		tags: ["smile","happy","face","emoji"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Smile,
 	},
 	{
@@ -3185,7 +3185,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Snowflake",
 		category: "weather",
 		tags: ["snowflake","snow","cold","winter","freeze"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Snowflake,
 	},
 	{
@@ -3193,7 +3193,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SortAscending",
 		category: "arrows",
 		tags: ["sort","ascending","order","arrange","increase"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SortAscending,
 	},
 	{
@@ -3201,7 +3201,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SortDescending",
 		category: "arrows",
 		tags: ["sort","descending","order","arrange","decrease"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SortDescending,
 	},
 	{
@@ -3209,7 +3209,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Soundwave",
 		category: "media",
 		tags: ["waveform","audio","sound","voice","equalizer","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Soundwave,
 	},
 	{
@@ -3217,7 +3217,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Sparkles",
 		category: "ai",
 		tags: ["sparkles","sparkle","magic","ai","shine","stars"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Sparkles,
 	},
 	{
@@ -3225,7 +3225,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Spinner",
 		category: "status",
 		tags: ["loader","loading","progress","wait","busy","rotate"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Spinner,
 	},
 	{
@@ -3233,7 +3233,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SpinnerArc",
 		category: "status",
 		tags: ["loader","loading","progress","wait","rotate","arc","long","spinner-large"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SpinnerArc,
 	},
 	{
@@ -3241,7 +3241,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SpinnerDiagonal",
 		category: "status",
 		tags: ["loader","loading","progress","wait","grid","pixel","diagonal","wave"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SpinnerDiagonal,
 	},
 	{
@@ -3249,7 +3249,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SpinnerOrbit",
 		category: "status",
 		tags: ["loader","loading","progress","wait","grid","pixel","comet"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SpinnerOrbit,
 	},
 	{
@@ -3257,7 +3257,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SpinnerWave",
 		category: "status",
 		tags: ["loader","loading","progress","wait","grid","pixel","chevron","wave","spinner-tinker"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SpinnerWave,
 	},
 	{
@@ -3265,7 +3265,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SquarePen",
 		category: "actions",
 		tags: ["send-message","compose","edit","write","pencil"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SquarePen,
 	},
 	{
@@ -3273,7 +3273,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Star",
 		category: "actions",
 		tags: ["favorite","rating","saved","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Star,
 	},
 	{
@@ -3281,7 +3281,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "StarOff",
 		category: "actions",
 		tags: ["star","off","unfavorite","unstar","disabled"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: StarOff,
 	},
 	{
@@ -3289,7 +3289,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Sticker",
 		category: "editor",
 		tags: ["label","peel","fold","square","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Sticker,
 	},
 	{
@@ -3297,7 +3297,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "StickyNote",
 		category: "files",
 		tags: ["sticky","note","memo","post-it","reminder"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: StickyNote,
 	},
 	{
@@ -3305,7 +3305,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Stop",
 		category: "media",
 		tags: ["end","halt","playback","recording","square","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Stop,
 	},
 	{
@@ -3313,7 +3313,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Stopwatch",
 		category: "time",
 		tags: ["stopwatch","stop-watch","timer","time","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Stopwatch,
 	},
 	{
@@ -3321,7 +3321,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Store",
 		category: "commerce",
 		tags: ["store","shop","storefront","market","retail"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Store,
 	},
 	{
@@ -3329,7 +3329,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Strikethrough",
 		category: "editor",
 		tags: ["text","strikethrough","strike","format","editor"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Strikethrough,
 	},
 	{
@@ -3337,7 +3337,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Suitcase",
 		category: "objects",
 		tags: ["suitcase","travel","luggage","bag"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Suitcase,
 	},
 	{
@@ -3353,7 +3353,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "SunMoon",
 		category: "settings",
 		tags: ["theme","system","appearance","day-night","auto"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: SunMoon,
 	},
 	{
@@ -3369,7 +3369,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Superscript",
 		category: "editor",
 		tags: ["superscript","exponent","power","text"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Superscript,
 	},
 	{
@@ -3377,7 +3377,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Table",
 		category: "editor",
 		tags: ["table","grid","rows","columns","spreadsheet","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Table,
 	},
 	{
@@ -3385,7 +3385,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Tablet",
 		category: "devices",
 		tags: ["ipad","device","screen","landscape","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Tablet,
 	},
 	{
@@ -3393,7 +3393,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Tag",
 		category: "actions",
 		tags: ["tag","label","price","category","badge"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Tag,
 	},
 	{
@@ -3401,7 +3401,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Target",
 		category: "objects",
 		tags: ["target","goal","focus","aim","bullseye"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Target,
 	},
 	{
@@ -3417,7 +3417,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Terminal",
 		category: "development",
 		tags: ["code","console","command","shell","prompt","cli"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Terminal,
 	},
 	{
@@ -3425,7 +3425,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TextAlignCenter",
 		category: "editor",
 		tags: ["text","align","center","paragraph","format","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TextAlignCenter,
 	},
 	{
@@ -3433,7 +3433,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TextAlignJustifyLeft",
 		category: "editor",
 		tags: ["text","align","justify","left","paragraph","format","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TextAlignJustifyLeft,
 	},
 	{
@@ -3441,7 +3441,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TextAlignJustifyRight",
 		category: "editor",
 		tags: ["text","align","justify","right","paragraph","format","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TextAlignJustifyRight,
 	},
 	{
@@ -3449,7 +3449,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TextAlignLeft",
 		category: "editor",
 		tags: ["text","align","left","paragraph","format","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TextAlignLeft,
 	},
 	{
@@ -3457,7 +3457,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TextAlignRight",
 		category: "editor",
 		tags: ["text","align","right","paragraph","format","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TextAlignRight,
 	},
 	{
@@ -3465,7 +3465,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TextSize",
 		category: "editor",
 		tags: ["text-size","font-size","typography","scale"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TextSize,
 	},
 	{
@@ -3473,7 +3473,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TextUnderline",
 		category: "editor",
 		tags: ["underline","text","format","editor","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TextUnderline,
 	},
 	{
@@ -3489,7 +3489,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ThreeSquares",
 		category: "objects",
 		tags: ["three-squares","squares","stack","layers","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ThreeSquares,
 	},
 	{
@@ -3497,7 +3497,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Ticket",
 		category: "commerce",
 		tags: ["ticket","pass","event","admission","coupon","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Ticket,
 	},
 	{
@@ -3505,7 +3505,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TicketDiscount",
 		category: "commerce",
 		tags: ["ticket","discount","coupon","voucher","sale","percent"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TicketDiscount,
 	},
 	{
@@ -3521,7 +3521,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Toggle",
 		category: "settings",
 		tags: ["toggle","switch","on","setting","feature-flag"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Toggle,
 	},
 	{
@@ -3529,7 +3529,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TransferHorizontal",
 		category: "arrows",
 		tags: ["transfer","swap","exchange","arrows","horizontal","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TransferHorizontal,
 	},
 	{
@@ -3537,7 +3537,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TransferVertical",
 		category: "arrows",
 		tags: ["transfer","swap","exchange","arrows","vertical","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TransferVertical,
 	},
 	{
@@ -3545,7 +3545,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Trash",
 		category: "actions",
 		tags: ["delete","remove","bin","discard"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Trash,
 	},
 	{
@@ -3553,7 +3553,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TrendingDown",
 		category: "charts",
 		tags: ["trending","decline","decrease","down","loss","chart"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TrendingDown,
 	},
 	{
@@ -3561,7 +3561,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "TrendingUp",
 		category: "charts",
 		tags: ["trending","growth","increase","up","profit","chart"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: TrendingUp,
 	},
 	{
@@ -3569,7 +3569,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Trophy",
 		category: "objects",
 		tags: ["trophy","award","winner","achievement","leaderboard"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Trophy,
 	},
 	{
@@ -3577,7 +3577,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Truck",
 		category: "maps",
 		tags: ["truck","delivery","shipping","transport"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Truck,
 	},
 	{
@@ -3585,7 +3585,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Tv",
 		category: "devices",
 		tags: ["tv","television","screen","streaming","display"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Tv,
 	},
 	{
@@ -3601,7 +3601,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Type",
 		category: "editor",
 		tags: ["type","text","font","typography","letter"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Type,
 	},
 	{
@@ -3617,7 +3617,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Undo",
 		category: "arrows",
 		tags: ["history","back","revert","arrow"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Undo,
 	},
 	{
@@ -3625,7 +3625,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "UnfoldLess",
 		category: "arrows",
 		tags: ["collapse","fold","chevrons","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: UnfoldLess,
 	},
 	{
@@ -3633,7 +3633,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "UnfoldMore",
 		category: "arrows",
 		tags: ["expand","unfold","chevrons","hugeicons"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: UnfoldMore,
 	},
 	{
@@ -3641,7 +3641,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Unlink",
 		category: "actions",
 		tags: ["unlink","broken-link","disconnect","detach","remove-link"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Unlink,
 	},
 	{
@@ -3649,7 +3649,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Upload",
 		category: "actions",
 		tags: ["upload","tray","export","outgoing","arrow"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Upload,
 	},
 	{
@@ -3657,7 +3657,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Usb",
 		category: "devices",
 		tags: ["usb","port","connector","device","hardware"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Usb,
 	},
 	{
@@ -3665,7 +3665,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "User",
 		category: "user",
 		tags: ["profile","person","account","avatar","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: User,
 	},
 	{
@@ -3673,7 +3673,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "UserAdd",
 		category: "user",
 		tags: ["user","add","plus","invite","account","user-plus","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: UserAdd,
 	},
 	{
@@ -3681,7 +3681,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "UserCheck",
 		category: "user",
 		tags: ["user","check","verified","approved","account"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: UserCheck,
 	},
 	{
@@ -3689,7 +3689,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "UserGroup",
 		category: "user",
 		tags: ["users","team","people","members","users-group-two-rounded","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: UserGroup,
 	},
 	{
@@ -3697,7 +3697,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "UserLock",
 		category: "user",
 		tags: ["user","lock","private","locked","account"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: UserLock,
 	},
 	{
@@ -3705,7 +3705,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "UserRemove",
 		category: "user",
 		tags: ["user","minus","remove","account","user-minus"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: UserRemove,
 	},
 	{
@@ -3713,7 +3713,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "UserSettings",
 		category: "user",
 		tags: ["user","settings","account","preferences","profile"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: UserSettings,
 	},
 	{
@@ -3721,7 +3721,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "UserX",
 		category: "user",
 		tags: ["user","x","close","cancel","account"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: UserX,
 	},
 	{
@@ -3729,7 +3729,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Variable",
 		category: "development",
 		tags: ["variable","parameter","environment","formula","x"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Variable,
 	},
 	{
@@ -3745,7 +3745,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "VerifiedCheck",
 		category: "status",
 		tags: ["verified","badge","check","approved","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: VerifiedCheck,
 	},
 	{
@@ -3753,7 +3753,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "VideoCamera",
 		category: "media",
 		tags: ["video","camera","record","call","videocamera","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: VideoCamera,
 	},
 	{
@@ -3761,7 +3761,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "VideoFrame",
 		category: "media",
 		tags: ["video","film","frame","filmstrip","movie","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: VideoFrame,
 	},
 	{
@@ -3769,7 +3769,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "VideoOff",
 		category: "media",
 		tags: ["video","camera-off","meeting","off","disabled"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: VideoOff,
 	},
 	{
@@ -3777,7 +3777,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "VolumeHigh",
 		category: "media",
 		tags: ["volume","sound","speaker","audio","unmute","solar","volume-loud"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: VolumeHigh,
 	},
 	{
@@ -3785,7 +3785,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "VolumeLow",
 		category: "media",
 		tags: ["speaker","sound","audio","volume-low","solar","volume"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: VolumeLow,
 	},
 	{
@@ -3793,7 +3793,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "VolumeOff",
 		category: "media",
 		tags: ["mute","volume-off","silent","speaker","audio","solar","muted"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: VolumeOff,
 	},
 	{
@@ -3801,7 +3801,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Wallet",
 		category: "commerce",
 		tags: ["money","payment","finance","cash","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Wallet,
 	},
 	{
@@ -3809,7 +3809,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Waves",
 		category: "objects",
 		tags: ["waves","water","sea","ocean"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Waves,
 	},
 	{
@@ -3817,7 +3817,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Webcam",
 		category: "devices",
 		tags: ["webcam","camera","video","meeting","device"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Webcam,
 	},
 	{
@@ -3825,7 +3825,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Webhook",
 		category: "development",
 		tags: ["webhook","hook","event","integration","api"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Webhook,
 	},
 	{
@@ -3833,7 +3833,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Widget",
 		category: "layout",
 		tags: ["grid","dashboard","layout","apps","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Widget,
 	},
 	{
@@ -3841,7 +3841,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "WidgetAdd",
 		category: "layout",
 		tags: ["widget","add","plus","grid","dashboard","layout","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: WidgetAdd,
 	},
 	{
@@ -3849,7 +3849,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "WidgetSquare",
 		category: "layout",
 		tags: ["widget","grid","dashboard","layout","apps","square","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: WidgetSquare,
 	},
 	{
@@ -3857,7 +3857,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "WidgetSquareAdd",
 		category: "layout",
 		tags: ["widget","add","plus","grid","dashboard","layout","square","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: WidgetSquareAdd,
 	},
 	{
@@ -3865,7 +3865,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Wifi",
 		category: "devices",
 		tags: ["wifi","wi-fi","wireless","network","connection","internet","solar"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Wifi,
 	},
 	{
@@ -3873,7 +3873,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "WifiOff",
 		category: "devices",
 		tags: ["wifi","offline","no-connection","disconnected","internet"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: WifiOff,
 	},
 	{
@@ -3881,7 +3881,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "Wind",
 		category: "weather",
 		tags: ["wind","air","breeze","weather","airflow"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: Wind,
 	},
 	{
@@ -3929,7 +3929,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ZoomIn",
 		category: "actions",
 		tags: ["magnifier","magnifier-zoom-in","zoom-in","search","enlarge","plus","solar","search-plus"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ZoomIn,
 	},
 	{
@@ -3937,7 +3937,7 @@ export const catalog: CatalogItem[] = [
 		pascalName: "ZoomOut",
 		category: "actions",
 		tags: ["magnifier","minimalistic-magnifier-zoom-out","zoom-out","search","shrink","minus","solar","search-minus"],
-		variants: ["linear"],
+		variants: ["linear","bold"],
 		component: ZoomOut,
 	},
 ];
