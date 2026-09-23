@@ -109,7 +109,10 @@ function DocsPage() {
 								Skill only
 							</span>
 							<code className="min-w-0 flex-1 truncate font-mono text-[13px] text-muted-foreground">
-								<span aria-hidden className="mr-2 text-foreground/40 select-none">
+								<span
+									aria-hidden
+									className="mr-2 text-foreground/40 select-none"
+								>
 									$
 								</span>
 								{skillCode}
