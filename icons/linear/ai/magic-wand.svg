@@ -1,4 +1,4 @@
 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M3.8 20.2L11.9 12.1 M16.4 3C16.8 5.75 18.25 7.2 21 7.6C18.25 8 16.8 9.45 16.4 12.2C16 9.45 14.55 8 11.8 7.6C14.55 7.2 16 5.75 16.4 3Z" stroke="currentColor" />
-  <circle cx="7" cy="5.4" r="1.1" fill="currentColor" stroke="none" />
+  <path d="M2.98 21.02L11.89 12.11M16.84 2.1C17.28 5.125 18.875 6.72 21.9 7.16C18.875 7.6 17.28 9.195 16.84 12.22C16.4 9.195 14.805 7.6 11.78 7.16C14.805 6.72 16.4 5.125 16.84 2.1Z" stroke="currentColor" />
+  <circle cx="6.5" cy="4.74" r="1.21" fill="currentColor" stroke="none" />
 </svg>

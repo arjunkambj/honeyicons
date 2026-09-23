@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Menu = /* @__PURE__ */ createIcon("Menu", {
 	linear: [
-		["path", { d: "M4 7h16M4 12h16M4 17h16", stroke: "currentColor" }],
+		["path", { d: "M3.2 6.5h17.6M3.2 12h17.6M3.2 17.5h17.6", stroke: "currentColor" }],
 	],
 });

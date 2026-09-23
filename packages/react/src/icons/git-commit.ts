@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const GitCommit = /* @__PURE__ */ createIcon("GitCommit", {
 	linear: [
-		["path", { d: "M9 12A3 3 0 1 0 15 12A3 3 0 1 0 9 12Z M3 12H9M15 12H21", stroke: "currentColor" }],
+		["path", { d: "M8.7 12A3.3 3.3 0 1 0 15.3 12A3.3 3.3 0 1 0 8.7 12ZM2.1 12H8.7M15.3 12H21.9", stroke: "currentColor" }],
 	],
 });

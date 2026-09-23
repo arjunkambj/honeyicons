@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const TransferVertical = /* @__PURE__ */ createIcon("TransferVertical", {
 	linear: [
-		["path", { d: "M16.5 4.5V20M7.5 19.5V4 M20.5 8C20.5 8 17.5541 4 16.5 4C15.4459 4 12.5 8 12.5 8 M11.5 16C11.5 16 8.5541 20 7.5 20C6.4459 20 3.5 16 3.5 16", stroke: "currentColor" }],
+		["path", { d: "M16.95 3.75V20.8M7.05 20.25V3.2M21.35 7.6C21.35 7.6 18.1095 3.2 16.95 3.2C15.7905 3.2 12.55 7.6 12.55 7.6M11.45 16.4C11.45 16.4 8.2095 20.8 7.05 20.8C5.8905 20.8 2.65 16.4 2.65 16.4", stroke: "currentColor" }],
 	],
 });

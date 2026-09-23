@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Variable = /* @__PURE__ */ createIcon("Variable", {
 	linear: [
-		["path", { d: "M7.5 4C5.2 6.3 4.3 9 4.3 12C4.3 15 5.2 17.7 7.5 20 M16.5 4C18.8 6.3 19.7 9 19.7 12C19.7 15 18.8 17.7 16.5 20 M9.5 9L14.5 15M14.5 9L9.5 15", stroke: "currentColor" }],
+		["path", { d: "M7.05 3.2C4.52 5.73 3.53 8.7 3.53 12C3.53 15.3 4.52 18.27 7.05 20.8M16.95 3.2C19.48 5.73 20.47 8.7 20.47 12C20.47 15.3 19.48 18.27 16.95 20.8M9.25 8.7L14.75 15.3M14.75 8.7L9.25 15.3", stroke: "currentColor" }],
 	],
 });

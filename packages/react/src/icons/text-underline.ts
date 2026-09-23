@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 
 export const TextUnderline = /* @__PURE__ */ createIcon("TextUnderline", {
 	linear: [
-		["path", { d: "M5.5 3V11.5C5.5 15.0899 8.41015 18 12 18C15.5899 18 18.5 15.0899 18.5 11.5V3", stroke: "currentColor" }],
-		["path", { d: "M3 21H21", stroke: "currentColor" }],
+		["path", { d: "M4.85 2.1V11.45C4.85 15.3989 8.0512 18.6 12 18.6C15.9489 18.6 19.15 15.3989 19.15 11.45V2.1", stroke: "currentColor" }],
+		["path", { d: "M2.1 21.9H21.9", stroke: "currentColor" }],
 	],
 });

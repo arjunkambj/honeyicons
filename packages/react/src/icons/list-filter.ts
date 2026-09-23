@@ -3,8 +3,8 @@ import { createIcon } from "../create-icon.js";
 
 export const ListFilter = /* @__PURE__ */ createIcon("ListFilter", {
 	linear: [
-		["path", { d: "M2.99609 5H20.9961", stroke: "currentColor" }],
-		["path", { d: "M5.99609 12H17.9961", stroke: "currentColor" }],
-		["path", { d: "M8.99609 19H14.9961", stroke: "currentColor" }],
+		["path", { d: "M2.0957 4.3H21.8957", stroke: "currentColor" }],
+		["path", { d: "M5.3957 12H18.5957", stroke: "currentColor" }],
+		["path", { d: "M8.6957 19.7H15.2957", stroke: "currentColor" }],
 	],
 });

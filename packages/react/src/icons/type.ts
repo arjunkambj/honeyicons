@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Type = /* @__PURE__ */ createIcon("Type", {
 	linear: [
-		["path", { d: "M5 7V6C5 4.9 5.9 4 7 4H17C18.1 4 19 4.9 19 6V7 M12 4V20 M9.5 20H14.5", stroke: "currentColor" }],
+		["path", { d: "M4.3 6.5V5.4C4.3 4.19 5.29 3.2 6.5 3.2H17.5C18.71 3.2 19.7 4.19 19.7 5.4V6.5M12 3.2V20.8M9.25 20.8H14.75", stroke: "currentColor" }],
 	],
 });

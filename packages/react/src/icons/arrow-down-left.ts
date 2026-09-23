@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const ArrowDownLeft = /* @__PURE__ */ createIcon("ArrowDownLeft", {
 	linear: [
-		["path", { d: "M15 17.3497C15 17.3497 8.06166 17.8924 7.08461 16.9154C6.10755 15.9383 6.65037 9 6.65037 9M7.5 16.5L17.5 6.5", stroke: "currentColor" }],
+		["path", { d: "M15.3 17.8847C15.3 17.8847 7.6678 18.4816 6.5931 17.4069C5.5183 16.3321 6.1154 8.7 6.1154 8.7M7.05 16.95L18.05 5.95", stroke: "currentColor" }],
 	],
 });

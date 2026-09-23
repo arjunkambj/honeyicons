@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Barcode = /* @__PURE__ */ createIcon("Barcode", {
 	linear: [
-		["path", { d: "M3.9 5.5V18.5 M6.9 5.5V18.5 M9.9 5.5V18.5 M10.8 5.5V18.5 M13.8 5.5V18.5 M16.8 5.5V18.5 M17.7 5.5V18.5 M20.1 5.5V18.5", stroke: "currentColor" }],
+		["path", { d: "M2.1 4.85V19.15M6.555 4.85V19.15M7.545 4.85V19.15M12 4.85V19.15M16.455 4.85V19.15M17.445 4.85V19.15M21.9 4.85V19.15", stroke: "currentColor" }],
 	],
 });

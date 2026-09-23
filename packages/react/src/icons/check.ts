@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Check = /* @__PURE__ */ createIcon("Check", {
 	linear: [
-		["path", { d: "M5 13.2592L7.58583 15.9568C8.2525 16.6523 8.58583 17 9.00004 17C9.41425 17 9.74759 16.6523 10.4143 15.9568L19 7", stroke: "currentColor" }],
+		["path", { d: "M4.3 13.3851L7.1444 16.3525C7.8777 17.1175 8.2444 17.5 8.7 17.5C9.1557 17.5 9.5223 17.1175 10.2557 16.3525L19.7 6.5", stroke: "currentColor" }],
 	],
 });

@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Slash = /* @__PURE__ */ createIcon("Slash", {
 	linear: [
-		["path", { d: "M3.99219 20L19.9922 4", stroke: "currentColor" }],
+		["path", { d: "M3.1914 20.8L20.7914 3.2", stroke: "currentColor" }],
 	],
 });

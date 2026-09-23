@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 
 export const Terminal = /* @__PURE__ */ createIcon("Terminal", {
 	linear: [
-		["path", { d: "M4.5 6.5C4.5 6.5 10 10.55 10 12C10 13.45 4.5 17.5 4.5 17.5", stroke: "currentColor" }],
-		["path", { d: "M13 17.5H19.5", stroke: "currentColor" }],
+		["path", { d: "M3.75 5.95C3.75 5.95 9.8 10.405 9.8 12C9.8 13.595 3.75 18.05 3.75 18.05", stroke: "currentColor" }],
+		["path", { d: "M13.1 18.05H20.25", stroke: "currentColor" }],
 	],
 });

@@ -3,11 +3,11 @@ import { createIcon } from "../create-icon.js";
 
 export const ListDash = /* @__PURE__ */ createIcon("ListDash", {
 	linear: [
-		["path", { d: "M9 5L21 5", stroke: "currentColor" }],
-		["path", { d: "M3 5L5 5", stroke: "currentColor" }],
-		["path", { d: "M9 12L21 12", stroke: "currentColor" }],
-		["path", { d: "M3 12L5 12", stroke: "currentColor" }],
-		["path", { d: "M9 19L21 19", stroke: "currentColor" }],
-		["path", { d: "M3 19L5 19", stroke: "currentColor" }],
+		["path", { d: "M8.7 4.3L21.9 4.3", stroke: "currentColor" }],
+		["path", { d: "M2.1 4.3L4.3 4.3", stroke: "currentColor" }],
+		["path", { d: "M8.7 12L21.9 12", stroke: "currentColor" }],
+		["path", { d: "M2.1 12L4.3 12", stroke: "currentColor" }],
+		["path", { d: "M8.7 19.7L21.9 19.7", stroke: "currentColor" }],
+		["path", { d: "M2.1 19.7L4.3 19.7", stroke: "currentColor" }],
 	],
 });

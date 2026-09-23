@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 
 export const Trash = /* @__PURE__ */ createIcon("Trash", {
 	linear: [
-		["path", { d: "M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1M3.5 6h17", stroke: "currentColor" }],
-		["path", { d: "m5 9 .8 9.3C5.95 20.1 6.9 21 8.7 21h6.6c1.8 0 2.75-.9 2.9-2.7L19 9M9.5 10.5l.5 6M14.5 10.5l-.5 6", stroke: "currentColor" }],
+		["path", { d: "M8.7 5.4V4.3a2.2 2.2 0 0 1 2.2 -2.2h2.2a2.2 2.2 0 0 1 2.2 2.2v1.1M2.65 5.4h18.7", stroke: "currentColor" }],
+		["path", { d: "m4.3 8.7 0.88 10.23C5.345 20.91 6.39 21.9 8.37 21.9h7.26c1.98 0 3.025 -0.99 3.19 -2.97L19.7 8.7M9.25 10.35l0.55 6.6M14.75 10.35l-0.55 6.6", stroke: "currentColor" }],
 	],
 });

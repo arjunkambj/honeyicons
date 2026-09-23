@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Reorder = /* @__PURE__ */ createIcon("Reorder", {
 	linear: [
-		["path", { d: "M5 6h14M5 10h14M5 14h14M5 18h14", stroke: "currentColor" }],
+		["path", { d: "M4.3 5.4h15.4M4.3 9.8h15.4M4.3 14.2h15.4M4.3 18.6h15.4", stroke: "currentColor" }],
 	],
 });

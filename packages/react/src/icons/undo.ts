@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Undo = /* @__PURE__ */ createIcon("Undo", {
 	linear: [
-		["path", { d: "M4.5 9H14.5C17.5376 9 20 11.4624 20 14.5C20 17.5376 17.5376 20 14.5 20H11 M8 5C8 5 4 7.94593 4 9C4 10.05413 8 13 8 13", stroke: "currentColor" }],
+		["path", { d: "M3.75 8.7H14.75C18.0914 8.7 20.8 11.4086 20.8 14.75C20.8 18.0914 18.0914 20.8 14.75 20.8H10.9M7.6 4.3C7.6 4.3 3.2 7.5405 3.2 8.7C3.2 9.8595 7.6 13.1 7.6 13.1", stroke: "currentColor" }],
 	],
 });

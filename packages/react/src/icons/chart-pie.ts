@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const ChartPie = /* @__PURE__ */ createIcon("ChartPie", {
 	linear: [
-		["path", { d: "M10.6 5.3A7.7 7.7 0 1 0 18.3 13H11.6C11.05 13 10.6 12.55 10.6 12Z M13.4 3.3A7.7 7.7 0 0 1 20.7 10.6H14.4C13.85 10.6 13.4 10.15 13.4 9.6Z", stroke: "currentColor" }],
+		["path", { d: "M9.975 6.15A7.875 7.875 0 1 0 17.85 14.025H11.075C10.47 14.025 9.975 13.53 9.975 12.925ZM14.025 2.1A7.875 7.875 0 0 1 21.9 9.975H15.125C14.52 9.975 14.025 9.48 14.025 8.875Z", stroke: "currentColor" }],
 	],
 });

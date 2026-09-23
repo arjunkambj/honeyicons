@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const CornerDownRight = /* @__PURE__ */ createIcon("CornerDownRight", {
 	linear: [
-		["path", { d: "M4.5 4V10C4.5 12.83 4.5 14.24 5.38 15.12C6.26 16 7.67 16 10.5 16H19.5 M16 20C16 20 20 17.054 20 16C20 14.946 16 12 16 12", stroke: "currentColor" }],
+		["path", { d: "M3.75 3.2V9.8C3.75 12.913 3.75 14.464 4.718 15.432C5.686 16.4 7.237 16.4 10.35 16.4H20.25M16.4 20.8C16.4 20.8 20.8 17.5594 20.8 16.4C20.8 15.2406 16.4 12 16.4 12", stroke: "currentColor" }],
 	],
 });

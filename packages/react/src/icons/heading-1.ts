@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Heading1 = /* @__PURE__ */ createIcon("Heading1", {
 	linear: [
-		["path", { d: "M4 5V19M13 5V19M4 12H13 M16.9 13.8L18.7 12.6V19", stroke: "currentColor" }],
+		["path", { d: "M3.2 4.3V19.7M13.1 4.3V19.7M3.2 12H13.1M17.39 13.98L19.37 12.66V19.7", stroke: "currentColor" }],
 	],
 });

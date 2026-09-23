@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Indent = /* @__PURE__ */ createIcon("Indent", {
 	linear: [
-		["path", { d: "M3 4H21M11.5 9.3H21M11.5 14.7H21M3 20H21 M4.2 15C4.2 15 7.2 12.79 7.2 12C7.2 11.21 4.2 9 4.2 9", stroke: "currentColor" }],
+		["path", { d: "M2.1 3.2H21.9M11.45 9.03H21.9M11.45 14.97H21.9M2.1 20.8H21.9M3.42 15.3C3.42 15.3 6.72 12.869 6.72 12C6.72 11.131 3.42 8.7 3.42 8.7", stroke: "currentColor" }],
 	],
 });

@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Redo = /* @__PURE__ */ createIcon("Redo", {
 	linear: [
-		["path", { d: "M19.5 9H9.5C6.4624 9 4 11.4624 4 14.5C4 17.5376 6.4624 20 9.5 20H13 M16 5C16 5 20 7.94593 20 9C20 10.05413 16 13 16 13", stroke: "currentColor" }],
+		["path", { d: "M20.25 8.7H9.25C5.9086 8.7 3.2 11.4086 3.2 14.75C3.2 18.0914 5.9086 20.8 9.25 20.8H13.1M16.4 4.3C16.4 4.3 20.8 7.5405 20.8 8.7C20.8 9.8595 16.4 13.1 16.4 13.1", stroke: "currentColor" }],
 	],
 });

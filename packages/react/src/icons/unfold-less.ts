@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 
 export const UnfoldLess = /* @__PURE__ */ createIcon("UnfoldLess", {
 	linear: [
-		["path", { d: "M18 19C18 19 13.5811 14 12 14C10.4188 14 6 19 6 19", stroke: "currentColor" }],
-		["path", { d: "M18 5.00004C18 5.00004 13.5811 9.99999 12 10C10.4188 10 6 5 6 5", stroke: "currentColor" }],
+		["path", { d: "M18.6 19.7C18.6 19.7 13.7392 14.2 12 14.2C10.2607 14.2 5.4 19.7 5.4 19.7", stroke: "currentColor" }],
+		["path", { d: "M18.6 4.3C18.6 4.3 13.7392 9.8 12 9.8C10.2607 9.8 5.4 4.3 5.4 4.3", stroke: "currentColor" }],
 	],
 });

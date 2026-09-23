@@ -141,10 +141,17 @@ function parseSvg(svg: string, file: string) {
 	if (end === -1) {
 		throw new Error(`${file}: missing </svg>`);
 	}
-	const { viewBox } = parseAttrs(open[1]);
+	const { viewBox, strokeWidth } = parseAttrs(open[1]);
 	if (viewBox !== "0 0 24 24") {
 		throw new Error(
 			`${file}: viewBox must be "0 0 24 24", got ${JSON.stringify(viewBox)}`,
+		);
+	}
+	// Root attributes are dropped and IconBase draws every stroke at 1.8, so any
+	// other declared width only misleads people previewing the source file.
+	if (strokeWidth !== undefined && strokeWidth !== "1.8") {
+		throw new Error(
+			`${file}: stroke-width must be "1.8", got ${JSON.stringify(strokeWidth)}`,
 		);
 	}
 	const nodes = parseNodes(svg.slice(start, end), file);

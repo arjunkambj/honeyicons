@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 
 export const Target = /* @__PURE__ */ createIcon("Target", {
 	linear: [
-		["path", { d: "M3 12A9 9 0 1 0 21 12A9 9 0 1 0 3 12Z M7 12A5 5 0 1 0 17 12A5 5 0 1 0 7 12Z", stroke: "currentColor" }],
-		["circle", { cx: "12", cy: "12", r: "1.6", fill: "currentColor", stroke: "none" }],
+		["path", { d: "M2.1 12A9.9 9.9 0 1 0 21.9 12A9.9 9.9 0 1 0 2.1 12ZM6.5 12A5.5 5.5 0 1 0 17.5 12A5.5 5.5 0 1 0 6.5 12Z", stroke: "currentColor" }],
+		["circle", { cx: "12", cy: "12", r: "1.76", fill: "currentColor", stroke: "none" }],
 	],
 });

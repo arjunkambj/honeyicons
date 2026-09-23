@@ -3,9 +3,9 @@ import { createIcon } from "../create-icon.js";
 
 export const Widget = /* @__PURE__ */ createIcon("Widget", {
 	linear: [
-		["circle", { cx: "6.75", cy: "6.75", r: "3.4", stroke: "currentColor" }],
-		["circle", { cx: "17.25", cy: "6.75", r: "3.4", stroke: "currentColor" }],
-		["circle", { cx: "6.75", cy: "17.25", r: "3.4", stroke: "currentColor" }],
-		["circle", { cx: "17.25", cy: "17.25", r: "3.4", stroke: "currentColor" }],
+		["circle", { cx: "6.225", cy: "6.225", r: "3.74", stroke: "currentColor" }],
+		["circle", { cx: "17.775", cy: "6.225", r: "3.74", stroke: "currentColor" }],
+		["circle", { cx: "6.225", cy: "17.775", r: "3.74", stroke: "currentColor" }],
+		["circle", { cx: "17.775", cy: "17.775", r: "3.74", stroke: "currentColor" }],
 	],
 });

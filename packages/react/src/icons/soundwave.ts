@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Soundwave = /* @__PURE__ */ createIcon("Soundwave", {
 	linear: [
-		["path", { d: "M4 11v2M8 7v10M12 4v16M16 7v10M20 11v2", stroke: "currentColor" }],
+		["path", { d: "M3.2 10.9v2.2M7.6 6.5v11M12 3.2v17.6M16.4 6.5v11M20.8 10.9v2.2", stroke: "currentColor" }],
 	],
 });

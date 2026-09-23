@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const TextAlignCenter = /* @__PURE__ */ createIcon("TextAlignCenter", {
 	linear: [
-		["path", { d: "M3 3H21M8 9H16M3 15H21M8 21H16", stroke: "currentColor" }],
+		["path", { d: "M2.1 2.1H21.9M7.6 8.7H16.4M2.1 15.3H21.9M7.6 21.9H16.4", stroke: "currentColor" }],
 	],
 });

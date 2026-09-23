@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Webcam = /* @__PURE__ */ createIcon("Webcam", {
 	linear: [
-		["path", { d: "M4.8 10A7.2 7.2 0 1 0 19.2 10A7.2 7.2 0 1 0 4.8 10Z M9.5 10A2.5 2.5 0 1 0 14.5 10A2.5 2.5 0 1 0 9.5 10Z M12 17.2V20.8 M8.5 20.8H15.5", stroke: "currentColor" }],
+		["path", { d: "M4.2528 9.848A7.7472 7.7472 0 1 0 19.7472 9.848A7.7472 7.7472 0 1 0 4.2528 9.848ZM9.31 9.848A2.69 2.69 0 1 0 14.69 9.848A2.69 2.69 0 1 0 9.31 9.848ZM12 17.5952V21.4688M8.234 21.4688H15.766", stroke: "currentColor" }],
 	],
 });

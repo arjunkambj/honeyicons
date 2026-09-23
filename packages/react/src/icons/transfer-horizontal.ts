@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const TransferHorizontal = /* @__PURE__ */ createIcon("TransferHorizontal", {
 	linear: [
-		["path", { d: "M4.5 7.5H20M19.5 16.5H4 M8 3.5C8 3.5 4 6.4459 4 7.5C4 8.5541 8 11.5 8 11.5 M16 12.5C16 12.5 20 15.4459 20 16.5C20 17.5541 16 20.5 16 20.5", stroke: "currentColor" }],
+		["path", { d: "M3.75 7.05H20.8M20.25 16.95H3.2M7.6 2.65C7.6 2.65 3.2 5.8905 3.2 7.05C3.2 8.2095 7.6 11.45 7.6 11.45M16.4 12.55C16.4 12.55 20.8 15.7905 20.8 16.95C20.8 18.1095 16.4 21.35 16.4 21.35", stroke: "currentColor" }],
 	],
 });

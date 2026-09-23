@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Ban = /* @__PURE__ */ createIcon("Ban", {
 	linear: [
-		["path", { d: "M3 12A9 9 0 1 0 21 12A9 9 0 1 0 3 12Z M5.636 5.636L18.364 18.364", stroke: "currentColor" }],
+		["path", { d: "M2.1 12A9.9 9.9 0 1 0 21.9 12A9.9 9.9 0 1 0 2.1 12ZM4.9996 4.9996L19.0004 19.0004", stroke: "currentColor" }],
 	],
 });

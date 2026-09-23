@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Outdent = /* @__PURE__ */ createIcon("Outdent", {
 	linear: [
-		["path", { d: "M3 4H21M11.5 9.3H21M11.5 14.7H21M3 20H21 M6.4 9C6.4 9 3.4 11.21 3.4 12C3.4 12.79 6.4 15 6.4 15", stroke: "currentColor" }],
+		["path", { d: "M2.1 3.2H21.9M11.45 9.03H21.9M11.45 14.97H21.9M2.1 20.8H21.9M5.84 8.7C5.84 8.7 2.54 11.131 2.54 12C2.54 12.869 5.84 15.3 5.84 15.3", stroke: "currentColor" }],
 	],
 });

@@ -4,7 +4,7 @@ import { createIcon } from "../create-icon.js";
 export const SpinnerArc = /* @__PURE__ */ createIcon("SpinnerArc", {
 	linear: [
 		["style", { children: "@keyframes honeyicons-spinner-arc-rotate { to { transform: rotate(360deg); } }\n    [data-honeyicons-spinner-arc] { transform-origin: 12px 12px; animation: honeyicons-spinner-arc-rotate 0.8s linear infinite; }\n    @media (prefers-reduced-motion: reduce) { [data-honeyicons-spinner-arc] { animation: none; } }" }],
-		["circle", { cx: "12", cy: "12", r: "9", stroke: "currentColor", opacity: "0.15", "data-honeyicons-bounds": "" }],
-		["path", { d: "M21 12a9 9 0 1 1-9-9", stroke: "currentColor", "data-honeyicons-spinner-arc": "" }],
+		["circle", { cx: "12", cy: "12", r: "9.9", stroke: "currentColor", opacity: "0.15", "data-honeyicons-bounds": "" }],
+		["path", { d: "M21.9 12a9.9 9.9 0 1 1 -9.9 -9.9", stroke: "currentColor", "data-honeyicons-spinner-arc": "" }],
 	],
 });

@@ -4,7 +4,7 @@ import { createIcon } from "../create-icon.js";
 export const Spinner = /* @__PURE__ */ createIcon("Spinner", {
 	linear: [
 		["style", { children: "@keyframes honeyicons-spinner-rotate { to { transform: rotate(360deg); } }\n    [data-honeyicons-spinner] { transform-origin: 12px 12px; animation: honeyicons-spinner-rotate 0.8s linear infinite; }\n    @media (prefers-reduced-motion: reduce) { [data-honeyicons-spinner] { animation: none; } }" }],
-		["circle", { cx: "12", cy: "12", r: "9", stroke: "currentColor", opacity: "0.15", "data-honeyicons-bounds": "" }],
-		["path", { d: "M3 12a9 9 0 0 1 9-9", stroke: "currentColor", "data-honeyicons-spinner": "" }],
+		["circle", { cx: "12", cy: "12", r: "9.9", stroke: "currentColor", opacity: "0.15", "data-honeyicons-bounds": "" }],
+		["path", { d: "M2.1 12a9.9 9.9 0 0 1 9.9 -9.9", stroke: "currentColor", "data-honeyicons-spinner": "" }],
 	],
 });

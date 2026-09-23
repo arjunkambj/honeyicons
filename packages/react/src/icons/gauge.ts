@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Gauge = /* @__PURE__ */ createIcon("Gauge", {
 	linear: [
-		["path", { d: "M5.99 19.01A8.5 8.5 0 1 1 18.01 19.01 M10.2 13A1.8 1.8 0 1 0 13.8 13A1.8 1.8 0 1 0 10.2 13Z M13.273 11.727L15.96 9.04", stroke: "currentColor" }],
+		["path", { d: "M5.389 19.711A9.35 9.35 0 1 1 18.611 19.711M10.02 13.1A1.98 1.98 0 1 0 13.98 13.1A1.98 1.98 0 1 0 10.02 13.1ZM13.4003 11.6997L16.356 8.744", stroke: "currentColor" }],
 	],
 });

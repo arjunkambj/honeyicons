@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Kanban = /* @__PURE__ */ createIcon("Kanban", {
 	linear: [
-		["path", { d: "M5 4V18M12 4V11.5M19 4V21", stroke: "currentColor" }],
+		["path", { d: "M4.3 3.2V18.6M12 3.2V11.45M19.7 3.2V21.9", stroke: "currentColor" }],
 	],
 });

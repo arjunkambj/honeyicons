@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 
 export const ChevronsLeft = /* @__PURE__ */ createIcon("ChevronsLeft", {
 	linear: [
-		["path", { d: "M11.5 18C11.5 18 5.50001 13.5811 5.5 12C5.49999 10.4188 11.5 6 11.5 6", stroke: "currentColor" }],
-		["path", { d: "M18.5 18C18.5 18 12.5 13.5811 12.5 12C12.5 10.4188 18.5 6 18.5 6", stroke: "currentColor" }],
+		["path", { d: "M11.45 18.6C11.45 18.6 4.85 13.7392 4.85 12C4.85 10.2607 11.45 5.4 11.45 5.4", stroke: "currentColor" }],
+		["path", { d: "M19.15 18.6C19.15 18.6 12.55 13.7392 12.55 12C12.55 10.2607 19.15 5.4 19.15 5.4", stroke: "currentColor" }],
 	],
 });

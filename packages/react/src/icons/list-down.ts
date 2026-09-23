@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 
 export const ListDown = /* @__PURE__ */ createIcon("ListDown", {
 	linear: [
-		["path", { d: "M3 6h17M3 11h17M3 16h7", stroke: "currentColor" }],
-		["path", { d: "M21 15C21 15 18.42231 18 17.5 18C16.57763 18 14 15 14 15", stroke: "currentColor" }],
+		["path", { d: "M2.1 5.4h18.7M2.1 10.9h18.7M2.1 16.4h7.7", stroke: "currentColor" }],
+		["path", { d: "M21.9 15.3C21.9 15.3 19.0645 18.6 18.05 18.6C17.0354 18.6 14.2 15.3 14.2 15.3", stroke: "currentColor" }],
 	],
 });

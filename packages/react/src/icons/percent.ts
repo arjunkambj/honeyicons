@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Percent = /* @__PURE__ */ createIcon("Percent", {
 	linear: [
-		["path", { d: "M18.5 5.5L5.5 18.5 M4.7 7A2.3 2.3 0 1 0 9.3 7A2.3 2.3 0 1 0 4.7 7Z M14.7 17A2.3 2.3 0 1 0 19.3 17A2.3 2.3 0 1 0 14.7 17Z", stroke: "currentColor" }],
+		["path", { d: "M19.15 4.85L4.85 19.15M3.97 6.5A2.53 2.53 0 1 0 9.03 6.5A2.53 2.53 0 1 0 3.97 6.5ZM14.97 17.5A2.53 2.53 0 1 0 20.03 17.5A2.53 2.53 0 1 0 14.97 17.5Z", stroke: "currentColor" }],
 	],
 });

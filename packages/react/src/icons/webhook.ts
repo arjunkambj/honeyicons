@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Webhook = /* @__PURE__ */ createIcon("Webhook", {
 	linear: [
-		["path", { d: "M12 6.5L15.993 13.415A3.1 3.1 0 1 0 20.227 14.55 M17.543 16.1L9.557 16.1A3.1 3.1 0 1 0 6.457 19.2 M6.457 16.1L10.45 9.185A3.1 3.1 0 1 0 9.315 4.95", stroke: "currentColor" }],
+		["path", { d: "M12 5.95L16.3923 13.5565A3.41 3.41 0 1 0 21.0497 14.805M18.0973 16.51L9.3127 16.51A3.41 3.41 0 1 0 5.9027 19.92M5.9027 16.51L10.295 8.9035A3.41 3.41 0 1 0 9.0465 4.245", stroke: "currentColor" }],
 	],
 });

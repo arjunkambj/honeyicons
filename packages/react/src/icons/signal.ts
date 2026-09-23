@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const Signal = /* @__PURE__ */ createIcon("Signal", {
 	linear: [
-		["path", { d: "M4.5 19.5V16.5M9.17 19.5V13.2M13.83 19.5V9.4M18.5 19.5V5", stroke: "currentColor" }],
+		["path", { d: "M3.75 20.25V16.95M8.887 20.25V13.32M14.013 20.25V9.14M19.15 20.25V4.3", stroke: "currentColor" }],
 	],
 });

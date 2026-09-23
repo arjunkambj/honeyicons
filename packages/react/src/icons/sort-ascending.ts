@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const SortAscending = /* @__PURE__ */ createIcon("SortAscending", {
 	linear: [
-		["path", { d: "M7 19.5V5 M10.5 8C10.5 8 7.922 4.5 7 4.5C6.078 4.5 3.5 8 3.5 8 M12.5 7H15.5 M12.5 12H18.5 M12.5 17H21", stroke: "currentColor" }],
+		["path", { d: "M6.5 20.25V4.3M10.35 7.6C10.35 7.6 7.5142 3.75 6.5 3.75C5.4858 3.75 2.65 7.6 2.65 7.6M12.55 6.5H15.85M12.55 12H19.15M12.55 17.5H21.9", stroke: "currentColor" }],
 	],
 });

@@ -3,6 +3,6 @@ import { createIcon } from "../create-icon.js";
 
 export const TextAlignJustifyLeft = /* @__PURE__ */ createIcon("TextAlignJustifyLeft", {
 	linear: [
-		["path", { d: "M3 3H11M3 9H11M3 15H21M3 21H21", stroke: "currentColor" }],
+		["path", { d: "M2.1 2.1H10.9M2.1 8.7H10.9M2.1 15.3H21.9M2.1 21.9H21.9", stroke: "currentColor" }],
 	],
 });

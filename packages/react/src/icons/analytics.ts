@@ -3,10 +3,10 @@ import { createIcon } from "../create-icon.js";
 
 export const Analytics = /* @__PURE__ */ createIcon("Analytics", {
 	linear: [
-		["path", { d: "M4 9V20", stroke: "currentColor" }],
-		["path", { d: "M8 4V20", stroke: "currentColor" }],
-		["path", { d: "M12 11V20", stroke: "currentColor" }],
-		["path", { d: "M16 7V20", stroke: "currentColor" }],
-		["path", { d: "M20 14V20", stroke: "currentColor" }],
+		["path", { d: "M3.2 8.7V20.8", stroke: "currentColor" }],
+		["path", { d: "M7.6 3.2V20.8", stroke: "currentColor" }],
+		["path", { d: "M12 10.9V20.8", stroke: "currentColor" }],
+		["path", { d: "M16.4 6.5V20.8", stroke: "currentColor" }],
+		["path", { d: "M20.8 14.2V20.8", stroke: "currentColor" }],
 	],
 });
