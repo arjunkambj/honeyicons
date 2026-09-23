@@ -47,8 +47,7 @@ export function Toolbar() {
 
 - `icon` takes an icon's kebab-case `name` from the index. TypeScript checks
   names and variants, and an unknown name throws.
-- `variant` accepts only the variants the index lists for that icon. Each icon
-  defaults to its first variant.
+- `variant` is `linear` (the default) or `bold`. Every icon has both.
 - Type props that take an icon name with `IconName`.
 - `Icon` includes the full collection in the bundle. For fixed icons, use
   named imports such as `import { Bell } from "@honeyicons/react"` and `<Bell />`

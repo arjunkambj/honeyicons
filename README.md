@@ -105,7 +105,7 @@ honeyicons/
     └── build-icons.ts     # svg → React components
 ```
 
-Icons live in `icons/{linear,bold}/{category}/name.svg` (24×24). An icon needs at least one variant. Category is the folder name. A new category also needs a label and icon in `CATEGORY_DETAILS` in `apps/web/src/components/icons/constants.ts`. Optional tags go in `icons/meta.json`. Then:
+Icons live in `icons/{linear,bold}/{category}/name.svg` (24×24). Each icon has a linear file and a bold file derived from it, following the bold rules in `AGENTS.md`. Category is the folder name. A new category also needs a label and icon in `CATEGORY_DETAILS` in `apps/web/src/components/icons/constants.ts`. Optional tags go in `icons/meta.json`. Then:
 
 ```bash
 pnpm run generate:icons

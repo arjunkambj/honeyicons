@@ -26,8 +26,8 @@ Icon includes the full collection in the bundle. For fixed icons, use named impo
 - Icons use a 24 by 24 viewBox, currentColor, and a default 1.8-unit stroke with rounded caps and joins.
 - Use size={16} or size={24} for common interface sizes.
 - Preserve supplied filled geometry. Some linear icons use filled outlines; strokeWidth does not change their baked-in weight.
-- The variant prop accepts "linear" or "bold". Each icon defaults to its first variant: linear, or bold for bold-only icons. Check an icon's variants before passing one; a variant the icon does not have throws.
-- Every icon has linear and bold versions. Bold fills enclosed shapes and cuts interior details out of them; line-only icons such as arrows use the same drawing in both. Solid brand marks use the same drawing in both variants.
+- The variant prop accepts "linear" or "bold". Every icon has both and defaults to linear; any other variant throws.
+- Bold fills enclosed shapes and cuts inner lines through the fill. Line-only icons such as arrows, and solid brand marks, use the same drawing in both variants.
 - The icon index at https://cdn.jsdelivr.net/npm/@honeyicons/react@latest/icons.json lists each icon's name, export, category, variants, and tags.
 
 ## Agent skill

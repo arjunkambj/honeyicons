@@ -75,12 +75,10 @@ or CSS lengths such as `"1em"`). Icons inherit the surrounding text color and
 forward `ref` to the SVG element. Standard SVG props, event handlers, and
 children such as `<desc>` are supported.
 
-Icons come in `linear` and `bold`, and every icon has a `bold` version. Bold
-fills enclosed shapes and cuts interior details out of them; line-only icons
-such as arrows and chevrons use the same drawing in both. Each icon defaults to
-its first variant: `linear`, or `bold` for icons drawn only in bold. Brand logos have both;
-solid marks such as `youtube` use the same drawing in each.
-Passing a variant the icon does not have throws. Stroke width affects stroked
+Every icon comes in `linear` and `bold`, and defaults to `linear`. Bold fills
+enclosed shapes and cuts inner lines through the fill. Line-only icons such as
+arrows and chevrons, and solid brand marks such as `youtube`, use the same
+drawing in both. Any other variant throws. Stroke width affects stroked
 geometry; filled outlines retain their original geometry.
 
 To type your own props, import `IconName`, `IconProps`, and `IconVariantMap`

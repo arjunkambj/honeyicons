@@ -3,7 +3,7 @@
 - Do not write tests unless the user explicitly asks for them.
 - Write idiomatic TypeScript and follow the existing project conventions.
 - Use `@honeyicons/react` for app and shared UI icons. Do not add Hugeicons dependencies or imports; map icons from generated or copied UI components to our existing exports.
-- Create linear icons by default; add other styles only when requested.
+- Create every icon in linear and bold. Draw linear first, then derive bold from it by the rules in **Bold variants** below.
 
 ## Pasted SVG workflow
 

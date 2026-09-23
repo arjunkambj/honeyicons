@@ -67,14 +67,14 @@ export function Toolbar() {
 }
 ```
 
-| Prop          | Default        | Notes                                                                                                      |
-| ------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
-| `icon`        | required       | The kebab-case `name` from the index, typed as `IconName`. Unknown names throw.                            |
-| `size`        | `24`           | Number or CSS length (`"1em"` follows the font size). Sets width and height; don't pass `width`/`height`.  |
-| `color`       | `currentColor` | Prefer inheriting text color via `className` (`text-red-500`) over hard-coded colors.                      |
-| `strokeWidth` | `1.8`          | Affects stroked icons only; filled-outline icons keep their baked weight.                                  |
-| `variant`     | first listed   | `"linear"`, or `"bold"` for bold-only icons. Pass only variants the index lists; any other variant throws. |
-| `title`       | none           | Gives the icon an accessible name (`role="img"`).                                                          |
+| Prop          | Default        | Notes                                                                                                     |
+| ------------- | -------------- | --------------------------------------------------------------------------------------------------------- |
+| `icon`        | required       | The kebab-case `name` from the index, typed as `IconName`. Unknown names throw.                           |
+| `size`        | `24`           | Number or CSS length (`"1em"` follows the font size). Sets width and height; don't pass `width`/`height`. |
+| `color`       | `currentColor` | Prefer inheriting text color via `className` (`text-red-500`) over hard-coded colors.                     |
+| `strokeWidth` | `1.8`          | Affects stroked icons only; filled-outline icons keep their baked weight.                                 |
+| `variant`     | `"linear"`     | `"linear"` or `"bold"`. Every icon has both; any other variant throws.                                    |
+| `title`       | none           | Gives the icon an accessible name (`role="img"`).                                                         |
 
 Icons also accept `className`, `style`, event handlers, any other SVG props, and a `ref` to the `<svg>`.
 
@@ -102,7 +102,7 @@ so bundlers can remove unused icons. Use `Icon` when the name is selected at run
 - **Accessibility.** An icon without `title`, `aria-label`, or `aria-labelledby` is decorative and hidden from screen readers. That is right next to visible text. An icon-only button needs a name, and it belongs on the button (`<button aria-label="Close"><Icon icon="close" /></button>`), not on the icon. Add `title` only to a standalone icon that carries meaning.
 - **Sizes.** The icons are drawn for 16px and 24px. Use 16 in dense UI, such as inline with text, table rows, and small buttons; 20 in standard buttons; and 24 for navigation and headers. Keep one size per context, and align with the text using `flex items-center` rather than nudging margins.
 - **Color.** Let icons inherit `currentColor` from the text so themes, hover, and disabled states work for free.
-- **Linear by default.** Use `bold` for a selected or active state (for example the current tab) only where the index lists that variant. Don't mix styles arbitrarily.
+- **Linear by default.** Use `bold` for a selected or active state, for example the current tab. Every icon has a bold version. Don't mix styles arbitrarily.
 - **Pick by meaning and shape.** `chevron-down` is a disclosure caret, and `arrow-down` is an arrow with a shaft. `close` is the dismiss control, and `x` is the brand logo. `trash` deletes, and `archive` stores. Check the tags when two names seem close.
 - **Keep geometry intact.** Don't restyle the paths, add outlines, or scale with CSS `transform` to fake weight. Filled-outline icons ignore `strokeWidth` by design.
 - **Follow the project.** Match the existing wrappers and size conventions. Run the project's type check or build after adding icons. That check catches any name the lookup missed.
