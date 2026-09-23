@@ -19,6 +19,14 @@ reduced to a zipper track and pull tab. `FileArchive` and `FileVideo` keep the
 Solar-derived file frame, and `Usb` reuses the Hugeicons-derived curved
 arrowhead, so those licenses continue to apply.
 
+`User`, `UserAdd`, `UserRemove`, `UserCheck`, `UserX`, `UserLock`,
+`UserSettings`, and `UserGroup` replace the flat elliptical body with a deeper,
+newly drawn bust: a flat base, round shoulders, and a gentle top arch, expanded
+into an exact 1.8-unit filled outline with circular heads. UserGroup's side
+figures are redrawn as open arcs. The action symbols keep their existing filled
+geometry, shifted 0.5 units left for balance, so the Solar license below
+continues to apply to them.
+
 ## September 23, 2026 additions
 
 The 113 icons added on this date are original Honeyicons drawings on the
