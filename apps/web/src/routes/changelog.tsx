@@ -21,7 +21,7 @@ import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
-	{ id: "unreleased", label: "Unreleased · 113 new icons" },
+	{ id: "version-007", label: "0.0.7 · Bold for every icon" },
 	{ id: "version-006", label: "0.0.6 · Even overlaps" },
 	{ id: "version-005", label: "0.0.5 · Named icons" },
 	{ id: "september-12-title", label: "Five new icons" },
@@ -48,7 +48,7 @@ const addedIcons = [
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
 ] as const;
 
-const unreleasedHighlights = [
+const version007Highlights = [
 	{ name: "CloudRain", Icon: CloudRain },
 	{ name: "Snowflake", Icon: Snowflake },
 	{ name: "Bot", Icon: Bot },
@@ -85,24 +85,20 @@ function ChangelogPage() {
 					description="New icons and small improvements to the collection."
 				/>
 				<section
-					aria-labelledby="unreleased"
+					aria-labelledby="version-007"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-23" className="text-muted-foreground text-sm">
-						September 23, 2026
+					<time dateTime="2026-09-24" className="text-muted-foreground text-sm">
+						September 24, 2026
 					</time>
 					<h2
-						id="unreleased"
+						id="version-007"
 						className="mt-3 scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
 					>
-						Unreleased · 113 new icons and a Weather category
+						0.0.7 · Bold for every icon, 112 new icons, and a Weather category
 					</h2>
-					<p className="mt-3 text-muted-foreground leading-7">
-						These changes are in the catalog and will ship in the next
-						@honeyicons/react release.
-					</p>
 					<ul className="mt-6 flex flex-wrap gap-2">
-						{unreleasedHighlights.map(({ name, Icon }) => (
+						{version007Highlights.map(({ name, Icon }) => (
 							<li
 								key={name}
 								title={name}
@@ -114,7 +110,16 @@ function ChangelogPage() {
 					</ul>
 					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
 						<li>
-							109 icons fill gaps across editor, media, files, devices, actions,
+							Every icon now has a bold variant. Bold fills each shape and cuts
+							its inner lines all the way through, so dividers, folds, and lids
+							read as separate pieces.
+						</li>
+						<li>
+							Every brand logo ships in both linear and bold. Solid marks use
+							the same drawing in each.
+						</li>
+						<li>
+							108 icons fill gaps across editor, media, files, devices, actions,
 							and the other categories, including headings, playback controls,
 							file types, git, charts, and commerce.
 						</li>
@@ -134,6 +139,15 @@ function ChangelogPage() {
 						<li>
 							The user icons have a deeper bust with round shoulders and a flat
 							base, and UserGroup’s side figures are open arcs.
+						</li>
+						<li>
+							Icons align to the 1.2 and 22.8 keylines and to the pixel grid at
+							16, 20, and 24 pixels.
+						</li>
+						<li>
+							ExternalLink, ClipboardCheck, Camera, Sad, Sparkles, and List no
+							longer draw their filled parts with an extra stroke. Barcode, Usb,
+							Gamepad, Captions, Card, FileCode, Globe, and PhoneOff are tidied.
 						</li>
 					</ul>
 				</section>
