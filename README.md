@@ -86,9 +86,22 @@ import { Button } from "@honeyicons/ui/components/button";
 
 If you want to add app-specific blocks instead of shared primitives, run the shadcn CLI from `apps/web`.
 
-## Git Hooks and Formatting
+## Checks
 
-- Run lint and format: `pnpm run check`
+Run these before you push:
+
+```bash
+pnpm run generate:icons
+git diff --exit-code -- packages/react/src packages/react/icons.json icons/meta.json
+pnpm run lint
+pnpm run format:check
+pnpm run check-types
+pnpm run build
+```
+
+The `git diff` step fails if the generated components, `icons.json`, or
+`icons/meta.json` are out of date with the SVG sources. Run `pnpm run check`
+to auto-fix lint issues and format the repo.
 
 ## Project Structure
 
