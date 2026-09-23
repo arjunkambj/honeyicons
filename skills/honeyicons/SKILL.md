@@ -30,6 +30,8 @@ It fetches the icon index of the latest npm release and prints the kebab-case na
 | Unreleased icons on GitHub `main`          | `--github` or `--github=<ref>` |
 | Machine-readable output                    | `--json`                       |
 
+Categories are `actions`, `ai`, `arrows`, `brands`, `charts`, `chat`, `commerce`, `development`, `devices`, `editor`, `files`, `layout`, `maps`, `media`, `objects`, `security`, `settings`, `status`, `time`, `user`, and `weather`. A release lists only the categories it ships, so check with `--list --category <name>` against the version you use.
+
 How to read the results:
 
 - The **installed package decides what compiles**. If a match is flagged `NOT in installed version`, it exists in the latest release only. Either upgrade `@honeyicons/react` (see Upgrading) or pick an icon that is already installed.

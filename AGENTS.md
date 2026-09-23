@@ -12,7 +12,7 @@
 - Preserve supplied filled outlines as fills with `currentColor`. Do not convert them to strokes or add a second stroke.
 - During intake, preserve supplied silhouettes and filled geometry. Apply a consistency pass when the user says **"pass"** or explicitly requests consistent design; individual requested fixes can be made immediately.
 - During a requested consistency pass, apply the design standards below to the pending batch and review the icons together at 16px and 24px on light and dark backgrounds. Do not redesign unrelated icons.
-- Edit source SVGs in `icons/<style>/<category>/`, then run `pnpm generate:icons` to update React components and the catalog. Do not hand-edit generated files. Run the package build and type checks after additions or geometry changes.
+- Edit source SVGs in `icons/<style>/<category>/`, then run `pnpm generate:icons` to update React components and the catalog. Do not hand-edit generated files. A new category folder also needs a label and icon in `CATEGORY_DETAILS` in `apps/web/src/components/icons/constants.ts`. Run the package build and type checks after additions or geometry changes.
 
 ## Icon design standards
 
@@ -26,7 +26,8 @@
 - Keep the file family gently rounded with slightly taller page proportions. Preserve recognizable brand geometry without forcing rounded corners onto logos.
 - Use the supplied Solar filled outline in `icons/linear/files/folder.svg` as the folder-family base: preserve its sloping tab, smooth curves, cutout, and rounded dash. Use the supplied `folder-open` and `folder-with-files` geometry for those variants; keep the dash on the front folder in `folders`. Adapt small tree folders for legibility without reverting to the old tab shape.
 - `FolderAdd` uses only its plus symbol inside the folder; omit the decorative dash. Keep miniature tree folders wider than they are tall, with a clear sloping tab and even border weight.
-- `UserAdd`, `UserRemove`, `UserCheck`, and `UserX` use a filled circular head and closed rounded bust, with free-standing status symbols beside the head. Do not enclose these status symbols in circular badges.
+- The user family (`User`, `UserAdd`, `UserRemove`, `UserCheck`, `UserX`, `UserLock`, `UserSettings`, `UserGroup`) uses the ring head and deep closed bust from `icons/linear/user/user.svg`: a flat base, round shoulders, and a gentle top arch, as a 1.8-unit filled outline. Do not use a flat elliptical body. Place status symbols free-standing beside the head; do not enclose them in circular badges.
+- Build family variants from the base icon's existing geometry instead of new drawings. `*-off` variants cut a rounded gap through the base icon along a diagonal slash; remove, lock, search, and check variants add the symbol to the unchanged base.
 - Reuse the existing curved arrowhead geometry in arrow-bearing icons, including cloud transfers and import/export. Scale the complete arrowhead and preserve the curved tip instead of substituting a sharp elbow or narrow chevron.
 
 - Slider families use perpendicular bar handles with a 1.8-unit stroke and round caps and joins. Each handle joins its track on one side, with a clear gap on the opposite side. Do not use circular handles. Main variants have three tracks; Alt variants have two. Horizontal and vertical versions are rotations of the same geometry.

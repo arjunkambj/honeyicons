@@ -1,10 +1,27 @@
-import { Card, Clock, Key, UserAdd, Wallet } from "@honeyicons/react";
+import {
+	Bot,
+	Card,
+	ChartPie,
+	Clock,
+	CloudRain,
+	Film,
+	Heading1,
+	Key,
+	Laptop,
+	Receipt,
+	Snowflake,
+	Trophy,
+	UserAdd,
+	Wallet,
+	Webhook,
+} from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "unreleased", label: "Unreleased · 113 new icons" },
 	{ id: "version-006", label: "0.0.6 · Even overlaps" },
 	{ id: "version-005", label: "0.0.5 · Named icons" },
 	{ id: "september-12-title", label: "Five new icons" },
@@ -31,6 +48,19 @@ const addedIcons = [
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
 ] as const;
 
+const unreleasedHighlights = [
+	{ name: "CloudRain", Icon: CloudRain },
+	{ name: "Snowflake", Icon: Snowflake },
+	{ name: "Bot", Icon: Bot },
+	{ name: "ChartPie", Icon: ChartPie },
+	{ name: "Receipt", Icon: Receipt },
+	{ name: "Webhook", Icon: Webhook },
+	{ name: "Laptop", Icon: Laptop },
+	{ name: "Heading1", Icon: Heading1 },
+	{ name: "Film", Icon: Film },
+	{ name: "Trophy", Icon: Trophy },
+] as const;
+
 export const Route = createFileRoute("/changelog")({
 	head: () => ({
 		meta: [
@@ -54,6 +84,59 @@ function ChangelogPage() {
 					title="Changelog"
 					description="New icons and small improvements to the collection."
 				/>
+				<section
+					aria-labelledby="unreleased"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-09-23" className="text-muted-foreground text-sm">
+						September 23, 2026
+					</time>
+					<h2
+						id="unreleased"
+						className="mt-3 scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						Unreleased · 113 new icons and a Weather category
+					</h2>
+					<p className="mt-3 text-muted-foreground leading-7">
+						These changes are in the catalog and will ship in the next
+						@honeyicons/react release.
+					</p>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{unreleasedHighlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center rounded-xl bg-card"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							109 icons fill gaps across editor, media, files, devices, actions,
+							and the other categories, including headings, playback controls,
+							file types, git, charts, and commerce.
+						</li>
+						<li>
+							A new Weather category adds CloudRain, Droplet, Snowflake, and
+							Wind.
+						</li>
+						<li>
+							Off, remove, lock, and search variants such as PinOff, WifiOff,
+							FolderLock, and UserSettings reuse the geometry of their base
+							icons.
+						</li>
+						<li>
+							54 existing icons are rebuilt at the standard 1.8-unit weight.
+							Crop, Like, Dislike, and Key are redrawn.
+						</li>
+						<li>
+							The user icons have a deeper bust with round shoulders and a flat
+							base, and UserGroup’s side figures are open arcs.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-006"
 					className="border-t border-border pt-8"
