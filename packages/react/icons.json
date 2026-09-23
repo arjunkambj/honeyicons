@@ -2056,21 +2056,6 @@
 		]
 	},
 	{
-		"name": "file-lock",
-		"export": "FileLock",
-		"category": "files",
-		"variants": [
-			"linear"
-		],
-		"tags": [
-			"file",
-			"lock",
-			"protected",
-			"private",
-			"secure"
-		]
-	},
-	{
 		"name": "file-remove",
 		"export": "FileRemove",
 		"category": "files",

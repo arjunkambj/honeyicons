@@ -135,7 +135,6 @@ import { FileAdd } from "./icons/file-add.js";
 import { FileArchive } from "./icons/file-archive.js";
 import { FileCode } from "./icons/file-code.js";
 import { FileImage } from "./icons/file-image.js";
-import { FileLock } from "./icons/file-lock.js";
 import { FileRemove } from "./icons/file-remove.js";
 import { FileSearch } from "./icons/file-search.js";
 import { FileSpreadsheet } from "./icons/file-spreadsheet.js";
@@ -1516,14 +1515,6 @@ export const catalog: CatalogItem[] = [
 		tags: ["file","image","photo","picture","attachment"],
 		variants: ["linear"],
 		component: FileImage,
-	},
-	{
-		name: "file-lock",
-		pascalName: "FileLock",
-		category: "files",
-		tags: ["file","lock","protected","private","secure"],
-		variants: ["linear"],
-		component: FileLock,
 	},
 	{
 		name: "file-remove",

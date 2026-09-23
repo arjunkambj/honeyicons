@@ -132,7 +132,6 @@ export { FileAdd } from "./file-add.js";
 export { FileArchive } from "./file-archive.js";
 export { FileCode } from "./file-code.js";
 export { FileImage } from "./file-image.js";
-export { FileLock } from "./file-lock.js";
 export { FileRemove } from "./file-remove.js";
 export { FileSearch } from "./file-search.js";
 export { FileSpreadsheet } from "./file-spreadsheet.js";

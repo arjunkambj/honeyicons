@@ -663,9 +663,6 @@
 	"file-image": {
 		"tags": ["file", "image", "photo", "picture", "attachment"]
 	},
-	"file-lock": {
-		"tags": ["file", "lock", "protected", "private", "secure"]
-	},
 	"file-remove": {
 		"tags": ["document", "file", "solar", "remove", "delete", "minus"]
 	},

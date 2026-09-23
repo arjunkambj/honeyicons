@@ -133,7 +133,6 @@ import { FileAdd } from "./icons/file-add.js";
 import { FileArchive } from "./icons/file-archive.js";
 import { FileCode } from "./icons/file-code.js";
 import { FileImage } from "./icons/file-image.js";
-import { FileLock } from "./icons/file-lock.js";
 import { FileRemove } from "./icons/file-remove.js";
 import { FileSearch } from "./icons/file-search.js";
 import { FileSpreadsheet } from "./icons/file-spreadsheet.js";
@@ -572,7 +571,6 @@ export const icons = {
 	"file-archive": FileArchive,
 	"file-code": FileCode,
 	"file-image": FileImage,
-	"file-lock": FileLock,
 	"file-remove": FileRemove,
 	"file-search": FileSearch,
 	"file-spreadsheet": FileSpreadsheet,
@@ -1014,7 +1012,6 @@ export type IconVariantMap = {
 	"file-archive": "linear";
 	"file-code": "linear";
 	"file-image": "linear";
-	"file-lock": "linear";
 	"file-remove": "linear";
 	"file-search": "linear";
 	"file-spreadsheet": "linear";
