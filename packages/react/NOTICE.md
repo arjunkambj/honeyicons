@@ -7,6 +7,18 @@ their Alt variants share perpendicular bar handles and rounded strokes:
 three tracks for the main icons and two for Alt, following the Hugeicons-derived
 main designs at the user’s request. The source licenses below continue to apply.
 
+## September 23, 2026 redraws
+
+At the user's request, `Bank`, `Crop`, `Dashboard`, `Crown`, `Like`,
+`Dislike`, `Key`, `MagicWand`, `Usb`, `FileArchive`, and `FileVideo` are
+redrawn as original Honeyicons geometry with 1.8-unit rounded strokes and
+smooth corners, superseding the source descriptions for these icons below.
+Crop's corners share one radius, Like and Dislike join the cuff into the hand
+outline, and Usb's branches no longer touch its arrowhead. `FileArchive` is
+reduced to a zipper track and pull tab. `FileArchive` and `FileVideo` keep the
+Solar-derived file frame, and `Usb` reuses the Hugeicons-derived curved
+arrowhead, so those licenses continue to apply.
+
 ## September 23, 2026 additions
 
 The 113 icons added on this date are original Honeyicons drawings on the
