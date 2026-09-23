@@ -5,6 +5,7 @@ import {
 	Clock,
 	CloudRain,
 	Film,
+	FolderOpen,
 	Heading1,
 	Key,
 	Laptop,
@@ -12,6 +13,9 @@ import {
 	Snowflake,
 	Trophy,
 	UserAdd,
+	UserCheck,
+	UserGroup,
+	UserLock,
 	Wallet,
 	Webhook,
 } from "@honeyicons/react";
@@ -21,6 +25,7 @@ import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-008", label: "0.0.8 · Redrawn icons" },
 	{ id: "version-007", label: "0.0.7 · Bold for every icon" },
 	{ id: "version-006", label: "0.0.6 · Even overlaps" },
 	{ id: "version-005", label: "0.0.5 · Named icons" },
@@ -46,6 +51,15 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version008Highlights = [
+	{ name: "FolderOpen", Icon: FolderOpen },
+	{ name: "UserAdd", Icon: UserAdd },
+	{ name: "UserCheck", Icon: UserCheck },
+	{ name: "UserLock", Icon: UserLock },
+	{ name: "UserGroup", Icon: UserGroup },
+	{ name: "Wallet", Icon: Wallet },
 ] as const;
 
 const version007Highlights = [
@@ -84,6 +98,50 @@ function ChangelogPage() {
 					title="Changelog"
 					description="New icons and small improvements to the collection."
 				/>
+				<section
+					aria-labelledby="version-008"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-09-24" className="text-muted-foreground text-sm">
+						September 24, 2026
+					</time>
+					<h2
+						id="version-008"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.8 · Redrawn FolderOpen, user, and Wallet icons
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version008Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center rounded-xl bg-card"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							FolderOpen now has a tilted front flap that carries the folder
+							dash, drawn on the same tab and corners as Folder.
+						</li>
+						<li>
+							UserAdd, UserRemove, UserCheck, UserX, UserLock, and UserSettings
+							place their symbol in the bottom-right corner of the bust, closer
+							to the figure.
+						</li>
+						<li>
+							UserGroup shows two people: the user figure in front and a smaller
+							figure behind it.
+						</li>
+						<li>
+							Wallet has an outlined flap above the body, and its bold corners
+							are rounded.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-007"
 					className="border-t border-border pt-8"
