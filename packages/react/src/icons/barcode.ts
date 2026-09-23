@@ -3,7 +3,8 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M2.1 4.85V19.15M6.555 4.85V19.15M7.545 4.85V19.15M12 4.85V19.15M16.455 4.85V19.15M17.445 4.85V19.15M21.9 4.85V19.15", stroke: "currentColor" }],
+	["path", { d: "M2.1 4.85V19.15M12 4.85V19.15M21.9 4.85V19.15", stroke: "currentColor" }],
+	["path", { d: "M5.655 5.345A1.395 1.395 0 0 1 8.445 5.345V18.655A1.395 1.395 0 0 1 5.655 18.655ZM15.555 5.345A1.395 1.395 0 0 1 18.345 5.345V18.655A1.395 1.395 0 0 1 15.555 18.655Z", fill: "currentColor", stroke: "none" }],
 ];
 
 export const Barcode = /* @__PURE__ */ createIcon("Barcode", {
