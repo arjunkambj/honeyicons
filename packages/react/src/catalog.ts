@@ -7,9 +7,11 @@ import { Add } from "./icons/add.js";
 import { Alarm } from "./icons/alarm.js";
 import { Album } from "./icons/album.js";
 import { AlertTriangle } from "./icons/alert-triangle.js";
+import { AlignCenterHorizontal } from "./icons/align-center-horizontal.js";
 import { Analytics } from "./icons/analytics.js";
 import { Anthropic } from "./icons/anthropic.js";
 import { Antigravity } from "./icons/antigravity.js";
+import { AppWindow } from "./icons/app-window.js";
 import { Archive } from "./icons/archive.js";
 import { ArchiveAlt } from "./icons/archive-alt.js";
 import { ArchiveUp } from "./icons/archive-up.js";
@@ -22,15 +24,26 @@ import { ArrowUp } from "./icons/arrow-up.js";
 import { ArrowUpLeft } from "./icons/arrow-up-left.js";
 import { ArrowUpRight } from "./icons/arrow-up-right.js";
 import { AtSign } from "./icons/at-sign.js";
+import { Atom } from "./icons/atom.js";
+import { Award } from "./icons/award.js";
+import { Ban } from "./icons/ban.js";
+import { Bank } from "./icons/bank.js";
+import { Barcode } from "./icons/barcode.js";
 import { Battery } from "./icons/battery.js";
+import { BatteryCharging } from "./icons/battery-charging.js";
+import { BatteryLow } from "./icons/battery-low.js";
 import { Bell } from "./icons/bell.js";
 import { BellOff } from "./icons/bell-off.js";
+import { BellRing } from "./icons/bell-ring.js";
 import { Bluetooth } from "./icons/bluetooth.js";
 import { Bold } from "./icons/bold.js";
 import { Bolt } from "./icons/bolt.js";
+import { Book } from "./icons/book.js";
 import { BookOpen } from "./icons/book-open.js";
 import { Bookmark } from "./icons/bookmark.js";
 import { Bookmarks } from "./icons/bookmarks.js";
+import { Bot } from "./icons/bot.js";
+import { Braces } from "./icons/braces.js";
 import { Brain } from "./icons/brain.js";
 import { Briefcase } from "./icons/briefcase.js";
 import { Broadcast } from "./icons/broadcast.js";
@@ -40,17 +53,23 @@ import { Bun } from "./icons/bun.js";
 import { Calculator } from "./icons/calculator.js";
 import { Calendar } from "./icons/calendar.js";
 import { CalendarAdd } from "./icons/calendar-add.js";
+import { CalendarCheck } from "./icons/calendar-check.js";
 import { CalendarMark } from "./icons/calendar-mark.js";
+import { CalendarRange } from "./icons/calendar-range.js";
 import { CalendarRemove } from "./icons/calendar-remove.js";
 import { CalendarSearch } from "./icons/calendar-search.js";
 import { CalendarX } from "./icons/calendar-x.js";
 import { Camera } from "./icons/camera.js";
+import { CameraOff } from "./icons/camera-off.js";
+import { Captions } from "./icons/captions.js";
 import { Card } from "./icons/card.js";
 import { Cart } from "./icons/cart.js";
 import { CartBag } from "./icons/cart-bag.js";
 import { CartLarge } from "./icons/cart-large.js";
 import { Chair } from "./icons/chair.js";
 import { ChartAnalysis } from "./icons/chart-analysis.js";
+import { ChartLine } from "./icons/chart-line.js";
+import { ChartPie } from "./icons/chart-pie.js";
 import { Chat } from "./icons/chat.js";
 import { Check } from "./icons/check.js";
 import { CheckDouble } from "./icons/check-double.js";
@@ -79,12 +98,17 @@ import { CloudRain } from "./icons/cloud-rain.js";
 import { CloudUpload } from "./icons/cloud-upload.js";
 import { Code } from "./icons/code.js";
 import { Codex } from "./icons/codex.js";
+import { Columns } from "./icons/columns.js";
 import { Command } from "./icons/command.js";
 import { Computer } from "./icons/computer.js";
 import { Connect } from "./icons/connect.js";
 import { Copy } from "./icons/copy.js";
+import { CornerDownRight } from "./icons/corner-down-right.js";
 import { Crop } from "./icons/crop.js";
+import { Crown } from "./icons/crown.js";
 import { Cursor } from "./icons/cursor.js";
+import { CursorClick } from "./icons/cursor-click.js";
+import { Dashboard } from "./icons/dashboard.js";
 import { Database } from "./icons/database.js";
 import { Deepseek } from "./icons/deepseek.js";
 import { Devin } from "./icons/devin.js";
@@ -92,12 +116,14 @@ import { Diamond } from "./icons/diamond.js";
 import { Discord } from "./icons/discord.js";
 import { Dislike } from "./icons/dislike.js";
 import { Document } from "./icons/document.js";
+import { Dollar } from "./icons/dollar.js";
 import { DoorOpen } from "./icons/door-open.js";
 import { Download } from "./icons/download.js";
 import { Droplet } from "./icons/droplet.js";
 import { Edit } from "./icons/edit.js";
 import { EditOff } from "./icons/edit-off.js";
 import { Email } from "./icons/email.js";
+import { Eraser } from "./icons/eraser.js";
 import { ExternalLink } from "./icons/external-link.js";
 import { Eye } from "./icons/eye.js";
 import { EyeClosed } from "./icons/eye-closed.js";
@@ -106,50 +132,72 @@ import { Facebook } from "./icons/facebook.js";
 import { Figma } from "./icons/figma.js";
 import { File } from "./icons/file.js";
 import { FileAdd } from "./icons/file-add.js";
+import { FileArchive } from "./icons/file-archive.js";
 import { FileCode } from "./icons/file-code.js";
+import { FileImage } from "./icons/file-image.js";
+import { FileLock } from "./icons/file-lock.js";
 import { FileRemove } from "./icons/file-remove.js";
+import { FileSearch } from "./icons/file-search.js";
+import { FileSpreadsheet } from "./icons/file-spreadsheet.js";
 import { FileText } from "./icons/file-text.js";
+import { FileVideo } from "./icons/file-video.js";
+import { Film } from "./icons/film.js";
 import { Filter } from "./icons/filter.js";
 import { Fingerprint } from "./icons/fingerprint.js";
 import { Flag } from "./icons/flag.js";
+import { FlipHorizontal } from "./icons/flip-horizontal.js";
 import { Folder } from "./icons/folder.js";
 import { FolderAdd } from "./icons/folder-add.js";
+import { FolderLock } from "./icons/folder-lock.js";
 import { FolderOpen } from "./icons/folder-open.js";
+import { FolderRemove } from "./icons/folder-remove.js";
+import { FolderSearch } from "./icons/folder-search.js";
 import { FolderTree } from "./icons/folder-tree.js";
 import { FolderWithFiles } from "./icons/folder-with-files.js";
 import { Folders } from "./icons/folders.js";
 import { Forward } from "./icons/forward.js";
 import { Gamepad } from "./icons/gamepad.js";
+import { Gauge } from "./icons/gauge.js";
 import { Gemini } from "./icons/gemini.js";
 import { Gift } from "./icons/gift.js";
 import { Git } from "./icons/git.js";
 import { GitBranch } from "./icons/git-branch.js";
+import { GitCommit } from "./icons/git-commit.js";
 import { GitDiff } from "./icons/git-diff.js";
 import { GitFork } from "./icons/git-fork.js";
 import { GitGraph } from "./icons/git-graph.js";
+import { GitMerge } from "./icons/git-merge.js";
 import { GitPullRequest } from "./icons/git-pull-request.js";
 import { Github } from "./icons/github.js";
 import { GithubCopilot } from "./icons/github-copilot.js";
 import { Globe } from "./icons/globe.js";
 import { Google } from "./icons/google.js";
+import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
 import { GripVertical } from "./icons/grip-vertical.js";
 import { Grok } from "./icons/grok.js";
+import { Hammer } from "./icons/hammer.js";
 import { Hand } from "./icons/hand.js";
 import { HandWave } from "./icons/hand-wave.js";
 import { Hashtag } from "./icons/hashtag.js";
 import { Heading } from "./icons/heading.js";
+import { Heading1 } from "./icons/heading-1.js";
+import { Heading2 } from "./icons/heading-2.js";
+import { Heading3 } from "./icons/heading-3.js";
 import { Headphones } from "./icons/headphones.js";
 import { Heart } from "./icons/heart.js";
 import { History } from "./icons/history.js";
 import { Home } from "./icons/home.js";
 import { HomeAngle } from "./icons/home-angle.js";
+import { Hourglass } from "./icons/hourglass.js";
 import { Image } from "./icons/image.js";
 import { ImageAdd } from "./icons/image-add.js";
 import { ImageEdit } from "./icons/image-edit.js";
+import { Images } from "./icons/images.js";
 import { Import } from "./icons/import.js";
 import { Inbox } from "./icons/inbox.js";
 import { IncomingCall } from "./icons/incoming-call.js";
+import { Indent } from "./icons/indent.js";
 import { InfoSquare } from "./icons/info-square.js";
 import { Instagram } from "./icons/instagram.js";
 import { Integration } from "./icons/integration.js";
@@ -158,11 +206,14 @@ import { Kanban } from "./icons/kanban.js";
 import { Key } from "./icons/key.js";
 import { Keyboard } from "./icons/keyboard.js";
 import { Kimi } from "./icons/kimi.js";
+import { Laptop } from "./icons/laptop.js";
 import { Layers } from "./icons/layers.js";
 import { LayoutAlignBottom } from "./icons/layout-align-bottom.js";
 import { LayoutAlignLeft } from "./icons/layout-align-left.js";
 import { LayoutAlignRight } from "./icons/layout-align-right.js";
 import { LayoutAlignTop } from "./icons/layout-align-top.js";
+import { LayoutList } from "./icons/layout-list.js";
+import { Library } from "./icons/library.js";
 import { LifeBuoy } from "./icons/life-buoy.js";
 import { Lightbulb } from "./icons/lightbulb.js";
 import { Lightning } from "./icons/lightning.js";
@@ -174,11 +225,14 @@ import { ListChecks } from "./icons/list-checks.js";
 import { ListDash } from "./icons/list-dash.js";
 import { ListDown } from "./icons/list-down.js";
 import { ListFilter } from "./icons/list-filter.js";
+import { ListOrdered } from "./icons/list-ordered.js";
 import { ListUp } from "./icons/list-up.js";
+import { Locate } from "./icons/locate.js";
 import { Lock } from "./icons/lock.js";
 import { LockOpen } from "./icons/lock-open.js";
 import { Login } from "./icons/login.js";
 import { Logout } from "./icons/logout.js";
+import { MagicWand } from "./icons/magic-wand.js";
 import { Map } from "./icons/map.js";
 import { MapArrowDown } from "./icons/map-arrow-down.js";
 import { MapArrowLeft } from "./icons/map-arrow-left.js";
@@ -188,6 +242,7 @@ import { MapFolded } from "./icons/map-folded.js";
 import { MapPin } from "./icons/map-pin.js";
 import { MarketAnalysis } from "./icons/market-analysis.js";
 import { Maximize } from "./icons/maximize.js";
+import { Megaphone } from "./icons/megaphone.js";
 import { Menu } from "./icons/menu.js";
 import { MetaAi } from "./icons/meta-ai.js";
 import { Microphone } from "./icons/microphone.js";
@@ -199,9 +254,11 @@ import { Mistral } from "./icons/mistral.js";
 import { Moon } from "./icons/moon.js";
 import { MoreHorizontal } from "./icons/more-horizontal.js";
 import { MoreVertical } from "./icons/more-vertical.js";
+import { Mouse } from "./icons/mouse.js";
 import { Move } from "./icons/move.js";
 import { MusicNote } from "./icons/music-note.js";
 import { Navigation } from "./icons/navigation.js";
+import { Newspaper } from "./icons/newspaper.js";
 import { Notebook } from "./icons/notebook.js";
 import { Npm } from "./icons/npm.js";
 import { Nvidia } from "./icons/nvidia.js";
@@ -209,6 +266,7 @@ import { OctagonX } from "./icons/octagon-x.js";
 import { Openai } from "./icons/openai.js";
 import { Openclaw } from "./icons/openclaw.js";
 import { Opencode } from "./icons/opencode.js";
+import { Outdent } from "./icons/outdent.js";
 import { OutgoingCall } from "./icons/outgoing-call.js";
 import { Package } from "./icons/package.js";
 import { Palette } from "./icons/palette.js";
@@ -216,40 +274,67 @@ import { PaperPlane } from "./icons/paper-plane.js";
 import { Paperclip } from "./icons/paperclip.js";
 import { Pause } from "./icons/pause.js";
 import { Pen } from "./icons/pen.js";
+import { Percent } from "./icons/percent.js";
 import { Perplexity } from "./icons/perplexity.js";
 import { Phone } from "./icons/phone.js";
+import { PhoneOff } from "./icons/phone-off.js";
 import { Pin } from "./icons/pin.js";
+import { PinOff } from "./icons/pin-off.js";
 import { Pinterest } from "./icons/pinterest.js";
 import { Pip } from "./icons/pip.js";
+import { Pipette } from "./icons/pipette.js";
+import { Plane } from "./icons/plane.js";
 import { Play } from "./icons/play.js";
 import { PlayMini } from "./icons/play-mini.js";
+import { Playlist } from "./icons/playlist.js";
+import { Podcast } from "./icons/podcast.js";
+import { Pointer } from "./icons/pointer.js";
 import { Power } from "./icons/power.js";
+import { Presentation } from "./icons/presentation.js";
 import { Printer } from "./icons/printer.js";
 import { Puzzle } from "./icons/puzzle.js";
 import { QrCode } from "./icons/qr-code.js";
+import { QuestionMark } from "./icons/question-mark.js";
 import { Quote } from "./icons/quote.js";
 import { Qwen } from "./icons/qwen.js";
 import { React } from "./icons/react.js";
+import { Receipt } from "./icons/receipt.js";
 import { Reddit } from "./icons/reddit.js";
 import { Redo } from "./icons/redo.js";
+import { Refresh } from "./icons/refresh.js";
 import { Reorder } from "./icons/reorder.js";
 import { Repeat } from "./icons/repeat.js";
+import { RepeatOne } from "./icons/repeat-one.js";
 import { Reply } from "./icons/reply.js";
 import { ResourcesAdd } from "./icons/resources-add.js";
+import { Rewind } from "./icons/rewind.js";
 import { Rhombus } from "./icons/rhombus.js";
 import { Rocket } from "./icons/rocket.js";
+import { RotateCcw } from "./icons/rotate-ccw.js";
+import { RotateCw } from "./icons/rotate-cw.js";
+import { Route } from "./icons/route.js";
+import { Router } from "./icons/router.js";
+import { Rows } from "./icons/rows.js";
+import { Ruler } from "./icons/ruler.js";
 import { Sad } from "./icons/sad.js";
+import { Save } from "./icons/save.js";
+import { Scan } from "./icons/scan.js";
+import { ScreenShare } from "./icons/screen-share.js";
 import { Search } from "./icons/search.js";
 import { Send } from "./icons/send.js";
 import { Server } from "./icons/server.js";
 import { Settings } from "./icons/settings.js";
 import { Share } from "./icons/share.js";
 import { ShieldAdd } from "./icons/shield-add.js";
+import { Shuffle } from "./icons/shuffle.js";
 import { SidebarBottom } from "./icons/sidebar-bottom.js";
 import { SidebarLeft } from "./icons/sidebar-left.js";
 import { SidebarRight } from "./icons/sidebar-right.js";
 import { SidebarTop } from "./icons/sidebar-top.js";
+import { Signal } from "./icons/signal.js";
 import { SimCard } from "./icons/sim-card.js";
+import { SkipBack } from "./icons/skip-back.js";
+import { SkipForward } from "./icons/skip-forward.js";
 import { Slack } from "./icons/slack.js";
 import { Slash } from "./icons/slash.js";
 import { SlidersHorizontal } from "./icons/sliders-horizontal.js";
@@ -260,6 +345,8 @@ import { Smartphone } from "./icons/smartphone.js";
 import { Smile } from "./icons/smile.js";
 import { Snapchat } from "./icons/snapchat.js";
 import { Snowflake } from "./icons/snowflake.js";
+import { SortAscending } from "./icons/sort-ascending.js";
+import { SortDescending } from "./icons/sort-descending.js";
 import { Soundwave } from "./icons/soundwave.js";
 import { Sparkles } from "./icons/sparkles.js";
 import { Spinner } from "./icons/spinner.js";
@@ -271,14 +358,20 @@ import { SquarePen } from "./icons/square-pen.js";
 import { Star } from "./icons/star.js";
 import { StarOff } from "./icons/star-off.js";
 import { Sticker } from "./icons/sticker.js";
+import { StickyNote } from "./icons/sticky-note.js";
 import { Stop } from "./icons/stop.js";
 import { Stopwatch } from "./icons/stopwatch.js";
+import { Store } from "./icons/store.js";
 import { Strikethrough } from "./icons/strikethrough.js";
 import { Suitcase } from "./icons/suitcase.js";
 import { Sun } from "./icons/sun.js";
+import { SunMoon } from "./icons/sun-moon.js";
 import { Supabase } from "./icons/supabase.js";
+import { Superscript } from "./icons/superscript.js";
 import { Table } from "./icons/table.js";
 import { Tablet } from "./icons/tablet.js";
+import { Tag } from "./icons/tag.js";
+import { Target } from "./icons/target.js";
 import { Telegram } from "./icons/telegram.js";
 import { Terminal } from "./icons/terminal.js";
 import { TextAlignCenter } from "./icons/text-align-center.js";
@@ -286,42 +379,58 @@ import { TextAlignJustifyLeft } from "./icons/text-align-justify-left.js";
 import { TextAlignJustifyRight } from "./icons/text-align-justify-right.js";
 import { TextAlignLeft } from "./icons/text-align-left.js";
 import { TextAlignRight } from "./icons/text-align-right.js";
+import { TextSize } from "./icons/text-size.js";
 import { TextUnderline } from "./icons/text-underline.js";
 import { Threads } from "./icons/threads.js";
 import { ThreeSquares } from "./icons/three-squares.js";
 import { Ticket } from "./icons/ticket.js";
 import { TicketDiscount } from "./icons/ticket-discount.js";
 import { Tiktok } from "./icons/tiktok.js";
+import { Toggle } from "./icons/toggle.js";
 import { TransferHorizontal } from "./icons/transfer-horizontal.js";
 import { TransferVertical } from "./icons/transfer-vertical.js";
 import { Trash } from "./icons/trash.js";
+import { TrendingDown } from "./icons/trending-down.js";
+import { TrendingUp } from "./icons/trending-up.js";
+import { Trophy } from "./icons/trophy.js";
 import { Truck } from "./icons/truck.js";
+import { Tv } from "./icons/tv.js";
 import { Twitter } from "./icons/twitter.js";
+import { Type } from "./icons/type.js";
 import { Typescript } from "./icons/typescript.js";
 import { Undo } from "./icons/undo.js";
 import { UnfoldLess } from "./icons/unfold-less.js";
 import { UnfoldMore } from "./icons/unfold-more.js";
+import { Unlink } from "./icons/unlink.js";
 import { Upload } from "./icons/upload.js";
+import { Usb } from "./icons/usb.js";
 import { User } from "./icons/user.js";
 import { UserAdd } from "./icons/user-add.js";
 import { UserCheck } from "./icons/user-check.js";
 import { UserGroup } from "./icons/user-group.js";
+import { UserLock } from "./icons/user-lock.js";
 import { UserRemove } from "./icons/user-remove.js";
+import { UserSettings } from "./icons/user-settings.js";
 import { UserX } from "./icons/user-x.js";
+import { Variable } from "./icons/variable.js";
 import { Vercel } from "./icons/vercel.js";
 import { VerifiedCheck } from "./icons/verified-check.js";
 import { VideoCamera } from "./icons/video-camera.js";
 import { VideoFrame } from "./icons/video-frame.js";
+import { VideoOff } from "./icons/video-off.js";
 import { VolumeHigh } from "./icons/volume-high.js";
 import { VolumeLow } from "./icons/volume-low.js";
 import { VolumeOff } from "./icons/volume-off.js";
 import { Wallet } from "./icons/wallet.js";
 import { Waves } from "./icons/waves.js";
+import { Webcam } from "./icons/webcam.js";
+import { Webhook } from "./icons/webhook.js";
 import { Widget } from "./icons/widget.js";
 import { WidgetAdd } from "./icons/widget-add.js";
 import { WidgetSquare } from "./icons/widget-square.js";
 import { WidgetSquareAdd } from "./icons/widget-square-add.js";
 import { Wifi } from "./icons/wifi.js";
+import { WifiOff } from "./icons/wifi-off.js";
 import { Wind } from "./icons/wind.js";
 import { Windsurf } from "./icons/windsurf.js";
 import { X } from "./icons/x.js";
@@ -385,6 +494,14 @@ export const catalog: CatalogItem[] = [
 		component: AlertTriangle,
 	},
 	{
+		name: "align-center-horizontal",
+		pascalName: "AlignCenterHorizontal",
+		category: "layout",
+		tags: ["align","center","horizontal","distribute","canvas"],
+		variants: ["linear"],
+		component: AlignCenterHorizontal,
+	},
+	{
 		name: "analytics",
 		pascalName: "Analytics",
 		category: "charts",
@@ -407,6 +524,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["ai","code","editor","brand"],
 		variants: ["bold"],
 		component: Antigravity,
+	},
+	{
+		name: "app-window",
+		pascalName: "AppWindow",
+		category: "layout",
+		tags: ["app","window","browser","application","frame"],
+		variants: ["linear"],
+		component: AppWindow,
 	},
 	{
 		name: "archive",
@@ -505,12 +630,68 @@ export const catalog: CatalogItem[] = [
 		component: AtSign,
 	},
 	{
+		name: "atom",
+		pascalName: "Atom",
+		category: "ai",
+		tags: ["atom","science","physics","react","nucleus"],
+		variants: ["linear"],
+		component: Atom,
+	},
+	{
+		name: "award",
+		pascalName: "Award",
+		category: "objects",
+		tags: ["award","medal","badge","certificate","achievement"],
+		variants: ["linear"],
+		component: Award,
+	},
+	{
+		name: "ban",
+		pascalName: "Ban",
+		category: "actions",
+		tags: ["ban","block","forbidden","prohibited","disabled","not-allowed"],
+		variants: ["linear"],
+		component: Ban,
+	},
+	{
+		name: "bank",
+		pascalName: "Bank",
+		category: "commerce",
+		tags: ["bank","finance","institution","payout","building"],
+		variants: ["linear"],
+		component: Bank,
+	},
+	{
+		name: "barcode",
+		pascalName: "Barcode",
+		category: "commerce",
+		tags: ["barcode","product","sku","inventory","scan"],
+		variants: ["linear"],
+		component: Barcode,
+	},
+	{
 		name: "battery",
 		pascalName: "Battery",
 		category: "devices",
 		tags: ["battery","power","charge","half","solar"],
 		variants: ["linear"],
 		component: Battery,
+	},
+	{
+		name: "battery-charging",
+		pascalName: "BatteryCharging",
+		category: "devices",
+		tags: ["battery","charging","power","energy","bolt"],
+		variants: ["linear"],
+		component: BatteryCharging,
+	},
+	{
+		name: "battery-low",
+		pascalName: "BatteryLow",
+		category: "devices",
+		tags: ["battery","low","empty","power","energy"],
+		variants: ["linear"],
+		component: BatteryLow,
 	},
 	{
 		name: "bell",
@@ -527,6 +708,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["bell","notifications","off","mute","silent"],
 		variants: ["linear"],
 		component: BellOff,
+	},
+	{
+		name: "bell-ring",
+		pascalName: "BellRing",
+		category: "status",
+		tags: ["bell","ring","notification","alert","ringing"],
+		variants: ["linear"],
+		component: BellRing,
 	},
 	{
 		name: "bluetooth",
@@ -553,6 +742,14 @@ export const catalog: CatalogItem[] = [
 		component: Bolt,
 	},
 	{
+		name: "book",
+		pascalName: "Book",
+		category: "objects",
+		tags: ["book","guide","documentation","read","manual"],
+		variants: ["linear"],
+		component: Book,
+	},
+	{
 		name: "book-open",
 		pascalName: "BookOpen",
 		category: "files",
@@ -575,6 +772,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["bookmarks","save","saved","collection"],
 		variants: ["linear"],
 		component: Bookmarks,
+	},
+	{
+		name: "bot",
+		pascalName: "Bot",
+		category: "ai",
+		tags: ["bot","robot","assistant","agent","automation","ai"],
+		variants: ["linear"],
+		component: Bot,
+	},
+	{
+		name: "braces",
+		pascalName: "Braces",
+		category: "development",
+		tags: ["braces","curly","json","object","code"],
+		variants: ["linear"],
+		component: Braces,
 	},
 	{
 		name: "brain",
@@ -649,12 +862,28 @@ export const catalog: CatalogItem[] = [
 		component: CalendarAdd,
 	},
 	{
+		name: "calendar-check",
+		pascalName: "CalendarCheck",
+		category: "time",
+		tags: ["calendar","check","confirmed","booked","done"],
+		variants: ["linear"],
+		component: CalendarCheck,
+	},
+	{
 		name: "calendar-mark",
 		pascalName: "CalendarMark",
 		category: "time",
 		tags: ["calendar","date","event","mark","selected","today","solar"],
 		variants: ["linear"],
 		component: CalendarMark,
+	},
+	{
+		name: "calendar-range",
+		pascalName: "CalendarRange",
+		category: "time",
+		tags: ["calendar","range","dates","period","schedule"],
+		variants: ["linear"],
+		component: CalendarRange,
 	},
 	{
 		name: "calendar-remove",
@@ -687,6 +916,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["camera","photo","picture","capture","snapshot"],
 		variants: ["linear"],
 		component: Camera,
+	},
+	{
+		name: "camera-off",
+		pascalName: "CameraOff",
+		category: "media",
+		tags: ["camera","off","disabled","photo","privacy"],
+		variants: ["linear"],
+		component: CameraOff,
+	},
+	{
+		name: "captions",
+		pascalName: "Captions",
+		category: "media",
+		tags: ["captions","subtitles","cc","accessibility","video"],
+		variants: ["linear"],
+		component: Captions,
 	},
 	{
 		name: "card",
@@ -735,6 +980,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["chart","analysis","trend","growth","statistics","hugeicons"],
 		variants: ["linear"],
 		component: ChartAnalysis,
+	},
+	{
+		name: "chart-line",
+		pascalName: "ChartLine",
+		category: "charts",
+		tags: ["chart","line","graph","trend","statistics","analytics"],
+		variants: ["linear"],
+		component: ChartLine,
+	},
+	{
+		name: "chart-pie",
+		pascalName: "ChartPie",
+		category: "charts",
+		tags: ["chart","pie","breakdown","share","statistics"],
+		variants: ["linear"],
+		component: ChartPie,
 	},
 	{
 		name: "chat",
@@ -961,6 +1222,14 @@ export const catalog: CatalogItem[] = [
 		component: Codex,
 	},
 	{
+		name: "columns",
+		pascalName: "Columns",
+		category: "layout",
+		tags: ["columns","split","layout","two-column","panel"],
+		variants: ["linear"],
+		component: Columns,
+	},
+	{
 		name: "command",
 		pascalName: "Command",
 		category: "development",
@@ -993,6 +1262,14 @@ export const catalog: CatalogItem[] = [
 		component: Copy,
 	},
 	{
+		name: "corner-down-right",
+		pascalName: "CornerDownRight",
+		category: "arrows",
+		tags: ["corner","arrow","nested","indent","reply","sub-item"],
+		variants: ["linear"],
+		component: CornerDownRight,
+	},
+	{
 		name: "crop",
 		pascalName: "Crop",
 		category: "editor",
@@ -1001,12 +1278,36 @@ export const catalog: CatalogItem[] = [
 		component: Crop,
 	},
 	{
+		name: "crown",
+		pascalName: "Crown",
+		category: "objects",
+		tags: ["crown","premium","vip","owner","king"],
+		variants: ["linear"],
+		component: Crown,
+	},
+	{
 		name: "cursor",
 		pascalName: "Cursor",
 		category: "brands",
 		tags: ["brand","cursor","ai","code","editor"],
 		variants: ["bold"],
 		component: Cursor,
+	},
+	{
+		name: "cursor-click",
+		pascalName: "CursorClick",
+		category: "actions",
+		tags: ["click","cursor","pointer","tap","select","conversion"],
+		variants: ["linear"],
+		component: CursorClick,
+	},
+	{
+		name: "dashboard",
+		pascalName: "Dashboard",
+		category: "layout",
+		tags: ["dashboard","layout","overview","tiles","home"],
+		variants: ["linear"],
+		component: Dashboard,
 	},
 	{
 		name: "database",
@@ -1065,6 +1366,14 @@ export const catalog: CatalogItem[] = [
 		component: Document,
 	},
 	{
+		name: "dollar",
+		pascalName: "Dollar",
+		category: "commerce",
+		tags: ["dollar","money","currency","price","usd"],
+		variants: ["linear"],
+		component: Dollar,
+	},
+	{
 		name: "door-open",
 		pascalName: "DoorOpen",
 		category: "actions",
@@ -1111,6 +1420,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["mail","letter","envelope","message","solar"],
 		variants: ["linear"],
 		component: Email,
+	},
+	{
+		name: "eraser",
+		pascalName: "Eraser",
+		category: "editor",
+		tags: ["eraser","erase","clear","delete","rubber"],
+		variants: ["linear"],
+		component: Eraser,
 	},
 	{
 		name: "external-link",
@@ -1177,12 +1494,36 @@ export const catalog: CatalogItem[] = [
 		component: FileAdd,
 	},
 	{
+		name: "file-archive",
+		pascalName: "FileArchive",
+		category: "files",
+		tags: ["file","archive","zip","compressed","package"],
+		variants: ["linear"],
+		component: FileArchive,
+	},
+	{
 		name: "file-code",
 		pascalName: "FileCode",
 		category: "files",
 		tags: ["document","code","source","programming","code-file","solar"],
 		variants: ["linear"],
 		component: FileCode,
+	},
+	{
+		name: "file-image",
+		pascalName: "FileImage",
+		category: "files",
+		tags: ["file","image","photo","picture","attachment"],
+		variants: ["linear"],
+		component: FileImage,
+	},
+	{
+		name: "file-lock",
+		pascalName: "FileLock",
+		category: "files",
+		tags: ["file","lock","protected","private","secure"],
+		variants: ["linear"],
+		component: FileLock,
 	},
 	{
 		name: "file-remove",
@@ -1193,12 +1534,44 @@ export const catalog: CatalogItem[] = [
 		component: FileRemove,
 	},
 	{
+		name: "file-search",
+		pascalName: "FileSearch",
+		category: "files",
+		tags: ["file","search","find","lookup","document"],
+		variants: ["linear"],
+		component: FileSearch,
+	},
+	{
+		name: "file-spreadsheet",
+		pascalName: "FileSpreadsheet",
+		category: "files",
+		tags: ["file","spreadsheet","csv","excel","table","sheet"],
+		variants: ["linear"],
+		component: FileSpreadsheet,
+	},
+	{
 		name: "file-text",
 		pascalName: "FileText",
 		category: "files",
 		tags: ["document","page","paper","text","lines","notes","solar"],
 		variants: ["linear"],
 		component: FileText,
+	},
+	{
+		name: "file-video",
+		pascalName: "FileVideo",
+		category: "files",
+		tags: ["file","video","movie","media","attachment"],
+		variants: ["linear"],
+		component: FileVideo,
+	},
+	{
+		name: "film",
+		pascalName: "Film",
+		category: "media",
+		tags: ["film","movie","video","cinema","reel"],
+		variants: ["linear"],
+		component: Film,
 	},
 	{
 		name: "filter",
@@ -1225,6 +1598,14 @@ export const catalog: CatalogItem[] = [
 		component: Flag,
 	},
 	{
+		name: "flip-horizontal",
+		pascalName: "FlipHorizontal",
+		category: "editor",
+		tags: ["flip","mirror","horizontal","reflect","transform"],
+		variants: ["linear"],
+		component: FlipHorizontal,
+	},
+	{
 		name: "folder",
 		pascalName: "Folder",
 		category: "files",
@@ -1241,12 +1622,36 @@ export const catalog: CatalogItem[] = [
 		component: FolderAdd,
 	},
 	{
+		name: "folder-lock",
+		pascalName: "FolderLock",
+		category: "files",
+		tags: ["folder","lock","private","secure","protected"],
+		variants: ["linear"],
+		component: FolderLock,
+	},
+	{
 		name: "folder-open",
 		pascalName: "FolderOpen",
 		category: "files",
 		tags: ["folder","open","directory","files","storage","solar"],
 		variants: ["linear"],
 		component: FolderOpen,
+	},
+	{
+		name: "folder-remove",
+		pascalName: "FolderRemove",
+		category: "files",
+		tags: ["folder","remove","delete","minus","directory"],
+		variants: ["linear"],
+		component: FolderRemove,
+	},
+	{
+		name: "folder-search",
+		pascalName: "FolderSearch",
+		category: "files",
+		tags: ["folder","search","find","browse","directory"],
+		variants: ["linear"],
+		component: FolderSearch,
 	},
 	{
 		name: "folder-tree",
@@ -1289,6 +1694,14 @@ export const catalog: CatalogItem[] = [
 		component: Gamepad,
 	},
 	{
+		name: "gauge",
+		pascalName: "Gauge",
+		category: "charts",
+		tags: ["gauge","speedometer","performance","meter","dashboard","score"],
+		variants: ["linear"],
+		component: Gauge,
+	},
+	{
 		name: "gemini",
 		pascalName: "Gemini",
 		category: "brands",
@@ -1321,6 +1734,14 @@ export const catalog: CatalogItem[] = [
 		component: GitBranch,
 	},
 	{
+		name: "git-commit",
+		pascalName: "GitCommit",
+		category: "development",
+		tags: ["git","commit","version","history","node"],
+		variants: ["linear"],
+		component: GitCommit,
+	},
+	{
 		name: "git-diff",
 		pascalName: "GitDiff",
 		category: "development",
@@ -1343,6 +1764,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["git","graph","history","commits","version-control","solar"],
 		variants: ["linear"],
 		component: GitGraph,
+	},
+	{
+		name: "git-merge",
+		pascalName: "GitMerge",
+		category: "development",
+		tags: ["git","merge","branch","pull-request","join"],
+		variants: ["linear"],
+		component: GitMerge,
 	},
 	{
 		name: "git-pull-request",
@@ -1385,6 +1814,14 @@ export const catalog: CatalogItem[] = [
 		component: Google,
 	},
 	{
+		name: "graduation-cap",
+		pascalName: "GraduationCap",
+		category: "objects",
+		tags: ["graduation","education","learning","course","school"],
+		variants: ["linear"],
+		component: GraduationCap,
+	},
+	{
 		name: "grip-horizontal",
 		pascalName: "GripHorizontal",
 		category: "editor",
@@ -1407,6 +1844,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["xai","ai","assistant","brand"],
 		variants: ["linear"],
 		component: Grok,
+	},
+	{
+		name: "hammer",
+		pascalName: "Hammer",
+		category: "objects",
+		tags: ["hammer","build","tool","construction","fix"],
+		variants: ["linear"],
+		component: Hammer,
 	},
 	{
 		name: "hand",
@@ -1439,6 +1884,30 @@ export const catalog: CatalogItem[] = [
 		tags: ["heading","title","header","text","editor","hugeicons"],
 		variants: ["linear"],
 		component: Heading,
+	},
+	{
+		name: "heading-1",
+		pascalName: "Heading1",
+		category: "editor",
+		tags: ["heading","h1","title","text"],
+		variants: ["linear"],
+		component: Heading1,
+	},
+	{
+		name: "heading-2",
+		pascalName: "Heading2",
+		category: "editor",
+		tags: ["heading","h2","subtitle","text"],
+		variants: ["linear"],
+		component: Heading2,
+	},
+	{
+		name: "heading-3",
+		pascalName: "Heading3",
+		category: "editor",
+		tags: ["heading","h3","subheading","text"],
+		variants: ["linear"],
+		component: Heading3,
 	},
 	{
 		name: "headphones",
@@ -1481,6 +1950,14 @@ export const catalog: CatalogItem[] = [
 		component: HomeAngle,
 	},
 	{
+		name: "hourglass",
+		pascalName: "Hourglass",
+		category: "time",
+		tags: ["hourglass","waiting","time","timer","loading"],
+		variants: ["linear"],
+		component: Hourglass,
+	},
+	{
 		name: "image",
 		pascalName: "Image",
 		category: "media",
@@ -1505,6 +1982,14 @@ export const catalog: CatalogItem[] = [
 		component: ImageEdit,
 	},
 	{
+		name: "images",
+		pascalName: "Images",
+		category: "media",
+		tags: ["images","gallery","photos","album","pictures"],
+		variants: ["linear"],
+		component: Images,
+	},
+	{
 		name: "import",
 		pascalName: "Import",
 		category: "actions",
@@ -1527,6 +2012,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["phone","call","incoming","receive","solar"],
 		variants: ["linear"],
 		component: IncomingCall,
+	},
+	{
+		name: "indent",
+		pascalName: "Indent",
+		category: "editor",
+		tags: ["indent","increase-indent","nest","text","tab"],
+		variants: ["linear"],
+		component: Indent,
 	},
 	{
 		name: "info-square",
@@ -1593,6 +2086,14 @@ export const catalog: CatalogItem[] = [
 		component: Kimi,
 	},
 	{
+		name: "laptop",
+		pascalName: "Laptop",
+		category: "devices",
+		tags: ["laptop","notebook","computer","device","macbook"],
+		variants: ["linear"],
+		component: Laptop,
+	},
+	{
 		name: "layers",
 		pascalName: "Layers",
 		category: "layout",
@@ -1631,6 +2132,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["layout","align","top","position","panel","hugeicons"],
 		variants: ["linear"],
 		component: LayoutAlignTop,
+	},
+	{
+		name: "layout-list",
+		pascalName: "LayoutList",
+		category: "layout",
+		tags: ["layout","list","list-view","rows","items"],
+		variants: ["linear"],
+		component: LayoutList,
+	},
+	{
+		name: "library",
+		pascalName: "Library",
+		category: "files",
+		tags: ["library","books","collection","docs","shelf"],
+		variants: ["linear"],
+		component: Library,
 	},
 	{
 		name: "life-buoy",
@@ -1721,12 +2238,28 @@ export const catalog: CatalogItem[] = [
 		component: ListFilter,
 	},
 	{
+		name: "list-ordered",
+		pascalName: "ListOrdered",
+		category: "editor",
+		tags: ["list","ordered","numbered","steps","sequence"],
+		variants: ["linear"],
+		component: ListOrdered,
+	},
+	{
 		name: "list-up",
 		pascalName: "ListUp",
 		category: "actions",
 		tags: ["list","sort","ascending","collapse","list-up-minimalistic","solar"],
 		variants: ["linear"],
 		component: ListUp,
+	},
+	{
+		name: "locate",
+		pascalName: "Locate",
+		category: "maps",
+		tags: ["locate","location","gps","current-location","crosshair"],
+		variants: ["linear"],
+		component: Locate,
 	},
 	{
 		name: "lock",
@@ -1759,6 +2292,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["sign-out","exit","account","logout-3","solar"],
 		variants: ["linear"],
 		component: Logout,
+	},
+	{
+		name: "magic-wand",
+		pascalName: "MagicWand",
+		category: "ai",
+		tags: ["magic","wand","generate","ai","auto","sparkle"],
+		variants: ["linear"],
+		component: MagicWand,
 	},
 	{
 		name: "map",
@@ -1831,6 +2372,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["expand","fullscreen","resize","arrows"],
 		variants: ["linear"],
 		component: Maximize,
+	},
+	{
+		name: "megaphone",
+		pascalName: "Megaphone",
+		category: "chat",
+		tags: ["megaphone","announcement","marketing","campaign","broadcast"],
+		variants: ["linear"],
+		component: Megaphone,
 	},
 	{
 		name: "menu",
@@ -1921,6 +2470,14 @@ export const catalog: CatalogItem[] = [
 		component: MoreVertical,
 	},
 	{
+		name: "mouse",
+		pascalName: "Mouse",
+		category: "devices",
+		tags: ["mouse","input","device","scroll","peripheral"],
+		variants: ["linear"],
+		component: Mouse,
+	},
+	{
 		name: "move",
 		pascalName: "Move",
 		category: "arrows",
@@ -1943,6 +2500,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["navigation","navigation-03","location","direction","map","pointer","hugeicons"],
 		variants: ["linear"],
 		component: Navigation,
+	},
+	{
+		name: "newspaper",
+		pascalName: "Newspaper",
+		category: "files",
+		tags: ["newspaper","news","article","blog","press"],
+		variants: ["linear"],
+		component: Newspaper,
 	},
 	{
 		name: "notebook",
@@ -2001,6 +2566,14 @@ export const catalog: CatalogItem[] = [
 		component: Opencode,
 	},
 	{
+		name: "outdent",
+		pascalName: "Outdent",
+		category: "editor",
+		tags: ["outdent","decrease-indent","unnest","text"],
+		variants: ["linear"],
+		component: Outdent,
+	},
+	{
 		name: "outgoing-call",
 		pascalName: "OutgoingCall",
 		category: "chat",
@@ -2057,6 +2630,14 @@ export const catalog: CatalogItem[] = [
 		component: Pen,
 	},
 	{
+		name: "percent",
+		pascalName: "Percent",
+		category: "commerce",
+		tags: ["percent","discount","rate","sale","percentage"],
+		variants: ["linear"],
+		component: Percent,
+	},
+	{
 		name: "perplexity",
 		pascalName: "Perplexity",
 		category: "brands",
@@ -2073,12 +2654,28 @@ export const catalog: CatalogItem[] = [
 		component: Phone,
 	},
 	{
+		name: "phone-off",
+		pascalName: "PhoneOff",
+		category: "chat",
+		tags: ["phone","call","hang-up","missed","end-call","off"],
+		variants: ["linear"],
+		component: PhoneOff,
+	},
+	{
 		name: "pin",
 		pascalName: "Pin",
 		category: "actions",
 		tags: ["pushpin","pinned","save","solar"],
 		variants: ["linear"],
 		component: Pin,
+	},
+	{
+		name: "pin-off",
+		pascalName: "PinOff",
+		category: "actions",
+		tags: ["pin-off","unpin","detach","remove-pin"],
+		variants: ["linear"],
+		component: PinOff,
 	},
 	{
 		name: "pinterest",
@@ -2097,6 +2694,22 @@ export const catalog: CatalogItem[] = [
 		component: Pip,
 	},
 	{
+		name: "pipette",
+		pascalName: "Pipette",
+		category: "editor",
+		tags: ["pipette","color-picker","eyedropper","sample"],
+		variants: ["linear"],
+		component: Pipette,
+	},
+	{
+		name: "plane",
+		pascalName: "Plane",
+		category: "maps",
+		tags: ["plane","airplane","flight","travel","trip"],
+		variants: ["linear"],
+		component: Plane,
+	},
+	{
 		name: "play",
 		pascalName: "Play",
 		category: "media",
@@ -2113,12 +2726,44 @@ export const catalog: CatalogItem[] = [
 		component: PlayMini,
 	},
 	{
+		name: "playlist",
+		pascalName: "Playlist",
+		category: "media",
+		tags: ["playlist","queue","music","tracks","media"],
+		variants: ["linear"],
+		component: Playlist,
+	},
+	{
+		name: "podcast",
+		pascalName: "Podcast",
+		category: "media",
+		tags: ["podcast","audio","show","broadcast","microphone"],
+		variants: ["linear"],
+		component: Podcast,
+	},
+	{
+		name: "pointer",
+		pascalName: "Pointer",
+		category: "actions",
+		tags: ["pointer","cursor","select","arrow","mouse"],
+		variants: ["linear"],
+		component: Pointer,
+	},
+	{
 		name: "power",
 		pascalName: "Power",
 		category: "settings",
 		tags: ["power","on","off","shutdown","hugeicons"],
 		variants: ["linear"],
 		component: Power,
+	},
+	{
+		name: "presentation",
+		pascalName: "Presentation",
+		category: "charts",
+		tags: ["presentation","slides","board","pitch","chart"],
+		variants: ["linear"],
+		component: Presentation,
 	},
 	{
 		name: "printer",
@@ -2145,6 +2790,14 @@ export const catalog: CatalogItem[] = [
 		component: QrCode,
 	},
 	{
+		name: "question-mark",
+		pascalName: "QuestionMark",
+		category: "actions",
+		tags: ["question","help","faq","support","unknown"],
+		variants: ["linear"],
+		component: QuestionMark,
+	},
+	{
 		name: "quote",
 		pascalName: "Quote",
 		category: "editor",
@@ -2169,6 +2822,14 @@ export const catalog: CatalogItem[] = [
 		component: React,
 	},
 	{
+		name: "receipt",
+		pascalName: "Receipt",
+		category: "commerce",
+		tags: ["receipt","bill","invoice","order","billing"],
+		variants: ["linear"],
+		component: Receipt,
+	},
+	{
 		name: "reddit",
 		pascalName: "Reddit",
 		category: "brands",
@@ -2183,6 +2844,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["history","forward","repeat","arrow"],
 		variants: ["linear"],
 		component: Redo,
+	},
+	{
+		name: "refresh",
+		pascalName: "Refresh",
+		category: "actions",
+		tags: ["refresh","reload","sync","retry","update"],
+		variants: ["linear"],
+		component: Refresh,
 	},
 	{
 		name: "reorder",
@@ -2201,6 +2870,14 @@ export const catalog: CatalogItem[] = [
 		component: Repeat,
 	},
 	{
+		name: "repeat-one",
+		pascalName: "RepeatOne",
+		category: "media",
+		tags: ["repeat","loop","once","single","playback"],
+		variants: ["linear"],
+		component: RepeatOne,
+	},
+	{
 		name: "reply",
 		pascalName: "Reply",
 		category: "arrows",
@@ -2215,6 +2892,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["resources","add","plus","assets","library","shapes"],
 		variants: ["linear"],
 		component: ResourcesAdd,
+	},
+	{
+		name: "rewind",
+		pascalName: "Rewind",
+		category: "media",
+		tags: ["rewind","seek","back","media","playback"],
+		variants: ["linear"],
+		component: Rewind,
 	},
 	{
 		name: "rhombus",
@@ -2233,12 +2918,84 @@ export const catalog: CatalogItem[] = [
 		component: Rocket,
 	},
 	{
+		name: "rotate-ccw",
+		pascalName: "RotateCcw",
+		category: "arrows",
+		tags: ["rotate","counterclockwise","turn","reset","undo"],
+		variants: ["linear"],
+		component: RotateCcw,
+	},
+	{
+		name: "rotate-cw",
+		pascalName: "RotateCw",
+		category: "arrows",
+		tags: ["rotate","clockwise","turn","redo","spin"],
+		variants: ["linear"],
+		component: RotateCw,
+	},
+	{
+		name: "route",
+		pascalName: "Route",
+		category: "maps",
+		tags: ["route","directions","path","journey","navigation"],
+		variants: ["linear"],
+		component: Route,
+	},
+	{
+		name: "router",
+		pascalName: "Router",
+		category: "devices",
+		tags: ["router","network","wifi","modem","internet"],
+		variants: ["linear"],
+		component: Router,
+	},
+	{
+		name: "rows",
+		pascalName: "Rows",
+		category: "layout",
+		tags: ["rows","split","layout","stacked","panel"],
+		variants: ["linear"],
+		component: Rows,
+	},
+	{
+		name: "ruler",
+		pascalName: "Ruler",
+		category: "editor",
+		tags: ["ruler","measure","dimensions","length","scale"],
+		variants: ["linear"],
+		component: Ruler,
+	},
+	{
 		name: "sad",
 		pascalName: "Sad",
 		category: "status",
 		tags: ["sad","face","unhappy","frown","emoji"],
 		variants: ["linear"],
 		component: Sad,
+	},
+	{
+		name: "save",
+		pascalName: "Save",
+		category: "actions",
+		tags: ["save","floppy","disk","store","keep"],
+		variants: ["linear"],
+		component: Save,
+	},
+	{
+		name: "scan",
+		pascalName: "Scan",
+		category: "actions",
+		tags: ["scan","scanner","qr","barcode","capture"],
+		variants: ["linear"],
+		component: Scan,
+	},
+	{
+		name: "screen-share",
+		pascalName: "ScreenShare",
+		category: "media",
+		tags: ["screen","share","present","monitor","cast"],
+		variants: ["linear"],
+		component: ScreenShare,
 	},
 	{
 		name: "search",
@@ -2289,6 +3046,14 @@ export const catalog: CatalogItem[] = [
 		component: ShieldAdd,
 	},
 	{
+		name: "shuffle",
+		pascalName: "Shuffle",
+		category: "media",
+		tags: ["shuffle","random","mix","playback","media"],
+		variants: ["linear"],
+		component: Shuffle,
+	},
+	{
 		name: "sidebar-bottom",
 		pascalName: "SidebarBottom",
 		category: "layout",
@@ -2321,12 +3086,36 @@ export const catalog: CatalogItem[] = [
 		component: SidebarTop,
 	},
 	{
+		name: "signal",
+		pascalName: "Signal",
+		category: "devices",
+		tags: ["signal","cellular","strength","reception","bars","network"],
+		variants: ["linear"],
+		component: Signal,
+	},
+	{
 		name: "sim-card",
 		pascalName: "SimCard",
 		category: "devices",
 		tags: ["sim-card","sim","mobile","network"],
 		variants: ["linear"],
 		component: SimCard,
+	},
+	{
+		name: "skip-back",
+		pascalName: "SkipBack",
+		category: "media",
+		tags: ["skip","previous","back","track","media"],
+		variants: ["linear"],
+		component: SkipBack,
+	},
+	{
+		name: "skip-forward",
+		pascalName: "SkipForward",
+		category: "media",
+		tags: ["skip","next","forward","track","media"],
+		variants: ["linear"],
+		component: SkipForward,
 	},
 	{
 		name: "slack",
@@ -2407,6 +3196,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["snowflake","snow","cold","winter","freeze"],
 		variants: ["linear"],
 		component: Snowflake,
+	},
+	{
+		name: "sort-ascending",
+		pascalName: "SortAscending",
+		category: "arrows",
+		tags: ["sort","ascending","order","arrange","increase"],
+		variants: ["linear"],
+		component: SortAscending,
+	},
+	{
+		name: "sort-descending",
+		pascalName: "SortDescending",
+		category: "arrows",
+		tags: ["sort","descending","order","arrange","decrease"],
+		variants: ["linear"],
+		component: SortDescending,
 	},
 	{
 		name: "soundwave",
@@ -2497,6 +3302,14 @@ export const catalog: CatalogItem[] = [
 		component: Sticker,
 	},
 	{
+		name: "sticky-note",
+		pascalName: "StickyNote",
+		category: "files",
+		tags: ["sticky","note","memo","post-it","reminder"],
+		variants: ["linear"],
+		component: StickyNote,
+	},
+	{
 		name: "stop",
 		pascalName: "Stop",
 		category: "media",
@@ -2511,6 +3324,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["stopwatch","stop-watch","timer","time","hugeicons"],
 		variants: ["linear"],
 		component: Stopwatch,
+	},
+	{
+		name: "store",
+		pascalName: "Store",
+		category: "commerce",
+		tags: ["store","shop","storefront","market","retail"],
+		variants: ["linear"],
+		component: Store,
 	},
 	{
 		name: "strikethrough",
@@ -2537,12 +3358,28 @@ export const catalog: CatalogItem[] = [
 		component: Sun,
 	},
 	{
+		name: "sun-moon",
+		pascalName: "SunMoon",
+		category: "settings",
+		tags: ["theme","system","appearance","day-night","auto"],
+		variants: ["linear"],
+		component: SunMoon,
+	},
+	{
 		name: "supabase",
 		pascalName: "Supabase",
 		category: "brands",
 		tags: ["database","backend","brand"],
 		variants: ["bold"],
 		component: Supabase,
+	},
+	{
+		name: "superscript",
+		pascalName: "Superscript",
+		category: "editor",
+		tags: ["superscript","exponent","power","text"],
+		variants: ["linear"],
+		component: Superscript,
 	},
 	{
 		name: "table",
@@ -2559,6 +3396,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["ipad","device","screen","landscape","solar"],
 		variants: ["linear"],
 		component: Tablet,
+	},
+	{
+		name: "tag",
+		pascalName: "Tag",
+		category: "actions",
+		tags: ["tag","label","price","category","badge"],
+		variants: ["linear"],
+		component: Tag,
+	},
+	{
+		name: "target",
+		pascalName: "Target",
+		category: "objects",
+		tags: ["target","goal","focus","aim","bullseye"],
+		variants: ["linear"],
+		component: Target,
 	},
 	{
 		name: "telegram",
@@ -2617,6 +3470,14 @@ export const catalog: CatalogItem[] = [
 		component: TextAlignRight,
 	},
 	{
+		name: "text-size",
+		pascalName: "TextSize",
+		category: "editor",
+		tags: ["text-size","font-size","typography","scale"],
+		variants: ["linear"],
+		component: TextSize,
+	},
+	{
 		name: "text-underline",
 		pascalName: "TextUnderline",
 		category: "editor",
@@ -2665,6 +3526,14 @@ export const catalog: CatalogItem[] = [
 		component: Tiktok,
 	},
 	{
+		name: "toggle",
+		pascalName: "Toggle",
+		category: "settings",
+		tags: ["toggle","switch","on","setting","feature-flag"],
+		variants: ["linear"],
+		component: Toggle,
+	},
+	{
 		name: "transfer-horizontal",
 		pascalName: "TransferHorizontal",
 		category: "arrows",
@@ -2689,6 +3558,30 @@ export const catalog: CatalogItem[] = [
 		component: Trash,
 	},
 	{
+		name: "trending-down",
+		pascalName: "TrendingDown",
+		category: "charts",
+		tags: ["trending","decline","decrease","down","loss","chart"],
+		variants: ["linear"],
+		component: TrendingDown,
+	},
+	{
+		name: "trending-up",
+		pascalName: "TrendingUp",
+		category: "charts",
+		tags: ["trending","growth","increase","up","profit","chart"],
+		variants: ["linear"],
+		component: TrendingUp,
+	},
+	{
+		name: "trophy",
+		pascalName: "Trophy",
+		category: "objects",
+		tags: ["trophy","award","winner","achievement","leaderboard"],
+		variants: ["linear"],
+		component: Trophy,
+	},
+	{
 		name: "truck",
 		pascalName: "Truck",
 		category: "maps",
@@ -2697,12 +3590,28 @@ export const catalog: CatalogItem[] = [
 		component: Truck,
 	},
 	{
+		name: "tv",
+		pascalName: "Tv",
+		category: "devices",
+		tags: ["tv","television","screen","streaming","display"],
+		variants: ["linear"],
+		component: Tv,
+	},
+	{
 		name: "twitter",
 		pascalName: "Twitter",
 		category: "brands",
 		tags: ["bird","social","brand"],
 		variants: ["bold"],
 		component: Twitter,
+	},
+	{
+		name: "type",
+		pascalName: "Type",
+		category: "editor",
+		tags: ["type","text","font","typography","letter"],
+		variants: ["linear"],
+		component: Type,
 	},
 	{
 		name: "typescript",
@@ -2737,12 +3646,28 @@ export const catalog: CatalogItem[] = [
 		component: UnfoldMore,
 	},
 	{
+		name: "unlink",
+		pascalName: "Unlink",
+		category: "actions",
+		tags: ["unlink","broken-link","disconnect","detach","remove-link"],
+		variants: ["linear"],
+		component: Unlink,
+	},
+	{
 		name: "upload",
 		pascalName: "Upload",
 		category: "actions",
 		tags: ["upload","tray","export","outgoing","arrow"],
 		variants: ["linear"],
 		component: Upload,
+	},
+	{
+		name: "usb",
+		pascalName: "Usb",
+		category: "devices",
+		tags: ["usb","port","connector","device","hardware"],
+		variants: ["linear"],
+		component: Usb,
 	},
 	{
 		name: "user",
@@ -2777,6 +3702,14 @@ export const catalog: CatalogItem[] = [
 		component: UserGroup,
 	},
 	{
+		name: "user-lock",
+		pascalName: "UserLock",
+		category: "user",
+		tags: ["user","lock","private","locked","account"],
+		variants: ["linear"],
+		component: UserLock,
+	},
+	{
 		name: "user-remove",
 		pascalName: "UserRemove",
 		category: "user",
@@ -2785,12 +3718,28 @@ export const catalog: CatalogItem[] = [
 		component: UserRemove,
 	},
 	{
+		name: "user-settings",
+		pascalName: "UserSettings",
+		category: "user",
+		tags: ["user","settings","account","preferences","profile"],
+		variants: ["linear"],
+		component: UserSettings,
+	},
+	{
 		name: "user-x",
 		pascalName: "UserX",
 		category: "user",
 		tags: ["user","x","close","cancel","account"],
 		variants: ["linear"],
 		component: UserX,
+	},
+	{
+		name: "variable",
+		pascalName: "Variable",
+		category: "development",
+		tags: ["variable","parameter","environment","formula","x"],
+		variants: ["linear"],
+		component: Variable,
 	},
 	{
 		name: "vercel",
@@ -2823,6 +3772,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["video","film","frame","filmstrip","movie","solar"],
 		variants: ["linear"],
 		component: VideoFrame,
+	},
+	{
+		name: "video-off",
+		pascalName: "VideoOff",
+		category: "media",
+		tags: ["video","camera-off","meeting","off","disabled"],
+		variants: ["linear"],
+		component: VideoOff,
 	},
 	{
 		name: "volume-high",
@@ -2865,6 +3822,22 @@ export const catalog: CatalogItem[] = [
 		component: Waves,
 	},
 	{
+		name: "webcam",
+		pascalName: "Webcam",
+		category: "devices",
+		tags: ["webcam","camera","video","meeting","device"],
+		variants: ["linear"],
+		component: Webcam,
+	},
+	{
+		name: "webhook",
+		pascalName: "Webhook",
+		category: "development",
+		tags: ["webhook","hook","event","integration","api"],
+		variants: ["linear"],
+		component: Webhook,
+	},
+	{
 		name: "widget",
 		pascalName: "Widget",
 		category: "layout",
@@ -2903,6 +3876,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["wifi","wi-fi","wireless","network","connection","internet","solar"],
 		variants: ["linear"],
 		component: Wifi,
+	},
+	{
+		name: "wifi-off",
+		pascalName: "WifiOff",
+		category: "devices",
+		tags: ["wifi","offline","no-connection","disconnected","internet"],
+		variants: ["linear"],
+		component: WifiOff,
 	},
 	{
 		name: "wind",

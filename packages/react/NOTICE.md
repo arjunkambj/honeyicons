@@ -7,6 +7,27 @@ their Alt variants share perpendicular bar handles and rounded strokes:
 three tracks for the main icons and two for Alt, following the Hugeicons-derived
 main designs at the user’s request. The source licenses below continue to apply.
 
+## September 23, 2026 additions
+
+The 113 icons added on this date are original Honeyicons drawings on the
+24-unit grid, with 1.8-unit rounded strokes and smooth corners. Solar and
+Hugeicons served only as references for what each icon should depict; no source
+paths are reused.
+
+Icons that extend existing families reuse existing Honeyicons geometry, so the
+source licenses of those base icons below continue to apply. `PinOff`,
+`PhoneOff`, `VideoOff`, and `CameraOff` cut a rounded gap through `Pin`,
+`Phone`, `VideoCamera`, and `Camera`. `WifiOff`, `BatteryLow`, and
+`BatteryCharging` reuse the Solar-derived `Wifi` and `Battery` geometry.
+`Unlink` opens the Solar-derived `Link` loops. `FolderRemove`, `FolderLock`,
+`FolderSearch`, `CalendarCheck`, `BellRing`, `StickyNote`, `RepeatOne`,
+`UserSettings`, and `UserLock` add new symbols to the Solar-derived folder,
+calendar, bell, sticker, repeat, and user geometry. `Refresh`, `RotateCw`,
+`RotateCcw`, `SortAscending`, `SortDescending`, `CornerDownRight`,
+`TrendingUp`, `TrendingDown`, `Shuffle`, `Indent`, `Outdent`, and
+`ScreenShare` reuse the Hugeicons-derived curved arrowhead, and `CloudRain`
+reuses the cloud from `CloudDownload`.
+
 ## September 22, 2026 consistency pass
 
 The new non-brand filled outlines and the updated folder, bell, and user-status

@@ -22,6 +22,9 @@
 			"danger"
 		]
 	},
+	"align-center-horizontal": {
+		"tags": ["align", "center", "horizontal", "distribute", "canvas"]
+	},
 	"analytics": {
 		"tags": [
 			"analytics",
@@ -38,6 +41,9 @@
 	},
 	"antigravity": {
 		"tags": ["ai", "code", "editor", "brand"]
+	},
+	"app-window": {
+		"tags": ["app", "window", "browser", "application", "frame"]
 	},
 	"archive": {
 		"tags": [
@@ -155,14 +161,45 @@
 	"at-sign": {
 		"tags": ["at-sign", "at", "mention", "email", "contact"]
 	},
+	"atom": {
+		"tags": ["atom", "science", "physics", "react", "nucleus"]
+	},
+	"award": {
+		"tags": ["award", "medal", "badge", "certificate", "achievement"]
+	},
+	"ban": {
+		"tags": [
+			"ban",
+			"block",
+			"forbidden",
+			"prohibited",
+			"disabled",
+			"not-allowed"
+		]
+	},
+	"bank": {
+		"tags": ["bank", "finance", "institution", "payout", "building"]
+	},
+	"barcode": {
+		"tags": ["barcode", "product", "sku", "inventory", "scan"]
+	},
 	"battery": {
 		"tags": ["battery", "power", "charge", "half", "solar"]
+	},
+	"battery-charging": {
+		"tags": ["battery", "charging", "power", "energy", "bolt"]
+	},
+	"battery-low": {
+		"tags": ["battery", "low", "empty", "power", "energy"]
 	},
 	"bell": {
 		"tags": ["bell", "notification", "alert", "solar"]
 	},
 	"bell-off": {
 		"tags": ["bell", "notifications", "off", "mute", "silent"]
+	},
+	"bell-ring": {
+		"tags": ["bell", "ring", "notification", "alert", "ringing"]
 	},
 	"bluetooth": {
 		"tags": ["bluetooth", "wireless", "connection", "solar"]
@@ -173,6 +210,9 @@
 	"bolt": {
 		"tags": ["bolt", "lightning", "flash", "energy", "power", "zap", "solar"]
 	},
+	"book": {
+		"tags": ["book", "guide", "documentation", "read", "manual"]
+	},
 	"book-open": {
 		"tags": ["book", "open", "read", "pages", "education"]
 	},
@@ -181,6 +221,12 @@
 	},
 	"bookmarks": {
 		"tags": ["bookmarks", "save", "saved", "collection"]
+	},
+	"bot": {
+		"tags": ["bot", "robot", "assistant", "agent", "automation", "ai"]
+	},
+	"braces": {
+		"tags": ["braces", "curly", "json", "object", "code"]
 	},
 	"brain": {
 		"tags": [
@@ -250,8 +296,14 @@
 			"solar"
 		]
 	},
+	"calendar-check": {
+		"tags": ["calendar", "check", "confirmed", "booked", "done"]
+	},
 	"calendar-mark": {
 		"tags": ["calendar", "date", "event", "mark", "selected", "today", "solar"]
+	},
+	"calendar-range": {
+		"tags": ["calendar", "range", "dates", "period", "schedule"]
 	},
 	"calendar-remove": {
 		"tags": [
@@ -282,6 +334,12 @@
 	},
 	"camera": {
 		"tags": ["camera", "photo", "picture", "capture", "snapshot"]
+	},
+	"camera-off": {
+		"tags": ["camera", "off", "disabled", "photo", "privacy"]
+	},
+	"captions": {
+		"tags": ["captions", "subtitles", "cc", "accessibility", "video"]
 	},
 	"card": {
 		"tags": ["credit-card", "debit-card", "payment", "bank", "finance", "solar"]
@@ -316,6 +374,12 @@
 	},
 	"chart-analysis": {
 		"tags": ["chart", "analysis", "trend", "growth", "statistics", "hugeicons"]
+	},
+	"chart-line": {
+		"tags": ["chart", "line", "graph", "trend", "statistics", "analytics"]
+	},
+	"chart-pie": {
+		"tags": ["chart", "pie", "breakdown", "share", "statistics"]
 	},
 	"chat": {
 		"tags": [
@@ -477,6 +541,9 @@
 	"codex": {
 		"tags": ["openai", "ai", "coding", "brand"]
 	},
+	"columns": {
+		"tags": ["columns", "split", "layout", "two-column", "panel"]
+	},
 	"command": {
 		"tags": ["keyboard", "shortcut", "cmd", "mac", "solar"]
 	},
@@ -489,11 +556,23 @@
 	"copy": {
 		"tags": ["copy", "duplicate", "clipboard", "copy-01", "hugeicons"]
 	},
+	"corner-down-right": {
+		"tags": ["corner", "arrow", "nested", "indent", "reply", "sub-item"]
+	},
 	"crop": {
 		"tags": ["crop", "image", "resize", "trim", "hugeicons"]
 	},
+	"crown": {
+		"tags": ["crown", "premium", "vip", "owner", "king"]
+	},
 	"cursor": {
 		"tags": ["brand", "cursor", "ai", "code", "editor"]
+	},
+	"cursor-click": {
+		"tags": ["click", "cursor", "pointer", "tap", "select", "conversion"]
+	},
+	"dashboard": {
+		"tags": ["dashboard", "layout", "overview", "tiles", "home"]
 	},
 	"database": {
 		"tags": ["database", "storage", "data", "server", "solar"]
@@ -516,6 +595,9 @@
 	"document": {
 		"tags": ["document", "document-text", "text", "paper", "notes", "solar"]
 	},
+	"dollar": {
+		"tags": ["dollar", "money", "currency", "price", "usd"]
+	},
 	"door-open": {
 		"tags": ["door", "leave", "logout", "sign-out", "solar", "exit"]
 	},
@@ -533,6 +615,9 @@
 	},
 	"email": {
 		"tags": ["mail", "letter", "envelope", "message", "solar"]
+	},
+	"eraser": {
+		"tags": ["eraser", "erase", "clear", "delete", "rubber"]
 	},
 	"external-link": {
 		"tags": ["external-link", "open", "new-tab", "link", "arrow", "solar"]
@@ -569,14 +654,35 @@
 	"file-add": {
 		"tags": ["document", "file", "solar", "new", "create", "add", "plus"]
 	},
+	"file-archive": {
+		"tags": ["file", "archive", "zip", "compressed", "package"]
+	},
 	"file-code": {
 		"tags": ["document", "code", "source", "programming", "code-file", "solar"]
+	},
+	"file-image": {
+		"tags": ["file", "image", "photo", "picture", "attachment"]
+	},
+	"file-lock": {
+		"tags": ["file", "lock", "protected", "private", "secure"]
 	},
 	"file-remove": {
 		"tags": ["document", "file", "solar", "remove", "delete", "minus"]
 	},
+	"file-search": {
+		"tags": ["file", "search", "find", "lookup", "document"]
+	},
+	"file-spreadsheet": {
+		"tags": ["file", "spreadsheet", "csv", "excel", "table", "sheet"]
+	},
 	"file-text": {
 		"tags": ["document", "page", "paper", "text", "lines", "notes", "solar"]
+	},
+	"file-video": {
+		"tags": ["file", "video", "movie", "media", "attachment"]
+	},
+	"film": {
+		"tags": ["film", "movie", "video", "cinema", "reel"]
 	},
 	"filter": {
 		"tags": ["filter", "funnel", "refine", "sort", "solar"]
@@ -594,14 +700,26 @@
 	"flag": {
 		"tags": ["flag", "mark", "report", "milestone", "solar"]
 	},
+	"flip-horizontal": {
+		"tags": ["flip", "mirror", "horizontal", "reflect", "transform"]
+	},
 	"folder": {
 		"tags": ["folder", "directory", "files", "storage", "folder-01", "solar"]
 	},
 	"folder-add": {
 		"tags": ["folder", "directory", "create", "new", "plus", "solar"]
 	},
+	"folder-lock": {
+		"tags": ["folder", "lock", "private", "secure", "protected"]
+	},
 	"folder-open": {
 		"tags": ["folder", "open", "directory", "files", "storage", "solar"]
+	},
+	"folder-remove": {
+		"tags": ["folder", "remove", "delete", "minus", "directory"]
+	},
+	"folder-search": {
+		"tags": ["folder", "search", "find", "browse", "directory"]
 	},
 	"folder-tree": {
 		"tags": [
@@ -634,6 +752,16 @@
 	"gamepad": {
 		"tags": ["gamepad", "game", "gaming", "controller", "console", "solar"]
 	},
+	"gauge": {
+		"tags": [
+			"gauge",
+			"speedometer",
+			"performance",
+			"meter",
+			"dashboard",
+			"score"
+		]
+	},
 	"gemini": {
 		"tags": ["google", "ai", "brand"]
 	},
@@ -646,6 +774,9 @@
 	"git-branch": {
 		"tags": ["git", "branch", "version-control", "source-control", "solar"]
 	},
+	"git-commit": {
+		"tags": ["git", "commit", "version", "history", "node"]
+	},
 	"git-diff": {
 		"tags": ["git", "diff", "compare", "changes", "version-control", "solar"]
 	},
@@ -654,6 +785,9 @@
 	},
 	"git-graph": {
 		"tags": ["git", "graph", "history", "commits", "version-control", "solar"]
+	},
+	"git-merge": {
+		"tags": ["git", "merge", "branch", "pull-request", "join"]
 	},
 	"git-pull-request": {
 		"tags": [
@@ -678,6 +812,9 @@
 	"google": {
 		"tags": ["search", "alphabet", "brand"]
 	},
+	"graduation-cap": {
+		"tags": ["graduation", "education", "learning", "course", "school"]
+	},
 	"grip-horizontal": {
 		"tags": ["grip", "handle", "drag", "reorder", "horizontal", "hugeicons"]
 	},
@@ -686,6 +823,9 @@
 	},
 	"grok": {
 		"tags": ["xai", "ai", "assistant", "brand"]
+	},
+	"hammer": {
+		"tags": ["hammer", "build", "tool", "construction", "fix"]
 	},
 	"hand": {
 		"tags": ["hand", "palm", "grab", "pan", "stop", "wave"]
@@ -707,6 +847,15 @@
 	},
 	"heading": {
 		"tags": ["heading", "title", "header", "text", "editor", "hugeicons"]
+	},
+	"heading-1": {
+		"tags": ["heading", "h1", "title", "text"]
+	},
+	"heading-2": {
+		"tags": ["heading", "h2", "subtitle", "text"]
+	},
+	"heading-3": {
+		"tags": ["heading", "h3", "subheading", "text"]
 	},
 	"headphones": {
 		"tags": [
@@ -730,6 +879,9 @@
 	},
 	"home-angle": {
 		"tags": ["home", "house", "dashboard", "main", "solar"]
+	},
+	"hourglass": {
+		"tags": ["hourglass", "waiting", "time", "timer", "loading"]
 	},
 	"image": {
 		"tags": ["image", "gallery", "photo", "picture", "media", "images"]
@@ -757,6 +909,9 @@
 			"solar"
 		]
 	},
+	"images": {
+		"tags": ["images", "gallery", "photos", "album", "pictures"]
+	},
 	"import": {
 		"tags": ["import", "inward", "arrow", "receive", "square"]
 	},
@@ -765,6 +920,9 @@
 	},
 	"incoming-call": {
 		"tags": ["phone", "call", "incoming", "receive", "solar"]
+	},
+	"indent": {
+		"tags": ["indent", "increase-indent", "nest", "text", "tab"]
 	},
 	"info-square": {
 		"tags": ["info", "information", "help", "square", "solar"]
@@ -797,6 +955,9 @@
 	"kimi": {
 		"tags": ["ai", "assistant", "moonshot", "brand"]
 	},
+	"laptop": {
+		"tags": ["laptop", "notebook", "computer", "device", "macbook"]
+	},
 	"layers": {
 		"tags": ["stack", "design", "levels", "layers-minimalistic", "solar"]
 	},
@@ -811,6 +972,12 @@
 	},
 	"layout-align-top": {
 		"tags": ["layout", "align", "top", "position", "panel", "hugeicons"]
+	},
+	"layout-list": {
+		"tags": ["layout", "list", "list-view", "rows", "items"]
+	},
+	"library": {
+		"tags": ["library", "books", "collection", "docs", "shelf"]
 	},
 	"life-buoy": {
 		"tags": ["life-buoy", "lifebuoy", "help", "support", "rescue", "lifesaver"]
@@ -852,6 +1019,9 @@
 	"list-filter": {
 		"tags": ["list", "filter", "sort", "refine", "hugeicons"]
 	},
+	"list-ordered": {
+		"tags": ["list", "ordered", "numbered", "steps", "sequence"]
+	},
 	"list-up": {
 		"tags": [
 			"list",
@@ -861,6 +1031,9 @@
 			"list-up-minimalistic",
 			"solar"
 		]
+	},
+	"locate": {
+		"tags": ["locate", "location", "gps", "current-location", "crosshair"]
 	},
 	"lock": {
 		"tags": ["locked", "security", "private", "access", "solar"]
@@ -880,6 +1053,9 @@
 	},
 	"logout": {
 		"tags": ["sign-out", "exit", "account", "logout-3", "solar"]
+	},
+	"magic-wand": {
+		"tags": ["magic", "wand", "generate", "ai", "auto", "sparkle"]
 	},
 	"map": {
 		"tags": ["map", "navigation", "location", "travel", "hugeicons"]
@@ -956,6 +1132,9 @@
 	"maximize": {
 		"tags": ["expand", "fullscreen", "resize", "arrows"]
 	},
+	"megaphone": {
+		"tags": ["megaphone", "announcement", "marketing", "campaign", "broadcast"]
+	},
 	"menu": {
 		"tags": [
 			"menu",
@@ -996,6 +1175,9 @@
 	"more-vertical": {
 		"tags": ["ellipsis", "menu", "options", "dots", "vertical", "hugeicons"]
 	},
+	"mouse": {
+		"tags": ["mouse", "input", "device", "scroll", "peripheral"]
+	},
 	"move": {
 		"tags": ["move", "drag", "arrows", "position", "hugeicons"]
 	},
@@ -1012,6 +1194,9 @@
 			"pointer",
 			"hugeicons"
 		]
+	},
+	"newspaper": {
+		"tags": ["newspaper", "news", "article", "blog", "press"]
 	},
 	"notebook": {
 		"tags": [
@@ -1040,6 +1225,9 @@
 	},
 	"opencode": {
 		"tags": ["open-code", "code", "terminal", "brand"]
+	},
+	"outdent": {
+		"tags": ["outdent", "decrease-indent", "unnest", "text"]
 	},
 	"outgoing-call": {
 		"tags": ["phone", "call", "outgoing", "dial", "solar"]
@@ -1070,14 +1258,23 @@
 	"pen": {
 		"tags": ["edit", "pencil", "write", "draw", "compose"]
 	},
+	"percent": {
+		"tags": ["percent", "discount", "rate", "sale", "percentage"]
+	},
 	"perplexity": {
 		"tags": ["brand", "perplexity", "ai", "search"]
 	},
 	"phone": {
 		"tags": ["phone", "call", "telephone", "contact", "solar"]
 	},
+	"phone-off": {
+		"tags": ["phone", "call", "hang-up", "missed", "end-call", "off"]
+	},
 	"pin": {
 		"tags": ["pushpin", "pinned", "save", "solar"]
+	},
+	"pin-off": {
+		"tags": ["pin-off", "unpin", "detach", "remove-pin"]
 	},
 	"pinterest": {
 		"tags": ["social", "pins", "brand"]
@@ -1085,14 +1282,32 @@
 	"pip": {
 		"tags": ["picture-in-picture", "pip", "window", "video", "overlay", "solar"]
 	},
+	"pipette": {
+		"tags": ["pipette", "color-picker", "eyedropper", "sample"]
+	},
+	"plane": {
+		"tags": ["plane", "airplane", "flight", "travel", "trip"]
+	},
 	"play": {
 		"tags": ["start", "resume", "playback", "video", "audio", "solar"]
 	},
 	"play-mini": {
 		"tags": ["play", "mini", "media", "start", "triangle"]
 	},
+	"playlist": {
+		"tags": ["playlist", "queue", "music", "tracks", "media"]
+	},
+	"podcast": {
+		"tags": ["podcast", "audio", "show", "broadcast", "microphone"]
+	},
+	"pointer": {
+		"tags": ["pointer", "cursor", "select", "arrow", "mouse"]
+	},
 	"power": {
 		"tags": ["power", "on", "off", "shutdown", "hugeicons"]
+	},
+	"presentation": {
+		"tags": ["presentation", "slides", "board", "pitch", "chart"]
 	},
 	"printer": {
 		"tags": ["printer", "print", "paper", "document", "solar"]
@@ -1102,6 +1317,9 @@
 	},
 	"qr-code": {
 		"tags": ["qr-code", "qr", "scan", "barcode", "hugeicons"]
+	},
+	"question-mark": {
+		"tags": ["question", "help", "faq", "support", "unknown"]
 	},
 	"quote": {
 		"tags": [
@@ -1119,11 +1337,17 @@
 	"react": {
 		"tags": ["javascript", "framework", "frontend", "brand"]
 	},
+	"receipt": {
+		"tags": ["receipt", "bill", "invoice", "order", "billing"]
+	},
 	"reddit": {
 		"tags": ["community", "social", "brand"]
 	},
 	"redo": {
 		"tags": ["history", "forward", "repeat", "arrow"]
+	},
+	"refresh": {
+		"tags": ["refresh", "reload", "sync", "retry", "update"]
 	},
 	"reorder": {
 		"tags": ["sort", "arrange", "drag", "list", "menu", "solar"]
@@ -1131,11 +1355,17 @@
 	"repeat": {
 		"tags": ["loop", "cycle", "refresh", "solar"]
 	},
+	"repeat-one": {
+		"tags": ["repeat", "loop", "once", "single", "playback"]
+	},
 	"reply": {
 		"tags": ["reply", "respond", "message", "arrow", "left"]
 	},
 	"resources-add": {
 		"tags": ["resources", "add", "plus", "assets", "library", "shapes"]
+	},
+	"rewind": {
+		"tags": ["rewind", "seek", "back", "media", "playback"]
 	},
 	"rhombus": {
 		"tags": ["rhombus", "shape", "geometry", "diamond", "hugeicons"]
@@ -1152,8 +1382,35 @@
 			"flame"
 		]
 	},
+	"rotate-ccw": {
+		"tags": ["rotate", "counterclockwise", "turn", "reset", "undo"]
+	},
+	"rotate-cw": {
+		"tags": ["rotate", "clockwise", "turn", "redo", "spin"]
+	},
+	"route": {
+		"tags": ["route", "directions", "path", "journey", "navigation"]
+	},
+	"router": {
+		"tags": ["router", "network", "wifi", "modem", "internet"]
+	},
+	"rows": {
+		"tags": ["rows", "split", "layout", "stacked", "panel"]
+	},
+	"ruler": {
+		"tags": ["ruler", "measure", "dimensions", "length", "scale"]
+	},
 	"sad": {
 		"tags": ["sad", "face", "unhappy", "frown", "emoji"]
+	},
+	"save": {
+		"tags": ["save", "floppy", "disk", "store", "keep"]
+	},
+	"scan": {
+		"tags": ["scan", "scanner", "qr", "barcode", "capture"]
+	},
+	"screen-share": {
+		"tags": ["screen", "share", "present", "monitor", "cast"]
 	},
 	"search": {
 		"tags": ["find", "magnifier", "lookup", "zoom"]
@@ -1180,6 +1437,9 @@
 			"shield-plus",
 			"solar"
 		]
+	},
+	"shuffle": {
+		"tags": ["shuffle", "random", "mix", "playback", "media"]
 	},
 	"sidebar-bottom": {
 		"tags": ["sidebar", "panel", "bottom", "layout", "split"]
@@ -1209,8 +1469,17 @@
 	"sidebar-top": {
 		"tags": ["sidebar", "panel", "top", "layout", "split"]
 	},
+	"signal": {
+		"tags": ["signal", "cellular", "strength", "reception", "bars", "network"]
+	},
 	"sim-card": {
 		"tags": ["sim-card", "sim", "mobile", "network"]
+	},
+	"skip-back": {
+		"tags": ["skip", "previous", "back", "track", "media"]
+	},
+	"skip-forward": {
+		"tags": ["skip", "next", "forward", "track", "media"]
 	},
 	"slack": {
 		"tags": ["messaging", "chat", "team", "workplace", "brand"]
@@ -1274,6 +1543,12 @@
 	"snowflake": {
 		"tags": ["snowflake", "snow", "cold", "winter", "freeze"]
 	},
+	"sort-ascending": {
+		"tags": ["sort", "ascending", "order", "arrange", "increase"]
+	},
+	"sort-descending": {
+		"tags": ["sort", "descending", "order", "arrange", "decrease"]
+	},
 	"soundwave": {
 		"tags": ["waveform", "audio", "sound", "voice", "equalizer", "solar"]
 	},
@@ -1335,11 +1610,17 @@
 	"sticker": {
 		"tags": ["label", "peel", "fold", "square", "solar"]
 	},
+	"sticky-note": {
+		"tags": ["sticky", "note", "memo", "post-it", "reminder"]
+	},
 	"stop": {
 		"tags": ["end", "halt", "playback", "recording", "square", "solar"]
 	},
 	"stopwatch": {
 		"tags": ["stopwatch", "stop-watch", "timer", "time", "hugeicons"]
+	},
+	"store": {
+		"tags": ["store", "shop", "storefront", "market", "retail"]
 	},
 	"strikethrough": {
 		"tags": ["text", "strikethrough", "strike", "format", "editor"]
@@ -1358,14 +1639,26 @@
 			"hugeicons"
 		]
 	},
+	"sun-moon": {
+		"tags": ["theme", "system", "appearance", "day-night", "auto"]
+	},
 	"supabase": {
 		"tags": ["database", "backend", "brand"]
+	},
+	"superscript": {
+		"tags": ["superscript", "exponent", "power", "text"]
 	},
 	"table": {
 		"tags": ["table", "grid", "rows", "columns", "spreadsheet", "solar"]
 	},
 	"tablet": {
 		"tags": ["ipad", "device", "screen", "landscape", "solar"]
+	},
+	"tag": {
+		"tags": ["tag", "label", "price", "category", "badge"]
+	},
+	"target": {
+		"tags": ["target", "goal", "focus", "aim", "bullseye"]
 	},
 	"telegram": {
 		"tags": ["messaging", "chat", "social", "brand", "paper-plane"]
@@ -1404,6 +1697,9 @@
 	"text-align-right": {
 		"tags": ["text", "align", "right", "paragraph", "format", "hugeicons"]
 	},
+	"text-size": {
+		"tags": ["text-size", "font-size", "typography", "scale"]
+	},
 	"text-underline": {
 		"tags": ["underline", "text", "format", "editor", "hugeicons"]
 	},
@@ -1422,6 +1718,9 @@
 	"tiktok": {
 		"tags": ["brand", "tiktok"]
 	},
+	"toggle": {
+		"tags": ["toggle", "switch", "on", "setting", "feature-flag"]
+	},
 	"transfer-horizontal": {
 		"tags": ["transfer", "swap", "exchange", "arrows", "horizontal", "solar"]
 	},
@@ -1431,11 +1730,26 @@
 	"trash": {
 		"tags": ["delete", "remove", "bin", "discard"]
 	},
+	"trending-down": {
+		"tags": ["trending", "decline", "decrease", "down", "loss", "chart"]
+	},
+	"trending-up": {
+		"tags": ["trending", "growth", "increase", "up", "profit", "chart"]
+	},
+	"trophy": {
+		"tags": ["trophy", "award", "winner", "achievement", "leaderboard"]
+	},
 	"truck": {
 		"tags": ["truck", "delivery", "shipping", "transport"]
 	},
+	"tv": {
+		"tags": ["tv", "television", "screen", "streaming", "display"]
+	},
 	"twitter": {
 		"tags": ["bird", "social", "brand"]
+	},
+	"type": {
+		"tags": ["type", "text", "font", "typography", "letter"]
 	},
 	"typescript": {
 		"tags": ["typescript", "javascript", "language", "brand", "ts"]
@@ -1449,8 +1763,14 @@
 	"unfold-more": {
 		"tags": ["expand", "unfold", "chevrons", "hugeicons"]
 	},
+	"unlink": {
+		"tags": ["unlink", "broken-link", "disconnect", "detach", "remove-link"]
+	},
 	"upload": {
 		"tags": ["upload", "tray", "export", "outgoing", "arrow"]
+	},
+	"usb": {
+		"tags": ["usb", "port", "connector", "device", "hardware"]
 	},
 	"user": {
 		"tags": ["profile", "person", "account", "avatar", "solar"]
@@ -1471,11 +1791,20 @@
 			"solar"
 		]
 	},
+	"user-lock": {
+		"tags": ["user", "lock", "private", "locked", "account"]
+	},
 	"user-remove": {
 		"tags": ["user", "minus", "remove", "account", "user-minus"]
 	},
+	"user-settings": {
+		"tags": ["user", "settings", "account", "preferences", "profile"]
+	},
 	"user-x": {
 		"tags": ["user", "x", "close", "cancel", "account"]
+	},
+	"variable": {
+		"tags": ["variable", "parameter", "environment", "formula", "x"]
 	},
 	"vercel": {
 		"tags": ["brand", "vercel", "hosting", "deployment"]
@@ -1488,6 +1817,9 @@
 	},
 	"video-frame": {
 		"tags": ["video", "film", "frame", "filmstrip", "movie", "solar"]
+	},
+	"video-off": {
+		"tags": ["video", "camera-off", "meeting", "off", "disabled"]
 	},
 	"volume-high": {
 		"tags": [
@@ -1520,6 +1852,12 @@
 	"waves": {
 		"tags": ["waves", "water", "sea", "ocean"]
 	},
+	"webcam": {
+		"tags": ["webcam", "camera", "video", "meeting", "device"]
+	},
+	"webhook": {
+		"tags": ["webhook", "hook", "event", "integration", "api"]
+	},
 	"widget": {
 		"tags": ["grid", "dashboard", "layout", "apps", "solar"]
 	},
@@ -1551,6 +1889,9 @@
 			"internet",
 			"solar"
 		]
+	},
+	"wifi-off": {
+		"tags": ["wifi", "offline", "no-connection", "disconnected", "internet"]
 	},
 	"wind": {
 		"tags": ["wind", "air", "breeze", "weather", "airflow"]

@@ -74,6 +74,21 @@
 		]
 	},
 	{
+		"name": "align-center-horizontal",
+		"export": "AlignCenterHorizontal",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"align",
+			"center",
+			"horizontal",
+			"distribute",
+			"canvas"
+		]
+	},
+	{
 		"name": "analytics",
 		"export": "Analytics",
 		"category": "charts",
@@ -115,6 +130,21 @@
 			"code",
 			"editor",
 			"brand"
+		]
+	},
+	{
+		"name": "app-window",
+		"export": "AppWindow",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"app",
+			"window",
+			"browser",
+			"application",
+			"frame"
 		]
 	},
 	{
@@ -312,6 +342,82 @@
 		]
 	},
 	{
+		"name": "atom",
+		"export": "Atom",
+		"category": "ai",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"atom",
+			"science",
+			"physics",
+			"react",
+			"nucleus"
+		]
+	},
+	{
+		"name": "award",
+		"export": "Award",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"award",
+			"medal",
+			"badge",
+			"certificate",
+			"achievement"
+		]
+	},
+	{
+		"name": "ban",
+		"export": "Ban",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ban",
+			"block",
+			"forbidden",
+			"prohibited",
+			"disabled",
+			"not-allowed"
+		]
+	},
+	{
+		"name": "bank",
+		"export": "Bank",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bank",
+			"finance",
+			"institution",
+			"payout",
+			"building"
+		]
+	},
+	{
+		"name": "barcode",
+		"export": "Barcode",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"barcode",
+			"product",
+			"sku",
+			"inventory",
+			"scan"
+		]
+	},
+	{
 		"name": "battery",
 		"export": "Battery",
 		"category": "devices",
@@ -324,6 +430,36 @@
 			"charge",
 			"half",
 			"solar"
+		]
+	},
+	{
+		"name": "battery-charging",
+		"export": "BatteryCharging",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"battery",
+			"charging",
+			"power",
+			"energy",
+			"bolt"
+		]
+	},
+	{
+		"name": "battery-low",
+		"export": "BatteryLow",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"battery",
+			"low",
+			"empty",
+			"power",
+			"energy"
 		]
 	},
 	{
@@ -353,6 +489,21 @@
 			"off",
 			"mute",
 			"silent"
+		]
+	},
+	{
+		"name": "bell-ring",
+		"export": "BellRing",
+		"category": "status",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bell",
+			"ring",
+			"notification",
+			"alert",
+			"ringing"
 		]
 	},
 	{
@@ -402,6 +553,21 @@
 		]
 	},
 	{
+		"name": "book",
+		"export": "Book",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"book",
+			"guide",
+			"documentation",
+			"read",
+			"manual"
+		]
+	},
+	{
 		"name": "book-open",
 		"export": "BookOpen",
 		"category": "files",
@@ -443,6 +609,37 @@
 			"save",
 			"saved",
 			"collection"
+		]
+	},
+	{
+		"name": "bot",
+		"export": "Bot",
+		"category": "ai",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"bot",
+			"robot",
+			"assistant",
+			"agent",
+			"automation",
+			"ai"
+		]
+	},
+	{
+		"name": "braces",
+		"export": "Braces",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"braces",
+			"curly",
+			"json",
+			"object",
+			"code"
 		]
 	},
 	{
@@ -589,6 +786,21 @@
 		]
 	},
 	{
+		"name": "calendar-check",
+		"export": "CalendarCheck",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"calendar",
+			"check",
+			"confirmed",
+			"booked",
+			"done"
+		]
+	},
+	{
 		"name": "calendar-mark",
 		"export": "CalendarMark",
 		"category": "time",
@@ -603,6 +815,21 @@
 			"selected",
 			"today",
 			"solar"
+		]
+	},
+	{
+		"name": "calendar-range",
+		"export": "CalendarRange",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"calendar",
+			"range",
+			"dates",
+			"period",
+			"schedule"
 		]
 	},
 	{
@@ -669,6 +896,36 @@
 			"picture",
 			"capture",
 			"snapshot"
+		]
+	},
+	{
+		"name": "camera-off",
+		"export": "CameraOff",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"camera",
+			"off",
+			"disabled",
+			"photo",
+			"privacy"
+		]
+	},
+	{
+		"name": "captions",
+		"export": "Captions",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"captions",
+			"subtitles",
+			"cc",
+			"accessibility",
+			"video"
 		]
 	},
 	{
@@ -762,6 +1019,37 @@
 			"growth",
 			"statistics",
 			"hugeicons"
+		]
+	},
+	{
+		"name": "chart-line",
+		"export": "ChartLine",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chart",
+			"line",
+			"graph",
+			"trend",
+			"statistics",
+			"analytics"
+		]
+	},
+	{
+		"name": "chart-pie",
+		"export": "ChartPie",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"chart",
+			"pie",
+			"breakdown",
+			"share",
+			"statistics"
 		]
 	},
 	{
@@ -1204,6 +1492,21 @@
 		]
 	},
 	{
+		"name": "columns",
+		"export": "Columns",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"columns",
+			"split",
+			"layout",
+			"two-column",
+			"panel"
+		]
+	},
+	{
 		"name": "command",
 		"export": "Command",
 		"category": "development",
@@ -1267,6 +1570,22 @@
 		]
 	},
 	{
+		"name": "corner-down-right",
+		"export": "CornerDownRight",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"corner",
+			"arrow",
+			"nested",
+			"indent",
+			"reply",
+			"sub-item"
+		]
+	},
+	{
 		"name": "crop",
 		"export": "Crop",
 		"category": "editor",
@@ -1282,6 +1601,21 @@
 		]
 	},
 	{
+		"name": "crown",
+		"export": "Crown",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"crown",
+			"premium",
+			"vip",
+			"owner",
+			"king"
+		]
+	},
+	{
 		"name": "cursor",
 		"export": "Cursor",
 		"category": "brands",
@@ -1294,6 +1628,37 @@
 			"ai",
 			"code",
 			"editor"
+		]
+	},
+	{
+		"name": "cursor-click",
+		"export": "CursorClick",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"click",
+			"cursor",
+			"pointer",
+			"tap",
+			"select",
+			"conversion"
+		]
+	},
+	{
+		"name": "dashboard",
+		"export": "Dashboard",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"dashboard",
+			"layout",
+			"overview",
+			"tiles",
+			"home"
 		]
 	},
 	{
@@ -1397,6 +1762,21 @@
 		]
 	},
 	{
+		"name": "dollar",
+		"export": "Dollar",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"dollar",
+			"money",
+			"currency",
+			"price",
+			"usd"
+		]
+	},
+	{
 		"name": "door-open",
 		"export": "DoorOpen",
 		"category": "actions",
@@ -1486,6 +1866,21 @@
 			"envelope",
 			"message",
 			"solar"
+		]
+	},
+	{
+		"name": "eraser",
+		"export": "Eraser",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"eraser",
+			"erase",
+			"clear",
+			"delete",
+			"rubber"
 		]
 	},
 	{
@@ -1615,6 +2010,21 @@
 		]
 	},
 	{
+		"name": "file-archive",
+		"export": "FileArchive",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"file",
+			"archive",
+			"zip",
+			"compressed",
+			"package"
+		]
+	},
+	{
 		"name": "file-code",
 		"export": "FileCode",
 		"category": "files",
@@ -1628,6 +2038,36 @@
 			"programming",
 			"code-file",
 			"solar"
+		]
+	},
+	{
+		"name": "file-image",
+		"export": "FileImage",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"file",
+			"image",
+			"photo",
+			"picture",
+			"attachment"
+		]
+	},
+	{
+		"name": "file-lock",
+		"export": "FileLock",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"file",
+			"lock",
+			"protected",
+			"private",
+			"secure"
 		]
 	},
 	{
@@ -1647,6 +2087,37 @@
 		]
 	},
 	{
+		"name": "file-search",
+		"export": "FileSearch",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"file",
+			"search",
+			"find",
+			"lookup",
+			"document"
+		]
+	},
+	{
+		"name": "file-spreadsheet",
+		"export": "FileSpreadsheet",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"file",
+			"spreadsheet",
+			"csv",
+			"excel",
+			"table",
+			"sheet"
+		]
+	},
+	{
 		"name": "file-text",
 		"export": "FileText",
 		"category": "files",
@@ -1661,6 +2132,36 @@
 			"lines",
 			"notes",
 			"solar"
+		]
+	},
+	{
+		"name": "file-video",
+		"export": "FileVideo",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"file",
+			"video",
+			"movie",
+			"media",
+			"attachment"
+		]
+	},
+	{
+		"name": "film",
+		"export": "Film",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"film",
+			"movie",
+			"video",
+			"cinema",
+			"reel"
 		]
 	},
 	{
@@ -1710,6 +2211,21 @@
 		]
 	},
 	{
+		"name": "flip-horizontal",
+		"export": "FlipHorizontal",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"flip",
+			"mirror",
+			"horizontal",
+			"reflect",
+			"transform"
+		]
+	},
+	{
 		"name": "folder",
 		"export": "Folder",
 		"category": "files",
@@ -1742,6 +2258,21 @@
 		]
 	},
 	{
+		"name": "folder-lock",
+		"export": "FolderLock",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"folder",
+			"lock",
+			"private",
+			"secure",
+			"protected"
+		]
+	},
+	{
 		"name": "folder-open",
 		"export": "FolderOpen",
 		"category": "files",
@@ -1755,6 +2286,36 @@
 			"files",
 			"storage",
 			"solar"
+		]
+	},
+	{
+		"name": "folder-remove",
+		"export": "FolderRemove",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"folder",
+			"remove",
+			"delete",
+			"minus",
+			"directory"
+		]
+	},
+	{
+		"name": "folder-search",
+		"export": "FolderSearch",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"folder",
+			"search",
+			"find",
+			"browse",
+			"directory"
 		]
 	},
 	{
@@ -1839,6 +2400,22 @@
 		]
 	},
 	{
+		"name": "gauge",
+		"export": "Gauge",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"gauge",
+			"speedometer",
+			"performance",
+			"meter",
+			"dashboard",
+			"score"
+		]
+	},
+	{
 		"name": "gemini",
 		"export": "Gemini",
 		"category": "brands",
@@ -1897,6 +2474,21 @@
 		]
 	},
 	{
+		"name": "git-commit",
+		"export": "GitCommit",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"git",
+			"commit",
+			"version",
+			"history",
+			"node"
+		]
+	},
+	{
 		"name": "git-diff",
 		"export": "GitDiff",
 		"category": "development",
@@ -1942,6 +2534,21 @@
 			"commits",
 			"version-control",
 			"solar"
+		]
+	},
+	{
+		"name": "git-merge",
+		"export": "GitMerge",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"git",
+			"merge",
+			"branch",
+			"pull-request",
+			"join"
 		]
 	},
 	{
@@ -2021,6 +2628,21 @@
 		]
 	},
 	{
+		"name": "graduation-cap",
+		"export": "GraduationCap",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"graduation",
+			"education",
+			"learning",
+			"course",
+			"school"
+		]
+	},
+	{
 		"name": "grip-horizontal",
 		"export": "GripHorizontal",
 		"category": "editor",
@@ -2064,6 +2686,21 @@
 			"ai",
 			"assistant",
 			"brand"
+		]
+	},
+	{
+		"name": "hammer",
+		"export": "Hammer",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"hammer",
+			"build",
+			"tool",
+			"construction",
+			"fix"
 		]
 	},
 	{
@@ -2129,6 +2766,48 @@
 			"text",
 			"editor",
 			"hugeicons"
+		]
+	},
+	{
+		"name": "heading-1",
+		"export": "Heading1",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"heading",
+			"h1",
+			"title",
+			"text"
+		]
+	},
+	{
+		"name": "heading-2",
+		"export": "Heading2",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"heading",
+			"h2",
+			"subtitle",
+			"text"
+		]
+	},
+	{
+		"name": "heading-3",
+		"export": "Heading3",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"heading",
+			"h3",
+			"subheading",
+			"text"
 		]
 	},
 	{
@@ -2208,6 +2887,21 @@
 		]
 	},
 	{
+		"name": "hourglass",
+		"export": "Hourglass",
+		"category": "time",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"hourglass",
+			"waiting",
+			"time",
+			"timer",
+			"loading"
+		]
+	},
+	{
 		"name": "image",
 		"export": "Image",
 		"category": "media",
@@ -2259,6 +2953,21 @@
 		]
 	},
 	{
+		"name": "images",
+		"export": "Images",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"images",
+			"gallery",
+			"photos",
+			"album",
+			"pictures"
+		]
+	},
+	{
 		"name": "import",
 		"export": "Import",
 		"category": "actions",
@@ -2301,6 +3010,21 @@
 			"incoming",
 			"receive",
 			"solar"
+		]
+	},
+	{
+		"name": "indent",
+		"export": "Indent",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"indent",
+			"increase-indent",
+			"nest",
+			"text",
+			"tab"
 		]
 	},
 	{
@@ -2424,6 +3148,21 @@
 		]
 	},
 	{
+		"name": "laptop",
+		"export": "Laptop",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"laptop",
+			"notebook",
+			"computer",
+			"device",
+			"macbook"
+		]
+	},
+	{
 		"name": "layers",
 		"export": "Layers",
 		"category": "layout",
@@ -2500,6 +3239,36 @@
 			"position",
 			"panel",
 			"hugeicons"
+		]
+	},
+	{
+		"name": "layout-list",
+		"export": "LayoutList",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"layout",
+			"list",
+			"list-view",
+			"rows",
+			"items"
+		]
+	},
+	{
+		"name": "library",
+		"export": "Library",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"library",
+			"books",
+			"collection",
+			"docs",
+			"shelf"
 		]
 	},
 	{
@@ -2669,6 +3438,21 @@
 		]
 	},
 	{
+		"name": "list-ordered",
+		"export": "ListOrdered",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"list",
+			"ordered",
+			"numbered",
+			"steps",
+			"sequence"
+		]
+	},
+	{
 		"name": "list-up",
 		"export": "ListUp",
 		"category": "actions",
@@ -2682,6 +3466,21 @@
 			"collapse",
 			"list-up-minimalistic",
 			"solar"
+		]
+	},
+	{
+		"name": "locate",
+		"export": "Locate",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"locate",
+			"location",
+			"gps",
+			"current-location",
+			"crosshair"
 		]
 	},
 	{
@@ -2744,6 +3543,22 @@
 			"account",
 			"logout-3",
 			"solar"
+		]
+	},
+	{
+		"name": "magic-wand",
+		"export": "MagicWand",
+		"category": "ai",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"magic",
+			"wand",
+			"generate",
+			"ai",
+			"auto",
+			"sparkle"
 		]
 	},
 	{
@@ -2889,6 +3704,21 @@
 			"fullscreen",
 			"resize",
 			"arrows"
+		]
+	},
+	{
+		"name": "megaphone",
+		"export": "Megaphone",
+		"category": "chat",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"megaphone",
+			"announcement",
+			"marketing",
+			"campaign",
+			"broadcast"
 		]
 	},
 	{
@@ -3059,6 +3889,21 @@
 		]
 	},
 	{
+		"name": "mouse",
+		"export": "Mouse",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"mouse",
+			"input",
+			"device",
+			"scroll",
+			"peripheral"
+		]
+	},
+	{
 		"name": "move",
 		"export": "Move",
 		"category": "arrows",
@@ -3105,6 +3950,21 @@
 			"map",
 			"pointer",
 			"hugeicons"
+		]
+	},
+	{
+		"name": "newspaper",
+		"export": "Newspaper",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"newspaper",
+			"news",
+			"article",
+			"blog",
+			"press"
 		]
 	},
 	{
@@ -3207,6 +4067,20 @@
 			"code",
 			"terminal",
 			"brand"
+		]
+	},
+	{
+		"name": "outdent",
+		"export": "Outdent",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"outdent",
+			"decrease-indent",
+			"unnest",
+			"text"
 		]
 	},
 	{
@@ -3319,6 +4193,21 @@
 		]
 	},
 	{
+		"name": "percent",
+		"export": "Percent",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"percent",
+			"discount",
+			"rate",
+			"sale",
+			"percentage"
+		]
+	},
+	{
 		"name": "perplexity",
 		"export": "Perplexity",
 		"category": "brands",
@@ -3348,6 +4237,22 @@
 		]
 	},
 	{
+		"name": "phone-off",
+		"export": "PhoneOff",
+		"category": "chat",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"phone",
+			"call",
+			"hang-up",
+			"missed",
+			"end-call",
+			"off"
+		]
+	},
+	{
 		"name": "pin",
 		"export": "Pin",
 		"category": "actions",
@@ -3359,6 +4264,20 @@
 			"pinned",
 			"save",
 			"solar"
+		]
+	},
+	{
+		"name": "pin-off",
+		"export": "PinOff",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"pin-off",
+			"unpin",
+			"detach",
+			"remove-pin"
 		]
 	},
 	{
@@ -3388,6 +4307,35 @@
 			"video",
 			"overlay",
 			"solar"
+		]
+	},
+	{
+		"name": "pipette",
+		"export": "Pipette",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"pipette",
+			"color-picker",
+			"eyedropper",
+			"sample"
+		]
+	},
+	{
+		"name": "plane",
+		"export": "Plane",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"plane",
+			"airplane",
+			"flight",
+			"travel",
+			"trip"
 		]
 	},
 	{
@@ -3422,6 +4370,51 @@
 		]
 	},
 	{
+		"name": "playlist",
+		"export": "Playlist",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"playlist",
+			"queue",
+			"music",
+			"tracks",
+			"media"
+		]
+	},
+	{
+		"name": "podcast",
+		"export": "Podcast",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"podcast",
+			"audio",
+			"show",
+			"broadcast",
+			"microphone"
+		]
+	},
+	{
+		"name": "pointer",
+		"export": "Pointer",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"pointer",
+			"cursor",
+			"select",
+			"arrow",
+			"mouse"
+		]
+	},
+	{
 		"name": "power",
 		"export": "Power",
 		"category": "settings",
@@ -3434,6 +4427,21 @@
 			"off",
 			"shutdown",
 			"hugeicons"
+		]
+	},
+	{
+		"name": "presentation",
+		"export": "Presentation",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"presentation",
+			"slides",
+			"board",
+			"pitch",
+			"chart"
 		]
 	},
 	{
@@ -3482,6 +4490,21 @@
 		]
 	},
 	{
+		"name": "question-mark",
+		"export": "QuestionMark",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"question",
+			"help",
+			"faq",
+			"support",
+			"unknown"
+		]
+	},
+	{
 		"name": "quote",
 		"export": "Quote",
 		"category": "editor",
@@ -3525,6 +4548,21 @@
 		]
 	},
 	{
+		"name": "receipt",
+		"export": "Receipt",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"receipt",
+			"bill",
+			"invoice",
+			"order",
+			"billing"
+		]
+	},
+	{
 		"name": "reddit",
 		"export": "Reddit",
 		"category": "brands",
@@ -3549,6 +4587,21 @@
 			"forward",
 			"repeat",
 			"arrow"
+		]
+	},
+	{
+		"name": "refresh",
+		"export": "Refresh",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"refresh",
+			"reload",
+			"sync",
+			"retry",
+			"update"
 		]
 	},
 	{
@@ -3582,6 +4635,21 @@
 		]
 	},
 	{
+		"name": "repeat-one",
+		"export": "RepeatOne",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"repeat",
+			"loop",
+			"once",
+			"single",
+			"playback"
+		]
+	},
+	{
 		"name": "reply",
 		"export": "Reply",
 		"category": "arrows",
@@ -3610,6 +4678,21 @@
 			"assets",
 			"library",
 			"shapes"
+		]
+	},
+	{
+		"name": "rewind",
+		"export": "Rewind",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"rewind",
+			"seek",
+			"back",
+			"media",
+			"playback"
 		]
 	},
 	{
@@ -3646,6 +4729,96 @@
 		]
 	},
 	{
+		"name": "rotate-ccw",
+		"export": "RotateCcw",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"rotate",
+			"counterclockwise",
+			"turn",
+			"reset",
+			"undo"
+		]
+	},
+	{
+		"name": "rotate-cw",
+		"export": "RotateCw",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"rotate",
+			"clockwise",
+			"turn",
+			"redo",
+			"spin"
+		]
+	},
+	{
+		"name": "route",
+		"export": "Route",
+		"category": "maps",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"route",
+			"directions",
+			"path",
+			"journey",
+			"navigation"
+		]
+	},
+	{
+		"name": "router",
+		"export": "Router",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"router",
+			"network",
+			"wifi",
+			"modem",
+			"internet"
+		]
+	},
+	{
+		"name": "rows",
+		"export": "Rows",
+		"category": "layout",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"rows",
+			"split",
+			"layout",
+			"stacked",
+			"panel"
+		]
+	},
+	{
+		"name": "ruler",
+		"export": "Ruler",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"ruler",
+			"measure",
+			"dimensions",
+			"length",
+			"scale"
+		]
+	},
+	{
 		"name": "sad",
 		"export": "Sad",
 		"category": "status",
@@ -3658,6 +4831,51 @@
 			"unhappy",
 			"frown",
 			"emoji"
+		]
+	},
+	{
+		"name": "save",
+		"export": "Save",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"save",
+			"floppy",
+			"disk",
+			"store",
+			"keep"
+		]
+	},
+	{
+		"name": "scan",
+		"export": "Scan",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"scan",
+			"scanner",
+			"qr",
+			"barcode",
+			"capture"
+		]
+	},
+	{
+		"name": "screen-share",
+		"export": "ScreenShare",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"screen",
+			"share",
+			"present",
+			"monitor",
+			"cast"
 		]
 	},
 	{
@@ -3753,6 +4971,21 @@
 		]
 	},
 	{
+		"name": "shuffle",
+		"export": "Shuffle",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"shuffle",
+			"random",
+			"mix",
+			"playback",
+			"media"
+		]
+	},
+	{
 		"name": "sidebar-bottom",
 		"export": "SidebarBottom",
 		"category": "layout",
@@ -3817,6 +5050,22 @@
 		]
 	},
 	{
+		"name": "signal",
+		"export": "Signal",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"signal",
+			"cellular",
+			"strength",
+			"reception",
+			"bars",
+			"network"
+		]
+	},
+	{
 		"name": "sim-card",
 		"export": "SimCard",
 		"category": "devices",
@@ -3828,6 +5077,36 @@
 			"sim",
 			"mobile",
 			"network"
+		]
+	},
+	{
+		"name": "skip-back",
+		"export": "SkipBack",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"skip",
+			"previous",
+			"back",
+			"track",
+			"media"
+		]
+	},
+	{
+		"name": "skip-forward",
+		"export": "SkipForward",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"skip",
+			"next",
+			"forward",
+			"track",
+			"media"
 		]
 	},
 	{
@@ -3984,6 +5263,36 @@
 			"cold",
 			"winter",
 			"freeze"
+		]
+	},
+	{
+		"name": "sort-ascending",
+		"export": "SortAscending",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sort",
+			"ascending",
+			"order",
+			"arrange",
+			"increase"
+		]
+	},
+	{
+		"name": "sort-descending",
+		"export": "SortDescending",
+		"category": "arrows",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sort",
+			"descending",
+			"order",
+			"arrange",
+			"decrease"
 		]
 	},
 	{
@@ -4166,6 +5475,21 @@
 		]
 	},
 	{
+		"name": "sticky-note",
+		"export": "StickyNote",
+		"category": "files",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"sticky",
+			"note",
+			"memo",
+			"post-it",
+			"reminder"
+		]
+	},
+	{
 		"name": "stop",
 		"export": "Stop",
 		"category": "media",
@@ -4194,6 +5518,21 @@
 			"timer",
 			"time",
 			"hugeicons"
+		]
+	},
+	{
+		"name": "store",
+		"export": "Store",
+		"category": "commerce",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"store",
+			"shop",
+			"storefront",
+			"market",
+			"retail"
 		]
 	},
 	{
@@ -4244,6 +5583,21 @@
 		]
 	},
 	{
+		"name": "sun-moon",
+		"export": "SunMoon",
+		"category": "settings",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"theme",
+			"system",
+			"appearance",
+			"day-night",
+			"auto"
+		]
+	},
+	{
 		"name": "supabase",
 		"export": "Supabase",
 		"category": "brands",
@@ -4254,6 +5608,20 @@
 			"database",
 			"backend",
 			"brand"
+		]
+	},
+	{
+		"name": "superscript",
+		"export": "Superscript",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"superscript",
+			"exponent",
+			"power",
+			"text"
 		]
 	},
 	{
@@ -4285,6 +5653,36 @@
 			"screen",
 			"landscape",
 			"solar"
+		]
+	},
+	{
+		"name": "tag",
+		"export": "Tag",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"tag",
+			"label",
+			"price",
+			"category",
+			"badge"
+		]
+	},
+	{
+		"name": "target",
+		"export": "Target",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"target",
+			"goal",
+			"focus",
+			"aim",
+			"bullseye"
 		]
 	},
 	{
@@ -4401,6 +5799,20 @@
 		]
 	},
 	{
+		"name": "text-size",
+		"export": "TextSize",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"text-size",
+			"font-size",
+			"typography",
+			"scale"
+		]
+	},
+	{
 		"name": "text-underline",
 		"export": "TextUnderline",
 		"category": "editor",
@@ -4487,6 +5899,21 @@
 		]
 	},
 	{
+		"name": "toggle",
+		"export": "Toggle",
+		"category": "settings",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"toggle",
+			"switch",
+			"on",
+			"setting",
+			"feature-flag"
+		]
+	},
+	{
 		"name": "transfer-horizontal",
 		"export": "TransferHorizontal",
 		"category": "arrows",
@@ -4533,6 +5960,53 @@
 		]
 	},
 	{
+		"name": "trending-down",
+		"export": "TrendingDown",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"trending",
+			"decline",
+			"decrease",
+			"down",
+			"loss",
+			"chart"
+		]
+	},
+	{
+		"name": "trending-up",
+		"export": "TrendingUp",
+		"category": "charts",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"trending",
+			"growth",
+			"increase",
+			"up",
+			"profit",
+			"chart"
+		]
+	},
+	{
+		"name": "trophy",
+		"export": "Trophy",
+		"category": "objects",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"trophy",
+			"award",
+			"winner",
+			"achievement",
+			"leaderboard"
+		]
+	},
+	{
 		"name": "truck",
 		"export": "Truck",
 		"category": "maps",
@@ -4547,6 +6021,21 @@
 		]
 	},
 	{
+		"name": "tv",
+		"export": "Tv",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"tv",
+			"television",
+			"screen",
+			"streaming",
+			"display"
+		]
+	},
+	{
 		"name": "twitter",
 		"export": "Twitter",
 		"category": "brands",
@@ -4557,6 +6046,21 @@
 			"bird",
 			"social",
 			"brand"
+		]
+	},
+	{
+		"name": "type",
+		"export": "Type",
+		"category": "editor",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"type",
+			"text",
+			"font",
+			"typography",
+			"letter"
 		]
 	},
 	{
@@ -4617,6 +6121,21 @@
 		]
 	},
 	{
+		"name": "unlink",
+		"export": "Unlink",
+		"category": "actions",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"unlink",
+			"broken-link",
+			"disconnect",
+			"detach",
+			"remove-link"
+		]
+	},
+	{
 		"name": "upload",
 		"export": "Upload",
 		"category": "actions",
@@ -4629,6 +6148,21 @@
 			"export",
 			"outgoing",
 			"arrow"
+		]
+	},
+	{
+		"name": "usb",
+		"export": "Usb",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"usb",
+			"port",
+			"connector",
+			"device",
+			"hardware"
 		]
 	},
 	{
@@ -4695,6 +6229,21 @@
 		]
 	},
 	{
+		"name": "user-lock",
+		"export": "UserLock",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"user",
+			"lock",
+			"private",
+			"locked",
+			"account"
+		]
+	},
+	{
 		"name": "user-remove",
 		"export": "UserRemove",
 		"category": "user",
@@ -4710,6 +6259,21 @@
 		]
 	},
 	{
+		"name": "user-settings",
+		"export": "UserSettings",
+		"category": "user",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"user",
+			"settings",
+			"account",
+			"preferences",
+			"profile"
+		]
+	},
+	{
 		"name": "user-x",
 		"export": "UserX",
 		"category": "user",
@@ -4722,6 +6286,21 @@
 			"close",
 			"cancel",
 			"account"
+		]
+	},
+	{
+		"name": "variable",
+		"export": "Variable",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"variable",
+			"parameter",
+			"environment",
+			"formula",
+			"x"
 		]
 	},
 	{
@@ -4783,6 +6362,21 @@
 			"filmstrip",
 			"movie",
 			"solar"
+		]
+	},
+	{
+		"name": "video-off",
+		"export": "VideoOff",
+		"category": "media",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"video",
+			"camera-off",
+			"meeting",
+			"off",
+			"disabled"
 		]
 	},
 	{
@@ -4862,6 +6456,36 @@
 			"water",
 			"sea",
 			"ocean"
+		]
+	},
+	{
+		"name": "webcam",
+		"export": "Webcam",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"webcam",
+			"camera",
+			"video",
+			"meeting",
+			"device"
+		]
+	},
+	{
+		"name": "webhook",
+		"export": "Webhook",
+		"category": "development",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"webhook",
+			"hook",
+			"event",
+			"integration",
+			"api"
 		]
 	},
 	{
@@ -4946,6 +6570,21 @@
 			"connection",
 			"internet",
 			"solar"
+		]
+	},
+	{
+		"name": "wifi-off",
+		"export": "WifiOff",
+		"category": "devices",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"wifi",
+			"offline",
+			"no-connection",
+			"disconnected",
+			"internet"
 		]
 	},
 	{

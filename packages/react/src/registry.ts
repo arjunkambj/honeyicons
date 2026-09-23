@@ -5,9 +5,11 @@ import { Add } from "./icons/add.js";
 import { Alarm } from "./icons/alarm.js";
 import { Album } from "./icons/album.js";
 import { AlertTriangle } from "./icons/alert-triangle.js";
+import { AlignCenterHorizontal } from "./icons/align-center-horizontal.js";
 import { Analytics } from "./icons/analytics.js";
 import { Anthropic } from "./icons/anthropic.js";
 import { Antigravity } from "./icons/antigravity.js";
+import { AppWindow } from "./icons/app-window.js";
 import { Archive } from "./icons/archive.js";
 import { ArchiveAlt } from "./icons/archive-alt.js";
 import { ArchiveUp } from "./icons/archive-up.js";
@@ -20,15 +22,26 @@ import { ArrowUp } from "./icons/arrow-up.js";
 import { ArrowUpLeft } from "./icons/arrow-up-left.js";
 import { ArrowUpRight } from "./icons/arrow-up-right.js";
 import { AtSign } from "./icons/at-sign.js";
+import { Atom } from "./icons/atom.js";
+import { Award } from "./icons/award.js";
+import { Ban } from "./icons/ban.js";
+import { Bank } from "./icons/bank.js";
+import { Barcode } from "./icons/barcode.js";
 import { Battery } from "./icons/battery.js";
+import { BatteryCharging } from "./icons/battery-charging.js";
+import { BatteryLow } from "./icons/battery-low.js";
 import { Bell } from "./icons/bell.js";
 import { BellOff } from "./icons/bell-off.js";
+import { BellRing } from "./icons/bell-ring.js";
 import { Bluetooth } from "./icons/bluetooth.js";
 import { Bold } from "./icons/bold.js";
 import { Bolt } from "./icons/bolt.js";
+import { Book } from "./icons/book.js";
 import { BookOpen } from "./icons/book-open.js";
 import { Bookmark } from "./icons/bookmark.js";
 import { Bookmarks } from "./icons/bookmarks.js";
+import { Bot } from "./icons/bot.js";
+import { Braces } from "./icons/braces.js";
 import { Brain } from "./icons/brain.js";
 import { Briefcase } from "./icons/briefcase.js";
 import { Broadcast } from "./icons/broadcast.js";
@@ -38,17 +51,23 @@ import { Bun } from "./icons/bun.js";
 import { Calculator } from "./icons/calculator.js";
 import { Calendar } from "./icons/calendar.js";
 import { CalendarAdd } from "./icons/calendar-add.js";
+import { CalendarCheck } from "./icons/calendar-check.js";
 import { CalendarMark } from "./icons/calendar-mark.js";
+import { CalendarRange } from "./icons/calendar-range.js";
 import { CalendarRemove } from "./icons/calendar-remove.js";
 import { CalendarSearch } from "./icons/calendar-search.js";
 import { CalendarX } from "./icons/calendar-x.js";
 import { Camera } from "./icons/camera.js";
+import { CameraOff } from "./icons/camera-off.js";
+import { Captions } from "./icons/captions.js";
 import { Card } from "./icons/card.js";
 import { Cart } from "./icons/cart.js";
 import { CartBag } from "./icons/cart-bag.js";
 import { CartLarge } from "./icons/cart-large.js";
 import { Chair } from "./icons/chair.js";
 import { ChartAnalysis } from "./icons/chart-analysis.js";
+import { ChartLine } from "./icons/chart-line.js";
+import { ChartPie } from "./icons/chart-pie.js";
 import { Chat } from "./icons/chat.js";
 import { Check } from "./icons/check.js";
 import { CheckDouble } from "./icons/check-double.js";
@@ -77,12 +96,17 @@ import { CloudRain } from "./icons/cloud-rain.js";
 import { CloudUpload } from "./icons/cloud-upload.js";
 import { Code } from "./icons/code.js";
 import { Codex } from "./icons/codex.js";
+import { Columns } from "./icons/columns.js";
 import { Command } from "./icons/command.js";
 import { Computer } from "./icons/computer.js";
 import { Connect } from "./icons/connect.js";
 import { Copy } from "./icons/copy.js";
+import { CornerDownRight } from "./icons/corner-down-right.js";
 import { Crop } from "./icons/crop.js";
+import { Crown } from "./icons/crown.js";
 import { Cursor } from "./icons/cursor.js";
+import { CursorClick } from "./icons/cursor-click.js";
+import { Dashboard } from "./icons/dashboard.js";
 import { Database } from "./icons/database.js";
 import { Deepseek } from "./icons/deepseek.js";
 import { Devin } from "./icons/devin.js";
@@ -90,12 +114,14 @@ import { Diamond } from "./icons/diamond.js";
 import { Discord } from "./icons/discord.js";
 import { Dislike } from "./icons/dislike.js";
 import { Document } from "./icons/document.js";
+import { Dollar } from "./icons/dollar.js";
 import { DoorOpen } from "./icons/door-open.js";
 import { Download } from "./icons/download.js";
 import { Droplet } from "./icons/droplet.js";
 import { Edit } from "./icons/edit.js";
 import { EditOff } from "./icons/edit-off.js";
 import { Email } from "./icons/email.js";
+import { Eraser } from "./icons/eraser.js";
 import { ExternalLink } from "./icons/external-link.js";
 import { Eye } from "./icons/eye.js";
 import { EyeClosed } from "./icons/eye-closed.js";
@@ -104,50 +130,72 @@ import { Facebook } from "./icons/facebook.js";
 import { Figma } from "./icons/figma.js";
 import { File } from "./icons/file.js";
 import { FileAdd } from "./icons/file-add.js";
+import { FileArchive } from "./icons/file-archive.js";
 import { FileCode } from "./icons/file-code.js";
+import { FileImage } from "./icons/file-image.js";
+import { FileLock } from "./icons/file-lock.js";
 import { FileRemove } from "./icons/file-remove.js";
+import { FileSearch } from "./icons/file-search.js";
+import { FileSpreadsheet } from "./icons/file-spreadsheet.js";
 import { FileText } from "./icons/file-text.js";
+import { FileVideo } from "./icons/file-video.js";
+import { Film } from "./icons/film.js";
 import { Filter } from "./icons/filter.js";
 import { Fingerprint } from "./icons/fingerprint.js";
 import { Flag } from "./icons/flag.js";
+import { FlipHorizontal } from "./icons/flip-horizontal.js";
 import { Folder } from "./icons/folder.js";
 import { FolderAdd } from "./icons/folder-add.js";
+import { FolderLock } from "./icons/folder-lock.js";
 import { FolderOpen } from "./icons/folder-open.js";
+import { FolderRemove } from "./icons/folder-remove.js";
+import { FolderSearch } from "./icons/folder-search.js";
 import { FolderTree } from "./icons/folder-tree.js";
 import { FolderWithFiles } from "./icons/folder-with-files.js";
 import { Folders } from "./icons/folders.js";
 import { Forward } from "./icons/forward.js";
 import { Gamepad } from "./icons/gamepad.js";
+import { Gauge } from "./icons/gauge.js";
 import { Gemini } from "./icons/gemini.js";
 import { Gift } from "./icons/gift.js";
 import { Git } from "./icons/git.js";
 import { GitBranch } from "./icons/git-branch.js";
+import { GitCommit } from "./icons/git-commit.js";
 import { GitDiff } from "./icons/git-diff.js";
 import { GitFork } from "./icons/git-fork.js";
 import { GitGraph } from "./icons/git-graph.js";
+import { GitMerge } from "./icons/git-merge.js";
 import { GitPullRequest } from "./icons/git-pull-request.js";
 import { Github } from "./icons/github.js";
 import { GithubCopilot } from "./icons/github-copilot.js";
 import { Globe } from "./icons/globe.js";
 import { Google } from "./icons/google.js";
+import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
 import { GripVertical } from "./icons/grip-vertical.js";
 import { Grok } from "./icons/grok.js";
+import { Hammer } from "./icons/hammer.js";
 import { Hand } from "./icons/hand.js";
 import { HandWave } from "./icons/hand-wave.js";
 import { Hashtag } from "./icons/hashtag.js";
 import { Heading } from "./icons/heading.js";
+import { Heading1 } from "./icons/heading-1.js";
+import { Heading2 } from "./icons/heading-2.js";
+import { Heading3 } from "./icons/heading-3.js";
 import { Headphones } from "./icons/headphones.js";
 import { Heart } from "./icons/heart.js";
 import { History } from "./icons/history.js";
 import { Home } from "./icons/home.js";
 import { HomeAngle } from "./icons/home-angle.js";
+import { Hourglass } from "./icons/hourglass.js";
 import { Image } from "./icons/image.js";
 import { ImageAdd } from "./icons/image-add.js";
 import { ImageEdit } from "./icons/image-edit.js";
+import { Images } from "./icons/images.js";
 import { Import } from "./icons/import.js";
 import { Inbox } from "./icons/inbox.js";
 import { IncomingCall } from "./icons/incoming-call.js";
+import { Indent } from "./icons/indent.js";
 import { InfoSquare } from "./icons/info-square.js";
 import { Instagram } from "./icons/instagram.js";
 import { Integration } from "./icons/integration.js";
@@ -156,11 +204,14 @@ import { Kanban } from "./icons/kanban.js";
 import { Key } from "./icons/key.js";
 import { Keyboard } from "./icons/keyboard.js";
 import { Kimi } from "./icons/kimi.js";
+import { Laptop } from "./icons/laptop.js";
 import { Layers } from "./icons/layers.js";
 import { LayoutAlignBottom } from "./icons/layout-align-bottom.js";
 import { LayoutAlignLeft } from "./icons/layout-align-left.js";
 import { LayoutAlignRight } from "./icons/layout-align-right.js";
 import { LayoutAlignTop } from "./icons/layout-align-top.js";
+import { LayoutList } from "./icons/layout-list.js";
+import { Library } from "./icons/library.js";
 import { LifeBuoy } from "./icons/life-buoy.js";
 import { Lightbulb } from "./icons/lightbulb.js";
 import { Lightning } from "./icons/lightning.js";
@@ -172,11 +223,14 @@ import { ListChecks } from "./icons/list-checks.js";
 import { ListDash } from "./icons/list-dash.js";
 import { ListDown } from "./icons/list-down.js";
 import { ListFilter } from "./icons/list-filter.js";
+import { ListOrdered } from "./icons/list-ordered.js";
 import { ListUp } from "./icons/list-up.js";
+import { Locate } from "./icons/locate.js";
 import { Lock } from "./icons/lock.js";
 import { LockOpen } from "./icons/lock-open.js";
 import { Login } from "./icons/login.js";
 import { Logout } from "./icons/logout.js";
+import { MagicWand } from "./icons/magic-wand.js";
 import { Map } from "./icons/map.js";
 import { MapArrowDown } from "./icons/map-arrow-down.js";
 import { MapArrowLeft } from "./icons/map-arrow-left.js";
@@ -186,6 +240,7 @@ import { MapFolded } from "./icons/map-folded.js";
 import { MapPin } from "./icons/map-pin.js";
 import { MarketAnalysis } from "./icons/market-analysis.js";
 import { Maximize } from "./icons/maximize.js";
+import { Megaphone } from "./icons/megaphone.js";
 import { Menu } from "./icons/menu.js";
 import { MetaAi } from "./icons/meta-ai.js";
 import { Microphone } from "./icons/microphone.js";
@@ -197,9 +252,11 @@ import { Mistral } from "./icons/mistral.js";
 import { Moon } from "./icons/moon.js";
 import { MoreHorizontal } from "./icons/more-horizontal.js";
 import { MoreVertical } from "./icons/more-vertical.js";
+import { Mouse } from "./icons/mouse.js";
 import { Move } from "./icons/move.js";
 import { MusicNote } from "./icons/music-note.js";
 import { Navigation } from "./icons/navigation.js";
+import { Newspaper } from "./icons/newspaper.js";
 import { Notebook } from "./icons/notebook.js";
 import { Npm } from "./icons/npm.js";
 import { Nvidia } from "./icons/nvidia.js";
@@ -207,6 +264,7 @@ import { OctagonX } from "./icons/octagon-x.js";
 import { Openai } from "./icons/openai.js";
 import { Openclaw } from "./icons/openclaw.js";
 import { Opencode } from "./icons/opencode.js";
+import { Outdent } from "./icons/outdent.js";
 import { OutgoingCall } from "./icons/outgoing-call.js";
 import { Package } from "./icons/package.js";
 import { Palette } from "./icons/palette.js";
@@ -214,40 +272,67 @@ import { PaperPlane } from "./icons/paper-plane.js";
 import { Paperclip } from "./icons/paperclip.js";
 import { Pause } from "./icons/pause.js";
 import { Pen } from "./icons/pen.js";
+import { Percent } from "./icons/percent.js";
 import { Perplexity } from "./icons/perplexity.js";
 import { Phone } from "./icons/phone.js";
+import { PhoneOff } from "./icons/phone-off.js";
 import { Pin } from "./icons/pin.js";
+import { PinOff } from "./icons/pin-off.js";
 import { Pinterest } from "./icons/pinterest.js";
 import { Pip } from "./icons/pip.js";
+import { Pipette } from "./icons/pipette.js";
+import { Plane } from "./icons/plane.js";
 import { Play } from "./icons/play.js";
 import { PlayMini } from "./icons/play-mini.js";
+import { Playlist } from "./icons/playlist.js";
+import { Podcast } from "./icons/podcast.js";
+import { Pointer } from "./icons/pointer.js";
 import { Power } from "./icons/power.js";
+import { Presentation } from "./icons/presentation.js";
 import { Printer } from "./icons/printer.js";
 import { Puzzle } from "./icons/puzzle.js";
 import { QrCode } from "./icons/qr-code.js";
+import { QuestionMark } from "./icons/question-mark.js";
 import { Quote } from "./icons/quote.js";
 import { Qwen } from "./icons/qwen.js";
 import { React } from "./icons/react.js";
+import { Receipt } from "./icons/receipt.js";
 import { Reddit } from "./icons/reddit.js";
 import { Redo } from "./icons/redo.js";
+import { Refresh } from "./icons/refresh.js";
 import { Reorder } from "./icons/reorder.js";
 import { Repeat } from "./icons/repeat.js";
+import { RepeatOne } from "./icons/repeat-one.js";
 import { Reply } from "./icons/reply.js";
 import { ResourcesAdd } from "./icons/resources-add.js";
+import { Rewind } from "./icons/rewind.js";
 import { Rhombus } from "./icons/rhombus.js";
 import { Rocket } from "./icons/rocket.js";
+import { RotateCcw } from "./icons/rotate-ccw.js";
+import { RotateCw } from "./icons/rotate-cw.js";
+import { Route } from "./icons/route.js";
+import { Router } from "./icons/router.js";
+import { Rows } from "./icons/rows.js";
+import { Ruler } from "./icons/ruler.js";
 import { Sad } from "./icons/sad.js";
+import { Save } from "./icons/save.js";
+import { Scan } from "./icons/scan.js";
+import { ScreenShare } from "./icons/screen-share.js";
 import { Search } from "./icons/search.js";
 import { Send } from "./icons/send.js";
 import { Server } from "./icons/server.js";
 import { Settings } from "./icons/settings.js";
 import { Share } from "./icons/share.js";
 import { ShieldAdd } from "./icons/shield-add.js";
+import { Shuffle } from "./icons/shuffle.js";
 import { SidebarBottom } from "./icons/sidebar-bottom.js";
 import { SidebarLeft } from "./icons/sidebar-left.js";
 import { SidebarRight } from "./icons/sidebar-right.js";
 import { SidebarTop } from "./icons/sidebar-top.js";
+import { Signal } from "./icons/signal.js";
 import { SimCard } from "./icons/sim-card.js";
+import { SkipBack } from "./icons/skip-back.js";
+import { SkipForward } from "./icons/skip-forward.js";
 import { Slack } from "./icons/slack.js";
 import { Slash } from "./icons/slash.js";
 import { SlidersHorizontal } from "./icons/sliders-horizontal.js";
@@ -258,6 +343,8 @@ import { Smartphone } from "./icons/smartphone.js";
 import { Smile } from "./icons/smile.js";
 import { Snapchat } from "./icons/snapchat.js";
 import { Snowflake } from "./icons/snowflake.js";
+import { SortAscending } from "./icons/sort-ascending.js";
+import { SortDescending } from "./icons/sort-descending.js";
 import { Soundwave } from "./icons/soundwave.js";
 import { Sparkles } from "./icons/sparkles.js";
 import { Spinner } from "./icons/spinner.js";
@@ -269,14 +356,20 @@ import { SquarePen } from "./icons/square-pen.js";
 import { Star } from "./icons/star.js";
 import { StarOff } from "./icons/star-off.js";
 import { Sticker } from "./icons/sticker.js";
+import { StickyNote } from "./icons/sticky-note.js";
 import { Stop } from "./icons/stop.js";
 import { Stopwatch } from "./icons/stopwatch.js";
+import { Store } from "./icons/store.js";
 import { Strikethrough } from "./icons/strikethrough.js";
 import { Suitcase } from "./icons/suitcase.js";
 import { Sun } from "./icons/sun.js";
+import { SunMoon } from "./icons/sun-moon.js";
 import { Supabase } from "./icons/supabase.js";
+import { Superscript } from "./icons/superscript.js";
 import { Table } from "./icons/table.js";
 import { Tablet } from "./icons/tablet.js";
+import { Tag } from "./icons/tag.js";
+import { Target } from "./icons/target.js";
 import { Telegram } from "./icons/telegram.js";
 import { Terminal } from "./icons/terminal.js";
 import { TextAlignCenter } from "./icons/text-align-center.js";
@@ -284,42 +377,58 @@ import { TextAlignJustifyLeft } from "./icons/text-align-justify-left.js";
 import { TextAlignJustifyRight } from "./icons/text-align-justify-right.js";
 import { TextAlignLeft } from "./icons/text-align-left.js";
 import { TextAlignRight } from "./icons/text-align-right.js";
+import { TextSize } from "./icons/text-size.js";
 import { TextUnderline } from "./icons/text-underline.js";
 import { Threads } from "./icons/threads.js";
 import { ThreeSquares } from "./icons/three-squares.js";
 import { Ticket } from "./icons/ticket.js";
 import { TicketDiscount } from "./icons/ticket-discount.js";
 import { Tiktok } from "./icons/tiktok.js";
+import { Toggle } from "./icons/toggle.js";
 import { TransferHorizontal } from "./icons/transfer-horizontal.js";
 import { TransferVertical } from "./icons/transfer-vertical.js";
 import { Trash } from "./icons/trash.js";
+import { TrendingDown } from "./icons/trending-down.js";
+import { TrendingUp } from "./icons/trending-up.js";
+import { Trophy } from "./icons/trophy.js";
 import { Truck } from "./icons/truck.js";
+import { Tv } from "./icons/tv.js";
 import { Twitter } from "./icons/twitter.js";
+import { Type } from "./icons/type.js";
 import { Typescript } from "./icons/typescript.js";
 import { Undo } from "./icons/undo.js";
 import { UnfoldLess } from "./icons/unfold-less.js";
 import { UnfoldMore } from "./icons/unfold-more.js";
+import { Unlink } from "./icons/unlink.js";
 import { Upload } from "./icons/upload.js";
+import { Usb } from "./icons/usb.js";
 import { User } from "./icons/user.js";
 import { UserAdd } from "./icons/user-add.js";
 import { UserCheck } from "./icons/user-check.js";
 import { UserGroup } from "./icons/user-group.js";
+import { UserLock } from "./icons/user-lock.js";
 import { UserRemove } from "./icons/user-remove.js";
+import { UserSettings } from "./icons/user-settings.js";
 import { UserX } from "./icons/user-x.js";
+import { Variable } from "./icons/variable.js";
 import { Vercel } from "./icons/vercel.js";
 import { VerifiedCheck } from "./icons/verified-check.js";
 import { VideoCamera } from "./icons/video-camera.js";
 import { VideoFrame } from "./icons/video-frame.js";
+import { VideoOff } from "./icons/video-off.js";
 import { VolumeHigh } from "./icons/volume-high.js";
 import { VolumeLow } from "./icons/volume-low.js";
 import { VolumeOff } from "./icons/volume-off.js";
 import { Wallet } from "./icons/wallet.js";
 import { Waves } from "./icons/waves.js";
+import { Webcam } from "./icons/webcam.js";
+import { Webhook } from "./icons/webhook.js";
 import { Widget } from "./icons/widget.js";
 import { WidgetAdd } from "./icons/widget-add.js";
 import { WidgetSquare } from "./icons/widget-square.js";
 import { WidgetSquareAdd } from "./icons/widget-square-add.js";
 import { Wifi } from "./icons/wifi.js";
+import { WifiOff } from "./icons/wifi-off.js";
 import { Wind } from "./icons/wind.js";
 import { Windsurf } from "./icons/windsurf.js";
 import { X } from "./icons/x.js";
@@ -335,9 +444,11 @@ export const icons = {
 	"alarm": Alarm,
 	"album": Album,
 	"alert-triangle": AlertTriangle,
+	"align-center-horizontal": AlignCenterHorizontal,
 	"analytics": Analytics,
 	"anthropic": Anthropic,
 	"antigravity": Antigravity,
+	"app-window": AppWindow,
 	"archive": Archive,
 	"archive-alt": ArchiveAlt,
 	"archive-up": ArchiveUp,
@@ -350,15 +461,26 @@ export const icons = {
 	"arrow-up-left": ArrowUpLeft,
 	"arrow-up-right": ArrowUpRight,
 	"at-sign": AtSign,
+	"atom": Atom,
+	"award": Award,
+	"ban": Ban,
+	"bank": Bank,
+	"barcode": Barcode,
 	"battery": Battery,
+	"battery-charging": BatteryCharging,
+	"battery-low": BatteryLow,
 	"bell": Bell,
 	"bell-off": BellOff,
+	"bell-ring": BellRing,
 	"bluetooth": Bluetooth,
 	"bold": Bold,
 	"bolt": Bolt,
+	"book": Book,
 	"book-open": BookOpen,
 	"bookmark": Bookmark,
 	"bookmarks": Bookmarks,
+	"bot": Bot,
+	"braces": Braces,
 	"brain": Brain,
 	"briefcase": Briefcase,
 	"broadcast": Broadcast,
@@ -368,17 +490,23 @@ export const icons = {
 	"calculator": Calculator,
 	"calendar": Calendar,
 	"calendar-add": CalendarAdd,
+	"calendar-check": CalendarCheck,
 	"calendar-mark": CalendarMark,
+	"calendar-range": CalendarRange,
 	"calendar-remove": CalendarRemove,
 	"calendar-search": CalendarSearch,
 	"calendar-x": CalendarX,
 	"camera": Camera,
+	"camera-off": CameraOff,
+	"captions": Captions,
 	"card": Card,
 	"cart": Cart,
 	"cart-bag": CartBag,
 	"cart-large": CartLarge,
 	"chair": Chair,
 	"chart-analysis": ChartAnalysis,
+	"chart-line": ChartLine,
+	"chart-pie": ChartPie,
 	"chat": Chat,
 	"check": Check,
 	"check-double": CheckDouble,
@@ -407,12 +535,17 @@ export const icons = {
 	"cloud-upload": CloudUpload,
 	"code": Code,
 	"codex": Codex,
+	"columns": Columns,
 	"command": Command,
 	"computer": Computer,
 	"connect": Connect,
 	"copy": Copy,
+	"corner-down-right": CornerDownRight,
 	"crop": Crop,
+	"crown": Crown,
 	"cursor": Cursor,
+	"cursor-click": CursorClick,
+	"dashboard": Dashboard,
 	"database": Database,
 	"deepseek": Deepseek,
 	"devin": Devin,
@@ -420,12 +553,14 @@ export const icons = {
 	"discord": Discord,
 	"dislike": Dislike,
 	"document": Document,
+	"dollar": Dollar,
 	"door-open": DoorOpen,
 	"download": Download,
 	"droplet": Droplet,
 	"edit": Edit,
 	"edit-off": EditOff,
 	"email": Email,
+	"eraser": Eraser,
 	"external-link": ExternalLink,
 	"eye": Eye,
 	"eye-closed": EyeClosed,
@@ -434,50 +569,72 @@ export const icons = {
 	"figma": Figma,
 	"file": File,
 	"file-add": FileAdd,
+	"file-archive": FileArchive,
 	"file-code": FileCode,
+	"file-image": FileImage,
+	"file-lock": FileLock,
 	"file-remove": FileRemove,
+	"file-search": FileSearch,
+	"file-spreadsheet": FileSpreadsheet,
 	"file-text": FileText,
+	"file-video": FileVideo,
+	"film": Film,
 	"filter": Filter,
 	"fingerprint": Fingerprint,
 	"flag": Flag,
+	"flip-horizontal": FlipHorizontal,
 	"folder": Folder,
 	"folder-add": FolderAdd,
+	"folder-lock": FolderLock,
 	"folder-open": FolderOpen,
+	"folder-remove": FolderRemove,
+	"folder-search": FolderSearch,
 	"folder-tree": FolderTree,
 	"folder-with-files": FolderWithFiles,
 	"folders": Folders,
 	"forward": Forward,
 	"gamepad": Gamepad,
+	"gauge": Gauge,
 	"gemini": Gemini,
 	"gift": Gift,
 	"git": Git,
 	"git-branch": GitBranch,
+	"git-commit": GitCommit,
 	"git-diff": GitDiff,
 	"git-fork": GitFork,
 	"git-graph": GitGraph,
+	"git-merge": GitMerge,
 	"git-pull-request": GitPullRequest,
 	"github": Github,
 	"github-copilot": GithubCopilot,
 	"globe": Globe,
 	"google": Google,
+	"graduation-cap": GraduationCap,
 	"grip-horizontal": GripHorizontal,
 	"grip-vertical": GripVertical,
 	"grok": Grok,
+	"hammer": Hammer,
 	"hand": Hand,
 	"hand-wave": HandWave,
 	"hashtag": Hashtag,
 	"heading": Heading,
+	"heading-1": Heading1,
+	"heading-2": Heading2,
+	"heading-3": Heading3,
 	"headphones": Headphones,
 	"heart": Heart,
 	"history": History,
 	"home": Home,
 	"home-angle": HomeAngle,
+	"hourglass": Hourglass,
 	"image": Image,
 	"image-add": ImageAdd,
 	"image-edit": ImageEdit,
+	"images": Images,
 	"import": Import,
 	"inbox": Inbox,
 	"incoming-call": IncomingCall,
+	"indent": Indent,
 	"info-square": InfoSquare,
 	"instagram": Instagram,
 	"integration": Integration,
@@ -486,11 +643,14 @@ export const icons = {
 	"key": Key,
 	"keyboard": Keyboard,
 	"kimi": Kimi,
+	"laptop": Laptop,
 	"layers": Layers,
 	"layout-align-bottom": LayoutAlignBottom,
 	"layout-align-left": LayoutAlignLeft,
 	"layout-align-right": LayoutAlignRight,
 	"layout-align-top": LayoutAlignTop,
+	"layout-list": LayoutList,
+	"library": Library,
 	"life-buoy": LifeBuoy,
 	"lightbulb": Lightbulb,
 	"lightning": Lightning,
@@ -502,11 +662,14 @@ export const icons = {
 	"list-dash": ListDash,
 	"list-down": ListDown,
 	"list-filter": ListFilter,
+	"list-ordered": ListOrdered,
 	"list-up": ListUp,
+	"locate": Locate,
 	"lock": Lock,
 	"lock-open": LockOpen,
 	"login": Login,
 	"logout": Logout,
+	"magic-wand": MagicWand,
 	"map": Map,
 	"map-arrow-down": MapArrowDown,
 	"map-arrow-left": MapArrowLeft,
@@ -516,6 +679,7 @@ export const icons = {
 	"map-pin": MapPin,
 	"market-analysis": MarketAnalysis,
 	"maximize": Maximize,
+	"megaphone": Megaphone,
 	"menu": Menu,
 	"meta-ai": MetaAi,
 	"microphone": Microphone,
@@ -527,9 +691,11 @@ export const icons = {
 	"moon": Moon,
 	"more-horizontal": MoreHorizontal,
 	"more-vertical": MoreVertical,
+	"mouse": Mouse,
 	"move": Move,
 	"music-note": MusicNote,
 	"navigation": Navigation,
+	"newspaper": Newspaper,
 	"notebook": Notebook,
 	"npm": Npm,
 	"nvidia": Nvidia,
@@ -537,6 +703,7 @@ export const icons = {
 	"openai": Openai,
 	"openclaw": Openclaw,
 	"opencode": Opencode,
+	"outdent": Outdent,
 	"outgoing-call": OutgoingCall,
 	"package": Package,
 	"palette": Palette,
@@ -544,40 +711,67 @@ export const icons = {
 	"paperclip": Paperclip,
 	"pause": Pause,
 	"pen": Pen,
+	"percent": Percent,
 	"perplexity": Perplexity,
 	"phone": Phone,
+	"phone-off": PhoneOff,
 	"pin": Pin,
+	"pin-off": PinOff,
 	"pinterest": Pinterest,
 	"pip": Pip,
+	"pipette": Pipette,
+	"plane": Plane,
 	"play": Play,
 	"play-mini": PlayMini,
+	"playlist": Playlist,
+	"podcast": Podcast,
+	"pointer": Pointer,
 	"power": Power,
+	"presentation": Presentation,
 	"printer": Printer,
 	"puzzle": Puzzle,
 	"qr-code": QrCode,
+	"question-mark": QuestionMark,
 	"quote": Quote,
 	"qwen": Qwen,
 	"react": React,
+	"receipt": Receipt,
 	"reddit": Reddit,
 	"redo": Redo,
+	"refresh": Refresh,
 	"reorder": Reorder,
 	"repeat": Repeat,
+	"repeat-one": RepeatOne,
 	"reply": Reply,
 	"resources-add": ResourcesAdd,
+	"rewind": Rewind,
 	"rhombus": Rhombus,
 	"rocket": Rocket,
+	"rotate-ccw": RotateCcw,
+	"rotate-cw": RotateCw,
+	"route": Route,
+	"router": Router,
+	"rows": Rows,
+	"ruler": Ruler,
 	"sad": Sad,
+	"save": Save,
+	"scan": Scan,
+	"screen-share": ScreenShare,
 	"search": Search,
 	"send": Send,
 	"server": Server,
 	"settings": Settings,
 	"share": Share,
 	"shield-add": ShieldAdd,
+	"shuffle": Shuffle,
 	"sidebar-bottom": SidebarBottom,
 	"sidebar-left": SidebarLeft,
 	"sidebar-right": SidebarRight,
 	"sidebar-top": SidebarTop,
+	"signal": Signal,
 	"sim-card": SimCard,
+	"skip-back": SkipBack,
+	"skip-forward": SkipForward,
 	"slack": Slack,
 	"slash": Slash,
 	"sliders-horizontal": SlidersHorizontal,
@@ -588,6 +782,8 @@ export const icons = {
 	"smile": Smile,
 	"snapchat": Snapchat,
 	"snowflake": Snowflake,
+	"sort-ascending": SortAscending,
+	"sort-descending": SortDescending,
 	"soundwave": Soundwave,
 	"sparkles": Sparkles,
 	"spinner": Spinner,
@@ -599,14 +795,20 @@ export const icons = {
 	"star": Star,
 	"star-off": StarOff,
 	"sticker": Sticker,
+	"sticky-note": StickyNote,
 	"stop": Stop,
 	"stopwatch": Stopwatch,
+	"store": Store,
 	"strikethrough": Strikethrough,
 	"suitcase": Suitcase,
 	"sun": Sun,
+	"sun-moon": SunMoon,
 	"supabase": Supabase,
+	"superscript": Superscript,
 	"table": Table,
 	"tablet": Tablet,
+	"tag": Tag,
+	"target": Target,
 	"telegram": Telegram,
 	"terminal": Terminal,
 	"text-align-center": TextAlignCenter,
@@ -614,42 +816,58 @@ export const icons = {
 	"text-align-justify-right": TextAlignJustifyRight,
 	"text-align-left": TextAlignLeft,
 	"text-align-right": TextAlignRight,
+	"text-size": TextSize,
 	"text-underline": TextUnderline,
 	"threads": Threads,
 	"three-squares": ThreeSquares,
 	"ticket": Ticket,
 	"ticket-discount": TicketDiscount,
 	"tiktok": Tiktok,
+	"toggle": Toggle,
 	"transfer-horizontal": TransferHorizontal,
 	"transfer-vertical": TransferVertical,
 	"trash": Trash,
+	"trending-down": TrendingDown,
+	"trending-up": TrendingUp,
+	"trophy": Trophy,
 	"truck": Truck,
+	"tv": Tv,
 	"twitter": Twitter,
+	"type": Type,
 	"typescript": Typescript,
 	"undo": Undo,
 	"unfold-less": UnfoldLess,
 	"unfold-more": UnfoldMore,
+	"unlink": Unlink,
 	"upload": Upload,
+	"usb": Usb,
 	"user": User,
 	"user-add": UserAdd,
 	"user-check": UserCheck,
 	"user-group": UserGroup,
+	"user-lock": UserLock,
 	"user-remove": UserRemove,
+	"user-settings": UserSettings,
 	"user-x": UserX,
+	"variable": Variable,
 	"vercel": Vercel,
 	"verified-check": VerifiedCheck,
 	"video-camera": VideoCamera,
 	"video-frame": VideoFrame,
+	"video-off": VideoOff,
 	"volume-high": VolumeHigh,
 	"volume-low": VolumeLow,
 	"volume-off": VolumeOff,
 	"wallet": Wallet,
 	"waves": Waves,
+	"webcam": Webcam,
+	"webhook": Webhook,
 	"widget": Widget,
 	"widget-add": WidgetAdd,
 	"widget-square": WidgetSquare,
 	"widget-square-add": WidgetSquareAdd,
 	"wifi": Wifi,
+	"wifi-off": WifiOff,
 	"wind": Wind,
 	"windsurf": Windsurf,
 	"x": X,
@@ -668,9 +886,11 @@ export type IconVariantMap = {
 	"alarm": "linear";
 	"album": "linear";
 	"alert-triangle": "linear";
+	"align-center-horizontal": "linear";
 	"analytics": "linear";
 	"anthropic": "bold";
 	"antigravity": "bold";
+	"app-window": "linear";
 	"archive": "linear";
 	"archive-alt": "linear";
 	"archive-up": "linear";
@@ -683,15 +903,26 @@ export type IconVariantMap = {
 	"arrow-up-left": "linear";
 	"arrow-up-right": "linear";
 	"at-sign": "linear";
+	"atom": "linear";
+	"award": "linear";
+	"ban": "linear";
+	"bank": "linear";
+	"barcode": "linear";
 	"battery": "linear";
+	"battery-charging": "linear";
+	"battery-low": "linear";
 	"bell": "linear";
 	"bell-off": "linear";
+	"bell-ring": "linear";
 	"bluetooth": "linear";
 	"bold": "linear";
 	"bolt": "linear";
+	"book": "linear";
 	"book-open": "linear";
 	"bookmark": "linear";
 	"bookmarks": "linear";
+	"bot": "linear";
+	"braces": "linear";
 	"brain": "linear";
 	"briefcase": "linear";
 	"broadcast": "linear";
@@ -701,17 +932,23 @@ export type IconVariantMap = {
 	"calculator": "linear";
 	"calendar": "linear";
 	"calendar-add": "linear";
+	"calendar-check": "linear";
 	"calendar-mark": "linear";
+	"calendar-range": "linear";
 	"calendar-remove": "linear";
 	"calendar-search": "linear";
 	"calendar-x": "linear";
 	"camera": "linear";
+	"camera-off": "linear";
+	"captions": "linear";
 	"card": "linear";
 	"cart": "linear";
 	"cart-bag": "linear";
 	"cart-large": "linear";
 	"chair": "linear";
 	"chart-analysis": "linear";
+	"chart-line": "linear";
+	"chart-pie": "linear";
 	"chat": "linear";
 	"check": "linear";
 	"check-double": "linear";
@@ -740,12 +977,17 @@ export type IconVariantMap = {
 	"cloud-upload": "linear";
 	"code": "linear";
 	"codex": "bold";
+	"columns": "linear";
 	"command": "linear";
 	"computer": "linear" | "bold";
 	"connect": "linear";
 	"copy": "linear";
+	"corner-down-right": "linear";
 	"crop": "linear";
+	"crown": "linear";
 	"cursor": "bold";
+	"cursor-click": "linear";
+	"dashboard": "linear";
 	"database": "linear";
 	"deepseek": "bold";
 	"devin": "bold";
@@ -753,12 +995,14 @@ export type IconVariantMap = {
 	"discord": "bold";
 	"dislike": "linear";
 	"document": "linear";
+	"dollar": "linear";
 	"door-open": "linear";
 	"download": "linear";
 	"droplet": "linear";
 	"edit": "linear";
 	"edit-off": "linear";
 	"email": "linear";
+	"eraser": "linear";
 	"external-link": "linear";
 	"eye": "linear";
 	"eye-closed": "linear";
@@ -767,50 +1011,72 @@ export type IconVariantMap = {
 	"figma": "linear";
 	"file": "linear";
 	"file-add": "linear";
+	"file-archive": "linear";
 	"file-code": "linear";
+	"file-image": "linear";
+	"file-lock": "linear";
 	"file-remove": "linear";
+	"file-search": "linear";
+	"file-spreadsheet": "linear";
 	"file-text": "linear";
+	"file-video": "linear";
+	"film": "linear";
 	"filter": "linear";
 	"fingerprint": "linear";
 	"flag": "linear";
+	"flip-horizontal": "linear";
 	"folder": "linear";
 	"folder-add": "linear";
+	"folder-lock": "linear";
 	"folder-open": "linear";
+	"folder-remove": "linear";
+	"folder-search": "linear";
 	"folder-tree": "linear";
 	"folder-with-files": "linear";
 	"folders": "linear";
 	"forward": "linear";
 	"gamepad": "linear";
+	"gauge": "linear";
 	"gemini": "bold";
 	"gift": "linear";
 	"git": "bold";
 	"git-branch": "linear";
+	"git-commit": "linear";
 	"git-diff": "linear";
 	"git-fork": "linear";
 	"git-graph": "linear";
+	"git-merge": "linear";
 	"git-pull-request": "linear";
 	"github": "bold";
 	"github-copilot": "bold";
 	"globe": "linear";
 	"google": "bold";
+	"graduation-cap": "linear";
 	"grip-horizontal": "linear";
 	"grip-vertical": "linear";
 	"grok": "linear";
+	"hammer": "linear";
 	"hand": "linear";
 	"hand-wave": "linear";
 	"hashtag": "linear";
 	"heading": "linear";
+	"heading-1": "linear";
+	"heading-2": "linear";
+	"heading-3": "linear";
 	"headphones": "linear";
 	"heart": "linear";
 	"history": "linear";
 	"home": "linear";
 	"home-angle": "linear";
+	"hourglass": "linear";
 	"image": "linear";
 	"image-add": "linear";
 	"image-edit": "linear";
+	"images": "linear";
 	"import": "linear";
 	"inbox": "linear";
 	"incoming-call": "linear";
+	"indent": "linear";
 	"info-square": "linear";
 	"instagram": "linear";
 	"integration": "linear";
@@ -819,11 +1085,14 @@ export type IconVariantMap = {
 	"key": "linear";
 	"keyboard": "linear";
 	"kimi": "bold";
+	"laptop": "linear";
 	"layers": "linear";
 	"layout-align-bottom": "linear";
 	"layout-align-left": "linear";
 	"layout-align-right": "linear";
 	"layout-align-top": "linear";
+	"layout-list": "linear";
+	"library": "linear";
 	"life-buoy": "linear";
 	"lightbulb": "linear";
 	"lightning": "linear";
@@ -835,11 +1104,14 @@ export type IconVariantMap = {
 	"list-dash": "linear";
 	"list-down": "linear";
 	"list-filter": "linear";
+	"list-ordered": "linear";
 	"list-up": "linear";
+	"locate": "linear";
 	"lock": "linear";
 	"lock-open": "linear";
 	"login": "linear";
 	"logout": "linear";
+	"magic-wand": "linear";
 	"map": "linear";
 	"map-arrow-down": "linear";
 	"map-arrow-left": "linear";
@@ -849,6 +1121,7 @@ export type IconVariantMap = {
 	"map-pin": "linear";
 	"market-analysis": "linear";
 	"maximize": "linear";
+	"megaphone": "linear";
 	"menu": "linear";
 	"meta-ai": "bold";
 	"microphone": "linear";
@@ -860,9 +1133,11 @@ export type IconVariantMap = {
 	"moon": "linear" | "bold";
 	"more-horizontal": "linear";
 	"more-vertical": "linear";
+	"mouse": "linear";
 	"move": "linear";
 	"music-note": "linear";
 	"navigation": "linear";
+	"newspaper": "linear";
 	"notebook": "linear";
 	"npm": "bold";
 	"nvidia": "bold";
@@ -870,6 +1145,7 @@ export type IconVariantMap = {
 	"openai": "linear";
 	"openclaw": "bold";
 	"opencode": "bold";
+	"outdent": "linear";
 	"outgoing-call": "linear";
 	"package": "linear";
 	"palette": "linear";
@@ -877,40 +1153,67 @@ export type IconVariantMap = {
 	"paperclip": "linear";
 	"pause": "linear";
 	"pen": "linear";
+	"percent": "linear";
 	"perplexity": "linear";
 	"phone": "linear";
+	"phone-off": "linear";
 	"pin": "linear";
+	"pin-off": "linear";
 	"pinterest": "bold";
 	"pip": "linear";
+	"pipette": "linear";
+	"plane": "linear";
 	"play": "linear";
 	"play-mini": "linear";
+	"playlist": "linear";
+	"podcast": "linear";
+	"pointer": "linear";
 	"power": "linear";
+	"presentation": "linear";
 	"printer": "linear";
 	"puzzle": "linear";
 	"qr-code": "linear";
+	"question-mark": "linear";
 	"quote": "linear";
 	"qwen": "bold";
 	"react": "linear";
+	"receipt": "linear";
 	"reddit": "bold";
 	"redo": "linear";
+	"refresh": "linear";
 	"reorder": "linear";
 	"repeat": "linear";
+	"repeat-one": "linear";
 	"reply": "linear";
 	"resources-add": "linear";
+	"rewind": "linear";
 	"rhombus": "linear";
 	"rocket": "linear";
+	"rotate-ccw": "linear";
+	"rotate-cw": "linear";
+	"route": "linear";
+	"router": "linear";
+	"rows": "linear";
+	"ruler": "linear";
 	"sad": "linear";
+	"save": "linear";
+	"scan": "linear";
+	"screen-share": "linear";
 	"search": "linear";
 	"send": "linear";
 	"server": "linear";
 	"settings": "linear";
 	"share": "linear";
 	"shield-add": "linear";
+	"shuffle": "linear";
 	"sidebar-bottom": "linear";
 	"sidebar-left": "linear";
 	"sidebar-right": "linear";
 	"sidebar-top": "linear";
+	"signal": "linear";
 	"sim-card": "linear";
+	"skip-back": "linear";
+	"skip-forward": "linear";
 	"slack": "bold";
 	"slash": "linear";
 	"sliders-horizontal": "linear";
@@ -921,6 +1224,8 @@ export type IconVariantMap = {
 	"smile": "linear";
 	"snapchat": "linear" | "bold";
 	"snowflake": "linear";
+	"sort-ascending": "linear";
+	"sort-descending": "linear";
 	"soundwave": "linear";
 	"sparkles": "linear";
 	"spinner": "linear";
@@ -932,14 +1237,20 @@ export type IconVariantMap = {
 	"star": "linear";
 	"star-off": "linear";
 	"sticker": "linear";
+	"sticky-note": "linear";
 	"stop": "linear";
 	"stopwatch": "linear";
+	"store": "linear";
 	"strikethrough": "linear";
 	"suitcase": "linear";
 	"sun": "linear" | "bold";
+	"sun-moon": "linear";
 	"supabase": "bold";
+	"superscript": "linear";
 	"table": "linear";
 	"tablet": "linear";
+	"tag": "linear";
+	"target": "linear";
 	"telegram": "bold";
 	"terminal": "linear";
 	"text-align-center": "linear";
@@ -947,42 +1258,58 @@ export type IconVariantMap = {
 	"text-align-justify-right": "linear";
 	"text-align-left": "linear";
 	"text-align-right": "linear";
+	"text-size": "linear";
 	"text-underline": "linear";
 	"threads": "linear";
 	"three-squares": "linear";
 	"ticket": "linear";
 	"ticket-discount": "linear";
 	"tiktok": "bold";
+	"toggle": "linear";
 	"transfer-horizontal": "linear";
 	"transfer-vertical": "linear";
 	"trash": "linear";
+	"trending-down": "linear";
+	"trending-up": "linear";
+	"trophy": "linear";
 	"truck": "linear";
+	"tv": "linear";
 	"twitter": "bold";
+	"type": "linear";
 	"typescript": "bold";
 	"undo": "linear";
 	"unfold-less": "linear";
 	"unfold-more": "linear";
+	"unlink": "linear";
 	"upload": "linear";
+	"usb": "linear";
 	"user": "linear";
 	"user-add": "linear";
 	"user-check": "linear";
 	"user-group": "linear";
+	"user-lock": "linear";
 	"user-remove": "linear";
+	"user-settings": "linear";
 	"user-x": "linear";
+	"variable": "linear";
 	"vercel": "bold";
 	"verified-check": "linear";
 	"video-camera": "linear";
 	"video-frame": "linear";
+	"video-off": "linear";
 	"volume-high": "linear";
 	"volume-low": "linear";
 	"volume-off": "linear";
 	"wallet": "linear";
 	"waves": "linear";
+	"webcam": "linear";
+	"webhook": "linear";
 	"widget": "linear";
 	"widget-add": "linear";
 	"widget-square": "linear";
 	"widget-square-add": "linear";
 	"wifi": "linear";
+	"wifi-off": "linear";
 	"wind": "linear";
 	"windsurf": "linear";
 	"x": "linear";
