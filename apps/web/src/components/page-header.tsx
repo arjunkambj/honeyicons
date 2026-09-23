@@ -18,7 +18,7 @@ export function PageHeader({
 	children?: ReactNode;
 }) {
 	return (
-		<header id={id} className={cn("scroll-mt-24", className)}>
+		<header id={id} className={cn("scroll-mt-36 xl:scroll-mt-24", className)}>
 			<p className="mb-3 text-muted-foreground text-sm">{eyebrow}</p>
 			<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
 				{title}

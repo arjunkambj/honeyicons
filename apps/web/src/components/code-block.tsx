@@ -159,15 +159,15 @@ export function CodeBlock({
 			<CopyButton
 				text={code}
 				label={`Copy ${label}`}
-				className="absolute top-2.5 right-2.5 z-10 bg-transparent"
+				className="absolute top-2.5 right-2.5 z-10 bg-card ring-4 ring-card hover:bg-muted"
 			/>
-			<pre className="overflow-x-auto py-4 font-mono text-[13px] leading-6">
+			<pre className="overflow-x-auto py-4 font-mono text-xs leading-6 sm:text-[13px]">
 				<code className="block min-w-max">
 					{lines.map((line, index) => (
-						<span key={index} className="flex px-4">
+						<span key={index} className="flex min-h-6 pr-12 pl-4">
 							<span
 								aria-hidden
-								className="w-8 shrink-0 pr-4 text-right text-muted-foreground/50 select-none"
+								className="hidden w-8 shrink-0 pr-4 text-right text-muted-foreground/50 select-none sm:block"
 							>
 								{index + 1}
 							</span>

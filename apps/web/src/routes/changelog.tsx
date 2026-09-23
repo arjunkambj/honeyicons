@@ -93,7 +93,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-007"
-						className="mt-3 scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.7 · Bold for every icon, 112 new icons, and a Weather category
 					</h2>
@@ -160,7 +160,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-006"
-						className="mt-3 scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.6 · Even rendering with translucent colors
 					</h2>
@@ -184,7 +184,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-005"
-						className="mt-3 scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.5 · Named icons and agent setup
 					</h2>
@@ -222,7 +222,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="september-12-title"
-						className="mt-3 scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						Five new icons
 					</h2>
@@ -255,7 +255,10 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<h3 id="refinements" className="mt-10 scroll-mt-24 font-medium">
+					<h3
+						id="refinements"
+						className="mt-10 scroll-mt-36 xl:scroll-mt-24 font-medium"
+					>
 						Refinements
 					</h3>
 					<ul className="mt-3 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">

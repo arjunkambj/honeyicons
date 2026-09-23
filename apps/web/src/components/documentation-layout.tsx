@@ -9,7 +9,7 @@ import {
 } from "@honeyicons/react";
 import { cn } from "@honeyicons/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
-import { type ReactNode, useEffect, useState } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import {
 	SidebarHeading,
 	sidebarClass,
@@ -35,11 +35,15 @@ export function DocumentationLayout({
 	children: ReactNode;
 }) {
 	const [active, setActive] = useState(sections[0]?.id ?? "");
+	const mobileNavRef = useRef<HTMLElement>(null);
 
 	useEffect(() => {
 		let frame = 0;
 		function update() {
-			const offset = 96;
+			const mobileNav = mobileNavRef.current;
+			const offset = mobileNav?.offsetParent
+				? mobileNav.getBoundingClientRect().bottom + 24
+				: 96;
 			let current = sections[0]?.id ?? "";
 			for (const section of sections) {
 				const element = document.getElementById(section.id);
@@ -72,9 +76,25 @@ export function DocumentationLayout({
 		};
 	}, [sections]);
 
+	useEffect(() => {
+		const link = mobileNavRef.current?.querySelector<HTMLElement>(
+			`a[href="#${active}"]`,
+		);
+		const list = link?.parentElement;
+		if (!link || !list) return;
+		const start = link.offsetLeft - 16;
+		const end = link.offsetLeft + link.offsetWidth + 16 - list.clientWidth;
+		if (list.scrollLeft > start || list.scrollLeft < end) {
+			list.scrollTo({
+				left: list.scrollLeft > start ? start : end,
+				behavior: "smooth",
+			});
+		}
+	}, [active]);
+
 	return (
 		<div className="page-shell grid items-start gap-8 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[200px_minmax(0,1fr)_180px] xl:gap-12">
-			<aside className={sidebarClass}>
+			<aside className={cn(sidebarClass, "hidden lg:block")}>
 				<nav aria-label="Documentation navigation">
 					<SidebarHeading>Overview</SidebarHeading>
 					<ul className="flex flex-wrap gap-1 lg:flex-col">
@@ -120,27 +140,26 @@ export function DocumentationLayout({
 			</aside>
 			<main className="min-w-0">
 				<nav
+					ref={mobileNavRef}
 					aria-label="On this page"
-					className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-4 text-sm xl:hidden"
+					className="sticky top-18 z-30 -mx-4 -mt-4 mb-8 border-border border-b bg-background/92 backdrop-blur-lg sm:-mx-10 sm:-mt-6 md:top-20 lg:mx-0 lg:mt-0 xl:hidden"
 				>
-					<span className="flex items-center gap-2 text-muted-foreground">
-						<Menu size={16} />
-						On this page
-					</span>
-					{sections.map(({ id, label }) => (
-						<a
-							key={id}
-							href={`#${id}`}
-							aria-current={active === id ? "location" : undefined}
-							className={cn(
-								"py-1 underline-offset-4 hover:underline",
-								active === id ? "text-foreground" : "text-muted-foreground",
-							)}
-							onClick={() => setActive(id)}
-						>
-							{label}
-						</a>
-					))}
+					<div className="flex gap-1 overflow-x-auto px-4 py-2 [scrollbar-width:none] sm:px-10 lg:px-0 [&::-webkit-scrollbar]:hidden">
+						{sections.map(({ id, label }) => (
+							<a
+								key={id}
+								href={`#${id}`}
+								aria-current={active === id ? "location" : undefined}
+								className={cn(
+									sidebarLinkClass(active === id),
+									"w-auto shrink-0 px-3",
+								)}
+								onClick={() => setActive(id)}
+							>
+								{label}
+							</a>
+						))}
+					</div>
 				</nav>
 				{children}
 			</main>

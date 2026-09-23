@@ -79,7 +79,7 @@ function DocsPage() {
 				<section
 					id="agent-skill"
 					aria-labelledby="agent-skill-title"
-					className="scroll-mt-24"
+					className="scroll-mt-36 xl:scroll-mt-24"
 				>
 					<h2
 						id="agent-skill-title"
@@ -139,18 +139,18 @@ function DocsPage() {
 					<CodeBlock code={usageCode} className="mt-6" />
 					<p className="mt-3 text-muted-foreground text-sm leading-6">
 						Icon includes the whole collection. For fixed icons, use named
-						imports such as {`import { Bell } from "@honeyicons/react"`} and{" "}
-						{"<Bell />"}
-						so your bundler can remove unused icons.
+						imports such as{" "}
+						<code>{`import { Bell } from "@honeyicons/react"`}</code> and{" "}
+						<code>{"<Bell />"}</code> so your bundler can remove unused icons.
 					</p>
-					<div className="mt-3 flex flex-wrap items-end gap-8 rounded-2xl bg-card px-5 py-4">
+					<div className="mt-3 grid grid-cols-3 items-end gap-x-2 gap-y-6 rounded-2xl bg-card px-4 py-5 sm:flex sm:flex-wrap sm:gap-8 sm:px-5 sm:py-4">
 						{usagePreview.map(({ icon, size }) => (
 							<figure
 								key={icon}
 								className="flex min-w-16 flex-col items-center gap-2"
 							>
 								<Icon icon={icon} size={size} title={icon} />
-								<figcaption className="font-mono text-muted-foreground text-xs">
+								<figcaption className="whitespace-nowrap font-mono text-muted-foreground text-xs">
 									{icon} {size}
 								</figcaption>
 							</figure>
@@ -163,7 +163,7 @@ function DocsPage() {
 					description="Every icon is drawn on a 24 × 24 grid with a 1.8 stroke and uses the current text color. Every icon also has a bold version."
 				>
 					<CodeBlock code={propsCode} className="mt-6" />
-					<div className="mt-3 flex flex-wrap items-end gap-8 rounded-2xl bg-card px-5 py-4">
+					<div className="mt-3 grid grid-cols-3 items-end gap-x-2 gap-y-6 rounded-2xl bg-card px-4 py-5 sm:flex sm:flex-wrap sm:gap-8 sm:px-5 sm:py-4">
 						<SizeSample size={16} />
 						<SizeSample size={24} />
 						<figure className="flex flex-col items-center gap-2 text-foreground">
@@ -188,7 +188,7 @@ function DocsPage() {
 					description="Screen readers skip icons by default. Put an aria-label on icon-only buttons, or give an icon a title when it needs to be read out on its own."
 				>
 					<CodeBlock code={accessibilityCode} className="mt-6" />
-					<div className="mt-3 flex flex-wrap items-center gap-6 rounded-2xl bg-card px-5 py-4">
+					<div className="mt-3 flex flex-wrap items-center gap-6 rounded-2xl bg-card px-4 py-5 sm:px-5 sm:py-4">
 						<button
 							type="button"
 							aria-label="Notifications"
@@ -244,7 +244,11 @@ function DocsSection({
 	children: ReactNode;
 }) {
 	return (
-		<section id={id} aria-labelledby={`${id}-title`} className="scroll-mt-24">
+		<section
+			id={id}
+			aria-labelledby={`${id}-title`}
+			className="scroll-mt-36 xl:scroll-mt-24"
+		>
 			<h2
 				id={`${id}-title`}
 				className="font-semibold text-2xl leading-snug tracking-tight"
