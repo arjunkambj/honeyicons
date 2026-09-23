@@ -75,6 +75,7 @@ import { Clock } from "./icons/clock.js";
 import { Close } from "./icons/close.js";
 import { Cloud } from "./icons/cloud.js";
 import { CloudDownload } from "./icons/cloud-download.js";
+import { CloudRain } from "./icons/cloud-rain.js";
 import { CloudUpload } from "./icons/cloud-upload.js";
 import { Code } from "./icons/code.js";
 import { Codex } from "./icons/codex.js";
@@ -93,6 +94,7 @@ import { Dislike } from "./icons/dislike.js";
 import { Document } from "./icons/document.js";
 import { DoorOpen } from "./icons/door-open.js";
 import { Download } from "./icons/download.js";
+import { Droplet } from "./icons/droplet.js";
 import { Edit } from "./icons/edit.js";
 import { EditOff } from "./icons/edit-off.js";
 import { Email } from "./icons/email.js";
@@ -257,6 +259,7 @@ import { SlidersVerticalAlt } from "./icons/sliders-vertical-alt.js";
 import { Smartphone } from "./icons/smartphone.js";
 import { Smile } from "./icons/smile.js";
 import { Snapchat } from "./icons/snapchat.js";
+import { Snowflake } from "./icons/snowflake.js";
 import { Soundwave } from "./icons/soundwave.js";
 import { Sparkles } from "./icons/sparkles.js";
 import { Spinner } from "./icons/spinner.js";
@@ -319,6 +322,7 @@ import { WidgetAdd } from "./icons/widget-add.js";
 import { WidgetSquare } from "./icons/widget-square.js";
 import { WidgetSquareAdd } from "./icons/widget-square-add.js";
 import { Wifi } from "./icons/wifi.js";
+import { Wind } from "./icons/wind.js";
 import { Windsurf } from "./icons/windsurf.js";
 import { X } from "./icons/x.js";
 import { Xai } from "./icons/xai.js";
@@ -925,6 +929,14 @@ export const catalog: CatalogItem[] = [
 		component: CloudDownload,
 	},
 	{
+		name: "cloud-rain",
+		pascalName: "CloudRain",
+		category: "weather",
+		tags: ["cloud","rain","weather","forecast","storm"],
+		variants: ["linear"],
+		component: CloudRain,
+	},
+	{
 		name: "cloud-upload",
 		pascalName: "CloudUpload",
 		category: "files",
@@ -1067,6 +1079,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["download","tray","import","incoming","arrow"],
 		variants: ["linear"],
 		component: Download,
+	},
+	{
+		name: "droplet",
+		pascalName: "Droplet",
+		category: "weather",
+		tags: ["droplet","water","drop","liquid","humidity"],
+		variants: ["linear"],
+		component: Droplet,
 	},
 	{
 		name: "edit",
@@ -2381,6 +2401,14 @@ export const catalog: CatalogItem[] = [
 		component: Snapchat,
 	},
 	{
+		name: "snowflake",
+		pascalName: "Snowflake",
+		category: "weather",
+		tags: ["snowflake","snow","cold","winter","freeze"],
+		variants: ["linear"],
+		component: Snowflake,
+	},
+	{
 		name: "soundwave",
 		pascalName: "Soundwave",
 		category: "media",
@@ -2875,6 +2903,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["wifi","wi-fi","wireless","network","connection","internet","solar"],
 		variants: ["linear"],
 		component: Wifi,
+	},
+	{
+		name: "wind",
+		pascalName: "Wind",
+		category: "weather",
+		tags: ["wind","air","breeze","weather","airflow"],
+		variants: ["linear"],
+		component: Wind,
 	},
 	{
 		name: "windsurf",

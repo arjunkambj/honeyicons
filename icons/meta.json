@@ -465,6 +465,9 @@
 	"cloud-download": {
 		"tags": ["cloud", "download", "storage", "save", "hugeicons"]
 	},
+	"cloud-rain": {
+		"tags": ["cloud", "rain", "weather", "forecast", "storm"]
+	},
 	"cloud-upload": {
 		"tags": ["cloud", "upload", "storage", "sync", "hugeicons"]
 	},
@@ -518,6 +521,9 @@
 	},
 	"download": {
 		"tags": ["download", "tray", "import", "incoming", "arrow"]
+	},
+	"droplet": {
+		"tags": ["droplet", "water", "drop", "liquid", "humidity"]
 	},
 	"edit": {
 		"tags": ["edit", "pencil", "write", "draw", "hugeicons", "edit-01"]
@@ -1265,6 +1271,9 @@
 	"snapchat": {
 		"tags": ["brand", "social", "snap", "ghost"]
 	},
+	"snowflake": {
+		"tags": ["snowflake", "snow", "cold", "winter", "freeze"]
+	},
 	"soundwave": {
 		"tags": ["waveform", "audio", "sound", "voice", "equalizer", "solar"]
 	},
@@ -1542,6 +1551,9 @@
 			"internet",
 			"solar"
 		]
+	},
+	"wind": {
+		"tags": ["wind", "air", "breeze", "weather", "airflow"]
 	},
 	"windsurf": {
 		"tags": ["ai", "code", "editor", "brand"]

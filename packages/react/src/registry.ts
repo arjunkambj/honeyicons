@@ -73,6 +73,7 @@ import { Clock } from "./icons/clock.js";
 import { Close } from "./icons/close.js";
 import { Cloud } from "./icons/cloud.js";
 import { CloudDownload } from "./icons/cloud-download.js";
+import { CloudRain } from "./icons/cloud-rain.js";
 import { CloudUpload } from "./icons/cloud-upload.js";
 import { Code } from "./icons/code.js";
 import { Codex } from "./icons/codex.js";
@@ -91,6 +92,7 @@ import { Dislike } from "./icons/dislike.js";
 import { Document } from "./icons/document.js";
 import { DoorOpen } from "./icons/door-open.js";
 import { Download } from "./icons/download.js";
+import { Droplet } from "./icons/droplet.js";
 import { Edit } from "./icons/edit.js";
 import { EditOff } from "./icons/edit-off.js";
 import { Email } from "./icons/email.js";
@@ -255,6 +257,7 @@ import { SlidersVerticalAlt } from "./icons/sliders-vertical-alt.js";
 import { Smartphone } from "./icons/smartphone.js";
 import { Smile } from "./icons/smile.js";
 import { Snapchat } from "./icons/snapchat.js";
+import { Snowflake } from "./icons/snowflake.js";
 import { Soundwave } from "./icons/soundwave.js";
 import { Sparkles } from "./icons/sparkles.js";
 import { Spinner } from "./icons/spinner.js";
@@ -317,6 +320,7 @@ import { WidgetAdd } from "./icons/widget-add.js";
 import { WidgetSquare } from "./icons/widget-square.js";
 import { WidgetSquareAdd } from "./icons/widget-square-add.js";
 import { Wifi } from "./icons/wifi.js";
+import { Wind } from "./icons/wind.js";
 import { Windsurf } from "./icons/windsurf.js";
 import { X } from "./icons/x.js";
 import { Xai } from "./icons/xai.js";
@@ -399,6 +403,7 @@ export const icons = {
 	"close": Close,
 	"cloud": Cloud,
 	"cloud-download": CloudDownload,
+	"cloud-rain": CloudRain,
 	"cloud-upload": CloudUpload,
 	"code": Code,
 	"codex": Codex,
@@ -417,6 +422,7 @@ export const icons = {
 	"document": Document,
 	"door-open": DoorOpen,
 	"download": Download,
+	"droplet": Droplet,
 	"edit": Edit,
 	"edit-off": EditOff,
 	"email": Email,
@@ -581,6 +587,7 @@ export const icons = {
 	"smartphone": Smartphone,
 	"smile": Smile,
 	"snapchat": Snapchat,
+	"snowflake": Snowflake,
 	"soundwave": Soundwave,
 	"sparkles": Sparkles,
 	"spinner": Spinner,
@@ -643,6 +650,7 @@ export const icons = {
 	"widget-square": WidgetSquare,
 	"widget-square-add": WidgetSquareAdd,
 	"wifi": Wifi,
+	"wind": Wind,
 	"windsurf": Windsurf,
 	"x": X,
 	"xai": Xai,
@@ -728,6 +736,7 @@ export type IconVariantMap = {
 	"close": "linear";
 	"cloud": "linear";
 	"cloud-download": "linear";
+	"cloud-rain": "linear";
 	"cloud-upload": "linear";
 	"code": "linear";
 	"codex": "bold";
@@ -746,6 +755,7 @@ export type IconVariantMap = {
 	"document": "linear";
 	"door-open": "linear";
 	"download": "linear";
+	"droplet": "linear";
 	"edit": "linear";
 	"edit-off": "linear";
 	"email": "linear";
@@ -910,6 +920,7 @@ export type IconVariantMap = {
 	"smartphone": "linear";
 	"smile": "linear";
 	"snapchat": "linear" | "bold";
+	"snowflake": "linear";
 	"soundwave": "linear";
 	"sparkles": "linear";
 	"spinner": "linear";
@@ -972,6 +983,7 @@ export type IconVariantMap = {
 	"widget-square": "linear";
 	"widget-square-add": "linear";
 	"wifi": "linear";
+	"wind": "linear";
 	"windsurf": "linear";
 	"x": "linear";
 	"xai": "linear";

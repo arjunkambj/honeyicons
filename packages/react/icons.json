@@ -1145,6 +1145,21 @@
 		]
 	},
 	{
+		"name": "cloud-rain",
+		"export": "CloudRain",
+		"category": "weather",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"cloud",
+			"rain",
+			"weather",
+			"forecast",
+			"storm"
+		]
+	},
+	{
 		"name": "cloud-upload",
 		"export": "CloudUpload",
 		"category": "files",
@@ -1410,6 +1425,21 @@
 			"import",
 			"incoming",
 			"arrow"
+		]
+	},
+	{
+		"name": "droplet",
+		"export": "Droplet",
+		"category": "weather",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"droplet",
+			"water",
+			"drop",
+			"liquid",
+			"humidity"
 		]
 	},
 	{
@@ -3942,6 +3972,21 @@
 		]
 	},
 	{
+		"name": "snowflake",
+		"export": "Snowflake",
+		"category": "weather",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"snowflake",
+			"snow",
+			"cold",
+			"winter",
+			"freeze"
+		]
+	},
+	{
 		"name": "soundwave",
 		"export": "Soundwave",
 		"category": "media",
@@ -4901,6 +4946,21 @@
 			"connection",
 			"internet",
 			"solar"
+		]
+	},
+	{
+		"name": "wind",
+		"export": "Wind",
+		"category": "weather",
+		"variants": [
+			"linear"
+		],
+		"tags": [
+			"wind",
+			"air",
+			"breeze",
+			"weather",
+			"airflow"
 		]
 	},
 	{

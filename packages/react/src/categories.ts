@@ -20,6 +20,7 @@ export const ICON_CATEGORIES = [
 	"status",
 	"time",
 	"user",
+	"weather",
 ] as const;
 
 export type IconCategory = (typeof ICON_CATEGORIES)[number];

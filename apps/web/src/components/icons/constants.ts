@@ -7,6 +7,7 @@ import {
 	Chat,
 	Check,
 	Clock,
+	CloudRain,
 	Code,
 	Figma,
 	Folder,
@@ -57,6 +58,7 @@ export const CATEGORY_DETAILS: Record<CategoryFilter, CategoryMeta> = {
 	status: { label: "Status", icon: AlertTriangle },
 	time: { label: "Time", icon: Clock },
 	user: { label: "Users", icon: User },
+	weather: { label: "Weather", icon: CloudRain },
 };
 
 export const CATEGORY_META = (["all", ...ICON_CATEGORIES] as const).map(
