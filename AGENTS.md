@@ -33,3 +33,13 @@
 - Reuse the existing curved arrowhead geometry in arrow-bearing icons, including cloud transfers and import/export. Scale the complete arrowhead and preserve the curved tip instead of substituting a sharp elbow or narrow chevron.
 
 - Slider families use perpendicular bar handles with a 1.8-unit stroke and round caps and joins. Each handle joins its track on one side, with a clear gap on the opposite side. Do not use circular handles. Main variants have three tracks; Alt variants have two. Horizontal and vertical versions are rotations of the same geometry.
+- In a file with stroked nodes, give every filled node `stroke="none"`; otherwise it inherits the 1.8 root stroke and thickens.
+
+## Bold variants
+
+- Derive each bold icon only from its own linear file, in Solar's bold style. Keep the linear silhouette and fill every enclosed region.
+- A linear line with fill on both sides becomes a 1.8-unit gap. Dividers, header lines, folds, stripes, lid edges, and slashes that meet the outer frame cut all the way through and split the fill into pieces. Knock out floating details with round caps. Never leave a thin bridge of frame across the end of a gap.
+- Keep the front of stacked shapes whole, and trim the visible back piece 1.8 units clear of it.
+- Close a frame that is open only for a symbol and fill it. Symbols in a corner use one notch: the symbol's bounds plus 1.8, a 2-unit inner corner, and 0.9-unit rounding on the trimmed frame corners. `*-off` variants remove the slash plus 1.5 units on each side, then add the slash back.
+- Line-only icons keep the linear file byte-identical. Letter counters, handle openings, and real holes, such as the life-buoy centre, stay open.
+- Leave no slivers or bridges under 1.2 units, islands under 0.8 square units, spurs, or bumps. When linear spacing causes one, fix linear first. Output a single `currentColor` fill path.
