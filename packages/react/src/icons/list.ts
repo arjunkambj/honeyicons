@@ -4,9 +4,9 @@ import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
 	["path", { d: "M8.8994 4.461H21.8234M8.8994 12H21.8234M8.8994 19.539H21.8234", stroke: "currentColor" }],
-	["circle", { cx: "2.4374", cy: "4.461", r: "1.2385", fill: "currentColor" }],
-	["circle", { cx: "2.4374", cy: "12", r: "1.2385", fill: "currentColor" }],
-	["circle", { cx: "2.4374", cy: "19.539", r: "1.2385", fill: "currentColor" }],
+	["circle", { cx: "3.1", cy: "4.461", r: "1.9", fill: "currentColor", stroke: "none" }],
+	["circle", { cx: "3.1", cy: "12", r: "1.9", fill: "currentColor", stroke: "none" }],
+	["circle", { cx: "3.1", cy: "19.539", r: "1.9", fill: "currentColor", stroke: "none" }],
 ];
 
 export const List = /* @__PURE__ */ createIcon("List", {
