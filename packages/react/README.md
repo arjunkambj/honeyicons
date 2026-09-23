@@ -96,17 +96,6 @@ export const Divider = createIcon("Divider", {
 });
 ```
 
-## Upgrading to 0.0.5
-
-- The low-level `Icon iconNode={...}` API is replaced by `Icon icon="name"`.
-  Use `createIcon` for custom SVG nodes.
-- Deprecated icon aliases have been removed. Use the canonical exports listed
-  in `icons.json`.
-- Only `linear` and `bold` are supported. Unsupported variants throw instead of
-  substituting another style. Unused `secondaryColor` and `secondaryOpacity`
-  props have been removed.
-- Shapes are now in `objects`, and spinners are in `status`.
-
 ## Agent skill
 
 Coding agents such as Claude Code, Codex, and Cursor can install the Honeyicons
