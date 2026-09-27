@@ -3,12 +3,12 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["circle", { cx: "5", cy: "8", r: "1.9", fill: "currentColor" }],
-	["circle", { cx: "5", cy: "16", r: "1.9", fill: "currentColor" }],
-	["circle", { cx: "12", cy: "8", r: "1.9", fill: "currentColor" }],
-	["circle", { cx: "12", cy: "16", r: "1.9", fill: "currentColor" }],
-	["circle", { cx: "19", cy: "8", r: "1.9", fill: "currentColor" }],
-	["circle", { cx: "19", cy: "16", r: "1.9", fill: "currentColor" }],
+	["circle", { cx: "5", cy: "8.5", r: "1.9", fill: "currentColor" }],
+	["circle", { cx: "5", cy: "15.5", r: "1.9", fill: "currentColor" }],
+	["circle", { cx: "12", cy: "8.5", r: "1.9", fill: "currentColor" }],
+	["circle", { cx: "12", cy: "15.5", r: "1.9", fill: "currentColor" }],
+	["circle", { cx: "19", cy: "8.5", r: "1.9", fill: "currentColor" }],
+	["circle", { cx: "19", cy: "15.5", r: "1.9", fill: "currentColor" }],
 ];
 
 export const GripHorizontal = /* @__PURE__ */ createIcon("GripHorizontal", {
