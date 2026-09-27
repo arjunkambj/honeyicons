@@ -41,6 +41,7 @@
 - A linear line with fill on both sides becomes a 1.8-unit gap. Dividers, header lines, folds, stripes, lid edges, and slashes that meet the outer frame cut all the way through and split the fill into pieces. Knock out floating details with round caps. Never leave a thin bridge of frame across the end of a gap.
 - Keep the front of stacked shapes whole, and trim the visible back piece 1.8 units clear of it.
 - Close a frame that is open only for a symbol and fill it. Symbols in a corner use one notch: the symbol's bounds plus 1.8, a 2-unit inner corner, and 0.9-unit rounding on the trimmed frame corners. `*-off` variants remove the slash plus 1.5 units on each side, then add the slash back.
+- Door brackets and trays around an arrow, as in `login`, `logout`, `download`, and `upload`, are frames, not lines. Close them with a chord between the end caps and fill them. Keep the arrow whole and trim the frame 1.8 clear of it, rounding the cut corners 0.9, as the cloud transfers do.
 - Line-only icons keep the linear file byte-identical. Letter counters, handle openings, and real holes, such as the life-buoy centre, stay open.
 - Leave no slivers or bridges under 1.2 units, islands under 0.8 square units, spurs, or bumps. When linear spacing causes one, fix linear first. Output a single `currentColor` fill path.
 
