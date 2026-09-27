@@ -27,7 +27,7 @@ Icon includes the full collection in the bundle. For fixed icons, use named impo
 - Use size={16} or size={24} for common interface sizes.
 - Preserve supplied filled geometry. Some linear icons use filled outlines; strokeWidth does not change their baked-in weight.
 - The variant prop accepts "linear" or "bold". Every icon has both and defaults to linear; any other variant throws.
-- Bold fills enclosed shapes and cuts inner lines through the fill. Line-only icons such as arrows, and solid brand marks, use the same drawing in both variants.
+- Bold fills enclosed shapes and cuts inner lines through the fill. Line-only icons such as arrows, and solid brand marks, use the same drawing in both variants. Brands whose logo has a line form, such as instagram and meta, are outlines in linear and the filled logo in bold.
 - Brand logos with official colors also ship as <name>-color, such as google-color and claude-ai-color. They keep their brand colors; only neutral parts such as the TikTok note follow the text color.
 - The icon index at https://cdn.jsdelivr.net/npm/@honeyicons/react@latest/icons.json lists each icon's name, export, category, variants, and tags.
 

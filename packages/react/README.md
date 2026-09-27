@@ -78,8 +78,10 @@ children such as `<desc>` are supported.
 Every icon comes in `linear` and `bold`, and defaults to `linear`. Bold fills
 enclosed shapes and cuts inner lines through the fill. Line-only icons such as
 arrows and chevrons, and solid brand marks such as `youtube`, use the same
-drawing in both. Any other variant throws. Stroke width affects stroked
-geometry; filled outlines retain their original geometry.
+drawing in both. Brands whose logo has a line form, such as `instagram` and
+`meta`, are outlines in `linear` and the filled logo in `bold`. Any other
+variant throws. Stroke width affects stroked geometry; filled outlines retain
+their original geometry.
 
 Brand logos with official colors also come as `<name>-color`, such as
 `google-color` and `claude-ai-color`. They keep their brand colors; only
