@@ -7,7 +7,10 @@ import {
 	ClaudeAiColor,
 	Clock,
 	Cloud,
+	CloudDownload,
+	CloudUpload,
 	CloudRain,
+	Download,
 	EyeOff,
 	Film,
 	FolderOpen,
@@ -18,6 +21,7 @@ import {
 	Heading1,
 	Key,
 	Laptop,
+	Login,
 	Logout,
 	Receipt,
 	SlackColor,
@@ -27,6 +31,7 @@ import {
 	UserAdd,
 	UserCheck,
 	UserGroup,
+	Upload,
 	UserLock,
 	VerifiedCheck,
 	VolumeOff,
@@ -39,6 +44,7 @@ import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0011", label: "0.0.11 · Bold frames" },
 	{ id: "version-0010", label: "0.0.10 · Consistency pass" },
 	{ id: "version-009", label: "0.0.9 · Brand colors" },
 	{ id: "version-008", label: "0.0.8 · Redrawn icons" },
@@ -67,6 +73,15 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version0011Highlights = [
+	{ name: "Login", Icon: Login },
+	{ name: "Logout", Icon: Logout },
+	{ name: "Download", Icon: Download },
+	{ name: "Upload", Icon: Upload },
+	{ name: "CloudDownload", Icon: CloudDownload },
+	{ name: "CloudUpload", Icon: CloudUpload },
 ] as const;
 
 const version0010Highlights = [
@@ -135,6 +150,42 @@ function ChangelogPage() {
 					title="Changelog"
 					description="New icons and small improvements to the collection."
 				/>
+				<section
+					aria-labelledby="version-0011"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-09-27" className="text-muted-foreground text-sm">
+						September 27, 2026
+					</time>
+					<h2
+						id="version-0011"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.11 · Filled frames in bold
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version0011Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center rounded-xl bg-card"
+							>
+								<Icon size={24} variant="bold" aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Bold Login, Logout, Download, and Upload fill their door and tray
+							and keep the arrow whole with a clear gap, like CloudDownload and
+							CloudUpload. They were the same as linear before.
+						</li>
+						<li>
+							Honeyicons is released under the MIT License, and the package now
+							includes the license file.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0010"
 					className="border-t border-border pt-8"
