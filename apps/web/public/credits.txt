@@ -417,6 +417,22 @@ gradients sampled from Microsoft's 2026 Copilot icon.
 The TikTok note and the Kimi tile use `currentColor`, so they flip with the
 text color on dark backgrounds as those brands' own marks do.
 
+## Meta and Google Ads
+
+The bold `Meta` joins the three pieces of the official Meta symbol, as
+published in the [SVG Logos](https://github.com/gilbarbara/logos) collection
+under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/), into one
+outline 21 units wide. The linear `Meta` traces the ribbon's centerline as a
+single 1.8-unit line whose outer edge meets the bold mark's footprint.
+`MetaColor` keeps the three official pieces and their gradients.
+
+`GoogleAds` redraws Google's Ads product logo from its construction: a bar, a
+capsule, and a dot of equal width on an equilateral triangle, 21 units wide.
+As in the [Simple Icons](https://simpleicons.org) mono mark, the bar is trimmed
+clear of the capsule and dot, here by 1.5 units. Linear and bold share this
+drawing. `GoogleAdsColor` paints the untrimmed pieces in Google's yellow, blue,
+and green.
+
 Brand names and logos are trademarks of their respective owners and appear
 here only to identify their products.
 

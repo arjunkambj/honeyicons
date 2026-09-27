@@ -3019,6 +3019,41 @@
 		]
 	},
 	{
+		"name": "google-ads",
+		"export": "GoogleAds",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"google",
+			"ads",
+			"adwords",
+			"advertising",
+			"marketing",
+			"brand"
+		]
+	},
+	{
+		"name": "google-ads-color",
+		"export": "GoogleAdsColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"google",
+			"ads",
+			"adwords",
+			"advertising",
+			"marketing",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "google-color",
 		"export": "GoogleColor",
 		"category": "brands",
@@ -4280,6 +4315,22 @@
 		]
 	},
 	{
+		"name": "meta",
+		"export": "Meta",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"meta",
+			"facebook",
+			"social",
+			"ads",
+			"brand"
+		]
+	},
+	{
 		"name": "meta-ai",
 		"export": "MetaAi",
 		"category": "brands",
@@ -4307,6 +4358,23 @@
 			"meta",
 			"ai",
 			"assistant",
+			"color"
+		]
+	},
+	{
+		"name": "meta-color",
+		"export": "MetaColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"meta",
+			"facebook",
+			"social",
+			"ads",
+			"brand",
 			"color"
 		]
 	},

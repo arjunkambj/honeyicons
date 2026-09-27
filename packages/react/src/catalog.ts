@@ -186,6 +186,8 @@ import { Github } from "./icons/github.js";
 import { GithubCopilot } from "./icons/github-copilot.js";
 import { Globe } from "./icons/globe.js";
 import { Google } from "./icons/google.js";
+import { GoogleAds } from "./icons/google-ads.js";
+import { GoogleAdsColor } from "./icons/google-ads-color.js";
 import { GoogleColor } from "./icons/google-color.js";
 import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
@@ -263,8 +265,10 @@ import { MarketAnalysis } from "./icons/market-analysis.js";
 import { Maximize } from "./icons/maximize.js";
 import { Megaphone } from "./icons/megaphone.js";
 import { Menu } from "./icons/menu.js";
+import { Meta } from "./icons/meta.js";
 import { MetaAi } from "./icons/meta-ai.js";
 import { MetaAiColor } from "./icons/meta-ai-color.js";
+import { MetaColor } from "./icons/meta-color.js";
 import { Microphone } from "./icons/microphone.js";
 import { MicrophoneOff } from "./icons/microphone-off.js";
 import { MicrosoftCopilot } from "./icons/microsoft-copilot.js";
@@ -1964,6 +1968,22 @@ export const catalog: CatalogItem[] = [
 		component: Google,
 	},
 	{
+		name: "google-ads",
+		pascalName: "GoogleAds",
+		category: "brands",
+		tags: ["google","ads","adwords","advertising","marketing","brand"],
+		variants: ["linear","bold"],
+		component: GoogleAds,
+	},
+	{
+		name: "google-ads-color",
+		pascalName: "GoogleAdsColor",
+		category: "brands",
+		tags: ["google","ads","adwords","advertising","marketing","brand","color"],
+		variants: ["linear","bold"],
+		component: GoogleAdsColor,
+	},
+	{
 		name: "google-color",
 		pascalName: "GoogleColor",
 		category: "brands",
@@ -2580,6 +2600,14 @@ export const catalog: CatalogItem[] = [
 		component: Menu,
 	},
 	{
+		name: "meta",
+		pascalName: "Meta",
+		category: "brands",
+		tags: ["meta","facebook","social","ads","brand"],
+		variants: ["linear","bold"],
+		component: Meta,
+	},
+	{
 		name: "meta-ai",
 		pascalName: "MetaAi",
 		category: "brands",
@@ -2594,6 +2622,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["brand","meta","ai","assistant","color"],
 		variants: ["linear","bold"],
 		component: MetaAiColor,
+	},
+	{
+		name: "meta-color",
+		pascalName: "MetaColor",
+		category: "brands",
+		tags: ["meta","facebook","social","ads","brand","color"],
+		variants: ["linear","bold"],
+		component: MetaColor,
 	},
 	{
 		name: "microphone",

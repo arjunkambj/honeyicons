@@ -854,6 +854,20 @@
 	"google": {
 		"tags": ["search", "alphabet", "brand"]
 	},
+	"google-ads": {
+		"tags": ["google", "ads", "adwords", "advertising", "marketing", "brand"]
+	},
+	"google-ads-color": {
+		"tags": [
+			"google",
+			"ads",
+			"adwords",
+			"advertising",
+			"marketing",
+			"brand",
+			"color"
+		]
+	},
 	"google-color": {
 		"tags": ["search", "alphabet", "brand", "color"]
 	},
@@ -1202,11 +1216,17 @@
 			"hamburger"
 		]
 	},
+	"meta": {
+		"tags": ["meta", "facebook", "social", "ads", "brand"]
+	},
 	"meta-ai": {
 		"tags": ["brand", "meta", "ai", "assistant"]
 	},
 	"meta-ai-color": {
 		"tags": ["brand", "meta", "ai", "assistant", "color"]
+	},
+	"meta-color": {
+		"tags": ["meta", "facebook", "social", "ads", "brand", "color"]
 	},
 	"microphone": {
 		"tags": ["mic", "record", "voice", "audio", "solar"]

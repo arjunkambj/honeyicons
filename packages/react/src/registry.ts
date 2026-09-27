@@ -184,6 +184,8 @@ import { Github } from "./icons/github.js";
 import { GithubCopilot } from "./icons/github-copilot.js";
 import { Globe } from "./icons/globe.js";
 import { Google } from "./icons/google.js";
+import { GoogleAds } from "./icons/google-ads.js";
+import { GoogleAdsColor } from "./icons/google-ads-color.js";
 import { GoogleColor } from "./icons/google-color.js";
 import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
@@ -261,8 +263,10 @@ import { MarketAnalysis } from "./icons/market-analysis.js";
 import { Maximize } from "./icons/maximize.js";
 import { Megaphone } from "./icons/megaphone.js";
 import { Menu } from "./icons/menu.js";
+import { Meta } from "./icons/meta.js";
 import { MetaAi } from "./icons/meta-ai.js";
 import { MetaAiColor } from "./icons/meta-ai-color.js";
+import { MetaColor } from "./icons/meta-color.js";
 import { Microphone } from "./icons/microphone.js";
 import { MicrophoneOff } from "./icons/microphone-off.js";
 import { MicrosoftCopilot } from "./icons/microsoft-copilot.js";
@@ -661,6 +665,8 @@ export const icons = {
 	"github-copilot": GithubCopilot,
 	"globe": Globe,
 	"google": Google,
+	"google-ads": GoogleAds,
+	"google-ads-color": GoogleAdsColor,
 	"google-color": GoogleColor,
 	"graduation-cap": GraduationCap,
 	"grip-horizontal": GripHorizontal,
@@ -738,8 +744,10 @@ export const icons = {
 	"maximize": Maximize,
 	"megaphone": Megaphone,
 	"menu": Menu,
+	"meta": Meta,
 	"meta-ai": MetaAi,
 	"meta-ai-color": MetaAiColor,
+	"meta-color": MetaColor,
 	"microphone": Microphone,
 	"microphone-off": MicrophoneOff,
 	"microsoft-copilot": MicrosoftCopilot,
@@ -1141,6 +1149,8 @@ export type IconVariantMap = {
 	"github-copilot": "linear" | "bold";
 	"globe": "linear" | "bold";
 	"google": "linear" | "bold";
+	"google-ads": "linear" | "bold";
+	"google-ads-color": "linear" | "bold";
 	"google-color": "linear" | "bold";
 	"graduation-cap": "linear" | "bold";
 	"grip-horizontal": "linear" | "bold";
@@ -1218,8 +1228,10 @@ export type IconVariantMap = {
 	"maximize": "linear" | "bold";
 	"megaphone": "linear" | "bold";
 	"menu": "linear" | "bold";
+	"meta": "linear" | "bold";
 	"meta-ai": "linear" | "bold";
 	"meta-ai-color": "linear" | "bold";
+	"meta-color": "linear" | "bold";
 	"microphone": "linear" | "bold";
 	"microphone-off": "linear" | "bold";
 	"microsoft-copilot": "linear" | "bold";
