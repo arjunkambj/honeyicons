@@ -42,6 +42,9 @@
 	"antigravity": {
 		"tags": ["ai", "code", "editor", "brand"]
 	},
+	"antigravity-color": {
+		"tags": ["ai", "code", "editor", "brand", "color"]
+	},
 	"app-window": {
 		"tags": ["app", "window", "browser", "application", "frame"]
 	},
@@ -204,6 +207,9 @@
 	"bluesky": {
 		"tags": ["bluesky", "bsky", "social", "butterfly", "brand"]
 	},
+	"bluesky-color": {
+		"tags": ["bluesky", "bsky", "social", "butterfly", "brand", "color"]
+	},
 	"bluetooth": {
 		"tags": ["bluetooth", "wireless", "connection", "solar"]
 	},
@@ -271,6 +277,9 @@
 	},
 	"bun": {
 		"tags": ["javascript", "runtime", "brand"]
+	},
+	"bun-color": {
+		"tags": ["javascript", "runtime", "brand", "color"]
 	},
 	"calculator": {
 		"tags": ["calculator", "math", "arithmetic", "calculate", "solar"]
@@ -489,6 +498,9 @@
 	"chrome": {
 		"tags": ["brand", "chrome", "google", "browser"]
 	},
+	"chrome-color": {
+		"tags": ["brand", "chrome", "google", "browser", "color"]
+	},
 	"clapperboard": {
 		"tags": ["film", "movie", "video", "play", "clapperboard-play", "solar"]
 	},
@@ -498,8 +510,14 @@
 	"claude-ai": {
 		"tags": ["claude", "anthropic", "ai", "assistant", "brand"]
 	},
+	"claude-ai-color": {
+		"tags": ["claude", "anthropic", "ai", "assistant", "brand", "color"]
+	},
 	"claude-code": {
 		"tags": ["claude", "anthropic", "ai", "code", "terminal", "brand"]
+	},
+	"claude-code-color": {
+		"tags": ["claude", "anthropic", "ai", "code", "terminal", "brand", "color"]
 	},
 	"clipboard": {
 		"tags": ["clipboard", "copy", "paste", "board", "solar"]
@@ -544,6 +562,9 @@
 	"codex": {
 		"tags": ["openai", "ai", "coding", "brand"]
 	},
+	"codex-color": {
+		"tags": ["openai", "ai", "coding", "brand", "color"]
+	},
 	"columns": {
 		"tags": ["columns", "split", "layout", "two-column", "panel"]
 	},
@@ -583,14 +604,23 @@
 	"deepseek": {
 		"tags": ["ai", "whale", "brand"]
 	},
+	"deepseek-color": {
+		"tags": ["ai", "whale", "brand", "color"]
+	},
 	"devin": {
 		"tags": ["ai", "code", "agent", "brand"]
+	},
+	"devin-color": {
+		"tags": ["ai", "code", "agent", "brand", "color"]
 	},
 	"diamond": {
 		"tags": ["diamond", "shape", "geometry", "rhombus", "hugeicons"]
 	},
 	"discord": {
 		"tags": ["chat", "community", "brand"]
+	},
+	"discord-color": {
+		"tags": ["chat", "community", "brand", "color"]
 	},
 	"dislike": {
 		"tags": ["thumbs-down", "disapprove", "feedback", "hugeicons"]
@@ -648,8 +678,14 @@
 	"facebook": {
 		"tags": ["meta", "social", "brand"]
 	},
+	"facebook-color": {
+		"tags": ["meta", "social", "brand", "color"]
+	},
 	"figma": {
 		"tags": ["figma", "design", "brand", "solar"]
+	},
+	"figma-color": {
+		"tags": ["figma", "design", "brand", "color"]
 	},
 	"file": {
 		"tags": ["document", "page", "paper", "blank", "solar"]
@@ -765,6 +801,9 @@
 	"gemini": {
 		"tags": ["google", "ai", "brand"]
 	},
+	"gemini-color": {
+		"tags": ["google", "ai", "brand", "color"]
+	},
 	"gift": {
 		"tags": ["gift", "present", "reward", "surprise", "box", "ribbon"]
 	},
@@ -773,6 +812,9 @@
 	},
 	"git-branch": {
 		"tags": ["git", "branch", "version-control", "source-control", "solar"]
+	},
+	"git-color": {
+		"tags": ["version-control", "repository", "code", "brand", "color"]
 	},
 	"git-commit": {
 		"tags": ["git", "commit", "version", "history", "node"]
@@ -811,6 +853,9 @@
 	},
 	"google": {
 		"tags": ["search", "alphabet", "brand"]
+	},
+	"google-color": {
+		"tags": ["search", "alphabet", "brand", "color"]
 	},
 	"graduation-cap": {
 		"tags": ["graduation", "education", "learning", "course", "school"]
@@ -933,6 +978,9 @@
 	"instagram": {
 		"tags": ["instagram", "social", "photos", "brand", "insta"]
 	},
+	"instagram-color": {
+		"tags": ["instagram", "social", "photos", "brand", "insta", "color"]
+	},
 	"integration": {
 		"tags": ["flow", "workflow", "connect", "nodes", "hugeicons"]
 	},
@@ -957,6 +1005,9 @@
 	},
 	"kimi": {
 		"tags": ["ai", "assistant", "moonshot", "brand"]
+	},
+	"kimi-color": {
+		"tags": ["ai", "assistant", "moonshot", "brand", "color"]
 	},
 	"laptop": {
 		"tags": ["laptop", "notebook", "computer", "device", "macbook"]
@@ -999,6 +1050,9 @@
 	},
 	"linkedin": {
 		"tags": ["brand", "linkedin"]
+	},
+	"linkedin-color": {
+		"tags": ["brand", "linkedin", "color"]
 	},
 	"list": {
 		"tags": ["list", "bullets", "items", "editor", "hugeicons"]
@@ -1151,6 +1205,9 @@
 	"meta-ai": {
 		"tags": ["brand", "meta", "ai", "assistant"]
 	},
+	"meta-ai-color": {
+		"tags": ["brand", "meta", "ai", "assistant", "color"]
+	},
 	"microphone": {
 		"tags": ["mic", "record", "voice", "audio", "solar"]
 	},
@@ -1160,6 +1217,17 @@
 	"microsoft-copilot": {
 		"tags": ["microsoft", "copilot", "ai", "assistant", "brand", "ms-copilot"]
 	},
+	"microsoft-copilot-color": {
+		"tags": [
+			"microsoft",
+			"copilot",
+			"ai",
+			"assistant",
+			"brand",
+			"ms-copilot",
+			"color"
+		]
+	},
 	"minimize": {
 		"tags": ["collapse", "shrink", "restore", "resize", "arrows"]
 	},
@@ -1168,6 +1236,9 @@
 	},
 	"mistral": {
 		"tags": ["ai", "brand"]
+	},
+	"mistral-color": {
+		"tags": ["ai", "brand", "color"]
 	},
 	"moon": {
 		"tags": ["moon", "night", "dark", "theme", "crescent", "solar"]
@@ -1214,8 +1285,14 @@
 	"npm": {
 		"tags": ["package", "registry", "javascript", "brand"]
 	},
+	"npm-color": {
+		"tags": ["package", "registry", "javascript", "brand", "color"]
+	},
 	"nvidia": {
 		"tags": ["brand", "nvidia", "gpu", "hardware"]
+	},
+	"nvidia-color": {
+		"tags": ["brand", "nvidia", "gpu", "hardware", "color"]
 	},
 	"octagon-x": {
 		"tags": ["octagon", "x", "error", "stop", "close", "cancel", "danger"]
@@ -1225,6 +1302,9 @@
 	},
 	"openclaw": {
 		"tags": ["open-claw", "ai", "mascot", "brand"]
+	},
+	"openclaw-color": {
+		"tags": ["open-claw", "ai", "mascot", "brand", "color"]
 	},
 	"opencode": {
 		"tags": ["open-code", "code", "terminal", "brand"]
@@ -1267,6 +1347,9 @@
 	"perplexity": {
 		"tags": ["brand", "perplexity", "ai", "search"]
 	},
+	"perplexity-color": {
+		"tags": ["brand", "perplexity", "ai", "search", "color"]
+	},
 	"phone": {
 		"tags": ["phone", "call", "telephone", "contact", "solar"]
 	},
@@ -1281,6 +1364,9 @@
 	},
 	"pinterest": {
 		"tags": ["social", "pins", "brand"]
+	},
+	"pinterest-color": {
+		"tags": ["social", "pins", "brand", "color"]
 	},
 	"pip": {
 		"tags": ["picture-in-picture", "pip", "window", "video", "overlay", "solar"]
@@ -1337,14 +1423,23 @@
 	"qwen": {
 		"tags": ["ai", "alibaba", "brand"]
 	},
+	"qwen-color": {
+		"tags": ["ai", "alibaba", "brand", "color"]
+	},
 	"react": {
 		"tags": ["javascript", "framework", "frontend", "brand"]
+	},
+	"react-color": {
+		"tags": ["javascript", "framework", "frontend", "brand", "color"]
 	},
 	"receipt": {
 		"tags": ["receipt", "bill", "invoice", "order", "billing"]
 	},
 	"reddit": {
 		"tags": ["community", "social", "brand"]
+	},
+	"reddit-color": {
+		"tags": ["community", "social", "brand", "color"]
 	},
 	"redo": {
 		"tags": ["history", "forward", "repeat", "arrow"]
@@ -1487,6 +1582,9 @@
 	"slack": {
 		"tags": ["messaging", "chat", "team", "workplace", "brand"]
 	},
+	"slack-color": {
+		"tags": ["messaging", "chat", "team", "workplace", "brand", "color"]
+	},
 	"slash": {
 		"tags": ["slash", "divide", "diagonal", "separator"]
 	},
@@ -1542,6 +1640,9 @@
 	},
 	"snapchat": {
 		"tags": ["brand", "social", "snap", "ghost"]
+	},
+	"snapchat-color": {
+		"tags": ["brand", "social", "snap", "ghost", "color"]
 	},
 	"snowflake": {
 		"tags": ["snowflake", "snow", "cold", "winter", "freeze"]
@@ -1648,6 +1749,9 @@
 	"supabase": {
 		"tags": ["database", "backend", "brand"]
 	},
+	"supabase-color": {
+		"tags": ["database", "backend", "brand", "color"]
+	},
 	"superscript": {
 		"tags": ["superscript", "exponent", "power", "text"]
 	},
@@ -1665,6 +1769,9 @@
 	},
 	"telegram": {
 		"tags": ["messaging", "chat", "social", "brand", "paper-plane"]
+	},
+	"telegram-color": {
+		"tags": ["messaging", "chat", "social", "brand", "paper-plane", "color"]
 	},
 	"terminal": {
 		"tags": ["code", "console", "command", "shell", "prompt", "cli"]
@@ -1721,6 +1828,9 @@
 	"tiktok": {
 		"tags": ["brand", "tiktok"]
 	},
+	"tiktok-color": {
+		"tags": ["brand", "tiktok", "color"]
+	},
 	"toggle": {
 		"tags": ["toggle", "switch", "on", "setting", "feature-flag"]
 	},
@@ -1751,11 +1861,17 @@
 	"twitter": {
 		"tags": ["bird", "social", "brand"]
 	},
+	"twitter-color": {
+		"tags": ["bird", "social", "brand", "color"]
+	},
 	"type": {
 		"tags": ["type", "text", "font", "typography", "letter"]
 	},
 	"typescript": {
 		"tags": ["typescript", "javascript", "language", "brand", "ts"]
+	},
+	"typescript-color": {
+		"tags": ["typescript", "javascript", "language", "brand", "ts", "color"]
 	},
 	"undo": {
 		"tags": ["history", "back", "revert", "arrow"]
@@ -1910,6 +2026,9 @@
 	},
 	"youtube": {
 		"tags": ["brand", "youtube", "video", "google"]
+	},
+	"youtube-color": {
+		"tags": ["brand", "youtube", "video", "google", "color"]
 	},
 	"zai": {
 		"tags": ["z.ai", "ai", "brand"]

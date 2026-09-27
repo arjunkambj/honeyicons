@@ -9,6 +9,7 @@ import { AlignCenterHorizontal } from "./icons/align-center-horizontal.js";
 import { Analytics } from "./icons/analytics.js";
 import { Anthropic } from "./icons/anthropic.js";
 import { Antigravity } from "./icons/antigravity.js";
+import { AntigravityColor } from "./icons/antigravity-color.js";
 import { AppWindow } from "./icons/app-window.js";
 import { Archive } from "./icons/archive.js";
 import { ArchiveAlt } from "./icons/archive-alt.js";
@@ -34,6 +35,7 @@ import { Bell } from "./icons/bell.js";
 import { BellOff } from "./icons/bell-off.js";
 import { BellRing } from "./icons/bell-ring.js";
 import { Bluesky } from "./icons/bluesky.js";
+import { BlueskyColor } from "./icons/bluesky-color.js";
 import { Bluetooth } from "./icons/bluetooth.js";
 import { Bold } from "./icons/bold.js";
 import { Bolt } from "./icons/bolt.js";
@@ -49,6 +51,7 @@ import { Broadcast } from "./icons/broadcast.js";
 import { Bug } from "./icons/bug.js";
 import { Building } from "./icons/building.js";
 import { Bun } from "./icons/bun.js";
+import { BunColor } from "./icons/bun-color.js";
 import { Calculator } from "./icons/calculator.js";
 import { Calendar } from "./icons/calendar.js";
 import { CalendarAdd } from "./icons/calendar-add.js";
@@ -81,10 +84,13 @@ import { ChevronsLeft } from "./icons/chevrons-left.js";
 import { ChevronsRight } from "./icons/chevrons-right.js";
 import { ChevronsUp } from "./icons/chevrons-up.js";
 import { Chrome } from "./icons/chrome.js";
+import { ChromeColor } from "./icons/chrome-color.js";
 import { Clapperboard } from "./icons/clapperboard.js";
 import { ClapperboardText } from "./icons/clapperboard-text.js";
 import { ClaudeAi } from "./icons/claude-ai.js";
+import { ClaudeAiColor } from "./icons/claude-ai-color.js";
 import { ClaudeCode } from "./icons/claude-code.js";
+import { ClaudeCodeColor } from "./icons/claude-code-color.js";
 import { Clipboard } from "./icons/clipboard.js";
 import { ClipboardAdd } from "./icons/clipboard-add.js";
 import { ClipboardCheck } from "./icons/clipboard-check.js";
@@ -97,6 +103,7 @@ import { CloudRain } from "./icons/cloud-rain.js";
 import { CloudUpload } from "./icons/cloud-upload.js";
 import { Code } from "./icons/code.js";
 import { Codex } from "./icons/codex.js";
+import { CodexColor } from "./icons/codex-color.js";
 import { Columns } from "./icons/columns.js";
 import { Command } from "./icons/command.js";
 import { Computer } from "./icons/computer.js";
@@ -110,9 +117,12 @@ import { CursorClick } from "./icons/cursor-click.js";
 import { Dashboard } from "./icons/dashboard.js";
 import { Database } from "./icons/database.js";
 import { Deepseek } from "./icons/deepseek.js";
+import { DeepseekColor } from "./icons/deepseek-color.js";
 import { Devin } from "./icons/devin.js";
+import { DevinColor } from "./icons/devin-color.js";
 import { Diamond } from "./icons/diamond.js";
 import { Discord } from "./icons/discord.js";
+import { DiscordColor } from "./icons/discord-color.js";
 import { Dislike } from "./icons/dislike.js";
 import { Document } from "./icons/document.js";
 import { Dollar } from "./icons/dollar.js";
@@ -128,7 +138,9 @@ import { Eye } from "./icons/eye.js";
 import { EyeClosed } from "./icons/eye-closed.js";
 import { EyeOff } from "./icons/eye-off.js";
 import { Facebook } from "./icons/facebook.js";
+import { FacebookColor } from "./icons/facebook-color.js";
 import { Figma } from "./icons/figma.js";
+import { FigmaColor } from "./icons/figma-color.js";
 import { File } from "./icons/file.js";
 import { FileAdd } from "./icons/file-add.js";
 import { FileArchive } from "./icons/file-archive.js";
@@ -157,9 +169,11 @@ import { Forward } from "./icons/forward.js";
 import { Gamepad } from "./icons/gamepad.js";
 import { Gauge } from "./icons/gauge.js";
 import { Gemini } from "./icons/gemini.js";
+import { GeminiColor } from "./icons/gemini-color.js";
 import { Gift } from "./icons/gift.js";
 import { Git } from "./icons/git.js";
 import { GitBranch } from "./icons/git-branch.js";
+import { GitColor } from "./icons/git-color.js";
 import { GitCommit } from "./icons/git-commit.js";
 import { GitDiff } from "./icons/git-diff.js";
 import { GitFork } from "./icons/git-fork.js";
@@ -170,6 +184,7 @@ import { Github } from "./icons/github.js";
 import { GithubCopilot } from "./icons/github-copilot.js";
 import { Globe } from "./icons/globe.js";
 import { Google } from "./icons/google.js";
+import { GoogleColor } from "./icons/google-color.js";
 import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
 import { GripVertical } from "./icons/grip-vertical.js";
@@ -199,12 +214,14 @@ import { IncomingCall } from "./icons/incoming-call.js";
 import { Indent } from "./icons/indent.js";
 import { InfoSquare } from "./icons/info-square.js";
 import { Instagram } from "./icons/instagram.js";
+import { InstagramColor } from "./icons/instagram-color.js";
 import { Integration } from "./icons/integration.js";
 import { Italic } from "./icons/italic.js";
 import { Kanban } from "./icons/kanban.js";
 import { Key } from "./icons/key.js";
 import { Keyboard } from "./icons/keyboard.js";
 import { Kimi } from "./icons/kimi.js";
+import { KimiColor } from "./icons/kimi-color.js";
 import { Laptop } from "./icons/laptop.js";
 import { Layers } from "./icons/layers.js";
 import { LayoutAlignBottom } from "./icons/layout-align-bottom.js";
@@ -219,6 +236,7 @@ import { Lightning } from "./icons/lightning.js";
 import { Like } from "./icons/like.js";
 import { Link } from "./icons/link.js";
 import { Linkedin } from "./icons/linkedin.js";
+import { LinkedinColor } from "./icons/linkedin-color.js";
 import { List } from "./icons/list.js";
 import { ListChecks } from "./icons/list-checks.js";
 import { ListDash } from "./icons/list-dash.js";
@@ -244,12 +262,15 @@ import { Maximize } from "./icons/maximize.js";
 import { Megaphone } from "./icons/megaphone.js";
 import { Menu } from "./icons/menu.js";
 import { MetaAi } from "./icons/meta-ai.js";
+import { MetaAiColor } from "./icons/meta-ai-color.js";
 import { Microphone } from "./icons/microphone.js";
 import { MicrophoneOff } from "./icons/microphone-off.js";
 import { MicrosoftCopilot } from "./icons/microsoft-copilot.js";
+import { MicrosoftCopilotColor } from "./icons/microsoft-copilot-color.js";
 import { Minimize } from "./icons/minimize.js";
 import { Minus } from "./icons/minus.js";
 import { Mistral } from "./icons/mistral.js";
+import { MistralColor } from "./icons/mistral-color.js";
 import { Moon } from "./icons/moon.js";
 import { MoreHorizontal } from "./icons/more-horizontal.js";
 import { MoreVertical } from "./icons/more-vertical.js";
@@ -260,10 +281,13 @@ import { Navigation } from "./icons/navigation.js";
 import { Newspaper } from "./icons/newspaper.js";
 import { Notebook } from "./icons/notebook.js";
 import { Npm } from "./icons/npm.js";
+import { NpmColor } from "./icons/npm-color.js";
 import { Nvidia } from "./icons/nvidia.js";
+import { NvidiaColor } from "./icons/nvidia-color.js";
 import { OctagonX } from "./icons/octagon-x.js";
 import { Openai } from "./icons/openai.js";
 import { Openclaw } from "./icons/openclaw.js";
+import { OpenclawColor } from "./icons/openclaw-color.js";
 import { Opencode } from "./icons/opencode.js";
 import { Outdent } from "./icons/outdent.js";
 import { OutgoingCall } from "./icons/outgoing-call.js";
@@ -275,11 +299,13 @@ import { Pause } from "./icons/pause.js";
 import { Pen } from "./icons/pen.js";
 import { Percent } from "./icons/percent.js";
 import { Perplexity } from "./icons/perplexity.js";
+import { PerplexityColor } from "./icons/perplexity-color.js";
 import { Phone } from "./icons/phone.js";
 import { PhoneOff } from "./icons/phone-off.js";
 import { Pin } from "./icons/pin.js";
 import { PinOff } from "./icons/pin-off.js";
 import { Pinterest } from "./icons/pinterest.js";
+import { PinterestColor } from "./icons/pinterest-color.js";
 import { Pip } from "./icons/pip.js";
 import { Pipette } from "./icons/pipette.js";
 import { Plane } from "./icons/plane.js";
@@ -296,9 +322,12 @@ import { QrCode } from "./icons/qr-code.js";
 import { QuestionMark } from "./icons/question-mark.js";
 import { Quote } from "./icons/quote.js";
 import { Qwen } from "./icons/qwen.js";
+import { QwenColor } from "./icons/qwen-color.js";
 import { React } from "./icons/react.js";
+import { ReactColor } from "./icons/react-color.js";
 import { Receipt } from "./icons/receipt.js";
 import { Reddit } from "./icons/reddit.js";
+import { RedditColor } from "./icons/reddit-color.js";
 import { Redo } from "./icons/redo.js";
 import { Refresh } from "./icons/refresh.js";
 import { Reorder } from "./icons/reorder.js";
@@ -335,6 +364,7 @@ import { SimCard } from "./icons/sim-card.js";
 import { SkipBack } from "./icons/skip-back.js";
 import { SkipForward } from "./icons/skip-forward.js";
 import { Slack } from "./icons/slack.js";
+import { SlackColor } from "./icons/slack-color.js";
 import { Slash } from "./icons/slash.js";
 import { SlidersHorizontal } from "./icons/sliders-horizontal.js";
 import { SlidersHorizontalAlt } from "./icons/sliders-horizontal-alt.js";
@@ -343,6 +373,7 @@ import { SlidersVerticalAlt } from "./icons/sliders-vertical-alt.js";
 import { Smartphone } from "./icons/smartphone.js";
 import { Smile } from "./icons/smile.js";
 import { Snapchat } from "./icons/snapchat.js";
+import { SnapchatColor } from "./icons/snapchat-color.js";
 import { Snowflake } from "./icons/snowflake.js";
 import { SortAscending } from "./icons/sort-ascending.js";
 import { SortDescending } from "./icons/sort-descending.js";
@@ -366,12 +397,14 @@ import { Suitcase } from "./icons/suitcase.js";
 import { Sun } from "./icons/sun.js";
 import { SunMoon } from "./icons/sun-moon.js";
 import { Supabase } from "./icons/supabase.js";
+import { SupabaseColor } from "./icons/supabase-color.js";
 import { Superscript } from "./icons/superscript.js";
 import { Table } from "./icons/table.js";
 import { Tablet } from "./icons/tablet.js";
 import { Tag } from "./icons/tag.js";
 import { Target } from "./icons/target.js";
 import { Telegram } from "./icons/telegram.js";
+import { TelegramColor } from "./icons/telegram-color.js";
 import { Terminal } from "./icons/terminal.js";
 import { TextAlignCenter } from "./icons/text-align-center.js";
 import { TextAlignJustifyLeft } from "./icons/text-align-justify-left.js";
@@ -385,6 +418,7 @@ import { ThreeSquares } from "./icons/three-squares.js";
 import { Ticket } from "./icons/ticket.js";
 import { TicketDiscount } from "./icons/ticket-discount.js";
 import { Tiktok } from "./icons/tiktok.js";
+import { TiktokColor } from "./icons/tiktok-color.js";
 import { Toggle } from "./icons/toggle.js";
 import { TransferHorizontal } from "./icons/transfer-horizontal.js";
 import { TransferVertical } from "./icons/transfer-vertical.js";
@@ -395,8 +429,10 @@ import { Trophy } from "./icons/trophy.js";
 import { Truck } from "./icons/truck.js";
 import { Tv } from "./icons/tv.js";
 import { Twitter } from "./icons/twitter.js";
+import { TwitterColor } from "./icons/twitter-color.js";
 import { Type } from "./icons/type.js";
 import { Typescript } from "./icons/typescript.js";
+import { TypescriptColor } from "./icons/typescript-color.js";
 import { Undo } from "./icons/undo.js";
 import { UnfoldLess } from "./icons/unfold-less.js";
 import { UnfoldMore } from "./icons/unfold-more.js";
@@ -435,6 +471,7 @@ import { Windsurf } from "./icons/windsurf.js";
 import { X } from "./icons/x.js";
 import { Xai } from "./icons/xai.js";
 import { Youtube } from "./icons/youtube.js";
+import { YoutubeColor } from "./icons/youtube-color.js";
 import { Zai } from "./icons/zai.js";
 import { ZoomIn } from "./icons/zoom-in.js";
 import { ZoomOut } from "./icons/zoom-out.js";
@@ -449,6 +486,7 @@ export const icons = {
 	"analytics": Analytics,
 	"anthropic": Anthropic,
 	"antigravity": Antigravity,
+	"antigravity-color": AntigravityColor,
 	"app-window": AppWindow,
 	"archive": Archive,
 	"archive-alt": ArchiveAlt,
@@ -474,6 +512,7 @@ export const icons = {
 	"bell-off": BellOff,
 	"bell-ring": BellRing,
 	"bluesky": Bluesky,
+	"bluesky-color": BlueskyColor,
 	"bluetooth": Bluetooth,
 	"bold": Bold,
 	"bolt": Bolt,
@@ -489,6 +528,7 @@ export const icons = {
 	"bug": Bug,
 	"building": Building,
 	"bun": Bun,
+	"bun-color": BunColor,
 	"calculator": Calculator,
 	"calendar": Calendar,
 	"calendar-add": CalendarAdd,
@@ -521,10 +561,13 @@ export const icons = {
 	"chevrons-right": ChevronsRight,
 	"chevrons-up": ChevronsUp,
 	"chrome": Chrome,
+	"chrome-color": ChromeColor,
 	"clapperboard": Clapperboard,
 	"clapperboard-text": ClapperboardText,
 	"claude-ai": ClaudeAi,
+	"claude-ai-color": ClaudeAiColor,
 	"claude-code": ClaudeCode,
+	"claude-code-color": ClaudeCodeColor,
 	"clipboard": Clipboard,
 	"clipboard-add": ClipboardAdd,
 	"clipboard-check": ClipboardCheck,
@@ -537,6 +580,7 @@ export const icons = {
 	"cloud-upload": CloudUpload,
 	"code": Code,
 	"codex": Codex,
+	"codex-color": CodexColor,
 	"columns": Columns,
 	"command": Command,
 	"computer": Computer,
@@ -550,9 +594,12 @@ export const icons = {
 	"dashboard": Dashboard,
 	"database": Database,
 	"deepseek": Deepseek,
+	"deepseek-color": DeepseekColor,
 	"devin": Devin,
+	"devin-color": DevinColor,
 	"diamond": Diamond,
 	"discord": Discord,
+	"discord-color": DiscordColor,
 	"dislike": Dislike,
 	"document": Document,
 	"dollar": Dollar,
@@ -568,7 +615,9 @@ export const icons = {
 	"eye-closed": EyeClosed,
 	"eye-off": EyeOff,
 	"facebook": Facebook,
+	"facebook-color": FacebookColor,
 	"figma": Figma,
+	"figma-color": FigmaColor,
 	"file": File,
 	"file-add": FileAdd,
 	"file-archive": FileArchive,
@@ -597,9 +646,11 @@ export const icons = {
 	"gamepad": Gamepad,
 	"gauge": Gauge,
 	"gemini": Gemini,
+	"gemini-color": GeminiColor,
 	"gift": Gift,
 	"git": Git,
 	"git-branch": GitBranch,
+	"git-color": GitColor,
 	"git-commit": GitCommit,
 	"git-diff": GitDiff,
 	"git-fork": GitFork,
@@ -610,6 +661,7 @@ export const icons = {
 	"github-copilot": GithubCopilot,
 	"globe": Globe,
 	"google": Google,
+	"google-color": GoogleColor,
 	"graduation-cap": GraduationCap,
 	"grip-horizontal": GripHorizontal,
 	"grip-vertical": GripVertical,
@@ -639,12 +691,14 @@ export const icons = {
 	"indent": Indent,
 	"info-square": InfoSquare,
 	"instagram": Instagram,
+	"instagram-color": InstagramColor,
 	"integration": Integration,
 	"italic": Italic,
 	"kanban": Kanban,
 	"key": Key,
 	"keyboard": Keyboard,
 	"kimi": Kimi,
+	"kimi-color": KimiColor,
 	"laptop": Laptop,
 	"layers": Layers,
 	"layout-align-bottom": LayoutAlignBottom,
@@ -659,6 +713,7 @@ export const icons = {
 	"like": Like,
 	"link": Link,
 	"linkedin": Linkedin,
+	"linkedin-color": LinkedinColor,
 	"list": List,
 	"list-checks": ListChecks,
 	"list-dash": ListDash,
@@ -684,12 +739,15 @@ export const icons = {
 	"megaphone": Megaphone,
 	"menu": Menu,
 	"meta-ai": MetaAi,
+	"meta-ai-color": MetaAiColor,
 	"microphone": Microphone,
 	"microphone-off": MicrophoneOff,
 	"microsoft-copilot": MicrosoftCopilot,
+	"microsoft-copilot-color": MicrosoftCopilotColor,
 	"minimize": Minimize,
 	"minus": Minus,
 	"mistral": Mistral,
+	"mistral-color": MistralColor,
 	"moon": Moon,
 	"more-horizontal": MoreHorizontal,
 	"more-vertical": MoreVertical,
@@ -700,10 +758,13 @@ export const icons = {
 	"newspaper": Newspaper,
 	"notebook": Notebook,
 	"npm": Npm,
+	"npm-color": NpmColor,
 	"nvidia": Nvidia,
+	"nvidia-color": NvidiaColor,
 	"octagon-x": OctagonX,
 	"openai": Openai,
 	"openclaw": Openclaw,
+	"openclaw-color": OpenclawColor,
 	"opencode": Opencode,
 	"outdent": Outdent,
 	"outgoing-call": OutgoingCall,
@@ -715,11 +776,13 @@ export const icons = {
 	"pen": Pen,
 	"percent": Percent,
 	"perplexity": Perplexity,
+	"perplexity-color": PerplexityColor,
 	"phone": Phone,
 	"phone-off": PhoneOff,
 	"pin": Pin,
 	"pin-off": PinOff,
 	"pinterest": Pinterest,
+	"pinterest-color": PinterestColor,
 	"pip": Pip,
 	"pipette": Pipette,
 	"plane": Plane,
@@ -736,9 +799,12 @@ export const icons = {
 	"question-mark": QuestionMark,
 	"quote": Quote,
 	"qwen": Qwen,
+	"qwen-color": QwenColor,
 	"react": React,
+	"react-color": ReactColor,
 	"receipt": Receipt,
 	"reddit": Reddit,
+	"reddit-color": RedditColor,
 	"redo": Redo,
 	"refresh": Refresh,
 	"reorder": Reorder,
@@ -775,6 +841,7 @@ export const icons = {
 	"skip-back": SkipBack,
 	"skip-forward": SkipForward,
 	"slack": Slack,
+	"slack-color": SlackColor,
 	"slash": Slash,
 	"sliders-horizontal": SlidersHorizontal,
 	"sliders-horizontal-alt": SlidersHorizontalAlt,
@@ -783,6 +850,7 @@ export const icons = {
 	"smartphone": Smartphone,
 	"smile": Smile,
 	"snapchat": Snapchat,
+	"snapchat-color": SnapchatColor,
 	"snowflake": Snowflake,
 	"sort-ascending": SortAscending,
 	"sort-descending": SortDescending,
@@ -806,12 +874,14 @@ export const icons = {
 	"sun": Sun,
 	"sun-moon": SunMoon,
 	"supabase": Supabase,
+	"supabase-color": SupabaseColor,
 	"superscript": Superscript,
 	"table": Table,
 	"tablet": Tablet,
 	"tag": Tag,
 	"target": Target,
 	"telegram": Telegram,
+	"telegram-color": TelegramColor,
 	"terminal": Terminal,
 	"text-align-center": TextAlignCenter,
 	"text-align-justify-left": TextAlignJustifyLeft,
@@ -825,6 +895,7 @@ export const icons = {
 	"ticket": Ticket,
 	"ticket-discount": TicketDiscount,
 	"tiktok": Tiktok,
+	"tiktok-color": TiktokColor,
 	"toggle": Toggle,
 	"transfer-horizontal": TransferHorizontal,
 	"transfer-vertical": TransferVertical,
@@ -835,8 +906,10 @@ export const icons = {
 	"truck": Truck,
 	"tv": Tv,
 	"twitter": Twitter,
+	"twitter-color": TwitterColor,
 	"type": Type,
 	"typescript": Typescript,
+	"typescript-color": TypescriptColor,
 	"undo": Undo,
 	"unfold-less": UnfoldLess,
 	"unfold-more": UnfoldMore,
@@ -875,6 +948,7 @@ export const icons = {
 	"x": X,
 	"xai": Xai,
 	"youtube": Youtube,
+	"youtube-color": YoutubeColor,
 	"zai": Zai,
 	"zoom-in": ZoomIn,
 	"zoom-out": ZoomOut,
@@ -892,6 +966,7 @@ export type IconVariantMap = {
 	"analytics": "linear" | "bold";
 	"anthropic": "linear" | "bold";
 	"antigravity": "linear" | "bold";
+	"antigravity-color": "linear" | "bold";
 	"app-window": "linear" | "bold";
 	"archive": "linear" | "bold";
 	"archive-alt": "linear" | "bold";
@@ -917,6 +992,7 @@ export type IconVariantMap = {
 	"bell-off": "linear" | "bold";
 	"bell-ring": "linear" | "bold";
 	"bluesky": "linear" | "bold";
+	"bluesky-color": "linear" | "bold";
 	"bluetooth": "linear" | "bold";
 	"bold": "linear" | "bold";
 	"bolt": "linear" | "bold";
@@ -932,6 +1008,7 @@ export type IconVariantMap = {
 	"bug": "linear" | "bold";
 	"building": "linear" | "bold";
 	"bun": "linear" | "bold";
+	"bun-color": "linear" | "bold";
 	"calculator": "linear" | "bold";
 	"calendar": "linear" | "bold";
 	"calendar-add": "linear" | "bold";
@@ -964,10 +1041,13 @@ export type IconVariantMap = {
 	"chevrons-right": "linear" | "bold";
 	"chevrons-up": "linear" | "bold";
 	"chrome": "linear" | "bold";
+	"chrome-color": "linear" | "bold";
 	"clapperboard": "linear" | "bold";
 	"clapperboard-text": "linear" | "bold";
 	"claude-ai": "linear" | "bold";
+	"claude-ai-color": "linear" | "bold";
 	"claude-code": "linear" | "bold";
+	"claude-code-color": "linear" | "bold";
 	"clipboard": "linear" | "bold";
 	"clipboard-add": "linear" | "bold";
 	"clipboard-check": "linear" | "bold";
@@ -980,6 +1060,7 @@ export type IconVariantMap = {
 	"cloud-upload": "linear" | "bold";
 	"code": "linear" | "bold";
 	"codex": "linear" | "bold";
+	"codex-color": "linear" | "bold";
 	"columns": "linear" | "bold";
 	"command": "linear" | "bold";
 	"computer": "linear" | "bold";
@@ -993,9 +1074,12 @@ export type IconVariantMap = {
 	"dashboard": "linear" | "bold";
 	"database": "linear" | "bold";
 	"deepseek": "linear" | "bold";
+	"deepseek-color": "linear" | "bold";
 	"devin": "linear" | "bold";
+	"devin-color": "linear" | "bold";
 	"diamond": "linear" | "bold";
 	"discord": "linear" | "bold";
+	"discord-color": "linear" | "bold";
 	"dislike": "linear" | "bold";
 	"document": "linear" | "bold";
 	"dollar": "linear" | "bold";
@@ -1011,7 +1095,9 @@ export type IconVariantMap = {
 	"eye-closed": "linear" | "bold";
 	"eye-off": "linear" | "bold";
 	"facebook": "linear" | "bold";
+	"facebook-color": "linear" | "bold";
 	"figma": "linear" | "bold";
+	"figma-color": "linear" | "bold";
 	"file": "linear" | "bold";
 	"file-add": "linear" | "bold";
 	"file-archive": "linear" | "bold";
@@ -1040,9 +1126,11 @@ export type IconVariantMap = {
 	"gamepad": "linear" | "bold";
 	"gauge": "linear" | "bold";
 	"gemini": "linear" | "bold";
+	"gemini-color": "linear" | "bold";
 	"gift": "linear" | "bold";
 	"git": "linear" | "bold";
 	"git-branch": "linear" | "bold";
+	"git-color": "linear" | "bold";
 	"git-commit": "linear" | "bold";
 	"git-diff": "linear" | "bold";
 	"git-fork": "linear" | "bold";
@@ -1053,6 +1141,7 @@ export type IconVariantMap = {
 	"github-copilot": "linear" | "bold";
 	"globe": "linear" | "bold";
 	"google": "linear" | "bold";
+	"google-color": "linear" | "bold";
 	"graduation-cap": "linear" | "bold";
 	"grip-horizontal": "linear" | "bold";
 	"grip-vertical": "linear" | "bold";
@@ -1082,12 +1171,14 @@ export type IconVariantMap = {
 	"indent": "linear" | "bold";
 	"info-square": "linear" | "bold";
 	"instagram": "linear" | "bold";
+	"instagram-color": "linear" | "bold";
 	"integration": "linear" | "bold";
 	"italic": "linear" | "bold";
 	"kanban": "linear" | "bold";
 	"key": "linear" | "bold";
 	"keyboard": "linear" | "bold";
 	"kimi": "linear" | "bold";
+	"kimi-color": "linear" | "bold";
 	"laptop": "linear" | "bold";
 	"layers": "linear" | "bold";
 	"layout-align-bottom": "linear" | "bold";
@@ -1102,6 +1193,7 @@ export type IconVariantMap = {
 	"like": "linear" | "bold";
 	"link": "linear" | "bold";
 	"linkedin": "linear" | "bold";
+	"linkedin-color": "linear" | "bold";
 	"list": "linear" | "bold";
 	"list-checks": "linear" | "bold";
 	"list-dash": "linear" | "bold";
@@ -1127,12 +1219,15 @@ export type IconVariantMap = {
 	"megaphone": "linear" | "bold";
 	"menu": "linear" | "bold";
 	"meta-ai": "linear" | "bold";
+	"meta-ai-color": "linear" | "bold";
 	"microphone": "linear" | "bold";
 	"microphone-off": "linear" | "bold";
 	"microsoft-copilot": "linear" | "bold";
+	"microsoft-copilot-color": "linear" | "bold";
 	"minimize": "linear" | "bold";
 	"minus": "linear" | "bold";
 	"mistral": "linear" | "bold";
+	"mistral-color": "linear" | "bold";
 	"moon": "linear" | "bold";
 	"more-horizontal": "linear" | "bold";
 	"more-vertical": "linear" | "bold";
@@ -1143,10 +1238,13 @@ export type IconVariantMap = {
 	"newspaper": "linear" | "bold";
 	"notebook": "linear" | "bold";
 	"npm": "linear" | "bold";
+	"npm-color": "linear" | "bold";
 	"nvidia": "linear" | "bold";
+	"nvidia-color": "linear" | "bold";
 	"octagon-x": "linear" | "bold";
 	"openai": "linear" | "bold";
 	"openclaw": "linear" | "bold";
+	"openclaw-color": "linear" | "bold";
 	"opencode": "linear" | "bold";
 	"outdent": "linear" | "bold";
 	"outgoing-call": "linear" | "bold";
@@ -1158,11 +1256,13 @@ export type IconVariantMap = {
 	"pen": "linear" | "bold";
 	"percent": "linear" | "bold";
 	"perplexity": "linear" | "bold";
+	"perplexity-color": "linear" | "bold";
 	"phone": "linear" | "bold";
 	"phone-off": "linear" | "bold";
 	"pin": "linear" | "bold";
 	"pin-off": "linear" | "bold";
 	"pinterest": "linear" | "bold";
+	"pinterest-color": "linear" | "bold";
 	"pip": "linear" | "bold";
 	"pipette": "linear" | "bold";
 	"plane": "linear" | "bold";
@@ -1179,9 +1279,12 @@ export type IconVariantMap = {
 	"question-mark": "linear" | "bold";
 	"quote": "linear" | "bold";
 	"qwen": "linear" | "bold";
+	"qwen-color": "linear" | "bold";
 	"react": "linear" | "bold";
+	"react-color": "linear" | "bold";
 	"receipt": "linear" | "bold";
 	"reddit": "linear" | "bold";
+	"reddit-color": "linear" | "bold";
 	"redo": "linear" | "bold";
 	"refresh": "linear" | "bold";
 	"reorder": "linear" | "bold";
@@ -1218,6 +1321,7 @@ export type IconVariantMap = {
 	"skip-back": "linear" | "bold";
 	"skip-forward": "linear" | "bold";
 	"slack": "linear" | "bold";
+	"slack-color": "linear" | "bold";
 	"slash": "linear" | "bold";
 	"sliders-horizontal": "linear" | "bold";
 	"sliders-horizontal-alt": "linear" | "bold";
@@ -1226,6 +1330,7 @@ export type IconVariantMap = {
 	"smartphone": "linear" | "bold";
 	"smile": "linear" | "bold";
 	"snapchat": "linear" | "bold";
+	"snapchat-color": "linear" | "bold";
 	"snowflake": "linear" | "bold";
 	"sort-ascending": "linear" | "bold";
 	"sort-descending": "linear" | "bold";
@@ -1249,12 +1354,14 @@ export type IconVariantMap = {
 	"sun": "linear" | "bold";
 	"sun-moon": "linear" | "bold";
 	"supabase": "linear" | "bold";
+	"supabase-color": "linear" | "bold";
 	"superscript": "linear" | "bold";
 	"table": "linear" | "bold";
 	"tablet": "linear" | "bold";
 	"tag": "linear" | "bold";
 	"target": "linear" | "bold";
 	"telegram": "linear" | "bold";
+	"telegram-color": "linear" | "bold";
 	"terminal": "linear" | "bold";
 	"text-align-center": "linear" | "bold";
 	"text-align-justify-left": "linear" | "bold";
@@ -1268,6 +1375,7 @@ export type IconVariantMap = {
 	"ticket": "linear" | "bold";
 	"ticket-discount": "linear" | "bold";
 	"tiktok": "linear" | "bold";
+	"tiktok-color": "linear" | "bold";
 	"toggle": "linear" | "bold";
 	"transfer-horizontal": "linear" | "bold";
 	"transfer-vertical": "linear" | "bold";
@@ -1278,8 +1386,10 @@ export type IconVariantMap = {
 	"truck": "linear" | "bold";
 	"tv": "linear" | "bold";
 	"twitter": "linear" | "bold";
+	"twitter-color": "linear" | "bold";
 	"type": "linear" | "bold";
 	"typescript": "linear" | "bold";
+	"typescript-color": "linear" | "bold";
 	"undo": "linear" | "bold";
 	"unfold-less": "linear" | "bold";
 	"unfold-more": "linear" | "bold";
@@ -1318,6 +1428,7 @@ export type IconVariantMap = {
 	"x": "linear" | "bold";
 	"xai": "linear" | "bold";
 	"youtube": "linear" | "bold";
+	"youtube-color": "linear" | "bold";
 	"zai": "linear" | "bold";
 	"zoom-in": "linear" | "bold";
 	"zoom-out": "linear" | "bold";

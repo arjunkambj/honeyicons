@@ -43,3 +43,11 @@
 - Close a frame that is open only for a symbol and fill it. Symbols in a corner use one notch: the symbol's bounds plus 1.8, a 2-unit inner corner, and 0.9-unit rounding on the trimmed frame corners. `*-off` variants remove the slash plus 1.5 units on each side, then add the slash back.
 - Line-only icons keep the linear file byte-identical. Letter counters, handle openings, and real holes, such as the life-buoy centre, stay open.
 - Leave no slivers or bridges under 1.2 units, islands under 0.8 square units, spurs, or bumps. When linear spacing causes one, fix linear first. Output a single `currentColor` fill path.
+
+## Brand color icons
+
+- A brand whose official mark has color also ships `<name>-color` (for example `claude-ai-color`) in both style folders, with one drawing shared by linear and bold. Only `instagram-color` differs by style, following the two mono Instagram drawings. Monochrome marks such as X, GitHub, OpenAI, and Vercel get no color version.
+- Build the color icon on its mono icon's geometry and footprint so the two swap without shifting. Paint the official colors onto the existing paths, and split multi-color marks along the brand's own color boundaries. Use the official artwork directly only where it lines up with our silhouette.
+- Where two colors meet, run the piece painted first 1.5 units (a pixel at 16px) under the next one, inside that piece's area, so no seam shows. Draw cutouts that the official mark shows in white, like YouTube's play button or Facebook's f, as white shapes over the filled container. Real holes stay transparent.
+- Neutral parts that the brand itself flips on dark backgrounds, like the TikTok note and the Kimi tile, use `currentColor`. Black outlines that belong to the artwork, like Snapchat's and Bun's, stay black.
+- Color icons may use gradients, masks, and filters. Prefix every id with the icon name. The build checks that each `url(#id)` resolves, and `IconBase` scopes ids per rendered icon.

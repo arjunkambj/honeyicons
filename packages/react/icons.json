@@ -142,6 +142,22 @@
 		]
 	},
 	{
+		"name": "antigravity-color",
+		"export": "AntigravityColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"code",
+			"editor",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "app-window",
 		"export": "AppWindow",
 		"category": "layout",
@@ -556,6 +572,23 @@
 		]
 	},
 	{
+		"name": "bluesky-color",
+		"export": "BlueskyColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"bluesky",
+			"bsky",
+			"social",
+			"butterfly",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "bluetooth",
 		"export": "Bluetooth",
 		"category": "devices",
@@ -796,6 +829,21 @@
 			"javascript",
 			"runtime",
 			"brand"
+		]
+	},
+	{
+		"name": "bun-color",
+		"export": "BunColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"javascript",
+			"runtime",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -1345,6 +1393,22 @@
 		]
 	},
 	{
+		"name": "chrome-color",
+		"export": "ChromeColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"chrome",
+			"google",
+			"browser",
+			"color"
+		]
+	},
+	{
 		"name": "clapperboard",
 		"export": "Clapperboard",
 		"category": "media",
@@ -1395,6 +1459,23 @@
 		]
 	},
 	{
+		"name": "claude-ai-color",
+		"export": "ClaudeAiColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"claude",
+			"anthropic",
+			"ai",
+			"assistant",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "claude-code",
 		"export": "ClaudeCode",
 		"category": "brands",
@@ -1409,6 +1490,24 @@
 			"code",
 			"terminal",
 			"brand"
+		]
+	},
+	{
+		"name": "claude-code-color",
+		"export": "ClaudeCodeColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"claude",
+			"anthropic",
+			"ai",
+			"code",
+			"terminal",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -1601,6 +1700,22 @@
 			"ai",
 			"coding",
 			"brand"
+		]
+	},
+	{
+		"name": "codex-color",
+		"export": "CodexColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"openai",
+			"ai",
+			"coding",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -1814,6 +1929,21 @@
 		]
 	},
 	{
+		"name": "deepseek-color",
+		"export": "DeepseekColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"whale",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "devin",
 		"export": "Devin",
 		"category": "brands",
@@ -1826,6 +1956,22 @@
 			"code",
 			"agent",
 			"brand"
+		]
+	},
+	{
+		"name": "devin-color",
+		"export": "DevinColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"code",
+			"agent",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -1856,6 +2002,21 @@
 			"chat",
 			"community",
 			"brand"
+		]
+	},
+	{
+		"name": "discord-color",
+		"export": "DiscordColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"chat",
+			"community",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -2106,6 +2267,21 @@
 		]
 	},
 	{
+		"name": "facebook-color",
+		"export": "FacebookColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"meta",
+			"social",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "figma",
 		"export": "Figma",
 		"category": "brands",
@@ -2118,6 +2294,21 @@
 			"design",
 			"brand",
 			"solar"
+		]
+	},
+	{
+		"name": "figma-color",
+		"export": "FigmaColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"figma",
+			"design",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -2585,6 +2776,21 @@
 		]
 	},
 	{
+		"name": "gemini-color",
+		"export": "GeminiColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"google",
+			"ai",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "gift",
 		"export": "Gift",
 		"category": "commerce",
@@ -2630,6 +2836,22 @@
 			"version-control",
 			"source-control",
 			"solar"
+		]
+	},
+	{
+		"name": "git-color",
+		"export": "GitColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"version-control",
+			"repository",
+			"code",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -2794,6 +3016,21 @@
 			"search",
 			"alphabet",
 			"brand"
+		]
+	},
+	{
+		"name": "google-color",
+		"export": "GoogleColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"search",
+			"alphabet",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -3272,6 +3509,23 @@
 		]
 	},
 	{
+		"name": "instagram-color",
+		"export": "InstagramColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"instagram",
+			"social",
+			"photos",
+			"brand",
+			"insta",
+			"color"
+		]
+	},
+	{
 		"name": "integration",
 		"export": "Integration",
 		"category": "development",
@@ -3365,6 +3619,22 @@
 			"assistant",
 			"moonshot",
 			"brand"
+		]
+	},
+	{
+		"name": "kimi-color",
+		"export": "KimiColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"assistant",
+			"moonshot",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -3592,6 +3862,20 @@
 		"tags": [
 			"brand",
 			"linkedin"
+		]
+	},
+	{
+		"name": "linkedin-color",
+		"export": "LinkedinColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"linkedin",
+			"color"
 		]
 	},
 	{
@@ -4011,6 +4295,22 @@
 		]
 	},
 	{
+		"name": "meta-ai-color",
+		"export": "MetaAiColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"meta",
+			"ai",
+			"assistant",
+			"color"
+		]
+	},
+	{
 		"name": "microphone",
 		"export": "Microphone",
 		"category": "media",
@@ -4061,6 +4361,24 @@
 		]
 	},
 	{
+		"name": "microsoft-copilot-color",
+		"export": "MicrosoftCopilotColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"microsoft",
+			"copilot",
+			"ai",
+			"assistant",
+			"brand",
+			"ms-copilot",
+			"color"
+		]
+	},
+	{
 		"name": "minimize",
 		"export": "Minimize",
 		"category": "arrows",
@@ -4102,6 +4420,20 @@
 		"tags": [
 			"ai",
 			"brand"
+		]
+	},
+	{
+		"name": "mistral-color",
+		"export": "MistralColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -4272,6 +4604,22 @@
 		]
 	},
 	{
+		"name": "npm-color",
+		"export": "NpmColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"package",
+			"registry",
+			"javascript",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "nvidia",
 		"export": "Nvidia",
 		"category": "brands",
@@ -4284,6 +4632,22 @@
 			"nvidia",
 			"gpu",
 			"hardware"
+		]
+	},
+	{
+		"name": "nvidia-color",
+		"export": "NvidiaColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"nvidia",
+			"gpu",
+			"hardware",
+			"color"
 		]
 	},
 	{
@@ -4331,6 +4695,22 @@
 			"ai",
 			"mascot",
 			"brand"
+		]
+	},
+	{
+		"name": "openclaw-color",
+		"export": "OpenclawColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"open-claw",
+			"ai",
+			"mascot",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -4511,6 +4891,22 @@
 		]
 	},
 	{
+		"name": "perplexity-color",
+		"export": "PerplexityColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"perplexity",
+			"ai",
+			"search",
+			"color"
+		]
+	},
+	{
 		"name": "phone",
 		"export": "Phone",
 		"category": "chat",
@@ -4585,6 +4981,21 @@
 			"social",
 			"pins",
 			"brand"
+		]
+	},
+	{
+		"name": "pinterest-color",
+		"export": "PinterestColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"social",
+			"pins",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -4844,6 +5255,21 @@
 		]
 	},
 	{
+		"name": "qwen-color",
+		"export": "QwenColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"ai",
+			"alibaba",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "react",
 		"export": "React",
 		"category": "brands",
@@ -4856,6 +5282,22 @@
 			"framework",
 			"frontend",
 			"brand"
+		]
+	},
+	{
+		"name": "react-color",
+		"export": "ReactColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"javascript",
+			"framework",
+			"frontend",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -4886,6 +5328,21 @@
 			"community",
 			"social",
 			"brand"
+		]
+	},
+	{
+		"name": "reddit-color",
+		"export": "RedditColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"community",
+			"social",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -5474,6 +5931,23 @@
 		]
 	},
 	{
+		"name": "slack-color",
+		"export": "SlackColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"messaging",
+			"chat",
+			"team",
+			"workplace",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "slash",
 		"export": "Slash",
 		"category": "editor",
@@ -5604,6 +6078,22 @@
 			"social",
 			"snap",
 			"ghost"
+		]
+	},
+	{
+		"name": "snapchat-color",
+		"export": "SnapchatColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"social",
+			"snap",
+			"ghost",
+			"color"
 		]
 	},
 	{
@@ -5989,6 +6479,21 @@
 		]
 	},
 	{
+		"name": "supabase-color",
+		"export": "SupabaseColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"database",
+			"backend",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "superscript",
 		"export": "Superscript",
 		"category": "editor",
@@ -6082,6 +6587,23 @@
 			"social",
 			"brand",
 			"paper-plane"
+		]
+	},
+	{
+		"name": "telegram-color",
+		"export": "TelegramColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"messaging",
+			"chat",
+			"social",
+			"brand",
+			"paper-plane",
+			"color"
 		]
 	},
 	{
@@ -6296,6 +6818,20 @@
 		]
 	},
 	{
+		"name": "tiktok-color",
+		"export": "TiktokColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"tiktok",
+			"color"
+		]
+	},
+	{
 		"name": "toggle",
 		"export": "Toggle",
 		"category": "settings",
@@ -6456,6 +6992,21 @@
 		]
 	},
 	{
+		"name": "twitter-color",
+		"export": "TwitterColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"bird",
+			"social",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "type",
 		"export": "Type",
 		"category": "editor",
@@ -6485,6 +7036,23 @@
 			"language",
 			"brand",
 			"ts"
+		]
+	},
+	{
+		"name": "typescript-color",
+		"export": "TypescriptColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"typescript",
+			"javascript",
+			"language",
+			"brand",
+			"ts",
+			"color"
 		]
 	},
 	{
@@ -7100,6 +7668,22 @@
 			"youtube",
 			"video",
 			"google"
+		]
+	},
+	{
+		"name": "youtube-color",
+		"export": "YoutubeColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"brand",
+			"youtube",
+			"video",
+			"google",
+			"color"
 		]
 	},
 	{

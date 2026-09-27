@@ -11,6 +11,7 @@ import { AlignCenterHorizontal } from "./icons/align-center-horizontal.js";
 import { Analytics } from "./icons/analytics.js";
 import { Anthropic } from "./icons/anthropic.js";
 import { Antigravity } from "./icons/antigravity.js";
+import { AntigravityColor } from "./icons/antigravity-color.js";
 import { AppWindow } from "./icons/app-window.js";
 import { Archive } from "./icons/archive.js";
 import { ArchiveAlt } from "./icons/archive-alt.js";
@@ -36,6 +37,7 @@ import { Bell } from "./icons/bell.js";
 import { BellOff } from "./icons/bell-off.js";
 import { BellRing } from "./icons/bell-ring.js";
 import { Bluesky } from "./icons/bluesky.js";
+import { BlueskyColor } from "./icons/bluesky-color.js";
 import { Bluetooth } from "./icons/bluetooth.js";
 import { Bold } from "./icons/bold.js";
 import { Bolt } from "./icons/bolt.js";
@@ -51,6 +53,7 @@ import { Broadcast } from "./icons/broadcast.js";
 import { Bug } from "./icons/bug.js";
 import { Building } from "./icons/building.js";
 import { Bun } from "./icons/bun.js";
+import { BunColor } from "./icons/bun-color.js";
 import { Calculator } from "./icons/calculator.js";
 import { Calendar } from "./icons/calendar.js";
 import { CalendarAdd } from "./icons/calendar-add.js";
@@ -83,10 +86,13 @@ import { ChevronsLeft } from "./icons/chevrons-left.js";
 import { ChevronsRight } from "./icons/chevrons-right.js";
 import { ChevronsUp } from "./icons/chevrons-up.js";
 import { Chrome } from "./icons/chrome.js";
+import { ChromeColor } from "./icons/chrome-color.js";
 import { Clapperboard } from "./icons/clapperboard.js";
 import { ClapperboardText } from "./icons/clapperboard-text.js";
 import { ClaudeAi } from "./icons/claude-ai.js";
+import { ClaudeAiColor } from "./icons/claude-ai-color.js";
 import { ClaudeCode } from "./icons/claude-code.js";
+import { ClaudeCodeColor } from "./icons/claude-code-color.js";
 import { Clipboard } from "./icons/clipboard.js";
 import { ClipboardAdd } from "./icons/clipboard-add.js";
 import { ClipboardCheck } from "./icons/clipboard-check.js";
@@ -99,6 +105,7 @@ import { CloudRain } from "./icons/cloud-rain.js";
 import { CloudUpload } from "./icons/cloud-upload.js";
 import { Code } from "./icons/code.js";
 import { Codex } from "./icons/codex.js";
+import { CodexColor } from "./icons/codex-color.js";
 import { Columns } from "./icons/columns.js";
 import { Command } from "./icons/command.js";
 import { Computer } from "./icons/computer.js";
@@ -112,9 +119,12 @@ import { CursorClick } from "./icons/cursor-click.js";
 import { Dashboard } from "./icons/dashboard.js";
 import { Database } from "./icons/database.js";
 import { Deepseek } from "./icons/deepseek.js";
+import { DeepseekColor } from "./icons/deepseek-color.js";
 import { Devin } from "./icons/devin.js";
+import { DevinColor } from "./icons/devin-color.js";
 import { Diamond } from "./icons/diamond.js";
 import { Discord } from "./icons/discord.js";
+import { DiscordColor } from "./icons/discord-color.js";
 import { Dislike } from "./icons/dislike.js";
 import { Document } from "./icons/document.js";
 import { Dollar } from "./icons/dollar.js";
@@ -130,7 +140,9 @@ import { Eye } from "./icons/eye.js";
 import { EyeClosed } from "./icons/eye-closed.js";
 import { EyeOff } from "./icons/eye-off.js";
 import { Facebook } from "./icons/facebook.js";
+import { FacebookColor } from "./icons/facebook-color.js";
 import { Figma } from "./icons/figma.js";
+import { FigmaColor } from "./icons/figma-color.js";
 import { File } from "./icons/file.js";
 import { FileAdd } from "./icons/file-add.js";
 import { FileArchive } from "./icons/file-archive.js";
@@ -159,9 +171,11 @@ import { Forward } from "./icons/forward.js";
 import { Gamepad } from "./icons/gamepad.js";
 import { Gauge } from "./icons/gauge.js";
 import { Gemini } from "./icons/gemini.js";
+import { GeminiColor } from "./icons/gemini-color.js";
 import { Gift } from "./icons/gift.js";
 import { Git } from "./icons/git.js";
 import { GitBranch } from "./icons/git-branch.js";
+import { GitColor } from "./icons/git-color.js";
 import { GitCommit } from "./icons/git-commit.js";
 import { GitDiff } from "./icons/git-diff.js";
 import { GitFork } from "./icons/git-fork.js";
@@ -172,6 +186,7 @@ import { Github } from "./icons/github.js";
 import { GithubCopilot } from "./icons/github-copilot.js";
 import { Globe } from "./icons/globe.js";
 import { Google } from "./icons/google.js";
+import { GoogleColor } from "./icons/google-color.js";
 import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
 import { GripVertical } from "./icons/grip-vertical.js";
@@ -201,12 +216,14 @@ import { IncomingCall } from "./icons/incoming-call.js";
 import { Indent } from "./icons/indent.js";
 import { InfoSquare } from "./icons/info-square.js";
 import { Instagram } from "./icons/instagram.js";
+import { InstagramColor } from "./icons/instagram-color.js";
 import { Integration } from "./icons/integration.js";
 import { Italic } from "./icons/italic.js";
 import { Kanban } from "./icons/kanban.js";
 import { Key } from "./icons/key.js";
 import { Keyboard } from "./icons/keyboard.js";
 import { Kimi } from "./icons/kimi.js";
+import { KimiColor } from "./icons/kimi-color.js";
 import { Laptop } from "./icons/laptop.js";
 import { Layers } from "./icons/layers.js";
 import { LayoutAlignBottom } from "./icons/layout-align-bottom.js";
@@ -221,6 +238,7 @@ import { Lightning } from "./icons/lightning.js";
 import { Like } from "./icons/like.js";
 import { Link } from "./icons/link.js";
 import { Linkedin } from "./icons/linkedin.js";
+import { LinkedinColor } from "./icons/linkedin-color.js";
 import { List } from "./icons/list.js";
 import { ListChecks } from "./icons/list-checks.js";
 import { ListDash } from "./icons/list-dash.js";
@@ -246,12 +264,15 @@ import { Maximize } from "./icons/maximize.js";
 import { Megaphone } from "./icons/megaphone.js";
 import { Menu } from "./icons/menu.js";
 import { MetaAi } from "./icons/meta-ai.js";
+import { MetaAiColor } from "./icons/meta-ai-color.js";
 import { Microphone } from "./icons/microphone.js";
 import { MicrophoneOff } from "./icons/microphone-off.js";
 import { MicrosoftCopilot } from "./icons/microsoft-copilot.js";
+import { MicrosoftCopilotColor } from "./icons/microsoft-copilot-color.js";
 import { Minimize } from "./icons/minimize.js";
 import { Minus } from "./icons/minus.js";
 import { Mistral } from "./icons/mistral.js";
+import { MistralColor } from "./icons/mistral-color.js";
 import { Moon } from "./icons/moon.js";
 import { MoreHorizontal } from "./icons/more-horizontal.js";
 import { MoreVertical } from "./icons/more-vertical.js";
@@ -262,10 +283,13 @@ import { Navigation } from "./icons/navigation.js";
 import { Newspaper } from "./icons/newspaper.js";
 import { Notebook } from "./icons/notebook.js";
 import { Npm } from "./icons/npm.js";
+import { NpmColor } from "./icons/npm-color.js";
 import { Nvidia } from "./icons/nvidia.js";
+import { NvidiaColor } from "./icons/nvidia-color.js";
 import { OctagonX } from "./icons/octagon-x.js";
 import { Openai } from "./icons/openai.js";
 import { Openclaw } from "./icons/openclaw.js";
+import { OpenclawColor } from "./icons/openclaw-color.js";
 import { Opencode } from "./icons/opencode.js";
 import { Outdent } from "./icons/outdent.js";
 import { OutgoingCall } from "./icons/outgoing-call.js";
@@ -277,11 +301,13 @@ import { Pause } from "./icons/pause.js";
 import { Pen } from "./icons/pen.js";
 import { Percent } from "./icons/percent.js";
 import { Perplexity } from "./icons/perplexity.js";
+import { PerplexityColor } from "./icons/perplexity-color.js";
 import { Phone } from "./icons/phone.js";
 import { PhoneOff } from "./icons/phone-off.js";
 import { Pin } from "./icons/pin.js";
 import { PinOff } from "./icons/pin-off.js";
 import { Pinterest } from "./icons/pinterest.js";
+import { PinterestColor } from "./icons/pinterest-color.js";
 import { Pip } from "./icons/pip.js";
 import { Pipette } from "./icons/pipette.js";
 import { Plane } from "./icons/plane.js";
@@ -298,9 +324,12 @@ import { QrCode } from "./icons/qr-code.js";
 import { QuestionMark } from "./icons/question-mark.js";
 import { Quote } from "./icons/quote.js";
 import { Qwen } from "./icons/qwen.js";
+import { QwenColor } from "./icons/qwen-color.js";
 import { React } from "./icons/react.js";
+import { ReactColor } from "./icons/react-color.js";
 import { Receipt } from "./icons/receipt.js";
 import { Reddit } from "./icons/reddit.js";
+import { RedditColor } from "./icons/reddit-color.js";
 import { Redo } from "./icons/redo.js";
 import { Refresh } from "./icons/refresh.js";
 import { Reorder } from "./icons/reorder.js";
@@ -337,6 +366,7 @@ import { SimCard } from "./icons/sim-card.js";
 import { SkipBack } from "./icons/skip-back.js";
 import { SkipForward } from "./icons/skip-forward.js";
 import { Slack } from "./icons/slack.js";
+import { SlackColor } from "./icons/slack-color.js";
 import { Slash } from "./icons/slash.js";
 import { SlidersHorizontal } from "./icons/sliders-horizontal.js";
 import { SlidersHorizontalAlt } from "./icons/sliders-horizontal-alt.js";
@@ -345,6 +375,7 @@ import { SlidersVerticalAlt } from "./icons/sliders-vertical-alt.js";
 import { Smartphone } from "./icons/smartphone.js";
 import { Smile } from "./icons/smile.js";
 import { Snapchat } from "./icons/snapchat.js";
+import { SnapchatColor } from "./icons/snapchat-color.js";
 import { Snowflake } from "./icons/snowflake.js";
 import { SortAscending } from "./icons/sort-ascending.js";
 import { SortDescending } from "./icons/sort-descending.js";
@@ -368,12 +399,14 @@ import { Suitcase } from "./icons/suitcase.js";
 import { Sun } from "./icons/sun.js";
 import { SunMoon } from "./icons/sun-moon.js";
 import { Supabase } from "./icons/supabase.js";
+import { SupabaseColor } from "./icons/supabase-color.js";
 import { Superscript } from "./icons/superscript.js";
 import { Table } from "./icons/table.js";
 import { Tablet } from "./icons/tablet.js";
 import { Tag } from "./icons/tag.js";
 import { Target } from "./icons/target.js";
 import { Telegram } from "./icons/telegram.js";
+import { TelegramColor } from "./icons/telegram-color.js";
 import { Terminal } from "./icons/terminal.js";
 import { TextAlignCenter } from "./icons/text-align-center.js";
 import { TextAlignJustifyLeft } from "./icons/text-align-justify-left.js";
@@ -387,6 +420,7 @@ import { ThreeSquares } from "./icons/three-squares.js";
 import { Ticket } from "./icons/ticket.js";
 import { TicketDiscount } from "./icons/ticket-discount.js";
 import { Tiktok } from "./icons/tiktok.js";
+import { TiktokColor } from "./icons/tiktok-color.js";
 import { Toggle } from "./icons/toggle.js";
 import { TransferHorizontal } from "./icons/transfer-horizontal.js";
 import { TransferVertical } from "./icons/transfer-vertical.js";
@@ -397,8 +431,10 @@ import { Trophy } from "./icons/trophy.js";
 import { Truck } from "./icons/truck.js";
 import { Tv } from "./icons/tv.js";
 import { Twitter } from "./icons/twitter.js";
+import { TwitterColor } from "./icons/twitter-color.js";
 import { Type } from "./icons/type.js";
 import { Typescript } from "./icons/typescript.js";
+import { TypescriptColor } from "./icons/typescript-color.js";
 import { Undo } from "./icons/undo.js";
 import { UnfoldLess } from "./icons/unfold-less.js";
 import { UnfoldMore } from "./icons/unfold-more.js";
@@ -437,6 +473,7 @@ import { Windsurf } from "./icons/windsurf.js";
 import { X } from "./icons/x.js";
 import { Xai } from "./icons/xai.js";
 import { Youtube } from "./icons/youtube.js";
+import { YoutubeColor } from "./icons/youtube-color.js";
 import { Zai } from "./icons/zai.js";
 import { ZoomIn } from "./icons/zoom-in.js";
 import { ZoomOut } from "./icons/zoom-out.js";
@@ -525,6 +562,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["ai","code","editor","brand"],
 		variants: ["linear","bold"],
 		component: Antigravity,
+	},
+	{
+		name: "antigravity-color",
+		pascalName: "AntigravityColor",
+		category: "brands",
+		tags: ["ai","code","editor","brand","color"],
+		variants: ["linear","bold"],
+		component: AntigravityColor,
 	},
 	{
 		name: "app-window",
@@ -727,6 +772,14 @@ export const catalog: CatalogItem[] = [
 		component: Bluesky,
 	},
 	{
+		name: "bluesky-color",
+		pascalName: "BlueskyColor",
+		category: "brands",
+		tags: ["bluesky","bsky","social","butterfly","brand","color"],
+		variants: ["linear","bold"],
+		component: BlueskyColor,
+	},
+	{
 		name: "bluetooth",
 		pascalName: "Bluetooth",
 		category: "devices",
@@ -845,6 +898,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["javascript","runtime","brand"],
 		variants: ["linear","bold"],
 		component: Bun,
+	},
+	{
+		name: "bun-color",
+		pascalName: "BunColor",
+		category: "brands",
+		tags: ["javascript","runtime","brand","color"],
+		variants: ["linear","bold"],
+		component: BunColor,
 	},
 	{
 		name: "calculator",
@@ -1103,6 +1164,14 @@ export const catalog: CatalogItem[] = [
 		component: Chrome,
 	},
 	{
+		name: "chrome-color",
+		pascalName: "ChromeColor",
+		category: "brands",
+		tags: ["brand","chrome","google","browser","color"],
+		variants: ["linear","bold"],
+		component: ChromeColor,
+	},
+	{
 		name: "clapperboard",
 		pascalName: "Clapperboard",
 		category: "media",
@@ -1127,12 +1196,28 @@ export const catalog: CatalogItem[] = [
 		component: ClaudeAi,
 	},
 	{
+		name: "claude-ai-color",
+		pascalName: "ClaudeAiColor",
+		category: "brands",
+		tags: ["claude","anthropic","ai","assistant","brand","color"],
+		variants: ["linear","bold"],
+		component: ClaudeAiColor,
+	},
+	{
 		name: "claude-code",
 		pascalName: "ClaudeCode",
 		category: "brands",
 		tags: ["claude","anthropic","ai","code","terminal","brand"],
 		variants: ["linear","bold"],
 		component: ClaudeCode,
+	},
+	{
+		name: "claude-code-color",
+		pascalName: "ClaudeCodeColor",
+		category: "brands",
+		tags: ["claude","anthropic","ai","code","terminal","brand","color"],
+		variants: ["linear","bold"],
+		component: ClaudeCodeColor,
 	},
 	{
 		name: "clipboard",
@@ -1229,6 +1314,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["openai","ai","coding","brand"],
 		variants: ["linear","bold"],
 		component: Codex,
+	},
+	{
+		name: "codex-color",
+		pascalName: "CodexColor",
+		category: "brands",
+		tags: ["openai","ai","coding","brand","color"],
+		variants: ["linear","bold"],
+		component: CodexColor,
 	},
 	{
 		name: "columns",
@@ -1335,12 +1428,28 @@ export const catalog: CatalogItem[] = [
 		component: Deepseek,
 	},
 	{
+		name: "deepseek-color",
+		pascalName: "DeepseekColor",
+		category: "brands",
+		tags: ["ai","whale","brand","color"],
+		variants: ["linear","bold"],
+		component: DeepseekColor,
+	},
+	{
 		name: "devin",
 		pascalName: "Devin",
 		category: "brands",
 		tags: ["ai","code","agent","brand"],
 		variants: ["linear","bold"],
 		component: Devin,
+	},
+	{
+		name: "devin-color",
+		pascalName: "DevinColor",
+		category: "brands",
+		tags: ["ai","code","agent","brand","color"],
+		variants: ["linear","bold"],
+		component: DevinColor,
 	},
 	{
 		name: "diamond",
@@ -1357,6 +1466,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["chat","community","brand"],
 		variants: ["linear","bold"],
 		component: Discord,
+	},
+	{
+		name: "discord-color",
+		pascalName: "DiscordColor",
+		category: "brands",
+		tags: ["chat","community","brand","color"],
+		variants: ["linear","bold"],
+		component: DiscordColor,
 	},
 	{
 		name: "dislike",
@@ -1479,12 +1596,28 @@ export const catalog: CatalogItem[] = [
 		component: Facebook,
 	},
 	{
+		name: "facebook-color",
+		pascalName: "FacebookColor",
+		category: "brands",
+		tags: ["meta","social","brand","color"],
+		variants: ["linear","bold"],
+		component: FacebookColor,
+	},
+	{
 		name: "figma",
 		pascalName: "Figma",
 		category: "brands",
 		tags: ["figma","design","brand","solar"],
 		variants: ["linear","bold"],
 		component: Figma,
+	},
+	{
+		name: "figma-color",
+		pascalName: "FigmaColor",
+		category: "brands",
+		tags: ["figma","design","brand","color"],
+		variants: ["linear","bold"],
+		component: FigmaColor,
 	},
 	{
 		name: "file",
@@ -1711,6 +1844,14 @@ export const catalog: CatalogItem[] = [
 		component: Gemini,
 	},
 	{
+		name: "gemini-color",
+		pascalName: "GeminiColor",
+		category: "brands",
+		tags: ["google","ai","brand","color"],
+		variants: ["linear","bold"],
+		component: GeminiColor,
+	},
+	{
 		name: "gift",
 		pascalName: "Gift",
 		category: "commerce",
@@ -1733,6 +1874,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["git","branch","version-control","source-control","solar"],
 		variants: ["linear","bold"],
 		component: GitBranch,
+	},
+	{
+		name: "git-color",
+		pascalName: "GitColor",
+		category: "brands",
+		tags: ["version-control","repository","code","brand","color"],
+		variants: ["linear","bold"],
+		component: GitColor,
 	},
 	{
 		name: "git-commit",
@@ -1813,6 +1962,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["search","alphabet","brand"],
 		variants: ["linear","bold"],
 		component: Google,
+	},
+	{
+		name: "google-color",
+		pascalName: "GoogleColor",
+		category: "brands",
+		tags: ["search","alphabet","brand","color"],
+		variants: ["linear","bold"],
+		component: GoogleColor,
 	},
 	{
 		name: "graduation-cap",
@@ -2047,6 +2204,14 @@ export const catalog: CatalogItem[] = [
 		component: Instagram,
 	},
 	{
+		name: "instagram-color",
+		pascalName: "InstagramColor",
+		category: "brands",
+		tags: ["instagram","social","photos","brand","insta","color"],
+		variants: ["linear","bold"],
+		component: InstagramColor,
+	},
+	{
 		name: "integration",
 		pascalName: "Integration",
 		category: "development",
@@ -2093,6 +2258,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["ai","assistant","moonshot","brand"],
 		variants: ["linear","bold"],
 		component: Kimi,
+	},
+	{
+		name: "kimi-color",
+		pascalName: "KimiColor",
+		category: "brands",
+		tags: ["ai","assistant","moonshot","brand","color"],
+		variants: ["linear","bold"],
+		component: KimiColor,
 	},
 	{
 		name: "laptop",
@@ -2205,6 +2378,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["brand","linkedin"],
 		variants: ["linear","bold"],
 		component: Linkedin,
+	},
+	{
+		name: "linkedin-color",
+		pascalName: "LinkedinColor",
+		category: "brands",
+		tags: ["brand","linkedin","color"],
+		variants: ["linear","bold"],
+		component: LinkedinColor,
 	},
 	{
 		name: "list",
@@ -2407,6 +2588,14 @@ export const catalog: CatalogItem[] = [
 		component: MetaAi,
 	},
 	{
+		name: "meta-ai-color",
+		pascalName: "MetaAiColor",
+		category: "brands",
+		tags: ["brand","meta","ai","assistant","color"],
+		variants: ["linear","bold"],
+		component: MetaAiColor,
+	},
+	{
 		name: "microphone",
 		pascalName: "Microphone",
 		category: "media",
@@ -2431,6 +2620,14 @@ export const catalog: CatalogItem[] = [
 		component: MicrosoftCopilot,
 	},
 	{
+		name: "microsoft-copilot-color",
+		pascalName: "MicrosoftCopilotColor",
+		category: "brands",
+		tags: ["microsoft","copilot","ai","assistant","brand","ms-copilot","color"],
+		variants: ["linear","bold"],
+		component: MicrosoftCopilotColor,
+	},
+	{
 		name: "minimize",
 		pascalName: "Minimize",
 		category: "arrows",
@@ -2453,6 +2650,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["ai","brand"],
 		variants: ["linear","bold"],
 		component: Mistral,
+	},
+	{
+		name: "mistral-color",
+		pascalName: "MistralColor",
+		category: "brands",
+		tags: ["ai","brand","color"],
+		variants: ["linear","bold"],
+		component: MistralColor,
 	},
 	{
 		name: "moon",
@@ -2535,12 +2740,28 @@ export const catalog: CatalogItem[] = [
 		component: Npm,
 	},
 	{
+		name: "npm-color",
+		pascalName: "NpmColor",
+		category: "brands",
+		tags: ["package","registry","javascript","brand","color"],
+		variants: ["linear","bold"],
+		component: NpmColor,
+	},
+	{
 		name: "nvidia",
 		pascalName: "Nvidia",
 		category: "brands",
 		tags: ["brand","nvidia","gpu","hardware"],
 		variants: ["linear","bold"],
 		component: Nvidia,
+	},
+	{
+		name: "nvidia-color",
+		pascalName: "NvidiaColor",
+		category: "brands",
+		tags: ["brand","nvidia","gpu","hardware","color"],
+		variants: ["linear","bold"],
+		component: NvidiaColor,
 	},
 	{
 		name: "octagon-x",
@@ -2565,6 +2786,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["open-claw","ai","mascot","brand"],
 		variants: ["linear","bold"],
 		component: Openclaw,
+	},
+	{
+		name: "openclaw-color",
+		pascalName: "OpenclawColor",
+		category: "brands",
+		tags: ["open-claw","ai","mascot","brand","color"],
+		variants: ["linear","bold"],
+		component: OpenclawColor,
 	},
 	{
 		name: "opencode",
@@ -2655,6 +2884,14 @@ export const catalog: CatalogItem[] = [
 		component: Perplexity,
 	},
 	{
+		name: "perplexity-color",
+		pascalName: "PerplexityColor",
+		category: "brands",
+		tags: ["brand","perplexity","ai","search","color"],
+		variants: ["linear","bold"],
+		component: PerplexityColor,
+	},
+	{
 		name: "phone",
 		pascalName: "Phone",
 		category: "chat",
@@ -2693,6 +2930,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["social","pins","brand"],
 		variants: ["linear","bold"],
 		component: Pinterest,
+	},
+	{
+		name: "pinterest-color",
+		pascalName: "PinterestColor",
+		category: "brands",
+		tags: ["social","pins","brand","color"],
+		variants: ["linear","bold"],
+		component: PinterestColor,
 	},
 	{
 		name: "pip",
@@ -2823,12 +3068,28 @@ export const catalog: CatalogItem[] = [
 		component: Qwen,
 	},
 	{
+		name: "qwen-color",
+		pascalName: "QwenColor",
+		category: "brands",
+		tags: ["ai","alibaba","brand","color"],
+		variants: ["linear","bold"],
+		component: QwenColor,
+	},
+	{
 		name: "react",
 		pascalName: "React",
 		category: "brands",
 		tags: ["javascript","framework","frontend","brand"],
 		variants: ["linear","bold"],
 		component: React,
+	},
+	{
+		name: "react-color",
+		pascalName: "ReactColor",
+		category: "brands",
+		tags: ["javascript","framework","frontend","brand","color"],
+		variants: ["linear","bold"],
+		component: ReactColor,
 	},
 	{
 		name: "receipt",
@@ -2845,6 +3106,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["community","social","brand"],
 		variants: ["linear","bold"],
 		component: Reddit,
+	},
+	{
+		name: "reddit-color",
+		pascalName: "RedditColor",
+		category: "brands",
+		tags: ["community","social","brand","color"],
+		variants: ["linear","bold"],
+		component: RedditColor,
 	},
 	{
 		name: "redo",
@@ -3135,6 +3404,14 @@ export const catalog: CatalogItem[] = [
 		component: Slack,
 	},
 	{
+		name: "slack-color",
+		pascalName: "SlackColor",
+		category: "brands",
+		tags: ["messaging","chat","team","workplace","brand","color"],
+		variants: ["linear","bold"],
+		component: SlackColor,
+	},
+	{
 		name: "slash",
 		pascalName: "Slash",
 		category: "editor",
@@ -3197,6 +3474,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["brand","social","snap","ghost"],
 		variants: ["linear","bold"],
 		component: Snapchat,
+	},
+	{
+		name: "snapchat-color",
+		pascalName: "SnapchatColor",
+		category: "brands",
+		tags: ["brand","social","snap","ghost","color"],
+		variants: ["linear","bold"],
+		component: SnapchatColor,
 	},
 	{
 		name: "snowflake",
@@ -3383,6 +3668,14 @@ export const catalog: CatalogItem[] = [
 		component: Supabase,
 	},
 	{
+		name: "supabase-color",
+		pascalName: "SupabaseColor",
+		category: "brands",
+		tags: ["database","backend","brand","color"],
+		variants: ["linear","bold"],
+		component: SupabaseColor,
+	},
+	{
 		name: "superscript",
 		pascalName: "Superscript",
 		category: "editor",
@@ -3429,6 +3722,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["messaging","chat","social","brand","paper-plane"],
 		variants: ["linear","bold"],
 		component: Telegram,
+	},
+	{
+		name: "telegram-color",
+		pascalName: "TelegramColor",
+		category: "brands",
+		tags: ["messaging","chat","social","brand","paper-plane","color"],
+		variants: ["linear","bold"],
+		component: TelegramColor,
 	},
 	{
 		name: "terminal",
@@ -3535,6 +3836,14 @@ export const catalog: CatalogItem[] = [
 		component: Tiktok,
 	},
 	{
+		name: "tiktok-color",
+		pascalName: "TiktokColor",
+		category: "brands",
+		tags: ["brand","tiktok","color"],
+		variants: ["linear","bold"],
+		component: TiktokColor,
+	},
+	{
 		name: "toggle",
 		pascalName: "Toggle",
 		category: "settings",
@@ -3615,6 +3924,14 @@ export const catalog: CatalogItem[] = [
 		component: Twitter,
 	},
 	{
+		name: "twitter-color",
+		pascalName: "TwitterColor",
+		category: "brands",
+		tags: ["bird","social","brand","color"],
+		variants: ["linear","bold"],
+		component: TwitterColor,
+	},
+	{
 		name: "type",
 		pascalName: "Type",
 		category: "editor",
@@ -3629,6 +3946,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["typescript","javascript","language","brand","ts"],
 		variants: ["linear","bold"],
 		component: Typescript,
+	},
+	{
+		name: "typescript-color",
+		pascalName: "TypescriptColor",
+		category: "brands",
+		tags: ["typescript","javascript","language","brand","ts","color"],
+		variants: ["linear","bold"],
+		component: TypescriptColor,
 	},
 	{
 		name: "undo",
@@ -3933,6 +4258,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["brand","youtube","video","google"],
 		variants: ["linear","bold"],
 		component: Youtube,
+	},
+	{
+		name: "youtube-color",
+		pascalName: "YoutubeColor",
+		category: "brands",
+		tags: ["brand","youtube","video","google","color"],
+		variants: ["linear","bold"],
+		component: YoutubeColor,
 	},
 	{
 		name: "zai",

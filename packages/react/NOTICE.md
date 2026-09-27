@@ -660,12 +660,76 @@ units wide. `HermesAgent` uses the `hermesagent` mark from
 to 20 units tall with its even-odd fill kept. Both keep their source paths and
 use `currentColor`.
 
+## Brand color marks
+
+The `*Color` icons show a brand's mark in its official colors. Each one is
+built on its mono icon's geometry and footprint, so the two swap without
+shifting. Linear and bold share one drawing, except `InstagramColor`, which
+follows the two mono Instagram drawings.
+
+`ClaudeAiColor`, `ClaudeCodeColor`, `DeepseekColor`, `PerplexityColor`,
+`NvidiaColor`, `DiscordColor`, `TwitterColor`, `ReactColor`, `GitColor`,
+`TelegramColor`, `RedditColor`, `NpmColor`, and `BlueskyColor` paint the mono
+path in the brand color. `LinkedinColor`, `YoutubeColor`, `TypescriptColor`,
+`FacebookColor`, and `PinterestColor` fill their container and draw the
+cutout glyph in white, as the official marks do.
+
+`GoogleColor`, `DevinColor`, `MistralColor`, `GeminiColor`, `MetaAiColor`,
+`QwenColor`, `CodexColor`, `KimiColor`, `OpenclawColor`, and
+`AntigravityColor` take their colors and gradients from the matching icons in
+`@lobehub/icons-static-svg` 1.95.1 under the LobeHub MIT license below.
+Google's colors are cut along the source's straight boundaries. OpenClaw and
+Antigravity reuse the source pieces, which match our silhouettes; Antigravity's
+blurred color fields are scaled to our frame.
+
+`ChromeColor`, `SlackColor`, `SupabaseColor`, and `BunColor` follow the
+official artwork from the [SVG Logos](https://github.com/gilbarbara/logos)
+collection, released under
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Chrome's sectors,
+ring, and center are rebuilt on our disc from that geometry, the Slack pieces
+and Supabase halves line up with our marks, and Bun's full illustration is
+fitted to our Bun's footprint with its outline and shadow drawn as one
+silhouette. `FigmaColor` draws Figma's five pieces in its brand colors on the
+bold mark's grid.
+
+`InstagramColor` uses Instagram's two radial gradients as defined in
+[Skill Icons](https://github.com/tandpfun/skill-icons) under the tandpfun MIT
+license below. `TiktokColor` places cyan and red copies of our note behind it,
+`SnapchatColor` fills our outline in Snapchat yellow, and
+`MicrosoftCopilotColor` splits our Copilot mark into its two tiles, with
+gradients sampled from Microsoft's 2026 Copilot icon.
+
+The TikTok note and the Kimi tile use `currentColor`, so they flip with the
+text color on dark backgrounds as those brands' own marks do.
+
 Brand names and logos are trademarks of their respective owners and appear
 here only to identify their products.
 
 MIT License
 
 Copyright (c) 2023 LobeHub
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+MIT License
+
+Copyright (c) 2022 tandpfun
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
