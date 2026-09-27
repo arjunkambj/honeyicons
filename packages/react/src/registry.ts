@@ -33,6 +33,7 @@ import { BatteryLow } from "./icons/battery-low.js";
 import { Bell } from "./icons/bell.js";
 import { BellOff } from "./icons/bell-off.js";
 import { BellRing } from "./icons/bell-ring.js";
+import { Bluesky } from "./icons/bluesky.js";
 import { Bluetooth } from "./icons/bluetooth.js";
 import { Bold } from "./icons/bold.js";
 import { Bolt } from "./icons/bolt.js";
@@ -183,6 +184,7 @@ import { Heading2 } from "./icons/heading-2.js";
 import { Heading3 } from "./icons/heading-3.js";
 import { Headphones } from "./icons/headphones.js";
 import { Heart } from "./icons/heart.js";
+import { HermesAgent } from "./icons/hermes-agent.js";
 import { History } from "./icons/history.js";
 import { Home } from "./icons/home.js";
 import { HomeAngle } from "./icons/home-angle.js";
@@ -471,6 +473,7 @@ export const icons = {
 	"bell": Bell,
 	"bell-off": BellOff,
 	"bell-ring": BellRing,
+	"bluesky": Bluesky,
 	"bluetooth": Bluetooth,
 	"bold": Bold,
 	"bolt": Bolt,
@@ -621,6 +624,7 @@ export const icons = {
 	"heading-3": Heading3,
 	"headphones": Headphones,
 	"heart": Heart,
+	"hermes-agent": HermesAgent,
 	"history": History,
 	"home": Home,
 	"home-angle": HomeAngle,
@@ -912,6 +916,7 @@ export type IconVariantMap = {
 	"bell": "linear" | "bold";
 	"bell-off": "linear" | "bold";
 	"bell-ring": "linear" | "bold";
+	"bluesky": "linear" | "bold";
 	"bluetooth": "linear" | "bold";
 	"bold": "linear" | "bold";
 	"bolt": "linear" | "bold";
@@ -1062,6 +1067,7 @@ export type IconVariantMap = {
 	"heading-3": "linear" | "bold";
 	"headphones": "linear" | "bold";
 	"heart": "linear" | "bold";
+	"hermes-agent": "linear" | "bold";
 	"history": "linear" | "bold";
 	"home": "linear" | "bold";
 	"home-angle": "linear" | "bold";

@@ -540,6 +540,22 @@
 		]
 	},
 	{
+		"name": "bluesky",
+		"export": "Bluesky",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"bluesky",
+			"bsky",
+			"social",
+			"butterfly",
+			"brand"
+		]
+	},
+	{
 		"name": "bluetooth",
 		"export": "Bluetooth",
 		"category": "devices",
@@ -3007,6 +3023,23 @@
 			"favorite",
 			"like",
 			"solar"
+		]
+	},
+	{
+		"name": "hermes-agent",
+		"export": "HermesAgent",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"hermes",
+			"nous-research",
+			"nous",
+			"ai",
+			"agent",
+			"brand"
 		]
 	},
 	{

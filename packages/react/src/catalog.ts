@@ -35,6 +35,7 @@ import { BatteryLow } from "./icons/battery-low.js";
 import { Bell } from "./icons/bell.js";
 import { BellOff } from "./icons/bell-off.js";
 import { BellRing } from "./icons/bell-ring.js";
+import { Bluesky } from "./icons/bluesky.js";
 import { Bluetooth } from "./icons/bluetooth.js";
 import { Bold } from "./icons/bold.js";
 import { Bolt } from "./icons/bolt.js";
@@ -185,6 +186,7 @@ import { Heading2 } from "./icons/heading-2.js";
 import { Heading3 } from "./icons/heading-3.js";
 import { Headphones } from "./icons/headphones.js";
 import { Heart } from "./icons/heart.js";
+import { HermesAgent } from "./icons/hermes-agent.js";
 import { History } from "./icons/history.js";
 import { Home } from "./icons/home.js";
 import { HomeAngle } from "./icons/home-angle.js";
@@ -715,6 +717,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["bell","ring","notification","alert","ringing"],
 		variants: ["linear","bold"],
 		component: BellRing,
+	},
+	{
+		name: "bluesky",
+		pascalName: "Bluesky",
+		category: "brands",
+		tags: ["bluesky","bsky","social","butterfly","brand"],
+		variants: ["linear","bold"],
+		component: Bluesky,
 	},
 	{
 		name: "bluetooth",
@@ -1915,6 +1925,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["heart","love","favorite","like","solar"],
 		variants: ["linear","bold"],
 		component: Heart,
+	},
+	{
+		name: "hermes-agent",
+		pascalName: "HermesAgent",
+		category: "brands",
+		tags: ["hermes","nous-research","nous","ai","agent","brand"],
+		variants: ["linear","bold"],
+		component: HermesAgent,
 	},
 	{
 		name: "history",

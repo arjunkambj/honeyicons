@@ -201,6 +201,9 @@
 	"bell-ring": {
 		"tags": ["bell", "ring", "notification", "alert", "ringing"]
 	},
+	"bluesky": {
+		"tags": ["bluesky", "bsky", "social", "butterfly", "brand"]
+	},
 	"bluetooth": {
 		"tags": ["bluetooth", "wireless", "connection", "solar"]
 	},
@@ -867,6 +870,9 @@
 	},
 	"heart": {
 		"tags": ["heart", "love", "favorite", "like", "solar"]
+	},
+	"hermes-agent": {
+		"tags": ["hermes", "nous-research", "nous", "ai", "agent", "brand"]
 	},
 	"history": {
 		"tags": ["history", "recent", "clock", "time", "hugeicons"]
