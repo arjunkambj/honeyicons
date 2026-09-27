@@ -7,6 +7,38 @@ their Alt variants share perpendicular bar handles and rounded strokes:
 three tracks for the main icons and two for Alt, following the Hugeicons-derived
 main designs at the user’s request. The source licenses below continue to apply.
 
+## September 27, 2026 smoothness and consistency review
+
+At the user's request, `Star`, `Pin`, and `VerifiedCheck` are rebuilt as
+1.8-unit stroked outlines that follow their Solar silhouettes. The star and pin
+keep their tip, waist, and valley positions with straight edges and smooth
+corner curves, and the badge is constructed exactly from its eight lobe and
+eight valley arcs. The bars in `Battery` and `BatteryLow` become exact
+round-capped arcs. The Solar license below continues to apply to these icons.
+
+`StarOff`, `PinOff`, and `EditOff` now cut the unchanged `Star`, `Pin`, and
+`Pen` with the shared diagonal slash and 1.5 units of clearance, replacing their
+separate drawings. `VolumeOff` places an X beside the unchanged `VolumeHigh`
+speaker. `GripHorizontal` and `GripVertical` share one 7-unit dot grid.
+
+`RotateCw`, `RotateCcw`, `Unlink`, `Link`, `Sun`, `Bug`, `CalendarCheck`, and
+`CloudRain` move inside the 1.2 and 22.8 keylines. `CloudDownload`,
+`CloudUpload`, and `CloudRain` shorten the cloud's lower ends to clear their
+arrows and drops. `FileSearch`, `FileImage`, `CheckDouble`, `SortAscending`,
+`SortDescending`, and `Calculator` separate details that nearly touched, `Bot`
+joins its ears to the head, and the `Wifi` and `WifiOff` dots grow to the
+1-unit minimum. The source licenses below continue to apply.
+
+`BellOff`, `PhoneOff`, `WifiOff`, and `EyeOff` now cut the unchanged `Bell`,
+`Phone`, `Wifi`, and `Eye` with the diagonal slash and 1.5 units of clearance.
+Where BellOff's slash crosses the clapper, the rim and clapper end together in
+one rounded end. EyeOff's slash sits 1.5 units lower so part of the pupil
+remains, and its bold version shows the pupil as a notch. `Logout` is redrawn to
+mirror `Login`, and `Cloud` now uses the Hugeicons-derived cloud shared by
+`CloudDownload`, `CloudUpload`, and `CloudRain`. `SunMoon` and `CursorClick`
+drop their diagonal ray so the remaining rays stay apart at 16px. The source
+licenses below continue to apply.
+
 ## September 23, 2026 redraws
 
 At the user's request, `Bank`, `Crop`, `Dashboard`, `Crown`, `Like`,
@@ -149,18 +181,17 @@ user’s request. The Hugeicons MIT license below applies to these adaptations.
 `Figma`, `Database`, `Bluetooth`, and `EyeClosed` preserve the supplied Solar
 **Figma**, **Database**, **Bluetooth**, and **Eye Closed (Outline)** filled paths.
 Redundant retraced segments are removed from EyeClosed without changing its
-silhouette. The Solar source and CC BY 4.0 license below apply. `EyeOff` uses
-the latest user-supplied filled SVG, retaining the slash, cutouts, and opacity.
+silhouette. The Solar source and CC BY 4.0 license below apply.
 
 `Stopwatch` and `Heading` use `StopWatchIcon` and `HeadingIcon` from
 `@hugeicons/core-free-icons` 4.3.5 under the MIT license reproduced below.
 They inherit Honeyicons stroke settings; the stopwatch dial uses a native circle.
 
 `Bell` preserves the supplied Solar **Bell (Outline)** filled geometry, under
-the Solar source and CC BY 4.0 license below. `BellOff` and `Import` use the
-user-supplied SVG paths; BellOff retains its filled outline and cutouts, while
-Import inherits standard Honeyicons stroke settings and reuses the existing
-curved diagonal arrowhead, with straight arms easing into a smooth corner.
+the Solar source and CC BY 4.0 license below. `Import` uses the user-supplied
+SVG path; it inherits standard Honeyicons stroke settings and reuses the
+existing curved diagonal arrowhead, with straight arms easing into a smooth
+corner.
 
 `Rocket`, `Move`, `History`, `CloudDownload`, and `CloudUpload`
 use `Rocket02Icon`, `MoveIcon`, `HistoryIcon`,
@@ -211,7 +242,7 @@ and clip. The plain variant omits the symbol, the check reuses the existing
 Honeyicons check curve, and the remove variant uses the supplied **Clipboard
 Minus** bar. The same Solar source and CC BY 4.0 license apply.
 
-`Upload`, `Download`, `Login`, `Reply`, `Forward`,
+`Upload`, `Download`, `Login`, `Logout`, `Reply`, `Forward`,
 `ListChecks`, and `Kanban` are drawn for the user's
 layout references with Honeyicons curves and standard stroke settings.
 Arrows and check marks reuse the existing Hugeicons-derived geometry covered
@@ -321,12 +352,6 @@ accidentally duplicated reference. It uses smooth corner curves, a 1.5-unit
 stroke, and round caps and joins, and follows the supplied Gallery Add
 landscape motif.
 
-`Cloud` is adapted from the user-supplied **Cloud (Outline)** in the
-[Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
-licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-Its filled outline, cutout, curves, and baked weight are preserved with
-`currentColor`; unused source attributes are removed.
-
 `Smartphone` and `Tablet` are adapted from the corresponding user-supplied
 **Outline** icons in the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
@@ -346,11 +371,6 @@ with `currentColor`. Source classes and unused root stroke attributes are remove
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 All three filled paths and their rounding, proportions, and baked outline
 weight are preserved with `currentColor`; unused source attributes are removed.
-
-`Logout` uses the user-supplied **Logout 3 (Outline)** from the same Solar set
-and license. Its filled door geometry is preserved. The supplied left-pointing
-arrow retains its filled outline and rounded tips, with a shorter shaft and
-smooth curves at the inner notches where the head meets the shaft.
 
 `File`, `FileText`, `FileCode`, `GitBranch`, `GitDiff`, `GitFork`, `GitGraph`,
 `GitPullRequest`, `Home`, `HomeAngle`, `Calendar`, `CalendarMark`,
