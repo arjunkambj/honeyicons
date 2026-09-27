@@ -4,7 +4,12 @@ import { join } from "node:path";
 const VARIANTS = ["linear", "bold"] as const;
 type Variant = (typeof VARIANTS)[number];
 
-type IconNode = [tag: string, attrs: Record<string, string>][];
+type IconElement = [
+	tag: string,
+	attrs: Record<string, string>,
+	children?: IconElement[],
+];
+type IconNode = IconElement[];
 type IconMeta = Record<string, { tags?: string[] }>;
 type IconSource = { name: string; category: string; variants: Variant[] };
 type IconIndexEntry = {
@@ -25,6 +30,16 @@ const metaPath = join(iconsDir, "meta.json");
 const iconIndexPath = join(root, "packages/react/icons.json");
 
 const STRIP_ATTRS = new Set(["xmlns", "class", "className"]);
+// Paint servers, masks, filters, and their containers keep their child elements.
+const CONTAINER_TAGS = new Set([
+	"g",
+	"defs",
+	"linearGradient",
+	"radialGradient",
+	"mask",
+	"clipPath",
+	"filter",
+]);
 
 function toPascalCase(name: string) {
 	return name
@@ -54,6 +69,21 @@ function parseAttrs(raw: string) {
 		attrs[name] = match[2] ?? match[3] ?? match[4] ?? "";
 	}
 	return attrs;
+}
+
+function findClosingTag(src: string, tag: string, from: number, file: string) {
+	const tags = new RegExp(`<${tag}(?=[\\s/>])[^>]*?(/?)>|</${tag}\\s*>`, "g");
+	tags.lastIndex = from;
+	let depth = 1;
+	for (let match = tags.exec(src); match; match = tags.exec(src)) {
+		if (match[0].startsWith("</")) {
+			depth -= 1;
+			if (depth === 0) return match.index;
+		} else if (match[1] !== "/") {
+			depth += 1;
+		}
+	}
+	throw new Error(`${file}: missing </${tag}>`);
 }
 
 function parseNodes(xml: string, file: string): IconNode {
@@ -96,39 +126,93 @@ function parseNodes(xml: string, file: string): IconNode {
 			continue;
 		}
 
-		const closeTag = `</${tag}>`;
-		const closeAt = src.indexOf(closeTag, closeAngle + 1);
-		if (closeAt === -1) {
-			throw new Error(`${file}: missing ${closeTag}`);
-		}
+		const closeAt = findClosingTag(src, tag, closeAngle + 1, file);
 		const inner = src.slice(closeAngle + 1, closeAt).trim();
-		if (inner.includes("<") && tag === "g") {
-			const childNodes = parseNodes(inner, file);
-			const transform = attrs.transform;
-			for (const [childTag, childAttrs] of childNodes) {
-				nodes.push([
-					childTag,
-					transform
-						? {
-								...childAttrs,
-								transform: [transform, childAttrs.transform]
-									.filter(Boolean)
-									.join(" "),
-							}
-						: childAttrs,
-				]);
-			}
-		} else if (!inner.includes("<")) {
+		if (!inner.includes("<")) {
 			nodes.push([tag, inner ? { ...attrs, children: inner } : attrs]);
-		} else {
+		} else if (!CONTAINER_TAGS.has(tag)) {
 			throw new Error(
-				`${file}: <${tag}> with child elements is not supported. Only <g> containers are flattened.`,
+				`${file}: <${tag}> with child elements is not supported. Only ${[...CONTAINER_TAGS].join(", ")} can have children.`,
 			);
+		} else {
+			const children = parseNodes(inner, file);
+			const transform = attrs.transform;
+			// A group that only moves plain shapes adds nothing once its transform
+			// is moved onto them.
+			const flatten =
+				tag === "g" &&
+				Object.keys(attrs).every((key) => key === "transform") &&
+				children.every(([, , nested]) => !nested);
+			if (flatten) {
+				for (const [childTag, childAttrs] of children) {
+					nodes.push([
+						childTag,
+						transform
+							? {
+									...childAttrs,
+									transform: [transform, childAttrs.transform]
+										.filter(Boolean)
+										.join(" "),
+								}
+							: childAttrs,
+					]);
+				}
+			} else {
+				nodes.push([tag, attrs, children]);
+			}
 		}
-		i = closeAt + closeTag.length;
+		i = src.indexOf(">", closeAt) + 1;
 	}
 
 	return nodes;
+}
+
+// IconBase scopes ids per rendered icon and draws every stroke at 1.8, so each
+// reference must be an unquoted url(#id) to an id defined once in the same
+// file, and nested nodes can't set inline styles or their own stroke width.
+function checkNodes(nodes: IconNode, file: string) {
+	const ids = new Set<string>();
+	const references: string[] = [];
+	const visit = (list: IconNode) => {
+		for (const [tag, attrs, children] of list) {
+			if ("style" in attrs) {
+				throw new Error(
+					`${file}: <${tag}> has a style attribute; use presentation attributes`,
+				);
+			}
+			if ("href" in attrs || "xlink:href" in attrs) {
+				throw new Error(
+					`${file}: <${tag}> uses href; reference paint servers with url(#id)`,
+				);
+			}
+			if ("strokeWidth" in attrs) {
+				throw new Error(
+					`${file}: <${tag}> sets stroke-width; only the root <svg> may, as "1.8"`,
+				);
+			}
+			for (const [key, value] of Object.entries(attrs)) {
+				if (key === "id") {
+					if (ids.has(value)) {
+						throw new Error(`${file}: duplicate id "${value}"`);
+					}
+					ids.add(value);
+				}
+				for (const match of value.matchAll(/url\(([^)]*)\)/g)) {
+					const target = match[1] ?? "";
+					if (!/^#[\w-]+$/.test(target)) {
+						throw new Error(`${file}: use url(#id), got url(${target})`);
+					}
+					references.push(target.slice(1));
+				}
+			}
+			if (children) visit(children);
+		}
+	};
+	visit(nodes);
+	const missing = references.find((reference) => !ids.has(reference));
+	if (missing) {
+		throw new Error(`${file}: url(#${missing}) has no matching id`);
+	}
 }
 
 function parseSvg(svg: string, file: string) {
@@ -154,10 +238,13 @@ function parseSvg(svg: string, file: string) {
 			`${file}: stroke-width must be "1.8", got ${JSON.stringify(strokeWidth)}`,
 		);
 	}
-	const nodes = parseNodes(svg.slice(start, end), file);
+	// Comments could hide a closing tag or leave a container empty.
+	const body = svg.slice(start, end).replace(/<!--[\s\S]*?-->/g, "");
+	const nodes = parseNodes(body, file);
 	if (nodes.length === 0) {
 		throw new Error(`${file}: no drawable nodes`);
 	}
+	checkNodes(nodes, file);
 	return nodes;
 }
 
@@ -168,16 +255,23 @@ function serializeAttrs(attrs: Record<string, string>) {
 			: JSON.stringify(key);
 		return `${jsKey}: ${JSON.stringify(value)}`;
 	});
-	return `{ ${parts.join(", ")} }`;
+	return parts.length > 0 ? `{ ${parts.join(", ")} }` : "{}";
+}
+
+function serializeElement(
+	[tag, attrs, children]: IconElement,
+	depth: number,
+): string {
+	const indent = "\t".repeat(depth);
+	const head = `${JSON.stringify(tag)}, ${serializeAttrs(attrs)}`;
+	if (!children) return `${indent}[${head}]`;
+	return `${indent}[${head}, [\n${children
+		.map((child) => serializeElement(child, depth + 1))
+		.join(",\n")},\n${indent}]]`;
 }
 
 function serializeNodes(nodes: IconNode) {
-	return `[\n${nodes
-		.map(
-			([tag, attrs]) =>
-				`\t\t[${JSON.stringify(tag)}, ${serializeAttrs(attrs)}]`,
-		)
-		.join(",\n")},\n\t]`;
+	return `[\n${nodes.map((node) => serializeElement(node, 2)).join(",\n")},\n\t]`;
 }
 
 function listVariantDir(variant: Variant) {

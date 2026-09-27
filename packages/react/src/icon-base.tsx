@@ -1,4 +1,10 @@
-import { createElement, forwardRef, type SVGProps } from "react";
+import {
+	createElement,
+	forwardRef,
+	type ReactElement,
+	type SVGProps,
+	useId,
+} from "react";
 
 import type { IconNode } from "./types.js";
 
@@ -22,6 +28,69 @@ function paintsFill(attrs: Record<string, string>) {
 	return Boolean(fill && fill !== "none");
 }
 
+function someNode(
+	nodes: IconNode,
+	test: (attrs: Record<string, string>) => boolean,
+): boolean {
+	return nodes.some(
+		([, attrs, children]) =>
+			test(attrs) || (children !== undefined && someNode(children, test)),
+	);
+}
+
+function hasId(attrs: Record<string, string>) {
+	return attrs.id !== undefined;
+}
+
+// Prefix ids and their url(#id) references with a per-instance scope.
+function scopeIds(attrs: Record<string, string>, scope: string) {
+	const scoped: Record<string, string> = {};
+	for (const [key, value] of Object.entries(attrs)) {
+		scoped[key] =
+			key === "id"
+				? `${scope}${value}`
+				: value.replace(/url\(#/g, `url(#${scope}`);
+	}
+	return scoped;
+}
+
+function renderNodes(
+	nodes: IconNode,
+	hasStroke: boolean,
+	scope?: string,
+	stroked = false,
+): ReactElement[] {
+	return nodes.map(([tag, attrs, children], key) => {
+		// Filled shapes skip the root stroke unless they or their group stroke.
+		const painted =
+			hasStroke && !stroked && paintsFill(attrs) && !paintsStroke(attrs)
+				? { ...attrs, stroke: "none" }
+				: attrs;
+		const props = { ...(scope ? scopeIds(painted, scope) : painted), key };
+		// Passing children positionally would replace a text `children` attribute.
+		if (!children) return createElement(tag, props);
+		return createElement(
+			tag,
+			props,
+			renderNodes(children, hasStroke, scope, stroked || paintsStroke(attrs)),
+		);
+	});
+}
+
+// Gradients and masks are found by id. Repeated icons need their own ids, or a
+// copy inside a hidden subtree can blank out the visible ones. Only icons with
+// ids render this, so the rest stay hook-free for renderers such as Satori.
+function ScopedNodes({
+	iconNode,
+	hasStroke,
+}: {
+	iconNode: IconNode;
+	hasStroke: boolean;
+}) {
+	const scope = `${useId().replace(/[^\w-]/g, "")}-`;
+	return <>{renderNodes(iconNode, hasStroke, scope)}</>;
+}
+
 export const IconBase = forwardRef<SVGSVGElement, IconBaseProps>(
 	function IconBase(
 		{
@@ -39,7 +108,7 @@ export const IconBase = forwardRef<SVGSVGElement, IconBaseProps>(
 	) {
 		// Solar linear icons are filled outlines. A root stroke would draw a
 		// second outline on top of the already-baked weight.
-		const hasStroke = iconNode.some(([, attrs]) => paintsStroke(attrs));
+		const hasStroke = someNode(iconNode, paintsStroke);
 		const hasAccessibleName = Boolean(
 			title || props["aria-label"] || props["aria-labelledby"],
 		);
@@ -65,13 +134,11 @@ export const IconBase = forwardRef<SVGSVGElement, IconBaseProps>(
 				{...props}
 			>
 				{title ? <title>{title}</title> : null}
-				{iconNode.map(([tag, attrs], index) => {
-					const mapped =
-						hasStroke && paintsFill(attrs) && !paintsStroke(attrs)
-							? { ...attrs, stroke: "none" }
-							: attrs;
-					return createElement(tag, { ...mapped, key: index });
-				})}
+				{someNode(iconNode, hasId) ? (
+					<ScopedNodes iconNode={iconNode} hasStroke={hasStroke} />
+				) : (
+					renderNodes(iconNode, hasStroke)
+				)}
 				{children}
 			</svg>
 		);
