@@ -81,6 +81,10 @@ arrows and chevrons, and solid brand marks such as `youtube`, use the same
 drawing in both. Any other variant throws. Stroke width affects stroked
 geometry; filled outlines retain their original geometry.
 
+Brand logos with official colors also come as `<name>-color`, such as
+`google-color` and `claude-ai-color`. They keep their brand colors; only
+neutral parts such as the TikTok note follow the text color.
+
 To type your own props, import `IconName`, `IconProps`, and `IconVariantMap`
 from `@honeyicons/react`. `@honeyicons/react/icons.json` lists each icon's name,
 export, category, variants, and tags, and `@honeyicons/react/catalog` exports the

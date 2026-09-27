@@ -32,7 +32,8 @@ const propsCode = `import { Icon } from "@honeyicons/react";
 <Icon icon="bell" size={24} />
 <Icon icon="bell" color="#3b82f6" />
 <Icon icon="search" strokeWidth={1.8} />
-<Icon icon="moon" variant="bold" />`;
+<Icon icon="moon" variant="bold" />
+<Icon icon="google-color" />`;
 
 const skillCode = "npx skills add arjunkambj/honeyicons";
 
@@ -160,7 +161,7 @@ function DocsPage() {
 				<DocsSection
 					id="props"
 					title="Props"
-					description="Every icon is drawn on a 24 × 24 grid with a 1.8 stroke and uses the current text color. Every icon also has a bold version."
+					description="Every icon is drawn on a 24 × 24 grid with a 1.8 stroke and uses the current text color. Every icon also has a bold version. Brand icons ending in -color keep their brand colors."
 				>
 					<CodeBlock code={propsCode} className="mt-6" />
 					<div className="mt-3 grid grid-cols-3 items-end gap-x-2 gap-y-6 rounded-2xl bg-card px-4 py-5 sm:flex sm:flex-wrap sm:gap-8 sm:px-5 sm:py-4">
@@ -180,6 +181,12 @@ function DocsPage() {
 						</figure>
 						<StrokeSample width={1.8} />
 						<VariantSample variant="bold" />
+						<figure className="flex flex-col items-center gap-2">
+							<Icon icon="google-color" size={24} />
+							<figcaption className="font-mono text-muted-foreground text-xs">
+								google-color
+							</figcaption>
+						</figure>
 					</div>
 				</DocsSection>
 				<DocsSection

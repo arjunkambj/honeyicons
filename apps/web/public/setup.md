@@ -55,7 +55,8 @@ export function Toolbar() {
 - Use `size={16}` in dense UI, `20` in buttons, and `24` in navigation and
   headers.
 - Icons use the current text color. Style them with `className` rather than
-  hard-coded colors.
+  hard-coded colors. Brand logos ending in `-color`, such as `google-color`,
+  keep their brand colors.
 - Icons are decorative by default. Put `aria-label` on icon-only buttons, or
   give an icon a `title` when it must be read out on its own.
 - If the project already uses another icon library, ask before replacing it.
