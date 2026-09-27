@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M6.5 20.25V4.3M10.35 7.6C10.35 7.6 7.5142 3.75 6.5 3.75C5.4858 3.75 2.65 7.6 2.65 7.6M12.55 6.5H15.85M12.55 12H19.15M12.55 17.5H21.9", stroke: "currentColor" }],
+	["path", { d: "M6.9 20.25V4.3M10.75 7.6C10.75 7.6 7.9142 3.75 6.9 3.75C5.8858 3.75 3.05 7.6 3.05 7.6M14.65 6.5H17.05M14.65 12H19.15M14.65 17.5H21.9", stroke: "currentColor" }],
 ];
 
 export const SortAscending = /* @__PURE__ */ createIcon("SortAscending", {

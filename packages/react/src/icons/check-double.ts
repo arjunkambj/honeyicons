@@ -3,8 +3,8 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M2 13.2593L4.58579 15.9568C5.25245 16.6523 5.58579 17 6 17C6.41421 17 6.74755 16.6523 7.41421 15.9568L16 7", stroke: "currentColor" }],
-	["path", { d: "M10.5858 15.9568C11.2525 16.6523 11.5858 17 12 17C12.4142 17 12.7475 16.6523 13.4142 15.9568L22 7", stroke: "currentColor" }],
+	["path", { d: "M2 13.2593L4.5858 15.9568C5.2524 16.6523 5.5858 17 6 17C6.4142 17 6.7476 16.6523 7.4142 15.9568L16 7", stroke: "currentColor" }],
+	["path", { d: "M11.3029 16.6689C11.559 16.8896 11.7666 17 12 17C12.4142 17 12.7475 16.6523 13.4142 15.9568L22 7", stroke: "currentColor" }],
 ];
 
 export const CheckDouble = /* @__PURE__ */ createIcon("CheckDouble", {
