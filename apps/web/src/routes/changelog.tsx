@@ -1,15 +1,22 @@
 import {
+	Bluesky,
 	Bot,
 	Card,
 	ChartPie,
+	ClaudeAiColor,
 	Clock,
 	CloudRain,
 	Film,
 	FolderOpen,
+	GeminiColor,
+	GoogleColor,
+	HermesAgent,
+	InstagramColor,
 	Heading1,
 	Key,
 	Laptop,
 	Receipt,
+	SlackColor,
 	Snowflake,
 	Trophy,
 	UserAdd,
@@ -25,6 +32,7 @@ import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-009", label: "0.0.9 · Brand colors" },
 	{ id: "version-008", label: "0.0.8 · Redrawn icons" },
 	{ id: "version-007", label: "0.0.7 · Bold for every icon" },
 	{ id: "version-006", label: "0.0.6 · Even overlaps" },
@@ -51,6 +59,16 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version009Highlights = [
+	{ name: "GoogleColor", Icon: GoogleColor },
+	{ name: "ClaudeAiColor", Icon: ClaudeAiColor },
+	{ name: "GeminiColor", Icon: GeminiColor },
+	{ name: "InstagramColor", Icon: InstagramColor },
+	{ name: "SlackColor", Icon: SlackColor },
+	{ name: "Bluesky", Icon: Bluesky },
+	{ name: "HermesAgent", Icon: HermesAgent },
 ] as const;
 
 const version008Highlights = [
@@ -98,6 +116,47 @@ function ChangelogPage() {
 					title="Changelog"
 					description="New icons and small improvements to the collection."
 				/>
+				<section
+					aria-labelledby="version-009"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-09-27" className="text-muted-foreground text-sm">
+						September 27, 2026
+					</time>
+					<h2
+						id="version-009"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.9 · Brand icons in full color
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version009Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center rounded-xl bg-card"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							37 brands with colored logos now also come in full color, such as
+							GoogleColor and ClaudeAiColor. Each matches its plain icon’s size
+							and position, so the two swap without shifting.
+						</li>
+						<li>
+							Neutral parts that a brand flips on dark backgrounds, such as the
+							TikTok note and the Kimi tile, follow the text color.
+						</li>
+						<li>New Bluesky and Hermes Agent brand icons.</li>
+						<li>
+							Icons with gradients or masks give each rendered copy its own ids,
+							so repeated icons never share or blank out each other’s colors.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-008"
 					className="border-t border-border pt-8"
