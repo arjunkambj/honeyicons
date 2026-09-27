@@ -12,6 +12,7 @@
 	],
 	"homepage": "https://github.com/arjunkambj/honeyicons#readme",
 	"bugs": "https://github.com/arjunkambj/honeyicons/issues",
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/arjunkambj/honeyicons.git",

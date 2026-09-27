@@ -1,5 +1,8 @@
 # Third-party icons
 
+Honeyicons is released under the MIT License; see `LICENSE`. The icons below
+are adapted from third-party sets, and their source licenses still apply.
+
 The requested consistency review smooths `Puzzle`'s tab transitions, widens
 `Pause`'s rounded bars, simplifies `Fingerprint`'s tight interior curves, and
 cleans `Gift`'s bow and lid joins. `SlidersHorizontal`, `SlidersVertical`, and

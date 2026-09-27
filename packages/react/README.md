@@ -118,4 +118,7 @@ To build or package from this repository, run `pnpm run build` or `pnpm pack`
 inside `packages/react`. Packing builds the package automatically. The web app
 and shared UI resolve the source through TypeScript paths during development.
 
-See [NOTICE.md](./NOTICE.md) for third-party icon licenses and attribution.
+## License
+
+MIT. See [LICENSE](./LICENSE). Icons adapted from third-party sets keep their
+source licenses; see [NOTICE.md](./NOTICE.md) for attribution.

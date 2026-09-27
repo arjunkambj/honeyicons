@@ -131,6 +131,10 @@ Renaming an icon renames its export; no deprecated aliases are generated.
 Third-party icon sources and adaptation details are recorded in
 [the React package notices](packages/react/NOTICE.md).
 
+## License
+
+Honeyicons is released under the [MIT License](LICENSE).
+
 ## Available Scripts
 
 - `pnpm run dev`: Start all applications in development mode
