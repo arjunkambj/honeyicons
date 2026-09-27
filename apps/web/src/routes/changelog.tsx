@@ -1,11 +1,14 @@
 import {
+	BellOff,
 	Bluesky,
 	Bot,
 	Card,
 	ChartPie,
 	ClaudeAiColor,
 	Clock,
+	Cloud,
 	CloudRain,
+	EyeOff,
 	Film,
 	FolderOpen,
 	GeminiColor,
@@ -15,14 +18,18 @@ import {
 	Heading1,
 	Key,
 	Laptop,
+	Logout,
 	Receipt,
 	SlackColor,
 	Snowflake,
+	Star,
 	Trophy,
 	UserAdd,
 	UserCheck,
 	UserGroup,
 	UserLock,
+	VerifiedCheck,
+	VolumeOff,
 	Wallet,
 	Webhook,
 } from "@honeyicons/react";
@@ -32,6 +39,7 @@ import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0010", label: "0.0.10 · Consistency pass" },
 	{ id: "version-009", label: "0.0.9 · Brand colors" },
 	{ id: "version-008", label: "0.0.8 · Redrawn icons" },
 	{ id: "version-007", label: "0.0.7 · Bold for every icon" },
@@ -59,6 +67,17 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version0010Highlights = [
+	{ name: "FolderOpen", Icon: FolderOpen, variant: "bold" },
+	{ name: "BellOff", Icon: BellOff, variant: "linear" },
+	{ name: "EyeOff", Icon: EyeOff, variant: "linear" },
+	{ name: "Logout", Icon: Logout, variant: "linear" },
+	{ name: "Cloud", Icon: Cloud, variant: "linear" },
+	{ name: "Star", Icon: Star, variant: "linear" },
+	{ name: "VerifiedCheck", Icon: VerifiedCheck, variant: "linear" },
+	{ name: "VolumeOff", Icon: VolumeOff, variant: "linear" },
 ] as const;
 
 const version009Highlights = [
@@ -116,6 +135,55 @@ function ChangelogPage() {
 					title="Changelog"
 					description="New icons and small improvements to the collection."
 				/>
+				<section
+					aria-labelledby="version-0010"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-09-27" className="text-muted-foreground text-sm">
+						September 27, 2026
+					</time>
+					<h2
+						id="version-0010"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.10 · Smoother shapes and cleaner slashes
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version0010Highlights.map(({ name, Icon, variant }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center rounded-xl bg-card"
+							>
+								<Icon size={24} variant={variant} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Bold FolderOpen cuts its gap along the flap line, so the back of
+							the folder keeps its right side instead of ending in a point.
+						</li>
+						<li>
+							BellOff, PhoneOff, WifiOff, and EyeOff leave 1.5 units clear on
+							each side of the slash. StarOff, PinOff, and EditOff are now their
+							base icons cut by the same slash.
+						</li>
+						<li>
+							Logout mirrors Login, Cloud matches CloudDownload and CloudUpload,
+							and VolumeOff places an X beside the VolumeHigh speaker.
+						</li>
+						<li>
+							Star, Pin, and VerifiedCheck have straight edges and smooth
+							corners, and the Battery bars have round ends.
+						</li>
+						<li>
+							Icons that crossed the keylines now sit inside them. Parts that
+							nearly touched are separated so they stay apart at 16px, and
+							SunMoon and CursorClick keep two rays instead of three.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-009"
 					className="border-t border-border pt-8"
