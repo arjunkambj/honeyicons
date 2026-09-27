@@ -45,6 +45,12 @@
 - Line-only icons keep the linear file byte-identical. Letter counters, handle openings, and real holes, such as the life-buoy centre, stay open.
 - Leave no slivers or bridges under 1.2 units, islands under 0.8 square units, spurs, or bumps. When linear spacing causes one, fix linear first. Output a single `currentColor` fill path.
 
+## Brand marks
+
+- Ship every brand in both style folders. A solid official mark uses one drawing in both. Only a mark with a genuine line form gets its own linear drawing, as Instagram, Snapchat, Figma, and Meta do; bold keeps the filled logo.
+- Draw a ribbon mark's line form, like Meta's, as one 1.8-unit line along the official mark's centerline, scaled so its outer edge meets the bold mark's footprint.
+- When a mark's pieces overlap and only color tells them apart, as in Google Ads, the mono drawing keeps the front pieces whole and trims the back piece 1.5 units clear of them. The color drawing keeps the official overlap.
+
 ## Brand color icons
 
 - A brand whose official mark has color also ships `<name>-color` (for example `claude-ai-color`) in both style folders, with one drawing shared by linear and bold. Only `instagram-color` differs by style, following the two mono Instagram drawings. Monochrome marks such as X, GitHub, OpenAI, and Vercel get no color version.
