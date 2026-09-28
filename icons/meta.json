@@ -2053,6 +2053,12 @@
 	"zai": {
 		"tags": ["z.ai", "ai", "brand"]
 	},
+	"zed": {
+		"tags": ["code", "editor", "ai", "brand"]
+	},
+	"zed-color": {
+		"tags": ["code", "editor", "ai", "brand", "color"]
+	},
 	"zoom-in": {
 		"tags": [
 			"magnifier",

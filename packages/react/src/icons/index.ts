@@ -476,5 +476,7 @@ export { Xai } from "./xai.js";
 export { Youtube } from "./youtube.js";
 export { YoutubeColor } from "./youtube-color.js";
 export { Zai } from "./zai.js";
+export { Zed } from "./zed.js";
+export { ZedColor } from "./zed-color.js";
 export { ZoomIn } from "./zoom-in.js";
 export { ZoomOut } from "./zoom-out.js";

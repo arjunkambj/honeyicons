@@ -479,6 +479,8 @@ import { Xai } from "./icons/xai.js";
 import { Youtube } from "./icons/youtube.js";
 import { YoutubeColor } from "./icons/youtube-color.js";
 import { Zai } from "./icons/zai.js";
+import { Zed } from "./icons/zed.js";
+import { ZedColor } from "./icons/zed-color.js";
 import { ZoomIn } from "./icons/zoom-in.js";
 import { ZoomOut } from "./icons/zoom-out.js";
 
@@ -4310,6 +4312,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["z.ai","ai","brand"],
 		variants: ["linear","bold"],
 		component: Zai,
+	},
+	{
+		name: "zed",
+		pascalName: "Zed",
+		category: "brands",
+		tags: ["code","editor","ai","brand"],
+		variants: ["linear","bold"],
+		component: Zed,
+	},
+	{
+		name: "zed-color",
+		pascalName: "ZedColor",
+		category: "brands",
+		tags: ["code","editor","ai","brand","color"],
+		variants: ["linear","bold"],
+		component: ZedColor,
 	},
 	{
 		name: "zoom-in",

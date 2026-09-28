@@ -7769,6 +7769,37 @@
 		]
 	},
 	{
+		"name": "zed",
+		"export": "Zed",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"code",
+			"editor",
+			"ai",
+			"brand"
+		]
+	},
+	{
+		"name": "zed-color",
+		"export": "ZedColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"code",
+			"editor",
+			"ai",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "zoom-in",
 		"export": "ZoomIn",
 		"category": "actions",

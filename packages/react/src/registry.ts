@@ -477,6 +477,8 @@ import { Xai } from "./icons/xai.js";
 import { Youtube } from "./icons/youtube.js";
 import { YoutubeColor } from "./icons/youtube-color.js";
 import { Zai } from "./icons/zai.js";
+import { Zed } from "./icons/zed.js";
+import { ZedColor } from "./icons/zed-color.js";
 import { ZoomIn } from "./icons/zoom-in.js";
 import { ZoomOut } from "./icons/zoom-out.js";
 
@@ -958,6 +960,8 @@ export const icons = {
 	"youtube": Youtube,
 	"youtube-color": YoutubeColor,
 	"zai": Zai,
+	"zed": Zed,
+	"zed-color": ZedColor,
 	"zoom-in": ZoomIn,
 	"zoom-out": ZoomOut,
 } satisfies Record<string, HoneyIcon>;
@@ -1442,6 +1446,8 @@ export type IconVariantMap = {
 	"youtube": "linear" | "bold";
 	"youtube-color": "linear" | "bold";
 	"zai": "linear" | "bold";
+	"zed": "linear" | "bold";
+	"zed-color": "linear" | "bold";
 	"zoom-in": "linear" | "bold";
 	"zoom-out": "linear" | "bold";
 };

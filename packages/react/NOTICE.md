@@ -741,6 +741,13 @@ clear of the capsule and dot, here by 1.5 units. Linear and bold share this
 drawing. `GoogleAdsColor` paints the untrimmed pieces in Google's yellow, blue,
 and green.
 
+## Zed
+
+`Zed` scales the logomark from Zed's [brand page](https://zed.dev/brand)
+uniformly to 21.6 units, so its outer edges meet the 1.2 and 22.8 keylines,
+and keeps its lines, flat ends, and corner curves. Linear and bold share this
+drawing. `ZedColor` paints it in Zed's brand blue, `#1348DC`.
+
 Brand names and logos are trademarks of their respective owners and appear
 here only to identify their products.
 
