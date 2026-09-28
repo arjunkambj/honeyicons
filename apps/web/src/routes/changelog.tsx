@@ -15,6 +15,8 @@ import {
 	Film,
 	FolderOpen,
 	GeminiColor,
+	GoogleAds,
+	GoogleAdsColor,
 	GoogleColor,
 	HermesAgent,
 	InstagramColor,
@@ -23,6 +25,8 @@ import {
 	Laptop,
 	Login,
 	Logout,
+	Meta,
+	MetaColor,
 	Receipt,
 	SlackColor,
 	Snowflake,
@@ -37,6 +41,8 @@ import {
 	VolumeOff,
 	Wallet,
 	Webhook,
+	Zed,
+	ZedColor,
 } from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
 import { createFileRoute, Link } from "@tanstack/react-router";
@@ -44,6 +50,7 @@ import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0012", label: "0.0.12 · Meta, Google Ads, Zed" },
 	{ id: "version-0011", label: "0.0.11 · Bold frames" },
 	{ id: "version-0010", label: "0.0.10 · Consistency pass" },
 	{ id: "version-009", label: "0.0.9 · Brand colors" },
@@ -73,6 +80,15 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version0012Highlights = [
+	{ name: "Meta", Icon: Meta },
+	{ name: "MetaColor", Icon: MetaColor },
+	{ name: "GoogleAds", Icon: GoogleAds },
+	{ name: "GoogleAdsColor", Icon: GoogleAdsColor },
+	{ name: "Zed", Icon: Zed },
+	{ name: "ZedColor", Icon: ZedColor },
 ] as const;
 
 const version0011Highlights = [
@@ -150,6 +166,42 @@ function ChangelogPage() {
 					title="Changelog"
 					description="New icons and small improvements to the collection."
 				/>
+				<section
+					aria-labelledby="version-0012"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-09-28" className="text-muted-foreground text-sm">
+						September 28, 2026
+					</time>
+					<h2
+						id="version-0012"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.12 · Meta, Google Ads, and Zed
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version0012Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center rounded-xl bg-card"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Meta, Google Ads, and Zed join the brand icons, each with a
+							full-color version.
+						</li>
+						<li>
+							Linear Meta is the infinity ribbon drawn as a single line, and
+							bold keeps the filled logo. The mono Google Ads keeps its front
+							pieces whole and leaves a clear gap around the one behind.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0011"
 					className="border-t border-border pt-8"
