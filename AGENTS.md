@@ -5,6 +5,13 @@
 - Use `@honeyicons/react` for app and shared UI icons. Do not add Hugeicons dependencies or imports; map icons from generated or copied UI components to our existing exports.
 - Create every icon in linear and bold. Draw linear first, then derive bold from it by the rules in **Bold variants** below.
 
+## Branches, previews, and releases
+
+- `preview` is the working branch. Commit there, or branch from it and open pull requests against `preview`. Never open a pull request against `main` except the one that promotes `preview`.
+- Promote by opening a pull request from `preview` into `main`. Do not commit to `main` directly.
+- Deploy the site preview from `preview` with the local Cloudflare CLI: build the packages (`pnpm --filter @honeyicons/react --filter @honeyicons/ui build`), then `pnpm --filter web deploy:preview`. It uploads a version under the `preview` alias (https://preview-honeyicons.kambojarjunn78.workers.dev) without touching production. Production deploys stay manual with `pnpm --filter web deploy`.
+- npm releases are automatic: when `main` receives a `packages/react/package.json` version that npm does not have, `.github/workflows/publish.yml` checks the generated icons, publishes `@honeyicons/react`, and tags `react-v<version>`. To release, bump that version and add the changelog entry in `apps/web/src/routes/changelog.tsx` on `preview`, then merge into `main`. Do not publish from a local machine.
+
 ## Pasted SVG workflow
 
 - Check for an existing icon by name and shape before adding an incoming SVG; skip duplicates unless a replacement is requested. Clean the markup, choose a descriptive name and category, add search tags in `icons/meta.json`, and retain required source attribution in `packages/react/NOTICE.md`.
