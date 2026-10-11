@@ -1,0 +1,70 @@
+name: Publish
+
+# Publishes @honeyicons/react when main carries a version that npm does not have yet.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check version
+        id: version
+        run: |
+          version=$(node -p "require('./packages/react/package.json').version")
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          if npm view "@honeyicons/react@$version" version >/dev/null 2>&1; then
+            echo "@honeyicons/react@$version is already on npm, skipping."
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: pnpm/action-setup@v4
+        if: steps.version.outputs.publish == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.version.outputs.publish == 'true'
+        with:
+          node-version: 24
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+
+      - name: Install
+        if: steps.version.outputs.publish == 'true'
+        run: |
+          pnpm install --frozen-lockfile
+          npm install -g npm@^11.5.1
+
+      - name: Check generated icons are up to date
+        if: steps.version.outputs.publish == 'true'
+        run: |
+          pnpm generate:icons
+          git diff --exit-code || (echo "Run pnpm generate:icons and commit the result." && exit 1)
+
+      - name: Build and pack
+        if: steps.version.outputs.publish == 'true'
+        run: pnpm --filter @honeyicons/react pack --pack-destination "$RUNNER_TEMP"
+
+      - name: Publish
+        if: steps.version.outputs.publish == 'true'
+        run: npm publish "$RUNNER_TEMP"/honeyicons-react-*.tgz --access public --provenance
+
+      - name: Tag release
+        if: steps.version.outputs.publish == 'true'
+        run: |
+          tag="react-v${{ steps.version.outputs.version }}"
+          git tag "$tag"
+          git push origin "$tag"
