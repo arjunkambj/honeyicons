@@ -3054,6 +3054,41 @@
 		]
 	},
 	{
+		"name": "google-analytics",
+		"export": "GoogleAnalytics",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"google",
+			"analytics",
+			"ga4",
+			"statistics",
+			"marketing",
+			"brand"
+		]
+	},
+	{
+		"name": "google-analytics-color",
+		"export": "GoogleAnalyticsColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"google",
+			"analytics",
+			"ga4",
+			"statistics",
+			"marketing",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "google-color",
 		"export": "GoogleColor",
 		"category": "brands",
@@ -3670,6 +3705,22 @@
 			"moonshot",
 			"brand",
 			"color"
+		]
+	},
+	{
+		"name": "klaviyo",
+		"export": "Klaviyo",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"email",
+			"sms",
+			"marketing",
+			"automation",
+			"brand"
 		]
 	},
 	{
@@ -5832,6 +5883,39 @@
 			"security",
 			"shield-plus",
 			"solar"
+		]
+	},
+	{
+		"name": "shopify",
+		"export": "Shopify",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"shop",
+			"store",
+			"ecommerce",
+			"commerce",
+			"brand"
+		]
+	},
+	{
+		"name": "shopify-color",
+		"export": "ShopifyColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"shop",
+			"store",
+			"ecommerce",
+			"commerce",
+			"brand",
+			"color"
 		]
 	},
 	{

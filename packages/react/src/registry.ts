@@ -186,6 +186,8 @@ import { Globe } from "./icons/globe.js";
 import { Google } from "./icons/google.js";
 import { GoogleAds } from "./icons/google-ads.js";
 import { GoogleAdsColor } from "./icons/google-ads-color.js";
+import { GoogleAnalytics } from "./icons/google-analytics.js";
+import { GoogleAnalyticsColor } from "./icons/google-analytics-color.js";
 import { GoogleColor } from "./icons/google-color.js";
 import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
@@ -224,6 +226,7 @@ import { Key } from "./icons/key.js";
 import { Keyboard } from "./icons/keyboard.js";
 import { Kimi } from "./icons/kimi.js";
 import { KimiColor } from "./icons/kimi-color.js";
+import { Klaviyo } from "./icons/klaviyo.js";
 import { Laptop } from "./icons/laptop.js";
 import { Layers } from "./icons/layers.js";
 import { LayoutAlignBottom } from "./icons/layout-align-bottom.js";
@@ -358,6 +361,8 @@ import { Server } from "./icons/server.js";
 import { Settings } from "./icons/settings.js";
 import { Share } from "./icons/share.js";
 import { ShieldAdd } from "./icons/shield-add.js";
+import { Shopify } from "./icons/shopify.js";
+import { ShopifyColor } from "./icons/shopify-color.js";
 import { Shuffle } from "./icons/shuffle.js";
 import { SidebarBottom } from "./icons/sidebar-bottom.js";
 import { SidebarLeft } from "./icons/sidebar-left.js";
@@ -669,6 +674,8 @@ export const icons = {
 	"google": Google,
 	"google-ads": GoogleAds,
 	"google-ads-color": GoogleAdsColor,
+	"google-analytics": GoogleAnalytics,
+	"google-analytics-color": GoogleAnalyticsColor,
 	"google-color": GoogleColor,
 	"graduation-cap": GraduationCap,
 	"grip-horizontal": GripHorizontal,
@@ -707,6 +714,7 @@ export const icons = {
 	"keyboard": Keyboard,
 	"kimi": Kimi,
 	"kimi-color": KimiColor,
+	"klaviyo": Klaviyo,
 	"laptop": Laptop,
 	"layers": Layers,
 	"layout-align-bottom": LayoutAlignBottom,
@@ -841,6 +849,8 @@ export const icons = {
 	"settings": Settings,
 	"share": Share,
 	"shield-add": ShieldAdd,
+	"shopify": Shopify,
+	"shopify-color": ShopifyColor,
 	"shuffle": Shuffle,
 	"sidebar-bottom": SidebarBottom,
 	"sidebar-left": SidebarLeft,
@@ -1155,6 +1165,8 @@ export type IconVariantMap = {
 	"google": "linear" | "bold";
 	"google-ads": "linear" | "bold";
 	"google-ads-color": "linear" | "bold";
+	"google-analytics": "linear" | "bold";
+	"google-analytics-color": "linear" | "bold";
 	"google-color": "linear" | "bold";
 	"graduation-cap": "linear" | "bold";
 	"grip-horizontal": "linear" | "bold";
@@ -1193,6 +1205,7 @@ export type IconVariantMap = {
 	"keyboard": "linear" | "bold";
 	"kimi": "linear" | "bold";
 	"kimi-color": "linear" | "bold";
+	"klaviyo": "linear" | "bold";
 	"laptop": "linear" | "bold";
 	"layers": "linear" | "bold";
 	"layout-align-bottom": "linear" | "bold";
@@ -1327,6 +1340,8 @@ export type IconVariantMap = {
 	"settings": "linear" | "bold";
 	"share": "linear" | "bold";
 	"shield-add": "linear" | "bold";
+	"shopify": "linear" | "bold";
+	"shopify-color": "linear" | "bold";
 	"shuffle": "linear" | "bold";
 	"sidebar-bottom": "linear" | "bold";
 	"sidebar-left": "linear" | "bold";
