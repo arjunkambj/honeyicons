@@ -440,6 +440,20 @@ uniformly to 21.6 units, so its outer edges meet the 1.2 and 22.8 keylines,
 and keeps its lines, flat ends, and corner curves. Linear and bold share this
 drawing. `ZedColor` paints it in Zed's brand blue, `#1348DC`.
 
+## Shopify, Google Analytics, and Klaviyo
+
+`Shopify` scales the full-color bag from Shopify's
+[brand assets](https://www.shopify.com/brand-assets) to 21.6 units tall. The
+one-color version cuts the S out of the bag and, like Shopify's own one-color
+bag, splits the side from the front at the vertical seam, here with a 1.5-unit
+gap. `ShopifyColor` keeps the bag, side, and S in Shopify's two greens and
+white. `GoogleAnalytics` scales Google's own
+[Analytics icon](https://www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg)
+to 21.6 units tall, and `GoogleAnalyticsColor` keeps its two oranges. `Klaviyo`
+takes the standalone flag from [klaviyo.com](https://www.klaviyo.com), 21 units
+wide, with its sharp corners. Klaviyo's mark is one color, so it has no color
+version. Linear and bold share each drawing.
+
 Brand names and logos are trademarks of their respective owners and appear
 here only to identify their products.
 
