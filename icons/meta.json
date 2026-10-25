@@ -868,6 +868,20 @@
 			"color"
 		]
 	},
+	"google-analytics": {
+		"tags": ["google", "analytics", "ga4", "statistics", "marketing", "brand"]
+	},
+	"google-analytics-color": {
+		"tags": [
+			"google",
+			"analytics",
+			"ga4",
+			"statistics",
+			"marketing",
+			"brand",
+			"color"
+		]
+	},
 	"google-color": {
 		"tags": ["search", "alphabet", "brand", "color"]
 	},
@@ -1022,6 +1036,9 @@
 	},
 	"kimi-color": {
 		"tags": ["ai", "assistant", "moonshot", "brand", "color"]
+	},
+	"klaviyo": {
+		"tags": ["email", "sms", "marketing", "automation", "brand"]
 	},
 	"laptop": {
 		"tags": ["laptop", "notebook", "computer", "device", "macbook"]
@@ -1555,6 +1572,12 @@
 			"shield-plus",
 			"solar"
 		]
+	},
+	"shopify": {
+		"tags": ["shop", "store", "ecommerce", "commerce", "brand"]
+	},
+	"shopify-color": {
+		"tags": ["shop", "store", "ecommerce", "commerce", "brand", "color"]
 	},
 	"shuffle": {
 		"tags": ["shuffle", "random", "mix", "playback", "media"]

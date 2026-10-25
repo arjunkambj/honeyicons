@@ -188,6 +188,8 @@ import { Globe } from "./icons/globe.js";
 import { Google } from "./icons/google.js";
 import { GoogleAds } from "./icons/google-ads.js";
 import { GoogleAdsColor } from "./icons/google-ads-color.js";
+import { GoogleAnalytics } from "./icons/google-analytics.js";
+import { GoogleAnalyticsColor } from "./icons/google-analytics-color.js";
 import { GoogleColor } from "./icons/google-color.js";
 import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
@@ -226,6 +228,7 @@ import { Key } from "./icons/key.js";
 import { Keyboard } from "./icons/keyboard.js";
 import { Kimi } from "./icons/kimi.js";
 import { KimiColor } from "./icons/kimi-color.js";
+import { Klaviyo } from "./icons/klaviyo.js";
 import { Laptop } from "./icons/laptop.js";
 import { Layers } from "./icons/layers.js";
 import { LayoutAlignBottom } from "./icons/layout-align-bottom.js";
@@ -360,6 +363,8 @@ import { Server } from "./icons/server.js";
 import { Settings } from "./icons/settings.js";
 import { Share } from "./icons/share.js";
 import { ShieldAdd } from "./icons/shield-add.js";
+import { Shopify } from "./icons/shopify.js";
+import { ShopifyColor } from "./icons/shopify-color.js";
 import { Shuffle } from "./icons/shuffle.js";
 import { SidebarBottom } from "./icons/sidebar-bottom.js";
 import { SidebarLeft } from "./icons/sidebar-left.js";
@@ -1986,6 +1991,22 @@ export const catalog: CatalogItem[] = [
 		component: GoogleAdsColor,
 	},
 	{
+		name: "google-analytics",
+		pascalName: "GoogleAnalytics",
+		category: "brands",
+		tags: ["google","analytics","ga4","statistics","marketing","brand"],
+		variants: ["linear","bold"],
+		component: GoogleAnalytics,
+	},
+	{
+		name: "google-analytics-color",
+		pascalName: "GoogleAnalyticsColor",
+		category: "brands",
+		tags: ["google","analytics","ga4","statistics","marketing","brand","color"],
+		variants: ["linear","bold"],
+		component: GoogleAnalyticsColor,
+	},
+	{
 		name: "google-color",
 		pascalName: "GoogleColor",
 		category: "brands",
@@ -2288,6 +2309,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["ai","assistant","moonshot","brand","color"],
 		variants: ["linear","bold"],
 		component: KimiColor,
+	},
+	{
+		name: "klaviyo",
+		pascalName: "Klaviyo",
+		category: "brands",
+		tags: ["email","sms","marketing","automation","brand"],
+		variants: ["linear","bold"],
+		component: Klaviyo,
 	},
 	{
 		name: "laptop",
@@ -3360,6 +3389,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["shield","plus","add","protect","security","shield-plus","solar"],
 		variants: ["linear","bold"],
 		component: ShieldAdd,
+	},
+	{
+		name: "shopify",
+		pascalName: "Shopify",
+		category: "brands",
+		tags: ["shop","store","ecommerce","commerce","brand"],
+		variants: ["linear","bold"],
+		component: Shopify,
+	},
+	{
+		name: "shopify-color",
+		pascalName: "ShopifyColor",
+		category: "brands",
+		tags: ["shop","store","ecommerce","commerce","brand","color"],
+		variants: ["linear","bold"],
+		component: ShopifyColor,
 	},
 	{
 		name: "shuffle",

@@ -17,17 +17,22 @@ import {
 	GeminiColor,
 	GoogleAds,
 	GoogleAdsColor,
+	GoogleAnalytics,
+	GoogleAnalyticsColor,
 	GoogleColor,
 	HermesAgent,
 	InstagramColor,
 	Heading1,
 	Key,
+	Klaviyo,
 	Laptop,
 	Login,
 	Logout,
 	Meta,
 	MetaColor,
 	Receipt,
+	Shopify,
+	ShopifyColor,
 	SlackColor,
 	Snowflake,
 	Star,
@@ -50,6 +55,7 @@ import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0013", label: "0.0.13 · Shopify, Google Analytics, Klaviyo" },
 	{ id: "version-0012", label: "0.0.12 · Meta, Google Ads, Zed" },
 	{ id: "version-0011", label: "0.0.11 · Bold frames" },
 	{ id: "version-0010", label: "0.0.10 · Consistency pass" },
@@ -80,6 +86,14 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version0013Highlights = [
+	{ name: "Shopify", Icon: Shopify },
+	{ name: "ShopifyColor", Icon: ShopifyColor },
+	{ name: "GoogleAnalytics", Icon: GoogleAnalytics },
+	{ name: "GoogleAnalyticsColor", Icon: GoogleAnalyticsColor },
+	{ name: "Klaviyo", Icon: Klaviyo },
 ] as const;
 
 const version0012Highlights = [
@@ -166,6 +180,42 @@ function ChangelogPage() {
 					title="Changelog"
 					description="New icons and small improvements to the collection."
 				/>
+				<section
+					aria-labelledby="version-0013"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-10-25" className="text-muted-foreground text-sm">
+						October 25, 2026
+					</time>
+					<h2
+						id="version-0013"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.13 · Shopify, Google Analytics, and Klaviyo
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version0013Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center rounded-xl bg-card"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Shopify, Google Analytics, and Klaviyo join the brand icons.
+							Shopify and Google Analytics also come in full color.
+						</li>
+						<li>
+							The one-color Shopify bag cuts out the S and leaves a thin gap
+							between the side and the front. Klaviyo’s mark is one color, so it
+							has no color version.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0012"
 					className="border-t border-border pt-8"
