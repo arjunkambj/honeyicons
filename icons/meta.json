@@ -1892,6 +1892,12 @@
 	"trending-up": {
 		"tags": ["trending", "growth", "increase", "up", "profit", "chart"]
 	},
+	"triple-whale": {
+		"tags": ["analytics", "ecommerce", "attribution", "whale", "brand"]
+	},
+	"triple-whale-color": {
+		"tags": ["analytics", "ecommerce", "attribution", "whale", "brand", "color"]
+	},
 	"trophy": {
 		"tags": ["trophy", "award", "winner", "achievement", "leaderboard"]
 	},

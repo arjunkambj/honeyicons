@@ -434,6 +434,8 @@ import { TransferVertical } from "./icons/transfer-vertical.js";
 import { Trash } from "./icons/trash.js";
 import { TrendingDown } from "./icons/trending-down.js";
 import { TrendingUp } from "./icons/trending-up.js";
+import { TripleWhale } from "./icons/triple-whale.js";
+import { TripleWhaleColor } from "./icons/triple-whale-color.js";
 import { Trophy } from "./icons/trophy.js";
 import { Truck } from "./icons/truck.js";
 import { Tv } from "./icons/tv.js";
@@ -922,6 +924,8 @@ export const icons = {
 	"trash": Trash,
 	"trending-down": TrendingDown,
 	"trending-up": TrendingUp,
+	"triple-whale": TripleWhale,
+	"triple-whale-color": TripleWhaleColor,
 	"trophy": Trophy,
 	"truck": Truck,
 	"tv": Tv,
@@ -1413,6 +1417,8 @@ export type IconVariantMap = {
 	"trash": "linear" | "bold";
 	"trending-down": "linear" | "bold";
 	"trending-up": "linear" | "bold";
+	"triple-whale": "linear" | "bold";
+	"triple-whale-color": "linear" | "bold";
 	"trophy": "linear" | "bold";
 	"truck": "linear" | "bold";
 	"tv": "linear" | "bold";

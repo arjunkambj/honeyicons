@@ -454,6 +454,14 @@ takes the standalone flag from [klaviyo.com](https://www.klaviyo.com), 21 units
 wide, with its sharp corners. Klaviyo's mark is one color, so it has no color
 version. Linear and bold share each drawing.
 
+## Triple Whale
+
+`TripleWhale` scales the whale-tail submark from
+[triplewhale.com](https://www.triplewhale.com) to 21.6 units wide, so its fluke
+tips meet the 1.2 and 22.8 keylines, and keeps its sharp tips and center notch.
+Linear and bold share this drawing. `TripleWhaleColor` paints it in Triple
+Whale's deep ocean, `#033855`.
+
 Brand names and logos are trademarks of their respective owners and appear
 here only to identify their products.
 

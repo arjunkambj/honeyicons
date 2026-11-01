@@ -433,6 +433,8 @@ export { TransferVertical } from "./transfer-vertical.js";
 export { Trash } from "./trash.js";
 export { TrendingDown } from "./trending-down.js";
 export { TrendingUp } from "./trending-up.js";
+export { TripleWhale } from "./triple-whale.js";
+export { TripleWhaleColor } from "./triple-whale-color.js";
 export { Trophy } from "./trophy.js";
 export { Truck } from "./truck.js";
 export { Tv } from "./tv.js";
