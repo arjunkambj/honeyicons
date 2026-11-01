@@ -7083,6 +7083,39 @@
 		]
 	},
 	{
+		"name": "triple-whale",
+		"export": "TripleWhale",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"analytics",
+			"ecommerce",
+			"attribution",
+			"whale",
+			"brand"
+		]
+	},
+	{
+		"name": "triple-whale-color",
+		"export": "TripleWhaleColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"analytics",
+			"ecommerce",
+			"attribution",
+			"whale",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "trophy",
 		"export": "Trophy",
 		"category": "objects",

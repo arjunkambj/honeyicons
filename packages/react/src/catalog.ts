@@ -436,6 +436,8 @@ import { TransferVertical } from "./icons/transfer-vertical.js";
 import { Trash } from "./icons/trash.js";
 import { TrendingDown } from "./icons/trending-down.js";
 import { TrendingUp } from "./icons/trending-up.js";
+import { TripleWhale } from "./icons/triple-whale.js";
+import { TripleWhaleColor } from "./icons/triple-whale-color.js";
 import { Trophy } from "./icons/trophy.js";
 import { Truck } from "./icons/truck.js";
 import { Tv } from "./icons/tv.js";
@@ -3973,6 +3975,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["trending","growth","increase","up","profit","chart"],
 		variants: ["linear","bold"],
 		component: TrendingUp,
+	},
+	{
+		name: "triple-whale",
+		pascalName: "TripleWhale",
+		category: "brands",
+		tags: ["analytics","ecommerce","attribution","whale","brand"],
+		variants: ["linear","bold"],
+		component: TripleWhale,
+	},
+	{
+		name: "triple-whale-color",
+		pascalName: "TripleWhaleColor",
+		category: "brands",
+		tags: ["analytics","ecommerce","attribution","whale","brand","color"],
+		variants: ["linear","bold"],
+		component: TripleWhaleColor,
 	},
 	{
 		name: "trophy",

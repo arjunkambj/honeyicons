@@ -1,6 +1,9 @@
 name: Publish
 
-# Publishes @honeyicons/react when main carries a version that npm does not have yet.
+# Publishes @honeyicons/react when preview is merged into main. A version that
+# npm does not have yet is published as is. Otherwise, when the package changed
+# since that release, the next patch version is committed to main and preview,
+# then published.
 on:
   push:
     branches: [main]
@@ -16,26 +19,37 @@ permissions:
 
 jobs:
   publish:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
-      - name: Check version
+      - name: Pick version
         id: version
         run: |
-          version=$(node -p "require('./packages/react/package.json').version")
-          echo "version=$version" >> "$GITHUB_OUTPUT"
-          if npm view "@honeyicons/react@$version" version >/dev/null 2>&1; then
-            echo "@honeyicons/react@$version is already on npm, skipping."
+          current=$(node -p "require('./packages/react/package.json').version")
+          tag="react-v$current"
+          if ! npm view "@honeyicons/react@$current" version >/dev/null 2>&1; then
+            echo "version=$current" >> "$GITHUB_OUTPUT"
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          elif git rev-parse -q --verify "refs/tags/$tag" >/dev/null &&
+            git diff --quiet "$tag" HEAD -- icons packages/react scripts/build-icons.ts; then
+            echo "@honeyicons/react has not changed since $current, skipping."
             echo "publish=false" >> "$GITHUB_OUTPUT"
           else
+            next=$(node -p "const [major, minor, patch] = process.argv[1].split('.').map(Number); [major, minor, patch + 1].join('.')" "$current")
+            echo "@honeyicons/react@$current is already on npm, releasing $next."
+            echo "version=$next" >> "$GITHUB_OUTPUT"
             echo "publish=true" >> "$GITHUB_OUTPUT"
+            echo "bump=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         if: steps.version.outputs.publish == 'true'
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.version.outputs.publish == 'true'
         with:
           node-version: 24
@@ -54,6 +68,23 @@ jobs:
           pnpm generate:icons
           git diff --exit-code || (echo "Run pnpm generate:icons and commit the result." && exit 1)
 
+      # Committed before publishing, so a failed publish is retried by the next run.
+      - name: Commit version
+        if: steps.version.outputs.bump == 'true'
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          node -e "
+            const fs = require('node:fs');
+            const file = 'packages/react/package.json';
+            const json = fs.readFileSync(file, 'utf8');
+            fs.writeFileSync(file, json.replace(/\"version\": \"[^\"]+\"/, '\"version\": \"' + process.env.VERSION + '\"'));
+          "
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(react): release $VERSION" -- packages/react/package.json
+          git push origin HEAD:main
+
       - name: Build and pack
         if: steps.version.outputs.publish == 'true'
         run: pnpm --filter @honeyicons/react pack --pack-destination "$RUNNER_TEMP"
@@ -68,3 +99,9 @@ jobs:
           tag="react-v${{ steps.version.outputs.version }}"
           git tag "$tag"
           git push origin "$tag"
+
+      - name: Bring preview up to date
+        if: steps.version.outputs.bump == 'true'
+        run: |
+          git push origin HEAD:preview ||
+            echo "::warning::preview has newer commits. Merge main into preview to pick up ${{ steps.version.outputs.version }}."

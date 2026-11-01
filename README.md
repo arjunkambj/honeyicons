@@ -1,38 +1,13 @@
-# honeyicons
+# Honeyicons
 
-A collection of SVG icons for React, with TypeScript support and theme-aware colors.
+SVG icons for React. Every icon comes in `linear` and `bold`, drawn on a
+24-unit grid with smooth curves and rounded corners, and follows the text color.
+Browse them at [icons.0xhoney.com](https://icons.0xhoney.com).
 
 Honeyicons is inspired by [Hugeicons](https://hugeicons.com) and
-[Solar Icons](https://github.com/480-Design/Solar-Icon-Set), with smooth curves,
-rounded corners, and a shared 24-unit grid.
+[Solar Icons](https://github.com/480-Design/Solar-Icon-Set).
 
-## Features
-
-- **TypeScript** - For type safety and improved developer experience
-- **React + TanStack Router** - Client-side SPA on Vite
-- **Cloudflare Workers** - Static assets deployment via `@cloudflare/vite-plugin`
-- **TailwindCSS** - Utility-first CSS for rapid UI development
-- **Shared UI package** - shadcn/ui primitives live in `packages/ui`
-- **Turborepo** - Optimized monorepo build system
-- **Oxlint + Oxfmt** - Linting and formatting
-
-## Getting Started
-
-First, install the dependencies:
-
-```bash
-pnpm install
-```
-
-Then, run the development server:
-
-```bash
-pnpm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser to see the web application.
-
-## Set up with a coding agent
+## Use the icons
 
 Give your coding agent this prompt:
 
@@ -40,110 +15,96 @@ Give your coding agent this prompt:
 Set up @honeyicons/react using https://icons.0xhoney.com/setup.md
 ```
 
-[setup.md](apps/web/public/setup.md) walks the agent through installing the package and the
-skill, rendering icons with `Icon`, and checking the result.
+Or install the package yourself:
 
-## Agent Skill
+```bash
+pnpm add @honeyicons/react
+```
 
-`skills/honeyicons` is an [Agent Skill](https://agentskills.io) for coding
-agents. It looks up icons in the published icon index, so agents use real
-icon names, and it covers usage and best practices for `@honeyicons/react`.
+```tsx
+import { Icon } from "@honeyicons/react";
 
-Install it with the [skills CLI](https://github.com/vercel-labs/skills) for
-Claude Code, Codex, Cursor, and other agents:
+<Icon icon="bell" />
+<Icon icon="moon" variant="bold" size={20} />
+```
+
+The [package README](packages/react/README.md) covers every prop, brand
+colors, accessibility, and custom icons.
+
+## Agent skill
+
+`skills/honeyicons` is an [Agent Skill](https://agentskills.io) that looks up
+real icon names in the published icon index, so agents don't guess them.
+Install it for Claude Code, Codex, Cursor, and other agents:
 
 ```bash
 npx skills add arjunkambj/honeyicons
 ```
 
-The skill reads `icons.json`, which `pnpm generate:icons` writes to
-`packages/react` and the package publishes. To search it directly, run
-`node skills/honeyicons/scripts/find-icon.mjs bell settings`.
-
-## UI Customization
-
-React web apps in this stack share shadcn/ui primitives through `packages/ui`.
-
-- Change design tokens and global styles in `packages/ui/src/styles/globals.css`
-- Update shared primitives in `packages/ui/src/components/*`
-- Adjust shadcn aliases or style config in `packages/ui/components.json` and `apps/web/components.json`
-
-### Add more shared components
-
-Run this from the project root to add more primitives to the shared UI package:
+## Work on the repo
 
 ```bash
-npx shadcn@latest add accordion dialog popover sheet table -c packages/ui
+pnpm install
+pnpm dev
 ```
 
-Import shared components like this:
-
-```tsx
-import { Button } from "@honeyicons/ui/components/button";
-```
-
-### Add app-specific blocks
-
-If you want to add app-specific blocks instead of shared primitives, run the shadcn CLI from `apps/web`.
-
-## Checks
-
-Run these before you push:
+The gallery site runs at [localhost:5173](http://localhost:5173). Before you
+push, run:
 
 ```bash
-pnpm run generate:icons
-git diff --exit-code -- packages/react/src packages/react/icons.json icons/meta.json
-pnpm run lint
-pnpm run format:check
-pnpm run check-types
-pnpm run build
+pnpm generate:icons
+pnpm lint
+pnpm format:check
+pnpm check-types
+pnpm build
 ```
 
-The `git diff` step fails if the generated components, `icons.json`, or
-`icons/meta.json` are out of date with the SVG sources. Run `pnpm run check`
-to auto-fix lint issues and format the repo.
+`pnpm check` fixes lint issues and formats the repo.
 
-## Project Structure
+## Add an icon
+
+1. Put the SVG in `icons/linear/<category>/<name>.svg` and its bold version in
+   `icons/bold/<category>/<name>.svg`. The folder name is the category.
+2. Add search tags in `icons/meta.json`.
+3. Run `pnpm generate:icons` to write the React components and `icons.json`.
+   Never edit those generated files by hand.
+
+Use descriptive kebab-case names, such as `folder-add` or `volume-off`.
+Renaming an icon renames its export. A new category also needs a label and icon
+in `CATEGORY_DETAILS` in `apps/web/src/components/icons/constants.ts`.
+
+The drawing rules for strokes, spacing, bold versions, and brand marks are in
+[AGENTS.md](AGENTS.md). Credit for icons adapted from other sets goes in
+[NOTICE.md](packages/react/NOTICE.md).
+
+## Branches and releases
+
+- Work happens on `preview`. Commit there, or open pull requests into it.
+- To release, open a pull request from `preview` into `main`. Merging it
+  publishes the next patch version of `@honeyicons/react` to npm. For a minor
+  or major version, set it in `packages/react/package.json` on `preview` first.
+- Delete each branch and its worktree once its pull request merges.
+- To deploy the site, build the icons with
+  `pnpm --filter @honeyicons/react build`. Then `pnpm --filter web deploy:preview`
+  updates the [preview link](https://preview-honeyicons.kambojarjunn78.workers.dev),
+  and `pnpm --filter web deploy` updates production.
+
+## Project layout
 
 ```
 honeyicons/
-├── icons/                 # SVG source (linear, bold)
-├── apps/
-│   └── web/               # Gallery site (Vite + TanStack Router, Cloudflare)
+├── icons/          # SVG sources, linear and bold
+├── apps/web/       # Gallery site (Vite, TanStack Router, Cloudflare)
 ├── packages/
-│   ├── react/             # @honeyicons/react
-│   ├── ui/                # Site chrome (shadcn). not the icon library
-│   └── config/
-└── scripts/
-    └── build-icons.ts     # svg → React components
+│   ├── react/      # @honeyicons/react
+│   ├── ui/         # Site components (shadcn), not the icon library
+│   └── config/     # Shared TypeScript config
+├── scripts/        # build-icons.ts turns the SVGs into React components
+└── skills/         # Agent skill
 ```
-
-Icons live in `icons/{linear,bold}/{category}/name.svg` (24×24). Each icon has a linear file and a bold file derived from it, following the bold rules in `AGENTS.md`. Category is the folder name. A new category also needs a label and icon in `CATEGORY_DETAILS` in `apps/web/src/components/icons/constants.ts`. Optional tags go in `icons/meta.json`. Then:
-
-```bash
-pnpm run generate:icons
-```
-
-Use descriptive kebab-case names without imported numeric suffixes. Keep related
-icons together with names such as `folder-add`, `volume-off`, and `chevron-down`.
-Renaming an icon renames its export; no deprecated aliases are generated.
-
-Third-party icon sources and adaptation details are recorded in
-[the React package notices](packages/react/NOTICE.md).
 
 ## License
 
-Honeyicons is released under the [MIT License](LICENSE).
-
-## Available Scripts
-
-- `pnpm run dev`: Start all applications in development mode
-- `pnpm run build`: Build all applications
-- `pnpm run dev:web`: Start only the web application
-- `pnpm run check-types`: Check TypeScript types across all apps
-- `pnpm run generate:icons`: Generate `@honeyicons/react` components from SVGs
-- `pnpm run lint`: Lint the repo with Oxlint
-- `pnpm run format`: Format the repo with Oxfmt
-- `pnpm run format:check`: Check formatting without changing files
-- `pnpm run check`: Auto-fix lint issues and format the repo
-- `pnpm run deploy` from `apps/web`: Build and deploy the site to Cloudflare
+Honeyicons is released under the [MIT License](LICENSE). Icons adapted from
+other sets keep their own licenses, listed in
+[NOTICE.md](packages/react/NOTICE.md).
