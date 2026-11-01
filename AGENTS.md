@@ -10,7 +10,7 @@
 - `preview` is the working branch. Commit there, or branch from it and open pull requests against `preview`. Never open a pull request against `main` except the one that promotes `preview`.
 - Promote by opening a pull request from `preview` into `main`. Do not commit to `main` directly.
 - Deploy the site preview from `preview` with the local Cloudflare CLI: build the packages (`pnpm --filter @honeyicons/react --filter @honeyicons/ui build`), then `pnpm --filter web deploy:preview`. It uploads a version under the `preview` alias (https://preview-honeyicons.kambojarjunn78.workers.dev) without touching production. Production deploys stay manual with `pnpm --filter web deploy`.
-- npm releases are automatic: when `main` receives a `packages/react/package.json` version that npm does not have, `.github/workflows/publish.yml` checks the generated icons, publishes `@honeyicons/react`, and tags `react-v<version>`. To release, bump that version and add the changelog entry in `apps/web/src/routes/changelog.tsx` on `preview`, then merge into `main`. Do not publish from a local machine.
+- npm releases are automatic: merging `preview` into `main` runs `.github/workflows/publish.yml`. When `@honeyicons/react` changed since its last release, it checks the generated icons, commits the next patch version to `main` and `preview`, publishes it, and tags `react-v<version>`. For a minor or major release, set that version in `packages/react/package.json` on `preview` first; a version npm does not have is published as is. Write the changelog entry in `apps/web/src/routes/changelog.tsx` on `preview` under the version that will ship. Publish only through this workflow.
 
 ## Pasted SVG workflow
 
