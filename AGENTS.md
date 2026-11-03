@@ -7,11 +7,20 @@
 
 ## Branches, previews, and releases
 
-- `preview` is the working branch. Commit there, or branch from it and open pull requests against `preview`. Never open a pull request against `main` except the one that promotes `preview`.
-- Promote by opening a pull request from `preview` into `main`. Do not commit to `main` directly.
-- Deploy the site preview from `preview` with the local Cloudflare CLI: build the packages (`pnpm --filter @honeyicons/react --filter @honeyicons/ui build`), then `pnpm --filter web deploy:preview`. It uploads a version under the `preview` alias (https://preview-honeyicons.kambojarjunn78.workers.dev) without touching production. Production deploys stay manual with `pnpm --filter web deploy`.
-- npm releases are automatic: merging `preview` into `main` runs `.github/workflows/publish.yml`. When `@honeyicons/react` changed since its last release, it checks the generated icons, commits the next patch version to `main` and `preview`, publishes it, and tags `react-v<version>`. For a minor or major release, set that version in `packages/react/package.json` on `preview` first; a version npm does not have is published as is. Write the changelog entry in `apps/web/src/routes/changelog.tsx` on `preview` under the version that will ship. Publish only through this workflow.
+- `preview` is the working branch. Commit there, or branch from it and open pull requests into `preview`. `main` only receives the release pull request from `preview`.
 - Once a branch's pull request merges, delete the branch on GitHub and locally, and remove its worktree. `main` and `preview` stay.
+- Deploy the site preview from `preview` with the local Cloudflare CLI: build the packages (`pnpm --filter @honeyicons/react --filter @honeyicons/ui build`), then `pnpm --filter web deploy:preview`. It uploads a version under the `preview` alias (https://preview-honeyicons.kambojarjunn78.workers.dev) without touching production. Production deploys stay manual with `pnpm --filter web deploy`.
+
+### Releasing `@honeyicons/react`
+
+A release is a merge of `preview` into `main`; `.github/workflows/publish.yml` does the rest. Publish only through it.
+
+1. On `preview`, add the changelog entry in `apps/web/src/routes/changelog.tsx` under the next patch version. Leave `packages/react/package.json` alone: the workflow bumps the patch. For a minor or major release, set that version there yourself.
+2. Open a pull request from `preview` into `main` and merge it with a merge commit, so the workflow can fast-forward `preview` afterwards.
+3. The release is done when the Publish run on `main` is green, the `chore(react): release <version>` commit and `react-v<version>` tag exist, and npm lists the version as `latest`. npm can take a few minutes after the run to list it.
+4. Pull `preview` before the next commit; the workflow pushed the version commit to it.
+
+A merge that leaves `icons/`, `packages/react/`, and `scripts/build-icons.ts` unchanged publishes nothing. npm trusts the workflow through trusted publishing, so releases need no token or local npm login.
 
 ## Pasted SVG workflow
 

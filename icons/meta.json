@@ -25,6 +25,20 @@
 	"align-center-horizontal": {
 		"tags": ["align", "center", "horizontal", "distribute", "canvas"]
 	},
+	"amazon": {
+		"tags": ["shop", "store", "ecommerce", "commerce", "marketplace", "brand"]
+	},
+	"amazon-color": {
+		"tags": [
+			"shop",
+			"store",
+			"ecommerce",
+			"commerce",
+			"marketplace",
+			"brand",
+			"color"
+		]
+	},
 	"analytics": {
 		"tags": [
 			"analytics",

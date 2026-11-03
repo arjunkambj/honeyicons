@@ -1,4 +1,6 @@
 import {
+	Amazon,
+	AmazonColor,
 	BellOff,
 	Bluesky,
 	Bot,
@@ -21,6 +23,8 @@ import {
 	GoogleAnalyticsColor,
 	GoogleColor,
 	HermesAgent,
+	Home,
+	HomeAngle,
 	InstagramColor,
 	Heading1,
 	Key,
@@ -55,6 +59,7 @@ import { DocumentationLayout } from "@/components/documentation-layout";
 import { PageActions, PageHeader } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0015", label: "0.0.15 · Amazon, smoother curves" },
 	{ id: "version-0013", label: "0.0.13 · Shopify, Google Analytics, Klaviyo" },
 	{ id: "version-0012", label: "0.0.12 · Meta, Google Ads, Zed" },
 	{ id: "version-0011", label: "0.0.11 · Bold frames" },
@@ -86,6 +91,13 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version0015Highlights = [
+	{ name: "Amazon", Icon: Amazon },
+	{ name: "AmazonColor", Icon: AmazonColor },
+	{ name: "Home", Icon: Home },
+	{ name: "HomeAngle", Icon: HomeAngle },
 ] as const;
 
 const version0013Highlights = [
@@ -180,6 +192,46 @@ function ChangelogPage() {
 					title="Changelog"
 					description="New icons and small improvements to the collection."
 				/>
+				<section
+					aria-labelledby="version-0015"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-11-03" className="text-muted-foreground text-sm">
+						November 3, 2026
+					</time>
+					<h2
+						id="version-0015"
+						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.15 · Amazon and smoother curves
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version0015Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center rounded-xl bg-card"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Amazon joins the brand icons, with a full-color version that
+							paints the smile orange.
+						</li>
+						<li>
+							Home and Home Angle lose a slight wave along their roof and side
+							edges.
+						</li>
+						<li>
+							Curves across the set are smoother at large sizes: small breaks
+							where curves meet are closed and leftover tiny segments are gone.
+							Icons look the same at 16 to 24 pixels.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0013"
 					className="border-t border-border pt-8"

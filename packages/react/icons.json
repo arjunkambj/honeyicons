@@ -95,6 +95,41 @@
 		]
 	},
 	{
+		"name": "amazon",
+		"export": "Amazon",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"shop",
+			"store",
+			"ecommerce",
+			"commerce",
+			"marketplace",
+			"brand"
+		]
+	},
+	{
+		"name": "amazon-color",
+		"export": "AmazonColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"shop",
+			"store",
+			"ecommerce",
+			"commerce",
+			"marketplace",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "analytics",
 		"export": "Analytics",
 		"category": "charts",

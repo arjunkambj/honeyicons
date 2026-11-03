@@ -5,6 +5,8 @@ export { Alarm } from "./alarm.js";
 export { Album } from "./album.js";
 export { AlertTriangle } from "./alert-triangle.js";
 export { AlignCenterHorizontal } from "./align-center-horizontal.js";
+export { Amazon } from "./amazon.js";
+export { AmazonColor } from "./amazon-color.js";
 export { Analytics } from "./analytics.js";
 export { Anthropic } from "./anthropic.js";
 export { Antigravity } from "./antigravity.js";
