@@ -8,6 +8,8 @@ import { Alarm } from "./icons/alarm.js";
 import { Album } from "./icons/album.js";
 import { AlertTriangle } from "./icons/alert-triangle.js";
 import { AlignCenterHorizontal } from "./icons/align-center-horizontal.js";
+import { Amazon } from "./icons/amazon.js";
+import { AmazonColor } from "./icons/amazon-color.js";
 import { Analytics } from "./icons/analytics.js";
 import { Anthropic } from "./icons/anthropic.js";
 import { Antigravity } from "./icons/antigravity.js";
@@ -551,6 +553,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["align","center","horizontal","distribute","canvas"],
 		variants: ["linear","bold"],
 		component: AlignCenterHorizontal,
+	},
+	{
+		name: "amazon",
+		pascalName: "Amazon",
+		category: "brands",
+		tags: ["shop","store","ecommerce","commerce","marketplace","brand"],
+		variants: ["linear","bold"],
+		component: Amazon,
+	},
+	{
+		name: "amazon-color",
+		pascalName: "AmazonColor",
+		category: "brands",
+		tags: ["shop","store","ecommerce","commerce","marketplace","brand","color"],
+		variants: ["linear","bold"],
+		component: AmazonColor,
 	},
 	{
 		name: "analytics",

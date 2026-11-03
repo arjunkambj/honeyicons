@@ -6,6 +6,8 @@ import { Alarm } from "./icons/alarm.js";
 import { Album } from "./icons/album.js";
 import { AlertTriangle } from "./icons/alert-triangle.js";
 import { AlignCenterHorizontal } from "./icons/align-center-horizontal.js";
+import { Amazon } from "./icons/amazon.js";
+import { AmazonColor } from "./icons/amazon-color.js";
 import { Analytics } from "./icons/analytics.js";
 import { Anthropic } from "./icons/anthropic.js";
 import { Antigravity } from "./icons/antigravity.js";
@@ -496,6 +498,8 @@ export const icons = {
 	"album": Album,
 	"alert-triangle": AlertTriangle,
 	"align-center-horizontal": AlignCenterHorizontal,
+	"amazon": Amazon,
+	"amazon-color": AmazonColor,
 	"analytics": Analytics,
 	"anthropic": Anthropic,
 	"antigravity": Antigravity,
@@ -989,6 +993,8 @@ export type IconVariantMap = {
 	"album": "linear" | "bold";
 	"alert-triangle": "linear" | "bold";
 	"align-center-horizontal": "linear" | "bold";
+	"amazon": "linear" | "bold";
+	"amazon-color": "linear" | "bold";
 	"analytics": "linear" | "bold";
 	"anthropic": "linear" | "bold";
 	"antigravity": "linear" | "bold";
