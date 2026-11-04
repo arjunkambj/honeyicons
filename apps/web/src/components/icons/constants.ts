@@ -27,17 +27,18 @@ import {
 	User,
 	Widget,
 } from "@honeyicons/react";
+import { catalog } from "@honeyicons/react/catalog";
 
-export const SIZE_MIN = 16;
-export const SIZE_MAX = 460;
-export const SIZE_DEFAULT = 28;
+/** Preview sizes in the catalog: the three the icons are tuned for, plus two large ones. */
+export const SIZE_OPTIONS = [16, 20, 24, 32, 48] as const;
+export const SIZE_DEFAULT = 32;
 
 export type CategoryFilter = "all" | IconCategory;
 
 type CategoryMeta = { label: string; icon: HoneyIcon };
 
 export const CATEGORY_DETAILS: Record<CategoryFilter, CategoryMeta> = {
-	all: { label: "All", icon: Widget },
+	all: { label: "All icons", icon: Widget },
 	actions: { label: "Actions", icon: Check },
 	ai: { label: "AI", icon: Brain },
 	arrows: { label: "Arrows", icon: ArrowRight },
@@ -75,15 +76,18 @@ export type IconsSearch = {
 	q?: string;
 	category?: IconCategory;
 	style?: IconVariant;
+	/** The icon open in the detail panel. */
+	icon?: string;
 };
 
 export function parseIconsSearch(search: Record<string, unknown>): IconsSearch {
-	const { q, category, style } = search;
+	const { q, category, style, icon } = search;
 	// The router JSON-parses values, so `?q=404` arrives as a number.
 	const text = typeof q === "string" || typeof q === "number" ? String(q) : "";
 	return {
 		q: text || undefined,
 		category: ICON_CATEGORIES.find((id) => id === category),
 		style: ICON_VARIANTS.find((id) => id === style && id !== "linear"),
+		icon: catalog.find((item) => item.name === icon)?.name,
 	};
 }

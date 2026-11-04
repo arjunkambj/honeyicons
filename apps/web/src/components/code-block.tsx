@@ -104,9 +104,9 @@ export function CopyButton({
 	}
 
 	const icon = copied ? (
-		<Check size={16} className="size-4" />
+		<Check size={14} className="size-3.5" />
 	) : (
-		<Copy size={16} className="size-4" />
+		<Copy size={14} className="size-3.5" />
 	);
 
 	if (children) {
@@ -117,7 +117,7 @@ export function CopyButton({
 				size="xs"
 				onClick={copy}
 				aria-label={copied ? "Copied" : label}
-				className={cn("h-7 gap-1.5 px-2.5", className)}
+				className={cn("h-6 gap-1 px-2.5", className)}
 			>
 				{icon}
 				{copied ? "Copied" : children}
@@ -144,27 +144,39 @@ export function CopyButton({
 
 export function CodeBlock({
 	code,
-	label = "Code snippet",
+	title,
+	label = "code",
 	className,
 }: {
 	code: string;
+	/** File name or caption shown in the header bar. */
+	title?: string;
 	label?: string;
 	className?: string;
 }) {
 	const lines = code.split("\n");
 	return (
 		<div
-			className={cn("relative overflow-hidden rounded-2xl bg-card", className)}
+			className={cn("surface relative overflow-hidden rounded-2xl", className)}
 		>
-			<CopyButton
-				text={code}
-				label={`Copy ${label}`}
-				className="absolute top-2.5 right-2.5 z-10 bg-card ring-4 ring-card hover:bg-muted"
-			/>
-			<pre className="overflow-x-auto py-4 font-mono text-xs leading-6 sm:text-[13px]">
+			{title ? (
+				<div className="flex h-9 items-center gap-2 pr-1 pl-4">
+					<span className="font-mono text-muted-foreground text-xs">
+						{title}
+					</span>
+					<CopyButton text={code} label={`Copy ${title}`} className="ml-auto" />
+				</div>
+			) : (
+				<CopyButton
+					text={code}
+					label={`Copy ${label}`}
+					className="absolute top-2 right-2 z-10 bg-card ring-4 ring-card hover:bg-muted"
+				/>
+			)}
+			<pre className="overflow-x-auto pt-2 pb-3 font-mono text-xs leading-[22px] sm:text-[13px]">
 				<code className="block min-w-max">
 					{lines.map((line, index) => (
-						<span key={index} className="flex min-h-6 pr-12 pl-4">
+						<span key={index} className="flex min-h-[22px] pr-12 pl-4">
 							<span
 								aria-hidden
 								className="hidden w-8 shrink-0 pr-4 text-right text-muted-foreground/50 select-none sm:block"

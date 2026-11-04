@@ -6,13 +6,34 @@
 :root {
 	--font-cal-sans-ui: "Cal Sans UI";
 	--font-bricolage-grotesque: "Bricolage Grotesque Variable";
+	--stage-card: #f4f4f5;
 }
 
-/* Shared page frame. Every route, the navbar, and the footer use the same
-gutter so panels, headings, and the logo share one left edge. */
-@utility page-gutter {
-	@apply container mx-auto px-4 sm:px-10 lg:px-12;
+.dark {
+	--stage-card: var(--card);
 }
-@utility page-shell {
-	@apply container mx-auto px-4 pt-4 sm:px-10 sm:pt-6 lg:px-12;
+
+@theme inline {
+	--color-stage-card: var(--stage-card);
+}
+
+/* A raised box: translucent card fill, a 3px shadow, and a blur of what
+scrolls behind it. Used in place of borders. */
+@utility surface {
+	background-color: color-mix(in oklab, var(--card) 82%, transparent);
+	box-shadow: var(--shadow-xxs);
+	backdrop-filter: blur(12px);
+}
+
+/* Shared page frame. The header and every route use the same gutter so
+panels, headings, and the logo share one left edge. */
+@utility page-gutter {
+	@apply mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8;
+}
+
+@utility no-scrollbar {
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }

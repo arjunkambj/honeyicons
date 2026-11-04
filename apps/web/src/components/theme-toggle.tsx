@@ -1,14 +1,10 @@
-import { Computer, Github, Moon, Sun } from "@honeyicons/react";
-import { Button } from "@honeyicons/ui/components/button";
+import { Computer, Moon, Sun } from "@honeyicons/react";
 import {
 	ToggleGroup,
 	ToggleGroupItem,
 } from "@honeyicons/ui/components/toggle-group";
-import { Link } from "@tanstack/react-router";
 import { useTheme } from "next-themes";
 import { useSyncExternalStore } from "react";
-import { BrandLogo } from "@/components/brand-mark";
-import styles from "@/components/marketing.module.css";
 
 const themeOptions = [
 	{ value: "light", label: "Light theme", icon: Sun },
@@ -18,7 +14,7 @@ const themeOptions = [
 
 const emptySubscribe = () => () => {};
 
-function ThemeToggle() {
+export function ThemeToggle() {
 	const { theme, setTheme } = useTheme();
 	const mounted = useSyncExternalStore(
 		emptySubscribe,
@@ -64,56 +60,5 @@ function ThemeToggle() {
 				</ToggleGroupItem>
 			))}
 		</ToggleGroup>
-	);
-}
-
-export function Navbar() {
-	return (
-		<header className={styles.header}>
-			<div className="page-gutter">
-				<div className={styles.navbar}>
-					<Link
-						to="/"
-						aria-label="honeyicons home"
-						className="flex shrink-0 items-center text-foreground"
-					>
-						<BrandLogo className="h-5 w-24 min-[380px]:w-[120px] sm:h-6 sm:w-[148px]" />
-					</Link>
-					<nav aria-label="Main navigation" className={styles.navLinks}>
-						<Link to="/icons" activeProps={{ className: "text-foreground" }}>
-							<span className="sm:hidden">Icons</span>
-							<span className="hidden sm:inline">Explore icons</span>
-						</Link>
-						<Link
-							to="/docs"
-							className={styles.docsLink}
-							activeProps={{ className: "text-foreground" }}
-						>
-							Docs
-						</Link>
-					</nav>
-					<div className={styles.navActions}>
-						<ThemeToggle />
-						<Button
-							variant="secondary"
-							size="sm"
-							className="w-8 px-0 sm:w-auto sm:px-3"
-							nativeButton={false}
-							aria-label="GitHub"
-							render={
-								<a
-									href="https://github.com/arjunkambj/honeyicons"
-									target="_blank"
-									rel="noreferrer"
-								/>
-							}
-						>
-							<Github data-icon="inline-start" />
-							<span className="hidden sm:inline">GitHub</span>
-						</Button>
-					</div>
-				</div>
-			</div>
-		</header>
 	);
 }
