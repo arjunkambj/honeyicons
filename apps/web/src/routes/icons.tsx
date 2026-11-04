@@ -1,26 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { IconBrowser } from "@/components/icons/icon-browser";
 import { parseIconsSearch } from "@/components/icons/constants";
+import { IconBrowser } from "@/components/icons/icon-browser";
 
 export const Route = createFileRoute("/icons")({
 	head: () => ({
 		meta: [
-			{ title: "Icons · honeyicons" },
+			{ title: "Icons · Honeyicons" },
 			{
 				name: "description",
 				content:
-					"Search icons by name or keyword, filter by category and style, and copy React snippets.",
+					"Search every Honeyicons icon by name or by what it shows. Click one to switch styles and copy its React code or SVG.",
 			},
 		],
 	}),
 	validateSearch: parseIconsSearch,
-	component: IconsPage,
+	component: IconBrowser,
 });
-
-function IconsPage() {
-	return (
-		<main className="page-shell">
-			<IconBrowser />
-		</main>
-	);
-}

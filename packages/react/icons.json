@@ -4823,6 +4823,39 @@
 		]
 	},
 	{
+		"name": "one-text",
+		"export": "OneText",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"sms",
+			"text",
+			"marketing",
+			"message",
+			"brand"
+		]
+	},
+	{
+		"name": "one-text-color",
+		"export": "OneTextColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"sms",
+			"text",
+			"marketing",
+			"message",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "openai",
 		"export": "Openai",
 		"category": "brands",
@@ -6503,6 +6536,39 @@
 			"unfavorite",
 			"unstar",
 			"disabled"
+		]
+	},
+	{
+		"name": "stay-ai",
+		"export": "StayAi",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"subscriptions",
+			"retention",
+			"shopify",
+			"heart",
+			"brand"
+		]
+	},
+	{
+		"name": "stay-ai-color",
+		"export": "StayAiColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"subscriptions",
+			"retention",
+			"shopify",
+			"heart",
+			"brand",
+			"color"
 		]
 	},
 	{

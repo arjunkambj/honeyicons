@@ -294,6 +294,8 @@ import { NpmColor } from "./icons/npm-color.js";
 import { Nvidia } from "./icons/nvidia.js";
 import { NvidiaColor } from "./icons/nvidia-color.js";
 import { OctagonX } from "./icons/octagon-x.js";
+import { OneText } from "./icons/one-text.js";
+import { OneTextColor } from "./icons/one-text-color.js";
 import { Openai } from "./icons/openai.js";
 import { Openclaw } from "./icons/openclaw.js";
 import { OpenclawColor } from "./icons/openclaw-color.js";
@@ -398,6 +400,8 @@ import { SpinnerWave } from "./icons/spinner-wave.js";
 import { SquarePen } from "./icons/square-pen.js";
 import { Star } from "./icons/star.js";
 import { StarOff } from "./icons/star-off.js";
+import { StayAi } from "./icons/stay-ai.js";
+import { StayAiColor } from "./icons/stay-ai-color.js";
 import { Sticker } from "./icons/sticker.js";
 import { StickyNote } from "./icons/sticky-note.js";
 import { Stop } from "./icons/stop.js";
@@ -786,6 +790,8 @@ export const icons = {
 	"nvidia": Nvidia,
 	"nvidia-color": NvidiaColor,
 	"octagon-x": OctagonX,
+	"one-text": OneText,
+	"one-text-color": OneTextColor,
 	"openai": Openai,
 	"openclaw": Openclaw,
 	"openclaw-color": OpenclawColor,
@@ -890,6 +896,8 @@ export const icons = {
 	"square-pen": SquarePen,
 	"star": Star,
 	"star-off": StarOff,
+	"stay-ai": StayAi,
+	"stay-ai-color": StayAiColor,
 	"sticker": Sticker,
 	"sticky-note": StickyNote,
 	"stop": Stop,
@@ -1281,6 +1289,8 @@ export type IconVariantMap = {
 	"nvidia": "linear" | "bold";
 	"nvidia-color": "linear" | "bold";
 	"octagon-x": "linear" | "bold";
+	"one-text": "linear" | "bold";
+	"one-text-color": "linear" | "bold";
 	"openai": "linear" | "bold";
 	"openclaw": "linear" | "bold";
 	"openclaw-color": "linear" | "bold";
@@ -1385,6 +1395,8 @@ export type IconVariantMap = {
 	"square-pen": "linear" | "bold";
 	"star": "linear" | "bold";
 	"star-off": "linear" | "bold";
+	"stay-ai": "linear" | "bold";
+	"stay-ai-color": "linear" | "bold";
 	"sticker": "linear" | "bold";
 	"sticky-note": "linear" | "bold";
 	"stop": "linear" | "bold";

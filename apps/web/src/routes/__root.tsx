@@ -5,20 +5,20 @@ import {
 	HeadContent,
 	Link,
 	Outlet,
+	useLocation,
 } from "@tanstack/react-router";
 import type { ReactNode } from "react";
-import { Footer } from "@/components/footer";
-import { Navbar } from "@/components/navbar";
 import { PageActions, PageHeader } from "@/components/page-header";
 import Providers from "@/components/providers";
+import { SiteHeader } from "@/components/site-header";
 
 export const Route = createRootRoute({
 	head: () => ({
 		meta: [
-			{ title: "honeyicons" },
+			{ title: "Honeyicons" },
 			{
 				name: "description",
-				content: "Line icons for React.",
+				content: "React icons in a linear and a bold style.",
 			},
 		],
 	}),
@@ -26,7 +26,13 @@ export const Route = createRootRoute({
 	errorComponent: DefaultError,
 });
 
-function SiteFrame({ children }: { children: ReactNode }) {
+function SiteFrame({
+	header = true,
+	children,
+}: {
+	header?: boolean;
+	children: ReactNode;
+}) {
 	return (
 		<Providers>
 			<HeadContent />
@@ -37,12 +43,13 @@ function SiteFrame({ children }: { children: ReactNode }) {
 				>
 					Skip to content
 				</a>
-				<Navbar />
-				<div id="content" tabIndex={-1} className="flex-1 outline-none">
+				{header && <SiteHeader />}
+				<div
+					id="content"
+					tabIndex={-1}
+					className="flex flex-1 flex-col outline-none"
+				>
 					{children}
-				</div>
-				<div className="page-gutter pb-12 sm:pb-16">
-					<Footer />
 				</div>
 			</div>
 		</Providers>
@@ -50,8 +57,12 @@ function SiteFrame({ children }: { children: ReactNode }) {
 }
 
 function RootLayout() {
+	// Home is a full-screen stage with its own links.
+	const isHome = useLocation({
+		select: (location) => location.pathname === "/",
+	});
 	return (
-		<SiteFrame>
+		<SiteFrame header={!isHome}>
 			<Outlet />
 		</SiteFrame>
 	);
@@ -59,19 +70,21 @@ function RootLayout() {
 
 function DefaultError({ error }: ErrorComponentProps) {
 	const message =
-		error instanceof Error ? error.message : "An unexpected error occurred.";
+		error instanceof Error
+			? error.message
+			: "Something broke while loading this page.";
 
 	return (
 		<SiteFrame>
-			<main className="page-shell">
+			<main className="page-gutter py-16 sm:py-24">
 				<PageHeader
 					eyebrow="Error"
-					title="Something went wrong"
+					title="This page broke"
 					description={message}
 				>
 					<PageActions>
 						<Button nativeButton={false} render={<Link to="/" />}>
-							Back home
+							Go home
 						</Button>
 					</PageActions>
 				</PageHeader>

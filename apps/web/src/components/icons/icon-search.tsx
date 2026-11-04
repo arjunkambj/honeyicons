@@ -10,15 +10,21 @@ import type { RefObject } from "react";
 
 type IconSearchProps = {
 	value: string;
+	count: number;
 	onChange: (value: string) => void;
 	inputRef: RefObject<HTMLInputElement | null>;
 };
 
 const shortcut = /Mac|iPhone|iPad/.test(navigator.userAgent) ? "⌘K" : "Ctrl K";
 
-export function IconSearch({ value, onChange, inputRef }: IconSearchProps) {
+export function IconSearch({
+	value,
+	count,
+	onChange,
+	inputRef,
+}: IconSearchProps) {
 	return (
-		<InputGroup className="max-w-xl">
+		<InputGroup className="min-w-0 flex-1">
 			<InputGroupAddon>
 				<Search size={16} />
 			</InputGroupAddon>
@@ -36,8 +42,8 @@ export function IconSearch({ value, onChange, inputRef }: IconSearchProps) {
 						event.currentTarget.blur();
 					}
 				}}
-				placeholder="Search by name or keyword"
-				aria-label="Search icons"
+				placeholder={`Search ${count} icons`}
+				aria-label="Search icons by name or what they show"
 				className="[&::-webkit-search-cancel-button]:hidden"
 			/>
 			<InputGroupAddon align="inline-end">
