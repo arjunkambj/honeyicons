@@ -1,4 +1,8 @@
 import {
+	OneText,
+	OneTextColor,
+	StayAi,
+	StayAiColor,
 	Amazon,
 	AmazonColor,
 	BellOff,
@@ -55,10 +59,12 @@ import {
 } from "@honeyicons/react";
 import { Button } from "@honeyicons/ui/components/button";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { DocumentationLayout } from "@/components/documentation-layout";
-import { PageActions, PageHeader } from "@/components/page-header";
+import { DocsPage } from "@/components/docs/docs-page";
+import { DocsShell } from "@/components/docs/docs-shell";
+import { PageActions } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0016", label: "0.0.16 · Stay AI, OneText" },
 	{ id: "version-0015", label: "0.0.15 · Amazon, smoother curves" },
 	{ id: "version-0013", label: "0.0.13 · Shopify, Google Analytics, Klaviyo" },
 	{ id: "version-0012", label: "0.0.12 · Meta, Google Ads, Zed" },
@@ -91,6 +97,13 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version0016Highlights = [
+	{ name: "StayAi", Icon: StayAi },
+	{ name: "StayAiColor", Icon: StayAiColor },
+	{ name: "OneText", Icon: OneText },
+	{ name: "OneTextColor", Icon: OneTextColor },
 ] as const;
 
 const version0015Highlights = [
@@ -172,11 +185,10 @@ const version007Highlights = [
 export const Route = createFileRoute("/changelog")({
 	head: () => ({
 		meta: [
-			{ title: "Changelog · honeyicons" },
+			{ title: "Changelog · Honeyicons" },
 			{
 				name: "description",
-				content:
-					"New icons and improvements to Honeyicons. Follow the latest additions to the collection.",
+				content: "New icons and fixes in each release of @honeyicons/react.",
 			},
 		],
 	}),
@@ -185,13 +197,52 @@ export const Route = createFileRoute("/changelog")({
 
 function ChangelogPage() {
 	return (
-		<DocumentationLayout page="changelog" sections={sections}>
-			<article className="mx-auto flex max-w-3xl flex-col gap-10 sm:gap-12">
-				<PageHeader
-					eyebrow="What’s new"
-					title="Changelog"
-					description="New icons and small improvements to the collection."
-				/>
+		<DocsShell>
+			<DocsPage
+				title="Changelog"
+				description="New icons and fixes in each release of @honeyicons/react, newest first."
+				toc={sections}
+			>
+				<section
+					aria-labelledby="version-0016"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-11-04" className="text-muted-foreground text-sm">
+						November 4, 2026
+					</time>
+					<h2
+						id="version-0016"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.16 · Stay AI and OneText
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version0016Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center surface rounded-xl"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Stay AI joins the brand icons as its woven heart, with a color
+							version in Stay AI magenta.
+						</li>
+						<li>
+							OneText joins as its speech bubble with the 1 cut out, with a
+							color version in OneText blue.
+						</li>
+						<li>
+							You can now pass a name typed as IconName to Icon, for example
+							from your own props or a list of menu items. Before, TypeScript
+							rejected it.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0015"
 					className="border-t border-border pt-8"
@@ -201,7 +252,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-0015"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.15 · Amazon and smoother curves
 					</h2>
@@ -210,7 +261,7 @@ function ChangelogPage() {
 							<li
 								key={name}
 								title={name}
-								className="flex size-12 items-center justify-center rounded-xl bg-card"
+								className="flex size-12 items-center justify-center surface rounded-xl"
 							>
 								<Icon size={24} aria-label={name} />
 							</li>
@@ -241,7 +292,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-0013"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.13 · Shopify, Google Analytics, and Klaviyo
 					</h2>
@@ -250,7 +301,7 @@ function ChangelogPage() {
 							<li
 								key={name}
 								title={name}
-								className="flex size-12 items-center justify-center rounded-xl bg-card"
+								className="flex size-12 items-center justify-center surface rounded-xl"
 							>
 								<Icon size={24} aria-label={name} />
 							</li>
@@ -277,7 +328,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-0012"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.12 · Meta, Google Ads, and Zed
 					</h2>
@@ -286,7 +337,7 @@ function ChangelogPage() {
 							<li
 								key={name}
 								title={name}
-								className="flex size-12 items-center justify-center rounded-xl bg-card"
+								className="flex size-12 items-center justify-center surface rounded-xl"
 							>
 								<Icon size={24} aria-label={name} />
 							</li>
@@ -313,7 +364,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-0011"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.11 · Filled frames in bold
 					</h2>
@@ -322,7 +373,7 @@ function ChangelogPage() {
 							<li
 								key={name}
 								title={name}
-								className="flex size-12 items-center justify-center rounded-xl bg-card"
+								className="flex size-12 items-center justify-center surface rounded-xl"
 							>
 								<Icon size={24} variant="bold" aria-label={name} />
 							</li>
@@ -349,7 +400,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-0010"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.10 · Smoother shapes and cleaner slashes
 					</h2>
@@ -358,7 +409,7 @@ function ChangelogPage() {
 							<li
 								key={name}
 								title={name}
-								className="flex size-12 items-center justify-center rounded-xl bg-card"
+								className="flex size-12 items-center justify-center surface rounded-xl"
 							>
 								<Icon size={24} variant={variant} aria-label={name} />
 							</li>
@@ -398,7 +449,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-009"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.9 · Brand icons in full color
 					</h2>
@@ -407,7 +458,7 @@ function ChangelogPage() {
 							<li
 								key={name}
 								title={name}
-								className="flex size-12 items-center justify-center rounded-xl bg-card"
+								className="flex size-12 items-center justify-center surface rounded-xl"
 							>
 								<Icon size={24} aria-label={name} />
 							</li>
@@ -439,7 +490,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-008"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.8 · Redrawn FolderOpen, user, and Wallet icons
 					</h2>
@@ -448,7 +499,7 @@ function ChangelogPage() {
 							<li
 								key={name}
 								title={name}
-								className="flex size-12 items-center justify-center rounded-xl bg-card"
+								className="flex size-12 items-center justify-center surface rounded-xl"
 							>
 								<Icon size={24} aria-label={name} />
 							</li>
@@ -483,7 +534,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-007"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.7 · Bold for every icon, 112 new icons, and a Weather category
 					</h2>
@@ -492,7 +543,7 @@ function ChangelogPage() {
 							<li
 								key={name}
 								title={name}
-								className="flex size-12 items-center justify-center rounded-xl bg-card"
+								className="flex size-12 items-center justify-center surface rounded-xl"
 							>
 								<Icon size={24} aria-label={name} />
 							</li>
@@ -550,7 +601,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-006"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.6 · Even rendering with translucent colors
 					</h2>
@@ -574,7 +625,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="version-005"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						0.0.5 · Named icons and agent setup
 					</h2>
@@ -612,7 +663,7 @@ function ChangelogPage() {
 					</time>
 					<h2
 						id="september-12-title"
-						className="mt-3 scroll-mt-36 xl:scroll-mt-24 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
 					>
 						Five new icons
 					</h2>
@@ -623,7 +674,7 @@ function ChangelogPage() {
 					<ul className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2">
 						{addedIcons.map(({ name, Icon, description }) => (
 							<li key={name} className="flex flex-col gap-3">
-								<div className="flex h-24 items-center justify-center gap-8 rounded-2xl bg-card">
+								<div className="flex h-24 items-center justify-center gap-8 surface rounded-2xl">
 									{[16, 24].map((size) => (
 										<figure
 											key={size}
@@ -647,7 +698,7 @@ function ChangelogPage() {
 					</ul>
 					<h3
 						id="refinements"
-						className="mt-10 scroll-mt-36 xl:scroll-mt-24 font-medium"
+						className="mt-10 scroll-mt-32 lg:scroll-mt-20 font-medium"
 					>
 						Refinements
 					</h3>
@@ -663,11 +714,11 @@ function ChangelogPage() {
 					</ul>
 					<PageActions>
 						<Button nativeButton={false} render={<Link to="/icons" />}>
-							Explore icons
+							Browse icons
 						</Button>
 					</PageActions>
 				</section>
-			</article>
-		</DocumentationLayout>
+			</DocsPage>
+		</DocsShell>
 	);
 }
