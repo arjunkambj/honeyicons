@@ -1348,6 +1348,12 @@
 	"octagon-x": {
 		"tags": ["octagon", "x", "error", "stop", "close", "cancel", "danger"]
 	},
+	"one-text": {
+		"tags": ["sms", "text", "marketing", "message", "brand"]
+	},
+	"one-text-color": {
+		"tags": ["sms", "text", "marketing", "message", "brand", "color"]
+	},
 	"openai": {
 		"tags": ["chatgpt", "ai", "brand"]
 	},
@@ -1767,6 +1773,12 @@
 	},
 	"star-off": {
 		"tags": ["star", "off", "unfavorite", "unstar", "disabled"]
+	},
+	"stay-ai": {
+		"tags": ["subscriptions", "retention", "shopify", "heart", "brand"]
+	},
+	"stay-ai-color": {
+		"tags": ["subscriptions", "retention", "shopify", "heart", "brand", "color"]
 	},
 	"sticker": {
 		"tags": ["label", "peel", "fold", "square", "solar"]

@@ -824,3 +824,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Stay AI and OneText
+
+`StayAi` rebuilds the woven heart from [stay.ai](https://stay.ai): two strips,
+each three cells wide, that cross at right angles, with round caps, a hole in
+the left lobe and two checker cut-outs. It is scaled to 21.6 units wide and
+keeps its sharp cell corners and rounded bottom tip. `StayAiColor` paints it in
+Stay AI's magenta, `#CF088B`.
+
+`OneText` redraws the speech-bubble favicon from
+[onetext.com](https://www.onetext.com), 21.6 units wide, with its bottom-right
+tail and the "1" cut out of the bubble and open at the bottom. `OneTextColor`
+paints it in OneText's blue, `#1877FC`. Linear and bold share each drawing.

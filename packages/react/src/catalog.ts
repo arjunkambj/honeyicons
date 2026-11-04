@@ -296,6 +296,8 @@ import { NpmColor } from "./icons/npm-color.js";
 import { Nvidia } from "./icons/nvidia.js";
 import { NvidiaColor } from "./icons/nvidia-color.js";
 import { OctagonX } from "./icons/octagon-x.js";
+import { OneText } from "./icons/one-text.js";
+import { OneTextColor } from "./icons/one-text-color.js";
 import { Openai } from "./icons/openai.js";
 import { Openclaw } from "./icons/openclaw.js";
 import { OpenclawColor } from "./icons/openclaw-color.js";
@@ -400,6 +402,8 @@ import { SpinnerWave } from "./icons/spinner-wave.js";
 import { SquarePen } from "./icons/square-pen.js";
 import { Star } from "./icons/star.js";
 import { StarOff } from "./icons/star-off.js";
+import { StayAi } from "./icons/stay-ai.js";
+import { StayAiColor } from "./icons/stay-ai-color.js";
 import { Sticker } from "./icons/sticker.js";
 import { StickyNote } from "./icons/sticky-note.js";
 import { Stop } from "./icons/stop.js";
@@ -2859,6 +2863,22 @@ export const catalog: CatalogItem[] = [
 		component: OctagonX,
 	},
 	{
+		name: "one-text",
+		pascalName: "OneText",
+		category: "brands",
+		tags: ["sms","text","marketing","message","brand"],
+		variants: ["linear","bold"],
+		component: OneText,
+	},
+	{
+		name: "one-text-color",
+		pascalName: "OneTextColor",
+		category: "brands",
+		tags: ["sms","text","marketing","message","brand","color"],
+		variants: ["linear","bold"],
+		component: OneTextColor,
+	},
+	{
 		name: "openai",
 		pascalName: "Openai",
 		category: "brands",
@@ -3689,6 +3709,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["star","off","unfavorite","unstar","disabled"],
 		variants: ["linear","bold"],
 		component: StarOff,
+	},
+	{
+		name: "stay-ai",
+		pascalName: "StayAi",
+		category: "brands",
+		tags: ["subscriptions","retention","shopify","heart","brand"],
+		variants: ["linear","bold"],
+		component: StayAi,
+	},
+	{
+		name: "stay-ai-color",
+		pascalName: "StayAiColor",
+		category: "brands",
+		tags: ["subscriptions","retention","shopify","heart","brand","color"],
+		variants: ["linear","bold"],
+		component: StayAiColor,
 	},
 	{
 		name: "sticker",
