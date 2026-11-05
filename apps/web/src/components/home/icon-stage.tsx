@@ -1,12 +1,14 @@
 import { cn } from "@honeyicons/ui/lib/utils";
 import {
+	memo,
+	useCallback,
 	useEffect,
 	useLayoutEffect,
 	useRef,
 	useState,
 	useSyncExternalStore,
 } from "react";
-import { tintFor, wallTiles } from "./wall";
+import { wallTiles } from "./wall";
 
 const TILE = 112;
 const ICON = 40;
@@ -25,8 +27,10 @@ const START_INDEX = Math.max(
 	0,
 	TILES.findIndex((item) => item.name === "folder-open"),
 );
-// A focus change should be a real flight across the wall, never a hop to a neighbor.
+// A focus change should be a real flight, never a hop to a neighbor. Staying
+// within reach keeps the camera from having to paint most of the wall at once.
 const MIN_HOP_TILES = 6;
+const MAX_HOP_TILES = 12;
 
 const clamp = (min: number, value: number, max: number) =>
 	Math.min(max, Math.max(min, value));
@@ -48,8 +52,8 @@ function tileDistance(a: number, b: number) {
 const easeInOutCubic = (t: number) =>
 	t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2;
 const flightDuration = (tiles: number) => clamp(1400, 1000 + tiles * 70, 2600);
-// Long flights pull back far enough to show the whole wall.
-const flightZoomOut = (tiles: number) => clamp(0.3, 0.75 - tiles * 0.03, 0.75);
+// Longer flights pull back further, but only far enough to show the wall around them.
+const flightZoomOut = (tiles: number) => clamp(0.6, 0.85 - tiles * 0.02, 0.85);
 
 const reducedMotionQuery = "(prefers-reduced-motion: reduce)";
 function subscribeReducedMotion(onChange: () => void) {
@@ -97,10 +101,48 @@ function FocusGrid() {
 	);
 }
 
+// Memoized so a focus change redraws two tiles instead of the whole wall.
+const Tile = memo(function Tile({
+	item,
+	index,
+	focused,
+	bold,
+	onSelect,
+}: {
+	item: (typeof TILES)[number];
+	index: number;
+	focused: boolean;
+	bold: boolean;
+	onSelect: (index: number) => void;
+}) {
+	const Component = item.component;
+	return (
+		<div
+			onClick={() => onSelect(index)}
+			className={cn(
+				"relative flex cursor-pointer items-center justify-center border-border border-r border-b transition-colors duration-500 [contain:layout_style]",
+				focused
+					? "z-10 bg-card text-foreground shadow-[0_6px_24px_-10px_rgb(0_0_0/0.10),0_1px_2px_rgb(0_0_0/0.04)]"
+					: "text-foreground/75 hover:bg-card",
+			)}
+		>
+			<span className="relative" style={{ width: ICON, height: ICON }}>
+				{focused && <FocusGrid />}
+				<Component
+					variant={bold ? "bold" : "linear"}
+					size={ICON}
+					className="relative"
+				/>
+			</span>
+		</div>
+	);
+});
+
 /**
- * The whole set as one wall of tiles. A camera flies from icon to icon: it
- * pulls back to show the wall mid-flight, lands close on one icon, lays its
- * drawing grid over it, and then switches it from linear to bold.
+ * The set as one wall of tiles. A camera flies from icon to icon: it pulls back
+ * to show the wall mid-flight, lands close on one icon, lays its drawing grid
+ * over it, and then switches it from linear to bold. A line of code below the
+ * wall names the focused icon and follows the switch.
  */
 export function IconStage({ className }: { className?: string }) {
 	const viewportRef = useRef<HTMLDivElement>(null);
@@ -132,10 +174,10 @@ export function IconStage({ className }: { className?: string }) {
 		return () => document.removeEventListener("visibilitychange", update);
 	}, []);
 
-	function focusTile(next: number) {
+	const focusTile = useCallback((next: number) => {
 		activeRef.current = next;
 		setActive(next);
-	}
+	}, []);
 
 	useEffect(() => {
 		if (reducedMotion || hovered || hidden) return;
@@ -144,8 +186,10 @@ export function IconStage({ className }: { className?: string }) {
 			timer = window.setTimeout(() => {
 				const current = activeRef.current;
 				let next = current;
-				while (tileDistance(next, current) < MIN_HOP_TILES) {
+				let hop = 0;
+				while (hop < MIN_HOP_TILES || hop > MAX_HOP_TILES) {
 					next = Math.floor(Math.random() * TILES.length);
+					hop = tileDistance(next, current);
 				}
 				activeRef.current = next;
 				flownRef.current = true;
@@ -246,34 +290,27 @@ export function IconStage({ className }: { className?: string }) {
 					gridAutoRows: TILE,
 				}}
 			>
-				{TILES.map((item, index) => {
-					const Component = item.component;
-					const focused = index === active;
-					const variant = focused && boldIndex === index ? "bold" : "linear";
-					return (
-						<div
-							key={item.name}
-							onClick={() => focusTile(index)}
-							className={cn(
-								"relative flex cursor-pointer items-center justify-center border-border border-r border-b transition-colors duration-500 [contain:layout_style]",
-								focused
-									? "z-10 bg-card shadow-[0_6px_24px_-10px_rgb(0_0_0/0.10),0_1px_2px_rgb(0_0_0/0.04)]"
-									: (tintFor(index) ?? "text-foreground/75"),
-								!focused && "hover:bg-card",
-							)}
-						>
-							<span className="relative" style={{ width: ICON, height: ICON }}>
-								{focused && <FocusGrid />}
-								<Component variant={variant} size={ICON} className="relative" />
-							</span>
-							{focused && (
-								<span className="absolute inset-x-0 bottom-2 truncate px-2 text-center font-mono text-[9px] text-muted-foreground">
-									{item.name} · {variant}
-								</span>
-							)}
-						</div>
-					);
-				})}
+				{TILES.map((item, index) => (
+					<Tile
+						key={item.name}
+						item={item}
+						index={index}
+						focused={index === active}
+						bold={index === active && boldIndex === index}
+						onSelect={focusTile}
+					/>
+				))}
+			</div>
+			<div className="pointer-events-none absolute inset-x-0 bottom-5 z-20 flex justify-center px-4">
+				<code className="rounded-xl bg-card px-3 py-2 text-center font-mono text-xs leading-5 shadow-xxs sm:text-[13px]">
+					<span className="text-muted-foreground">{'<Icon icon="'}</span>
+					{TILES[active]?.name}
+					<span className="text-muted-foreground">{'" variant="'}</span>
+					<span className="text-primary">
+						{boldIndex === active ? "bold" : "linear"}
+					</span>
+					<span className="text-muted-foreground">{'" />'}</span>
+				</code>
 			</div>
 		</div>
 	);

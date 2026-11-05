@@ -1,10 +1,10 @@
-import { ArrowRight, Github } from "@honeyicons/react";
+import { ArrowRight, Check, Github } from "@honeyicons/react";
 import { catalog } from "@honeyicons/react/catalog";
 import { Button } from "@honeyicons/ui/components/button";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BrandLogo } from "@/components/brand-mark";
 import { IconStage } from "@/components/home/icon-stage";
-import { InstallCommand } from "@/components/install-command";
+import { QuickInstall } from "@/components/install-command";
 import { GITHUB_URL } from "@/components/site-header";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -26,6 +26,12 @@ const navLinks = [
 	{ to: "/docs", label: "Docs" },
 	{ to: "/changelog", label: "Changelog" },
 ] as const;
+
+const proofPoints = [
+	"Free to use, MIT licensed",
+	"Typed icon names",
+	"Drawn for 16, 20 and 24 px",
+];
 
 function Home() {
 	return (
@@ -58,35 +64,36 @@ function Home() {
 				</header>
 
 				<div className="flex flex-1 flex-col justify-center py-10 lg:pb-20">
-					<h1>
-						<BrandLogo className="h-9 w-[222px] text-foreground" />
+					<div>
+						<BrandLogo className="h-7 w-[173px] text-foreground" />
 						<span className="sr-only">Honeyicons</span>
-					</h1>
-					<p className="mt-4 max-w-[420px] text-[15px] text-muted-foreground leading-6.5">
-						{catalog.length} icons that all match, each with an outline and a
-						filled version. Download any of them, or drop them straight into
-						your app. Free for personal and commercial work.
-					</p>
-					<div className="mt-7 flex flex-wrap items-center gap-2">
-						<Button
-							size="lg"
-							nativeButton={false}
-							render={<Link to="/icons" />}
-						>
-							Browse icons
-							<ArrowRight data-icon="inline-end" />
-						</Button>
-						<Button
-							size="lg"
-							variant="secondary"
-							nativeButton={false}
-							render={<a href={GITHUB_URL} target="_blank" rel="noreferrer" />}
-						>
-							<Github data-icon="inline-start" />
-							Star on GitHub
-						</Button>
 					</div>
-					<InstallCommand agentPrompt className="mt-4 max-w-[440px]" />
+					<h1 className="mt-6 max-w-[480px] font-heading font-medium text-4xl leading-tight tracking-tight lg:text-[42px]">
+						{catalog.length} React icons that all match
+					</h1>
+					<p className="mt-4 max-w-[440px] text-[15px] text-muted-foreground leading-6.5">
+						They're drawn on one grid with one line weight, and each has an
+						outline and a filled version. Download any of them, or drop them
+						straight into your app.
+					</p>
+					<Button
+						size="lg"
+						className="mt-7 self-start"
+						nativeButton={false}
+						render={<Link to="/icons" />}
+					>
+						Browse icons
+						<ArrowRight data-icon="inline-end" />
+					</Button>
+					<QuickInstall className="mt-4 max-w-[440px]" />
+					<ul className="mt-5 flex flex-wrap gap-x-4 gap-y-1.5 text-[13px] text-muted-foreground">
+						{proofPoints.map((point) => (
+							<li key={point} className="flex items-center gap-1.5">
+								<Check size={14} className="shrink-0 text-primary" />
+								{point}
+							</li>
+						))}
+					</ul>
 				</div>
 			</section>
 
