@@ -754,16 +754,16 @@
 		"tags": ["flip", "mirror", "horizontal", "reflect", "transform"]
 	},
 	"folder": {
-		"tags": ["folder", "directory", "files", "storage", "folder-01", "solar"]
+		"tags": ["folder", "directory", "files", "storage"]
 	},
 	"folder-add": {
-		"tags": ["folder", "directory", "create", "new", "plus", "solar"]
+		"tags": ["folder", "directory", "create", "new", "plus"]
 	},
 	"folder-lock": {
 		"tags": ["folder", "lock", "private", "secure", "protected"]
 	},
 	"folder-open": {
-		"tags": ["folder", "open", "directory", "files", "storage", "solar"]
+		"tags": ["folder", "open", "directory", "files", "storage"]
 	},
 	"folder-remove": {
 		"tags": ["folder", "remove", "delete", "minus", "directory"]
@@ -772,29 +772,13 @@
 		"tags": ["folder", "search", "find", "browse", "directory"]
 	},
 	"folder-tree": {
-		"tags": [
-			"folder",
-			"tree",
-			"directory",
-			"hierarchy",
-			"structure",
-			"files",
-			"solar"
-		]
+		"tags": ["folder", "tree", "directory", "hierarchy", "structure", "files"]
 	},
 	"folder-with-files": {
-		"tags": ["folder", "files", "documents", "directory", "storage", "solar"]
+		"tags": ["folder", "files", "documents", "directory", "storage"]
 	},
 	"folders": {
-		"tags": [
-			"folders",
-			"folder",
-			"files",
-			"directory",
-			"collection",
-			"stack",
-			"solar"
-		]
+		"tags": ["folders", "folder", "files", "directory", "collection", "stack"]
 	},
 	"forward": {
 		"tags": ["forward", "send", "message", "arrow", "right"]
@@ -1526,16 +1510,7 @@
 		"tags": ["rhombus", "shape", "geometry", "diamond", "hugeicons"]
 	},
 	"rocket": {
-		"tags": [
-			"rocket",
-			"rocket-02",
-			"launch",
-			"space",
-			"45-degrees",
-			"hugeicons",
-			"fire",
-			"flame"
-		]
+		"tags": ["rocket", "launch", "space", "fire", "flame"]
 	},
 	"rotate-ccw": {
 		"tags": ["rotate", "counterclockwise", "turn", "reset", "undo"]

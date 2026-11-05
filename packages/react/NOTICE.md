@@ -74,10 +74,9 @@ source licenses of those base icons below continue to apply. `PinOff`,
 `PhoneOff`, `VideoOff`, and `CameraOff` cut a rounded gap through `Pin`,
 `Phone`, `VideoCamera`, and `Camera`. `WifiOff`, `BatteryLow`, and
 `BatteryCharging` reuse the Solar-derived `Wifi` and `Battery` geometry.
-`Unlink` opens the Solar-derived `Link` loops. `FolderRemove`, `FolderLock`,
-`FolderSearch`, `CalendarCheck`, `BellRing`, `StickyNote`, `RepeatOne`,
-`UserSettings`, and `UserLock` add new symbols to the Solar-derived folder,
-calendar, bell, sticker, repeat, and user geometry. `Refresh`, `RotateCw`,
+`Unlink` opens the Solar-derived `Link` loops. `CalendarCheck`, `BellRing`,
+`StickyNote`, `RepeatOne`, `UserSettings`, and `UserLock` add new symbols to the
+Solar-derived calendar, bell, sticker, repeat, and user geometry. `Refresh`, `RotateCw`,
 `RotateCcw`, `SortAscending`, `SortDescending`, `CornerDownRight`,
 `TrendingUp`, `TrendingDown`, `Shuffle`, `Indent`, `Outdent`, and
 `ScreenShare` reuse the Hugeicons-derived curved arrowhead, and `CloudRain`
@@ -85,7 +84,7 @@ reuses the cloud from `CloudDownload`.
 
 ## September 22, 2026 consistency pass
 
-The new non-brand filled outlines and the updated folder, bell, and user-status
+The new non-brand filled outlines and the updated bell and user-status
 families use a baked 1.8-unit outline, matching the standard stroked icons.
 Their filled contours were offset and simplified while retaining silhouettes,
 cutouts, and rounded geometry; no second rendering stroke is applied. These
@@ -98,7 +97,7 @@ The MIT notice below also applies to those reused arrow curves.
 The user-status family shares one adjusted head and closed rounded body, with
 free-standing filled action symbols and no circular status badges.
 
-The folder-tree connector and archive corner are smoothed; the map's internal
+The archive corner is smoothed; the map's internal
 lines finish inside its frame. Slider tracks align with their bar handles.
 Gamepad dots use native circles, face eyes use native ellipses, and
 circular head outlines use exact circular arcs.
@@ -158,9 +157,9 @@ and redundant collinear points removed.
 `AtSign` preserves the user-supplied filled SVG and inner cutout, with
 `currentColor` for theme support.
 
-`Sparkles` uses the user-supplied SVG, preserving the small filled sparkle
-and large outlined sparkle. The outline inherits standard Honeyicons stroke
-settings; redundant pasted attributes and the repeated polygon endpoint are removed.
+`Sparkles` redraws Lucide's `sparkles` at the user's request on the 1.8-unit
+line: the star scaled to the 1.2 and 22.8 limits with a slightly wider waist,
+and the plus and ring resized onto the pixel grid. The Lucide license at the end of this file applies.
 
 `Link`, `CalendarSearch`, and `ThreeSquares` preserve the supplied Solar
 **Link Square**, **Calendar Search**, and **Three Squares (Outline)** filled
@@ -196,13 +195,11 @@ SVG path; it inherits standard Honeyicons stroke settings and reuses the
 existing curved diagonal arrowhead, with straight arms easing into a smooth
 corner.
 
-`Rocket`, `Move`, `History`, `CloudDownload`, and `CloudUpload`
-use `Rocket02Icon`, `MoveIcon`, `HistoryIcon`,
+`Move`, `History`, `CloudDownload`, and `CloudUpload`
+use `MoveIcon`, `HistoryIcon`,
 `CloudDownloadIcon`, and `CloudUploadIcon` from `@hugeicons/core-free-icons`
 4.3.5 under the MIT license reproduced below. Source paths inherit standard
-Honeyicons stroke settings. Rocket is rotated 45 degrees clockwise around
-the center of the 24-unit grid, as requested, with a drawn flame replacing
-the exhaust lines. Cloud transfers reuse Honeyicons' curved arrowheads.
+Honeyicons stroke settings. Cloud transfers reuse Honeyicons' curved arrowheads.
 
 `Keyboard` and `Flag` preserve the supplied Solar **Keyboard** and **Flag
 (Outline)** filled paths. Keyboard's round keys use native circles at the
@@ -316,14 +313,6 @@ Their filled outlines, cutouts, curves, and baked weights are preserved with
 `currentColor`. Source attributes and zero-area backtracking segments in the
 map arrows are removed without changing their visible geometry.
 
-`Folder`, `FolderOpen`, and `FolderWithFiles` use the user-supplied Solar
-**Folder**, **Folder Open**, and **Folder With Files (Outline)** paths, with
-filled geometry, cutouts, and baked weights preserved. `Folders` uses the
-supplied **Folders (Outline)** with a matching rounded dash on the front folder.
-`FolderAdd` adds a rounded plus to the new base and omits the dash. `FolderTree` uses wider, smaller
-versions of its sloping tab and smooth silhouette, with simplified details and
-adjusted cutouts for legibility. These replace the previous folder drawings
-and use the Solar source and CC BY 4.0 license linked above.
 `SidebarTop` and `SidebarBottom` extend the existing Solar-derived sidebar
 family with horizontal dividers.
 
@@ -378,13 +367,13 @@ weight are preserved with `currentColor`; unused source attributes are removed.
 `File`, `FileText`, `FileCode`, `GitBranch`, `GitDiff`, `GitFork`, `GitGraph`,
 `GitPullRequest`, `Home`, `HomeAngle`, `Calendar`, `CalendarMark`,
 `Widget`, `WidgetAdd`, `WidgetSquare`, `WidgetSquareAdd`,
-`MusicNote`, `Quote`, `FolderTree`, `CartBag`, `CartLarge`, `Bolt`,
+`MusicNote`, `Quote`, `CartBag`, `CartLarge`, `Bolt`,
 `Microphone`, `VideoCamera`, `Lock`, `LockOpen`, `Key`, `ImageAdd`, `ImageEdit`,
 `ClapperboardText`, `Pip`, `Ticket`, `VideoFrame`, `Bookmark`, `FileAdd`, `FileRemove`, and `ArchiveAlt` are redrawn from the
 user-supplied **File**, **File Text**, **File Code**, **Git Branch**,
 **Git Diff**, **Git Fork**, **Git Graph**, **Git Pull Request**, **Home**,
 **Home Angle**, **Calendar**, **Calendar Mark**, **Widget 3**,
-**Widget**, **Widget Add**, **Music Note 4**, **Quote**, **Folder Tree**,
+**Widget**, **Widget Add**, **Music Note 4**, **Quote**,
 **Bag 3**, **Cart Large**, **Bolt**, **Microphone**,
 **Videocamera Record**, **Lock Keyhole Minimalistic**, **Lock Keyhole
 Minimalistic Unlocked**, **Key Minimalistic**, **Gallery Add**,
@@ -396,8 +385,7 @@ licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 Changes: rebuilt as Honeyicons stroke icons on the 24-unit grid, using the
 renderer's standard stroke with round caps and joins and smooth corner curves.
-The source silhouettes are kept; filled outlines are not preserved. `FolderTree`
-uses the Honeyicons `Folder` shape for its folders instead of the source folders.
+The source silhouettes are kept; filled outlines are not preserved.
 
 `User`, `Archive`, `Add`, `Minus`, `Close`, `Pin`, and `AlertTriangle`
 are adapted from the user-supplied **User**, **Library**, **Add**, **Minus**,
@@ -837,3 +825,27 @@ Stay AI's magenta, `#CF088B`.
 [onetext.com](https://www.onetext.com), 21.6 units wide, with its bottom-right
 tail and the "1" cut out of the bubble and open at the bottom. `OneTextColor`
 paints it in OneText's blue, `#1877FC`. Linear and bold share each drawing.
+
+## Lucide
+
+`Sparkles`, `Rocket`, `Folder`, `FolderAdd`, `FolderRemove`, `FolderLock`,
+`FolderSearch`, `FolderOpen`, `FolderWithFiles`, `Folders`, and `FolderTree` are
+adapted from [Lucide](https://lucide.dev) and redrawn on the 1.8-unit line. The
+folders use Lucide's tab and proportions with rounder corners, and `Rocket` adds
+a window dot. The lock, search, and sheet details are original.
+
+ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.

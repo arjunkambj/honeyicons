@@ -2606,9 +2606,7 @@
 			"folder",
 			"directory",
 			"files",
-			"storage",
-			"folder-01",
-			"solar"
+			"storage"
 		]
 	},
 	{
@@ -2624,8 +2622,7 @@
 			"directory",
 			"create",
 			"new",
-			"plus",
-			"solar"
+			"plus"
 		]
 	},
 	{
@@ -2657,8 +2654,7 @@
 			"open",
 			"directory",
 			"files",
-			"storage",
-			"solar"
+			"storage"
 		]
 	},
 	{
@@ -2707,8 +2703,7 @@
 			"directory",
 			"hierarchy",
 			"structure",
-			"files",
-			"solar"
+			"files"
 		]
 	},
 	{
@@ -2724,8 +2719,7 @@
 			"files",
 			"documents",
 			"directory",
-			"storage",
-			"solar"
+			"storage"
 		]
 	},
 	{
@@ -2742,8 +2736,7 @@
 			"files",
 			"directory",
 			"collection",
-			"stack",
-			"solar"
+			"stack"
 		]
 	},
 	{
@@ -5686,11 +5679,8 @@
 		],
 		"tags": [
 			"rocket",
-			"rocket-02",
 			"launch",
 			"space",
-			"45-degrees",
-			"hugeicons",
 			"fire",
 			"flame"
 		]
