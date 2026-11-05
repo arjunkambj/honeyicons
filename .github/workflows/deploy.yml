@@ -1,0 +1,52 @@
+name: Deploy
+
+# preview deploys to the preview Worker and main deploys to honeyicons.com. Every
+# value comes from Infisical, which trusts this repository through GitHub's OIDC
+# token, so GitHub stores no secrets for this.
+on:
+  push:
+    branches: [preview, main]
+    paths-ignore: ["**.md"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  checks:
+    name: Checks
+    uses: ./.github/workflows/checks.yml
+
+  deploy:
+    name: Deploy ${{ github.ref_name == 'main' && 'production' || 'preview' }}
+    needs: checks
+    if: github.ref_name == 'preview' || github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: ${{ github.ref_name == 'main' && 'production' || 'preview' }}
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      STAGE: ${{ github.ref_name == 'main' && 'production' || 'preview' }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: Infisical/secrets-action@d2e351f16c6ca20d17c85e6c992e04bdeb64e87d # v1.0.18
+        with:
+          method: oidc
+          identity-id: 185c66b3-d642-42ad-9af2-0609e6776331
+          project-id: 797e7429-0bc8-4a35-a3f5-c270e24140eb
+          env-slug: prod
+      - run: pnpm --filter web run deploy --stage "$STAGE" --yes --no-input

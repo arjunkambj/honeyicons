@@ -84,10 +84,11 @@ The drawing rules for strokes, spacing, bold versions, and brand marks are in
   publishes the next patch version of `@honeyicons/react` to npm. For a minor
   or major version, set it in `packages/react/package.json` on `preview` first.
 - Delete each branch and its worktree once its pull request merges.
-- To deploy the site, build the icons with
-  `pnpm --filter @honeyicons/react build`. Then `pnpm --filter web deploy:preview`
-  updates the [preview link](https://preview-honeyicons.kambojarjunn78.workers.dev),
-  and `pnpm --filter web deploy` updates production.
+- Pushing to `preview` deploys the
+  [preview site](https://honeyicons-preview.kambojarjunn78.workers.dev), and
+  pushing to `main` deploys [honeyicons.com](https://honeyicons.com). Deploys run
+  on GitHub Actions with [Alchemy](https://alchemy.run), and their settings live
+  in Infisical.
 
 ## Project layout
 
