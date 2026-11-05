@@ -2,7 +2,7 @@
 
 SVG icons for React. Every icon comes in `linear` and `bold`, drawn on a
 24-unit grid with smooth curves and rounded corners, and follows the text color.
-Browse them at [icons.0xhoney.com](https://icons.0xhoney.com).
+Browse them at [honeyicons.com](https://honeyicons.com).
 
 Honeyicons is inspired by [Hugeicons](https://hugeicons.com) and
 [Solar Icons](https://github.com/480-Design/Solar-Icon-Set).
@@ -12,7 +12,7 @@ Honeyicons is inspired by [Hugeicons](https://hugeicons.com) and
 Give your coding agent this prompt:
 
 ```
-Set up @honeyicons/react using https://icons.0xhoney.com/setup.md
+Set up @honeyicons/react using https://honeyicons.com/setup.md
 ```
 
 Or install the package yourself:
