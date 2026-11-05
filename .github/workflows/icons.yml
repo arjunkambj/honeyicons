@@ -1,0 +1,49 @@
+name: Icons
+
+# Measures every icon. Fails on a new problem, or on a fixed problem still listed
+# in scripts/known-icon-issues.json.
+on:
+  push:
+    branches: [preview]
+    paths:
+      - icons/**
+      - packages/react/src/**
+      - scripts/build-icons.ts
+      - scripts/check-icons.ts
+      - scripts/icon-geometry.ts
+      - scripts/known-icon-issues.json
+      - .github/workflows/icons.yml
+  pull_request:
+    paths:
+      - icons/**
+      - packages/react/src/**
+      - scripts/build-icons.ts
+      - scripts/check-icons.ts
+      - scripts/icon-geometry.ts
+      - scripts/known-icon-issues.json
+      - .github/workflows/icons.yml
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Check generated icons are up to date
+        run: |
+          pnpm generate:icons
+          git diff --exit-code || (echo "Run pnpm generate:icons and commit the result." && exit 1)
+
+      - run: pnpm check:icons

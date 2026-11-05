@@ -68,6 +68,10 @@ jobs:
           pnpm generate:icons
           git diff --exit-code || (echo "Run pnpm generate:icons and commit the result." && exit 1)
 
+      - name: Check icons
+        if: steps.version.outputs.publish == 'true'
+        run: pnpm check:icons
+
       # Committed before publishing, so a failed publish is retried by the next run.
       - name: Commit version
         if: steps.version.outputs.bump == 'true'
