@@ -826,6 +826,13 @@ Stay AI's magenta, `#CF088B`.
 tail and the "1" cut out of the bubble and open at the bottom. `OneTextColor`
 paints it in OneText's blue, `#1877FC`. Linear and bold share each drawing.
 
+## November 2026 size pass
+
+Icons below full size were scaled to a 21.6-unit longest side, and off-center
+icons were moved, with their sources and licenses unchanged. Strokes stay 1.8
+units. `Phone`, `IncomingCall`, `OutgoingCall`, `Chair`, and `Cart` were scaled and
+their outlines shaved back to the same weight.
+
 ## Lucide
 
 `Sparkles`, `Rocket`, `Folder`, `FolderAdd`, `FolderRemove`, `FolderLock`,

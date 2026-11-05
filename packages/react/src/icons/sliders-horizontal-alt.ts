@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M4 7H9M12 7H20M9 4V10M4 17H12M15 17H20M15 14V20", stroke: "currentColor" }],
+	["path", { d: "M2.1 5.8125H8.2875M12 5.8125H21.9M8.2875 2.1V9.525M2.1 18.1875H12M15.7125 18.1875H21.9M15.7125 14.475V21.9", stroke: "currentColor" }],
 ];
 
 export const SlidersHorizontalAlt = /* @__PURE__ */ createIcon("SlidersHorizontalAlt", {

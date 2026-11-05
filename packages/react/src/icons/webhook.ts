@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M12 5.95L16.3923 13.5565A3.41 3.41 0 1 0 21.0497 14.805M18.0973 16.51L9.3127 16.51A3.41 3.41 0 1 0 5.9027 19.92M5.9027 16.51L10.295 8.9035A3.41 3.41 0 1 0 9.0465 4.245", stroke: "currentColor" }],
+	["path", { d: "M12 6.4768L16.5772 14.4036A3.5536 3.5536 0 1 0 21.4307 15.7047M18.354 17.4815L9.1996 17.4815A3.5536 3.5536 0 1 0 5.646 21.0351M5.646 17.4815L10.2232 9.5547A3.5536 3.5536 0 1 0 8.9221 4.7001", stroke: "currentColor" }],
 ];
 
 export const Webhook = /* @__PURE__ */ createIcon("Webhook", {

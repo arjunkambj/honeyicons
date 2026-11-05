@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M3.75 20.25V16.95M8.887 20.25V13.32M14.013 20.25V9.14M19.15 20.25V4.3", stroke: "currentColor" }],
+	["path", { d: "M4.3 19.975V16.675M9.437 19.975V13.045M14.563 19.975V8.865M19.7 19.975V4.025", stroke: "currentColor" }],
 ];
 
 export const Signal = /* @__PURE__ */ createIcon("Signal", {

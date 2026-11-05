@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M11.8632 2.17999L22.7264 20.9958H1L11.8632 2.17999Z", fill: "currentColor" }],
+	["path", { d: "M12.0132 2.58L22.8764 21.3958H1.15L12.0132 2.58Z", fill: "currentColor" }],
 ];
 
 export const Vercel = /* @__PURE__ */ createIcon("Vercel", {

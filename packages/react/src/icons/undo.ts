@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M3.75 8.7H14.75C18.0914 8.7 20.8 11.4086 20.8 14.75C20.8 18.0914 18.0914 20.8 14.75 20.8H10.9M7.6 4.3C7.6 4.3 3.2 7.5405 3.2 8.7C3.2 9.8595 7.6 13.1 7.6 13.1", stroke: "currentColor" }],
+	["path", { d: "M3.75 8.15H14.75C18.0914 8.15 20.8 10.8586 20.8 14.2C20.8 17.5414 18.0914 20.25 14.75 20.25H10.9M7.6 3.75C7.6 3.75 3.2 6.9905 3.2 8.15C3.2 9.3095 7.6 12.55 7.6 12.55", stroke: "currentColor" }],
 ];
 
 export const Undo = /* @__PURE__ */ createIcon("Undo", {
