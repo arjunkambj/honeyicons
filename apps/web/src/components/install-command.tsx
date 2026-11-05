@@ -12,17 +12,10 @@ const installOptions = [
 	{ id: "bun", command: "bun add @honeyicons/react" },
 ] as const;
 
-/**
- * One card with the install command for each package manager and, when
- * `agentPrompt` is set, a last row that copies the setup prompt for coding agents.
- */
-export function InstallCommand({
-	agentPrompt = false,
-	className,
-}: {
-	agentPrompt?: boolean;
-	className?: string;
-}) {
+const quickInstallCommand = "npm i @honeyicons/react";
+
+/** One card with the install command for each package manager. */
+export function InstallCommand({ className }: { className?: string }) {
 	const [selectedId, setSelectedId] = useState<string>(installOptions[0].id);
 	const selected =
 		installOptions.find((option) => option.id === selectedId) ??
@@ -57,21 +50,44 @@ export function InstallCommand({
 					{selected.command}
 				</code>
 			</pre>
-			{agentPrompt && (
-				<div className="flex items-center gap-2 rounded-xl bg-muted py-1 pr-1 pl-3 text-[13px]">
-					<Sparkles size={14} className="shrink-0 text-primary" />
-					<span className="min-w-0 flex-1 truncate text-muted-foreground">
-						Or let your coding agent set it up
-					</span>
-					<CopyButton
-						text={setupPrompt}
-						label="Copy the setup prompt for coding agents"
-						className="bg-card hover:bg-card/70"
-					>
-						Copy prompt
-					</CopyButton>
-				</div>
-			)}
 		</Tabs>
+	);
+}
+
+/** The home page's install card: one command, or a prompt for coding agents. */
+export function QuickInstall({ className }: { className?: string }) {
+	return (
+		<div className={cn("surface w-full rounded-2xl p-1", className)}>
+			<div className="flex items-center gap-2 py-1 pr-1 pl-3">
+				<pre className="min-w-0 flex-1 overflow-x-auto font-mono text-[13px] leading-6">
+					<code>
+						<span
+							aria-hidden
+							className="mr-2 text-muted-foreground select-none"
+						>
+							$
+						</span>
+						{quickInstallCommand}
+					</code>
+				</pre>
+				<CopyButton
+					text={quickInstallCommand}
+					label={`Copy ${quickInstallCommand}`}
+				/>
+			</div>
+			<div className="flex items-center gap-2 rounded-xl bg-muted py-1 pr-1 pl-3 text-[13px]">
+				<Sparkles size={14} className="shrink-0 text-primary" />
+				<span className="min-w-0 flex-1 text-muted-foreground">
+					Or use your coding agent
+				</span>
+				<CopyButton
+					text={setupPrompt}
+					label="Copy the setup prompt for coding agents"
+					className="shrink-0 bg-card hover:bg-card/70"
+				>
+					Copy prompt
+				</CopyButton>
+			</div>
+		</div>
 	);
 }

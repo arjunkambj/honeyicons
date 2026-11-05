@@ -1,9 +1,8 @@
 import { catalog } from "@honeyicons/react/catalog";
 
-/* The icon wall shared by the home stage and the page headers. */
+/* The icon wall behind the home page. */
 
-// A fixed shuffle, so brand colors are sprinkled across the wall instead of
-// sitting in one block, and the wall looks the same on every visit.
+// A fixed shuffle, so the wall looks the same on every visit.
 function seededShuffle<T>(items: readonly T[], seed: number) {
 	const order = [...items];
 	let state = seed;
@@ -20,42 +19,28 @@ function seededShuffle<T>(items: readonly T[], seed: number) {
 	return order;
 }
 
-// Brand icons in their own colors go on an even lattice, so every view of
-// the wall has some color in it. Everything else fills the gaps in a fixed shuffle.
+// One logo for every this many plain icons, so a view holds only a few.
+const PLAIN_ICONS_PER_LOGO = 13;
+
+// The wall stays one color to back up the claim that the set matches: it leaves
+// out the color versions and keeps a thin, even scatter of the plain logos.
 function layoutTiles() {
-	const colored = seededShuffle(
-		catalog.filter((item) => item.name.endsWith("-color")),
-		3,
-	);
-	const rest = seededShuffle(
-		catalog.filter((item) => !item.name.endsWith("-color")),
+	const singleColor = catalog.filter((item) => !item.name.endsWith("-color"));
+	const plain = seededShuffle(
+		singleColor.filter((item) => item.category !== "brands"),
 		7,
 	);
-	const tiles: (typeof catalog)[number][] = [];
-	const step = catalog.length / colored.length;
-	let next = 0;
-	for (let index = 0; index < catalog.length; index++) {
-		const due = Math.round(next * step + step / 2) <= index;
-		const item = due && next < colored.length ? colored[next++] : rest.shift();
-		if (!item) throw new Error("The home wall ran out of icons to place");
-		tiles.push(item);
-	}
-	return tiles;
-}
-
-// Some plain icons wear a color too, to show they take whatever color you set.
-const TINTS = [
-	"text-sky-500",
-	"text-rose-500",
-	"text-emerald-500",
-	"text-violet-500",
-	"text-amber-500",
-	"text-orange-500",
-];
-export function tintFor(index: number) {
-	if (wallTiles[index]?.category === "brands") return undefined;
-	const hash = Math.imul(index + 11, 2654435761) >>> 0;
-	return hash % 4 === 0 ? TINTS[(hash >>> 3) % TINTS.length] : undefined;
+	const logos = seededShuffle(
+		singleColor.filter((item) => item.category === "brands"),
+		3,
+	);
+	return plain.flatMap((item, index) => {
+		const logoDue = (index + 1) % PLAIN_ICONS_PER_LOGO === 0;
+		const logo = logoDue
+			? logos[(index + 1) / PLAIN_ICONS_PER_LOGO - 1]
+			: undefined;
+		return logo ? [item, logo] : [item];
+	});
 }
 
 export const wallTiles = layoutTiles();
