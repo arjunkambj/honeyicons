@@ -1,3 +1,7 @@
 {
-	"extends": "@honeyicons/config/tsconfig.base.json"
+	"extends": "@honeyicons/config/tsconfig.base.json",
+	"compilerOptions": {
+		"allowImportingTsExtensions": true,
+		"noEmit": true
+	}
 }

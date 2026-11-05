@@ -1,0 +1,366 @@
+{
+	"accepted": {},
+	"measured": {
+		"album": {
+			"spacing": 0.35
+		},
+		"alert-triangle": {
+			"spacing": 0.7
+		},
+		"anthropic": {
+			"edges": 0.1
+		},
+		"app-window": {
+			"spacing": 0.85,
+			"cramped": 2.2
+		},
+		"bank": {
+			"spacing": 0.1
+		},
+		"battery": {
+			"spacing": 1.1
+		},
+		"battery-charging": {
+			"spacing": 1.1,
+			"cramped": 0.32
+		},
+		"battery-low": {
+			"spacing": 1.1
+		},
+		"bell": {
+			"cramped": 0.28
+		},
+		"bell-off": {
+			"cramped": 1.69
+		},
+		"bell-ring": {
+			"spacing": 1.05,
+			"cramped": 10.99
+		},
+		"book-open": {
+			"box": 0.5
+		},
+		"briefcase": {
+			"cramped": 0.65
+		},
+		"bug": {
+			"spacing": 0.07
+		},
+		"bun": {
+			"edges": 0.1
+		},
+		"calculator": {
+			"spacing": 0.07
+		},
+		"calendar": {
+			"spacing": 0.2
+		},
+		"calendar-check": {
+			"spacing": 0.7
+		},
+		"calendar-mark": {
+			"spacing": 0.45
+		},
+		"calendar-search": {
+			"spacing": 0.97
+		},
+		"calendar-x": {
+			"spacing": 0.81
+		},
+		"camera": {
+			"spacing": 0.66
+		},
+		"camera-off": {
+			"pieces": 1
+		},
+		"captions": {
+			"spacing": 0.5
+		},
+		"cart-bag": {
+			"spacing": 0.12
+		},
+		"check-double": {
+			"spacing": 0.29
+		},
+		"clapperboard": {
+			"spacing": 0.1
+		},
+		"claude-code": {
+			"edges": 0.1
+		},
+		"claude-code-color": {
+			"edges": 0.1
+		},
+		"cloud-download": {
+			"spacing": 0.35
+		},
+		"cloud-upload": {
+			"spacing": 0.35
+		},
+		"code": {
+			"spacing": 0.48
+		},
+		"cursor-click": {
+			"spacing": 0.5
+		},
+		"dashboard": {
+			"spacing": 0.3,
+			"cramped": 16.61
+		},
+		"deepseek": {
+			"edges": 0.1
+		},
+		"deepseek-color": {
+			"edges": 0.1
+		},
+		"discord": {
+			"edges": 0.1
+		},
+		"discord-color": {
+			"edges": 0.1
+		},
+		"door-open": {
+			"spacing": 0.5
+		},
+		"edit": {
+			"spacing": 0.6
+		},
+		"eraser": {
+			"spacing": 0.68
+		},
+		"eye-off": {
+			"centre": 0.95
+		},
+		"figma": {
+			"box": 0.6
+		},
+		"file-code": {
+			"spacing": 0.75,
+			"cramped": 1.34
+		},
+		"file-image": {
+			"spacing": 0.34
+		},
+		"file-search": {
+			"spacing": 0.29
+		},
+		"file-spreadsheet": {
+			"cramped": 0.2
+		},
+		"file-text": {
+			"spacing": 0.15
+		},
+		"file-video": {
+			"spacing": 0.6
+		},
+		"gamepad": {
+			"spacing": 0.29
+		},
+		"gauge": {
+			"spacing": 0.37
+		},
+		"globe": {
+			"spacing": 0.36,
+			"cramped": 7.63
+		},
+		"hand": {
+			"cramped": 29.73
+		},
+		"hand-wave": {
+			"spacing": 1.16,
+			"cramped": 6.42
+		},
+		"image-edit": {
+			"spacing": 0.35
+		},
+		"images": {
+			"spacing": 0.6,
+			"cramped": 0.03
+		},
+		"info-square": {
+			"spacing": 0.7
+		},
+		"keyboard": {
+			"spacing": 0.25
+		},
+		"layers": {
+			"spacing": 0.39
+		},
+		"layout-list": {
+			"spacing": 0.3,
+			"cramped": 8.33
+		},
+		"library": {
+			"cramped": 0.13
+		},
+		"lightbulb": {
+			"spacing": 1.1,
+			"cramped": 1.89
+		},
+		"link": {
+			"spacing": 0.79
+		},
+		"list-checks": {
+			"spacing": 0.2
+		},
+		"market-analysis": {
+			"spacing": 0.3,
+			"cramped": 6.34
+		},
+		"microphone-off": {
+			"pieces": 1
+		},
+		"mistral": {
+			"edges": 0.1
+		},
+		"mistral-color": {
+			"edges": 0.1
+		},
+		"move": {
+			"cramped": 2.22
+		},
+		"nvidia": {
+			"edges": 0.1
+		},
+		"nvidia-color": {
+			"edges": 0.1
+		},
+		"openclaw": {
+			"edges": 0.1
+		},
+		"openclaw-color": {
+			"edges": 0.1
+		},
+		"package": {
+			"spacing": 0.6,
+			"cramped": 3.18
+		},
+		"palette": {
+			"spacing": 0.63,
+			"cramped": 7.25
+		},
+		"pip": {
+			"spacing": 0.76
+		},
+		"plane": {
+			"cramped": 4.06
+		},
+		"printer": {
+			"cramped": 2.43
+		},
+		"qr-code": {
+			"spacing": 1.16,
+			"cramped": 11.55
+		},
+		"reddit": {
+			"edges": 0.1
+		},
+		"reddit-color": {
+			"edges": 0.1
+		},
+		"refresh": {
+			"spacing": 0.49
+		},
+		"repeat": {
+			"spacing": 0.25
+		},
+		"repeat-one": {
+			"spacing": 0.52
+		},
+		"resources-add": {
+			"spacing": 0.6,
+			"cramped": 0.08
+		},
+		"ruler": {
+			"cramped": 5.63
+		},
+		"sad": {
+			"spacing": 0.17
+		},
+		"screen-share": {
+			"spacing": 0.2
+		},
+		"server": {
+			"spacing": 0.7,
+			"cramped": 19.32
+		},
+		"sliders-horizontal": {
+			"spacing": 0.6
+		},
+		"sliders-vertical": {
+			"spacing": 0.6
+		},
+		"smartphone": {
+			"spacing": 0.65,
+			"cramped": 3.43
+		},
+		"snapchat": {
+			"box": 0.25
+		},
+		"snowflake": {
+			"cramped": 3.77
+		},
+		"stopwatch": {
+			"spacing": 0.6,
+			"cramped": 0.08
+		},
+		"strikethrough": {
+			"spacing": 0.3
+		},
+		"suitcase": {
+			"spacing": 0.7
+		},
+		"sun": {
+			"spacing": 0.3
+		},
+		"tablet": {
+			"spacing": 0.6,
+			"cramped": 3.21
+		},
+		"text-underline": {
+			"spacing": 0.3
+		},
+		"ticket-discount": {
+			"spacing": 0.37
+		},
+		"trash": {
+			"spacing": 0.3,
+			"cramped": 1.77
+		},
+		"video-camera": {
+			"spacing": 0.9,
+			"cramped": 3.32
+		},
+		"video-frame": {
+			"cramped": 1.85
+		},
+		"video-off": {
+			"spacing": 0.6,
+			"cramped": 0.83
+		},
+		"wallet": {
+			"spacing": 0.75,
+			"cramped": 4.27
+		},
+		"webhook": {
+			"cramped": 0.16
+		},
+		"wifi-off": {
+			"pieces": 3
+		},
+		"windsurf": {
+			"edges": 0.1
+		}
+	},
+	"flagged": {
+		"cart": "Reads as a basket. Redraw as a plain shopping cart with wheels and a handle.",
+		"cart-bag": "Reads as a bowl. Redraw as a plain bag with a handle.",
+		"map-pin": "The pin sits on a blob of map. Redraw as a plain pin.",
+		"globe": "A desk globe on a stand. Redraw as a plain globe with meridians.",
+		"smartphone": "Too wide, so it reads as a tablet. Narrow it to about 14 wide.",
+		"home": "Reads as a rounded box with a dash, and looks unrelated to store. Give it a door.",
+		"microphone": "The lines inside the capsule read as a letter E at 16px. Remove them.",
+		"hand-wave": "Too much detail for 16px. Simplify the fingers and motion lines.",
+		"phone-off": "Reads as two blobs. Keep more of the handset."
+	}
+}
