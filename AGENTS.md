@@ -9,7 +9,7 @@
 
 - `preview` is the working branch. Commit there, or branch from it and open pull requests into `preview`. `main` only receives the release pull request from `preview`.
 - Once a branch's pull request merges, delete the branch on GitHub and locally, and remove its worktree. `main` and `preview` stay.
-- Deploy the site preview from `preview` with the local Cloudflare CLI: build the packages (`pnpm --filter @honeyicons/react --filter @honeyicons/ui build`), then `pnpm --filter web deploy:preview`. It uploads a version under the `preview` alias (https://preview-honeyicons.kambojarjunn78.workers.dev) without touching production. Production deploys stay manual with `pnpm --filter web deploy`.
+- `.github/workflows/deploy.yml` deploys the site with Alchemy (`apps/web/alchemy.run.ts`): a push to `preview` updates https://honeyicons-preview.kambojarjunn78.workers.dev and a push to `main` updates https://honeyicons.com. Deploy values live in the Infisical project `honeyicons`, environment `prod`; keep them out of GitHub secrets, variables, and `.env` files.
 
 ### Releasing `@honeyicons/react`
 
