@@ -4,8 +4,8 @@ import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
 	["style", { children: "@keyframes honeyicons-spinner-rotate { to { transform: rotate(360deg); } }\n    [data-honeyicons-spinner] { transform-origin: 12px 12px; animation: honeyicons-spinner-rotate 0.8s linear infinite; }\n    @media (prefers-reduced-motion: reduce) { [data-honeyicons-spinner] { animation: none; } }" }],
-	["circle", { cx: "12", cy: "12", r: "9.9", stroke: "currentColor", opacity: "0.15", "data-honeyicons-bounds": "" }],
-	["path", { d: "M2.1 12a9.9 9.9 0 0 1 9.9 -9.9", stroke: "currentColor", "data-honeyicons-spinner": "" }],
+	["path", { d: "M1.2 12A10.8 10.8 0 1 1 22.8 12A10.8 10.8 0 1 1 1.2 12ZM2.7 12A9.3 9.3 0 1 0 21.3 12A9.3 9.3 0 1 0 2.7 12Z", fill: "currentColor", opacity: "0.15", "data-honeyicons-bounds": "" }],
+	["path", { d: "M1.2 12A10.8 10.8 0 0 1 12 1.2A.75 .75 0 0 1 12 2.7A9.3 9.3 0 0 0 2.7 12A.75 .75 0 0 1 1.2 12Z", fill: "currentColor", "data-honeyicons-spinner": "" }],
 ];
 
 export const Spinner = /* @__PURE__ */ createIcon("Spinner", {
