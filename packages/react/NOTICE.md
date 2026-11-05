@@ -56,8 +56,8 @@ arrowhead, so those licenses continue to apply.
 
 `User`, `UserAdd`, `UserRemove`, `UserCheck`, `UserX`, `UserLock`,
 `UserSettings`, and `UserGroup` replace the flat elliptical body with a deeper,
-newly drawn bust: a flat base, round shoulders, and a gentle top arch, expanded
-into an exact 1.8-unit filled outline with circular heads. UserGroup's side
+newly drawn bust: a flat base, round shoulders, and a gentle top arch, drawn
+with 1.8-unit strokes and circular heads. UserGroup's side
 figures are redrawn as open arcs. The action symbols keep their existing filled
 geometry, shifted 0.5 units left for balance, so the Solar license below
 continues to apply to them.
@@ -251,7 +251,7 @@ bars on the 24-unit grid.
 
 `User`, `UserAdd`, `UserRemove`, `UserCheck`, and `UserX` share the Solar-derived user head
 and closed rounded bust, with newly drawn free-standing filled status symbols
-for the action variants. All use the same 1.8-unit filled outline weight.
+for the action variants.
 The circular status badges were removed at the user’s request.
 The Solar source and CC BY 4.0 license below apply.
 
@@ -321,9 +321,9 @@ family with horizontal dividers.
 Honeyicons arrow curves, complete rounded arrowheads, and 1.8-unit strokes,
 as requested. They use the same Solar source and CC BY 4.0 license.
 
-`Headphones`, `Clapperboard`, `VerifiedCheck`, `Cart`, `Share`,
+`Headphones`, `Clapperboard`, `VerifiedCheck`, `Cart`,
 `Email`, and `Repeat` use the user-supplied Solar **Headphones
-Round**, **Clapperboard Play**, **Verified Check**, **Cart**, **Share**,
+Round**, **Clapperboard Play**, **Verified Check**, **Cart**,
 **Letter**, and **Repeat** outlines from the
 [Solar Icon Set by 480 Design](https://github.com/480-Design/Solar-Icon-Set),
 licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
@@ -831,7 +831,8 @@ paints it in OneText's blue, `#1877FC`. Linear and bold share each drawing.
 Icons below full size were scaled to a 21.6-unit longest side, and off-center
 icons were moved, with their sources and licenses unchanged. Strokes stay 1.8
 units. `Phone`, `IncomingCall`, `OutgoingCall`, `Chair`, and `Cart` were scaled and
-their outlines shaved back to the same weight.
+their outlines shaved back to the same weight. `Share` is redrawn as three rings
+joined by two lines, following the Solar **Share** arrangement.
 
 ## Lucide
 
