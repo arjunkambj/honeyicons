@@ -103,23 +103,25 @@ export function IconDetail({
 			</div>
 
 			<div className="flex gap-4 xl:flex-col">
-				<div className="relative flex size-36 shrink-0 items-center justify-center rounded-2xl bg-background xl:aspect-square xl:size-auto xl:w-full">
-					<svg
-						viewBox="0 0 24 24"
-						aria-hidden="true"
-						className="absolute inset-[12%] text-border"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth={0.04}
-					>
-						{Array.from({ length: 25 }, (_, i) => (
-							<g key={i}>
-								<line x1={i} y1={0} x2={i} y2={24} />
-								<line x1={0} y1={i} x2={24} y2={i} />
-							</g>
-						))}
-					</svg>
-					<Component variant={variant} className="relative size-[76%]" />
+				<div className="flex size-36 shrink-0 items-center justify-center rounded-2xl bg-background xl:h-40 xl:w-full">
+					<div className="relative size-24">
+						<svg
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+							className="absolute inset-0 size-full text-border"
+							fill="none"
+							stroke="currentColor"
+							strokeWidth={0.1}
+						>
+							{Array.from({ length: 25 }, (_, i) => (
+								<g key={i}>
+									<line x1={i} y1={0} x2={i} y2={24} />
+									<line x1={0} y1={i} x2={24} y2={i} />
+								</g>
+							))}
+						</svg>
+						<Component variant={variant} size={96} className="relative block" />
+					</div>
 				</div>
 				<div className="flex min-w-0 flex-1 flex-col gap-3">
 					{item.variants.length > 1 && (
