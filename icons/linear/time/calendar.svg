@@ -1,9 +1,9 @@
 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M10.3935 3.9675H13.6065C17.3764 3.9675 19.302 3.97 20.4716 5.1349C21.636 6.294 21.639 8.2194 21.639 12V13.6065C21.639 17.3764 21.639 19.3042 20.4716 20.4716C19.3042 21.639 17.3764 21.639 13.6065 21.639H10.3935C6.6129 21.639 4.688 21.636 3.5284 20.4716C2.364 19.302 2.361 17.3764 2.361 13.6065V12C2.361 8.2194 2.366 6.297 3.5284 5.1349C4.69 3.973 6.6129 3.9675 10.3935 3.9675ZM7.1805 2.0933V5.574M16.8195 2.0933V5.574M2.6288 9.3225H21.3713" stroke="currentColor" />
-  <circle cx="7.1805" cy="13.6065" r="1.071" fill="currentColor" stroke="none" />
-  <circle cx="7.1805" cy="17.355" r="1.071" fill="currentColor" stroke="none" />
-  <circle cx="12" cy="13.6065" r="1.071" fill="currentColor" stroke="none" />
-  <circle cx="12" cy="17.355" r="1.071" fill="currentColor" stroke="none" />
-  <circle cx="16.8195" cy="13.6065" r="1.071" fill="currentColor" stroke="none" />
-  <circle cx="16.8195" cy="17.355" r="1.071" fill="currentColor" stroke="none" />
+  <path d="M10.35 3.9H13.65C17.539 3.9 19.484 3.9 20.692 5.108C21.9 6.316 21.9 8.261 21.9 12.15V13.65C21.9 17.539 21.9 19.484 20.692 20.692C19.484 21.9 17.539 21.9 13.65 21.9H10.35C6.461 21.9 4.516 21.9 3.308 20.692C2.1 19.484 2.1 17.539 2.1 13.65V12.15C2.1 8.261 2.1 6.316 3.308 5.108C4.516 3.9 6.461 3.9 10.35 3.9ZM6.9 2.1V5.7M17.1 2.1V5.7M2.4 9.9H21.6" stroke="currentColor" />
+  <circle cx="6.9" cy="13.8" r="1.05" fill="currentColor" stroke="none" />
+  <circle cx="12" cy="13.8" r="1.05" fill="currentColor" stroke="none" />
+  <circle cx="17.1" cy="13.8" r="1.05" fill="currentColor" stroke="none" />
+  <circle cx="6.9" cy="18" r="1.05" fill="currentColor" stroke="none" />
+  <circle cx="12" cy="18" r="1.05" fill="currentColor" stroke="none" />
+  <circle cx="17.1" cy="18" r="1.05" fill="currentColor" stroke="none" />
 </svg>

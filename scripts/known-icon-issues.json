@@ -7,10 +7,6 @@
 		"anthropic": {
 			"edges": 0.1
 		},
-		"app-window": {
-			"spacing": 0.85,
-			"cramped": 2.2
-		},
 		"bank": {
 			"spacing": 0.1
 		},
@@ -24,9 +20,6 @@
 			"spacing": 1.05,
 			"cramped": 10.99
 		},
-		"book-open": {
-			"box": 0.5
-		},
 		"briefcase": {
 			"cramped": 0.65
 		},
@@ -38,21 +31,6 @@
 		},
 		"calculator": {
 			"spacing": 0.07
-		},
-		"calendar": {
-			"spacing": 0.2
-		},
-		"calendar-check": {
-			"spacing": 0.7
-		},
-		"calendar-mark": {
-			"spacing": 0.45
-		},
-		"calendar-search": {
-			"spacing": 0.97
-		},
-		"calendar-x": {
-			"spacing": 0.81
 		},
 		"cart-bag": {
 			"spacing": 0.12
@@ -66,21 +44,11 @@
 		"claude-code-color": {
 			"edges": 0.1
 		},
-		"cloud-download": {
-			"spacing": 0.35
-		},
-		"cloud-upload": {
-			"spacing": 0.35
-		},
 		"code": {
 			"spacing": 0.48
 		},
 		"cursor-click": {
 			"spacing": 0.5
-		},
-		"dashboard": {
-			"spacing": 0.3,
-			"cramped": 16.61
 		},
 		"deepseek": {
 			"edges": 0.1
@@ -109,25 +77,6 @@
 		"figma": {
 			"box": 0.6
 		},
-		"file-code": {
-			"spacing": 0.75,
-			"cramped": 1.34
-		},
-		"file-image": {
-			"spacing": 0.34
-		},
-		"file-search": {
-			"spacing": 0.29
-		},
-		"file-spreadsheet": {
-			"cramped": 0.2
-		},
-		"file-text": {
-			"spacing": 0.15
-		},
-		"file-video": {
-			"spacing": 0.6
-		},
 		"gauge": {
 			"spacing": 0.37
 		},
@@ -144,16 +93,6 @@
 		},
 		"info-square": {
 			"spacing": 0.7
-		},
-		"layers": {
-			"spacing": 0.39
-		},
-		"layout-list": {
-			"spacing": 0.3,
-			"cramped": 8.33
-		},
-		"library": {
-			"cramped": 0.13
 		},
 		"lightbulb": {
 			"spacing": 1.1,
@@ -190,16 +129,9 @@
 		"openclaw-color": {
 			"edges": 0.1
 		},
-		"package": {
-			"spacing": 0.6,
-			"cramped": 3.18
-		},
 		"palette": {
 			"spacing": 0.63,
 			"cramped": 7.25
-		},
-		"pip": {
-			"spacing": 0.76
 		},
 		"plane": {
 			"cramped": 4.06
@@ -219,10 +151,6 @@
 		},
 		"repeat": {
 			"spacing": 0.25
-		},
-		"resources-add": {
-			"spacing": 0.6,
-			"cramped": 0.08
 		},
 		"ruler": {
 			"cramped": 5.63
@@ -245,10 +173,6 @@
 		},
 		"snowflake": {
 			"cramped": 3.77
-		},
-		"stopwatch": {
-			"spacing": 0.6,
-			"cramped": 0.08
 		},
 		"strikethrough": {
 			"spacing": 0.3
