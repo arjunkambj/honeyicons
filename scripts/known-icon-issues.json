@@ -1,69 +1,12 @@
 {
 	"accepted": {},
 	"measured": {
-		"anthropic": {
-			"edges": 0.1
-		},
-		"bun": {
-			"edges": 0.1
-		},
-		"claude-code": {
-			"edges": 0.1
-		},
-		"claude-code-color": {
-			"edges": 0.1
-		},
-		"deepseek": {
-			"edges": 0.1
-		},
-		"deepseek-color": {
-			"edges": 0.1
-		},
-		"discord": {
-			"edges": 0.1
-		},
-		"discord-color": {
-			"edges": 0.1
-		},
 		"eye-off": {
 			"centre": 0.95
-		},
-		"figma": {
-			"box": 0.6
-		},
-		"mistral": {
-			"edges": 0.1
-		},
-		"mistral-color": {
-			"edges": 0.1
-		},
-		"nvidia": {
-			"edges": 0.1
-		},
-		"nvidia-color": {
-			"edges": 0.1
-		},
-		"openclaw": {
-			"edges": 0.1
-		},
-		"openclaw-color": {
-			"edges": 0.1
 		},
 		"palette": {
 			"spacing": 0.63,
 			"cramped": 7.25
-		},
-		"reddit": {
-			"edges": 0.1
-		},
-		"reddit-color": {
-			"edges": 0.1
-		},
-		"snapchat": {
-			"box": 0.25
-		},
-		"windsurf": {
-			"edges": 0.1
 		}
 	},
 	"flagged": {
