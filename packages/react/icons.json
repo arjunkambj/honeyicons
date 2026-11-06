@@ -506,9 +506,7 @@
 		"tags": [
 			"battery",
 			"power",
-			"charge",
-			"half",
-			"solar"
+			"charge"
 		]
 	},
 	{
@@ -1113,10 +1111,10 @@
 			"bold"
 		],
 		"tags": [
+			"cart",
 			"basket",
 			"shopping",
-			"store",
-			"solar"
+			"store"
 		]
 	},
 	{
@@ -1133,8 +1131,7 @@
 			"shopping",
 			"store",
 			"purchase",
-			"checkout",
-			"solar"
+			"checkout"
 		]
 	},
 	{
@@ -3028,8 +3025,7 @@
 			"world",
 			"earth",
 			"geography",
-			"travel",
-			"solar"
+			"travel"
 		]
 	},
 	{
@@ -3240,11 +3236,9 @@
 		"tags": [
 			"hand-wave",
 			"hand",
-			"shake",
 			"wave",
 			"hello",
 			"greeting",
-			"hand-shake",
 			"waving"
 		]
 	},
@@ -4321,10 +4315,7 @@
 			"map-pin",
 			"map",
 			"location",
-			"pin",
-			"point-on-map",
-			"solar",
-			"map-alt"
+			"pin"
 		]
 	},
 	{
@@ -5383,8 +5374,7 @@
 			"qr-code",
 			"qr",
 			"scan",
-			"barcode",
-			"hugeicons"
+			"barcode"
 		]
 	},
 	{
@@ -5889,8 +5879,7 @@
 			"server",
 			"rack",
 			"hardware",
-			"storage",
-			"solar"
+			"storage"
 		]
 	},
 	{

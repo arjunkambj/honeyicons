@@ -201,7 +201,7 @@
 		"tags": ["barcode", "product", "sku", "inventory", "scan"]
 	},
 	"battery": {
-		"tags": ["battery", "power", "charge", "half", "solar"]
+		"tags": ["battery", "power", "charge"]
 	},
 	"battery-charging": {
 		"tags": ["battery", "charging", "power", "energy", "bolt"]
@@ -371,18 +371,10 @@
 		"tags": ["credit-card", "debit-card", "payment", "bank", "finance", "solar"]
 	},
 	"cart": {
-		"tags": ["basket", "shopping", "store", "solar"]
+		"tags": ["cart", "basket", "shopping", "store"]
 	},
 	"cart-bag": {
-		"tags": [
-			"bag",
-			"shopping-bag",
-			"shopping",
-			"store",
-			"purchase",
-			"checkout",
-			"solar"
-		]
+		"tags": ["bag", "shopping-bag", "shopping", "store", "purchase", "checkout"]
 	},
 	"cart-large": {
 		"tags": [
@@ -847,7 +839,7 @@
 		"tags": ["brand", "github", "copilot", "ai", "code", "assistant"]
 	},
 	"globe": {
-		"tags": ["globe", "world", "earth", "geography", "travel", "solar"]
+		"tags": ["globe", "world", "earth", "geography", "travel"]
 	},
 	"google": {
 		"tags": ["search", "alphabet", "brand"]
@@ -902,16 +894,7 @@
 		"tags": ["hand", "palm", "grab", "pan", "stop", "wave"]
 	},
 	"hand-wave": {
-		"tags": [
-			"hand-wave",
-			"hand",
-			"shake",
-			"wave",
-			"hello",
-			"greeting",
-			"hand-shake",
-			"waving"
-		]
+		"tags": ["hand-wave", "hand", "wave", "hello", "greeting", "waving"]
 	},
 	"hashtag": {
 		"tags": ["hash", "tag", "number", "hastag", "solar"]
@@ -1194,15 +1177,7 @@
 		"tags": ["map", "folded", "navigation", "travel"]
 	},
 	"map-pin": {
-		"tags": [
-			"map-pin",
-			"map",
-			"location",
-			"pin",
-			"point-on-map",
-			"solar",
-			"map-alt"
-		]
+		"tags": ["map-pin", "map", "location", "pin"]
 	},
 	"market-analysis": {
 		"tags": [
@@ -1446,7 +1421,7 @@
 		"tags": ["puzzle", "piece", "extension", "plugin", "hugeicons"]
 	},
 	"qr-code": {
-		"tags": ["qr-code", "qr", "scan", "barcode", "hugeicons"]
+		"tags": ["qr-code", "qr", "scan", "barcode"]
 	},
 	"question-mark": {
 		"tags": ["question", "help", "faq", "support", "unknown"]
@@ -1549,7 +1524,7 @@
 		"tags": ["send", "sent", "message", "paper-plane", "delivery", "hugeicons"]
 	},
 	"server": {
-		"tags": ["server", "rack", "hardware", "storage", "solar"]
+		"tags": ["server", "rack", "hardware", "storage"]
 	},
 	"settings": {
 		"tags": ["gear", "cog", "preferences", "configuration", "options", "solar"]
