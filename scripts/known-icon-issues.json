@@ -23,9 +23,6 @@
 		"briefcase": {
 			"cramped": 0.65
 		},
-		"bug": {
-			"spacing": 0.07
-		},
 		"bun": {
 			"edges": 0.1
 		},
@@ -44,12 +41,6 @@
 		"claude-code-color": {
 			"edges": 0.1
 		},
-		"code": {
-			"spacing": 0.48
-		},
-		"cursor-click": {
-			"spacing": 0.5
-		},
 		"deepseek": {
 			"edges": 0.1
 		},
@@ -62,30 +53,15 @@
 		"discord-color": {
 			"edges": 0.1
 		},
-		"door-open": {
-			"spacing": 0.5
-		},
-		"edit": {
-			"spacing": 0.6
-		},
-		"eraser": {
-			"spacing": 0.68
-		},
 		"eye-off": {
 			"centre": 0.95
 		},
 		"figma": {
 			"box": 0.6
 		},
-		"gauge": {
-			"spacing": 0.37
-		},
 		"globe": {
 			"spacing": 0.36,
 			"cramped": 7.63
-		},
-		"hand": {
-			"cramped": 29.73
 		},
 		"hand-wave": {
 			"spacing": 1.16,
@@ -98,24 +74,11 @@
 			"spacing": 1.1,
 			"cramped": 1.89
 		},
-		"link": {
-			"spacing": 0.79
-		},
-		"list-checks": {
-			"spacing": 0.2
-		},
-		"market-analysis": {
-			"spacing": 0.3,
-			"cramped": 6.34
-		},
 		"mistral": {
 			"edges": 0.1
 		},
 		"mistral-color": {
 			"edges": 0.1
-		},
-		"move": {
-			"cramped": 2.22
 		},
 		"nvidia": {
 			"edges": 0.1
@@ -136,31 +99,14 @@
 		"plane": {
 			"cramped": 4.06
 		},
-		"qr-code": {
-			"spacing": 1.16,
-			"cramped": 11.55
-		},
 		"reddit": {
 			"edges": 0.1
 		},
 		"reddit-color": {
 			"edges": 0.1
 		},
-		"refresh": {
-			"spacing": 0.49
-		},
-		"repeat": {
-			"spacing": 0.25
-		},
-		"ruler": {
-			"cramped": 5.63
-		},
 		"sad": {
 			"spacing": 0.17
-		},
-		"server": {
-			"spacing": 0.7,
-			"cramped": 19.32
 		},
 		"sliders-horizontal": {
 			"spacing": 0.6
@@ -174,31 +120,18 @@
 		"snowflake": {
 			"cramped": 3.77
 		},
-		"strikethrough": {
-			"spacing": 0.3
-		},
 		"suitcase": {
 			"spacing": 0.7
 		},
 		"sun": {
 			"spacing": 0.3
 		},
-		"text-underline": {
-			"spacing": 0.3
-		},
 		"ticket-discount": {
 			"spacing": 0.37
-		},
-		"trash": {
-			"spacing": 0.3,
-			"cramped": 1.77
 		},
 		"wallet": {
 			"spacing": 0.75,
 			"cramped": 4.27
-		},
-		"webhook": {
-			"cramped": 0.16
 		},
 		"windsurf": {
 			"edges": 0.1
