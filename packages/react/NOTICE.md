@@ -16,8 +16,7 @@ At the user's request, `Star`, `Pin`, and `VerifiedCheck` are rebuilt as
 1.8-unit stroked outlines that follow their Solar silhouettes. The star and pin
 keep their tip, waist, and valley positions with straight edges and smooth
 corner curves, and the badge is constructed exactly from its eight lobe and
-eight valley arcs. The bars in `Battery` and `BatteryLow` become exact
-round-capped arcs. The Solar license below continues to apply to these icons.
+eight valley arcs. The Solar license below continues to apply to these icons.
 
 `StarOff`, `PinOff`, and `EditOff` now cut the unchanged `Star`, `Pin`, and
 `Pen` with the shared diagonal slash and 1.5 units of clearance, replacing their
@@ -834,6 +833,22 @@ units. `Phone`, `IncomingCall`, `OutgoingCall`, `Chair`, and `Cart` were scaled 
 their outlines shaved back to the same weight. `Share` is redrawn as three rings
 joined by two lines, following the Solar **Share** arrangement.
 
+## November 2026 cleanup
+
+This section is current wherever it differs from the notes above. Many icons
+were re-spaced or rewritten as strokes, with their sources unchanged.
+
+`Bell`, `BellOff`, `BellRing`, `Wallet`, `Plane`, `Server`, `Webhook`, `Battery`,
+`BatteryLow`, `BatteryCharging`, `Printer`, `VideoCamera`, `VideoOff`, `Smartphone`,
+`Tablet`, `Captions`, `FileCode`, `Cart`, `CartBag`, `MapPin`, `Globe`, and
+`HandWave` are now adapted from Lucide and redrawn on the 1.8-unit line. The Lucide
+license below applies.
+
+`QrCode`, `Suitcase`, `Briefcase`, `Snowflake`, `Lightbulb`, and `CheckDouble` are
+now Honeyicons drawings. `FileImage` reuses the wave and ring from `Image`.
+`CalendarAdd`, `CalendarRemove`, `CalendarCheck`, `CalendarSearch`, and `CalendarX`
+use the frame from `Calendar`.
+
 ## Lucide
 
 `Sparkles`, `Rocket`, `Folder`, `FolderAdd`, `FolderRemove`, `FolderLock`,
@@ -857,3 +872,28 @@ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+Lucide derives its `server`, `smartphone`, and `tablet` from Feather, which is
+under this license:
+
+The MIT License (MIT)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
