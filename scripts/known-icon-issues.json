@@ -67,7 +67,6 @@
 		}
 	},
 	"flagged": {
-		"home": "Reads as a rounded box with a dash, and looks unrelated to store. Give it a door.",
 		"phone-off": "Still reads as two pieces, because the slash cuts the handset where it is thinnest. Needs a new idea or a decision to keep it."
 	}
 }
