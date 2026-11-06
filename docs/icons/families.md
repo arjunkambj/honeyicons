@@ -8,7 +8,7 @@ Put the symbol inside the frame when it fits with 1.8 clear all round, as `folde
 
 ## `*-off` variants
 
-Draw the base unchanged, then add a diagonal slash from top left to bottom right with 1.5 clear on each side. Delete any leftover that doesn't help someone recognise the object. The check allows 4 pieces and no crumbs.
+Draw the base unchanged, then add a diagonal slash from top left to bottom right with 1.5 clear on each side. Delete any leftover that doesn't help someone recognise the object. The check allows 4 pieces and no crumbs. `phone-off` runs its slash the other way, top right to bottom left, because the handset lies along the usual direction and little would be left of it. `edit-off` cuts `pen`, because the slash would take the whole tip off the smaller pencil in `edit`.
 
 ## Folders
 
@@ -33,7 +33,7 @@ Gently rounded, with slightly taller page proportions. New variants reuse `icons
 
 ## Phones
 
-`phone`, `incoming-call`, and `outgoing-call` share one handset. Change it in all three together.
+`phone`, `incoming-call`, `outgoing-call`, and `phone-off` share one handset. Change it in all of them together.
 
 ## Sliders
 
