@@ -7,9 +7,6 @@
 		"bun": {
 			"edges": 0.1
 		},
-		"cart-bag": {
-			"spacing": 0.12
-		},
 		"claude-code": {
 			"edges": 0.1
 		},
@@ -33,14 +30,6 @@
 		},
 		"figma": {
 			"box": 0.6
-		},
-		"globe": {
-			"spacing": 0.36,
-			"cramped": 7.63
-		},
-		"hand-wave": {
-			"spacing": 1.16,
-			"cramped": 6.42
 		},
 		"mistral": {
 			"edges": 0.1
@@ -78,12 +67,7 @@
 		}
 	},
 	"flagged": {
-		"cart": "Reads as a basket. Redraw as a plain shopping cart with wheels and a handle.",
-		"cart-bag": "Reads as a bowl. Redraw as a plain bag with a handle.",
-		"map-pin": "The pin sits on a blob of map. Redraw as a plain pin.",
-		"globe": "A desk globe on a stand. Redraw as a plain globe with meridians.",
 		"home": "Reads as a rounded box with a dash, and looks unrelated to store. Give it a door.",
-		"hand-wave": "Too much detail for 16px. Simplify the fingers and motion lines.",
-		"phone-off": "Reads as two blobs. Keep more of the handset."
+		"phone-off": "Still reads as two pieces, because the slash cuts the handset where it is thinnest. Needs a new idea or a decision to keep it."
 	}
 }
