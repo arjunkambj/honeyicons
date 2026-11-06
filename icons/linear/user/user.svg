@@ -1,4 +1,4 @@
-<svg viewBox="0 0 24 24" fill="none">
-  <path d="M7.9 6.4A4.1 4.1 0 0 1 16.1 6.4A4.1 4.1 0 0 1 7.9 6.4ZM9.7 6.4A2.3 2.3 0 0 0 14.3 6.4A2.3 2.3 0 0 0 9.7 6.4Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
-  <path d="M6.717 13.209A10 10 0 0 1 17.283 13.209A4.7 4.7 0 0 1 14.8 21.9H9.2A4.7 4.7 0 0 1 6.717 13.209ZM7.668 14.738A2.9 2.9 0 0 0 9.2 20.1H14.8A2.9 2.9 0 0 0 16.332 14.738A8.2 8.2 0 0 0 7.668 14.738Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="5.5" r="3.4" stroke="currentColor" />
+  <path d="M6.654 14.086A10.119 10.119 0 0 1 17.346 14.086A4.226 4.226 0 0 1 15.114 21.9H8.886A4.226 4.226 0 0 1 6.654 14.086Z" stroke="currentColor" />
 </svg>

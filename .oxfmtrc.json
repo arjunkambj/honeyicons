@@ -16,6 +16,7 @@
 		"packages/react/src/categories.ts",
 		"packages/react/src/registry.ts",
 		"packages/react/icons.json",
+		"scripts/known-icon-issues.json",
 		"**/pnpm-lock.yaml",
 		"**/*.svg"
 	]

@@ -1,6 +1,6 @@
 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="6.225" cy="6.225" r="3.74" stroke="currentColor" />
-  <circle cx="17.775" cy="6.225" r="3.74" stroke="currentColor" />
-  <circle cx="6.225" cy="17.775" r="3.74" stroke="currentColor" />
-  <circle cx="17.775" cy="17.775" r="3.74" stroke="currentColor" />
+  <circle cx="5.9818" cy="5.9818" r="3.8975" stroke="currentColor" />
+  <circle cx="18.0182" cy="5.9818" r="3.8975" stroke="currentColor" />
+  <circle cx="5.9818" cy="18.0182" r="3.8975" stroke="currentColor" />
+  <circle cx="18.0182" cy="18.0182" r="3.8975" stroke="currentColor" />
 </svg>

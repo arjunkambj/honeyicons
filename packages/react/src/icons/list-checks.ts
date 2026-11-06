@@ -3,8 +3,8 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M2.1 7.8098l0.9955 1.0386c0.2567 0.2678 0.385 0.4016 0.5445 0.4016c0.1595 0 0.2878 -0.1339 0.5445 -0.4016l3.3055 -3.4484M2.1 17.7098l0.9955 1.0386c0.2567 0.2678 0.385 0.4016 0.5445 0.4016c0.1595 0 0.2878 -0.1339 0.5445 -0.4016l3.3055 -3.4484", stroke: "currentColor" }],
-	["path", { d: "M10.9 5.4H21.9M10.9 9.8H21.9M10.9 15.3H21.9M10.9 19.7H21.9", stroke: "currentColor" }],
+	["path", { d: "M2.1 7.51L3.095 8.548C3.352 8.816 3.48 8.95 3.64 8.95C3.799 8.95 3.928 8.816 4.185 8.548L7.49 5.1M2.1 16.91L3.095 17.948C3.352 18.216 3.48 18.35 3.64 18.35C3.799 18.35 3.928 18.216 4.185 17.948L7.49 14.5", stroke: "currentColor" }],
+	["path", { d: "M11.1 5.1H21.9M11.1 9.9H21.9M11.1 14.1H21.9M11.1 18.9H21.9", stroke: "currentColor" }],
 ];
 
 export const ListChecks = /* @__PURE__ */ createIcon("ListChecks", {

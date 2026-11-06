@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M3.2 4.3V19.7M13.1 4.3V19.7M3.2 12H13.1M17.39 13.98L19.37 12.66V19.7", stroke: "currentColor" }],
+	["path", { d: "M3.9 4.3V19.7M13.8 4.3V19.7M3.9 12H13.8M18.09 13.98L20.07 12.66V19.7", stroke: "currentColor" }],
 ];
 
 export const Heading1 = /* @__PURE__ */ createIcon("Heading1", {

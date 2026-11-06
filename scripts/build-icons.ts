@@ -225,7 +225,7 @@ function parseSvg(svg: string, file: string) {
 	if (end === -1) {
 		throw new Error(`${file}: missing </svg>`);
 	}
-	const { viewBox, strokeWidth } = parseAttrs(open[1]);
+	const { viewBox, strokeWidth, stroke, fill } = parseAttrs(open[1]);
 	if (viewBox !== "0 0 24 24") {
 		throw new Error(
 			`${file}: viewBox must be "0 0 24 24", got ${JSON.stringify(viewBox)}`,
@@ -236,6 +236,12 @@ function parseSvg(svg: string, file: string) {
 	if (strokeWidth !== undefined && strokeWidth !== "1.8") {
 		throw new Error(
 			`${file}: stroke-width must be "1.8", got ${JSON.stringify(strokeWidth)}`,
+		);
+	}
+	// Root paint is dropped too, so a drawing that relies on it would ship invisible.
+	if ((stroke && stroke !== "none") || (fill && fill !== "none")) {
+		throw new Error(
+			`${file}: put stroke and fill on each node, not on the root <svg>`,
 		);
 	}
 	// Comments could hide a closing tag or leave a container empty.

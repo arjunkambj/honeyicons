@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M5 20V14M5 11V4M9 8H15M2 14H8M16 12H22M12 8V4M12 20V11M19 12V4M19 20V15", stroke: "currentColor" }],
+	["path", { d: "M5.1 21.9V14.1M5.1 10.4V2.1M2.1 14.1H8.1M12 21.9V11.8M12 8.1V2.1M9 8.1H15M18.9 21.9V16.6M18.9 12.9V2.1M15.9 12.9H21.9", stroke: "currentColor" }],
 ];
 
 export const SlidersVertical = /* @__PURE__ */ createIcon("SlidersVertical", {

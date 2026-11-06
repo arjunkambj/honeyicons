@@ -506,9 +506,7 @@
 		"tags": [
 			"battery",
 			"power",
-			"charge",
-			"half",
-			"solar"
+			"charge"
 		]
 	},
 	{
@@ -1113,10 +1111,10 @@
 			"bold"
 		],
 		"tags": [
+			"cart",
 			"basket",
 			"shopping",
-			"store",
-			"solar"
+			"store"
 		]
 	},
 	{
@@ -1133,8 +1131,7 @@
 			"shopping",
 			"store",
 			"purchase",
-			"checkout",
-			"solar"
+			"checkout"
 		]
 	},
 	{
@@ -2606,9 +2603,7 @@
 			"folder",
 			"directory",
 			"files",
-			"storage",
-			"folder-01",
-			"solar"
+			"storage"
 		]
 	},
 	{
@@ -2624,8 +2619,7 @@
 			"directory",
 			"create",
 			"new",
-			"plus",
-			"solar"
+			"plus"
 		]
 	},
 	{
@@ -2657,8 +2651,7 @@
 			"open",
 			"directory",
 			"files",
-			"storage",
-			"solar"
+			"storage"
 		]
 	},
 	{
@@ -2707,8 +2700,7 @@
 			"directory",
 			"hierarchy",
 			"structure",
-			"files",
-			"solar"
+			"files"
 		]
 	},
 	{
@@ -2724,8 +2716,7 @@
 			"files",
 			"documents",
 			"directory",
-			"storage",
-			"solar"
+			"storage"
 		]
 	},
 	{
@@ -2742,8 +2733,7 @@
 			"files",
 			"directory",
 			"collection",
-			"stack",
-			"solar"
+			"stack"
 		]
 	},
 	{
@@ -3035,8 +3025,7 @@
 			"world",
 			"earth",
 			"geography",
-			"travel",
-			"solar"
+			"travel"
 		]
 	},
 	{
@@ -3247,11 +3236,9 @@
 		"tags": [
 			"hand-wave",
 			"hand",
-			"shake",
 			"wave",
 			"hello",
 			"greeting",
-			"hand-shake",
 			"waving"
 		]
 	},
@@ -4328,10 +4315,7 @@
 			"map-pin",
 			"map",
 			"location",
-			"pin",
-			"point-on-map",
-			"solar",
-			"map-alt"
+			"pin"
 		]
 	},
 	{
@@ -5390,8 +5374,7 @@
 			"qr-code",
 			"qr",
 			"scan",
-			"barcode",
-			"hugeicons"
+			"barcode"
 		]
 	},
 	{
@@ -5686,11 +5669,8 @@
 		],
 		"tags": [
 			"rocket",
-			"rocket-02",
 			"launch",
 			"space",
-			"45-degrees",
-			"hugeicons",
 			"fire",
 			"flame"
 		]
@@ -5899,8 +5879,7 @@
 			"server",
 			"rack",
 			"hardware",
-			"storage",
-			"solar"
+			"storage"
 		]
 	},
 	{

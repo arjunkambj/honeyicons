@@ -9,6 +9,7 @@ import {
 	Bluesky,
 	Bot,
 	Card,
+	Cart,
 	ChartPie,
 	ClaudeAiColor,
 	Clock,
@@ -19,8 +20,10 @@ import {
 	Download,
 	EyeOff,
 	Film,
+	Folder,
 	FolderOpen,
 	GeminiColor,
+	Globe,
 	GoogleAds,
 	GoogleAdsColor,
 	GoogleAnalytics,
@@ -36,15 +39,20 @@ import {
 	Laptop,
 	Login,
 	Logout,
+	MapPin,
 	Meta,
 	MetaColor,
 	Receipt,
+	Rocket,
 	Shopify,
 	ShopifyColor,
 	SlackColor,
 	Snowflake,
+	Sparkles,
+	Spinner,
 	Star,
 	Trophy,
+	User,
 	UserAdd,
 	UserCheck,
 	UserGroup,
@@ -64,6 +72,7 @@ import { DocsShell } from "@/components/docs/docs-shell";
 import { PageActions } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0018", label: "0.0.18 · One size, cleaner drawings" },
 	{ id: "version-0017", label: "0.0.17 · Setup link fix" },
 	{ id: "version-0016", label: "0.0.16 · Stay AI, OneText" },
 	{ id: "version-0015", label: "0.0.15 · Amazon, smoother curves" },
@@ -98,6 +107,17 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version0018Highlights = [
+	{ name: "Sparkles", Icon: Sparkles },
+	{ name: "Rocket", Icon: Rocket },
+	{ name: "Folder", Icon: Folder },
+	{ name: "User", Icon: User },
+	{ name: "Cart", Icon: Cart },
+	{ name: "MapPin", Icon: MapPin },
+	{ name: "Globe", Icon: Globe },
+	{ name: "Spinner", Icon: Spinner },
 ] as const;
 
 const version0016Highlights = [
@@ -204,6 +224,53 @@ function ChangelogPage() {
 				description="New icons and fixes in each release of @honeyicons/react, newest first."
 				toc={sections}
 			>
+				<section
+					aria-labelledby="version-0018"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-11-06" className="text-muted-foreground text-sm">
+						November 6, 2026
+					</time>
+					<h2
+						id="version-0018"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.18 · One size, cleaner drawings
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version0018Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center surface rounded-xl"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Almost every icon now fills the same space and sits in the middle
+							of it, so a home and a store look right side by side. About 200
+							icons changed. Names stay the same, but some will look a little
+							bigger or smaller in your layout.
+						</li>
+						<li>
+							Sparkles, the rocket, and the folder family are redrawn with
+							plainer shapes. So are the user family, share, cart, bag, map pin,
+							globe, and hand wave.
+						</li>
+						<li>The spinner rings are a little thinner.</li>
+						<li>
+							Spacing inside many icons is evened out, so small details stay
+							clear at small sizes.
+						</li>
+						<li>
+							Bold icons no longer have tiny steps along their edges, and brand
+							logos now stay inside the same edges as the other icons.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0017"
 					className="border-t border-border pt-8"

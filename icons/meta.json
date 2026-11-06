@@ -201,7 +201,7 @@
 		"tags": ["barcode", "product", "sku", "inventory", "scan"]
 	},
 	"battery": {
-		"tags": ["battery", "power", "charge", "half", "solar"]
+		"tags": ["battery", "power", "charge"]
 	},
 	"battery-charging": {
 		"tags": ["battery", "charging", "power", "energy", "bolt"]
@@ -371,18 +371,10 @@
 		"tags": ["credit-card", "debit-card", "payment", "bank", "finance", "solar"]
 	},
 	"cart": {
-		"tags": ["basket", "shopping", "store", "solar"]
+		"tags": ["cart", "basket", "shopping", "store"]
 	},
 	"cart-bag": {
-		"tags": [
-			"bag",
-			"shopping-bag",
-			"shopping",
-			"store",
-			"purchase",
-			"checkout",
-			"solar"
-		]
+		"tags": ["bag", "shopping-bag", "shopping", "store", "purchase", "checkout"]
 	},
 	"cart-large": {
 		"tags": [
@@ -754,16 +746,16 @@
 		"tags": ["flip", "mirror", "horizontal", "reflect", "transform"]
 	},
 	"folder": {
-		"tags": ["folder", "directory", "files", "storage", "folder-01", "solar"]
+		"tags": ["folder", "directory", "files", "storage"]
 	},
 	"folder-add": {
-		"tags": ["folder", "directory", "create", "new", "plus", "solar"]
+		"tags": ["folder", "directory", "create", "new", "plus"]
 	},
 	"folder-lock": {
 		"tags": ["folder", "lock", "private", "secure", "protected"]
 	},
 	"folder-open": {
-		"tags": ["folder", "open", "directory", "files", "storage", "solar"]
+		"tags": ["folder", "open", "directory", "files", "storage"]
 	},
 	"folder-remove": {
 		"tags": ["folder", "remove", "delete", "minus", "directory"]
@@ -772,29 +764,13 @@
 		"tags": ["folder", "search", "find", "browse", "directory"]
 	},
 	"folder-tree": {
-		"tags": [
-			"folder",
-			"tree",
-			"directory",
-			"hierarchy",
-			"structure",
-			"files",
-			"solar"
-		]
+		"tags": ["folder", "tree", "directory", "hierarchy", "structure", "files"]
 	},
 	"folder-with-files": {
-		"tags": ["folder", "files", "documents", "directory", "storage", "solar"]
+		"tags": ["folder", "files", "documents", "directory", "storage"]
 	},
 	"folders": {
-		"tags": [
-			"folders",
-			"folder",
-			"files",
-			"directory",
-			"collection",
-			"stack",
-			"solar"
-		]
+		"tags": ["folders", "folder", "files", "directory", "collection", "stack"]
 	},
 	"forward": {
 		"tags": ["forward", "send", "message", "arrow", "right"]
@@ -863,7 +839,7 @@
 		"tags": ["brand", "github", "copilot", "ai", "code", "assistant"]
 	},
 	"globe": {
-		"tags": ["globe", "world", "earth", "geography", "travel", "solar"]
+		"tags": ["globe", "world", "earth", "geography", "travel"]
 	},
 	"google": {
 		"tags": ["search", "alphabet", "brand"]
@@ -918,16 +894,7 @@
 		"tags": ["hand", "palm", "grab", "pan", "stop", "wave"]
 	},
 	"hand-wave": {
-		"tags": [
-			"hand-wave",
-			"hand",
-			"shake",
-			"wave",
-			"hello",
-			"greeting",
-			"hand-shake",
-			"waving"
-		]
+		"tags": ["hand-wave", "hand", "wave", "hello", "greeting", "waving"]
 	},
 	"hashtag": {
 		"tags": ["hash", "tag", "number", "hastag", "solar"]
@@ -1210,15 +1177,7 @@
 		"tags": ["map", "folded", "navigation", "travel"]
 	},
 	"map-pin": {
-		"tags": [
-			"map-pin",
-			"map",
-			"location",
-			"pin",
-			"point-on-map",
-			"solar",
-			"map-alt"
-		]
+		"tags": ["map-pin", "map", "location", "pin"]
 	},
 	"market-analysis": {
 		"tags": [
@@ -1462,7 +1421,7 @@
 		"tags": ["puzzle", "piece", "extension", "plugin", "hugeicons"]
 	},
 	"qr-code": {
-		"tags": ["qr-code", "qr", "scan", "barcode", "hugeicons"]
+		"tags": ["qr-code", "qr", "scan", "barcode"]
 	},
 	"question-mark": {
 		"tags": ["question", "help", "faq", "support", "unknown"]
@@ -1526,16 +1485,7 @@
 		"tags": ["rhombus", "shape", "geometry", "diamond", "hugeicons"]
 	},
 	"rocket": {
-		"tags": [
-			"rocket",
-			"rocket-02",
-			"launch",
-			"space",
-			"45-degrees",
-			"hugeicons",
-			"fire",
-			"flame"
-		]
+		"tags": ["rocket", "launch", "space", "fire", "flame"]
 	},
 	"rotate-ccw": {
 		"tags": ["rotate", "counterclockwise", "turn", "reset", "undo"]
@@ -1574,7 +1524,7 @@
 		"tags": ["send", "sent", "message", "paper-plane", "delivery", "hugeicons"]
 	},
 	"server": {
-		"tags": ["server", "rack", "hardware", "storage", "solar"]
+		"tags": ["server", "rack", "hardware", "storage"]
 	},
 	"settings": {
 		"tags": ["gear", "cog", "preferences", "configuration", "options", "solar"]

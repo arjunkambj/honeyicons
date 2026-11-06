@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M20.25 8.7H9.25C5.9086 8.7 3.2 11.4086 3.2 14.75C3.2 18.0914 5.9086 20.8 9.25 20.8H13.1M16.4 4.3C16.4 4.3 20.8 7.5405 20.8 8.7C20.8 9.8595 16.4 13.1 16.4 13.1", stroke: "currentColor" }],
+	["path", { d: "M20.25 8.15H9.25C5.9086 8.15 3.2 10.8586 3.2 14.2C3.2 17.5414 5.9086 20.25 9.25 20.25H13.1M16.4 3.75C16.4 3.75 20.8 6.9905 20.8 8.15C20.8 9.3095 16.4 12.55 16.4 12.55", stroke: "currentColor" }],
 ];
 
 export const Redo = /* @__PURE__ */ createIcon("Redo", {

@@ -8,6 +8,7 @@
 		"check-types": "turbo run check-types",
 		"dev:web": "turbo run dev -F web --",
 		"generate:icons": "node scripts/build-icons.ts",
+		"check:icons": "node scripts/check-icons.ts",
 		"lint": "oxlint .",
 		"format": "oxfmt",
 		"format:check": "oxfmt --check",
@@ -15,6 +16,7 @@
 	},
 	"devDependencies": {
 		"@honeyicons/config": "workspace:*",
+		"@resvg/resvg-js": "^2.6.2",
 		"@types/node": "catalog:",
 		"oxfmt": "^0.70.0",
 		"oxlint": "^1.85.0",

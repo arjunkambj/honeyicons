@@ -1,0 +1,11 @@
+{
+	"accepted": {},
+	"measured": {
+		"eye-off": {
+			"centre": 0.95
+		}
+	},
+	"flagged": {
+		"phone-off": "Still reads as two pieces, because the slash cuts the handset where it is thinnest. Needs a new idea or a decision to keep it."
+	}
+}

@@ -3,7 +3,7 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M4.3 3.2V18.6M12 3.2V11.45M19.7 3.2V21.9", stroke: "currentColor" }],
+	["path", { d: "M4.3 2.65V18.05M12 2.65V10.9M19.7 2.65V21.35", stroke: "currentColor" }],
 ];
 
 export const Kanban = /* @__PURE__ */ createIcon("Kanban", {

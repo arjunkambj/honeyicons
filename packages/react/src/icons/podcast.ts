@@ -3,8 +3,8 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M7.297 17.217A8.2 8.2 0 1 1 16.703 17.217 M8.747 13.753A4.6 4.6 0 1 1 15.253 13.753 M12 14.8V21", stroke: "currentColor" }],
-	["circle", { cx: "12", cy: "10.5", r: "1.5", fill: "currentColor", stroke: "none" }],
+	["path", { d: "M7.0204 17.8945A8.6824 8.6824 0 1 1 16.9796 17.8945M8.5556 14.2267A4.8706 4.8706 0 1 1 15.4444 14.2267M12 15.3353V21.9", stroke: "currentColor" }],
+	["circle", { cx: "12", cy: "10.7824", r: "1.5882", fill: "currentColor", stroke: "none" }],
 ];
 
 export const Podcast = /* @__PURE__ */ createIcon("Podcast", {
