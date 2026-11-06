@@ -31,7 +31,7 @@ import { catalog } from "@honeyicons/react/catalog";
 
 /** Preview sizes in the catalog: the three the icons are tuned for, plus two large ones. */
 export const SIZE_OPTIONS = [16, 20, 24, 32, 48] as const;
-export const SIZE_DEFAULT = 32;
+export const SIZE_DEFAULT = 24;
 
 export type CategoryFilter = "all" | IconCategory;
 
