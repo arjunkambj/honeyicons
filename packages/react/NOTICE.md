@@ -825,6 +825,37 @@ Stay AI's magenta, `#CF088B`.
 tail and the "1" cut out of the bubble and open at the bottom. `OneTextColor`
 paints it in OneText's blue, `#1877FC`. Linear and bold share each drawing.
 
+## Skio, Recharge, Yotpo, Mailchimp, Omnisend, and Microsoft Clarity
+
+`Skio` redraws the favicon from [skio.com](https://skio.com): a rounded tile,
+19 units wide like `Kimi`, with the wordmark from the site's logo cut out. The
+word fills about 80% of the tile, up from about 63% in the favicon, so it still
+reads at 16px. `SkioColor` paints the tile `#462379` and the word `#EDDBF4`.
+
+`Recharge` scales the disc and its cut-out R from the header logo on
+[getrecharge.com](https://getrecharge.com) to 20 units wide. `RechargeColor`
+paints the disc `#3901F1` and the R white, as the favicon does.
+
+`Yotpo` takes the y from the wordmark on [yotpo.com](https://www.yotpo.com) and
+cuts it from a 20-unit disc, sized and centred like the site's lettermark
+favicon. `YotpoColor` paints the disc `#0042E4` and the y white.
+
+`Mailchimp` scales Freddie from the icon on
+[mailchimp.com](https://mailchimp.com) to 21.6 units tall. `MailchimpColor`
+paints the same line art `#241C15` over `#FFE01B` shapes that follow its
+openings and run 0.25 units under the line, so no seam shows and both share one
+footprint.
+
+`Omnisend` scales the tile and its cut-out i from the logo on
+[omnisend.com](https://www.omnisend.com) to 19 units wide. Omnisend's mark is
+one color, so it has no color version.
+
+`MicrosoftClarity` redraws the triangle from the icon on
+[clarity.microsoft.com](https://clarity.microsoft.com), 21.6 units wide. Color is
+all that separates its three planes, so the mono drawing sets them 1.5 units
+apart. `MicrosoftClarityColor` keeps the planes touching and paints each with a
+gradient sampled from the icon. Linear and bold share each drawing.
+
 ## November 2026 size pass
 
 Icons below full size were scaled to a 21.6-unit longest side, and off-center
