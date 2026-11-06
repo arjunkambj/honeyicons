@@ -257,6 +257,8 @@ import { LockOpen } from "./icons/lock-open.js";
 import { Login } from "./icons/login.js";
 import { Logout } from "./icons/logout.js";
 import { MagicWand } from "./icons/magic-wand.js";
+import { Mailchimp } from "./icons/mailchimp.js";
+import { MailchimpColor } from "./icons/mailchimp-color.js";
 import { Map } from "./icons/map.js";
 import { MapArrowDown } from "./icons/map-arrow-down.js";
 import { MapArrowLeft } from "./icons/map-arrow-left.js";
@@ -274,6 +276,8 @@ import { MetaAiColor } from "./icons/meta-ai-color.js";
 import { MetaColor } from "./icons/meta-color.js";
 import { Microphone } from "./icons/microphone.js";
 import { MicrophoneOff } from "./icons/microphone-off.js";
+import { MicrosoftClarity } from "./icons/microsoft-clarity.js";
+import { MicrosoftClarityColor } from "./icons/microsoft-clarity-color.js";
 import { MicrosoftCopilot } from "./icons/microsoft-copilot.js";
 import { MicrosoftCopilotColor } from "./icons/microsoft-copilot-color.js";
 import { Minimize } from "./icons/minimize.js";
@@ -294,6 +298,7 @@ import { NpmColor } from "./icons/npm-color.js";
 import { Nvidia } from "./icons/nvidia.js";
 import { NvidiaColor } from "./icons/nvidia-color.js";
 import { OctagonX } from "./icons/octagon-x.js";
+import { Omnisend } from "./icons/omnisend.js";
 import { OneText } from "./icons/one-text.js";
 import { OneTextColor } from "./icons/one-text-color.js";
 import { Openai } from "./icons/openai.js";
@@ -337,6 +342,8 @@ import { QwenColor } from "./icons/qwen-color.js";
 import { React } from "./icons/react.js";
 import { ReactColor } from "./icons/react-color.js";
 import { Receipt } from "./icons/receipt.js";
+import { Recharge } from "./icons/recharge.js";
+import { RechargeColor } from "./icons/recharge-color.js";
 import { Reddit } from "./icons/reddit.js";
 import { RedditColor } from "./icons/reddit-color.js";
 import { Redo } from "./icons/redo.js";
@@ -374,6 +381,8 @@ import { SidebarRight } from "./icons/sidebar-right.js";
 import { SidebarTop } from "./icons/sidebar-top.js";
 import { Signal } from "./icons/signal.js";
 import { SimCard } from "./icons/sim-card.js";
+import { Skio } from "./icons/skio.js";
+import { SkioColor } from "./icons/skio-color.js";
 import { SkipBack } from "./icons/skip-back.js";
 import { SkipForward } from "./icons/skip-forward.js";
 import { Slack } from "./icons/slack.js";
@@ -487,6 +496,8 @@ import { Wind } from "./icons/wind.js";
 import { Windsurf } from "./icons/windsurf.js";
 import { X } from "./icons/x.js";
 import { Xai } from "./icons/xai.js";
+import { Yotpo } from "./icons/yotpo.js";
+import { YotpoColor } from "./icons/yotpo-color.js";
 import { Youtube } from "./icons/youtube.js";
 import { YoutubeColor } from "./icons/youtube-color.js";
 import { Zai } from "./icons/zai.js";
@@ -753,6 +764,8 @@ export const icons = {
 	"login": Login,
 	"logout": Logout,
 	"magic-wand": MagicWand,
+	"mailchimp": Mailchimp,
+	"mailchimp-color": MailchimpColor,
 	"map": Map,
 	"map-arrow-down": MapArrowDown,
 	"map-arrow-left": MapArrowLeft,
@@ -770,6 +783,8 @@ export const icons = {
 	"meta-color": MetaColor,
 	"microphone": Microphone,
 	"microphone-off": MicrophoneOff,
+	"microsoft-clarity": MicrosoftClarity,
+	"microsoft-clarity-color": MicrosoftClarityColor,
 	"microsoft-copilot": MicrosoftCopilot,
 	"microsoft-copilot-color": MicrosoftCopilotColor,
 	"minimize": Minimize,
@@ -790,6 +805,7 @@ export const icons = {
 	"nvidia": Nvidia,
 	"nvidia-color": NvidiaColor,
 	"octagon-x": OctagonX,
+	"omnisend": Omnisend,
 	"one-text": OneText,
 	"one-text-color": OneTextColor,
 	"openai": Openai,
@@ -833,6 +849,8 @@ export const icons = {
 	"react": React,
 	"react-color": ReactColor,
 	"receipt": Receipt,
+	"recharge": Recharge,
+	"recharge-color": RechargeColor,
 	"reddit": Reddit,
 	"reddit-color": RedditColor,
 	"redo": Redo,
@@ -870,6 +888,8 @@ export const icons = {
 	"sidebar-top": SidebarTop,
 	"signal": Signal,
 	"sim-card": SimCard,
+	"skio": Skio,
+	"skio-color": SkioColor,
 	"skip-back": SkipBack,
 	"skip-forward": SkipForward,
 	"slack": Slack,
@@ -983,6 +1003,8 @@ export const icons = {
 	"windsurf": Windsurf,
 	"x": X,
 	"xai": Xai,
+	"yotpo": Yotpo,
+	"yotpo-color": YotpoColor,
 	"youtube": Youtube,
 	"youtube-color": YoutubeColor,
 	"zai": Zai,
@@ -1252,6 +1274,8 @@ export type IconVariantMap = {
 	"login": "linear" | "bold";
 	"logout": "linear" | "bold";
 	"magic-wand": "linear" | "bold";
+	"mailchimp": "linear" | "bold";
+	"mailchimp-color": "linear" | "bold";
 	"map": "linear" | "bold";
 	"map-arrow-down": "linear" | "bold";
 	"map-arrow-left": "linear" | "bold";
@@ -1269,6 +1293,8 @@ export type IconVariantMap = {
 	"meta-color": "linear" | "bold";
 	"microphone": "linear" | "bold";
 	"microphone-off": "linear" | "bold";
+	"microsoft-clarity": "linear" | "bold";
+	"microsoft-clarity-color": "linear" | "bold";
 	"microsoft-copilot": "linear" | "bold";
 	"microsoft-copilot-color": "linear" | "bold";
 	"minimize": "linear" | "bold";
@@ -1289,6 +1315,7 @@ export type IconVariantMap = {
 	"nvidia": "linear" | "bold";
 	"nvidia-color": "linear" | "bold";
 	"octagon-x": "linear" | "bold";
+	"omnisend": "linear" | "bold";
 	"one-text": "linear" | "bold";
 	"one-text-color": "linear" | "bold";
 	"openai": "linear" | "bold";
@@ -1332,6 +1359,8 @@ export type IconVariantMap = {
 	"react": "linear" | "bold";
 	"react-color": "linear" | "bold";
 	"receipt": "linear" | "bold";
+	"recharge": "linear" | "bold";
+	"recharge-color": "linear" | "bold";
 	"reddit": "linear" | "bold";
 	"reddit-color": "linear" | "bold";
 	"redo": "linear" | "bold";
@@ -1369,6 +1398,8 @@ export type IconVariantMap = {
 	"sidebar-top": "linear" | "bold";
 	"signal": "linear" | "bold";
 	"sim-card": "linear" | "bold";
+	"skio": "linear" | "bold";
+	"skio-color": "linear" | "bold";
 	"skip-back": "linear" | "bold";
 	"skip-forward": "linear" | "bold";
 	"slack": "linear" | "bold";
@@ -1482,6 +1513,8 @@ export type IconVariantMap = {
 	"windsurf": "linear" | "bold";
 	"x": "linear" | "bold";
 	"xai": "linear" | "bold";
+	"yotpo": "linear" | "bold";
+	"yotpo-color": "linear" | "bold";
 	"youtube": "linear" | "bold";
 	"youtube-color": "linear" | "bold";
 	"zai": "linear" | "bold";

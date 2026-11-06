@@ -4201,6 +4201,39 @@
 		]
 	},
 	{
+		"name": "mailchimp",
+		"export": "Mailchimp",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"email",
+			"newsletter",
+			"marketing",
+			"automation",
+			"brand"
+		]
+	},
+	{
+		"name": "mailchimp-color",
+		"export": "MailchimpColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"email",
+			"newsletter",
+			"marketing",
+			"automation",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "map",
 		"export": "Map",
 		"category": "maps",
@@ -4479,6 +4512,41 @@
 			"mute",
 			"muted",
 			"audio"
+		]
+	},
+	{
+		"name": "microsoft-clarity",
+		"export": "MicrosoftClarity",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"microsoft",
+			"analytics",
+			"heatmap",
+			"session",
+			"recording",
+			"brand"
+		]
+	},
+	{
+		"name": "microsoft-clarity-color",
+		"export": "MicrosoftClarityColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"microsoft",
+			"analytics",
+			"heatmap",
+			"session",
+			"recording",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -4804,6 +4872,22 @@
 			"close",
 			"cancel",
 			"danger"
+		]
+	},
+	{
+		"name": "omnisend",
+		"export": "Omnisend",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"email",
+			"sms",
+			"marketing",
+			"automation",
+			"brand"
 		]
 	},
 	{
@@ -5487,6 +5571,39 @@
 		]
 	},
 	{
+		"name": "recharge",
+		"export": "Recharge",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"subscriptions",
+			"ecommerce",
+			"payments",
+			"recurring",
+			"brand"
+		]
+	},
+	{
+		"name": "recharge-color",
+		"export": "RechargeColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"subscriptions",
+			"ecommerce",
+			"payments",
+			"recurring",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "reddit",
 		"export": "Reddit",
 		"category": "brands",
@@ -6079,6 +6196,39 @@
 			"sim",
 			"mobile",
 			"network"
+		]
+	},
+	{
+		"name": "skio",
+		"export": "Skio",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"subscriptions",
+			"ecommerce",
+			"shopify",
+			"recurring",
+			"brand"
+		]
+	},
+	{
+		"name": "skio-color",
+		"export": "SkioColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"subscriptions",
+			"ecommerce",
+			"shopify",
+			"recurring",
+			"brand",
+			"color"
 		]
 	},
 	{
@@ -7918,6 +8068,39 @@
 		"tags": [
 			"ai",
 			"brand"
+		]
+	},
+	{
+		"name": "yotpo",
+		"export": "Yotpo",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"reviews",
+			"loyalty",
+			"ecommerce",
+			"ugc",
+			"brand"
+		]
+	},
+	{
+		"name": "yotpo-color",
+		"export": "YotpoColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"reviews",
+			"loyalty",
+			"ecommerce",
+			"ugc",
+			"brand",
+			"color"
 		]
 	},
 	{

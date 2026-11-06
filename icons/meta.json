@@ -1126,6 +1126,12 @@
 	"magic-wand": {
 		"tags": ["magic", "wand", "generate", "ai", "auto", "sparkle"]
 	},
+	"mailchimp": {
+		"tags": ["email", "newsletter", "marketing", "automation", "brand"]
+	},
+	"mailchimp-color": {
+		"tags": ["email", "newsletter", "marketing", "automation", "brand", "color"]
+	},
 	"map": {
 		"tags": ["map", "navigation", "location", "travel", "hugeicons"]
 	},
@@ -1224,6 +1230,12 @@
 	"microphone-off": {
 		"tags": ["microphone", "mic", "off", "mute", "muted", "audio"]
 	},
+	"microsoft-clarity": {
+		"tags": ["microsoft", "analytics", "heatmap", "session", "recording", "brand"]
+	},
+	"microsoft-clarity-color": {
+		"tags": ["microsoft", "analytics", "heatmap", "session", "recording", "brand", "color"]
+	},
 	"microsoft-copilot": {
 		"tags": ["microsoft", "copilot", "ai", "assistant", "brand", "ms-copilot"]
 	},
@@ -1306,6 +1318,9 @@
 	},
 	"octagon-x": {
 		"tags": ["octagon", "x", "error", "stop", "close", "cancel", "danger"]
+	},
+	"omnisend": {
+		"tags": ["email", "sms", "marketing", "automation", "brand"]
 	},
 	"one-text": {
 		"tags": ["sms", "text", "marketing", "message", "brand"]
@@ -1451,6 +1466,12 @@
 	"receipt": {
 		"tags": ["receipt", "bill", "invoice", "order", "billing"]
 	},
+	"recharge": {
+		"tags": ["subscriptions", "ecommerce", "payments", "recurring", "brand"]
+	},
+	"recharge-color": {
+		"tags": ["subscriptions", "ecommerce", "payments", "recurring", "brand", "color"]
+	},
 	"reddit": {
 		"tags": ["community", "social", "brand"]
 	},
@@ -1585,6 +1606,12 @@
 	},
 	"sim-card": {
 		"tags": ["sim-card", "sim", "mobile", "network"]
+	},
+	"skio": {
+		"tags": ["subscriptions", "ecommerce", "shopify", "recurring", "brand"]
+	},
+	"skio-color": {
+		"tags": ["subscriptions", "ecommerce", "shopify", "recurring", "brand", "color"]
 	},
 	"skip-back": {
 		"tags": ["skip", "previous", "back", "track", "media"]
@@ -2048,6 +2075,12 @@
 	},
 	"xai": {
 		"tags": ["ai", "brand"]
+	},
+	"yotpo": {
+		"tags": ["reviews", "loyalty", "ecommerce", "ugc", "brand"]
+	},
+	"yotpo-color": {
+		"tags": ["reviews", "loyalty", "ecommerce", "ugc", "brand", "color"]
 	},
 	"youtube": {
 		"tags": ["brand", "youtube", "video", "google"]

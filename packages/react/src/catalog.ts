@@ -259,6 +259,8 @@ import { LockOpen } from "./icons/lock-open.js";
 import { Login } from "./icons/login.js";
 import { Logout } from "./icons/logout.js";
 import { MagicWand } from "./icons/magic-wand.js";
+import { Mailchimp } from "./icons/mailchimp.js";
+import { MailchimpColor } from "./icons/mailchimp-color.js";
 import { Map } from "./icons/map.js";
 import { MapArrowDown } from "./icons/map-arrow-down.js";
 import { MapArrowLeft } from "./icons/map-arrow-left.js";
@@ -276,6 +278,8 @@ import { MetaAiColor } from "./icons/meta-ai-color.js";
 import { MetaColor } from "./icons/meta-color.js";
 import { Microphone } from "./icons/microphone.js";
 import { MicrophoneOff } from "./icons/microphone-off.js";
+import { MicrosoftClarity } from "./icons/microsoft-clarity.js";
+import { MicrosoftClarityColor } from "./icons/microsoft-clarity-color.js";
 import { MicrosoftCopilot } from "./icons/microsoft-copilot.js";
 import { MicrosoftCopilotColor } from "./icons/microsoft-copilot-color.js";
 import { Minimize } from "./icons/minimize.js";
@@ -296,6 +300,7 @@ import { NpmColor } from "./icons/npm-color.js";
 import { Nvidia } from "./icons/nvidia.js";
 import { NvidiaColor } from "./icons/nvidia-color.js";
 import { OctagonX } from "./icons/octagon-x.js";
+import { Omnisend } from "./icons/omnisend.js";
 import { OneText } from "./icons/one-text.js";
 import { OneTextColor } from "./icons/one-text-color.js";
 import { Openai } from "./icons/openai.js";
@@ -339,6 +344,8 @@ import { QwenColor } from "./icons/qwen-color.js";
 import { React } from "./icons/react.js";
 import { ReactColor } from "./icons/react-color.js";
 import { Receipt } from "./icons/receipt.js";
+import { Recharge } from "./icons/recharge.js";
+import { RechargeColor } from "./icons/recharge-color.js";
 import { Reddit } from "./icons/reddit.js";
 import { RedditColor } from "./icons/reddit-color.js";
 import { Redo } from "./icons/redo.js";
@@ -376,6 +383,8 @@ import { SidebarRight } from "./icons/sidebar-right.js";
 import { SidebarTop } from "./icons/sidebar-top.js";
 import { Signal } from "./icons/signal.js";
 import { SimCard } from "./icons/sim-card.js";
+import { Skio } from "./icons/skio.js";
+import { SkioColor } from "./icons/skio-color.js";
 import { SkipBack } from "./icons/skip-back.js";
 import { SkipForward } from "./icons/skip-forward.js";
 import { Slack } from "./icons/slack.js";
@@ -489,6 +498,8 @@ import { Wind } from "./icons/wind.js";
 import { Windsurf } from "./icons/windsurf.js";
 import { X } from "./icons/x.js";
 import { Xai } from "./icons/xai.js";
+import { Yotpo } from "./icons/yotpo.js";
+import { YotpoColor } from "./icons/yotpo-color.js";
 import { Youtube } from "./icons/youtube.js";
 import { YoutubeColor } from "./icons/youtube-color.js";
 import { Zai } from "./icons/zai.js";
@@ -2567,6 +2578,22 @@ export const catalog: CatalogItem[] = [
 		component: MagicWand,
 	},
 	{
+		name: "mailchimp",
+		pascalName: "Mailchimp",
+		category: "brands",
+		tags: ["email","newsletter","marketing","automation","brand"],
+		variants: ["linear","bold"],
+		component: Mailchimp,
+	},
+	{
+		name: "mailchimp-color",
+		pascalName: "MailchimpColor",
+		category: "brands",
+		tags: ["email","newsletter","marketing","automation","brand","color"],
+		variants: ["linear","bold"],
+		component: MailchimpColor,
+	},
+	{
 		name: "map",
 		pascalName: "Map",
 		category: "maps",
@@ -2701,6 +2728,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["microphone","mic","off","mute","muted","audio"],
 		variants: ["linear","bold"],
 		component: MicrophoneOff,
+	},
+	{
+		name: "microsoft-clarity",
+		pascalName: "MicrosoftClarity",
+		category: "brands",
+		tags: ["microsoft","analytics","heatmap","session","recording","brand"],
+		variants: ["linear","bold"],
+		component: MicrosoftClarity,
+	},
+	{
+		name: "microsoft-clarity-color",
+		pascalName: "MicrosoftClarityColor",
+		category: "brands",
+		tags: ["microsoft","analytics","heatmap","session","recording","brand","color"],
+		variants: ["linear","bold"],
+		component: MicrosoftClarityColor,
 	},
 	{
 		name: "microsoft-copilot",
@@ -2861,6 +2904,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["octagon","x","error","stop","close","cancel","danger"],
 		variants: ["linear","bold"],
 		component: OctagonX,
+	},
+	{
+		name: "omnisend",
+		pascalName: "Omnisend",
+		category: "brands",
+		tags: ["email","sms","marketing","automation","brand"],
+		variants: ["linear","bold"],
+		component: Omnisend,
 	},
 	{
 		name: "one-text",
@@ -3207,6 +3258,22 @@ export const catalog: CatalogItem[] = [
 		component: Receipt,
 	},
 	{
+		name: "recharge",
+		pascalName: "Recharge",
+		category: "brands",
+		tags: ["subscriptions","ecommerce","payments","recurring","brand"],
+		variants: ["linear","bold"],
+		component: Recharge,
+	},
+	{
+		name: "recharge-color",
+		pascalName: "RechargeColor",
+		category: "brands",
+		tags: ["subscriptions","ecommerce","payments","recurring","brand","color"],
+		variants: ["linear","bold"],
+		component: RechargeColor,
+	},
+	{
 		name: "reddit",
 		pascalName: "Reddit",
 		category: "brands",
@@ -3501,6 +3568,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["sim-card","sim","mobile","network"],
 		variants: ["linear","bold"],
 		component: SimCard,
+	},
+	{
+		name: "skio",
+		pascalName: "Skio",
+		category: "brands",
+		tags: ["subscriptions","ecommerce","shopify","recurring","brand"],
+		variants: ["linear","bold"],
+		component: Skio,
+	},
+	{
+		name: "skio-color",
+		pascalName: "SkioColor",
+		category: "brands",
+		tags: ["subscriptions","ecommerce","shopify","recurring","brand","color"],
+		variants: ["linear","bold"],
+		component: SkioColor,
 	},
 	{
 		name: "skip-back",
@@ -4405,6 +4488,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["ai","brand"],
 		variants: ["linear","bold"],
 		component: Xai,
+	},
+	{
+		name: "yotpo",
+		pascalName: "Yotpo",
+		category: "brands",
+		tags: ["reviews","loyalty","ecommerce","ugc","brand"],
+		variants: ["linear","bold"],
+		component: Yotpo,
+	},
+	{
+		name: "yotpo-color",
+		pascalName: "YotpoColor",
+		category: "brands",
+		tags: ["reviews","loyalty","ecommerce","ugc","brand","color"],
+		variants: ["linear","bold"],
+		component: YotpoColor,
 	},
 	{
 		name: "youtube",
