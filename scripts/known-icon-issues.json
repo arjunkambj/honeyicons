@@ -1,39 +1,14 @@
 {
 	"accepted": {},
 	"measured": {
-		"alert-triangle": {
-			"spacing": 0.7
-		},
 		"anthropic": {
 			"edges": 0.1
-		},
-		"bank": {
-			"spacing": 0.1
-		},
-		"bell": {
-			"cramped": 0.28
-		},
-		"bell-off": {
-			"cramped": 1.69
-		},
-		"bell-ring": {
-			"spacing": 1.05,
-			"cramped": 10.99
-		},
-		"briefcase": {
-			"cramped": 0.65
 		},
 		"bun": {
 			"edges": 0.1
 		},
-		"calculator": {
-			"spacing": 0.07
-		},
 		"cart-bag": {
 			"spacing": 0.12
-		},
-		"check-double": {
-			"spacing": 0.29
 		},
 		"claude-code": {
 			"edges": 0.1
@@ -67,13 +42,6 @@
 			"spacing": 1.16,
 			"cramped": 6.42
 		},
-		"info-square": {
-			"spacing": 0.7
-		},
-		"lightbulb": {
-			"spacing": 1.1,
-			"cramped": 1.89
-		},
 		"mistral": {
 			"edges": 0.1
 		},
@@ -96,42 +64,14 @@
 			"spacing": 0.63,
 			"cramped": 7.25
 		},
-		"plane": {
-			"cramped": 4.06
-		},
 		"reddit": {
 			"edges": 0.1
 		},
 		"reddit-color": {
 			"edges": 0.1
 		},
-		"sad": {
-			"spacing": 0.17
-		},
-		"sliders-horizontal": {
-			"spacing": 0.6
-		},
-		"sliders-vertical": {
-			"spacing": 0.6
-		},
 		"snapchat": {
 			"box": 0.25
-		},
-		"snowflake": {
-			"cramped": 3.77
-		},
-		"suitcase": {
-			"spacing": 0.7
-		},
-		"sun": {
-			"spacing": 0.3
-		},
-		"ticket-discount": {
-			"spacing": 0.37
-		},
-		"wallet": {
-			"spacing": 0.75,
-			"cramped": 4.27
 		},
 		"windsurf": {
 			"edges": 0.1
