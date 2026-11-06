@@ -1,4 +1,15 @@
 import {
+	Mailchimp,
+	MailchimpColor,
+	MicrosoftClarity,
+	MicrosoftClarityColor,
+	Omnisend,
+	Recharge,
+	RechargeColor,
+	Skio,
+	SkioColor,
+	Yotpo,
+	YotpoColor,
 	OneText,
 	OneTextColor,
 	StayAi,
@@ -72,6 +83,10 @@ import { DocsShell } from "@/components/docs/docs-shell";
 import { PageActions } from "@/components/page-header";
 
 const sections = [
+	{
+		id: "version-0019",
+		label: "0.0.19 · Skio, Recharge, Yotpo, Mailchimp, Omnisend, Clarity",
+	},
 	{ id: "version-0018", label: "0.0.18 · One size, cleaner drawings" },
 	{ id: "version-0017", label: "0.0.17 · Setup link fix" },
 	{ id: "version-0016", label: "0.0.16 · Stay AI, OneText" },
@@ -107,6 +122,20 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version0019Highlights = [
+	{ name: "Skio", Icon: Skio },
+	{ name: "SkioColor", Icon: SkioColor },
+	{ name: "Recharge", Icon: Recharge },
+	{ name: "RechargeColor", Icon: RechargeColor },
+	{ name: "Yotpo", Icon: Yotpo },
+	{ name: "YotpoColor", Icon: YotpoColor },
+	{ name: "Mailchimp", Icon: Mailchimp },
+	{ name: "MailchimpColor", Icon: MailchimpColor },
+	{ name: "Omnisend", Icon: Omnisend },
+	{ name: "MicrosoftClarity", Icon: MicrosoftClarity },
+	{ name: "MicrosoftClarityColor", Icon: MicrosoftClarityColor },
 ] as const;
 
 const version0018Highlights = [
@@ -224,6 +253,53 @@ function ChangelogPage() {
 				description="New icons and fixes in each release of @honeyicons/react, newest first."
 				toc={sections}
 			>
+				<section
+					aria-labelledby="version-0019"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-11-07" className="text-muted-foreground text-sm">
+						November 7, 2026
+					</time>
+					<h2
+						id="version-0019"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.19 · Skio, Recharge, Yotpo, Mailchimp, Omnisend, and Clarity
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version0019Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center surface rounded-xl"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Skio joins the brand icons as its tile with the name cut out, with
+							a color version in Skio purple.
+						</li>
+						<li>
+							Recharge joins as its disc with the R cut out, and Yotpo as its
+							disc with the y cut out. Both have color versions in their blues.
+						</li>
+						<li>
+							Mailchimp joins as Freddie, with a color version in Mailchimp
+							yellow.
+						</li>
+						<li>
+							Omnisend joins as its tile with the i cut out. Its logo is one
+							color, so it has no color version.
+						</li>
+						<li>
+							Microsoft Clarity joins as its triangle, with a color version in
+							its three blues.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0018"
 					className="border-t border-border pt-8"
