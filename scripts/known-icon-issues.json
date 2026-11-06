@@ -3,10 +3,6 @@
 	"measured": {
 		"eye-off": {
 			"centre": 0.95
-		},
-		"palette": {
-			"spacing": 0.63,
-			"cramped": 7.25
 		}
 	},
 	"flagged": {
