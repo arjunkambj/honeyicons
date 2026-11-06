@@ -64,6 +64,7 @@ import { DocsShell } from "@/components/docs/docs-shell";
 import { PageActions } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0017", label: "0.0.17 · Setup link fix" },
 	{ id: "version-0016", label: "0.0.16 · Stay AI, OneText" },
 	{ id: "version-0015", label: "0.0.15 · Amazon, smoother curves" },
 	{ id: "version-0013", label: "0.0.13 · Shopify, Google Analytics, Klaviyo" },
@@ -203,6 +204,26 @@ function ChangelogPage() {
 				description="New icons and fixes in each release of @honeyicons/react, newest first."
 				toc={sections}
 			>
+				<section
+					aria-labelledby="version-0017"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-11-06" className="text-muted-foreground text-sm">
+						November 6, 2026
+					</time>
+					<h2
+						id="version-0017"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.17 · Setup link fix
+					</h2>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							The setup prompt in the package README now points to
+							honeyicons.com. The old address no longer worked.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0016"
 					className="border-t border-border pt-8"

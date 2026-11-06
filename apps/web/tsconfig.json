@@ -22,6 +22,6 @@
 			"@honeyicons/ui/*": ["../../packages/ui/src/*"]
 		}
 	},
-	"include": ["src", "vite.config.ts"],
+	"include": ["src", "vite.config.ts", "alchemy.run.ts"],
 	"exclude": ["node_modules", "dist"]
 }
