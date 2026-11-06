@@ -1,0 +1,19 @@
+<svg viewBox="0 0 24 24" fill="none">
+<path d="M6.305 11.273L16.085 8.51L22.644 19.762A1.1 1.1 0 0 1 21.699 21.408L19.643 21.408L4.458 14.441Z" fill="url(#microsoft-clarity-color-middle)"/>
+<path d="M5.217 13.139L11.04 3.15A1.1 1.1 0 0 1 12.96 3.15L16.865 9.848Z" fill="url(#microsoft-clarity-color-top)"/>
+<path d="M5.217 13.139L22.496 21.066A1.1 1.1 0 0 1 21.699 21.408L2.301 21.408A1.1 1.1 0 0 1 1.356 19.762Z" fill="url(#microsoft-clarity-color-bottom)"/>
+<defs>
+<linearGradient id="microsoft-clarity-color-top" x1="6.9" y1="11.9" x2="13.9" y2="4.6" gradientUnits="userSpaceOnUse">
+<stop stop-color="#559EF2"/>
+<stop offset="1" stop-color="#9CD0F5"/>
+</linearGradient>
+<linearGradient id="microsoft-clarity-color-middle" x1="8" y1="13" x2="21" y2="19" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2E80D5"/>
+<stop offset="1" stop-color="#1C60C1"/>
+</linearGradient>
+<linearGradient id="microsoft-clarity-color-bottom" x1="3" y1="19" x2="18" y2="20" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1C56C4"/>
+<stop offset="1" stop-color="#12479E"/>
+</linearGradient>
+</defs>
+</svg>
