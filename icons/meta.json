@@ -1231,10 +1231,25 @@
 		"tags": ["microphone", "mic", "off", "mute", "muted", "audio"]
 	},
 	"microsoft-clarity": {
-		"tags": ["microsoft", "analytics", "heatmap", "session", "recording", "brand"]
+		"tags": [
+			"microsoft",
+			"analytics",
+			"heatmap",
+			"session",
+			"recording",
+			"brand"
+		]
 	},
 	"microsoft-clarity-color": {
-		"tags": ["microsoft", "analytics", "heatmap", "session", "recording", "brand", "color"]
+		"tags": [
+			"microsoft",
+			"analytics",
+			"heatmap",
+			"session",
+			"recording",
+			"brand",
+			"color"
+		]
 	},
 	"microsoft-copilot": {
 		"tags": ["microsoft", "copilot", "ai", "assistant", "brand", "ms-copilot"]
@@ -1470,7 +1485,14 @@
 		"tags": ["subscriptions", "ecommerce", "payments", "recurring", "brand"]
 	},
 	"recharge-color": {
-		"tags": ["subscriptions", "ecommerce", "payments", "recurring", "brand", "color"]
+		"tags": [
+			"subscriptions",
+			"ecommerce",
+			"payments",
+			"recurring",
+			"brand",
+			"color"
+		]
 	},
 	"reddit": {
 		"tags": ["community", "social", "brand"]
@@ -1611,7 +1633,14 @@
 		"tags": ["subscriptions", "ecommerce", "shopify", "recurring", "brand"]
 	},
 	"skio-color": {
-		"tags": ["subscriptions", "ecommerce", "shopify", "recurring", "brand", "color"]
+		"tags": [
+			"subscriptions",
+			"ecommerce",
+			"shopify",
+			"recurring",
+			"brand",
+			"color"
+		]
 	},
 	"skip-back": {
 		"tags": ["skip", "previous", "back", "track", "media"]
