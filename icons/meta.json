@@ -181,6 +181,12 @@
 	"atom": {
 		"tags": ["atom", "science", "physics", "react", "nucleus"]
 	},
+	"attentive": {
+		"tags": ["sms", "email", "marketing", "text", "brand"]
+	},
+	"attentive-color": {
+		"tags": ["sms", "email", "marketing", "text", "brand", "color"]
+	},
 	"award": {
 		"tags": ["award", "medal", "badge", "certificate", "achievement"]
 	},
@@ -875,6 +881,9 @@
 	"google-color": {
 		"tags": ["search", "alphabet", "brand", "color"]
 	},
+	"gorgias": {
+		"tags": ["helpdesk", "support", "chat", "ecommerce", "brand"]
+	},
 	"graduation-cap": {
 		"tags": ["graduation", "education", "learning", "course", "school"]
 	},
@@ -992,6 +1001,9 @@
 	},
 	"integration": {
 		"tags": ["flow", "workflow", "connect", "nodes", "hugeicons"]
+	},
+	"intercom": {
+		"tags": ["support", "chat", "messenger", "helpdesk", "brand"]
 	},
 	"italic": {
 		"tags": ["italic", "text", "format", "editor", "hugeicons"]
@@ -1437,6 +1449,12 @@
 	},
 	"pointer": {
 		"tags": ["pointer", "cursor", "select", "arrow", "mouse"]
+	},
+	"postscript": {
+		"tags": ["sms", "text", "marketing", "message", "brand"]
+	},
+	"postscript-color": {
+		"tags": ["sms", "text", "marketing", "message", "brand", "color"]
 	},
 	"power": {
 		"tags": ["power", "on", "off", "shutdown", "hugeicons"]
