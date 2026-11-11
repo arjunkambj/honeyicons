@@ -431,6 +431,39 @@
 		]
 	},
 	{
+		"name": "attentive",
+		"export": "Attentive",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"sms",
+			"email",
+			"marketing",
+			"text",
+			"brand"
+		]
+	},
+	{
+		"name": "attentive-color",
+		"export": "AttentiveColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"sms",
+			"email",
+			"marketing",
+			"text",
+			"brand",
+			"color"
+		]
+	},
+	{
 		"name": "award",
 		"export": "Award",
 		"category": "objects",
@@ -3128,6 +3161,22 @@
 		]
 	},
 	{
+		"name": "gorgias",
+		"export": "Gorgias",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"helpdesk",
+			"support",
+			"chat",
+			"ecommerce",
+			"brand"
+		]
+	},
+	{
 		"name": "graduation-cap",
 		"export": "GraduationCap",
 		"category": "objects",
@@ -3631,6 +3680,22 @@
 			"connect",
 			"nodes",
 			"hugeicons"
+		]
+	},
+	{
+		"name": "intercom",
+		"export": "Intercom",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"support",
+			"chat",
+			"messenger",
+			"helpdesk",
+			"brand"
 		]
 	},
 	{
@@ -5380,6 +5445,39 @@
 			"select",
 			"arrow",
 			"mouse"
+		]
+	},
+	{
+		"name": "postscript",
+		"export": "Postscript",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"sms",
+			"text",
+			"marketing",
+			"message",
+			"brand"
+		]
+	},
+	{
+		"name": "postscript-color",
+		"export": "PostscriptColor",
+		"category": "brands",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"sms",
+			"text",
+			"marketing",
+			"message",
+			"brand",
+			"color"
 		]
 	},
 	{

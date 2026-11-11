@@ -1,4 +1,10 @@
 import {
+	Attentive,
+	AttentiveColor,
+	Gorgias,
+	Intercom,
+	Postscript,
+	PostscriptColor,
 	Mailchimp,
 	MailchimpColor,
 	MicrosoftClarity,
@@ -84,6 +90,10 @@ import { PageActions } from "@/components/page-header";
 
 const sections = [
 	{
+		id: "version-0020",
+		label: "0.0.20 · Gorgias, Attentive, Postscript, Intercom",
+	},
+	{
 		id: "version-0019",
 		label: "0.0.19 · Skio, Recharge, Yotpo, Mailchimp, Omnisend, Clarity",
 	},
@@ -122,6 +132,15 @@ const addedIcons = [
 		description: "Invite someone or create an account.",
 	},
 	{ name: "Card", Icon: Card, description: "Cards, billing, and payments." },
+] as const;
+
+const version0020Highlights = [
+	{ name: "Gorgias", Icon: Gorgias },
+	{ name: "Attentive", Icon: Attentive },
+	{ name: "AttentiveColor", Icon: AttentiveColor },
+	{ name: "Postscript", Icon: Postscript },
+	{ name: "PostscriptColor", Icon: PostscriptColor },
+	{ name: "Intercom", Icon: Intercom },
 ] as const;
 
 const version0019Highlights = [
@@ -253,6 +272,49 @@ function ChangelogPage() {
 				description="New icons and fixes in each release of @honeyicons/react, newest first."
 				toc={sections}
 			>
+				<section
+					aria-labelledby="version-0020"
+					className="border-t border-border pt-8"
+				>
+					<time dateTime="2026-11-11" className="text-muted-foreground text-sm">
+						November 11, 2026
+					</time>
+					<h2
+						id="version-0020"
+						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+					>
+						0.0.20 · Gorgias, Attentive, Postscript, and Intercom
+					</h2>
+					<ul className="mt-6 flex flex-wrap gap-2">
+						{version0020Highlights.map(({ name, Icon }) => (
+							<li
+								key={name}
+								title={name}
+								className="flex size-12 items-center justify-center surface rounded-xl"
+							>
+								<Icon size={24} aria-label={name} />
+							</li>
+						))}
+					</ul>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+						<li>
+							Gorgias joins the brand icons as its two squares in a speech
+							bubble. Its logo is one color, so it has no color version.
+						</li>
+						<li>
+							Attentive joins as its disc with the A cut out, with a color
+							version in Attentive yellow.
+						</li>
+						<li>
+							Postscript joins as its speech bubble with two eyes, with a color
+							version in Postscript purple.
+						</li>
+						<li>
+							Intercom joins as its tile with the bars and smile cut out. Its
+							logo is one color, so it has no color version.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0019"
 					className="border-t border-border pt-8"

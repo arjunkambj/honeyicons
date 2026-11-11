@@ -28,6 +28,8 @@ import { ArrowUpLeft } from "./icons/arrow-up-left.js";
 import { ArrowUpRight } from "./icons/arrow-up-right.js";
 import { AtSign } from "./icons/at-sign.js";
 import { Atom } from "./icons/atom.js";
+import { Attentive } from "./icons/attentive.js";
+import { AttentiveColor } from "./icons/attentive-color.js";
 import { Award } from "./icons/award.js";
 import { Ban } from "./icons/ban.js";
 import { Bank } from "./icons/bank.js";
@@ -193,6 +195,7 @@ import { GoogleAdsColor } from "./icons/google-ads-color.js";
 import { GoogleAnalytics } from "./icons/google-analytics.js";
 import { GoogleAnalyticsColor } from "./icons/google-analytics-color.js";
 import { GoogleColor } from "./icons/google-color.js";
+import { Gorgias } from "./icons/gorgias.js";
 import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
 import { GripVertical } from "./icons/grip-vertical.js";
@@ -224,6 +227,7 @@ import { InfoSquare } from "./icons/info-square.js";
 import { Instagram } from "./icons/instagram.js";
 import { InstagramColor } from "./icons/instagram-color.js";
 import { Integration } from "./icons/integration.js";
+import { Intercom } from "./icons/intercom.js";
 import { Italic } from "./icons/italic.js";
 import { Kanban } from "./icons/kanban.js";
 import { Key } from "./icons/key.js";
@@ -332,6 +336,8 @@ import { PlayMini } from "./icons/play-mini.js";
 import { Playlist } from "./icons/playlist.js";
 import { Podcast } from "./icons/podcast.js";
 import { Pointer } from "./icons/pointer.js";
+import { Postscript } from "./icons/postscript.js";
+import { PostscriptColor } from "./icons/postscript-color.js";
 import { Power } from "./icons/power.js";
 import { Presentation } from "./icons/presentation.js";
 import { Printer } from "./icons/printer.js";
@@ -728,6 +734,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["atom","science","physics","react","nucleus"],
 		variants: ["linear","bold"],
 		component: Atom,
+	},
+	{
+		name: "attentive",
+		pascalName: "Attentive",
+		category: "brands",
+		tags: ["sms","email","marketing","text","brand"],
+		variants: ["linear","bold"],
+		component: Attentive,
+	},
+	{
+		name: "attentive-color",
+		pascalName: "AttentiveColor",
+		category: "brands",
+		tags: ["sms","email","marketing","text","brand","color"],
+		variants: ["linear","bold"],
+		component: AttentiveColor,
 	},
 	{
 		name: "award",
@@ -2050,6 +2072,14 @@ export const catalog: CatalogItem[] = [
 		component: GoogleColor,
 	},
 	{
+		name: "gorgias",
+		pascalName: "Gorgias",
+		category: "brands",
+		tags: ["helpdesk","support","chat","ecommerce","brand"],
+		variants: ["linear","bold"],
+		component: Gorgias,
+	},
+	{
 		name: "graduation-cap",
 		pascalName: "GraduationCap",
 		category: "objects",
@@ -2296,6 +2326,14 @@ export const catalog: CatalogItem[] = [
 		tags: ["flow","workflow","connect","nodes","hugeicons"],
 		variants: ["linear","bold"],
 		component: Integration,
+	},
+	{
+		name: "intercom",
+		pascalName: "Intercom",
+		category: "brands",
+		tags: ["support","chat","messenger","helpdesk","brand"],
+		variants: ["linear","bold"],
+		component: Intercom,
 	},
 	{
 		name: "italic",
@@ -3160,6 +3198,22 @@ export const catalog: CatalogItem[] = [
 		tags: ["pointer","cursor","select","arrow","mouse"],
 		variants: ["linear","bold"],
 		component: Pointer,
+	},
+	{
+		name: "postscript",
+		pascalName: "Postscript",
+		category: "brands",
+		tags: ["sms","text","marketing","message","brand"],
+		variants: ["linear","bold"],
+		component: Postscript,
+	},
+	{
+		name: "postscript-color",
+		pascalName: "PostscriptColor",
+		category: "brands",
+		tags: ["sms","text","marketing","message","brand","color"],
+		variants: ["linear","bold"],
+		component: PostscriptColor,
 	},
 	{
 		name: "power",

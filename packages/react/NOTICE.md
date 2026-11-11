@@ -856,6 +856,26 @@ all that separates its three planes, so the mono drawing sets them 1.5 units
 apart. `MicrosoftClarityColor` keeps the planes touching and paints each with a
 gradient sampled from the icon. Linear and bold share each drawing.
 
+## Gorgias, Attentive, Postscript, and Intercom
+
+`Gorgias` scales the mark from the logo on [gorgias.com](https://www.gorgias.com),
+two squares in a speech bubble, to 21.6 units tall at its own line weight.
+Gorgias's mark is one color, so it has no color version.
+
+`Attentive` redraws the A from the favicon on
+[attentive.com](https://www.attentive.com) out of the circles and straight edges
+it is built from, and cuts it from a 20-unit disc. `AttentiveColor` paints the
+disc `#FFD60B` and the A `#1E1C1C`, as the favicon does.
+
+`Postscript` redraws the speech bubble from the app icon on
+[postscript.io](https://postscript.io), 21 units wide, with its square
+bottom-left corner and two oval eyes cut out. `PostscriptColor` paints the
+bubble `#5724E9` and the eyes white.
+
+`Intercom` scales the tile and its cut-out bars and smile from the logo on
+[intercom.com](https://www.intercom.com) to 19 units wide. Intercom's mark is
+one color, so it has no color version. Linear and bold share each drawing.
+
 ## November 2026 size pass
 
 Icons below full size were scaled to a 21.6-unit longest side, and off-center

@@ -26,6 +26,8 @@ import { ArrowUpLeft } from "./icons/arrow-up-left.js";
 import { ArrowUpRight } from "./icons/arrow-up-right.js";
 import { AtSign } from "./icons/at-sign.js";
 import { Atom } from "./icons/atom.js";
+import { Attentive } from "./icons/attentive.js";
+import { AttentiveColor } from "./icons/attentive-color.js";
 import { Award } from "./icons/award.js";
 import { Ban } from "./icons/ban.js";
 import { Bank } from "./icons/bank.js";
@@ -191,6 +193,7 @@ import { GoogleAdsColor } from "./icons/google-ads-color.js";
 import { GoogleAnalytics } from "./icons/google-analytics.js";
 import { GoogleAnalyticsColor } from "./icons/google-analytics-color.js";
 import { GoogleColor } from "./icons/google-color.js";
+import { Gorgias } from "./icons/gorgias.js";
 import { GraduationCap } from "./icons/graduation-cap.js";
 import { GripHorizontal } from "./icons/grip-horizontal.js";
 import { GripVertical } from "./icons/grip-vertical.js";
@@ -222,6 +225,7 @@ import { InfoSquare } from "./icons/info-square.js";
 import { Instagram } from "./icons/instagram.js";
 import { InstagramColor } from "./icons/instagram-color.js";
 import { Integration } from "./icons/integration.js";
+import { Intercom } from "./icons/intercom.js";
 import { Italic } from "./icons/italic.js";
 import { Kanban } from "./icons/kanban.js";
 import { Key } from "./icons/key.js";
@@ -330,6 +334,8 @@ import { PlayMini } from "./icons/play-mini.js";
 import { Playlist } from "./icons/playlist.js";
 import { Podcast } from "./icons/podcast.js";
 import { Pointer } from "./icons/pointer.js";
+import { Postscript } from "./icons/postscript.js";
+import { PostscriptColor } from "./icons/postscript-color.js";
 import { Power } from "./icons/power.js";
 import { Presentation } from "./icons/presentation.js";
 import { Printer } from "./icons/printer.js";
@@ -533,6 +539,8 @@ export const icons = {
 	"arrow-up-right": ArrowUpRight,
 	"at-sign": AtSign,
 	"atom": Atom,
+	"attentive": Attentive,
+	"attentive-color": AttentiveColor,
 	"award": Award,
 	"ban": Ban,
 	"bank": Bank,
@@ -698,6 +706,7 @@ export const icons = {
 	"google-analytics": GoogleAnalytics,
 	"google-analytics-color": GoogleAnalyticsColor,
 	"google-color": GoogleColor,
+	"gorgias": Gorgias,
 	"graduation-cap": GraduationCap,
 	"grip-horizontal": GripHorizontal,
 	"grip-vertical": GripVertical,
@@ -729,6 +738,7 @@ export const icons = {
 	"instagram": Instagram,
 	"instagram-color": InstagramColor,
 	"integration": Integration,
+	"intercom": Intercom,
 	"italic": Italic,
 	"kanban": Kanban,
 	"key": Key,
@@ -837,6 +847,8 @@ export const icons = {
 	"playlist": Playlist,
 	"podcast": Podcast,
 	"pointer": Pointer,
+	"postscript": Postscript,
+	"postscript-color": PostscriptColor,
 	"power": Power,
 	"presentation": Presentation,
 	"printer": Printer,
@@ -1043,6 +1055,8 @@ export type IconVariantMap = {
 	"arrow-up-right": "linear" | "bold";
 	"at-sign": "linear" | "bold";
 	"atom": "linear" | "bold";
+	"attentive": "linear" | "bold";
+	"attentive-color": "linear" | "bold";
 	"award": "linear" | "bold";
 	"ban": "linear" | "bold";
 	"bank": "linear" | "bold";
@@ -1208,6 +1222,7 @@ export type IconVariantMap = {
 	"google-analytics": "linear" | "bold";
 	"google-analytics-color": "linear" | "bold";
 	"google-color": "linear" | "bold";
+	"gorgias": "linear" | "bold";
 	"graduation-cap": "linear" | "bold";
 	"grip-horizontal": "linear" | "bold";
 	"grip-vertical": "linear" | "bold";
@@ -1239,6 +1254,7 @@ export type IconVariantMap = {
 	"instagram": "linear" | "bold";
 	"instagram-color": "linear" | "bold";
 	"integration": "linear" | "bold";
+	"intercom": "linear" | "bold";
 	"italic": "linear" | "bold";
 	"kanban": "linear" | "bold";
 	"key": "linear" | "bold";
@@ -1347,6 +1363,8 @@ export type IconVariantMap = {
 	"playlist": "linear" | "bold";
 	"podcast": "linear" | "bold";
 	"pointer": "linear" | "bold";
+	"postscript": "linear" | "bold";
+	"postscript-color": "linear" | "bold";
 	"power": "linear" | "bold";
 	"presentation": "linear" | "bold";
 	"printer": "linear" | "bold";
