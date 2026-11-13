@@ -123,7 +123,7 @@ const Tile = memo(function Tile({
 				"relative flex cursor-pointer items-center justify-center border-border border-r border-b transition-colors duration-500 [contain:layout_style]",
 				focused
 					? "z-10 bg-card text-foreground shadow-[0_6px_24px_-10px_rgb(0_0_0/0.10),0_1px_2px_rgb(0_0_0/0.04)]"
-					: "text-foreground/75 hover:bg-card",
+					: "text-muted-foreground hover:bg-card hover:text-foreground",
 			)}
 		>
 			<span className="relative" style={{ width: ICON, height: ICON }}>
@@ -141,8 +141,8 @@ const Tile = memo(function Tile({
 /**
  * The set as one wall of tiles. A camera flies from icon to icon: it pulls back
  * to show the wall mid-flight, lands close on one icon, lays its drawing grid
- * over it, and then switches it from linear to bold. A line of code below the
- * wall names the focused icon and follows the switch.
+ * over it, and then switches it from linear to bold. A caption bar under the
+ * wall names the focused icon in code and follows the switch.
  */
 export function IconStage({ className }: { className?: string }) {
 	const viewportRef = useRef<HTMLDivElement>(null);
@@ -202,9 +202,10 @@ export function IconStage({ className }: { className?: string }) {
 	}, [reducedMotion, hovered, hidden]);
 
 	const measured = viewport.w > 0 && viewport.h > 0;
-	// Show about six tiles across the shorter side, so a view holds a crowd of icons.
+	// Show about five tiles across the shorter side: enough to read as a set,
+	// few enough that the wall stays quieter than the headline beside it.
 	const focusScale = measured
-		? clamp(0.9, Math.min(viewport.w, viewport.h) / 6 / TILE, 1.8)
+		? clamp(0.9, Math.min(viewport.w, viewport.h) / 5 / TILE, 1.8)
 		: 1.4;
 
 	useLayoutEffect(() => {
@@ -272,37 +273,41 @@ export function IconStage({ className }: { className?: string }) {
 
 	return (
 		<div
-			ref={viewportRef}
 			aria-hidden="true"
-			className={cn("overflow-hidden", className)}
-			onPointerEnter={(event) => {
-				if (event.pointerType === "mouse") setHovered(true);
-			}}
-			onPointerLeave={() => setHovered(false)}
+			className={cn("flex min-h-0 flex-col overflow-hidden", className)}
 		>
 			<div
-				ref={canvasRef}
-				className="absolute top-0 left-0 grid origin-top-left border-border border-t border-l opacity-0"
-				style={{
-					width: CANVAS_W,
-					height: CANVAS_H,
-					gridTemplateColumns: `repeat(${COLUMNS}, ${TILE}px)`,
-					gridAutoRows: TILE,
+				ref={viewportRef}
+				className="relative min-h-96 flex-1 overflow-hidden lg:min-h-0"
+				onPointerEnter={(event) => {
+					if (event.pointerType === "mouse") setHovered(true);
 				}}
+				onPointerLeave={() => setHovered(false)}
 			>
-				{TILES.map((item, index) => (
-					<Tile
-						key={item.name}
-						item={item}
-						index={index}
-						focused={index === active}
-						bold={index === active && boldIndex === index}
-						onSelect={focusTile}
-					/>
-				))}
+				<div
+					ref={canvasRef}
+					className="absolute top-0 left-0 grid origin-top-left border-border border-t border-l opacity-0"
+					style={{
+						width: CANVAS_W,
+						height: CANVAS_H,
+						gridTemplateColumns: `repeat(${COLUMNS}, ${TILE}px)`,
+						gridAutoRows: TILE,
+					}}
+				>
+					{TILES.map((item, index) => (
+						<Tile
+							key={item.name}
+							item={item}
+							index={index}
+							focused={index === active}
+							bold={index === active && boldIndex === index}
+							onSelect={focusTile}
+						/>
+					))}
+				</div>
 			</div>
-			<div className="pointer-events-none absolute inset-x-0 bottom-5 z-20 flex justify-center px-4">
-				<code className="rounded-xl bg-card px-3 py-2 text-center font-mono text-xs leading-5 shadow-xxs sm:text-[13px]">
+			<div className="flex h-12 shrink-0 items-center justify-center border-border border-t bg-background px-4 lg:h-16">
+				<code className="truncate font-mono text-caption">
 					<span className="text-muted-foreground">{'<Icon icon="'}</span>
 					{TILES[active]?.name}
 					<span className="text-muted-foreground">{'" variant="'}</span>
