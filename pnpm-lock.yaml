@@ -6,6 +6,9 @@ settings:
 
 catalogs:
   default:
+    '@tailwindcss/postcss':
+      specifier: ^4.3.3
+      version: 4.3.3
     '@tailwindcss/vite':
       specifier: ^4.3.3
       version: 4.3.3
@@ -30,6 +33,9 @@ catalogs:
     sonner:
       specifier: ^2.0.7
       version: 2.0.8
+    tailwindcss:
+      specifier: ^4.3.3
+      version: 4.3.3
     typescript:
       specifier: ^7.0.2
       version: 7.0.2
@@ -1264,12 +1270,6 @@ packages:
     peerDependencies:
       '@redis/client': ^6.3.1
 
-  '@rolldown/binding-android-arm-eabi@1.2.13':
-    resolution: {integrity: sha512-Vu/NICrgdRvUOeaJZIyB2FP63s6fO/4ud5l8dXmxDx9yDyn+mN0y+gsvsVviSli+T361Aqo0h46EuMoobrwawA==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [arm]
-    os: [android]
-
   '@resvg/resvg-js-android-arm-eabi@2.6.2':
     resolution: {integrity: sha512-FrJibrAk6v29eabIPgcTUMPXiEz8ssrAk7TXxsiZzww9UTQ1Z5KAbFJs+Z0Ez+VZTYgnE5IQJqBcoSiMebtPHA==}
     engines: {node: '>= 10'}
@@ -1349,6 +1349,12 @@ packages:
   '@resvg/resvg-js@2.6.2':
     resolution: {integrity: sha512-xBaJish5OeGmniDj9cW5PRa/PtmuVU3ziqrbr5xJj901ZDN4TosrVaNZpEiLZAxdfnhAe7uQ7QFWfjPe9d9K2Q==}
     engines: {node: '>= 10'}
+
+  '@rolldown/binding-android-arm-eabi@1.2.13':
+    resolution: {integrity: sha512-Vu/NICrgdRvUOeaJZIyB2FP63s6fO/4ud5l8dXmxDx9yDyn+mN0y+gsvsVviSli+T361Aqo0h46EuMoobrwawA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm]
+    os: [android]
 
   '@rolldown/binding-android-arm-eabi@1.2.9':
     resolution: {integrity: sha512-tNISae1QEf/vkb3xkRcjV5SEdzPE97We5IVaa2Z8jSszQPZ8U60B/YCYpw4QI7VidYsBtKavczXf+DyDs9WGxw==}
@@ -4392,9 +4398,6 @@ snapshots:
     dependencies:
       '@redis/client': 6.3.1
 
-  '@rolldown/binding-android-arm-eabi@1.2.13':
-    optional: true
-
   '@resvg/resvg-js-android-arm-eabi@2.6.2':
     optional: true
 
@@ -4445,6 +4448,9 @@ snapshots:
       '@resvg/resvg-js-win32-arm64-msvc': 2.6.2
       '@resvg/resvg-js-win32-ia32-msvc': 2.6.2
       '@resvg/resvg-js-win32-x64-msvc': 2.6.2
+
+  '@rolldown/binding-android-arm-eabi@1.2.13':
+    optional: true
 
   '@rolldown/binding-android-arm-eabi@1.2.9':
     optional: true
