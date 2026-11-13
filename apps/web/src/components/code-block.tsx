@@ -63,12 +63,12 @@ function tokenizeLine(line: string): Token[] {
 }
 
 const toneClass: Record<TokenTone, string> = {
-	tag: "text-[#116329] dark:text-[#7ee787]",
-	attr: "text-[#0550ae] dark:text-[#79c0ff]",
-	eq: "text-[#cf222e] dark:text-[#ff7b72]",
-	string: "text-[#0a3069] dark:text-[#a5d6ff]",
-	keyword: "text-[#cf222e] dark:text-[#ff7b72]",
-	number: "text-[#0550ae] dark:text-[#79c0ff]",
+	tag: "font-medium",
+	attr: "text-primary",
+	eq: "text-muted-foreground",
+	string: "",
+	keyword: "text-muted-foreground",
+	number: "text-primary",
 	comment: "text-muted-foreground italic",
 	plain: "",
 };
@@ -117,7 +117,7 @@ export function CopyButton({
 				size="xs"
 				onClick={copy}
 				aria-label={copied ? "Copied" : label}
-				className={cn("h-6 gap-1 px-2.5", className)}
+				className={cn("h-6 gap-1 px-2", className)}
 			>
 				{icon}
 				{copied ? "Copied" : children}
@@ -160,8 +160,8 @@ export function CodeBlock({
 			className={cn("surface relative overflow-hidden rounded-2xl", className)}
 		>
 			{title ? (
-				<div className="flex h-9 items-center gap-2 pr-1 pl-4">
-					<span className="font-mono text-muted-foreground text-xs">
+				<div className="flex h-10 items-center gap-2 pr-2 pl-4">
+					<span className="font-mono text-caption text-muted-foreground">
 						{title}
 					</span>
 					<CopyButton text={code} label={`Copy ${title}`} className="ml-auto" />
@@ -173,10 +173,15 @@ export function CodeBlock({
 					className="absolute top-2 right-2 z-10 bg-card ring-4 ring-card hover:bg-muted"
 				/>
 			)}
-			<pre className="overflow-x-auto pt-2 pb-3 font-mono text-xs leading-[22px] sm:text-[13px]">
+			<pre
+				className={cn(
+					"overflow-x-auto pb-4 font-mono text-caption",
+					!title && "pt-4",
+				)}
+			>
 				<code className="block min-w-max">
 					{lines.map((line, index) => (
-						<span key={index} className="flex min-h-[22px] pr-12 pl-4">
+						<span key={index} className="flex min-h-5 pr-12 pl-4">
 							<span
 								aria-hidden
 								className="hidden w-8 shrink-0 pr-4 text-right text-muted-foreground/50 select-none sm:block"

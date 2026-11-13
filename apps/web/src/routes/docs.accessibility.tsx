@@ -48,7 +48,7 @@ function AccessibilityPage() {
 					label.
 				</Prose>
 				<Preview className="items-center">
-					<span className="inline-flex h-9 items-center gap-2 rounded-full bg-destructive/10 px-4 font-medium text-destructive text-sm">
+					<span className="inline-flex h-10 items-center gap-2 rounded-full bg-muted px-4 font-medium text-label">
 						<Icon icon="trash" size={16} />
 						Delete
 					</span>
@@ -80,14 +80,14 @@ function AccessibilityPage() {
 					and mouse users see it on hover.
 				</Prose>
 				<Preview className="items-center">
-					<span className="flex items-center gap-1.5 font-medium text-sm">
+					<span className="flex items-center gap-1 font-medium text-label">
 						Maya Chen
 						<Icon
 							icon="verified-check"
 							size={16}
 							variant="bold"
 							title="Verified account"
-							className="text-sky-500"
+							className="text-primary"
 						/>
 					</span>
 				</Preview>

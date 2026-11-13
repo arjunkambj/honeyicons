@@ -120,7 +120,7 @@ function StylesPage() {
 					color at all. When you do need one, pass <code>color</code>.
 				</Prose>
 				<Preview className="items-center">
-					<p className="flex items-center gap-2 text-muted-foreground text-sm">
+					<p className="flex items-center gap-2 text-label text-muted-foreground">
 						<Icon icon="clock" size={16} /> Updated 2 hours ago
 					</p>
 					<Icon icon="heart" variant="bold" color="#e11d48" />
