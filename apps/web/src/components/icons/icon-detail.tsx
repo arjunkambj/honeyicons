@@ -84,8 +84,10 @@ export function IconDetail({
 		<div className="flex flex-col gap-4">
 			<div className="flex items-start gap-3">
 				<div className="min-w-0 flex-1">
-					<h2 className="truncate font-medium font-mono">{item.name}</h2>
-					<p className="mt-1 flex items-center gap-1.5 text-muted-foreground text-xs">
+					<h2 className="truncate font-medium font-mono text-body">
+						{item.name}
+					</h2>
+					<p className="mt-1 flex items-center gap-1 text-caption text-muted-foreground">
 						<CategoryIcon size={14} />
 						{category.label}
 					</p>
@@ -126,7 +128,7 @@ export function IconDetail({
 				<div className="flex min-w-0 flex-1 flex-col gap-3">
 					{item.variants.length > 1 && !isColorIcon(item) && (
 						<div
-							className="grid grid-cols-2 gap-0.5 rounded-full bg-muted p-0.5"
+							className="grid grid-cols-2 gap-1 rounded-full bg-muted p-1"
 							role="radiogroup"
 							aria-label="Style"
 						>
@@ -139,7 +141,7 @@ export function IconDetail({
 										aria-checked={variant === id}
 										onClick={() => onVariantChange(id)}
 										className={cn(
-											"flex h-7 items-center justify-center gap-1.5 rounded-full text-sm transition-colors",
+											"flex h-6 items-center justify-center gap-2 rounded-full text-label transition-colors",
 											variant === id
 												? "bg-card font-medium shadow-xxs"
 												: "text-muted-foreground hover:text-foreground",
@@ -152,11 +154,11 @@ export function IconDetail({
 							)}
 						</div>
 					)}
-					<div className="flex items-end justify-between rounded-2xl bg-background px-5 pt-2 pb-1.5">
+					<div className="flex items-end justify-between rounded-2xl bg-background px-4 py-2">
 						{[16, 20, 24, 32].map((size) => (
 							<div key={size} className="flex flex-col items-center gap-1">
 								<Component variant={variant} size={size} />
-								<span className="font-mono text-[10px] text-muted-foreground">
+								<span className="font-mono text-caption text-muted-foreground">
 									{size}
 								</span>
 							</div>
@@ -165,10 +167,10 @@ export function IconDetail({
 				</div>
 			</div>
 
-			<div className="flex flex-col gap-1.5">
+			<div className="flex flex-col gap-2">
 				<div className="overflow-hidden rounded-2xl bg-background">
-					<div className="flex items-center gap-2 py-0.5 pr-0.5 pl-3">
-						<code className="min-w-0 flex-1 truncate font-mono text-[13px]">
+					<div className="flex items-center gap-2 py-1 pr-1 pl-3">
+						<code className="min-w-0 flex-1 truncate font-mono text-caption">
 							{snippet}
 						</code>
 						<CopyButton text={code} label={`Copy code for ${item.name}`} />
@@ -196,16 +198,16 @@ export function IconDetail({
 
 			{item.tags.length > 0 && (
 				<div className="mt-2">
-					<h3 className="mb-1.5 font-medium text-muted-foreground text-xs">
+					<h3 className="mb-2 font-medium text-caption text-muted-foreground">
 						Search tags
 					</h3>
-					<div className="flex flex-wrap gap-1.5">
+					<div className="flex flex-wrap gap-2">
 						{item.tags.map((tag) => (
 							<button
 								key={tag}
 								type="button"
 								onClick={() => onTag(tag)}
-								className="rounded-full bg-muted px-2.5 py-0.5 text-muted-foreground text-xs transition-colors hover:text-foreground"
+								className="rounded-full bg-muted px-2 py-1 text-caption text-muted-foreground transition-colors hover:text-foreground"
 							>
 								{tag}
 							</button>

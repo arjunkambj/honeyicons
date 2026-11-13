@@ -21,7 +21,7 @@ function visibleCategories(
 export function CategoryRail({ selected, onSelect, counts }: CategoryProps) {
 	return (
 		<nav aria-label="Icon categories" className="flex flex-col gap-1">
-			<p className="mb-1 px-2.5 font-medium text-[13px] text-foreground">
+			<p className="mb-1 px-2 font-medium text-caption text-foreground">
 				Categories
 			</p>
 			{visibleCategories(selected, counts).map((category) => {
@@ -33,7 +33,7 @@ export function CategoryRail({ selected, onSelect, counts }: CategoryProps) {
 						aria-pressed={active}
 						onClick={() => onSelect(category.id)}
 						className={cn(
-							"flex h-7 w-full items-center gap-2.5 rounded-xl px-2.5 text-sm transition-colors",
+							"flex h-8 w-full items-center gap-2 rounded-xl px-2 text-label transition-colors",
 							active
 								? "bg-card font-medium text-foreground shadow-xxs dark:bg-muted"
 								: "text-muted-foreground hover:bg-muted hover:text-foreground dark:hover:bg-muted/50",
@@ -41,7 +41,7 @@ export function CategoryRail({ selected, onSelect, counts }: CategoryProps) {
 					>
 						<category.icon size={16} />
 						<span className="truncate">{category.label}</span>
-						<span className="ml-auto font-mono text-[11px] tabular-nums opacity-70">
+						<span className="ml-auto font-mono text-caption tabular-nums">
 							{counts[category.id] ?? 0}
 						</span>
 					</button>
@@ -74,7 +74,7 @@ export function CategoryChips({ selected, onSelect, counts }: CategoryProps) {
 		<nav
 			ref={rowRef}
 			aria-label="Icon categories"
-			className="no-scrollbar -mx-4 flex gap-1.5 overflow-x-auto px-4 sm:-mx-6 sm:px-6"
+			className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 sm:-mx-8 sm:px-8"
 		>
 			{visibleCategories(selected, counts).map((category) => {
 				const active = selected === category.id;
@@ -86,10 +86,10 @@ export function CategoryChips({ selected, onSelect, counts }: CategoryProps) {
 						aria-pressed={active}
 						onClick={() => onSelect(category.id)}
 						className={cn(
-							"flex h-8 shrink-0 items-center gap-1.5 rounded-full border px-3 text-sm transition-colors",
+							"flex h-8 shrink-0 items-center gap-2 rounded-full px-3 text-label transition-colors",
 							active
-								? "border-transparent bg-foreground text-background"
-								: "border-border text-muted-foreground hover:text-foreground",
+								? "bg-foreground text-background"
+								: "bg-muted text-muted-foreground hover:text-foreground",
 						)}
 					>
 						<category.icon size={14} />

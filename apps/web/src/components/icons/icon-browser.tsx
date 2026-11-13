@@ -243,8 +243,8 @@ export function IconBrowser() {
 	);
 
 	return (
-		<div className="page-gutter grid flex-1 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-10">
-			<aside className="no-scrollbar sticky top-14 hidden h-[calc(100svh-3.5rem)] -mx-1.5 overflow-y-auto px-1.5 pt-5 pb-8 lg:block">
+		<div className="page-gutter grid flex-1 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-8">
+			<aside className="no-scrollbar sticky top-16 hidden h-[calc(100svh-4rem)] -mx-2 overflow-y-auto px-2 pt-6 pb-8 lg:block">
 				<CategoryRail
 					selected={category}
 					onSelect={selectCategory}
@@ -252,12 +252,11 @@ export function IconBrowser() {
 				/>
 			</aside>
 
-			<main className="min-w-0 pb-16 xl:pr-[392px]">
-				<div className="sticky top-14 z-20 -mx-4 flex flex-col gap-2.5 bg-background/90 px-4 pt-4 pb-3 backdrop-blur-xl sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0">
-					<div className="flex items-center gap-1.5 sm:gap-2">
+			<main className="min-w-0 pb-16 xl:pr-100">
+				<div className="sticky top-16 z-20 -mx-4 flex flex-col gap-3 bg-background/90 px-4 pt-4 pb-3 backdrop-blur-xl sm:-mx-8 sm:px-8 lg:mx-0 lg:px-0">
+					<div className="flex items-center gap-2">
 						<IconSearch
 							value={query}
-							count={styleItems.length}
 							onChange={(value) =>
 								updateSearch({ q: value || undefined }, true)
 							}
@@ -285,7 +284,7 @@ export function IconBrowser() {
 									<TabsTrigger
 										key={option}
 										value={String(option)}
-										className="px-2.5 font-mono text-xs tabular-nums"
+										className="px-2 font-mono text-caption tabular-nums"
 									>
 										{option}
 									</TabsTrigger>
@@ -311,13 +310,13 @@ export function IconBrowser() {
 					</div>
 				</div>
 
-				<div className="flex items-baseline gap-2 pt-3 pb-2">
-					<h1 className="font-heading font-semibold text-lg tracking-tight">
+				<div className="flex items-baseline gap-2 pt-4 pb-3">
+					<h1 className="font-semibold text-lead">
 						{needle ? `“${trimmed}”` : categoryLabel}
 					</h1>
 					<p
 						aria-live="polite"
-						className="text-muted-foreground text-sm tabular-nums"
+						className="text-label text-muted-foreground tabular-nums"
 					>
 						{items.length}
 						{needle && category !== "all" ? ` in ${categoryLabel}` : ""}
@@ -342,8 +341,9 @@ export function IconBrowser() {
 					aria-label={`${selectedItem.name} details`}
 					className={cn(
 						"fade-in-0 fixed z-40 animate-in overflow-y-auto bg-card/80 shadow-xxs backdrop-blur-xl duration-200",
-						"inset-x-0 bottom-0 max-h-[78svh] slide-in-from-bottom-8 rounded-t-3xl px-4 pt-3 pb-4",
-						"xl:inset-x-auto xl:top-[72px] xl:right-6 xl:bottom-4 xl:max-h-none xl:w-[368px] xl:animate-none xl:rounded-3xl xl:px-5 xl:pt-3.5 xl:pb-5",
+						"inset-x-0 bottom-0 max-h-[78svh] slide-in-from-bottom-8 rounded-t-3xl p-4",
+						// Lines up with the page gutter, which is centered past 1440px.
+						"xl:inset-x-auto xl:top-20 xl:right-[max(4rem,calc((100vw-1440px)/2+4rem))] xl:bottom-4 xl:max-h-none xl:w-92 xl:animate-none xl:rounded-3xl",
 					)}
 				>
 					{detail}
