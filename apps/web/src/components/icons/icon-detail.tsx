@@ -5,7 +5,7 @@ import { cn } from "@honeyicons/ui/lib/utils";
 import { useRef } from "react";
 import { toast } from "sonner";
 import { CopyButton } from "@/components/code-block";
-import { CATEGORY_DETAILS, VARIANT_META } from "./constants";
+import { CATEGORY_DETAILS, isColorIcon, VARIANT_META } from "./constants";
 
 function snippetFor(item: CatalogItem, variant: IconVariant) {
 	// The first variant is the default, so only other styles need the prop.
@@ -124,7 +124,7 @@ export function IconDetail({
 					</div>
 				</div>
 				<div className="flex min-w-0 flex-1 flex-col gap-3">
-					{item.variants.length > 1 && (
+					{item.variants.length > 1 && !isColorIcon(item) && (
 						<div
 							className="grid grid-cols-2 gap-0.5 rounded-full bg-muted p-0.5"
 							role="radiogroup"

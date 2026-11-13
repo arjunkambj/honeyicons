@@ -13,7 +13,6 @@ import {
 	Folder,
 	type HoneyIcon,
 	ICON_CATEGORIES,
-	ICON_VARIANTS,
 	type IconCategory,
 	type IconVariant,
 	Lock,
@@ -27,7 +26,7 @@ import {
 	User,
 	Widget,
 } from "@honeyicons/react";
-import { catalog } from "@honeyicons/react/catalog";
+import { type CatalogItem, catalog } from "@honeyicons/react/catalog";
 
 /** Preview sizes in the catalog: the three the icons are tuned for, plus two large ones. */
 export const SIZE_OPTIONS = [16, 20, 24, 32, 48] as const;
@@ -71,11 +70,21 @@ export const VARIANT_META = [
 	{ id: "bold", label: "Bold" },
 ] as const;
 
+/** The catalog's style tabs. Color isn't a package variant: color logos are their own icons. */
+export type CatalogStyle = IconVariant | "color";
+
+export const STYLE_META = [
+	...VARIANT_META,
+	{ id: "color", label: "Color" },
+] as const;
+
+export const isColorIcon = (item: CatalogItem) => item.name.endsWith("-color");
+
 /** Catalog filters kept in the URL so views can be shared and restored. */
 export type IconsSearch = {
 	q?: string;
 	category?: IconCategory;
-	style?: IconVariant;
+	style?: CatalogStyle;
 	/** The icon open in the detail panel. */
 	icon?: string;
 };
@@ -87,7 +96,7 @@ export function parseIconsSearch(search: Record<string, unknown>): IconsSearch {
 	return {
 		q: text || undefined,
 		category: ICON_CATEGORIES.find((id) => id === category),
-		style: ICON_VARIANTS.find((id) => id === style && id !== "linear"),
+		style: STYLE_META.find(({ id }) => id === style && id !== "linear")?.id,
 		icon: catalog.find((item) => item.name === icon)?.name,
 	};
 }

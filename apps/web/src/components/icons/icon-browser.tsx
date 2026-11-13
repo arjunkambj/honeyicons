@@ -15,11 +15,13 @@ import {
 } from "react";
 import {
 	CATEGORY_DETAILS,
+	type CatalogStyle,
 	type CategoryFilter,
 	type IconsSearch,
+	isColorIcon,
 	SIZE_DEFAULT,
 	SIZE_OPTIONS,
-	VARIANT_META,
+	STYLE_META,
 } from "./constants";
 import { CategoryChips, CategoryRail } from "./icon-categories";
 import { IconDetail } from "./icon-detail";
@@ -67,7 +69,9 @@ export function IconBrowser() {
 
 	const query = search.q ?? "";
 	const category: CategoryFilter = search.category ?? "all";
-	const variant: IconVariant = search.style ?? "linear";
+	const style: CatalogStyle = search.style ?? "linear";
+	// The Color tab shows each logo in its default variant.
+	const variant: IconVariant = style === "color" ? "linear" : style;
 	const chosenItem = search.icon
 		? catalog.find((item) => item.name === search.icon)
 		: undefined;
@@ -92,8 +96,16 @@ export function IconBrowser() {
 		if (window.scrollY > 0) lenis?.scrollTo(0);
 	}
 
-	function selectVariant(next: IconVariant) {
-		updateSearch({ style: next === "linear" ? undefined : next });
+	function selectStyle(next: CatalogStyle) {
+		// Only brands come in color, and the open icon may not exist on the other
+		// side of the switch, so neither carries across it.
+		const crossesColor = (next === "color") !== (style === "color");
+		updateSearch({
+			style: next === "linear" ? undefined : next,
+			category:
+				next === "color" && category !== "brands" ? undefined : search.category,
+			icon: crossesColor ? undefined : search.icon,
+		});
 	}
 
 	useEffect(() => {
@@ -113,37 +125,56 @@ export function IconBrowser() {
 		return () => window.removeEventListener("keydown", onKeyDown);
 	});
 
-	const variantItems = useMemo(
-		() => catalog.filter((item) => item.variants.includes(variant)),
-		[variant],
+	const styleItems = useMemo(
+		() =>
+			catalog.filter(
+				(item) =>
+					isColorIcon(item) === (style === "color") &&
+					item.variants.includes(variant),
+			),
+		[style, variant],
 	);
 
 	const counts = useMemo(() => {
-		const next: Record<string, number> = { all: variantItems.length };
-		for (const item of variantItems) {
+		const next: Record<string, number> = { all: styleItems.length };
+		for (const item of styleItems) {
 			next[item.category] = (next[item.category] ?? 0) + 1;
 		}
 		return next;
-	}, [variantItems]);
+	}, [styleItems]);
 
 	const needle = query.trim().toLowerCase();
 
 	const items = useMemo(
 		() =>
-			variantItems.filter(
+			styleItems.filter(
 				(item) =>
 					(category === "all" || item.category === category) &&
 					matchesQuery(item, needle),
 			),
-		[category, needle, variantItems],
+		[category, needle, styleItems],
 	);
 
 	const matchesInAllCategories = useMemo(
 		() =>
 			category === "all"
 				? items.length
-				: variantItems.filter((item) => matchesQuery(item, needle)).length,
-		[category, items.length, needle, variantItems],
+				: styleItems.filter((item) => matchesQuery(item, needle)).length,
+		[category, items.length, needle, styleItems],
+	);
+
+	// A search that finds nothing here can still match across the Color switch.
+	const otherStyle: CatalogStyle = style === "color" ? "linear" : "color";
+	const matchesInOtherStyle = useMemo(
+		() =>
+			needle
+				? catalog.filter(
+						(item) =>
+							isColorIcon(item) === (otherStyle === "color") &&
+							matchesQuery(item, needle),
+					).length
+				: 0,
+		[needle, otherStyle],
 	);
 
 	const categoryLabel = CATEGORY_DETAILS[category].label;
@@ -160,31 +191,44 @@ export function IconBrowser() {
 						</Button>
 					),
 				}
-			: needle
+			: matchesInOtherStyle > 0
 				? {
-						title: "No icons match",
-						description: `Nothing matches “${trimmed}”. Try a shorter word, or describe what the icon shows.`,
+						title: `No ${style} icons match`,
+						description: `${matchesInOtherStyle} ${otherStyle} ${matchesInOtherStyle === 1 ? "icon matches" : "icons match"} “${trimmed}”.`,
 						action: (
-							<Button
-								variant="secondary"
-								onClick={() => {
-									updateSearch({ q: undefined }, true);
-									inputRef.current?.focus();
-								}}
-							>
-								Clear search
+							<Button onClick={() => selectStyle(otherStyle)}>
+								Show {otherStyle} icons
 							</Button>
 						),
 					}
-				: {
-						title: "Nothing here yet",
-						description: `${categoryLabel} has no ${variant} icons yet.`,
-						action: (
-							<Button variant="secondary" onClick={() => selectCategory("all")}>
-								Show all icons
-							</Button>
-						),
-					};
+				: needle
+					? {
+							title: "No icons match",
+							description: `Nothing matches “${trimmed}”. Try a shorter word, or describe what the icon shows.`,
+							action: (
+								<Button
+									variant="secondary"
+									onClick={() => {
+										updateSearch({ q: undefined }, true);
+										inputRef.current?.focus();
+									}}
+								>
+									Clear search
+								</Button>
+							),
+						}
+					: {
+							title: "Nothing here yet",
+							description: `${categoryLabel} has no ${style} icons yet.`,
+							action: (
+								<Button
+									variant="secondary"
+									onClick={() => selectCategory("all")}
+								>
+									Show all icons
+								</Button>
+							),
+						};
 
 	const selectedItem = chosenItem ?? (wide ? items[0] : undefined);
 
@@ -192,7 +236,7 @@ export function IconBrowser() {
 		<IconDetail
 			item={selectedItem}
 			variant={variant}
-			onVariantChange={selectVariant}
+			onVariantChange={selectStyle}
 			onTag={(tag) => updateSearch({ q: tag, category: undefined })}
 			onClose={wide ? undefined : () => selectIcon(undefined)}
 		/>
@@ -213,18 +257,18 @@ export function IconBrowser() {
 					<div className="flex items-center gap-1.5 sm:gap-2">
 						<IconSearch
 							value={query}
-							count={variantItems.length}
+							count={styleItems.length}
 							onChange={(value) =>
 								updateSearch({ q: value || undefined }, true)
 							}
 							inputRef={inputRef}
 						/>
 						<Tabs
-							value={variant}
-							onValueChange={(value) => selectVariant(value as IconVariant)}
+							value={style}
+							onValueChange={(value) => selectStyle(value as CatalogStyle)}
 						>
 							<TabsList aria-label="Icon style">
-								{VARIANT_META.map((item) => (
+								{STYLE_META.map((item) => (
 									<TabsTrigger key={item.id} value={item.id}>
 										{item.label}
 									</TabsTrigger>
