@@ -89,6 +89,7 @@ import { DocsShell } from "@/components/docs/docs-shell";
 import { PageActions } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0021", label: "0.0.21 · Wider store" },
 	{
 		id: "version-0020",
 		label: "0.0.20 · Gorgias, Attentive, Postscript, Intercom",
@@ -272,6 +273,29 @@ function ChangelogPage() {
 				description="New icons and fixes in each release of @honeyicons/react, newest first."
 				toc={sections}
 			>
+				<section
+					aria-labelledby="version-0021"
+					className="border-t border-border pt-8"
+				>
+					<time
+						dateTime="2026-11-13"
+						className="text-label text-muted-foreground"
+					>
+						November 13, 2026
+					</time>
+					<h2
+						id="version-0021"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
+					>
+						0.0.21 · Wider store
+					</h2>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
+						<li>
+							Store is now as wide as the icons around it. It was narrower than
+							its neighbours and looked small beside them in menus and sidebars.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0020"
 					className="border-t border-border pt-8"
