@@ -39,7 +39,7 @@ function SiteFrame({
 			<div className="flex min-h-svh flex-col">
 				<a
 					href="#content"
-					className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-foreground focus:px-4 focus:py-2 focus:font-medium focus:text-background focus:text-sm"
+					className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-foreground focus:px-4 focus:py-2 focus:font-medium focus:text-background focus:text-label"
 				>
 					Skip to content
 				</a>
@@ -76,7 +76,7 @@ function DefaultError({ error }: ErrorComponentProps) {
 
 	return (
 		<SiteFrame>
-			<main className="page-gutter py-16 sm:py-24">
+			<main className="page-gutter py-12 sm:py-16">
 				<PageHeader
 					eyebrow="Error"
 					title="This page broke"

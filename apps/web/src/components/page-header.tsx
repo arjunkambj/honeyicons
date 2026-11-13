@@ -19,12 +19,12 @@ export function PageHeader({
 }) {
 	return (
 		<header id={id} className={cn("scroll-mt-36 xl:scroll-mt-24", className)}>
-			<p className="mb-3 text-muted-foreground text-sm">{eyebrow}</p>
-			<h1 className="font-heading font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
+			<p className="mb-3 text-label text-muted-foreground">{eyebrow}</p>
+			<h1 className="text-balance font-medium text-title lg:text-display">
 				{title}
 			</h1>
 			{description && (
-				<p className="mt-4 max-w-xl text-muted-foreground leading-7">
+				<p className="mt-6 max-w-xl text-body text-muted-foreground lg:text-lead">
 					{description}
 				</p>
 			)}
