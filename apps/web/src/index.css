@@ -6,15 +6,6 @@
 :root {
 	--font-cal-sans-ui: "Cal Sans UI";
 	--font-bricolage-grotesque: "Bricolage Grotesque Variable";
-	--stage-card: #f4f4f5;
-}
-
-.dark {
-	--stage-card: var(--card);
-}
-
-@theme inline {
-	--color-stage-card: var(--stage-card);
 }
 
 /* A raised box: translucent card fill, a 3px shadow, and a blur of what
@@ -28,7 +19,7 @@ scrolls behind it. Used in place of borders. */
 /* Shared page frame. The header and every route use the same gutter so
 panels, headings, and the logo share one left edge. */
 @utility page-gutter {
-	@apply mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8;
+	@apply mx-auto w-full max-w-[1440px] px-4 sm:px-8 xl:px-16;
 }
 
 @utility no-scrollbar {

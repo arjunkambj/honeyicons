@@ -28,9 +28,9 @@ export function InstallCommand({ className }: { className?: string }) {
 			className={cn("surface w-full gap-0 rounded-2xl px-1 py-1", className)}
 		>
 			<div className="flex items-center gap-2">
-				<TabsList aria-label="Package manager" className="h-7 p-0.5">
+				<TabsList aria-label="Package manager">
 					{installOptions.map(({ id }) => (
-						<TabsTrigger key={id} value={id} className="px-2.5 text-[13px]">
+						<TabsTrigger key={id} value={id} className="px-2 text-caption">
 							{id}
 						</TabsTrigger>
 					))}
@@ -42,7 +42,7 @@ export function InstallCommand({ className }: { className?: string }) {
 					className="ml-auto"
 				/>
 			</div>
-			<pre className="overflow-x-auto px-3 pt-2 pb-1.5 font-mono text-[13px] leading-6">
+			<pre className="overflow-x-auto px-3 py-2 font-mono text-caption">
 				<code>
 					<span aria-hidden className="mr-2 text-muted-foreground select-none">
 						$
@@ -54,40 +54,39 @@ export function InstallCommand({ className }: { className?: string }) {
 	);
 }
 
-/** The home page's install card: one command, or a prompt for coding agents. */
-export function QuickInstall({ className }: { className?: string }) {
+/** The home page's install command: one line with a copy button. */
+export function QuickInstall() {
 	return (
-		<div className={cn("surface w-full rounded-2xl p-1", className)}>
-			<div className="flex items-center gap-2 py-1 pr-1 pl-3">
-				<pre className="min-w-0 flex-1 overflow-x-auto font-mono text-[13px] leading-6">
-					<code>
-						<span
-							aria-hidden
-							className="mr-2 text-muted-foreground select-none"
-						>
-							$
-						</span>
-						{quickInstallCommand}
-					</code>
-				</pre>
-				<CopyButton
-					text={quickInstallCommand}
-					label={`Copy ${quickInstallCommand}`}
-				/>
-			</div>
-			<div className="flex items-center gap-2 rounded-xl bg-muted py-1 pr-1 pl-3 text-[13px]">
-				<Sparkles size={14} className="shrink-0 text-primary" />
-				<span className="min-w-0 flex-1 text-muted-foreground">
-					Or use your coding agent
-				</span>
-				<CopyButton
-					text={setupPrompt}
-					label="Copy the setup prompt for coding agents"
-					className="shrink-0 bg-card hover:bg-card/70"
-				>
-					Copy prompt
-				</CopyButton>
-			</div>
+		<div className="flex h-10 min-w-0 items-center gap-2 rounded-full bg-card pr-2 pl-4 shadow-xxs">
+			<pre className="min-w-0 overflow-x-auto font-mono text-caption">
+				<code>
+					<span aria-hidden className="mr-2 text-muted-foreground select-none">
+						$
+					</span>
+					{quickInstallCommand}
+				</code>
+			</pre>
+			<CopyButton
+				text={quickInstallCommand}
+				label={`Copy ${quickInstallCommand}`}
+			/>
+		</div>
+	);
+}
+
+/** The home page's other way in: a setup prompt to paste into a coding agent. */
+export function AgentSetup() {
+	return (
+		<div className="flex flex-wrap items-center gap-2 text-caption text-muted-foreground">
+			<Sparkles size={14} className="shrink-0" />
+			Using a coding agent?
+			<CopyButton
+				text={setupPrompt}
+				label="Copy the setup prompt for coding agents"
+				className="bg-card shadow-xxs hover:bg-card/70"
+			>
+				Copy setup prompt
+			</CopyButton>
 		</div>
 	);
 }

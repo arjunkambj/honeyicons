@@ -66,7 +66,7 @@ function Quickstart() {
 						</Prose>
 						<CodeBlock code={firstIconCode} title="notifications-button.tsx" />
 						<Preview className="min-h-20 items-center">
-							<span className="inline-flex h-9 items-center gap-2 rounded-full bg-muted px-4 font-medium text-sm">
+							<span className="inline-flex h-10 items-center gap-2 rounded-full bg-muted px-4 font-medium text-label">
 								<Icon icon="bell" size={20} />
 								Notifications
 							</span>

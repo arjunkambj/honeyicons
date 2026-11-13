@@ -276,12 +276,15 @@ function ChangelogPage() {
 					aria-labelledby="version-0020"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-11-11" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-11-11"
+						className="text-label text-muted-foreground"
+					>
 						November 11, 2026
 					</time>
 					<h2
 						id="version-0020"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.20 · Gorgias, Attentive, Postscript, and Intercom
 					</h2>
@@ -296,7 +299,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Gorgias joins the brand icons as its two squares in a speech
 							bubble. Its logo is one color, so it has no color version.
@@ -319,12 +322,15 @@ function ChangelogPage() {
 					aria-labelledby="version-0019"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-11-07" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-11-07"
+						className="text-label text-muted-foreground"
+					>
 						November 7, 2026
 					</time>
 					<h2
 						id="version-0019"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.19 · Skio, Recharge, Yotpo, Mailchimp, Omnisend, and Clarity
 					</h2>
@@ -339,7 +345,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Skio joins the brand icons as its tile with the name cut out, with
 							a color version in Skio purple.
@@ -366,12 +372,15 @@ function ChangelogPage() {
 					aria-labelledby="version-0018"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-11-06" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-11-06"
+						className="text-label text-muted-foreground"
+					>
 						November 6, 2026
 					</time>
 					<h2
 						id="version-0018"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.18 · One size, cleaner drawings
 					</h2>
@@ -386,7 +395,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Almost every icon now fills the same space and sits in the middle
 							of it, so a home and a store look right side by side. About 200
@@ -413,16 +422,19 @@ function ChangelogPage() {
 					aria-labelledby="version-0017"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-11-06" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-11-06"
+						className="text-label text-muted-foreground"
+					>
 						November 6, 2026
 					</time>
 					<h2
 						id="version-0017"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.17 · Setup link fix
 					</h2>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							The setup prompt in the package README now points to
 							honeyicons.com. The old address no longer worked.
@@ -433,12 +445,15 @@ function ChangelogPage() {
 					aria-labelledby="version-0016"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-11-04" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-11-04"
+						className="text-label text-muted-foreground"
+					>
 						November 4, 2026
 					</time>
 					<h2
 						id="version-0016"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.16 · Stay AI and OneText
 					</h2>
@@ -453,7 +468,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Stay AI joins the brand icons as its woven heart, with a color
 							version in Stay AI magenta.
@@ -473,12 +488,15 @@ function ChangelogPage() {
 					aria-labelledby="version-0015"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-11-03" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-11-03"
+						className="text-label text-muted-foreground"
+					>
 						November 3, 2026
 					</time>
 					<h2
 						id="version-0015"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.15 · Amazon and smoother curves
 					</h2>
@@ -493,7 +511,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Amazon joins the brand icons, with a full-color version that
 							paints the smile orange.
@@ -513,12 +531,15 @@ function ChangelogPage() {
 					aria-labelledby="version-0013"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-10-25" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-10-25"
+						className="text-label text-muted-foreground"
+					>
 						October 25, 2026
 					</time>
 					<h2
 						id="version-0013"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.13 · Shopify, Google Analytics, and Klaviyo
 					</h2>
@@ -533,7 +554,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Shopify, Google Analytics, and Klaviyo join the brand icons.
 							Shopify and Google Analytics also come in full color.
@@ -549,12 +570,15 @@ function ChangelogPage() {
 					aria-labelledby="version-0012"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-28" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-09-28"
+						className="text-label text-muted-foreground"
+					>
 						September 28, 2026
 					</time>
 					<h2
 						id="version-0012"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.12 · Meta, Google Ads, and Zed
 					</h2>
@@ -569,7 +593,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Meta, Google Ads, and Zed join the brand icons, each with a
 							full-color version.
@@ -585,12 +609,15 @@ function ChangelogPage() {
 					aria-labelledby="version-0011"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-27" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-09-27"
+						className="text-label text-muted-foreground"
+					>
 						September 27, 2026
 					</time>
 					<h2
 						id="version-0011"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.11 · Filled frames in bold
 					</h2>
@@ -605,7 +632,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Bold Login, Logout, Download, and Upload fill their door and tray
 							and keep the arrow whole with a clear gap, like CloudDownload and
@@ -621,12 +648,15 @@ function ChangelogPage() {
 					aria-labelledby="version-0010"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-27" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-09-27"
+						className="text-label text-muted-foreground"
+					>
 						September 27, 2026
 					</time>
 					<h2
 						id="version-0010"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.10 · Smoother shapes and cleaner slashes
 					</h2>
@@ -641,7 +671,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Bold FolderOpen cuts its gap along the flap line, so the back of
 							the folder keeps its right side instead of ending in a point.
@@ -670,12 +700,15 @@ function ChangelogPage() {
 					aria-labelledby="version-009"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-27" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-09-27"
+						className="text-label text-muted-foreground"
+					>
 						September 27, 2026
 					</time>
 					<h2
 						id="version-009"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.9 · Brand icons in full color
 					</h2>
@@ -690,7 +723,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							37 brands with colored logos now also come in full color, such as
 							GoogleColor and ClaudeAiColor. Each matches its plain icon’s size
@@ -711,12 +744,15 @@ function ChangelogPage() {
 					aria-labelledby="version-008"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-24" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-09-24"
+						className="text-label text-muted-foreground"
+					>
 						September 24, 2026
 					</time>
 					<h2
 						id="version-008"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.8 · Redrawn FolderOpen, user, and Wallet icons
 					</h2>
@@ -731,7 +767,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							FolderOpen now has a tilted front flap that carries the folder
 							dash, drawn on the same tab and corners as Folder.
@@ -755,12 +791,15 @@ function ChangelogPage() {
 					aria-labelledby="version-007"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-24" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-09-24"
+						className="text-label text-muted-foreground"
+					>
 						September 24, 2026
 					</time>
 					<h2
 						id="version-007"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.7 · Bold for every icon, 112 new icons, and a Weather category
 					</h2>
@@ -775,7 +814,7 @@ function ChangelogPage() {
 							</li>
 						))}
 					</ul>
-					<ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Every icon now has a bold variant. Bold fills each shape and cuts
 							its inner lines all the way through, so dividers, folds, and lids
@@ -822,16 +861,19 @@ function ChangelogPage() {
 					aria-labelledby="version-006"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-23" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-09-23"
+						className="text-label text-muted-foreground"
+					>
 						September 23, 2026
 					</time>
 					<h2
 						id="version-006"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.6 · Even rendering with translucent colors
 					</h2>
-					<ul className="mt-3 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-3 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Overlapping parts in 78 icons are merged, so icons drawn in a
 							translucent color no longer show darker seams where lines cross.
@@ -846,16 +888,19 @@ function ChangelogPage() {
 					aria-labelledby="version-005"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-23" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-09-23"
+						className="text-label text-muted-foreground"
+					>
 						September 23, 2026
 					</time>
 					<h2
 						id="version-005"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						0.0.5 · Named icons and agent setup
 					</h2>
-					<ul className="mt-3 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-3 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Render icons by name with the typed Icon component. Named
 							component imports remain available for smaller bundles.
@@ -884,16 +929,19 @@ function ChangelogPage() {
 					aria-labelledby="september-12-title"
 					className="border-t border-border pt-8"
 				>
-					<time dateTime="2026-09-12" className="text-muted-foreground text-sm">
+					<time
+						dateTime="2026-09-12"
+						className="text-label text-muted-foreground"
+					>
 						September 12, 2026
 					</time>
 					<h2
 						id="september-12-title"
-						className="mt-3 scroll-mt-32 lg:scroll-mt-20 font-semibold text-2xl leading-snug tracking-tight"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
 					>
 						Five new icons
 					</h2>
-					<p className="mt-3 text-muted-foreground leading-7">
+					<p className="mt-3 text-body text-muted-foreground">
 						Wallet, Clock, Key, UserAdd, and Card join the linear collection.
 						Built for everyday actions, accounts, and payments.
 					</p>
@@ -907,15 +955,15 @@ function ChangelogPage() {
 											className="flex min-w-8 flex-col items-center gap-2"
 										>
 											<Icon size={size} />
-											<figcaption className="font-mono text-muted-foreground text-xs">
+											<figcaption className="font-mono text-caption text-muted-foreground">
 												{size}px
 											</figcaption>
 										</figure>
 									))}
 								</div>
 								<div>
-									<h3 className="font-mono text-sm">{name}</h3>
-									<p className="mt-1 text-muted-foreground text-sm leading-6">
+									<h3 className="font-mono text-label">{name}</h3>
+									<p className="mt-1 text-label text-muted-foreground">
 										{description}
 									</p>
 								</div>
@@ -924,11 +972,11 @@ function ChangelogPage() {
 					</ul>
 					<h3
 						id="refinements"
-						className="mt-10 scroll-mt-32 lg:scroll-mt-20 font-medium"
+						className="mt-8 scroll-mt-32 font-medium text-body lg:scroll-mt-24"
 					>
 						Refinements
 					</h3>
-					<ul className="mt-3 flex list-disc flex-col gap-2 pl-5 text-muted-foreground leading-7">
+					<ul className="mt-3 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
 							Wallet now uses the money-wallet design, with cash visible above
 							the opening.

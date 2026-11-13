@@ -6,17 +6,17 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 export const GITHUB_URL = "https://github.com/arjunkambj/honeyicons";
 
-const navLinks = [
+export const navLinks = [
 	{ to: "/icons", label: "Icons" },
 	{ to: "/docs", label: "Docs" },
 	{ to: "/changelog", label: "Changelog" },
 ] as const;
 
-/** Top bar for every page except home, which is a full-screen stage. */
+/** Top bar for every page except home, which keeps its links beside the stage. */
 export function SiteHeader() {
 	return (
-		<header className="sticky top-0 z-40 h-14 border-border border-b bg-background/85 backdrop-blur-xl">
-			<div className="page-gutter flex h-full items-center gap-6">
+		<header className="sticky top-0 z-40 h-16 border-border border-b bg-background/85 backdrop-blur-xl">
+			<div className="page-gutter flex h-full items-center gap-4">
 				<Link
 					to="/"
 					aria-label="Honeyicons home"
@@ -26,14 +26,14 @@ export function SiteHeader() {
 				</Link>
 				<nav
 					aria-label="Main navigation"
-					className="flex min-w-0 items-center gap-1 text-sm"
+					className="flex min-w-0 items-center text-label"
 				>
 					{navLinks.map(({ to, label }) => (
 						<Link
 							key={to}
 							to={to}
 							className={cn(
-								"rounded-full px-3 py-1.5 text-muted-foreground transition-colors hover:text-foreground",
+								"rounded-full px-3 py-2 text-muted-foreground transition-colors hover:text-foreground",
 								to === "/changelog" && "hidden sm:block",
 							)}
 							activeProps={{ className: "text-foreground" }}
@@ -51,7 +51,7 @@ export function SiteHeader() {
 						target="_blank"
 						rel="noreferrer"
 						aria-label="Honeyicons on GitHub"
-						className="flex size-8 items-center justify-center text-foreground/80 transition-colors hover:text-foreground"
+						className="flex size-8 items-center justify-center text-muted-foreground transition-colors hover:text-foreground"
 					>
 						<Github size={20} />
 					</a>

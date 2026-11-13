@@ -11,7 +11,7 @@ export const Route = createFileRoute("/$")({
 
 function NotFoundPage() {
 	return (
-		<main className="page-gutter py-16 sm:py-24">
+		<main className="page-gutter py-12 sm:py-16">
 			<PageHeader
 				eyebrow="404"
 				title="We can’t find that page"

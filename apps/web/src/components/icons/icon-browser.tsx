@@ -15,11 +15,13 @@ import {
 } from "react";
 import {
 	CATEGORY_DETAILS,
+	type CatalogStyle,
 	type CategoryFilter,
 	type IconsSearch,
+	isColorIcon,
 	SIZE_DEFAULT,
 	SIZE_OPTIONS,
-	VARIANT_META,
+	STYLE_META,
 } from "./constants";
 import { CategoryChips, CategoryRail } from "./icon-categories";
 import { IconDetail } from "./icon-detail";
@@ -67,7 +69,9 @@ export function IconBrowser() {
 
 	const query = search.q ?? "";
 	const category: CategoryFilter = search.category ?? "all";
-	const variant: IconVariant = search.style ?? "linear";
+	const style: CatalogStyle = search.style ?? "linear";
+	// The Color tab shows each logo in its default variant.
+	const variant: IconVariant = style === "color" ? "linear" : style;
 	const chosenItem = search.icon
 		? catalog.find((item) => item.name === search.icon)
 		: undefined;
@@ -92,8 +96,16 @@ export function IconBrowser() {
 		if (window.scrollY > 0) lenis?.scrollTo(0);
 	}
 
-	function selectVariant(next: IconVariant) {
-		updateSearch({ style: next === "linear" ? undefined : next });
+	function selectStyle(next: CatalogStyle) {
+		// Only brands come in color, and the open icon may not exist on the other
+		// side of the switch, so neither carries across it.
+		const crossesColor = (next === "color") !== (style === "color");
+		updateSearch({
+			style: next === "linear" ? undefined : next,
+			category:
+				next === "color" && category !== "brands" ? undefined : search.category,
+			icon: crossesColor ? undefined : search.icon,
+		});
 	}
 
 	useEffect(() => {
@@ -113,37 +125,56 @@ export function IconBrowser() {
 		return () => window.removeEventListener("keydown", onKeyDown);
 	});
 
-	const variantItems = useMemo(
-		() => catalog.filter((item) => item.variants.includes(variant)),
-		[variant],
+	const styleItems = useMemo(
+		() =>
+			catalog.filter(
+				(item) =>
+					isColorIcon(item) === (style === "color") &&
+					item.variants.includes(variant),
+			),
+		[style, variant],
 	);
 
 	const counts = useMemo(() => {
-		const next: Record<string, number> = { all: variantItems.length };
-		for (const item of variantItems) {
+		const next: Record<string, number> = { all: styleItems.length };
+		for (const item of styleItems) {
 			next[item.category] = (next[item.category] ?? 0) + 1;
 		}
 		return next;
-	}, [variantItems]);
+	}, [styleItems]);
 
 	const needle = query.trim().toLowerCase();
 
 	const items = useMemo(
 		() =>
-			variantItems.filter(
+			styleItems.filter(
 				(item) =>
 					(category === "all" || item.category === category) &&
 					matchesQuery(item, needle),
 			),
-		[category, needle, variantItems],
+		[category, needle, styleItems],
 	);
 
 	const matchesInAllCategories = useMemo(
 		() =>
 			category === "all"
 				? items.length
-				: variantItems.filter((item) => matchesQuery(item, needle)).length,
-		[category, items.length, needle, variantItems],
+				: styleItems.filter((item) => matchesQuery(item, needle)).length,
+		[category, items.length, needle, styleItems],
+	);
+
+	// A search that finds nothing here can still match across the Color switch.
+	const otherStyle: CatalogStyle = style === "color" ? "linear" : "color";
+	const matchesInOtherStyle = useMemo(
+		() =>
+			needle
+				? catalog.filter(
+						(item) =>
+							isColorIcon(item) === (otherStyle === "color") &&
+							matchesQuery(item, needle),
+					).length
+				: 0,
+		[needle, otherStyle],
 	);
 
 	const categoryLabel = CATEGORY_DETAILS[category].label;
@@ -160,31 +191,44 @@ export function IconBrowser() {
 						</Button>
 					),
 				}
-			: needle
+			: matchesInOtherStyle > 0
 				? {
-						title: "No icons match",
-						description: `Nothing matches “${trimmed}”. Try a shorter word, or describe what the icon shows.`,
+						title: `No ${style} icons match`,
+						description: `${matchesInOtherStyle} ${otherStyle} ${matchesInOtherStyle === 1 ? "icon matches" : "icons match"} “${trimmed}”.`,
 						action: (
-							<Button
-								variant="secondary"
-								onClick={() => {
-									updateSearch({ q: undefined }, true);
-									inputRef.current?.focus();
-								}}
-							>
-								Clear search
+							<Button onClick={() => selectStyle(otherStyle)}>
+								Show {otherStyle} icons
 							</Button>
 						),
 					}
-				: {
-						title: "Nothing here yet",
-						description: `${categoryLabel} has no ${variant} icons yet.`,
-						action: (
-							<Button variant="secondary" onClick={() => selectCategory("all")}>
-								Show all icons
-							</Button>
-						),
-					};
+				: needle
+					? {
+							title: "No icons match",
+							description: `Nothing matches “${trimmed}”. Try a shorter word, or describe what the icon shows.`,
+							action: (
+								<Button
+									variant="secondary"
+									onClick={() => {
+										updateSearch({ q: undefined }, true);
+										inputRef.current?.focus();
+									}}
+								>
+									Clear search
+								</Button>
+							),
+						}
+					: {
+							title: "Nothing here yet",
+							description: `${categoryLabel} has no ${style} icons yet.`,
+							action: (
+								<Button
+									variant="secondary"
+									onClick={() => selectCategory("all")}
+								>
+									Show all icons
+								</Button>
+							),
+						};
 
 	const selectedItem = chosenItem ?? (wide ? items[0] : undefined);
 
@@ -192,15 +236,15 @@ export function IconBrowser() {
 		<IconDetail
 			item={selectedItem}
 			variant={variant}
-			onVariantChange={selectVariant}
+			onVariantChange={selectStyle}
 			onTag={(tag) => updateSearch({ q: tag, category: undefined })}
 			onClose={wide ? undefined : () => selectIcon(undefined)}
 		/>
 	);
 
 	return (
-		<div className="page-gutter grid flex-1 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-10">
-			<aside className="no-scrollbar sticky top-14 hidden h-[calc(100svh-3.5rem)] -mx-1.5 overflow-y-auto px-1.5 pt-5 pb-8 lg:block">
+		<div className="page-gutter grid flex-1 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-8">
+			<aside className="no-scrollbar sticky top-16 hidden h-[calc(100svh-4rem)] -mx-2 overflow-y-auto px-2 pt-6 pb-8 lg:block">
 				<CategoryRail
 					selected={category}
 					onSelect={selectCategory}
@@ -208,23 +252,22 @@ export function IconBrowser() {
 				/>
 			</aside>
 
-			<main className="min-w-0 pb-16 xl:pr-[392px]">
-				<div className="sticky top-14 z-20 -mx-4 flex flex-col gap-2.5 bg-background/90 px-4 pt-4 pb-3 backdrop-blur-xl sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0">
-					<div className="flex items-center gap-1.5 sm:gap-2">
+			<main className="min-w-0 pb-16 xl:pr-100">
+				<div className="sticky top-16 z-20 -mx-4 flex flex-col gap-3 bg-background/90 px-4 pt-4 pb-3 backdrop-blur-xl sm:-mx-8 sm:px-8 lg:mx-0 lg:px-0">
+					<div className="flex items-center gap-2">
 						<IconSearch
 							value={query}
-							count={variantItems.length}
 							onChange={(value) =>
 								updateSearch({ q: value || undefined }, true)
 							}
 							inputRef={inputRef}
 						/>
 						<Tabs
-							value={variant}
-							onValueChange={(value) => selectVariant(value as IconVariant)}
+							value={style}
+							onValueChange={(value) => selectStyle(value as CatalogStyle)}
 						>
 							<TabsList aria-label="Icon style">
-								{VARIANT_META.map((item) => (
+								{STYLE_META.map((item) => (
 									<TabsTrigger key={item.id} value={item.id}>
 										{item.label}
 									</TabsTrigger>
@@ -241,7 +284,7 @@ export function IconBrowser() {
 									<TabsTrigger
 										key={option}
 										value={String(option)}
-										className="px-2.5 font-mono text-xs tabular-nums"
+										className="px-2 font-mono text-caption tabular-nums"
 									>
 										{option}
 									</TabsTrigger>
@@ -267,13 +310,13 @@ export function IconBrowser() {
 					</div>
 				</div>
 
-				<div className="flex items-baseline gap-2 pt-3 pb-2">
-					<h1 className="font-heading font-semibold text-lg tracking-tight">
+				<div className="flex items-baseline gap-2 pt-4 pb-3">
+					<h1 className="font-semibold text-lead">
 						{needle ? `“${trimmed}”` : categoryLabel}
 					</h1>
 					<p
 						aria-live="polite"
-						className="text-muted-foreground text-sm tabular-nums"
+						className="text-label text-muted-foreground tabular-nums"
 					>
 						{items.length}
 						{needle && category !== "all" ? ` in ${categoryLabel}` : ""}
@@ -298,8 +341,9 @@ export function IconBrowser() {
 					aria-label={`${selectedItem.name} details`}
 					className={cn(
 						"fade-in-0 fixed z-40 animate-in overflow-y-auto bg-card/80 shadow-xxs backdrop-blur-xl duration-200",
-						"inset-x-0 bottom-0 max-h-[78svh] slide-in-from-bottom-8 rounded-t-3xl px-4 pt-3 pb-4",
-						"xl:inset-x-auto xl:top-[72px] xl:right-6 xl:bottom-4 xl:max-h-none xl:w-[368px] xl:animate-none xl:rounded-3xl xl:px-5 xl:pt-3.5 xl:pb-5",
+						"inset-x-0 bottom-0 max-h-[78svh] slide-in-from-bottom-8 rounded-t-3xl p-4",
+						// Lines up with the page gutter, which is centered past 1440px.
+						"xl:inset-x-auto xl:top-20 xl:right-[max(4rem,calc((100vw-1440px)/2+4rem))] xl:bottom-4 xl:max-h-none xl:w-92 xl:animate-none xl:rounded-3xl",
 					)}
 				>
 					{detail}

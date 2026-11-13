@@ -109,7 +109,7 @@ function IconCell({
 			</span>
 			<span
 				className={cn(
-					"absolute inset-x-1.5 bottom-2 truncate text-center text-[11px] leading-4 text-muted-foreground transition-opacity",
+					"absolute inset-x-1 bottom-1 truncate text-center text-caption text-muted-foreground transition-opacity",
 					guides || selected
 						? "opacity-100"
 						: "opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100",
