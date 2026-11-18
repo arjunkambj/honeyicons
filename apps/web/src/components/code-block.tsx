@@ -184,7 +184,7 @@ export function CodeBlock({
 						<span key={index} className="flex min-h-5 pr-12 pl-4">
 							<span
 								aria-hidden
-								className="hidden w-8 shrink-0 pr-4 text-right text-muted-foreground/50 select-none sm:block"
+								className="hidden w-8 shrink-0 pr-4 text-right text-muted-foreground/50 tabular-nums select-none sm:block"
 							>
 								{index + 1}
 							</span>
