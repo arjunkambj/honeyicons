@@ -89,6 +89,7 @@ import { DocsShell } from "@/components/docs/docs-shell";
 import { PageActions } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0022", label: "0.0.22 · Small icons and catalog names" },
 	{ id: "version-0021", label: "0.0.21 · Wider store" },
 	{
 		id: "version-0020",
@@ -273,6 +274,42 @@ function ChangelogPage() {
 				description="New icons and fixes in each release of @honeyicons/react, newest first."
 				toc={sections}
 			>
+				<section
+					aria-labelledby="version-0022"
+					className="border-t border-border pt-8"
+				>
+					<time
+						dateTime="2026-11-19"
+						className="text-label text-muted-foreground"
+					>
+						November 19, 2026
+					</time>
+					<h2
+						id="version-0022"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
+					>
+						0.0.22 · Small icons and catalog names
+					</h2>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
+						<li>
+							EyeOff is centered, PhoneOff keeps its handset whole at 16 px,
+							and Repeat and RepeatOne share the same size.
+						</li>
+						<li>
+							SpinnerDiagonal, SpinnerOrbit, and SpinnerWave each show a
+							distinct static pattern when reduced motion is enabled.
+						</li>
+						<li>
+							CartBag is now ShoppingBag, ArchiveAlt is ArchiveCheck, and
+							MarketAnalysis is ChartCandlestick. The previous React imports,
+							icon names, and catalog links still work.
+						</li>
+						<li>
+							Nine icons changed categories. Repeat joins the playback controls
+							in Media, and Send, PaperPlane, and HandWave appear in Communication.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0021"
 					className="border-t border-border pt-8"
