@@ -85,6 +85,14 @@ export function CategoryChips({ selected, onSelect, counts }: CategoryProps) {
 						data-category={category.id}
 						aria-pressed={active}
 						onClick={() => onSelect(category.id)}
+						// Browsers skip scrolling a chip that is mostly in view; pull it
+						// past the row's scroll padding so the edge fade never covers it.
+						onFocus={(event) =>
+							event.currentTarget.scrollIntoView({
+								block: "nearest",
+								inline: "nearest",
+							})
+						}
 						className={cn(
 							"flex h-8 shrink-0 items-center gap-2 rounded-full px-3 text-label transition-transform duration-100 ease-out active:scale-[0.97] motion-reduce:transition-none",
 							active
