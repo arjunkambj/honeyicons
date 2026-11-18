@@ -120,7 +120,9 @@ const Tile = memo(function Tile({
 		<div
 			onClick={() => onSelect(index)}
 			className={cn(
-				"relative flex cursor-pointer items-center justify-center border-border border-r border-b transition-colors duration-500 [contain:layout_style]",
+				// The moving focus fades over 500ms. Hover starts at once: the hovered
+				// state's duration applies on the way in, the 500ms on the way out.
+				"relative flex cursor-pointer items-center justify-center border-border border-r border-b transition-colors duration-500 hover:duration-0 [contain:layout_style]",
 				focused
 					? "z-10 bg-card text-foreground shadow-[0_6px_24px_-10px_rgb(0_0_0/0.10),0_1px_2px_rgb(0_0_0/0.04)]"
 					: "text-muted-foreground hover:bg-card hover:text-foreground",

@@ -33,7 +33,7 @@ export function Section({
 				<LinkIcon
 					size={16}
 					aria-hidden
-					className="text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100"
+					className="text-muted-foreground opacity-0 group-hover:opacity-100"
 				/>
 			</h2>
 			<div className="flex flex-col gap-4">{children}</div>
@@ -124,7 +124,7 @@ export function LinkCard({
 	return (
 		<Link
 			to={to}
-			className="group flex flex-col gap-1 surface rounded-2xl p-4 transition-colors hover:bg-card"
+			className="group flex flex-col gap-1 surface rounded-2xl p-4 transition-transform duration-100 ease-out hover:bg-card active:scale-[0.99] motion-reduce:transition-none"
 		>
 			<Icon icon={icon} size={20} className="mb-2 text-primary" />
 			<span className="font-medium text-body">{title}</span>

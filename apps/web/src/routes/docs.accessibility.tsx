@@ -65,7 +65,7 @@ function AccessibilityPage() {
 					<button
 						type="button"
 						aria-label="Notifications"
-						className="inline-flex size-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-foreground/10"
+						className="inline-flex size-10 items-center justify-center rounded-full bg-muted hover:bg-foreground/10"
 					>
 						<Icon icon="bell" size={20} />
 					</button>

@@ -33,7 +33,7 @@ export function SiteHeader() {
 							key={to}
 							to={to}
 							className={cn(
-								"rounded-full px-3 py-2 text-muted-foreground transition-colors hover:text-foreground",
+								"rounded-full px-3 py-2 text-muted-foreground hover:text-foreground",
 								to === "/changelog" && "hidden sm:block",
 							)}
 							activeProps={{ className: "text-foreground" }}
@@ -51,7 +51,7 @@ export function SiteHeader() {
 						target="_blank"
 						rel="noreferrer"
 						aria-label="Honeyicons on GitHub"
-						className="flex size-8 items-center justify-center text-muted-foreground transition-colors hover:text-foreground"
+						className="flex size-8 items-center justify-center text-muted-foreground hover:text-foreground"
 					>
 						<Github size={20} />
 					</a>

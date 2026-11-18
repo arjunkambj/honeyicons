@@ -93,7 +93,7 @@ function IconCell({
 			aria-label={item.name}
 			onClick={onSelect}
 			className={cn(
-				"group relative flex aspect-square min-w-0 items-center justify-center border-border border-r border-b outline-none transition-colors",
+				"group relative flex aspect-square min-w-0 items-center justify-center border-border border-r border-b outline-none",
 				"hover:bg-card focus-visible:z-10 focus-visible:bg-card focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset",
 				selected && "bg-card",
 			)}
@@ -109,7 +109,7 @@ function IconCell({
 			</span>
 			<span
 				className={cn(
-					"absolute inset-x-1 bottom-1 truncate text-center text-caption text-muted-foreground transition-opacity",
+					"absolute inset-x-1 bottom-1 truncate text-center text-caption text-muted-foreground",
 					guides || selected
 						? "opacity-100"
 						: "opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100",
