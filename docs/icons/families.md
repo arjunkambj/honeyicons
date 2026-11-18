@@ -8,7 +8,7 @@ Put the symbol inside the frame when it fits with 1.8 clear all round, as `folde
 
 ## `*-off` variants
 
-Draw the base unchanged, then add a diagonal slash from top left to bottom right with 1.5 clear on each side. Delete any leftover that doesn't help someone recognise the object. The check allows 4 pieces and no crumbs. `phone-off` runs its slash the other way, top right to bottom left, because the handset lies along the usual direction and little would be left of it. `edit-off` cuts `pen`, because the slash would take the whole tip off the smaller pencil in `edit`.
+Draw the base unchanged, then add a diagonal slash from top left to bottom right with 1.5 clear on each side. Delete any leftover that doesn't help someone recognise the object. The check allows 4 pieces and no crumbs. `phone-off` runs its slash from top right to bottom left behind the handset. Leave 1.5 clear on both sides of the handset so its curve stays whole at 16px. `edit-off` cuts `pen`, because the slash would take the whole tip off the smaller pencil in `edit`.
 
 ## Folders
 
