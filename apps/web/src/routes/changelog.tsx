@@ -292,8 +292,8 @@ function ChangelogPage() {
 					</h2>
 					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
 						<li>
-							EyeOff is centered, PhoneOff keeps its handset whole at 16 px,
-							and Repeat and RepeatOne share the same size.
+							EyeOff is centered, PhoneOff keeps its handset whole at 16 px, and
+							Repeat and RepeatOne share the same size.
 						</li>
 						<li>
 							SpinnerDiagonal, SpinnerOrbit, and SpinnerWave each show a
@@ -306,7 +306,8 @@ function ChangelogPage() {
 						</li>
 						<li>
 							Nine icons changed categories. Repeat joins the playback controls
-							in Media, and Send, PaperPlane, and HandWave appear in Communication.
+							in Media, and Send, PaperPlane, and HandWave appear in
+							Communication.
 						</li>
 					</ul>
 				</section>
