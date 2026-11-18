@@ -25,7 +25,8 @@ export function InstallCommand({ className }: { className?: string }) {
 		<Tabs
 			value={selected.id}
 			onValueChange={(value) => setSelectedId(String(value))}
-			className={cn("surface w-full gap-0 rounded-2xl px-1 py-1", className)}
+			// 20px = the 32px pill tab list's 16px radius + its 4px inset.
+			className={cn("surface w-full gap-0 rounded-[20px] p-1", className)}
 		>
 			<div className="flex items-center gap-2">
 				<TabsList aria-label="Package manager">
@@ -57,7 +58,9 @@ export function InstallCommand({ className }: { className?: string }) {
 /** The home page's install command: one line with a copy button. */
 export function QuickInstall() {
 	return (
-		<div className="flex h-10 min-w-0 items-center gap-2 rounded-full bg-card pr-2 pl-4 shadow-xxs">
+		// pr-1.5 matches the (40px − 28px) / 2 = 6px gap above and below the
+		// copy button, so the two pills share a centre.
+		<div className="flex h-10 min-w-0 items-center gap-2 rounded-full bg-card pr-1.5 pl-4 shadow-xxs">
 			<pre className="min-w-0 overflow-x-auto font-mono text-caption">
 				<code>
 					<span aria-hidden className="mr-2 text-muted-foreground select-none">
