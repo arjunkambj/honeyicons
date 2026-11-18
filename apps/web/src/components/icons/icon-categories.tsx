@@ -74,7 +74,7 @@ export function CategoryChips({ selected, onSelect, counts }: CategoryProps) {
 		<nav
 			ref={rowRef}
 			aria-label="Icon categories"
-			className="no-scrollbar scroll-fade-x -mx-4 flex gap-2 overflow-x-auto px-4 [--scroll-fade-size:2rem] sm:-mx-8 sm:px-8"
+			className="no-scrollbar scroll-fade-x -mx-4 flex gap-2 overflow-x-auto scroll-px-8 px-4 [--scroll-fade-size:2rem] sm:-mx-8 sm:px-8"
 		>
 			{visibleCategories(selected, counts).map((category) => {
 				const active = selected === category.id;
