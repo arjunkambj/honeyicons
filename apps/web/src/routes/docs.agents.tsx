@@ -36,7 +36,8 @@ function AgentSetup() {
 					This works in Claude Code, Cursor, Codex, and any other agent that can
 					read a web page and run commands.
 				</Prose>
-				<div className="flex flex-col gap-2 surface rounded-2xl py-2 pr-2 pl-4 sm:flex-row sm:items-center">
+				{/* 20px = the 24px pill button's 12px radius + its 8px inset. */}
+				<div className="flex flex-col gap-2 surface rounded-[20px] py-2 pr-2 pl-4 sm:flex-row sm:items-center">
 					<p className="min-w-0 flex-1 wrap-anywhere font-mono text-caption">
 						{setupPrompt}
 					</p>

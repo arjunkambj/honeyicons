@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Matches --background in packages/ui/src/styles/globals.css. -->
+		<meta name="theme-color" content="#fafafa" />
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
 		<meta property="og:type" content="website" />
@@ -32,7 +34,12 @@
 						theme === "dark" ||
 						(theme === "system" &&
 							window.matchMedia("(prefers-color-scheme: dark)").matches);
-					if (isDark) document.documentElement.classList.add("dark");
+					if (isDark) {
+						document.documentElement.classList.add("dark");
+						document
+							.querySelector('meta[name="theme-color"]')
+							?.setAttribute("content", "#18181b");
+					}
 				} catch {}
 			})();
 		</script>

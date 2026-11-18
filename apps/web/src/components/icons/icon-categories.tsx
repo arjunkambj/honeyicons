@@ -33,7 +33,7 @@ export function CategoryRail({ selected, onSelect, counts }: CategoryProps) {
 						aria-pressed={active}
 						onClick={() => onSelect(category.id)}
 						className={cn(
-							"flex h-8 w-full items-center gap-2 rounded-xl px-2 text-label transition-colors",
+							"flex h-8 w-full items-center gap-2 rounded-xl px-2 text-label",
 							active
 								? "bg-card font-medium text-foreground shadow-xxs dark:bg-muted"
 								: "text-muted-foreground hover:bg-muted hover:text-foreground dark:hover:bg-muted/50",
@@ -74,7 +74,7 @@ export function CategoryChips({ selected, onSelect, counts }: CategoryProps) {
 		<nav
 			ref={rowRef}
 			aria-label="Icon categories"
-			className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 sm:-mx-8 sm:px-8"
+			className="no-scrollbar scroll-fade-x -mx-4 flex gap-2 overflow-x-auto scroll-px-8 px-4 [--scroll-fade-size:2rem] sm:-mx-8 sm:px-8"
 		>
 			{visibleCategories(selected, counts).map((category) => {
 				const active = selected === category.id;
@@ -85,8 +85,16 @@ export function CategoryChips({ selected, onSelect, counts }: CategoryProps) {
 						data-category={category.id}
 						aria-pressed={active}
 						onClick={() => onSelect(category.id)}
+						// Browsers skip scrolling a chip that is mostly in view; pull it
+						// past the row's scroll padding so the edge fade never covers it.
+						onFocus={(event) =>
+							event.currentTarget.scrollIntoView({
+								block: "nearest",
+								inline: "nearest",
+							})
+						}
 						className={cn(
-							"flex h-8 shrink-0 items-center gap-2 rounded-full px-3 text-label transition-colors",
+							"flex h-8 shrink-0 items-center gap-2 rounded-full px-3 text-label transition-transform duration-100 ease-out active:scale-[0.97] motion-reduce:transition-none",
 							active
 								? "bg-foreground text-background"
 								: "bg-muted text-muted-foreground hover:text-foreground",
