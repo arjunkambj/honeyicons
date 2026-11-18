@@ -60,9 +60,9 @@ smooth curves at the inner notches where the head meets the shaft.
 `File`, `FileText`, `FileCode`, `GitBranch`, `GitDiff`, `GitFork`, `GitGraph`,
 `GitPullRequest`, `Home`, `HomeAngle`, `Calendar`, `CalendarMark`,
 `CalendarAdd`, `Widget`, `WidgetAdd`, `WidgetSquare`, `WidgetSquareAdd`,
-`MusicNote`, `Quote`, `FolderTree`, `CartBag`, `CartLarge`, `Bolt`,
+`MusicNote`, `Quote`, `FolderTree`, `ShoppingBag`, `CartLarge`, `Bolt`,
 `Microphone`, `VideoCamera`, `Lock`, `LockOpen`, `Key`, `ImageAdd`, `ImageEdit`,
-`ClapperboardText`, `Pip`, `Ticket`, `VideoFrame`, `Bookmark`, `FileAdd`, `FileRemove`, and `ArchiveAlt` are redrawn from the
+`ClapperboardText`, `Pip`, `Ticket`, `VideoFrame`, `Bookmark`, `FileAdd`, `FileRemove`, and `ArchiveCheck` are redrawn from the
 user-supplied **File**, **File Text**, **File Code**, **Git Branch**,
 **Git Diff**, **Git Fork**, **Git Graph**, **Git Pull Request**, **Home**,
 **Home Angle**, **Calendar**, **Calendar Mark**, **Calendar Add**, **Widget 3**,

@@ -14,7 +14,7 @@ import { Antigravity } from "./icons/antigravity.js";
 import { AntigravityColor } from "./icons/antigravity-color.js";
 import { AppWindow } from "./icons/app-window.js";
 import { Archive } from "./icons/archive.js";
-import { ArchiveAlt } from "./icons/archive-alt.js";
+import { ArchiveCheck } from "./icons/archive-check.js";
 import { ArchiveUp } from "./icons/archive-up.js";
 import { ArrowDown } from "./icons/arrow-down.js";
 import { ArrowDownLeft } from "./icons/arrow-down-left.js";
@@ -70,10 +70,10 @@ import { CameraOff } from "./icons/camera-off.js";
 import { Captions } from "./icons/captions.js";
 import { Card } from "./icons/card.js";
 import { Cart } from "./icons/cart.js";
-import { CartBag } from "./icons/cart-bag.js";
 import { CartLarge } from "./icons/cart-large.js";
 import { Chair } from "./icons/chair.js";
 import { ChartAnalysis } from "./icons/chart-analysis.js";
+import { ChartCandlestick } from "./icons/chart-candlestick.js";
 import { ChartLine } from "./icons/chart-line.js";
 import { ChartPie } from "./icons/chart-pie.js";
 import { Chat } from "./icons/chat.js";
@@ -270,7 +270,6 @@ import { MapArrowRight } from "./icons/map-arrow-right.js";
 import { MapArrowUp } from "./icons/map-arrow-up.js";
 import { MapFolded } from "./icons/map-folded.js";
 import { MapPin } from "./icons/map-pin.js";
-import { MarketAnalysis } from "./icons/market-analysis.js";
 import { Maximize } from "./icons/maximize.js";
 import { Megaphone } from "./icons/megaphone.js";
 import { Menu } from "./icons/menu.js";
@@ -380,6 +379,7 @@ import { Share } from "./icons/share.js";
 import { ShieldAdd } from "./icons/shield-add.js";
 import { Shopify } from "./icons/shopify.js";
 import { ShopifyColor } from "./icons/shopify-color.js";
+import { ShoppingBag } from "./icons/shopping-bag.js";
 import { Shuffle } from "./icons/shuffle.js";
 import { SidebarBottom } from "./icons/sidebar-bottom.js";
 import { SidebarLeft } from "./icons/sidebar-left.js";
@@ -527,7 +527,8 @@ export const icons = {
 	"antigravity-color": AntigravityColor,
 	"app-window": AppWindow,
 	"archive": Archive,
-	"archive-alt": ArchiveAlt,
+	"archive-check": ArchiveCheck,
+	"archive-alt": ArchiveCheck,
 	"archive-up": ArchiveUp,
 	"arrow-down": ArrowDown,
 	"arrow-down-left": ArrowDownLeft,
@@ -583,10 +584,11 @@ export const icons = {
 	"captions": Captions,
 	"card": Card,
 	"cart": Cart,
-	"cart-bag": CartBag,
 	"cart-large": CartLarge,
 	"chair": Chair,
 	"chart-analysis": ChartAnalysis,
+	"chart-candlestick": ChartCandlestick,
+	"market-analysis": ChartCandlestick,
 	"chart-line": ChartLine,
 	"chart-pie": ChartPie,
 	"chat": Chat,
@@ -783,7 +785,6 @@ export const icons = {
 	"map-arrow-up": MapArrowUp,
 	"map-folded": MapFolded,
 	"map-pin": MapPin,
-	"market-analysis": MarketAnalysis,
 	"maximize": Maximize,
 	"megaphone": Megaphone,
 	"menu": Menu,
@@ -893,6 +894,8 @@ export const icons = {
 	"shield-add": ShieldAdd,
 	"shopify": Shopify,
 	"shopify-color": ShopifyColor,
+	"shopping-bag": ShoppingBag,
+	"cart-bag": ShoppingBag,
 	"shuffle": Shuffle,
 	"sidebar-bottom": SidebarBottom,
 	"sidebar-left": SidebarLeft,
@@ -1043,6 +1046,7 @@ export type IconVariantMap = {
 	"antigravity-color": "linear" | "bold";
 	"app-window": "linear" | "bold";
 	"archive": "linear" | "bold";
+	"archive-check": "linear" | "bold";
 	"archive-alt": "linear" | "bold";
 	"archive-up": "linear" | "bold";
 	"arrow-down": "linear" | "bold";
@@ -1099,10 +1103,11 @@ export type IconVariantMap = {
 	"captions": "linear" | "bold";
 	"card": "linear" | "bold";
 	"cart": "linear" | "bold";
-	"cart-bag": "linear" | "bold";
 	"cart-large": "linear" | "bold";
 	"chair": "linear" | "bold";
 	"chart-analysis": "linear" | "bold";
+	"chart-candlestick": "linear" | "bold";
+	"market-analysis": "linear" | "bold";
 	"chart-line": "linear" | "bold";
 	"chart-pie": "linear" | "bold";
 	"chat": "linear" | "bold";
@@ -1299,7 +1304,6 @@ export type IconVariantMap = {
 	"map-arrow-up": "linear" | "bold";
 	"map-folded": "linear" | "bold";
 	"map-pin": "linear" | "bold";
-	"market-analysis": "linear" | "bold";
 	"maximize": "linear" | "bold";
 	"megaphone": "linear" | "bold";
 	"menu": "linear" | "bold";
@@ -1409,6 +1413,8 @@ export type IconVariantMap = {
 	"shield-add": "linear" | "bold";
 	"shopify": "linear" | "bold";
 	"shopify-color": "linear" | "bold";
+	"shopping-bag": "linear" | "bold";
+	"cart-bag": "linear" | "bold";
 	"shuffle": "linear" | "bold";
 	"sidebar-bottom": "linear" | "bold";
 	"sidebar-left": "linear" | "bold";

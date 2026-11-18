@@ -3,9 +3,9 @@ import { createIcon } from "../create-icon.js";
 import type { IconNode } from "../types.js";
 
 const nodes: IconNode = [
-	["path", { d: "M14.5 5.7H14.7A6.3 6.3 0 0 1 14.7 18.3H13.1M15.1 16.3C15.1 16.3 13.1 17.77 13.1 18.3C13.1 18.83 15.1 20.3 15.1 20.3", stroke: "currentColor" }],
-	["path", { d: "M9.5 18.3H9.3A6.3 6.3 0 0 1 9.3 5.7H10.9M8.9 7.7C8.9 7.7 10.9 6.23 10.9 5.7C10.9 5.17 8.9 3.7 8.9 3.7", stroke: "currentColor" }],
-	["path", { d: "M11.5 10.5L12.9 9.1V13.45", stroke: "currentColor" }],
+	["path", { d: "M14.75 5.07H14.97A6.93 6.93 0 0 1 14.97 18.93H13.21M15.41 16.73C15.41 16.73 13.21 18.347 13.21 18.93C13.21 19.513 15.41 21.13 15.41 21.13", stroke: "currentColor" }],
+	["path", { d: "M9.25 18.93H9.03A6.93 6.93 0 0 1 9.03 5.07H10.79M8.59 7.27C8.59 7.27 10.79 5.653 10.79 5.07C10.79 4.487 8.59 2.87 8.59 2.87", stroke: "currentColor" }],
+	["path", { d: "M11.45 10.35L12.99 8.81V13.595", stroke: "currentColor" }],
 ];
 
 export const RepeatOne = /* @__PURE__ */ createIcon("RepeatOne", {

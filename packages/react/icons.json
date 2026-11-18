@@ -227,8 +227,11 @@
 		]
 	},
 	{
-		"name": "archive-alt",
-		"export": "ArchiveAlt",
+		"name": "archive-check",
+		"export": "ArchiveCheck",
+		"aliases": [
+			"archive-alt"
+		],
 		"category": "files",
 		"variants": [
 			"linear",
@@ -417,7 +420,7 @@
 	{
 		"name": "atom",
 		"export": "Atom",
-		"category": "ai",
+		"category": "objects",
 		"variants": [
 			"linear",
 			"bold"
@@ -706,7 +709,7 @@
 	{
 		"name": "book",
 		"export": "Book",
-		"category": "objects",
+		"category": "files",
 		"variants": [
 			"linear",
 			"bold"
@@ -1151,23 +1154,6 @@
 		]
 	},
 	{
-		"name": "cart-bag",
-		"export": "CartBag",
-		"category": "commerce",
-		"variants": [
-			"linear",
-			"bold"
-		],
-		"tags": [
-			"bag",
-			"shopping-bag",
-			"shopping",
-			"store",
-			"purchase",
-			"checkout"
-		]
-	},
-	{
 		"name": "cart-large",
 		"export": "CartLarge",
 		"category": "commerce",
@@ -1213,6 +1199,27 @@
 			"trend",
 			"growth",
 			"statistics",
+			"hugeicons"
+		]
+	},
+	{
+		"name": "chart-candlestick",
+		"export": "ChartCandlestick",
+		"aliases": [
+			"market-analysis"
+		],
+		"category": "charts",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"market",
+			"analysis",
+			"chart",
+			"candlestick",
+			"trading",
+			"finance",
 			"hugeicons"
 		]
 	},
@@ -3277,7 +3284,7 @@
 	{
 		"name": "hand-wave",
 		"export": "HandWave",
-		"category": "user",
+		"category": "chat",
 		"variants": [
 			"linear",
 			"bold"
@@ -3303,7 +3310,6 @@
 			"hash",
 			"tag",
 			"number",
-			"hastag",
 			"solar"
 		]
 	},
@@ -4417,24 +4423,6 @@
 		]
 	},
 	{
-		"name": "market-analysis",
-		"export": "MarketAnalysis",
-		"category": "charts",
-		"variants": [
-			"linear",
-			"bold"
-		],
-		"tags": [
-			"market",
-			"analysis",
-			"chart",
-			"candlestick",
-			"trading",
-			"finance",
-			"hugeicons"
-		]
-	},
-	{
 		"name": "maximize",
 		"export": "Maximize",
 		"category": "arrows",
@@ -5082,7 +5070,7 @@
 	{
 		"name": "package",
 		"export": "Package",
-		"category": "files",
+		"category": "commerce",
 		"variants": [
 			"linear",
 			"bold"
@@ -5115,7 +5103,7 @@
 	{
 		"name": "paper-plane",
 		"export": "PaperPlane",
-		"category": "actions",
+		"category": "chat",
 		"variants": [
 			"linear",
 			"bold"
@@ -5781,7 +5769,7 @@
 	{
 		"name": "repeat",
 		"export": "Repeat",
-		"category": "arrows",
+		"category": "media",
 		"variants": [
 			"linear",
 			"bold"
@@ -6068,7 +6056,7 @@
 	{
 		"name": "send",
 		"export": "Send",
-		"category": "actions",
+		"category": "chat",
 		"variants": [
 			"linear",
 			"bold"
@@ -6178,6 +6166,26 @@
 			"commerce",
 			"brand",
 			"color"
+		]
+	},
+	{
+		"name": "shopping-bag",
+		"export": "ShoppingBag",
+		"aliases": [
+			"cart-bag"
+		],
+		"category": "commerce",
+		"variants": [
+			"linear",
+			"bold"
+		],
+		"tags": [
+			"bag",
+			"shopping-bag",
+			"shopping",
+			"store",
+			"purchase",
+			"checkout"
 		]
 	},
 	{
@@ -6440,7 +6448,7 @@
 			"settings",
 			"tuning",
 			"adjust",
-			"circular",
+			"two tracks",
 			"horizontal",
 			"solar"
 		]
@@ -6476,7 +6484,7 @@
 			"settings",
 			"tuning",
 			"adjust",
-			"circular",
+			"two tracks",
 			"vertical",
 			"solar"
 		]
@@ -6721,7 +6729,7 @@
 	{
 		"name": "square-pen",
 		"export": "SquarePen",
-		"category": "actions",
+		"category": "editor",
 		"variants": [
 			"linear",
 			"bold"
@@ -7961,7 +7969,7 @@
 	{
 		"name": "waves",
 		"export": "Waves",
-		"category": "objects",
+		"category": "weather",
 		"variants": [
 			"linear",
 			"bold"

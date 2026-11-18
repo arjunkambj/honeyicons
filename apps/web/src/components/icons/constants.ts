@@ -43,7 +43,7 @@ export const CATEGORY_DETAILS: Record<CategoryFilter, CategoryMeta> = {
 	arrows: { label: "Arrows", icon: ArrowRight },
 	brands: { label: "Brands", icon: Figma },
 	charts: { label: "Charts", icon: Activity },
-	chat: { label: "Chat", icon: Chat },
+	chat: { label: "Communication", icon: Chat },
 	commerce: { label: "Commerce", icon: Cart },
 	development: { label: "Development", icon: Code },
 	devices: { label: "Devices", icon: Smartphone },
@@ -97,6 +97,11 @@ export function parseIconsSearch(search: Record<string, unknown>): IconsSearch {
 		q: text || undefined,
 		category: ICON_CATEGORIES.find((id) => id === category),
 		style: STYLE_META.find(({ id }) => id === style && id !== "linear")?.id,
-		icon: catalog.find((item) => item.name === icon)?.name,
+		icon:
+			typeof icon === "string"
+				? catalog.find(
+						(item) => item.name === icon || item.aliases?.includes(icon),
+					)?.name
+				: undefined,
 	};
 }

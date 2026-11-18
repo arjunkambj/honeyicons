@@ -73,7 +73,7 @@
 			"pallet"
 		]
 	},
-	"archive-alt": {
+	"archive-check": {
 		"tags": [
 			"archive",
 			"box",
@@ -82,7 +82,8 @@
 			"check",
 			"archive-minimalistic",
 			"solar"
-		]
+		],
+		"aliases": ["archive-alt"]
 	},
 	"archive-up": {
 		"tags": [
@@ -379,9 +380,6 @@
 	"cart": {
 		"tags": ["cart", "basket", "shopping", "store"]
 	},
-	"cart-bag": {
-		"tags": ["bag", "shopping-bag", "shopping", "store", "purchase", "checkout"]
-	},
 	"cart-large": {
 		"tags": [
 			"cart",
@@ -398,6 +396,18 @@
 	},
 	"chart-analysis": {
 		"tags": ["chart", "analysis", "trend", "growth", "statistics", "hugeicons"]
+	},
+	"chart-candlestick": {
+		"tags": [
+			"market",
+			"analysis",
+			"chart",
+			"candlestick",
+			"trading",
+			"finance",
+			"hugeicons"
+		],
+		"aliases": ["market-analysis"]
 	},
 	"chart-line": {
 		"tags": ["chart", "line", "graph", "trend", "statistics", "analytics"]
@@ -906,7 +916,7 @@
 		"tags": ["hand-wave", "hand", "wave", "hello", "greeting", "waving"]
 	},
 	"hashtag": {
-		"tags": ["hash", "tag", "number", "hastag", "solar"]
+		"tags": ["hash", "tag", "number", "solar"]
 	},
 	"heading": {
 		"tags": ["heading", "title", "header", "text", "editor", "hugeicons"]
@@ -1196,17 +1206,6 @@
 	},
 	"map-pin": {
 		"tags": ["map-pin", "map", "location", "pin"]
-	},
-	"market-analysis": {
-		"tags": [
-			"market",
-			"analysis",
-			"chart",
-			"candlestick",
-			"trading",
-			"finance",
-			"hugeicons"
-		]
 	},
 	"maximize": {
 		"tags": ["expand", "fullscreen", "resize", "arrows"]
@@ -1610,6 +1609,17 @@
 	"shopify-color": {
 		"tags": ["shop", "store", "ecommerce", "commerce", "brand", "color"]
 	},
+	"shopping-bag": {
+		"tags": [
+			"bag",
+			"shopping-bag",
+			"shopping",
+			"store",
+			"purchase",
+			"checkout"
+		],
+		"aliases": ["cart-bag"]
+	},
 	"shuffle": {
 		"tags": ["shuffle", "random", "mix", "playback", "media"]
 	},
@@ -1692,7 +1702,7 @@
 			"settings",
 			"tuning",
 			"adjust",
-			"circular",
+			"two tracks",
 			"horizontal",
 			"solar"
 		]
@@ -1714,7 +1724,7 @@
 			"settings",
 			"tuning",
 			"adjust",
-			"circular",
+			"two tracks",
 			"vertical",
 			"solar"
 		]

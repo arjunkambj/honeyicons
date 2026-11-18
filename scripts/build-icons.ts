@@ -10,10 +10,11 @@ type IconElement = [
 	children?: IconElement[],
 ];
 type IconNode = IconElement[];
-type IconMeta = Record<string, { tags?: string[] }>;
+type IconMeta = Record<string, { tags?: string[]; aliases?: string[] }>;
 type IconSource = { name: string; category: string; variants: Variant[] };
 type IconIndexEntry = {
 	name: string;
+	aliases?: string[];
 	export: string;
 	category: string;
 	variants: Variant[];
@@ -365,7 +366,11 @@ async function main() {
 		"IconVariant",
 		"IconCategory",
 	]);
-	for (const { name } of icons) {
+	const publicNames = icons.flatMap(({ name }) => [
+		name,
+		...(meta[name]?.aliases ?? []),
+	]);
+	for (const name of publicNames) {
 		if (!/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(name)) {
 			throw new Error(`Invalid icon name "${name}"; use lowercase kebab-case`);
 		}
@@ -411,14 +416,23 @@ ${nodeEntries.join(",\n")},
 });
 `;
 		await writeFile(join(outDir, `${icon.name}.ts`), source);
-		barrelExports.push(`export { ${pascal} } from "./${icon.name}.js";`);
-		catalogImports.push(`import { ${pascal} } from "./icons/${icon.name}.js";`);
-		registryEntries.push(`\t${JSON.stringify(icon.name)}: ${pascal},`);
-		variantEntries.push(
-			`\t${JSON.stringify(icon.name)}: ${icon.variants
-				.map((variant) => JSON.stringify(variant))
-				.join(" | ")};`,
+		const aliases = meta[icon.name]?.aliases;
+		const names = [icon.name, ...(aliases ?? [])];
+		const exports = [
+			pascal,
+			...(aliases ?? []).map((alias) => `${pascal} as ${toPascalCase(alias)}`),
+		];
+		barrelExports.push(
+			`export { ${exports.join(", ")} } from "./${icon.name}.js";`,
 		);
+		catalogImports.push(`import { ${pascal} } from "./icons/${icon.name}.js";`);
+		const variantType = icon.variants
+			.map((variant) => JSON.stringify(variant))
+			.join(" | ");
+		for (const name of names) {
+			registryEntries.push(`\t${JSON.stringify(name)}: ${pascal},`);
+			variantEntries.push(`\t${JSON.stringify(name)}: ${variantType};`);
+		}
 
 		const tags = meta[icon.name]?.tags ?? [];
 		const { variants } = icon;
@@ -426,7 +440,7 @@ ${nodeEntries.join(",\n")},
 			`	{
 		name: ${JSON.stringify(icon.name)},
 		pascalName: ${JSON.stringify(pascal)},
-		category: ${JSON.stringify(icon.category)},
+		category: ${JSON.stringify(icon.category)},${aliases ? `\n\t\taliases: ${JSON.stringify(aliases)},` : ""}
 		tags: ${JSON.stringify(tags)},
 		variants: ${JSON.stringify(variants)},
 		component: ${pascal},
@@ -435,6 +449,7 @@ ${nodeEntries.join(",\n")},
 		iconIndex.push({
 			name: icon.name,
 			export: pascal,
+			...(aliases && { aliases }),
 			category: icon.category,
 			variants,
 			tags,
@@ -465,6 +480,7 @@ export { ICON_CATEGORIES } from "./categories.js";
 
 export type CatalogItem = {
 	name: string;
+	aliases?: string[];
 	pascalName: string;
 	category: IconCategory;
 	tags: string[];

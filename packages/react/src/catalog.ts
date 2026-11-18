@@ -16,7 +16,7 @@ import { Antigravity } from "./icons/antigravity.js";
 import { AntigravityColor } from "./icons/antigravity-color.js";
 import { AppWindow } from "./icons/app-window.js";
 import { Archive } from "./icons/archive.js";
-import { ArchiveAlt } from "./icons/archive-alt.js";
+import { ArchiveCheck } from "./icons/archive-check.js";
 import { ArchiveUp } from "./icons/archive-up.js";
 import { ArrowDown } from "./icons/arrow-down.js";
 import { ArrowDownLeft } from "./icons/arrow-down-left.js";
@@ -72,10 +72,10 @@ import { CameraOff } from "./icons/camera-off.js";
 import { Captions } from "./icons/captions.js";
 import { Card } from "./icons/card.js";
 import { Cart } from "./icons/cart.js";
-import { CartBag } from "./icons/cart-bag.js";
 import { CartLarge } from "./icons/cart-large.js";
 import { Chair } from "./icons/chair.js";
 import { ChartAnalysis } from "./icons/chart-analysis.js";
+import { ChartCandlestick } from "./icons/chart-candlestick.js";
 import { ChartLine } from "./icons/chart-line.js";
 import { ChartPie } from "./icons/chart-pie.js";
 import { Chat } from "./icons/chat.js";
@@ -272,7 +272,6 @@ import { MapArrowRight } from "./icons/map-arrow-right.js";
 import { MapArrowUp } from "./icons/map-arrow-up.js";
 import { MapFolded } from "./icons/map-folded.js";
 import { MapPin } from "./icons/map-pin.js";
-import { MarketAnalysis } from "./icons/market-analysis.js";
 import { Maximize } from "./icons/maximize.js";
 import { Megaphone } from "./icons/megaphone.js";
 import { Menu } from "./icons/menu.js";
@@ -382,6 +381,7 @@ import { Share } from "./icons/share.js";
 import { ShieldAdd } from "./icons/shield-add.js";
 import { Shopify } from "./icons/shopify.js";
 import { ShopifyColor } from "./icons/shopify-color.js";
+import { ShoppingBag } from "./icons/shopping-bag.js";
 import { Shuffle } from "./icons/shuffle.js";
 import { SidebarBottom } from "./icons/sidebar-bottom.js";
 import { SidebarLeft } from "./icons/sidebar-left.js";
@@ -519,6 +519,7 @@ export { ICON_CATEGORIES } from "./categories.js";
 
 export type CatalogItem = {
 	name: string;
+	aliases?: string[];
 	pascalName: string;
 	category: IconCategory;
 	tags: string[];
@@ -640,12 +641,13 @@ export const catalog: CatalogItem[] = [
 		component: Archive,
 	},
 	{
-		name: "archive-alt",
-		pascalName: "ArchiveAlt",
+		name: "archive-check",
+		pascalName: "ArchiveCheck",
 		category: "files",
+		aliases: ["archive-alt"],
 		tags: ["archive","box","storage","done","check","archive-minimalistic","solar"],
 		variants: ["linear","bold"],
-		component: ArchiveAlt,
+		component: ArchiveCheck,
 	},
 	{
 		name: "archive-up",
@@ -730,7 +732,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "atom",
 		pascalName: "Atom",
-		category: "ai",
+		category: "objects",
 		tags: ["atom","science","physics","react","nucleus"],
 		variants: ["linear","bold"],
 		component: Atom,
@@ -874,7 +876,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "book",
 		pascalName: "Book",
-		category: "objects",
+		category: "files",
 		tags: ["book","guide","documentation","read","manual"],
 		variants: ["linear","bold"],
 		component: Book,
@@ -1088,14 +1090,6 @@ export const catalog: CatalogItem[] = [
 		component: Cart,
 	},
 	{
-		name: "cart-bag",
-		pascalName: "CartBag",
-		category: "commerce",
-		tags: ["bag","shopping-bag","shopping","store","purchase","checkout"],
-		variants: ["linear","bold"],
-		component: CartBag,
-	},
-	{
 		name: "cart-large",
 		pascalName: "CartLarge",
 		category: "commerce",
@@ -1118,6 +1112,15 @@ export const catalog: CatalogItem[] = [
 		tags: ["chart","analysis","trend","growth","statistics","hugeicons"],
 		variants: ["linear","bold"],
 		component: ChartAnalysis,
+	},
+	{
+		name: "chart-candlestick",
+		pascalName: "ChartCandlestick",
+		category: "charts",
+		aliases: ["market-analysis"],
+		tags: ["market","analysis","chart","candlestick","trading","finance","hugeicons"],
+		variants: ["linear","bold"],
+		component: ChartCandlestick,
 	},
 	{
 		name: "chart-line",
@@ -2130,7 +2133,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "hand-wave",
 		pascalName: "HandWave",
-		category: "user",
+		category: "chat",
 		tags: ["hand-wave","hand","wave","hello","greeting","waving"],
 		variants: ["linear","bold"],
 		component: HandWave,
@@ -2139,7 +2142,7 @@ export const catalog: CatalogItem[] = [
 		name: "hashtag",
 		pascalName: "Hashtag",
 		category: "editor",
-		tags: ["hash","tag","number","hastag","solar"],
+		tags: ["hash","tag","number","solar"],
 		variants: ["linear","bold"],
 		component: Hashtag,
 	},
@@ -2688,14 +2691,6 @@ export const catalog: CatalogItem[] = [
 		component: MapPin,
 	},
 	{
-		name: "market-analysis",
-		pascalName: "MarketAnalysis",
-		category: "charts",
-		tags: ["market","analysis","chart","candlestick","trading","finance","hugeicons"],
-		variants: ["linear","bold"],
-		component: MarketAnalysis,
-	},
-	{
 		name: "maximize",
 		pascalName: "Maximize",
 		category: "arrows",
@@ -3018,7 +3013,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "package",
 		pascalName: "Package",
-		category: "files",
+		category: "commerce",
 		tags: ["package","box","parcel","shipping","delivery","hugeicons"],
 		variants: ["linear","bold"],
 		component: Package,
@@ -3034,7 +3029,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "paper-plane",
 		pascalName: "PaperPlane",
-		category: "actions",
+		category: "chat",
 		tags: ["send","message","submit","plane","plane-3","plain-3","solar"],
 		variants: ["linear","bold"],
 		component: PaperPlane,
@@ -3370,7 +3365,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "repeat",
 		pascalName: "Repeat",
-		category: "arrows",
+		category: "media",
 		tags: ["loop","cycle","refresh","solar"],
 		variants: ["linear","bold"],
 		component: Repeat,
@@ -3514,7 +3509,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "send",
 		pascalName: "Send",
-		category: "actions",
+		category: "chat",
 		tags: ["send","sent","message","paper-plane","delivery","hugeicons"],
 		variants: ["linear","bold"],
 		component: Send,
@@ -3566,6 +3561,15 @@ export const catalog: CatalogItem[] = [
 		tags: ["shop","store","ecommerce","commerce","brand","color"],
 		variants: ["linear","bold"],
 		component: ShopifyColor,
+	},
+	{
+		name: "shopping-bag",
+		pascalName: "ShoppingBag",
+		category: "commerce",
+		aliases: ["cart-bag"],
+		tags: ["bag","shopping-bag","shopping","store","purchase","checkout"],
+		variants: ["linear","bold"],
+		component: ShoppingBag,
 	},
 	{
 		name: "shuffle",
@@ -3691,7 +3695,7 @@ export const catalog: CatalogItem[] = [
 		name: "sliders-horizontal-alt",
 		pascalName: "SlidersHorizontalAlt",
 		category: "settings",
-		tags: ["sliders","settings","tuning","adjust","circular","horizontal","solar"],
+		tags: ["sliders","settings","tuning","adjust","two tracks","horizontal","solar"],
 		variants: ["linear","bold"],
 		component: SlidersHorizontalAlt,
 	},
@@ -3707,7 +3711,7 @@ export const catalog: CatalogItem[] = [
 		name: "sliders-vertical-alt",
 		pascalName: "SlidersVerticalAlt",
 		category: "settings",
-		tags: ["sliders","settings","tuning","adjust","circular","vertical","solar"],
+		tags: ["sliders","settings","tuning","adjust","two tracks","vertical","solar"],
 		variants: ["linear","bold"],
 		component: SlidersVerticalAlt,
 	},
@@ -3826,7 +3830,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "square-pen",
 		pascalName: "SquarePen",
-		category: "actions",
+		category: "editor",
 		tags: ["send-message","compose","edit","write","pencil"],
 		variants: ["linear","bold"],
 		component: SquarePen,
@@ -4442,7 +4446,7 @@ export const catalog: CatalogItem[] = [
 	{
 		name: "waves",
 		pascalName: "Waves",
-		category: "objects",
+		category: "weather",
 		tags: ["waves","water","sea","ocean"],
 		variants: ["linear","bold"],
 		component: Waves,
