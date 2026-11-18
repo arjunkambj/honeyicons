@@ -45,7 +45,7 @@ function Home() {
 						<Link
 							key={to}
 							to={to}
-							className={`rounded-full px-3 py-2 text-muted-foreground transition-colors hover:text-foreground ${
+							className={`rounded-full px-3 py-2 text-muted-foreground hover:text-foreground ${
 								to === "/changelog" ? "hidden sm:block" : ""
 							}`}
 						>
@@ -58,7 +58,7 @@ function Home() {
 					target="_blank"
 					rel="noreferrer"
 					aria-label="Honeyicons on GitHub"
-					className="ml-auto flex size-8 shrink-0 items-center justify-center text-muted-foreground transition-colors hover:text-foreground"
+					className="ml-auto flex size-8 shrink-0 items-center justify-center text-muted-foreground hover:text-foreground"
 				>
 					<Github size={20} />
 				</a>

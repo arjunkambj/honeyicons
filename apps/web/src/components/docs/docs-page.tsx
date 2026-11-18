@@ -59,7 +59,7 @@ function TableOfContents({ toc }: { toc: readonly TocItem[] }) {
 							aria-current={active === id ? "location" : undefined}
 							onClick={() => setActive(id)}
 							className={cn(
-								"-ml-px block border-l py-2 pl-4 transition-colors",
+								"-ml-px block border-l py-2 pl-4",
 								active === id
 									? "border-primary font-medium text-primary"
 									: "border-transparent text-muted-foreground hover:text-foreground",
@@ -86,7 +86,7 @@ function PagerLink({
 		<Link
 			to={page.to}
 			className={cn(
-				"group flex flex-1 flex-col gap-1 surface rounded-2xl p-4 transition-colors hover:bg-card",
+				"group flex flex-1 flex-col gap-1 surface rounded-2xl p-4 transition-transform duration-100 ease-out hover:bg-card active:scale-[0.99] motion-reduce:transition-none",
 				next && "items-end text-right",
 			)}
 		>

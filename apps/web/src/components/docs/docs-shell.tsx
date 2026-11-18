@@ -6,7 +6,7 @@ import { type DocsNavItem, docsNav, docsPages } from "./docs-nav";
 
 function navItemClass(selected: boolean) {
 	return cn(
-		"flex h-8 w-full items-center gap-2 rounded-xl px-2 text-label transition-colors focus-visible:outline-2 focus-visible:outline-ring",
+		"flex h-8 w-full items-center gap-2 rounded-xl px-2 text-label focus-visible:outline-2 focus-visible:outline-ring",
 		selected
 			? "bg-card font-medium text-foreground shadow-xxs dark:bg-muted"
 			: "text-muted-foreground hover:bg-muted hover:text-foreground dark:hover:bg-muted/50",
