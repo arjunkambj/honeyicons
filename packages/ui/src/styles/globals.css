@@ -12,6 +12,7 @@ Color: five. Everything else below is one of them, or one of them thinned.
 Type: caption, label, body, lead, heading, title, display.
 Spacing: 4, 8, 12, 16, 24, 32, 48, 64 px (Tailwind steps 1, 2, 3, 4, 6, 8, 12, 16). */
 :root {
+	color-scheme: light;
 	--background: #fafafa;
 	--card: #ffffff;
 	--foreground: oklch(0.274 0.006 286.033);
@@ -48,6 +49,7 @@ Spacing: 4, 8, 12, 16, 24, 32, 48, 64 px (Tailwind steps 1, 2, 3, 4, 6, 8, 12, 1
 }
 
 .dark {
+	color-scheme: dark;
 	--background: #18181b;
 	--card: #212124;
 	--foreground: oklch(0.985 0 0);
@@ -125,7 +127,7 @@ Spacing: 4, 8, 12, 16, 24, 32, 48, 64 px (Tailwind steps 1, 2, 3, 4, 6, 8, 12, 1
 		@apply font-heading;
 	}
 	html {
-		@apply font-sans;
+		@apply font-sans bg-background;
 		scrollbar-gutter: stable;
 	}
 	button:not(:disabled),

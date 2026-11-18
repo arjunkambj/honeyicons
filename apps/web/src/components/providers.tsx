@@ -1,6 +1,7 @@
 import { Toaster } from "@honeyicons/ui/components/sonner";
 import { ReactLenis } from "lenis/react";
 import type { ReactNode } from "react";
+import { ThemeColor } from "./theme-color";
 import { ThemeProvider } from "./theme-provider";
 
 export default function Providers({ children }: { children: ReactNode }) {
@@ -11,6 +12,7 @@ export default function Providers({ children }: { children: ReactNode }) {
 			enableSystem
 			disableTransitionOnChange
 		>
+			<ThemeColor />
 			<ReactLenis
 				root
 				options={{
