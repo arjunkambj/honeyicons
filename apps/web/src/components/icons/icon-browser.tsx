@@ -51,10 +51,15 @@ function isTypingTarget(target: EventTarget | null) {
 }
 
 function matchesQuery(item: (typeof catalog)[number], needle: string) {
+	const nameQuery = needle.replaceAll(" ", "-");
 	return (
 		!needle ||
-		item.name.includes(needle) ||
+		item.name.includes(nameQuery) ||
 		item.pascalName.toLowerCase().includes(needle) ||
+		item.aliases?.some(
+			(alias) =>
+				alias.includes(nameQuery) || alias.replaceAll("-", "").includes(needle),
+		) ||
 		item.tags.some((tag) => tag.toLowerCase().includes(needle))
 	);
 }

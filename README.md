@@ -70,7 +70,9 @@ pnpm build
    Never edit those generated files by hand.
 
 Use descriptive kebab-case names, such as `folder-add` or `volume-off`.
-Renaming an icon renames its export. A new category also needs a label and icon
+When renaming a published icon, list its former kebab-case name in the new
+entry’s `aliases` in `icons/meta.json` to preserve imports and catalog links.
+A new category also needs a label and icon
 in `CATEGORY_DETAILS` in `apps/web/src/components/icons/constants.ts`.
 
 The drawing rules for strokes, spacing, bold versions, and brand marks are in

@@ -285,7 +285,7 @@ Its geometry is scaled to 90% around the center of the 24-unit grid, preserving
 the sloped roof and smooth corner curves. It uses a 1.8-unit stroke, rounded
 caps and joins, and inset wall endpoints at the shared baseline.
 
-`ChartAnalysis`, `Analytics`, `Send`, and `MarketAnalysis` use the
+`ChartAnalysis`, `Analytics`, `Send`, and `ChartCandlestick` use the
 `ChartAnalysisIcon`, `Analytics03Icon`, `SentIcon`, and `MarketAnalysisIcon`
 exports from `@hugeicons/core-free-icons` 4.3.5 under the MIT license reproduced
 below. Source paths are preserved; component keys and per-path stroke weights
@@ -366,9 +366,9 @@ weight are preserved with `currentColor`; unused source attributes are removed.
 `File`, `FileText`, `FileCode`, `GitBranch`, `GitDiff`, `GitFork`, `GitGraph`,
 `GitPullRequest`, `Home`, `HomeAngle`, `Calendar`, `CalendarMark`,
 `Widget`, `WidgetAdd`, `WidgetSquare`, `WidgetSquareAdd`,
-`MusicNote`, `Quote`, `CartBag`, `CartLarge`, `Bolt`,
+`MusicNote`, `Quote`, `ShoppingBag`, `CartLarge`, `Bolt`,
 `Microphone`, `VideoCamera`, `Lock`, `LockOpen`, `Key`, `ImageAdd`, `ImageEdit`,
-`ClapperboardText`, `Pip`, `Ticket`, `VideoFrame`, `Bookmark`, `FileAdd`, `FileRemove`, and `ArchiveAlt` are redrawn from the
+`ClapperboardText`, `Pip`, `Ticket`, `VideoFrame`, `Bookmark`, `FileAdd`, `FileRemove`, and `ArchiveCheck` are redrawn from the
 user-supplied **File**, **File Text**, **File Code**, **Git Branch**,
 **Git Diff**, **Git Fork**, **Git Graph**, **Git Pull Request**, **Home**,
 **Home Angle**, **Calendar**, **Calendar Mark**, **Widget 3**,
@@ -891,7 +891,7 @@ were re-spaced or rewritten as strokes, with their sources unchanged.
 
 `Bell`, `BellOff`, `BellRing`, `Wallet`, `Plane`, `Server`, `Webhook`, `Battery`,
 `BatteryLow`, `BatteryCharging`, `Printer`, `VideoCamera`, `VideoOff`, `Smartphone`,
-`Tablet`, `Captions`, `FileCode`, `Cart`, `CartBag`, `MapPin`, `Globe`, and
+`Tablet`, `Captions`, `FileCode`, `Cart`, `ShoppingBag`, `MapPin`, `Globe`, and
 `HandWave` are now adapted from Lucide and redrawn on the 1.8-unit line. The Lucide
 license below applies.
 
