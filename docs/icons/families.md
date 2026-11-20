@@ -22,7 +22,7 @@ Draw the base unchanged, then add a diagonal slash from top left to bottom right
 
 ## Files
 
-Gently rounded, with slightly taller page proportions. New variants reuse `icons/linear/files/file.svg`.
+The linear page is 17.6 wide and 21.6 tall, with gently rounded corners. New variants reuse `icons/linear/files/file.svg`.
 
 ## Users
 
