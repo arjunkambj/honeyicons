@@ -119,7 +119,7 @@ function IconCell({
 				{!guides
 					? item.name
 					: bounds
-						? `${(bounds.height * scale).toFixed(1)} × ${(bounds.width * scale).toFixed(1)}`
+						? `${(bounds.width * scale).toFixed(1)} × ${(bounds.height * scale).toFixed(1)}`
 						: "—"}
 			</span>
 		</button>
