@@ -19,17 +19,30 @@ type IconBounds = { x: number; y: number; width: number; height: number };
 
 function measureBounds(svg: SVGSVGElement): IconBounds {
 	// Animated icons can mark a stationary shape for stable bounds.
-	const shape =
-		svg.querySelector<SVGGraphicsElement>("[data-honeyicons-bounds]") ?? svg;
-	const { x, y, width, height } = shape.getBBox();
-	// Include round strokes so stroked and filled icons compare fairly.
-	const stroke = Number(svg.getAttribute("stroke-width") ?? 0);
-	return {
-		x: x - stroke / 2,
-		y: y - stroke / 2,
-		width: width + stroke,
-		height: height + stroke,
-	};
+	const marker = svg.querySelector<SVGGraphicsElement>(
+		"[data-honeyicons-bounds]",
+	);
+	if (marker) return marker.getBBox();
+
+	const bounds = svg.getBBox();
+	const radius = Number(svg.getAttribute("stroke-width")) / 2;
+	if (!radius) return bounds;
+
+	// Chromium's getBBox() measures centrelines. Only stroked shapes extend
+	// by the round stroke radius. Filled details already fit within bounds.
+	let { x, y } = bounds;
+	let right = x + bounds.width;
+	let bottom = y + bounds.height;
+	for (const shape of svg.querySelectorAll<SVGGraphicsElement>(
+		'[stroke]:not([stroke="none"])',
+	)) {
+		const box = shape.getBBox();
+		x = Math.min(x, box.x - radius);
+		y = Math.min(y, box.y - radius);
+		right = Math.max(right, box.x + box.width + radius);
+		bottom = Math.max(bottom, box.y + box.height + radius);
+	}
+	return { x, y, width: right - x, height: bottom - y };
 }
 
 function GuideOverlay({
