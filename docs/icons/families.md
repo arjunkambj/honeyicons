@@ -12,7 +12,7 @@ Draw the base unchanged, then add a diagonal slash from top left to bottom right
 
 ## Folders
 
-`icons/linear/files/folder.svg` is the base: 21.6 wide and 18 tall, corners 3, tab curves 2, no dash. The strokes run from 2.1 to 21.9 across, with the tab top at 3.9, the body top at 6.9, and the bottom at 20.1.
+`icons/linear/files/folder.svg` is the base: 21.4 wide and 17.8 tall in linear, corners 3, tab curves 2, no dash. The strokes run from 2.1 to 21.9 across, with the tab top at 3.9, the body top at 6.9, and the bottom at 20.1.
 
 - Symbols sit inside, centred on 12, 13.5.
 - `folder-open` keeps the base's tab, left side, and bottom. Its flap overhangs on the right and its line starts inside the folder. In bold, the flap line becomes the 1.8 gap.
@@ -45,4 +45,4 @@ Icons with an arrow, including cloud transfers and import and export, reuse the 
 
 ## Spinners
 
-`spinner` and `spinner-arc` are a 1.5 ring drawn as filled outlines, lighter than the 1.8 line on purpose. The check skips spinners because they're made of faint, animated parts, so look at them by eye.
+`spinner` and `spinner-arc` are a 1.5 ring drawn as filled outlines, lighter than the 1.6 line on purpose. The check skips spinners because they're made of faint, animated parts, so look at them by eye.

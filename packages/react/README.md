@@ -51,7 +51,7 @@ import { Bell, Search } from "@honeyicons/react";
 ```
 
 Requires React 18 or later. Icons accept SVG props, `size` (default `24`),
-`color` (default `currentColor`), and `strokeWidth` (default `1.8`).
+`color` (default `currentColor`), and `strokeWidth` (default `1.6` for linear and `1.8` for bold).
 Use `title`, `aria-label`, or `aria-labelledby` to give an icon an accessible
 name. Icons without a name are decorative by default. Explicit `role` and
 `aria-hidden` props override these defaults.

@@ -97,7 +97,7 @@ export const IconBase = forwardRef<SVGSVGElement, IconBaseProps>(
 			iconNode,
 			size = 24,
 			color = "currentColor",
-			strokeWidth = 1.8,
+			strokeWidth,
 			title,
 			className,
 			style,

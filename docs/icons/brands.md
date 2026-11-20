@@ -6,7 +6,7 @@ Add a brand only when the user names it.
 
 - Ship every brand in both style folders. A solid official mark uses one drawing in both. Only a mark with a genuine line form gets its own linear drawing, as Instagram, Snapchat, Figma, and Meta do; bold keeps the filled logo.
 - Keep official geometry. Corners and proportions stay as the brand drew them, and the check measures only placement.
-- Draw a ribbon mark's line form, like Meta's, as one 1.8 line along the official mark's centreline, scaled so its outer edge meets the bold mark's footprint.
+- Draw a ribbon mark's line form, like Meta's, as one 1.6 line along the official mark's centreline, scaled so its outer edge meets the bold mark's footprint.
 - When a mark's pieces overlap and only color tells them apart, as in Google Ads, the mono drawing keeps the front pieces whole and trims the back piece 1.5 clear of them. The color drawing keeps the official overlap.
 
 ## Color logos

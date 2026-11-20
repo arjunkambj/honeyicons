@@ -67,14 +67,14 @@ export function Toolbar() {
 }
 ```
 
-| Prop          | Default        | Notes                                                                                                     |
-| ------------- | -------------- | --------------------------------------------------------------------------------------------------------- |
-| `icon`        | required       | The kebab-case `name` from the index, typed as `IconName`. Unknown names throw.                           |
-| `size`        | `24`           | Number or CSS length (`"1em"` follows the font size). Sets width and height; don't pass `width`/`height`. |
-| `color`       | `currentColor` | Prefer inheriting text color via `className` (`text-red-500`) over hard-coded colors.                     |
-| `strokeWidth` | `1.8`          | Affects stroked icons only; filled-outline icons keep their baked weight.                                 |
-| `variant`     | `"linear"`     | `"linear"` or `"bold"`. Every icon has both; any other variant throws.                                    |
-| `title`       | none           | Gives the icon an accessible name (`role="img"`).                                                         |
+| Prop          | Default                  | Notes                                                                                                     |
+| ------------- | ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| `icon`        | required                 | The kebab-case `name` from the index, typed as `IconName`. Unknown names throw.                           |
+| `size`        | `24`                     | Number or CSS length (`"1em"` follows the font size). Sets width and height; don't pass `width`/`height`. |
+| `color`       | `currentColor`           | Prefer inheriting text color via `className` (`text-red-500`) over hard-coded colors.                     |
+| `strokeWidth` | `1.6` linear, `1.8` bold | Affects stroked icons only; filled-outline icons keep their baked weight.                                 |
+| `variant`     | `"linear"`               | `"linear"` or `"bold"`. Every icon has both; any other variant throws.                                    |
+| `title`       | none                     | Gives the icon an accessible name (`role="img"`).                                                         |
 
 Icons also accept `className`, `style`, event handlers, any other SVG props, and a `ref` to the `<svg>`.
 

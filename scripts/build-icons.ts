@@ -1,6 +1,8 @@
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
+import { DEFAULT_STROKE_WIDTH } from "../packages/react/src/types.ts";
+
 const VARIANTS = ["linear", "bold"] as const;
 type Variant = (typeof VARIANTS)[number];
 
@@ -168,7 +170,7 @@ function parseNodes(xml: string, file: string): IconNode {
 	return nodes;
 }
 
-// IconBase scopes ids per rendered icon and draws every stroke at 1.8, so each
+// IconBase scopes ids and sets stroke width per variant, so each
 // reference must be an unquoted url(#id) to an id defined once in the same
 // file, and nested nodes can't set inline styles or their own stroke width.
 function checkNodes(nodes: IconNode, file: string) {
@@ -188,7 +190,7 @@ function checkNodes(nodes: IconNode, file: string) {
 			}
 			if ("strokeWidth" in attrs) {
 				throw new Error(
-					`${file}: <${tag}> sets stroke-width; only the root <svg> may, as "1.8"`,
+					`${file}: <${tag}> sets stroke-width; only the root <svg> may set it`,
 				);
 			}
 			for (const [key, value] of Object.entries(attrs)) {
@@ -216,7 +218,7 @@ function checkNodes(nodes: IconNode, file: string) {
 	}
 }
 
-function parseSvg(svg: string, file: string) {
+function parseSvg(svg: string, file: string, variant: Variant) {
 	const open = svg.match(/<svg\b([^>]*)>/i);
 	if (!open?.[1] || open.index === undefined) {
 		throw new Error(`${file}: missing <svg>`);
@@ -232,11 +234,14 @@ function parseSvg(svg: string, file: string) {
 			`${file}: viewBox must be "0 0 24 24", got ${JSON.stringify(viewBox)}`,
 		);
 	}
-	// Root attributes are dropped and IconBase draws every stroke at 1.8, so any
+	// Root attributes are dropped and IconBase supplies the default width, so any
 	// other declared width only misleads people previewing the source file.
-	if (strokeWidth !== undefined && strokeWidth !== "1.8") {
+	if (
+		strokeWidth !== undefined &&
+		strokeWidth !== String(DEFAULT_STROKE_WIDTH[variant])
+	) {
 		throw new Error(
-			`${file}: stroke-width must be "1.8", got ${JSON.stringify(strokeWidth)}`,
+			`${file}: stroke-width must be "${DEFAULT_STROKE_WIDTH[variant]}", got ${JSON.stringify(strokeWidth)}`,
 		);
 	}
 	// Root paint is dropped too, so a drawing that relies on it would ship invisible.
@@ -396,7 +401,7 @@ async function main() {
 		for (const variant of icon.variants) {
 			const relative = `${variant}/${icon.category}/${icon.name}.svg`;
 			const svg = await readFile(join(iconsDir, relative), "utf8");
-			variantNodes.push(serializeNodes(parseSvg(svg, relative)));
+			variantNodes.push(serializeNodes(parseSvg(svg, relative, variant)));
 		}
 		// Brand marks often use the same drawing in every variant; emit it once.
 		const [firstNodes] = variantNodes;
