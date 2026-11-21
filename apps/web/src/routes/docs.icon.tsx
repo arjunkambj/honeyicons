@@ -111,7 +111,11 @@ function IconComponentPage() {
 						The icon’s color. Leave it out and the icon matches the text around
 						it. Icons ending in <code>-color</code> keep their brand colors.
 					</ParamField>
-					<ParamField name="strokeWidth" type="number" defaultValue="1.8">
+					<ParamField
+						name="strokeWidth"
+						type="number"
+						defaultValue="1.6 linear / 1.8 bold"
+					>
 						Line weight for icons drawn with lines. Icons drawn as filled shapes
 						ignore it.
 					</ParamField>

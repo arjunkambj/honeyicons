@@ -3,6 +3,10 @@
 Honeyicons is released under the MIT License; see `LICENSE`. The icons below
 are adapted from third-party sets, and their source licenses still apply.
 
+The current linear style uses a 1.6-unit line. Existing stroked drawings and
+baked outlines were lightened, and the folded-page family was narrowed.
+Earlier adaptation notes below record the weights used at the time.
+
 The requested consistency review smooths `Puzzle`'s tab transitions, widens
 `Pause`'s rounded bars, simplifies `Fingerprint`'s tight interior curves, and
 cleans `Gift`'s bow and lid joins. `SlidersHorizontal`, `SlidersVertical`, and
@@ -718,7 +722,7 @@ The bold `Meta` joins the three pieces of the official Meta symbol, as
 published in the [SVG Logos](https://github.com/gilbarbara/logos) collection
 under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/), into one
 outline 21 units wide. The linear `Meta` traces the ribbon's centerline as a
-single 1.8-unit line whose outer edge meets the bold mark's footprint.
+single 1.6-unit line whose outer edge meets the bold mark's footprint.
 `MetaColor` keeps the three official pieces and their gradients.
 
 `GoogleAds` redraws Google's Ads product logo from its construction: a bar, a

@@ -2,6 +2,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { Resvg } from "@resvg/resvg-js";
+import { DEFAULT_STROKE_WIDTH } from "../packages/react/src/types.ts";
 import { doubleQuoted, fitDrawing } from "./icon-geometry.ts";
 
 // Renders every icon the way IconBase ships it, measures the pixels, and fails on
@@ -34,7 +35,7 @@ const LIMIT = {
 	slashGap: 1.5,
 	channel: 1.5,
 	crampedArea: 5,
-	line: 1.8,
+	line: DEFAULT_STROKE_WIDTH.linear,
 	crumbArea: 3,
 	offPieces: 4,
 	boxDrift: 0.2,
@@ -55,14 +56,14 @@ const RULES = {
 	},
 	size: {
 		what: `The longest side is ${LIMIT.longSide}, give or take ${LIMIT.longSideSlack}, so neighbours match. Logos and marks with no body, like arrows and letters, are exempt. A new mark goes in MARK_NAMES in scripts/check-icons.ts.`,
-		fix: "Run pnpm check:icons --fit <name>, then look at it. It rewrites the coordinates, so strokes stay 1.8. Bold scales as a whole, so derive it again if its gaps look wide.",
+		fix: "Run pnpm check:icons --fit <name>, then look at it. It rewrites the coordinates, so strokes keep their weight. Bold scales as a whole, so derive it again if its gaps look wide.",
 	},
 	centre: {
 		what: `The drawing's box is centred on 12, 12, within ${LIMIT.centreDrift}.`,
 		fix: "Run pnpm check:icons --fit <name>, or move the whole drawing by the amount shown. Logos move as a group.",
 	},
 	spacing: {
-		what: `Separate parts stay at least ${LIMIT.gap} apart, the width of the line. The slash in *-off icons needs ${LIMIT.slashGap}.`,
+		what: `Separate parts stay at least ${LIMIT.gap} apart. The slash in *-off icons needs ${LIMIT.slashGap}.`,
 		fix: "Move the parts apart, shrink the inner part, or drop a detail.",
 	},
 	cramped: {
@@ -122,7 +123,12 @@ const SHAPE_NODE =
 	/<(path|circle|rect|ellipse|line|polygon|polyline)\b([^>]*?)(\/?)>/g;
 
 /** The drawing as IconBase renders it: root attributes replaced, filled nodes unstroked. */
-function asShipped(source: string, file: string, color = "#000") {
+function asShipped(
+	source: string,
+	file: string,
+	variant: Variant,
+	color = "#000",
+) {
 	const quoted = doubleQuoted(source);
 	const open = quoted.match(/<svg\b[^>]*>/i);
 	if (!open || open.index === undefined) {
@@ -143,7 +149,7 @@ function asShipped(source: string, file: string, color = "#000") {
 			})
 		: inner;
 	const stroke = strokes
-		? ` stroke="${color}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"`
+		? ` stroke="${color}" stroke-width="${DEFAULT_STROKE_WIDTH[variant]}" stroke-linecap="round" stroke-linejoin="round"`
 		: "";
 	const svg =
 		`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"${stroke}>${body}</svg>`.replaceAll(
@@ -365,8 +371,9 @@ function checkDrawing(icon: IconFile, svg: string, strokes: boolean) {
 	const sizeOff = Math.abs(longest - LIMIT.longSide);
 	if (!isBrand && !isMark(icon) && sizeOff > LIMIT.longSideSlack) {
 		// A stroke keeps its width when the drawing scales, so only the rest grows.
+		const line = DEFAULT_STROKE_WIDTH[icon.variant];
 		const scale = strokes
-			? (LIMIT.longSide - LIMIT.line) / (longest - LIMIT.line)
+			? (LIMIT.longSide - line) / (longest - line)
 			: LIMIT.longSide / longest;
 		add(
 			"size",
@@ -467,7 +474,7 @@ async function listIconFiles() {
 
 async function readDrawing(icon: IconFile, color?: string) {
 	const path = join(iconsDir, icon.variant, icon.category, `${icon.name}.svg`);
-	return asShipped(await readFile(path, "utf8"), path, color);
+	return asShipped(await readFile(path, "utf8"), path, icon.variant, color);
 }
 
 async function checkIcons(only: string[]) {
@@ -580,13 +587,18 @@ const centreOf = (box: Box) => ({
 type FitTarget = { longest?: number; x: number; y: number };
 
 /** Returns the fitted source and its box. Throws if it can't reach the target. */
-function fitSource(source: string, file: string, target: FitTarget) {
+function fitSource(
+	source: string,
+	file: string,
+	variant: Variant,
+	target: FitTarget,
+) {
 	let next = source;
 	let scaled = 1;
 	for (let attempt = 0; attempt < 4; attempt++) {
-		const { svg, strokes } = asShipped(next, file);
+		const { svg, strokes } = asShipped(next, file, variant);
 		const box = measureWide(svg);
-		const inset = strokes ? LIMIT.line : 0;
+		const inset = strokes ? DEFAULT_STROKE_WIDTH[variant] : 0;
 		if (target.longest && longestSide(box) - inset < 1) {
 			throw new Error(`${file}: too small to scale.`);
 		}
@@ -606,7 +618,7 @@ function fitSource(source: string, file: string, target: FitTarget) {
 			dy: target.y - y * scale,
 		});
 	}
-	const box = measureWide(asShipped(next, file).svg);
+	const box = measureWide(asShipped(next, file, variant).svg);
 	const { x, y } = centreOf(box);
 	const sizeMissed =
 		target.longest && Math.abs(longestSide(box) - target.longest) > 0.1;
@@ -640,7 +652,8 @@ async function fitIcons(names: string[]) {
 		const linearSource = await readFile(linearPath, "utf8");
 		const boldSource = await readFile(boldPath, "utf8");
 
-		const before = measureWide(asShipped(linearSource, linearPath).svg);
+		const drawing = asShipped(linearSource, linearPath, "linear");
+		const before = measureWide(drawing.svg);
 		const { x, y } = centreOf(before);
 		const resize =
 			linear.category !== "brands" &&
@@ -652,16 +665,16 @@ async function fitIcons(names: string[]) {
 			continue;
 		}
 
-		const fitted = fitSource(linearSource, linearPath, {
+		const fitted = fitSource(linearSource, linearPath, "linear", {
 			longest: resize ? LIMIT.longSide : undefined,
 			x: 12,
 			y: 12,
 		});
 		const centre = centreOf(fitted.box);
 		const boldFitted =
-			linearSource === boldSource
+			linearSource === boldSource && !drawing.strokes
 				? fitted
-				: fitSource(boldSource, boldPath, {
+				: fitSource(boldSource, boldPath, "bold", {
 						longest: resize ? longestSide(fitted.box) : undefined,
 						...centre,
 					});
@@ -671,7 +684,7 @@ async function fitIcons(names: string[]) {
 
 		const size = `${round(fitted.box.right - fitted.box.left, 1)} × ${round(fitted.box.bottom - fitted.box.top, 1)}`;
 		const notes = [
-			resize && !asShipped(linearSource, linearPath).strokes
+			resize && !drawing.strokes
 				? "Linear is a filled outline, so its line grew too."
 				: "",
 			linearSource !== boldSource && boldFitted.scaled > 1.05

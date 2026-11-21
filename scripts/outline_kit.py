@@ -5,7 +5,7 @@ Needs skia-pathops and fonttools. See docs/icons/bold.md.
 Example, for a folder with a plus knocked out of it:
 
     body = solid(FOLDER_PATH)
-    print(bold_svg(minus(body, outline(to_path(PLUS_PATH)))))
+    print(bold_svg(minus(body, outline(to_path(PLUS_PATH), BOLD_GAP))))
 """
 import math
 import pathops
@@ -13,7 +13,8 @@ from fontTools.svgLib.path import parse_path
 from fontTools.pens.transformPen import TransformPen
 from fontTools.qu2cu import qu2cu
 
-LINE = 1.8
+LINE = 1.6
+BOLD_GAP = 1.8
 SCALE = 64
 
 
@@ -164,7 +165,7 @@ def centreline_d(d, transform):
 
 def linear_svg(nodes):
     body = "\n".join(f"  {n}" for n in nodes)
-    return f'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">\n{body}\n</svg>\n'
+    return f'<svg viewBox="0 0 24 24" fill="none" stroke-width="{LINE}" stroke-linecap="round" stroke-linejoin="round">\n{body}\n</svg>\n'
 
 
 def stroke_node(d):

@@ -23,7 +23,7 @@ Icon includes the full collection in the bundle. For fixed icons, use named impo
 ## Conventions
 
 - Render icons with Icon and names from the icon index. Do not invent names.
-- Icons use a 24 by 24 viewBox, currentColor, and a default 1.8-unit stroke with rounded caps and joins.
+- Icons use a 24 by 24 viewBox, currentColor, and rounded caps and joins. Stroked linear icons default to 1.6 units and stroked bold icons to 1.8 units.
 - Use size={16} or size={24} for common interface sizes.
 - Preserve supplied filled geometry. Some linear icons use filled outlines; strokeWidth does not change their baked-in weight.
 - The variant prop accepts "linear" or "bold". Every icon has both and defaults to linear; any other variant throws.
