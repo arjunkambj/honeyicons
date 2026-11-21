@@ -58,8 +58,8 @@ function Introduction() {
 
 			<Section id="how-they-are-drawn" title="How the icons are drawn">
 				<Prose>
-					Each icon is drawn on a 24 by 24 grid with a 1.8 line and round ends.
-					At 16px the line is 1.2px thick and at 24px it is 1.8px. Lines are
+					Linear icons use a 24 by 24 grid with a 1.6 line and round ends. At
+					16px the line is about 1.07px thick and at 24px it is 1.6px. Lines are
 					placed to line up with the screen’s pixels at 16, 20, and 24, so small
 					icons stay sharp instead of going blurry.
 				</Prose>

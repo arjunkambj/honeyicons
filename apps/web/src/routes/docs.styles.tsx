@@ -60,7 +60,7 @@ function StylesPage() {
 		>
 			<Section id="linear-and-bold" title="Linear and bold">
 				<Prose>
-					Linear is the default: outlines with a 1.8 line. Bold fills the same
+					Linear is the default: outlines with a 1.6 line. Bold fills the same
 					shape, so you can swap one for the other without the layout moving. A
 					common pattern is linear for a menu and bold for the item that’s
 					selected.
@@ -127,9 +127,8 @@ function StylesPage() {
 				</Preview>
 				<CodeBlock code={colorCode} label="color example" />
 				<Callout tone="tip">
-					Changing the line weight with <code>strokeWidth</code> works, but the
-					icons are drawn for 1.8. Other weights can make details touch or look
-					thin.
+					Use <code>strokeWidth</code> to adjust stroked icons. Filled outlines
+					keep the weight drawn into their paths.
 				</Callout>
 			</Section>
 		</DocsPage>

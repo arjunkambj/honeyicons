@@ -5,7 +5,12 @@ import {
 } from "react";
 
 import { IconBase, type IconBaseProps } from "./icon-base.js";
-import { ICON_VARIANTS, type IconNodeMap, type IconVariant } from "./types.js";
+import {
+	DEFAULT_STROKE_WIDTH,
+	ICON_VARIANTS,
+	type IconNodeMap,
+	type IconVariant,
+} from "./types.js";
 
 export type HoneyIconProps = Omit<IconBaseProps, "iconNode"> & {
 	variant?: IconVariant;
@@ -25,7 +30,14 @@ export function createIcon(name: string, nodes: IconNodeMap): HoneyIcon {
 		throw new Error(`${name} has no icon data`);
 	}
 	const Component = forwardRef<SVGSVGElement, HoneyIconProps>(
-		function HoneyIcon({ variant = defaultVariant, ...props }, ref) {
+		function HoneyIcon(
+			{
+				variant = defaultVariant,
+				strokeWidth = DEFAULT_STROKE_WIDTH[variant],
+				...props
+			},
+			ref,
+		) {
 			if (!Object.hasOwn(nodes, variant)) {
 				throw new Error(`${name} has no ${variant} variant`);
 			}
@@ -33,7 +45,14 @@ export function createIcon(name: string, nodes: IconNodeMap): HoneyIcon {
 			if (!iconNode) {
 				throw new Error(`${name} has no ${variant} variant`);
 			}
-			return <IconBase ref={ref} iconNode={iconNode} {...props} />;
+			return (
+				<IconBase
+					ref={ref}
+					iconNode={iconNode}
+					strokeWidth={strokeWidth}
+					{...props}
+				/>
+			);
 		},
 	) as HoneyIcon;
 	Component.displayName = name;

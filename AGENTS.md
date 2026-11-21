@@ -39,7 +39,7 @@ Read before drawing:
 
 1. Search `icons/` by name and by shape. An existing icon stands unless the user asked for a replacement.
 2. Choose the plainest drawing of the idea, the one a stranger names at 16px. Packs offer decorative and plain versions: a cart has wheels, a pin stands alone, a globe has no stand.
-3. Draw it in `icons/linear/<category>/`. Use strokes with `stroke="currentColor"` on each node: the build sets the 1.8 width and round caps, and rejects paint on the root `<svg>`. A pasted SVG is a sketch to redraw: packs are drawn for their own line and size, so rescale it, re-space the insides, and drop details that don't fit.
+3. Draw it in `icons/linear/<category>/`. Use strokes with `stroke="currentColor"` on each node: the build sets the 1.6 linear width and round caps, and rejects paint on the root `<svg>`. A pasted SVG is a sketch to redraw: packs are drawn for their own line and size, so rescale it, re-space the insides, and drop details that don't fit.
 4. Derive bold from that linear file.
 5. Add tags in `icons/meta.json`, and the source and license in `packages/react/NOTICE.md`. A new category also needs a label and icon in `CATEGORY_DETAILS` in `apps/web/src/components/icons/constants.ts`.
 6. Run `pnpm check:icons --fit <name>` to set the size and centre in both styles, then `pnpm generate:icons` and `pnpm check:icons <name>`. Repeat until it says `ok`. Generated files only ever change this way.
@@ -55,7 +55,7 @@ Read before drawing:
 
 ### Drawing rules the check can't measure
 
-- Sit straight horizontal and vertical lines on 3k ± 0.9 (2.1, 3.9, 5.1, 6.9 …) where the design allows, so one edge lands on a whole pixel at 16, 20, and 24px.
+- Sit straight horizontal and vertical lines on 3k ± 0.8 (2.2, 3.8, 5.2, 6.8 …) where the design allows, so one edge lands on the 3-unit grid. Check its alignment at 16, 20, and 24px.
 - Take frame corners from a nearby icon of the same shape, so they match. Change the curve itself: round joins alone don't smooth a corner.
 - Join overlapping strokes into one path and union overlapping fills, so translucent colours render evenly.
 - End inner lines inside their frames so round caps stay inside. Use native filled circles for solid dots.
