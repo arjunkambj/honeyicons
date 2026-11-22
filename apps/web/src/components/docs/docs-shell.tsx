@@ -6,7 +6,7 @@ import { type DocsNavItem, docsNav, docsPages } from "./docs-nav";
 
 function navItemClass(selected: boolean) {
 	return cn(
-		"flex h-8 w-full items-center gap-2 rounded-xl px-2 text-label focus-visible:outline-2 focus-visible:outline-ring",
+		"flex h-8 w-full items-center gap-2 rounded-xl px-2 text-label transition-transform duration-100 ease-out active:scale-[0.97] motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-ring [-webkit-tap-highlight-color:transparent]",
 		selected
 			? "bg-card font-medium text-foreground shadow-xxs dark:bg-muted"
 			: "text-muted-foreground hover:bg-muted hover:text-foreground dark:hover:bg-muted/50",
@@ -74,7 +74,7 @@ export function DocsShell({ children }: { children: ReactNode }) {
 
 	return (
 		<div className="page-gutter grid flex-1 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-12">
-			<aside className="no-scrollbar sticky top-16 hidden h-[calc(100svh-4rem)] -mx-2 overflow-y-auto px-2 py-8 lg:block">
+			<aside className="no-scrollbar scroll-fade-y sticky top-16 hidden h-[calc(100svh-4rem)] -mx-2 overflow-y-auto px-2 py-8 [--scroll-fade-size:3rem] lg:block">
 				<DocsNavList pathname={pathname} />
 			</aside>
 
@@ -101,7 +101,7 @@ export function DocsShell({ children }: { children: ReactNode }) {
 					{menuOpen && (
 						<div
 							id="docs-menu"
-							className="max-h-[70svh] overflow-y-auto border-border border-t px-2 py-4 sm:px-6"
+							className="no-scrollbar scroll-fade-y max-h-[70svh] overflow-y-auto border-border border-t px-2 py-4 [--scroll-fade-size:2rem] sm:px-6"
 						>
 							<DocsNavList pathname={pathname} />
 						</div>

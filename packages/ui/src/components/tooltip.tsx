@@ -5,7 +5,7 @@ import { Tooltip as TooltipPrimitive } from "@base-ui/react/tooltip";
 import { cn } from "@honeyicons/ui/lib/utils";
 
 function TooltipProvider({
-	delay = 0,
+	delay = 500,
 	...props
 }: TooltipPrimitive.Provider.Props) {
 	return (

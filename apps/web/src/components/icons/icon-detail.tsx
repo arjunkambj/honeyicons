@@ -141,7 +141,7 @@ export function IconDetail({
 										aria-checked={variant === id}
 										onClick={() => onVariantChange(id)}
 										className={cn(
-											"flex h-6 items-center justify-center gap-2 rounded-full text-label",
+											"flex h-6 items-center justify-center gap-2 rounded-full text-label transition-transform duration-100 ease-out active:scale-[0.97] motion-reduce:transition-none",
 											variant === id
 												? "bg-card font-medium shadow-xxs"
 												: "text-muted-foreground hover:text-foreground",

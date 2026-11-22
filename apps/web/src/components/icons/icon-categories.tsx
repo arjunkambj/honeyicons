@@ -33,7 +33,7 @@ export function CategoryRail({ selected, onSelect, counts }: CategoryProps) {
 						aria-pressed={active}
 						onClick={() => onSelect(category.id)}
 						className={cn(
-							"flex h-8 w-full items-center gap-2 rounded-xl px-2 text-label",
+							"flex h-8 w-full items-center gap-2 rounded-xl px-2 text-label transition-transform duration-100 ease-out active:scale-[0.97] motion-reduce:transition-none [-webkit-tap-highlight-color:transparent]",
 							active
 								? "bg-card font-medium text-foreground shadow-xxs dark:bg-muted"
 								: "text-muted-foreground hover:bg-muted hover:text-foreground dark:hover:bg-muted/50",
