@@ -160,7 +160,7 @@ export function DocsPage({
 					</a>
 				</footer>
 			</article>
-			<aside className="no-scrollbar sticky top-16 hidden h-[calc(100svh-4rem)] overflow-y-auto py-12 xl:block">
+			<aside className="no-scrollbar scroll-fade-y sticky top-16 hidden h-[calc(100svh-4rem)] overflow-y-auto py-12 [--scroll-fade-size:3rem] xl:block">
 				<TableOfContents toc={toc} />
 			</aside>
 		</div>

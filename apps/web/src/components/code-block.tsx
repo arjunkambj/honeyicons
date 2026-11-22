@@ -117,7 +117,7 @@ export function CopyButton({
 				size="xs"
 				onClick={copy}
 				aria-label={copied ? "Copied" : label}
-				className={cn("h-6 gap-1 px-2", className)}
+				className={cn("h-6 gap-1 pr-2 pl-1.5", className)}
 			>
 				{icon}
 				{copied ? "Copied" : children}

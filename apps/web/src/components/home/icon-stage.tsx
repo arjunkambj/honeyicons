@@ -1,3 +1,4 @@
+import { Tabs, TabsList, TabsTrigger } from "@honeyicons/ui/components/tabs";
 import { cn } from "@honeyicons/ui/lib/utils";
 import {
 	memo,
@@ -128,7 +129,10 @@ const Tile = memo(function Tile({
 					: "text-muted-foreground hover:bg-card hover:text-foreground",
 			)}
 		>
-			<span className="relative" style={{ width: ICON, height: ICON }}>
+			<span
+				className="relative transition-transform duration-100 ease-out [:active>&]:scale-[0.95] motion-reduce:transition-none"
+				style={{ width: ICON, height: ICON }}
+			>
 				{focused && <FocusGrid />}
 				<Component
 					variant={bold ? "bold" : "linear"}
@@ -155,6 +159,9 @@ export function IconStage({ className }: { className?: string }) {
 	const [viewport, setViewport] = useState({ w: 0, h: 0 });
 	const [active, setActive] = useState(START_INDEX);
 	const [boldIndex, setBoldIndex] = useState<number | null>(null);
+	const [wallStyle, setWallStyle] = useState<"linear" | "bold">("linear");
+	const wallBold = wallStyle === "bold";
+	const flipped = boldIndex === active;
 	const [hovered, setHovered] = useState(false);
 	const [hidden, setHidden] = useState(false);
 	const reducedMotion = usePrefersReducedMotion();
@@ -274,12 +281,16 @@ export function IconStage({ className }: { className?: string }) {
 	}, [active, measured, reducedMotion, focusScale, viewport.w, viewport.h]);
 
 	return (
-		<div
-			aria-hidden="true"
-			className={cn("flex min-h-0 flex-col overflow-hidden", className)}
-		>
+		<div className={cn("flex min-h-0 flex-col overflow-hidden", className)}>
 			<div
 				ref={viewportRef}
+				aria-hidden="true"
+				// Soft edges, so the wall reads as carrying on instead of cut off mid-tile.
+				style={{
+					maskImage:
+						"linear-gradient(to right, transparent, #000 48px, #000 calc(100% - 48px), transparent), linear-gradient(to bottom, transparent, #000 32px, #000 calc(100% - 32px), transparent)",
+					maskComposite: "intersect",
+				}}
 				className="relative min-h-96 flex-1 overflow-hidden lg:min-h-0"
 				onPointerEnter={(event) => {
 					if (event.pointerType === "mouse") setHovered(true);
@@ -302,22 +313,34 @@ export function IconStage({ className }: { className?: string }) {
 							item={item}
 							index={index}
 							focused={index === active}
-							bold={index === active && boldIndex === index}
+							bold={wallBold !== (index === active && boldIndex === index)}
 							onSelect={focusTile}
 						/>
 					))}
 				</div>
 			</div>
-			<div className="flex h-12 shrink-0 items-center justify-center border-border border-t bg-background px-4 lg:h-16">
-				<code className="truncate font-mono text-caption">
+			<div className="flex h-12 shrink-0 items-center gap-3 border-border border-t bg-background pr-2 pl-4 lg:h-16 lg:pr-4 lg:pl-6">
+				<code
+					aria-hidden="true"
+					className="min-w-0 flex-1 truncate font-mono text-caption"
+				>
 					<span className="text-muted-foreground">{'<Icon icon="'}</span>
 					{TILES[active]?.name}
 					<span className="text-muted-foreground">{'" variant="'}</span>
 					<span className="text-primary">
-						{boldIndex === active ? "bold" : "linear"}
+						{wallBold !== flipped ? "bold" : "linear"}
 					</span>
 					<span className="text-muted-foreground">{'" />'}</span>
 				</code>
+				<Tabs
+					value={wallStyle}
+					onValueChange={(value) => setWallStyle(value as "linear" | "bold")}
+				>
+					<TabsList aria-label="Style of the icons shown">
+						<TabsTrigger value="linear">Linear</TabsTrigger>
+						<TabsTrigger value="bold">Bold</TabsTrigger>
+					</TabsList>
+				</Tabs>
 			</div>
 		</div>
 	);

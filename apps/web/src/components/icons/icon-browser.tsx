@@ -1,6 +1,7 @@
-import { type IconVariant, Ruler } from "@honeyicons/react";
+import { CursorClick, type IconVariant, Ruler } from "@honeyicons/react";
 import { catalog } from "@honeyicons/react/catalog";
 import { Button } from "@honeyicons/ui/components/button";
+import { Kbd } from "@honeyicons/ui/components/kbd";
 import { cn } from "@honeyicons/ui/lib/utils";
 import { Tabs, TabsList, TabsTrigger } from "@honeyicons/ui/components/tabs";
 import { Toggle } from "@honeyicons/ui/components/toggle";
@@ -235,9 +236,9 @@ export function IconBrowser() {
 							),
 						};
 
-	const selectedItem = chosenItem ?? (wide ? items[0] : undefined);
+	const selectedItem = chosenItem;
 
-	const detail = selectedItem && (
+	const detail = selectedItem ? (
 		<IconDetail
 			item={selectedItem}
 			variant={variant}
@@ -245,11 +246,13 @@ export function IconBrowser() {
 			onTag={(tag) => updateSearch({ q: tag, category: undefined })}
 			onClose={wide ? undefined : () => selectIcon(undefined)}
 		/>
+	) : (
+		<PanelHint />
 	);
 
 	return (
 		<div className="page-gutter grid flex-1 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-8">
-			<aside className="no-scrollbar sticky top-16 hidden h-[calc(100svh-4rem)] -mx-2 overflow-y-auto px-2 pt-6 pb-8 lg:block">
+			<aside className="no-scrollbar scroll-fade-y sticky top-16 hidden h-[calc(100svh-4rem)] -mx-2 overflow-y-auto px-2 pt-6 pb-8 [--scroll-fade-size:3rem] lg:block">
 				<CategoryRail
 					selected={category}
 					onSelect={selectCategory}
@@ -340,12 +343,20 @@ export function IconBrowser() {
 				/>
 			</main>
 
-			{selectedItem && (
+			{selectedItem && !wide && (
+				<button
+					type="button"
+					aria-label="Close details"
+					onClick={() => selectIcon(undefined)}
+					className="fade-in-0 fixed inset-0 z-30 animate-in cursor-default bg-black/20 duration-200 xl:hidden dark:bg-black/40"
+				/>
+			)}
+			{(selectedItem || wide) && (
 				<div
-					role="dialog"
-					aria-label={`${selectedItem.name} details`}
+					role={selectedItem ? "dialog" : undefined}
+					aria-label={selectedItem ? `${selectedItem.name} details` : undefined}
 					className={cn(
-						"fade-in-0 fixed z-40 animate-in overflow-y-auto bg-card/80 shadow-xxs backdrop-blur-xl duration-200",
+						"fade-in-0 fixed z-40 animate-in overflow-y-auto bg-card/95 shadow-xxs backdrop-blur-xl duration-200 xl:bg-card/80",
 						"inset-x-0 bottom-0 max-h-[78svh] slide-in-from-bottom-8 rounded-t-3xl p-4",
 						// Lines up with the page gutter, which is centered past 1440px.
 						"xl:inset-x-auto xl:top-20 xl:right-[max(4rem,calc((100vw-1440px)/2+4rem))] xl:bottom-4 xl:max-h-none xl:w-92 xl:animate-none xl:rounded-3xl",
@@ -354,6 +365,33 @@ export function IconBrowser() {
 					{detail}
 				</div>
 			)}
+		</div>
+	);
+}
+
+/** What the always-open panel says before an icon is picked. */
+function PanelHint() {
+	return (
+		<div className="flex h-full flex-col items-center justify-center gap-4 px-4 text-center">
+			<div className="flex size-14 items-center justify-center rounded-2xl bg-background text-muted-foreground">
+				<CursorClick size={24} />
+			</div>
+			<div>
+				<h2 className="font-medium text-body">Pick an icon</h2>
+				<p className="mt-1 text-label text-muted-foreground">
+					See it larger, switch between linear and bold, and copy its code or
+					SVG.
+				</p>
+			</div>
+			<ul className="flex flex-col gap-2 text-caption text-muted-foreground">
+				<li className="flex items-center justify-center gap-2">
+					<Kbd>/</Kbd> to search
+				</li>
+				<li className="flex items-center justify-center gap-2">
+					<Kbd>←</Kbd>
+					<Kbd>→</Kbd> to move between icons
+				</li>
+			</ul>
 		</div>
 	);
 }
