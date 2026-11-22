@@ -78,7 +78,7 @@ function Home() {
 				<div className="mt-8 flex flex-wrap items-center gap-3">
 					<Button
 						size="lg"
-						className="h-10 px-6"
+						className="h-10 px-6 has-data-[icon=inline-end]:pr-5"
 						nativeButton={false}
 						render={<Link to="/icons" />}
 					>

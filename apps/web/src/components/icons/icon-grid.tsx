@@ -9,6 +9,7 @@ import {
 } from "@honeyicons/ui/components/empty";
 import { cn } from "@honeyicons/ui/lib/utils";
 import {
+	type CSSProperties,
 	type KeyboardEvent,
 	type ReactNode,
 	useCallback,
@@ -106,12 +107,15 @@ function IconCell({
 			aria-label={item.name}
 			onClick={onSelect}
 			className={cn(
-				"group relative flex aspect-square min-w-0 items-center justify-center border-border border-r border-b outline-none",
+				"group relative flex aspect-square min-w-0 items-center justify-center border-border border-r border-b outline-none [-webkit-tap-highlight-color:transparent]",
 				"hover:bg-card focus-visible:z-10 focus-visible:bg-card focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset",
 				selected && "bg-card",
 			)}
 		>
-			<span className="relative block" style={{ width: size, height: size }}>
+			<span
+				className="relative block transition-transform duration-100 ease-out group-active:scale-[0.95] motion-reduce:transition-none"
+				style={{ width: size, height: size }}
+			>
 				{guides && <GuideOverlay bounds={bounds} scale={scale} />}
 				<Component
 					ref={measureRef}
@@ -122,7 +126,7 @@ function IconCell({
 			</span>
 			<span
 				className={cn(
-					"absolute inset-x-1 bottom-1 truncate text-center text-caption text-muted-foreground",
+					"absolute inset-x-1 bottom-1 truncate text-center text-caption text-muted-foreground max-sm:hidden",
 					guides || selected
 						? "opacity-100"
 						: "opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100",
@@ -208,10 +212,14 @@ export function IconGrid({
 			role="group"
 			aria-label="Icons"
 			onKeyDown={moveFocus}
-			className="grid border-border border-t border-l"
-			style={{
-				gridTemplateColumns: `repeat(auto-fill, minmax(${guides ? Math.max(124, size + 40) : Math.max(92, size + 32)}px, 1fr))`,
-			}}
+			// Phones get smaller tiles: five across instead of three.
+			className="grid grid-cols-[repeat(auto-fill,minmax(var(--cell-sm),1fr))] border-border border-t border-l sm:grid-cols-[repeat(auto-fill,minmax(var(--cell),1fr))]"
+			style={
+				{
+					"--cell": `${guides ? Math.max(124, size + 40) : Math.max(92, size + 32)}px`,
+					"--cell-sm": `${guides ? Math.max(124, size + 40) : Math.max(64, size + 32)}px`,
+				} as CSSProperties
+			}
 		>
 			{items.map((item) => (
 				<IconCell
