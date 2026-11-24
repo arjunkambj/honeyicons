@@ -904,13 +904,39 @@ now Honeyicons drawings. `FileImage` reuses the wave and ring from `Image`.
 `CalendarAdd`, `CalendarRemove`, `CalendarCheck`, `CalendarSearch`, and `CalendarX`
 use the frame from `Calendar`.
 
+## November 25, 2026 redraws
+
+This section is current wherever it differs from the notes above. These icons
+were redrawn so they match the rest of the set, and their bold versions are
+derived from the new linear drawings.
+
+`Store`, `Hourglass`, `Chat`, `Presentation`, `Book`, and `Sparkles` are adapted
+from the Solar **Shop**, **Hourglass Line**, **Chat Square Line**, **Presentation
+Graph**, **Book**, and **Sparkles** icons on the 1.6-unit line. The hourglass
+sand lines are shortened and the middle sparkle is scaled to 90% so the parts
+keep their spacing. The bold store keeps the awning whole and leaves the door
+open, as in Solar's filled **Shop**. The Solar source and CC BY 4.0 license
+above apply.
+
+`Target`, `Rocket`, `Lightning`, `Webhook`, and `Bot` are adapted from
+`Target01Icon`, `Rocket01Icon`, `ZapIcon`, `WebhookIcon`, and
+`BotMessageSquareIcon` in `@hugeicons/core-free-icons` 4.2.3 on the 1.6-unit
+line. The rocket window and webhook joints are filled dots, and the target's
+inner ring and the webhook's lower tail are shortened for spacing. The MIT
+license in the Hugeicons section applies.
+
+`Kanban` and `Hammer` are now Honeyicons drawings. `FolderWithFiles` keeps the
+Lucide-derived folder with an original sheet behind it. `UserSettings` keeps the
+user-status head and body; its gear is the Solar-derived `Settings` gear, scaled
+down and filled.
+
 ## Lucide
 
-`Sparkles`, `Rocket`, `Folder`, `FolderAdd`, `FolderRemove`, `FolderLock`,
-`FolderSearch`, `FolderOpen`, `FolderWithFiles`, `Folders`, and `FolderTree` are
-adapted from [Lucide](https://lucide.dev) and redrawn on the 1.8-unit line. The
-folders use Lucide's tab and proportions with rounder corners, and `Rocket` adds
-a window dot. The lock, search, and sheet details are original.
+`Folder`, `FolderAdd`, `FolderRemove`, `FolderLock`, `FolderSearch`,
+`FolderOpen`, `FolderWithFiles`, `Folders`, and `FolderTree` are adapted from
+[Lucide](https://lucide.dev) and redrawn on the 1.8-unit line. The folders use
+Lucide's tab and proportions with rounder corners. The lock, search, and sheet
+details are original.
 
 ISC License
 

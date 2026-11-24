@@ -241,7 +241,7 @@
 		"tags": ["bolt", "lightning", "flash", "energy", "power", "zap", "solar"]
 	},
 	"book": {
-		"tags": ["book", "guide", "documentation", "read", "manual"]
+		"tags": ["book", "guide", "documentation", "read", "manual", "solar"]
 	},
 	"book-open": {
 		"tags": ["book", "open", "read", "pages", "education"]
@@ -253,7 +253,17 @@
 		"tags": ["bookmarks", "save", "saved", "collection"]
 	},
 	"bot": {
-		"tags": ["bot", "robot", "assistant", "agent", "automation", "ai"]
+		"tags": [
+			"bot",
+			"robot",
+			"assistant",
+			"agent",
+			"automation",
+			"ai",
+			"chat",
+			"bot-message-square",
+			"hugeicons"
+		]
 	},
 	"braces": {
 		"tags": ["braces", "curly", "json", "object", "code"]
@@ -418,11 +428,12 @@
 	"chat": {
 		"tags": [
 			"chat",
-			"chat-01",
 			"message",
 			"conversation",
 			"bubble",
-			"hugeicons"
+			"comment",
+			"chat-01",
+			"solar"
 		]
 	},
 	"check": {
@@ -957,7 +968,15 @@
 		"tags": ["home", "house", "dashboard", "main", "solar"]
 	},
 	"hourglass": {
-		"tags": ["hourglass", "waiting", "time", "timer", "loading"]
+		"tags": [
+			"hourglass",
+			"waiting",
+			"time",
+			"timer",
+			"loading",
+			"sand",
+			"solar"
+		]
 	},
 	"image": {
 		"tags": ["image", "gallery", "photo", "picture", "media", "images"]
@@ -1074,7 +1093,15 @@
 		"tags": ["lightbulb", "light", "bulb", "idea", "inspiration"]
 	},
 	"lightning": {
-		"tags": ["bolt", "flash", "electricity", "energy", "power", "zap"]
+		"tags": [
+			"bolt",
+			"flash",
+			"electricity",
+			"energy",
+			"power",
+			"zap",
+			"hugeicons"
+		]
 	},
 	"like": {
 		"tags": ["thumbs-up", "approve", "feedback", "hugeicons"]
@@ -1459,7 +1486,7 @@
 		"tags": ["power", "on", "off", "shutdown", "hugeicons"]
 	},
 	"presentation": {
-		"tags": ["presentation", "slides", "board", "pitch", "chart"]
+		"tags": ["presentation", "slides", "board", "pitch", "chart", "solar"]
 	},
 	"printer": {
 		"tags": ["printer", "print", "paper", "document", "solar"]
@@ -1545,7 +1572,15 @@
 		"tags": ["rhombus", "shape", "geometry", "diamond", "hugeicons"]
 	},
 	"rocket": {
-		"tags": ["rocket", "launch", "space", "fire", "flame"]
+		"tags": [
+			"rocket",
+			"launch",
+			"space",
+			"fire",
+			"flame",
+			"rocket-01",
+			"hugeicons"
+		]
 	},
 	"rotate-ccw": {
 		"tags": ["rotate", "counterclockwise", "turn", "reset", "undo"]
@@ -1754,7 +1789,7 @@
 		"tags": ["waveform", "audio", "sound", "voice", "equalizer", "solar"]
 	},
 	"sparkles": {
-		"tags": ["sparkles", "sparkle", "magic", "ai", "shine", "stars"]
+		"tags": ["sparkles", "sparkle", "magic", "ai", "shine", "stars", "solar"]
 	},
 	"spinner": {
 		"tags": ["loader", "loading", "progress", "wait", "busy", "rotate"]
@@ -1827,7 +1862,7 @@
 		"tags": ["stopwatch", "stop-watch", "timer", "time", "hugeicons"]
 	},
 	"store": {
-		"tags": ["store", "shop", "storefront", "market", "retail"]
+		"tags": ["store", "shop", "storefront", "market", "retail", "solar"]
 	},
 	"strikethrough": {
 		"tags": ["text", "strikethrough", "strike", "format", "editor"]
@@ -1868,7 +1903,16 @@
 		"tags": ["tag", "label", "price", "category", "badge"]
 	},
 	"target": {
-		"tags": ["target", "goal", "focus", "aim", "bullseye"]
+		"tags": [
+			"target",
+			"goal",
+			"focus",
+			"aim",
+			"bullseye",
+			"arrow",
+			"target-01",
+			"hugeicons"
+		]
 	},
 	"telegram": {
 		"tags": ["messaging", "chat", "social", "brand", "paper-plane"]
@@ -2084,7 +2128,7 @@
 		"tags": ["webcam", "camera", "video", "meeting", "device"]
 	},
 	"webhook": {
-		"tags": ["webhook", "hook", "event", "integration", "api"]
+		"tags": ["webhook", "hook", "event", "integration", "api", "hugeicons"]
 	},
 	"widget": {
 		"tags": ["grid", "dashboard", "layout", "apps", "solar"]
