@@ -719,7 +719,8 @@
 			"guide",
 			"documentation",
 			"read",
-			"manual"
+			"manual",
+			"solar"
 		]
 	},
 	{
@@ -783,7 +784,10 @@
 			"assistant",
 			"agent",
 			"automation",
-			"ai"
+			"ai",
+			"chat",
+			"bot-message-square",
+			"hugeicons"
 		]
 	},
 	{
@@ -1266,11 +1270,12 @@
 		],
 		"tags": [
 			"chat",
-			"chat-01",
 			"message",
 			"conversation",
 			"bubble",
-			"hugeicons"
+			"comment",
+			"chat-01",
+			"solar"
 		]
 	},
 	{
@@ -3486,7 +3491,9 @@
 			"waiting",
 			"time",
 			"timer",
-			"loading"
+			"loading",
+			"sand",
+			"solar"
 		]
 	},
 	{
@@ -3995,7 +4002,8 @@
 			"electricity",
 			"energy",
 			"power",
-			"zap"
+			"zap",
+			"hugeicons"
 		]
 	},
 	{
@@ -5497,7 +5505,8 @@
 			"slides",
 			"board",
 			"pitch",
-			"chart"
+			"chart",
+			"solar"
 		]
 	},
 	{
@@ -5875,7 +5884,9 @@
 			"launch",
 			"space",
 			"fire",
-			"flame"
+			"flame",
+			"rocket-01",
+			"hugeicons"
 		]
 	},
 	{
@@ -6630,7 +6641,8 @@
 			"magic",
 			"ai",
 			"shine",
-			"stars"
+			"stars",
+			"solar"
 		]
 	},
 	{
@@ -6884,7 +6896,8 @@
 			"shop",
 			"storefront",
 			"market",
-			"retail"
+			"retail",
+			"solar"
 		]
 	},
 	{
@@ -7058,7 +7071,10 @@
 			"goal",
 			"focus",
 			"aim",
-			"bullseye"
+			"bullseye",
+			"arrow",
+			"target-01",
+			"hugeicons"
 		]
 	},
 	{
@@ -8010,7 +8026,8 @@
 			"hook",
 			"event",
 			"integration",
-			"api"
+			"api",
+			"hugeicons"
 		]
 	},
 	{

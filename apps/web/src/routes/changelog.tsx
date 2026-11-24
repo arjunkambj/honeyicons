@@ -89,6 +89,7 @@ import { DocsShell } from "@/components/docs/docs-shell";
 import { PageActions } from "@/components/page-header";
 
 const sections = [
+	{ id: "version-0024", label: "0.0.24 · Icons that match the set" },
 	{ id: "version-0023", label: "0.0.23 · Lighter linear icons" },
 	{ id: "version-0022", label: "0.0.22 · Small icons and catalog names" },
 	{ id: "version-0021", label: "0.0.21 · Wider store" },
@@ -275,6 +276,43 @@ function ChangelogPage() {
 				description="New icons and fixes in each release of @honeyicons/react, newest first."
 				toc={sections}
 			>
+				<section
+					aria-labelledby="version-0024"
+					className="border-t border-border pt-8"
+				>
+					<time
+						dateTime="2026-11-25"
+						className="text-label text-muted-foreground"
+					>
+						November 25, 2026
+					</time>
+					<h2
+						id="version-0024"
+						className="mt-2 scroll-mt-32 font-semibold text-heading lg:scroll-mt-24"
+					>
+						0.0.24 · Icons that match the set
+					</h2>
+					<ul className="mt-6 flex list-disc flex-col gap-2 pl-6 text-body text-muted-foreground">
+						<li>
+							Target, Store, Rocket, Hourglass, Chat, Presentation, Book,
+							FolderWithFiles, Lightning, Sparkles, Webhook, and UserSettings
+							are redrawn in the same soft, rounded style as the rest of the
+							set.
+						</li>
+						<li>
+							Kanban is now two lists of cards, Hammer is a rounded mallet, and
+							Bot is a chat bubble with a face.
+						</li>
+						<li>
+							Bold versions of all fifteen are rebuilt from the new lines. Bold
+							Store keeps one solid awning and an open door.
+						</li>
+						<li>
+							Bot, Hammer, and Webhook are each one shape, so see-through colors
+							stay even where parts meet.
+						</li>
+					</ul>
+				</section>
 				<section
 					aria-labelledby="version-0023"
 					className="border-t border-border pt-8"
